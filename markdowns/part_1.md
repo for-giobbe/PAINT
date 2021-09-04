@@ -1,6 +1,6 @@
-## preprocessing RNA-seq reads of vicia and crematogaster spp
+## Preprocessing RNA-seq reads of vicia and crematogaster spp
 
-Here we will remove adapters and lightly trim reads, then quality check them.
+In this step we will carry out qc of thetwo species RNA-seq libraries and preprocess them.
 
 ---
 
@@ -17,15 +17,15 @@ After the initial conversion, libraries filenames are organized in 4 relevant un
 
 For Vicia sp:
 
-	1st     VI for Vicia
-        2nd     N for "never visited" / V for "visited"
-        3rd     sample id number
-        4th     NP for "nectarium plantae"
+	1st	VI for Vicia
+        2nd	N for "never visited" / V for "visited"
+        3rd	sample id number
+        4th	NP for "nectarium plantae"
 
 for Crematogaster sp:
 
         1st     CR for Crematogaster
-        2nd     A for "long-term:N; short-term:N" / B for "long-term:N; short-term:Y" / C for "long-term:Y; short-term:N" / D for "long-term:Y; short-term:Y"
+        2nd     A for "lt:N; st:N" / B for "lt:N; st:Y" / C for "lt:Y; st:N" / D for "lt:Y; st:Y"
         3rd     sample id number
         4th     AD for "abdomen" / CT for "head and thorax"
 
@@ -34,20 +34,59 @@ for Crematogaster sp:
 To check samples:
 
 ```ll reads/crema_ref/ | awk '{print $9}' |  awk -F "_" '{print $1"_"$2"_"$3"_"$4}'```
+
 ```ll reads/crema_ref/ | awk '{print $9}' |  awk -F "_" '{print $1"_"$2"_"$3"_"$4}'```
 
 ---
 
-Next step is to execute the snakefile which will carry out 
--adapter removal / reads trimming (trimmomatic)
--rRNA removal (sortmerna)
--qc (fastqc).
+Next step is to execute the snakefiles for thq qc, which will carry out:
+
+- adapter removal / reads trimming (trimmomatic)
+
+- qc (fastqc)
 
 ```snakemake -s scripts/snakefile_preprocessing_reads_vicia --profile slurm --use-conda --cores 16 --profile slurm```
 
 ```snakemake -s scripts/snakefile_preprocessing_reads_crema --profile slurm --use-conda --cores 16 --profile slurm```
 
-We can see that trimming removed a negligble portion of reads - an average of 0.00% per library. This is good as there are 
-evidences that trimming is (not necessary)[10.1093/nargab/lqaa068] 
-and may even (alter downstram expression analyses)[https://https://doi.org/10.1186/s12859-016-0956-2].
+Trimming has been carried out using a very gentle trimming of PHRED > 5 as indicated [here](10.3389/fgene.2014.00013) but
+setting a high treshold for the minimum length of 99 read length. Trimmomatic has been set with the parmeters:
+TruSeq3-PE.fa:2:30:10:2:TRUE SLIDINGWINDOW:5:30 LEADING:5 TRAILING:5 MINLEN:99.
 
+The post-trimming qc of crema looks fine! Vicia instead seems to have at leas a couple libraries with severe rRNA contaminations, as suggested by the multiple GC peaks:
+the 'true' GC content should be around 42%. They potentially could derive from other contaminants but the overepresented sequences from fastQC are all rRNA and similar.
+
+For Vicia, we need to properly preprocess the reads by removing rRNAs:
+
+Let's start by building a database of piossible rRNAs contaminants, which include:
+
+- silva (16s, 23s, 18s, 28s)
+- rfam (5S, 5.8s)
+- vicia platid and mitochondrion
+- crema mitochondrion
+
+Then let's build a bowtie2 index
+
+``` cat
+dbs/sortmerna_db/rfam-5.8s-database-id98.fasta
+dbs/sortmerna_db/rfam-5s-database-id98.fasta
+dbs/sortmerna_db/silva-arc-16s-id95.fasta
+dbs/sortmerna_db/silva-arc-23s-id98.fasta
+dbs/sortmerna_db/silva-bac-16s-id90.fasta
+dbs/sortmerna_db/silva-bac-23s-id98.fasta
+dbs/sortmerna_db/silva-euk-18s-id95.fasta
+dbs/sortmerna_db/silva-euk-28s-id98.fasta
+dbs/vicia_faba_mtgen/KC189947.1.fasta
+dbs/vicia_faba_plast/KF042344.1.fasta
+dbs/crema_tera_mtgen/MK940828.1.fasta
+>> dbs/filter/filter.fasta
+```
+
+Let's execute the snakefile which will generate the filtered reads and qc them. 
+
+```snakemake -s scripts/snakefile_preprocessing_reads_vicia --profile slurm --use-conda --cores 16 --profile slurm```
+
+As we can see now there is a single GC peak, implying that rRNAs were the major source of contamination and that we managed to succesfully remove that!
+I think this is the correct approach, as it rapresents a non-biological signal which - if removed - won't bias downstream expression analyses.
+Now the libraries vary in size from 40M to 100M but this should'nt be a problem because it is commonly accepted that normalization will
+properly account for library differences of 2X circa!
