@@ -31,9 +31,9 @@ for Crematogaster sp:
 
 To check samples:
 
-```ll reads/crema_ref/ | awk '{print $9}' |  awk -F "_" '{print $1"_"$2"_"$3"_"$4}'```
+```ll reads/crema_ref/ | awk '{print $9}' |  awk -F "_" '{print $1"_"$2"_"$3"_"$4}' | sort -u ```
 
-```ll reads/crema_ref/ | awk '{print $9}' |  awk -F "_" '{print $1"_"$2"_"$3"_"$4}'```
+```ll reads/crema_ref/ | awk '{print $9}' |  awk -F "_" '{print $1"_"$2"_"$3"_"$4}' | sort -u ```
 
 ---
 
@@ -94,9 +94,15 @@ Let's execute the snakefile which will generate the filtered reads and qc them.
 snakemake -s scripts/snakefile_preprocessing_reads_vicia --profile slurm --use-conda --cores 16 --profile slurm
 ```
 
-As we can see now there is a single GC peak, implying that rRNAs were the major source of contamination and that we managed to succesfully remove that!
+We can then see the number of reads which do not map to the contaminant sequences with the line:
+
+```grep "aligned concordantly 0 times;" reads/vicia_ref/*log```
+
+Libraries now range from 44.4 to 19.1 million read pairs but this should'nt be a problem because it is commonly accepted that normalization will
+properly account for library differences of 2X _circa_!
+Moreover we we can see now there is a single GC peak, implying that rRNAs were the major source of contamination and that we managed to succesfully remove that!
 I think this is the correct approach, as it rapresents a non-biological signal which - if removed - won't bias downstream expression analyses.
-Now the libraries vary in size from 40M to 100M but this should'nt be a problem because it is commonly accepted that normalization will
-properly account for library differences of 2X circa!
 
 ---
+
+[back](https://github.com/for-giobbe/PAINT) to main

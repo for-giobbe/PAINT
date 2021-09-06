@@ -1,4 +1,4 @@
-## dataset explanation and requirements
+## Requirements and dataset explanation
 
 You can clone the github to a local host and then 
 
@@ -41,7 +41,7 @@ Databases can be downloaded using wget on the following links and redirecting th
 
 ---
 
-## reads
+### reads
 
 Let's start by downlading the raw RNA-seq reads reads from SRA (only available after the paper is published) into the reads/crema_raw and and reads/vicia_raw folders.
 
@@ -54,6 +54,15 @@ they can be downloaded using:
 
 ```for i in {15728993..15729012}; do fastq-dump --defline-seq '@$sn[_$rn]/$ri' --split-files reads/crema_raw/SRR$i```
 
-## assemblies
+### assemblies
 
 Reference transcriptome assemblies are deposited on TSA with accession and respectively for vicia and crema.
+
+---
+
+### dataset explanation
+
+
+---
+
+[back](https://github.com/for-giobbe/PAINT) to main
