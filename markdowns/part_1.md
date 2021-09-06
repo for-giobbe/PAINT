@@ -4,7 +4,7 @@ In this step we will carry out qc of thetwo species RNA-seq libraries and prepro
 
 ---
 
-Let's start by renamink the RNA-seq libraries from how they where received from the sequencing facility to some more convenient names.
+Let's start by renaming the RNA-seq libraries from how they where received from the sequencing facility to some more convenient names.
 
 From the main folder, we can use the lines ```sh scripts/rename_vicia.sh reads/vicia_raw``` and ```sh scripts/rename_crema.sh reads/crema_raw``` respectively for the plant and the ant.
 
@@ -56,6 +56,8 @@ TruSeq3-PE.fa:2:30:10:2:TRUE SLIDINGWINDOW:5:30 LEADING:5 TRAILING:5 MINLEN:99.
 The post-trimming qc of crema looks fine! Vicia instead seems to have at leas a couple libraries with severe rRNA contaminations, as suggested by the multiple GC peaks:
 the 'true' GC content should be around 42%. They potentially could derive from other contaminants but the overepresented sequences from fastQC are all rRNA and similar.
 
+---
+
 For Vicia, we need to properly preprocess the reads by removing rRNAs:
 
 Let's start by building a database of piossible rRNAs contaminants, which include:
@@ -64,10 +66,12 @@ Let's start by building a database of piossible rRNAs contaminants, which includ
 - rfam (5S, 5.8s)
 - vicia platid and mitochondrion
 - crema mitochondrion
+- partial rRNA sequences of Vicia genus (which are exluced from rRNA dbs)
 
 Then let's build a bowtie2 index
 
-``` cat
+``` 
+cat
 dbs/sortmerna_db/rfam-5.8s-database-id98.fasta
 dbs/sortmerna_db/rfam-5s-database-id98.fasta
 dbs/sortmerna_db/silva-arc-16s-id95.fasta
@@ -78,15 +82,23 @@ dbs/sortmerna_db/silva-euk-18s-id95.fasta
 dbs/sortmerna_db/silva-euk-28s-id98.fasta
 dbs/vicia_faba_mtgen/KC189947.1.fasta
 dbs/vicia_faba_plast/KF042344.1.fasta
+dbs/vicia_partial_rRNAs/vicia_partial_rRNAs.fasta
 dbs/crema_tera_mtgen/MK940828.1.fasta
 >> dbs/filter/filter.fasta
+
+bowtie2-build dbs/filter/filter.fasta dbs/filter/filter
+
 ```
 
 Let's execute the snakefile which will generate the filtered reads and qc them. 
 
-```snakemake -s scripts/snakefile_preprocessing_reads_vicia --profile slurm --use-conda --cores 16 --profile slurm```
+```
+snakemake -s scripts/snakefile_preprocessing_reads_vicia --profile slurm --use-conda --cores 16 --profile slurm
+```
 
 As we can see now there is a single GC peak, implying that rRNAs were the major source of contamination and that we managed to succesfully remove that!
 I think this is the correct approach, as it rapresents a non-biological signal which - if removed - won't bias downstream expression analyses.
 Now the libraries vary in size from 40M to 100M but this should'nt be a problem because it is commonly accepted that normalization will
 properly account for library differences of 2X circa!
+
+---
