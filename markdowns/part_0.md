@@ -6,7 +6,7 @@ You can clone the github to a local host and then (1) install the sotware (2) in
 
 ## software
 
-All software can be installed via conda using ```conda env export > paint.yml```. Here is the complete list:
+All software can be installed via conda using ```conda env create -f paint.yml```. Here is the complete list:
 
 - trimmomatic
 - fastqc
@@ -28,8 +28,8 @@ All software can be installed via conda using ```conda env export > paint.yml```
 Databases can be downloaded using wget on the following links and redirecting them to the relative folders:
 
 - [sortmerna dbs](https://github.com/biocore/sortmerna/tree/master/data/rRNA_databases) in dbs/sortmerna/db
-- [pfam](ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz)in dbs/sortmerna/db
-- [uniref90](https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz)in dbs/sortmerna/db
+- [pfam](ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz) in dbs/sortmerna/db
+- [uniref90](https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz) in dbs/sortmerna/db
 
 ---
 
