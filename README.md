@@ -1,11 +1,9 @@
----
 
 **PAINT** - **Plant** **A**nt **INT**eraction
 
 ---
 
 This repository contains all the code used to study the molecular greoundplan of a plant-ant interaction.
-
 
 Two separate RNA-seq experiments were generated for the plant _Vicia faba_ and the ant _Crematogaster scutellaris_.
 
@@ -19,4 +17,4 @@ This is WIP:
 
 - [part 1](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_1.md) - reads qc & pre-processing
 
-- [part 2]() - trascriptome assembly, annotation and filtering
+- [part 2](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_2.md) - trascriptome assembly, annotation and filtering
