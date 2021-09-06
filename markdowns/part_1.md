@@ -49,7 +49,8 @@ Next step is to execute the snakefiles for thq qc, which will carry out:
 
 Trimming has been carried out using a very gentle trimming of PHRED > 5 as indicated [here](https://doi.org/10.3389/fgene.2014.00013) but
 setting a high treshold for the minimum length of 99 read length. Trimmomatic has been set with the parmeters:
-TruSeq3-PE.fa:2:30:10:2:TRUE SLIDINGWINDOW:5:30 LEADING:5 TRAILING:5 MINLEN:99.
+TruSeq3-PE.fa:2:30:10:2:TRUE SLIDINGWINDOW:5:30 LEADING:5 TRAILING:5 MINLEN:99. Parameters have been explored using
+```snakefile_qc_reads_crema``` and ```snakefile_qc_reads_vicia```.
 
 The post-trimming qc of crema looks fine! Vicia instead seems to have at leas a couple libraries with severe rRNA contaminations, as suggested by the multiple GC peaks:
 the 'true' GC content should be around 42%. They potentially could derive from other contaminants but the overepresented sequences from fastQC are all rRNA and similar.
