@@ -25,9 +25,12 @@ All software can be installed via conda using ```conda env export > paint.yml```
 
 ## databases 
 
-- downloaded [sortmerna dbs](https://github.com/biocore/sortmerna/tree/master/data/rRNA_databases) in dbs/sortmerna/db
-- downloaded [pfam](ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz)in dbs/sortmerna/db
-- downloaded [uniref90](wget https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz)in dbs/sortmerna/db
+Databases can be downloaded using wget on the following links and redirecting them to the relative folders:
+
+- [sortmerna dbs](https://github.com/biocore/sortmerna/tree/master/data/rRNA_databases) in dbs/sortmerna/db
+- [pfam](ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz)in dbs/sortmerna/db
+- [uniref90](https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz)in dbs/sortmerna/db
+
 ---
 
 ## reads
@@ -42,3 +45,5 @@ they can be downloaded using:
 ```for i in {15671599..15671608}; do fastq-dump --defline-seq '@$sn[_$rn]/$ri' --split-files reads/vicia_raw/SRR$i```
 
 ```for i in {..}; do fastq-dump --defline-seq '@$sn[_$rn]/$ri' --split-files reads/crema_raw/SRR$i```
+
+## assemblies
