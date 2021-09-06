@@ -1,4 +1,4 @@
-## Preprocessing RNA-seq reads of vicia and crematogaster spp
+## reads qc & preprocessing
 
 In this step we will carry out qc of thetwo species RNA-seq libraries and preprocess them.
 
@@ -6,7 +6,7 @@ In this step we will carry out qc of thetwo species RNA-seq libraries and prepro
 
 Let's start by renaming the RNA-seq libraries from how they where received from the sequencing facility to some more convenient names.
 
-From the main folder, we can use the lines ```sh scripts/rename_vicia.sh reads/vicia_raw``` and ```sh scripts/rename_crema.sh reads/crema_raw``` respectively for the plant and the ant.
+Use the lines ```sh scripts/rename_vicia.sh reads/vicia_raw``` and ```sh scripts/rename_crema.sh reads/crema_raw``` respectively for the plant and the ant.
 
 After the initial conversion, libraries filenames are organized in 4 relevant underscore-separated fields:
 
@@ -29,8 +29,6 @@ for Crematogaster sp:
         3rd     sample id number
         4th     AD for "abdomen" / CT for "head and thorax"
 
----
-
 To check samples:
 
 ```ll reads/crema_ref/ | awk '{print $9}' |  awk -F "_" '{print $1"_"$2"_"$3"_"$4}'```
@@ -49,7 +47,7 @@ Next step is to execute the snakefiles for thq qc, which will carry out:
 
 ```snakemake -s scripts/snakefile_preprocessing_reads_crema --profile slurm --use-conda --cores 16 --profile slurm```
 
-Trimming has been carried out using a very gentle trimming of PHRED > 5 as indicated [here](10.3389/fgene.2014.00013) but
+Trimming has been carried out using a very gentle trimming of PHRED > 5 as indicated [here](https://doi.org/10.3389/fgene.2014.00013) but
 setting a high treshold for the minimum length of 99 read length. Trimmomatic has been set with the parmeters:
 TruSeq3-PE.fa:2:30:10:2:TRUE SLIDINGWINDOW:5:30 LEADING:5 TRAILING:5 MINLEN:99.
 
@@ -60,15 +58,15 @@ the 'true' GC content should be around 42%. They potentially could derive from o
 
 For Vicia, we need to properly preprocess the reads by removing rRNAs:
 
-Let's start by building a database of piossible rRNAs contaminants, which include:
+Let's start by building a database of unwanted sequences, which include:
 
 - silva (16s, 23s, 18s, 28s)
 - rfam (5S, 5.8s)
-- vicia platid and mitochondrion
+- vicia plastid and mitochondrion
 - crema mitochondrion
 - partial rRNA sequences of Vicia genus (which are exluced from rRNA dbs)
 
-Then let's build a bowtie2 index
+Use the line:
 
 ``` 
 cat
