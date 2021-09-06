@@ -12,6 +12,8 @@ RNA-seq reads and assemblies have been deposited under the BioProject **PRJNA758
 
 This is WIP:
 
-[part 0](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_0.md)
-[part 1](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_1.md)
-[part 2]()
+- [part 0](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_0.md) - setting the environiment and downloading the reads
+
+- [part 1](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_1.md) - reads qc and pre-processing
+
+- [part 2]() - trascriptome assembly, annotation and filtering
