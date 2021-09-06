@@ -1,5 +1,5 @@
 
-**PAINT** - **Plant** **A**nt **INT**eraction
+**PAINT** - **P**lant **A**nt **INT**eraction
 
 ---
 
@@ -7,7 +7,7 @@ This repository contains all the code used to study the molecular greoundplan of
 
 Two separate RNA-seq experiments were generated for the plant _Vicia faba_ and the ant _Crematogaster scutellaris_.
 
-In here _Vicia faba_ will be reverenced as vicia and _Crematogaster scutellaris_ as crema.
+In here _Vicia faba_ will be reverenced as **vicia** and _Crematogaster scutellaris_ as **crema**.
 
 RNA-seq reads and assemblies have been deposited under the BioProject **PRJNA758979**.
 
