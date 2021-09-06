@@ -9,18 +9,6 @@ rule all:
 	input:
 		expand('reads/crema_ref/{sample}_trimmed_{mate}P_fastqc.html', sample = sample, mate = mate)
 
-#rule remove_rRNA:
-#	input:
-#		rules.trimmomatic.output.oP, rules.trimmomatic.output.tP
-#	output:
-#		clean_1=temp('reads/crema_ref/{sample}_trimmed_1P'),
-#		clean_2=temp('reads/crema_ref/{sample}_trimmed_2P')
-#	threads: 8
-#	conda:  '../env/sortmerna.yaml'
-#	shell:  'sortmerna -ref rfam-5.8s-database-id98.fasta rfam-5s-database-id98.fasta silva-arc-16s-id95.fasta silva-bac-16s-id90.fasta'
-		'silva-euk-18s-id95.fasta silva-euk-28s-id98.fasta silva-arc-23s-id98.fasta silva-bac-23s-id98.fasta -reads {input} --threads {threads} '
-		'--aligned _rRNA --other non_rRNA --log -v'
-
 rule trimmomatic:
         input:
               	l='reads/crema_ref/{sample}_1.fastq.gz',
@@ -32,7 +20,7 @@ rule trimmomatic:
 		tU=temp('reads/crema_ref/{sample}_trimmed_2U')
 	threads: 8
         conda:  '../env/trimmomatic.yaml'
-        shell:  'trimmomatic PE {input.l} {input.r} {output.oP} {output.oU} {output.tP} {output.tU} -threads 8 '
+        shell:  'trimmomatic PE {input.l} {input.r} {output.oP} {output.oU} {output.tP} {output.tU} -threads {threads} '
 		'ILLUMINACLIP:/gpfs/home/projects/gen_red/cartella/env/paint/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10:2:TRUE SLIDINGWINDOW:28:30 LEADING:28 TRAILING:28 MINLEN:99'
 
 rule fastqc:
@@ -43,4 +31,3 @@ rule fastqc:
 		'reads/crema_ref/{sample}_trimmed_1P_fastqc.html', 'reads/crema_ref/{sample}_trimmed_2P_fastqc.html'
 	conda:	'../env/fastqc.yaml'
 	shell:	'fastqc {input}'
-

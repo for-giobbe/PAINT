@@ -14,4 +14,4 @@ module load Mlnx/hpcx
 
 cd /home/users/giobbe.forni/gen_red/paint/assemblies/vicia
 
-Trinity --samples_file ../../vicia_samples.txt --CPU 32 --max_memory 600G --seqType fq --output trinity_vicia --quality_trimming_params "ILLUMINACLIP:ILLUMINACLIP:/gpfs/home/projects/gen_red/cartella/env/paint/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10:2:TRUE SLIDINGWINDOW:28:30 LEADING:28 TRAILING:28 MINLEN:99" 2>&1 | tee run_trinity.log
+Trinity --samples_file ../../vicia_samples.txt --CPU 32 --max_memory 600G --seqType fq --output trinity_vicia 2>&1 | tee run_trinity.log
