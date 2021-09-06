@@ -4,8 +4,8 @@ mate = ['1','2']
 
 rule all:
 	input:
-		expand('reads/vicia_ref/VI_{sample}_NP_trimmed_{mate}P_fastqc.zip', sample = sample, mate = mate),
-		expand('reads/vicia_ref/VI_{sample}_NP_filtered.{mate}', sample = sample, mate = mate)
+		expand('reads/vicia_ref/VI_{sample}_NP_filtered.{mate}_fastqc.html', sample = sample, mate = mate),
+		expand('reads/vicia_ref/VI_{sample}_NP_filtered.{mate}.gz', sample = sample, mate = mate)
 
 rule trimmomatic:
         input:
@@ -28,8 +28,8 @@ rule rm_rrna:
 	params:
 		basename='VI_{sample}_NP_filtered'
 	output: 
-		l_filtered=('reads/vicia_ref/VI_{sample}_NP_filtered.1'),
-		r_filtered=('reads/vicia_ref/VI_{sample}_NP_filtered.2'),
+		l_filtered=('reads/vicia_ref/VI_{sample}_NP_filtered.1.gz'),
+		r_filtered=('reads/vicia_ref/VI_{sample}_NP_filtered.2.gz'),
 		sam=temp('reads/vicia_ref/VI_{sample}_NP_filtered.sam')
 	conda:	'../env/bowtie2.yaml'
 	threads: 8
@@ -40,6 +40,6 @@ rule fastqc:
 	input:
 		rules.rm_rrna.output.l_filtered, rules.rm_rrna.output.r_filtered
 	output:
-		'reads/vicia_ref/VI_{sample}_NP_trimmed_1P_fastqc.zip', 'reads/vicia_ref/VI_{sample}_NP_trimmed_2P_fastqc.zip'
+		'reads/vicia_ref/VI_{sample}_NP_filtered.1_fastqc.zip', 'reads/vicia_ref/VI_{sample}_NP_filtered.2_fastqc.zip'
 	conda:	'../env/fastqc.yaml'
 	shell:	'fastqc {input}'
