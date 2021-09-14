@@ -1,36 +1,36 @@
-species = ['vicia', 'crema']
+species = ['vicia']
 
-chunk = [str(x).zfill(2) for x in range(80)]
+chunk = [str(x).zfill(2) for x in range(20)]
 
 rule all:
 	input:
-		cds='crema.final.raw.transdecoder.cds',
-		gff='crema.final.raw.transdecoder.gff3',
-		pep='crema.final.raw.transdecoder.pep'
+		cds='vicia.final.raw.transdecoder.cds',
+		gff='vicia.final.raw.transdecoder.gff3',
+		pep='vicia.final.raw.transdecoder.pep'
 	shell:  'rm -f -r pipeliner* snakejob* *longest_isoform*'
 
 rule longest_isoform:
         input:
-              	 'assemblies/{species}/{species}.fasta'
+              	 'assemblies/{species}/{species}.Trinity.fasta'
         output:
                	 'assemblies/{species}/{species}.longest_isoform.fasta'
-        conda:   'env/trinity.yaml'
-        shell:   'perl /short/rh35/gf6030/miniconda3/opt/trinity-2.1.1/util/misc/get_longest_isoform_seq_per_trinity_gene.pl {input} > {output}'
+        conda:   '../env/trinity.yaml'
+        shell:   'perl /gpfs/home/projects/gen_red/cartella/env/paint/opt/trinity-2.8.5/util/misc/get_longest_isoform_seq_per_trinity_gene.pl {input} > {output}'
 
 rule split_fasta:
 	input:
 		 rules.longest_isoform.output
 	output:
                  temp(expand('assemblies/{{species}}/{{species}}.longest_isoform.{chunk}.fasta', species = species, chunk = chunk))
-	conda:   'env/pyfasta.yaml'
-	shell:   'pyfasta split -n 80 {input}'
+	conda:   '../env/pyfasta.yaml'
+	shell:   'pyfasta split -n 20 {input}'
 
 rule transdecoder_longorfs:
 	input:
 		 'assemblies/{species}/{species}.longest_isoform.{chunk}.fasta'
 	output:
 		 '{species}.longest_isoform.{chunk}.fasta.transdecoder_dir/longest_orfs.pep'
-	conda:   'env/transdecoder.yaml'
+	conda:   '../env/transdecoder.yaml'
 	shell:   'TransDecoder.LongOrfs -t {input}'
 
 rule hmmscan:
@@ -39,7 +39,7 @@ rule hmmscan:
 	output:
 		 '{species}.longest_isoform.{chunk}.fasta.transdecoder_dir/{chunk}.pfam.domtblout'
 	threads: 4
-	conda:   'env/hmmscan.yaml'
+	conda:   '../env/hmmscan.yaml'
 	shell:   'hmmscan --cpu {threads} --domtblout {output} dbs/Pfam-A.hmm {input}'
 
 rule blastp:
@@ -48,7 +48,7 @@ rule blastp:
 	output:
 		 '{species}.longest_isoform.{chunk}.fasta.transdecoder_dir/{chunk}.blastp.outfmt6'
 	threads: 4
-	conda:   'env/blast.yaml'
+	conda:   '../env/blast.yaml'
 	shell:   'blastp -query {input} -db dbs/uniprot_sprot -max_target_seqs 1 -outfmt 6 -evalue 1e-5 -num_threads {threads} > {output}'
 
 rule cp_chunk:
@@ -67,7 +67,7 @@ rule transdecoder_predict:
 		 cds='{species}.longest_isoform.{chunk}.fasta.transdecoder.cds',
 		 gff='{species}.longest_isoform.{chunk}.fasta.transdecoder.gff3',
 		 pep='{species}.longest_isoform.{chunk}.fasta.transdecoder.pep'
-	conda:   'env/transdecoder.yaml'
+	conda:   '../env/transdecoder.yaml'
 	shell:   'TransDecoder.Predict -t {input.assembly} --retain_pfam_hits {input.hmmscan} --retain_blastp_hits {input.blast}'
 
 rule merge_cds:

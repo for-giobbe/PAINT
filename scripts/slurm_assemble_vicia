@@ -5,7 +5,7 @@
 #SBATCH --get-user-env
 #SBATCH -p bigmem
 #SBATCH --nodes=1
-#SBATCH -c 32                    # Number of cores per task
+#SBATCH -c 32                     # Number of cores per task
 #SBATCH --mem-per-cpu 20000       #  Mem for each core
 #SBATCH --time=2-00:00:00
 #SBATCH --account=gen_red
@@ -14,4 +14,4 @@ module load Mlnx/hpcx
 
 cd /home/users/giobbe.forni/gen_red/paint/assemblies/vicia
 
-Trinity --samples_file ../../vicia_samples.txt --CPU 32 --max_memory 600G --seqType fq --output trinity_vicia 2>&1 | tee run_trinity.log
+Trinity --samples_file vicia_samples.txt --CPU 32 --max_memory 600G --seqType fq --output trinity_vicia --full_cleanup 2>&1 | tee run_trinity.log

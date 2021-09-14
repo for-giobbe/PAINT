@@ -14,4 +14,4 @@ module load Mlnx/hpcx
 
 cd /home/users/giobbe.forni/gen_red/paint/assemblies/crema
 
-Trinity --samples_file crema_samples.txt --CPU 32 --max_memory 600G --seqType fq --output trinity_crema 2>&1 | tee run_trinity.log
+Trinity --samples_file crema_samples.txt --CPU 32 --max_memory 600G --seqType fq --output trinity_crema --full_cleanup 2>&1 | tee run_trinity.log
