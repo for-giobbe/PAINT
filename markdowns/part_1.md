@@ -1,12 +1,14 @@
 ## reads qc & preprocessing
 
-In this step we will carry out qc of thetwo species RNA-seq libraries and preprocess them.
+In this step we will carry out qc of the two species RNA-seq libraries and preprocess them.
 
 ---
 
-Let's start by renaming the RNA-seq libraries from how they where received from the sequencing facility to some more convenient names.
+Let's start by renaming the RNA-seq libraries from how they are downloaded from the SRA to some more convenient names.
 
-Use the lines ```sh scripts/rename_vicia.sh reads/vicia_raw``` and ```sh scripts/rename_crema.sh reads/crema_raw``` respectively for the plant and the ant.
+Use the lines ```sh scripts/rename_vicia_SRA.sh reads/vicia_raw``` and ```sh scripts/rename_crema_SRA.sh reads/crema_raw```, respectively.
+
+NB: to rename reads from how they were received from the sequencing facilities use ```sh scripts/rename_vicia.sh reads/vicia_raw``` and ```sh scripts/rename_crema.sh reads/crema_raw``` can be used.
 
 After the initial conversion, libraries filenames are organized in 4 relevant underscore-separated fields:
 
@@ -43,50 +45,34 @@ Next step is to execute the snakefiles for thq qc, which will carry out:
 
 - qc (fastqc)
 
-```snakemake -s scripts/snakefile_preprocessing_reads_vicia --profile slurm --use-conda --cores 16 --profile slurm```
+```snakemake -s scripts/snakefile_qc_reads_vicia --profile slurm --use-conda --cores 16 --profile slurm```
 
-```snakemake -s scripts/snakefile_preprocessing_reads_crema --profile slurm --use-conda --cores 16 --profile slurm```
+```snakemake -s scripts/snakefile_qc_reads_crema --profile slurm --use-conda --cores 16 --profile slurm```
 
 Trimming has been carried out using a very gentle trimming of PHRED > 5 as indicated [here](https://doi.org/10.3389/fgene.2014.00013) but
 setting a high treshold for the minimum length of 99 read length. Trimmomatic has been set with the parmeters:
-TruSeq3-PE.fa:2:30:10:2:TRUE SLIDINGWINDOW:5:30 LEADING:5 TRAILING:5 MINLEN:99. Parameters have been explored using
-```snakefile_qc_reads_crema``` and ```snakefile_qc_reads_vicia```.
+TruSeq3-PE.fa:2:30:10:2:TRUE SLIDINGWINDOW:5:30 LEADING:5 TRAILING:5 MINLEN:99.
 
-The post-trimming qc of crema looks fine! Vicia instead seems to have at leas a couple libraries with severe rRNA contaminations, as suggested by the multiple GC peaks:
-the 'true' GC content should be around 42%. They potentially could derive from other contaminants but the overepresented sequences from fastQC are all rRNA and similar.
+The post-trimming qc looks generally fine but there seem to be some rRNAs/mtDNA contaminations, as suggested by the multiple GC peaks:
+they potentially could also derive from other contaminants, but the overepresented sequences from fastQC are all rRNAs, mtDNA and similar.
 
 ---
 
-For Vicia, we need to properly preprocess the reads by removing rRNAs:
+We need to properly preprocess the reads by removing rRNAs:
 
 Let's start by building a database of unwanted sequences, which include:
 
 - silva (16s, 23s, 18s, 28s)
 - rfam (5S, 5.8s)
-- vicia plastid and mitochondrion
-- crema mitochondrion
 - partial rRNA sequences of Vicia genus (which are exluced from rRNA dbs)
+- vicia plastid and mitochondrion
+- crema (congeneric) mitochondrion
+- closely related hymenopteran mitochondria
 
 Use the line:
 
 ``` 
-cat
-dbs/sortmerna_db/rfam-5.8s-database-id98.fasta
-dbs/sortmerna_db/rfam-5s-database-id98.fasta
-dbs/sortmerna_db/silva-arc-16s-id95.fasta
-dbs/sortmerna_db/silva-arc-23s-id98.fasta
-dbs/sortmerna_db/silva-bac-16s-id90.fasta
-dbs/sortmerna_db/silva-bac-23s-id98.fasta
-dbs/sortmerna_db/silva-euk-18s-id95.fasta
-dbs/sortmerna_db/silva-euk-28s-id98.fasta
-dbs/vicia_faba_mtgen/KC189947.1.fasta
-dbs/vicia_faba_plast/KF042344.1.fasta
-dbs/vicia_partial_rRNAs/vicia_partial_rRNAs.fasta
-dbs/crema_tera_mtgen/MK940828.1.fasta
->> dbs/filter/filter.fasta
-
-bowtie2-build dbs/filter/filter.fasta dbs/filter/filter
-
+cat dbs/sortmerna_db/* dbs/vicia_*/* dbs/crema_tera_mtgen/* dbs/hymn_mtgen/* >> dbs/filter/filter.fasta; bowtie2-build dbs/filter/filter.fasta dbs/filter/filter
 ```
 
 Let's execute the snakefile which will generate the filtered reads and qc them. 
@@ -95,14 +81,28 @@ Let's execute the snakefile which will generate the filtered reads and qc them.
 snakemake -s scripts/snakefile_preprocessing_reads_vicia --profile slurm --use-conda --cores 16 --profile slurm
 ```
 
-We can then see the number of reads which do not map to the contaminant sequences with the line:
+```
+snakemake -s scripts/snakefile_preprocessing_reads_crema --profile slurm --use-conda --cores 16 --profile slurm
+```
 
-```grep "aligned concordantly 0 times;" reads/vicia_ref/*log```
+We can then see the number of reads which do not map to the contaminant sequences with the lines:
 
-Libraries now range from 44.4 to 19.1 million read pairs but this should'nt be a problem because it is commonly accepted that normalization will
-properly account for library differences of 2X _circa_!
+```
+grep "aligned concordantly 0 times;" reads/vicia_ref/*log``` and ```grep "aligned concordantly 0 times;" reads/vicia_ref/*log
+```
+
+and
+
+```
+grep "aligned concordantly 0 times;" reads/crema_ref/*log
+```
+
+In vicia libraries now range from 44.4 to 19.1 million read pairs but this should'nt be a problem because it is commonly accepted that normalization will
+properly account for library differences of 2X _circa_.
 Moreover we we can see now there is a single GC peak, implying that rRNAs were the major source of contamination and that we managed to succesfully remove that!
 I think this is the correct approach, as it rapresents a non-biological signal which - if removed - won't bias downstream expression analyses.
+
+In crema everything looks fine.
 
 ---
 

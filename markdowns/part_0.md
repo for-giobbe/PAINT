@@ -39,6 +39,8 @@ Databases can be downloaded using wget on the following links and redirecting th
 - [pfam](ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz) in ```dbs/sortmerna/db```
 - [uniref90](https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz) in ```dbs/sortmerna/db```
 
+Moreover ```makeblastdb -dbtype prot -in uniprot_sprot.fasta``` and ```hmmpress Pfam-A.hmm```
+
 ---
 
 ### reads
