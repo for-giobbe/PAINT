@@ -3,7 +3,7 @@
 
 ---
 
-This repository contains all the code used to study the molecular greoundplan of a plant-ant interaction.
+This repository contains all the code used to study the molecular greundplan of a plant-ant interaction.
 
 Two separate RNA-seq experiments were generated for the plant _Vicia faba_ and the ant _Crematogaster scutellaris_.
 
