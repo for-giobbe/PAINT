@@ -19,7 +19,7 @@ After the initial conversion, libraries filenames are organized in 4 relevant un
 
 For Vicia sp:
 
-	1st	VI for Vicia
+        1st	VI for Vicia
         2nd	N for "never visited" / V for "visited"
         3rd	sample id number
         4th	NP for "nectarium plantae"
@@ -88,7 +88,7 @@ snakemake -s scripts/snakefile_preprocessing_reads_crema --profile slurm --use-c
 We can then see the number of reads which do not map to the contaminant sequences with the lines:
 
 ```
-grep "aligned concordantly 0 times;" reads/vicia_ref/*log``` and ```grep "aligned concordantly 0 times;" reads/vicia_ref/*log
+grep "aligned concordantly 0 times;" reads/vicia_ref/*log```
 ```
 
 and
@@ -97,12 +97,16 @@ and
 grep "aligned concordantly 0 times;" reads/crema_ref/*log
 ```
 
-In vicia libraries now range from 44.4 to 19.1 million read pairs but this should'nt be a problem because it is commonly accepted that normalization will
+In vicia cleaned libraries range from 44.4M to 19.1M read pairs 
+
+
+but this should'nt be a problem because it is commonly accepted that normalization will
 properly account for library differences of 2X _circa_.
+
 Moreover we we can see now there is a single GC peak, implying that rRNAs were the major source of contamination and that we managed to succesfully remove that!
 I think this is the correct approach, as it rapresents a non-biological signal which - if removed - won't bias downstream expression analyses.
 
-In crema everything looks fine.
+In crema cleaned libraries range from 13.5M to 14.7M read pairs, with an overall alignment rate inbetween 1.54% and 0.19%
 
 ---
 

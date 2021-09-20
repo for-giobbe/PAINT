@@ -6,15 +6,15 @@ You can clone the github to a local host and then
 - download the databases
 - download the experiment data
 
-NB1: all command lines reported here have to be launched from the project main folder.
+**NB1**: all command lines reported here have to be launched from the project main folder.
 
-NB2: some commands are executed through slurm but can easily be moved to other scheduler such as qsub.
+**NB2**: some commands are executed through slurm but can easily be moved to other scheduler such as qsub.
 
 ---
 
 ### software
 
-All software can be installed via conda using ```conda env create -f paint.yml```. Here is the complete list:
+All software can be installed via conda using ```conda env create -f paint.yml```. Here is the complete list, in no particular order:
 
 - trimmomatic
 - fastqc
@@ -24,10 +24,11 @@ All software can be installed via conda using ```conda env create -f paint.yml``
 - blast
 - hmmscan
 - transdecoder
-- pyfasta
+- fasta-splitter
 - taxonkit
 - snakemake
 - fastqdump
+- busco
 
 ---
 
@@ -35,11 +36,12 @@ All software can be installed via conda using ```conda env create -f paint.yml``
 
 Databases can be downloaded using wget on the following links and redirecting them to the relative folders:
 
-- [sortmerna dbs](https://github.com/biocore/sortmerna/tree/master/data/rRNA_databases) in ```dbs/sortmerna/db```
-- [pfam](ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz) in ```dbs/sortmerna/db```
-- [uniref90](https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz) in ```dbs/sortmerna/db```
+- [sortmerna dbs](https://github.com/biocore/sortmerna/tree/master/data/rRNA_databases) and move all in ```dbs/sortmerna/db```
+- [pfam](ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz) and gunzip in ```dbs/sortmerna/db```
+- [uniref90](https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz) and gunzip in ```dbs/sortmerna/db```
+- [taxdump](ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz)and ```tar -zxvf``` in ```dbs/sortmerna/db```
 
-Moreover ```makeblastdb -dbtype prot -in uniprot_sprot.fasta``` and ```hmmpress Pfam-A.hmm```
+Moreover, remember to ```makeblastdb -dbtype prot -in dbs/``` and ```hmmpress dbs/Pfam-A.hmm```
 
 ---
 
@@ -58,13 +60,34 @@ they can be downloaded using:
 
 ### assemblies
 
-Reference transcriptome assemblies are deposited on TSA with accession and respectively for vicia and crema.
+Reference transcriptome assemblies are deposited on TSA with accession XXX and YYY respectively for vicia and crema.
 
 ---
 
 ### dataset explanation
 
+This project revolves around the interaction between _Vicia faba_ and _Crematogaster scutellaris_, with two major aims:
+
+1. charachteryze in _Crematogaster scutellaris_ the genes associated with the feeding on _Vicia faba_ nectarium, 
+in different tissues and at different timepoints.
+
+2. understand wether we could identify in _Vicia faba_ any expression change associated to the interaction.
+
+To do so we generated two RNA-seq dataset:
+
+1. two different tissue (haead+thorax and abdomen) and four different conditions were sampled for _Crematogaster scutellaris_:
+
+A - never visited _Vicia faba_
+B - visited by _Vicia faba_ only until 24h before experiment
+C - visited by _Vicia faba_ only after 24h before experiment 
+D - visited by _Vicia faba_ continuously
+
+2. nectarium of _Vicia faba_ which:
+
+N - were never visited by _Crematogaster scutellaris_ and 
+Y - 2' after the visit of _Crematogaster scutellaris_
 
 ---
 
 [back](https://github.com/for-giobbe/PAINT) to main
+
