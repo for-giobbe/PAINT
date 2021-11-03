@@ -204,5 +204,5 @@ As we can see this is a quite low number of contaminat contigs - which we will a
 
 ---
 
-[previous](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_2.md) - [back to main](https://github.com/for-giobbe/PAINT) - [next](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md)
+[prev](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_2.md) / [main](https://github.com/for-giobbe/PAINT) / [next](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md)
 
