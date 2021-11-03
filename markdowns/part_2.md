@@ -34,11 +34,91 @@ PS: i had to modify ```SuperTranscripts/Trinity_gene_splice_modeler.py``` using 
 
 Aseemplies were initially inspected using:
 
-```TrinityStats.pl ```
+```TrinityStats.pl assemblies/crema/crema.Trinity.fasta```
+
+which returns:
+
+```
+################################
+## Counts of transcripts, etc.
+################################
+Total trinity 'genes':	128075
+Total trinity transcripts:	222112
+Percent GC: 39.96
+
+########################################
+Stats based on ALL transcript contigs:
+########################################
+
+	Contig N10: 11723
+	Contig N20: 8688
+	Contig N30: 6871
+	Contig N40: 5534
+	Contig N50: 4475
+
+	Median contig length: 521
+	Average contig: 1626.23
+	Total assembled bases: 361205039
+
+
+#####################################################
+## Stats based on ONLY LONGEST ISOFORM per 'GENE':
+#####################################################
+
+	Contig N10: 8783
+	Contig N20: 5870
+	Contig N30: 4058
+	Contig N40: 2551
+	Contig N50: 1504
+
+	Median contig length: 368
+	Average contig: 789.89
+	Total assembled bases: 101165185
+ ```
 
 and
 
-```TrinityStats.pl ```
+```TrinityStats.pl assemblies/vicia/vicia.Trinity.fasta ```
+
+which returns:
+
+```
+################################
+## Counts of transcripts, etc.
+################################
+Total trinity 'genes':	126565
+Total trinity transcripts:	214540
+Percent GC: 38.88
+
+########################################
+Stats based on ALL transcript contigs:
+########################################
+
+	Contig N10: 3651
+	Contig N20: 2698
+	Contig N30: 2125
+	Contig N40: 1699
+	Contig N50: 1321
+
+	Median contig length: 445
+	Average contig: 792.42
+	Total assembled bases: 170005431
+
+
+#####################################################
+## Stats based on ONLY LONGEST ISOFORM per 'GENE':
+#####################################################
+
+	Contig N10: 3318
+	Contig N20: 2393
+	Contig N30: 1862
+	Contig N40: 1409
+	Contig N50: 1010
+
+	Median contig length: 355
+	Average contig: 644.21
+	Total assembled bases: 81534436
+```
 
 Transcriptomes completeness was asessed also uning [gVolante](https://gvolante.riken.jp/analysis.html) online BUSCO implementation. 
 Assemblies were processes as transcribed nucletoides respectively with BUSCO_v5 Hymenoptera and Fabales ortholog sets.
@@ -104,14 +184,14 @@ Number of non-ACGTN (nt)	0
 
 As we can seee, the scores are rather high! There are quite a lot of multi-copy orthologs 
 but it is somehow expected as we have kept all lowly expressed genes and multiple isoforms.
-NB: vicia seem to have a lower sequence length compared to crema, 
+NB: vicia seem to have a lower transcript length compared to crema, 
 but this does not seem to derive from a fragmente assembly as BUSCO partial genes are just 1.9%!
 
 ---
 
 We can collapse isoforms - as we are going to carry out gene-level DE analyses - using:
 
-
+```
 snakemake -s scripts/snakefile_annotate_cds --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
 ```
 
