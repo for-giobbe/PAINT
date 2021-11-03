@@ -10,8 +10,8 @@ To begin we need to quantitate transcript abundance using the script ```slurm_ab
 After that we can proceed to build expression matrices by:
 
 ```
-abundance_estimates_to_matrix.pl --est_method RSEM  --gene_trans_map assemblies/vicia/vicia.Trinity.fasta.gene_trans_map 
---name_sample_by_basedir 
+abundance_estimates_to_matrix.pl --est_method RSEM
+--gene_trans_map assemblies/vicia/vicia.Trinity.fasta.gene_trans_map --name_sample_by_basedir 
 abundances/vicia/v_rep1/RSEM.isoforms.results 
 abundances/vicia/v_rep2/RSEM.isoforms.results 
 abundances/vicia/v_rep3/RSEM.isoforms.results 
@@ -40,6 +40,21 @@ RSEM_vicia.isoform.TPM.not_cross_norm.runTMM.R
 RSEM_vicia.isoform.counts.matrix
 ```
 
+---
+
+Now we need to remove possible contaminats from the gene-counts matrix which we will use for differential expression:
+
+```
+grep -v vicia_contaminants.list RSEM_vicia.gene.counts.matrix > RSEM_vicia.filtered.gene.counts.matrix
+```
+
+Then DE is performed using:
+
+```
+run_DE_analysis.pl --matrix RSEM_vicia.filtered.gene.counts.matrix --samples_file ../../vicia_samples.txt --method DESeq2 --output vicia_deseq_gene
+```
+
+The resulting output
 
 ---
 

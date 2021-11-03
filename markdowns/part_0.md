@@ -43,6 +43,8 @@ Databases can be downloaded using wget on the following links and redirecting th
 
 Moreover, remember to ```makeblastdb -dbtype prot -in dbs/``` and ```hmmpress dbs/Pfam-A.hmm```
 
+NB: all databases were downloade in October 2021.
+
 ---
 
 ### download the experiment data

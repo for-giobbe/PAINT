@@ -32,7 +32,16 @@ PS: i had to modify ```SuperTranscripts/Trinity_gene_splice_modeler.py``` using 
 
 ---
 
-We assesed transcriptomes completeness uning gVolante online BUSCO implementation. Assemblies were processes as transcribed nucletoides respectively with BUSCO_v5 Hymenoptera and Fabales ortholog sets.
+Aseemplies were initially inspected using:
+
+```TrinityStats.pl ```
+
+and
+
+```TrinityStats.pl ```
+
+Transcriptomes completeness was asessed also uning [gVolante](https://gvolante.riken.jp/analysis.html) online BUSCO implementation. 
+Assemblies were processes as transcribed nucletoides respectively with BUSCO_v5 Hymenoptera and Fabales ortholog sets.
 
 
 Crema results: 
@@ -102,7 +111,8 @@ but this does not seem to derive from a fragmente assembly as BUSCO partial gene
 
 We can collapse isoforms - as we are going to carry out gene-level DE analyses - using:
 
-```
+
+snakemake -s scripts/snakefile_annotate_cds --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
 ```
 
 Then contamint contigs are identified using:
