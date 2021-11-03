@@ -72,7 +72,8 @@ Let's start by building a database of unwanted sequences, which include:
 Use the line:
 
 ``` 
-cat dbs/sortmerna_db/* dbs/vicia_*/* dbs/crema_tera_mtgen/* dbs/hymn_mtgen/* >> dbs/filter/filter.fasta; bowtie2-build dbs/filter/filter.fasta dbs/filter/filter
+mkdir dbs/; filter cat dbs/sortmerna_db/* dbs/vicia_*/* dbs/crema_tera_mtgen/* dbs/hymn_mtgen/* >> dbs/filter/filter.fasta; 
+bowtie2-build dbs/filter/filter.fasta dbs/filter/filter
 ```
 
 Let's execute the snakefile which will generate the filtered reads and qc them. 
