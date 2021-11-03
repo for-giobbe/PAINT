@@ -53,8 +53,8 @@ Trimming has been carried out using a very gentle trimming of PHRED > 5 as indic
 setting a high treshold for the minimum length of 99 read length. Trimmomatic has been set with the parmeters:
 TruSeq3-PE.fa:2:30:10:2:TRUE SLIDINGWINDOW:5:30 LEADING:5 TRAILING:5 MINLEN:99.
 
-The post-trimming qc looks generally fine but there seem to be some rRNAs/mtDNA contaminations, as suggested by the multiple GC peaks:
-they potentially could also derive from other contaminants, but the overepresented sequences from fastQC are all rRNAs, mtDNA and similar.
+The post-trimming qc looks generally fine but there seem to be some rRNAs/mtDNA/ptDNA contaminations, as suggested by the multiple GC peaks:
+they potentially could also derive from other contaminants, but the overepresented sequences from fastQC are all derived from rRNAs, mtDNA and ptDNA.
 
 ---
 
@@ -62,8 +62,8 @@ We need to properly preprocess the reads by removing rRNAs:
 
 Let's start by building a database of unwanted sequences, which include:
 
-- silva (16s, 23s, 18s, 28s)
 - rfam (5S, 5.8s)
+- silva (16s, 23s, 18s, 28s)
 - partial rRNA sequences of Vicia genus (which are exluced from rRNA dbs)
 - vicia plastid and mitochondrion
 - crema (congeneric) mitochondrion
@@ -72,7 +72,8 @@ Let's start by building a database of unwanted sequences, which include:
 Use the line:
 
 ``` 
-mkdir dbs/; filter cat dbs/sortmerna_db/* dbs/vicia_*/* dbs/crema_tera_mtgen/* dbs/hymn_mtgen/* >> dbs/filter/filter.fasta; 
+mkdir dbs/filter;
+cat dbs/sortmerna_db/* dbs/vicia_*/* dbs/crema_tera_mtgen/* dbs/hymn_mtgen/* >> dbs/filter/filter.fasta; 
 bowtie2-build dbs/filter/filter.fasta dbs/filter/filter
 ```
 
@@ -86,28 +87,12 @@ snakemake -s scripts/snakefile_preprocessing_reads_vicia --profile slurm --use-c
 snakemake -s scripts/snakefile_preprocessing_reads_crema --profile slurm --use-conda --cores 16 --profile slurm
 ```
 
-We can then see the number of reads which do not map to the contaminant sequences with the lines:
-
-```
-grep "aligned concordantly 0 times;" reads/vicia_ref/*log```
-```
-
-and
-
-```
-grep "aligned concordantly 0 times;" reads/crema_ref/*log
-```
-
-In vicia cleaned libraries range from 44.4M to 19.1M read pairs 
-
-
-but this should'nt be a problem because it is commonly accepted that normalization will
+In vicia cleaned libraries range from 44.4M to 19.1M read pairs but this should'nt be a problem because it is commonly accepted that normalization will
 properly account for library differences of 2X _circa_.
-
 Moreover we we can see now there is a single GC peak, implying that rRNAs were the major source of contamination and that we managed to succesfully remove that!
 I think this is the correct approach, as it rapresents a non-biological signal which - if removed - won't bias downstream expression analyses.
 
-In crema cleaned libraries range from 13.5M to 14.7M read pairs, with an overall alignment rate inbetween 1.54% and 0.19%
+In crema cleaned libraries range from 13.5M to 14.7M read pairs, with an overall alignment rate inbetween 1.54% and 0.19% 
 
 ---
 

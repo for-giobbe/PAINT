@@ -41,7 +41,7 @@ We can then proceed to map reads on the raw assemblies with the scripts:
 We assesed transcriptomes completeness uning gVolante online BUSCO implementation. Assemblies were processes as transcribed nucletoides respectively with BUSCO_v5 Hymenoptera and Fabales ortholog sets.
 
 
-Vicia reults: 
+Crema results: 
 
 ```
 C:97.1%[S:39.0%,D:58.1%],F:1.3%,M:1.6%
@@ -99,7 +99,10 @@ GC-content (%)	38.88
 Number of non-ACGTN (nt)	0
 ```
 
-As we can seee, the scores are rather high! There are quite a lot of multi-copy orthologs but it is somehow expected as we have kept all lowly expressed genes and multiple isoforms.
+As we can seee, the scores are rather high! There are quite a lot of multi-copy orthologs 
+but it is somehow expected as we have kept all lowly expressed genes and multiple isoforms.
+NB: vicia seem to have a lower sequence length compared to crema, 
+but this does not seem to derive from a fragmente assembly as BUSCO partial genes are just 1.9%!
 
 ---
 

@@ -3,9 +3,9 @@
 
 ---
 
-This repository contains all the code used to study the molecular greundplan of a plant-ant interaction.
+This repository contains all the code used to study the molecular groundplan of a plant-ant interaction.
 
-Two separate RNA-seq experiments were generated for the plant _Vicia faba_ and the ant _Crematogaster scutellaris_.
+Two RNA-seq experiments were generated for the plant _Vicia faba_ and the ant _Crematogaster scutellaris_.
 
 In here _Vicia faba_ will be reverenced as **vicia** and _Crematogaster scutellaris_ as **crema**.
 
@@ -18,3 +18,12 @@ This is WIP:
 - [part 1](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_1.md) - reads qc & pre-processing
 
 - [part 2](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_2.md) - trascriptome assembly, annotation and filtering
+
+- [part 3](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md) - gene Differential Expression analysis in Vicia
+
+- [part 4](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4.md) - Weighted Gene Coexpression Network in Crema
+
+- [part 5](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) - GO enrichment analyses
+
+- [part 6](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) - phylostratigrapy and evolutionary rates
+
