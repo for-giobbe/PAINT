@@ -8,11 +8,11 @@ You can clone the github to a local host and then
 
 **NB1**: all command lines reported here have to be launched from the project main folder.
 
-**NB2**: some commands are executed through slurm but can easily be moved to other scheduler such as qsub.
+**NB2**: some commands are executed through slurm but can easily be moved to other schedulers - such as qsub.
 
 ---
 
-### software
+### install the software
 
 All software can be installed via conda using ```conda env create -f paint.yml```. Here is the complete list, in no particular order:
 
@@ -32,7 +32,7 @@ All software can be installed via conda using ```conda env create -f paint.yml``
 
 ---
 
-### databases 
+### download the databases 
 
 Databases can be downloaded using wget on the following links and redirecting them to the relative folders:
 
@@ -45,7 +45,7 @@ Moreover, remember to ```makeblastdb -dbtype prot -in dbs/``` and ```hmmpress db
 
 ---
 
-### reads
+### download the experiment data
 
 Let's start by downlading the raw RNA-seq reads reads from SRA (only available after the paper is published) into the reads/crema_raw and and reads/vicia_raw folders.
 
@@ -58,24 +58,22 @@ they can be downloaded using:
 
 ```for i in {15728993..15729012}; do fastq-dump --defline-seq '@$sn[_$rn]/$ri' --split-files reads/crema_raw/SRR$i```
 
-### assemblies
-
 Reference transcriptome assemblies are deposited on TSA with accession XXX and YYY respectively for vicia and crema.
 
 ---
 
-### dataset explanation
+### experimental design
 
 This project revolves around the interaction between _Vicia faba_ and _Crematogaster scutellaris_, with two major aims:
 
-1. charachteryze in _Crematogaster scutellaris_ the genes associated with the feeding on _Vicia faba_ nectarium, 
+1. charachterize in _Crematogaster scutellaris_ the genes associated with the feeding on _Vicia faba_ nectarium, 
 in different tissues and at different timepoints.
 
-2. understand wether we could identify in _Vicia faba_ any expression change associated to the interaction.
+2. understand wether we could identify in _Vicia faba_ any expression gene change associated to the interaction.
 
-To do so we generated two RNA-seq dataset:
+To do so we generated two RNA-seq experiments:
 
-1. two different tissue (haead+thorax and abdomen) and four different conditions were sampled for _Crematogaster scutellaris_:
+1. two different tissue (haead+thorax and abdomen) and four different conditions were considered for _Crematogaster scutellaris_:
 
 A - never visited _Vicia faba_
 B - visited by _Vicia faba_ only until 24h before experiment

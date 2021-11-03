@@ -45,6 +45,22 @@ Then we need to identify contaminants and remove them from the abundance tables:
 
 ---
 
+We can asses the BUSCO completenes of our transcriptomes using ```scripts/slurm_abundances_crema``` and ```scripts/slurm_abundances_crema```,
+whic give us respectively:
+
+```
+C:97.1%[S:39.0%,D:58.1%],F:1.3%,M:1.6%
+```
+and
+
+```
+C:88.7%[S:46.9%,D:41.8%],F:1.9%,M:9.4%
+```
+
+As we can seee, the scores are rather high!
+
+---
+
 We can then proceed to annotate the trascriptomes, using Transdecoder and leveraging both pfam and blast searches.
 
 ```
