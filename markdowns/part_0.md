@@ -50,6 +50,7 @@ Moreover, remember to ```makeblastdb -dbtype prot -in dbs/``` and ```hmmpress db
 Let's start by downlading the raw RNA-seq reads reads from SRA (only available after the paper is published) into the reads/crema_raw and and reads/vicia_raw folders.
 
 Vicia has accessions SRR15671599 - SRR15671608
+
 Crema has accessions SRR15728993 - SRR15729012
 
 they can be downloaded using:
@@ -76,13 +77,17 @@ To do so we generated two RNA-seq experiments:
 1. two different tissue (haead+thorax and abdomen) and four different conditions were considered for _Crematogaster scutellaris_:
 
 A - never visited _Vicia faba_
+
 B - visited by _Vicia faba_ only until 24h before experiment
+
 C - visited by _Vicia faba_ only after 24h before experiment 
+
 D - visited by _Vicia faba_ continuously
 
 2. nectarium of _Vicia faba_ which:
 
-N - were never visited by _Crematogaster scutellaris_ and 
+N - were never visited by _Crematogaster scutellaris_
+
 Y - 2' after the visit of _Crematogaster scutellaris_
 
 ---
