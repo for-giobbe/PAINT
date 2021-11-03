@@ -3,6 +3,8 @@
 
 ---
 
+![alt text](https://www.dtservice-fi.com/pf/disinfestazioni-formica-crematogaster-scutellaris/)
+
 This repository contains all the code used to study the molecular groundplan of a plant-ant interaction.
 
 Two RNA-seq experiments were generated for the plant _Vicia faba_ and the ant _Crematogaster scutellaris_.
@@ -10,6 +12,7 @@ Two RNA-seq experiments were generated for the plant _Vicia faba_ and the ant _C
 In here _Vicia faba_ will be reverenced as **vicia** and _Crematogaster scutellaris_ as **crema**.
 
 RNA-seq reads and assemblies have been deposited under the BioProject **PRJNA758979**.
+
 
 This is WIP:
 
