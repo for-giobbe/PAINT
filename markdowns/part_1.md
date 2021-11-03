@@ -87,12 +87,11 @@ snakemake -s scripts/snakefile_preprocessing_reads_vicia --profile slurm --use-c
 snakemake -s scripts/snakefile_preprocessing_reads_crema --profile slurm --use-conda --cores 16 --profile slurm
 ```
 
-In vicia cleaned libraries range from 44.4M to 19.1M read pairs but this should'nt be a problem because it is commonly accepted that normalization will
+In vicia cleaned libraries range from 54.8M to 28.2M read pairs but this should'nt be a problem because it is commonly accepted that normalization will
 properly account for library differences of 2X _circa_.
 Moreover we we can see now there is a single GC peak, implying that rRNAs were the major source of contamination and that we managed to succesfully remove that!
 I think this is the correct approach, as it rapresents a non-biological signal which - if removed - won't bias downstream expression analyses.
-
-In crema cleaned libraries range from 13.5M to 14.7M read pairs, with an overall alignment rate inbetween 1.54% and 0.19% 
+In crema cleaned libraries are less variable in size and ange from 29.4M to 27.0M read pairs. 
 
 ---
 

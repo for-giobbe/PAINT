@@ -1,11 +1,11 @@
-# trascriptome assembly & filtering
+# trascriptomes assembly & filtering
 
 ---
 
-the rationale here is that
-we assembled and mapped reads on every transcripts - but then excluded those of contaminants origin from abundance tables,
-so that	they won't mess	up with	downstream gene expression analyses. Yet through this approach we
-minimized the possibility of reads misalignment.
+the rationale here is to carry out the assembly using the filtered reads and then 
+find possible contaminants (virus, bacteria, _etc_) in order to subsequentlyexclude them from abundance tables,
+Through this approach - suggested [here](https://groups.google.com/g/trinityrnaseq-users/c/P2Ry72h_puQ/m/LpJ8OLzuBAAJ) by Brian Haas - 
+we mimize the possibility of reads misalignment while removing possible contaminats from the differential expression step.
 
 ---
 
@@ -16,7 +16,7 @@ as suggested [here](https://github.com/trinityrnaseq/trinityrnaseq/wiki/Genome-G
 To assemble crema and vicia we have to input the preprocessed reads to Trinity,
 which is run with defeault parameters. 
 
-Let's assemble using the lines:
+Let's assemble using the filtered reads with the lines:
 
 ```
 sbatch scripts/slurm_assemble_crema
@@ -29,12 +29,6 @@ sbatch scripts/slurm_assemble_vicia
 ```
 
 PS: i had to modify ```SuperTranscripts/Trinity_gene_splice_modeler.py``` using ```#!/usr/bin/env python3.4```
-
----
-
-We can then proceed to map reads on the raw assemblies with the scripts:
-
-```scripts/slurm_abundances_vicia``` and ```scripts/slurm_abundances_crema```
 
 ---
 
@@ -103,6 +97,20 @@ As we can seee, the scores are rather high! There are quite a lot of multi-copy 
 but it is somehow expected as we have kept all lowly expressed genes and multiple isoforms.
 NB: vicia seem to have a lower sequence length compared to crema, 
 but this does not seem to derive from a fragmente assembly as BUSCO partial genes are just 1.9%!
+
+---
+
+We can collapse isoforms - as we are going to carry out gene-level DE analyses - using:
+
+```
+```
+
+Then contamint contigs are identified using:
+
+```
+```
+
+As we can see this is a quite low number of contaminat contigs - which we will anyway remove from count tables down the line.
 
 ---
 
