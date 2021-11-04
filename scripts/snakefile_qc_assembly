@@ -1,1 +1,0 @@
-busco -i trinity_vicia/Trinity.fasta -o test -m tran -l hymenoptera_odb10

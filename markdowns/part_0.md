@@ -94,5 +94,4 @@ To do so we generated two RNA-seq experiments:
 
 ---
 
-[back](https://github.com/for-giobbe/PAINT) to main
-
+[main](https://github.com/for-giobbe/PAINT) / [next](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_1.md)

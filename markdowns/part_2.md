@@ -189,7 +189,13 @@ but this does not seem to derive from a fragmente assembly as BUSCO partial gene
 
 ---
 
-We can collapse isoforms - as we are going to carry out gene-level DE analyses - using:
+Vicia trascriptome can be annotated with Transdecoder, using:
+
+```
+snakemake -s scripts/snakefile_annotate_cds --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
+```
+
+Vicia trascriptome can be annotated with Transdecoder, using:
 
 ```
 snakemake -s scripts/snakefile_annotate_cds --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
@@ -198,6 +204,7 @@ snakemake -s scripts/snakefile_annotate_cds --cluster 'sbatch --account=gen_red 
 Then contamint contigs are identified using:
 
 ```
+snakemake -s scripts/snakefile_annotate_cds --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
 ```
 
 As we can see this is a quite low number of contaminat contigs - which we will anyway remove from count tables down the line.

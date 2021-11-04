@@ -42,7 +42,7 @@ RSEM_vicia.isoform.counts.matrix
 
 ---
 
-Now we need to remove possible contaminats from the gene-counts matrix which we will use for differential expression:
+Now we need to remove possible contaminants from the gene-counts matrix which we will use for differential expression:
 
 ```
 grep -v vicia_contaminants.list RSEM_vicia.gene.counts.matrix > RSEM_vicia.filtered.gene.counts.matrix
@@ -56,6 +56,13 @@ run_DE_analysis.pl --matrix RSEM_vicia.filtered.gene.counts.matrix --samples_fil
 
 The resulting output
 
+```
+RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.DE_results
+RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.DE_results.MA_n_Volcano.pdf
+RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.Rscript
+RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.count_matrix
+```
+
 ---
 
-[back](https://github.com/for-giobbe/PAINT) to main
+[prev](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_2.md) / [main](https://github.com/for-giobbe/PAINT) / [next](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4.md)
