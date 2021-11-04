@@ -1,6 +1,6 @@
 ## Requirements and dataset explanation
 
-You can clone the github to a local host and then 
+You can clone the github to a local host and then :
 
 - install the sotware
 - download the databases
@@ -14,12 +14,11 @@ You can clone the github to a local host and then
 
 ### install the software
 
-All software can be installed via conda using ```conda env create -f paint.yml```. Here is the complete list, in no particular order:
+Most software can be installed via conda using ```conda env create -f yml.main```. Here is the complete list, in no particular order:
 
 - trimmomatic
 - fastqc
 - trinity
-- DESeq2
 - Orthofinder
 - blast
 - hmmscan
@@ -29,6 +28,12 @@ All software can be installed via conda using ```conda env create -f paint.yml``
 - snakemake
 - fastqdump
 - busco
+
+Due to conflicts a specific environiment is necessary fot the differential expression analyses. Install it by ```conda env create -f yml.DE``, it contains:
+
+- trinity
+- DESeq2
+- edgeR
 
 ---
 
@@ -43,7 +48,24 @@ Databases can be downloaded using wget on the following links and redirecting th
 
 Moreover, remember to ```makeblastdb -dbtype prot -in dbs/``` and ```hmmpress dbs/Pfam-A.hmm```
 
-NB: all databases were downloade in October 2021.
+Available Fabaceae and Formicidae assemblies for phylostratigrapy and rates analyses were retrieved using:
+
+```
+esearch -db assembly -query "Fabaceae" | esummary | xtract -pattern DocumentSummary 
+-element AssemblyAccession -element AssemblyName -element SpeciesName > fabaceae_genomes.lst
+```
+and
+
+```
+esearch -db assembly -query "Formicidae" | esummary | xtract -pattern DocumentSummary
+-element AssemblyAccession -element AssemblyName -element SpeciesName > formicidae_genomes.lst
+```
+
+Subsequently these lists were manually curated to remove assemblies of conspecific or whick lack annotation.
+ 
+Nucleotides CDS for the two families can be downloaded by ```sh download_fabaceae_cds.sh``` and ```sh download_formicidae_cds.sh```.
+
+NB: all databases were downloade in November 2021.
 
 ---
 
