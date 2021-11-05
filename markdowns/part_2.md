@@ -2,10 +2,10 @@
 
 ---
 
-the rationale here is to carry out the assembly using the filtered reads and then 
-find possible contaminants (virus, bacteria, _etc_) in order to subsequentlyexclude them from abundance tables,
+the rationale here is to carry out the assembly using the reads filtered for rRNAs, mtRNA and ptRNA and then 
+find possible additional contaminants (virus, bacteria, _etc_) in order to subsequently exclude them from abundance tables,
 Through this approach - suggested [here](https://groups.google.com/g/trinityrnaseq-users/c/P2Ry72h_puQ/m/LpJ8OLzuBAAJ) by Brian Haas - 
-we mimize the possibility of reads misalignment while removing possible contaminats from the differential expression step.
+we mimize the possibility of reads misalignment while removing possible contaminants from the differential expression step.
 
 ---
 
@@ -32,7 +32,7 @@ PS: i had to modify ```SuperTranscripts/Trinity_gene_splice_modeler.py``` using 
 
 ---
 
-Aseemplies were initially inspected using:
+Aseemblies were initially inspected using:
 
 ```TrinityStats.pl assemblies/crema/crema.Trinity.fasta```
 
@@ -189,10 +189,10 @@ but this does not seem to derive from a fragmente assembly as BUSCO partial gene
 
 ---
 
-Transcriptome annotation was then carried out usins Transdecoder and:
+Transcriptome annotation is then carried out usins [Transdecoder](https://github.com/TransDecoder/TransDecoder/wiki) and:
 
 - considering just the longest isoform per gene
-- integrating homology searches as CDS retention criteria (Pfam and UniRef90)
+- integrating homology searches as CDS retention criteria (Pfam and SwissProt)
 
 
 Vicia trascriptome can be annotated using:
@@ -207,7 +207,21 @@ Crema trascriptome can be annotated using:
 snakemake -s scripts/snakefile_annotate_cds_crema --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
 ```
 
-Having annotated transcriptomes allows to identiy contamint contigs, using:
+Both analyses will return a number of files:
+
+```
+vicia.Trinity.fasta.transdecoder.bed
+vicia.Trinity.fasta.transdecoder.cds
+vicia.Trinity.fasta.transdecoder.gff3
+vicia.Trinity.fasta.transdecoder.pep
+```
+
+---
+
+Then contaminant contigs are identified.
+In this step proteomes undergo homology serches against UniRef90 (which differently from UniProt includes taxonomy) and reurn all hits taxaid.
+Subsequently [Taxonkit](https://bioinf.shenwei.me/taxonkit/) will exctract thier full lineage and
+flag as contaminants all contigs which don not have all hits as respectively pancrustacea or viridipalntae.
 
 ```
 snakemake -s scripts/snakefile_filter_contaminants_transcripts_vicia --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
@@ -219,13 +233,9 @@ and
 snakemake -s scripts/snakefile_filter_contaminants_transcripts_vicia --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
 ```
 
-In this step proteomes undergo homology serches against UniRef90 and reurn all hits taxaid. 
-Subsequently [Taxonkit](https://bioinf.shenwei.me/taxonkit/) will exctract thier full lineage and
-flag as contaminants all contigs which don not have all hits as respectively pancrustacea or viridipalntae.
-
-As we can see this is a quite low number of contaminat contigs - which indeed we will remove from count tables down the line.
+As we can see this is a quite low number of contaminant contigs - which indeed we will remove from count tables down the line.
 
 ---
 
-[prev](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_2.md) / [main](https://github.com/for-giobbe/PAINT) / [next](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md)
+[prev](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_1.md) / [main](https://github.com/for-giobbe/PAINT) / [next](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md)
 

@@ -93,7 +93,8 @@ Moreover we we can see now there is a single GC peak, implying that rRNAs were t
 I think this is the correct approach, as it rapresents a non-biological signal which - if removed - won't bias downstream expression analyses.
 In crema cleaned libraries are much less variable in size and range from 29.4M to 27.0M read pairs. 
 
-The fastqc files can be found [here](https://github.com/for-giobbe/PAINT/tree/main/reads/crema_ref) and [here](https://github.com/for-giobbe/PAINT/tree/main/reads/vicia_ref)
+The fastqc files can be found [here](https://github.com/for-giobbe/PAINT/tree/main/reads/crema_ref) for crema 
+and [here](https://github.com/for-giobbe/PAINT/tree/main/reads/vicia_ref) for vicia.
 
 ---
 

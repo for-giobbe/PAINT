@@ -42,12 +42,13 @@ Due to conflicts a specific environiment is necessary fot the differential expre
 While smaller ones are allready present in the repository,
 large databases can be downloaded using wget on the following links and redirecting them to the relative folders:
 
-- [sortmerna dbs](https://github.com/biocore/sortmerna/tree/master/data/rRNA_databases) and move all in ```dbs/sortmerna/db```
-- pfam at ```ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz``` and gunzip in ```dbs/sortmerna/db```
-- [uniref90](https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz) and gunzip in ```dbs/sortmerna/db```
-- taxdump at ```ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz``` and ```tar -zxvf``` in ```dbs/sortmerna/db```
+- sortmerna_dbs at ```https://github.com/biocore/sortmerna/tree/master/data/rRNA_databases``` and move all in ```dbs/sortmerna_db```
+- pfam at ```ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz``` in ```dbs/pfam```
+- swissprot at ```https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz``` in ```dbs/swissprot```
+- uniref90 at ```https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz``` in ```dbs/uniref90```
+- taxdump at ```ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz``` and ```tar -zxvf``` in ```dbs/taxdump```
 
-Moreover, remember to ```makeblastdb -dbtype prot -in dbs/``` and ```hmmpress dbs/Pfam-A.hmm```
+Moreover, remember to ```makeblastdb -dbtype prot -in dbs/uniref90``` and ```makeblastdb -dbtype prot -in dbs/swissprot``, along with ```hmmpress dbs/Pfam-A.hmm```.
 
 Available Fabaceae and Formicidae assemblies for phylostratigrapy and rates analyses were retrieved using:
 
