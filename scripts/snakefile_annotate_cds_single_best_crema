@@ -1,0 +1,75 @@
+species = ['crema']
+
+chunk = [str(x).zfill(2) for x in range(1,21)]
+
+rule all:
+	input:
+               	 cds='crema.Trinity.fasta.transdecoder.cds',
+                 gff='crema.Trinity.fasta.transdecoder.gff3',
+                 pep='crema.Trinity.fasta.transdecoder.pep'
+	shell:  ''
+
+rule transdecoder_longorfs:
+	input:
+		'assemblies/crema/crema.Trinity.fasta'
+	output:
+		'assemblies/crema/longest_orfs.pep'
+	params:
+		 basename='assemblies/crema/'
+	conda:   '../env/transdecoder.yaml'
+	shell:   'TransDecoder.LongOrfs -t {input} --output_dir {params.basename}'
+
+rule split_fasta:
+	input:
+		 rules.transdecoder_longorfs.output
+	output:
+		 expand('assemblies/crema/longest_orfs.part-{chunk}.pep', chunk = chunk)
+	conda:   '../env/pyfasta.yaml'
+	shell:   'fasta-splitter -n-parts 20 --out-dir assemblies/crema/ {input}'
+
+rule hmmscan:
+	input:
+		 'assemblies/crema/longest_orfs.part-{chunk}.pep'
+	output:
+		 'assemblies/crema/longest_orfs.pep.part-{chunk}.fasta.pfam.domtblout'
+	threads: 4
+	conda:   '../env/hmmscan.yaml'
+	shell:   'hmmscan --cpu {threads} --domtblout {output} dbs/pfam/Pfam-A.hmm {input}'
+
+rule blastp:
+	input:
+		 'assemblies/crema/longest_orfs.part-{chunk}.pep'
+	output:
+	 	 'assemblies/crema/longest_orfs.pep.part-{chunk}.fasta.blastp.outfmt6'
+	threads: 4
+	conda:   '../env/blast.yaml'
+	shell:   'blastp -query {input} -db dbs/swissprot/uniprot_sprot.fasta -max_target_seqs 1 -outfmt 6 -evalue 1e-5 -num_threads {threads} > {output}'
+
+rule merge_blast:
+	input: 
+		  expand('assemblies/crema/longest_orfs.pep.part-{chunk}.fasta.blastp.outfmt6', chunk = chunk)
+	output:
+		  'assemblies/crema/crema.outfmt6'
+	shell:    'cat {input} >> {output}'
+
+rule merge_hmmer:
+        input:                                                                            
+              	  expand('assemblies/crema/longest_orfs.pep.part-{chunk}.fasta.pfam.domtblout', chunk = chunk)
+        output:
+                  'assemblies/crema/crema.domtblout'
+        shell:	  'cat {input} >> {output}'
+
+rule transdecoder_predict:
+	input:
+		 assembly = 'assemblies/crema/crema.Trinity.fasta',
+		 blast    = 'assemblies/crema/crema.outfmt6',
+		 hmmscan  = 'assemblies/crema/crema.domtblout'
+	output:
+		 cds='crema.Trinity.fasta.transdecoder.cds',
+                 gff='crema.Trinity.fasta.transdecoder.gff3',
+                 pep='crema.Trinity.fasta.transdecoder.pep'
+	params:
+		 basename='assemblies/crema'
+	conda:   '../env/transdecoder.yaml'
+	shell:   'TransDecoder.Predict -t {input.assembly} --retain_pfam_hits {input.hmmscan} --retain_blastp_hits {input.blast} --single_best_only --output_dir {params.basename}'
+
