@@ -41,9 +41,9 @@ To check samples:
 
 Next step is to execute the snakefiles for thq qc, which will carry out:
 
-- adapter removal / reads trimming (trimmomatic)
+- adapter removal / reads trimming [trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
 
-- qc (fastqc)
+- quality check [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
 ```snakemake -s scripts/snakefile_qc_reads_vicia --profile slurm --use-conda --cores 16 --profile slurm```
 
@@ -60,7 +60,7 @@ they potentially could also derive from other contaminants, but the overepresent
 
 We need to properly preprocess the reads by removing rRNAs:
 
-Let's start by building a database of unwanted sequences, which include:
+Let's start by building a database of undesired sequences, which include:
 
 - rfam (5S, 5.8s)
 - silva (16s, 23s, 18s, 28s)
@@ -89,9 +89,11 @@ snakemake -s scripts/snakefile_preprocessing_reads_crema --profile slurm --use-c
 
 In vicia cleaned libraries range from 54.8M to 28.2M read pairs but this should'nt be a problem because it is commonly accepted that normalization will
 properly account for library differences of 2X _circa_.
-Moreover we we can see now there is a single GC peak, implying that rRNAs were the major source of contamination and that we managed to succesfully remove that!
+Moreover we we can see now there is a single GC peak, implying that rRNAs were the major source of contamination and that we managed to succesfully remove those!
 I think this is the correct approach, as it rapresents a non-biological signal which - if removed - won't bias downstream expression analyses.
-In crema cleaned libraries are less variable in size and ange from 29.4M to 27.0M read pairs. 
+In crema cleaned libraries are much less variable in size and range from 29.4M to 27.0M read pairs. 
+
+The fastqc files can be found [here](https://github.com/for-giobbe/PAINT/tree/main/reads/crema_ref) and [here](https://github.com/for-giobbe/PAINT/tree/main/reads/vicia_ref)
 
 ---
 

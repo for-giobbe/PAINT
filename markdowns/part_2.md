@@ -189,25 +189,41 @@ but this does not seem to derive from a fragmente assembly as BUSCO partial gene
 
 ---
 
-Vicia trascriptome can be annotated with Transdecoder, using:
+Transcriptome annotation was then carried out usins Transdecoder and:
+
+- considering just the longest isoform per gene
+- integrating homology searches as CDS retention criteria (Pfam and UniRef90)
+
+
+Vicia trascriptome can be annotated using:
 
 ```
-snakemake -s scripts/snakefile_annotate_cds --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
+snakemake -s scripts/snakefile_annotate_cds_vicia --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
 ```
 
-Vicia trascriptome can be annotated with Transdecoder, using:
+Crema trascriptome can be annotated using:
 
 ```
-snakemake -s scripts/snakefile_annotate_cds --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
+snakemake -s scripts/snakefile_annotate_cds_crema --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
 ```
 
-Then contamint contigs are identified using:
+Having annotated transcriptomes allows to identiy contamint contigs, using:
 
 ```
-snakemake -s scripts/snakefile_annotate_cds --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
+snakemake -s scripts/snakefile_filter_contaminants_transcripts_vicia --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
 ```
 
-As we can see this is a quite low number of contaminat contigs - which we will anyway remove from count tables down the line.
+and
+
+```
+snakemake -s scripts/snakefile_filter_contaminants_transcripts_vicia --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
+```
+
+In this step proteomes undergo homology serches against UniRef90 and reurn all hits taxaid. 
+Subsequently [Taxonkit](https://bioinf.shenwei.me/taxonkit/) will exctract thier full lineage and
+flag as contaminants all contigs which don not have all hits as respectively pancrustacea or viridipalntae.
+
+As we can see this is a quite low number of contaminat contigs - which indeed we will remove from count tables down the line.
 
 ---
 

@@ -39,7 +39,8 @@ Due to conflicts a specific environiment is necessary fot the differential expre
 
 ### download the databases 
 
-Databases can be downloaded using wget on the following links and redirecting them to the relative folders:
+While smaller ones are allready present in the repository,
+large databases can be downloaded using wget on the following links and redirecting them to the relative folders:
 
 - [sortmerna dbs](https://github.com/biocore/sortmerna/tree/master/data/rRNA_databases) and move all in ```dbs/sortmerna/db```
 - pfam at ```ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz``` and gunzip in ```dbs/sortmerna/db```
@@ -61,11 +62,11 @@ esearch -db assembly -query "Formicidae" | esummary | xtract -pattern DocumentSu
 -element AssemblyAccession -element AssemblyName -element SpeciesName > formicidae_genomes.lst
 ```
 
-Subsequently these lists were manually curated to remove assemblies of conspecific or whick lack annotation.
+Subsequently these lists were manually curated to remove assemblies of conspecifics or whick lack annotation.
  
 Nucleotides CDS for the two families can be downloaded by ```sh download_fabaceae_cds.sh``` and ```sh download_formicidae_cds.sh```.
 
-NB: all databases were downloade in November 2021.
+NB: databases were downloade in November 2021.
 
 ---
 

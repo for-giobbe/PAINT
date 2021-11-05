@@ -1,12 +1,12 @@
-species = ['crema']
+species = ['vicia']
 
 chunk = [str(x).zfill(2) for x in range(1,21)]
 
 rule all:
 	input:
-		cds='annotations/crema/crema.final.raw.transdecoder.cds',
-		gff='annotations/crema/crema.final.raw.transdecoder.gff3',
-		pep='annotations/crema/crema.final.raw.transdecoder.pep'
+		cds='annotations/vicia/vicia.final.raw.transdecoder.cds',
+		gff='annotations/vicia/vicia.final.raw.transdecoder.gff3',
+		pep='annotations/vicia/vicia.final.raw.transdecoder.pep'
 	shell:  'rm -f -r pipeliner* snakejob* *longest_isoform*'
 
 rule longest_isoform:
