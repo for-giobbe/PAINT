@@ -210,16 +210,18 @@ snakemake -s scripts/snakefile_annotate_cds_crema --cluster 'sbatch --account=ge
 Both analyses will return a number of files:
 
 ```
-vicia.Trinity.fasta.transdecoder.bed
-vicia.Trinity.fasta.transdecoder.cds
-vicia.Trinity.fasta.transdecoder.gff3
-vicia.Trinity.fasta.transdecoder.pep
+...Trinity.fasta.transdecoder.bed
+...Trinity.fasta.transdecoder.cds
+...Trinity.fasta.transdecoder.gff3
+....Trinity.fasta.transdecoder.pep
 ```
+
+which we can move to their place by```mv crema.Trinity.fasta.transdecoder.* annotations/crema/``` and  ```mv vicia.Trinity.fasta.transdecoder.* annotations/vicia```.
 
 ---
 
 Then contaminant contigs are identified.
-In this step proteomes undergo homology serches against UniRef90 (which differently from UniProt includes taxonomy) and reurn all hits taxaid.
+In this step proteomes undergo homology serches against UniRef90 - which differently from UniProt includes taxonomy - and reurn all hits taxa ids.
 Subsequently [Taxonkit](https://bioinf.shenwei.me/taxonkit/) will exctract thier full lineage and
 flag as contaminants all contigs which don not have all hits as respectively pancrustacea or viridipalntae.
 
