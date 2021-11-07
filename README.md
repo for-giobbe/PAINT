@@ -22,11 +22,11 @@ This is WIP:
 
 - [**part 2**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_2.md) - trascriptome assembly, annotation and filtering
 
-- [**part 3**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md) - gene Differential Expression analysis in Vicia
+- [**part 3**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md) - DE in vicia
 
-- [**part 4**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4.md) - Weighted Gene Coexpression Network in Crema
+- [**part 4**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4.md) - WGCNA in crema
 
-- [**part 5**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) - GO enrichment analyses
+- [**part 5**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) - GO/KO annotation and enrichment analyses
 
 - [**part 6**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) - phylostratigrapy and evolutionary rates
 

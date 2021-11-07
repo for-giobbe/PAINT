@@ -1,11 +1,13 @@
-## gene Differential Expression analysis in Vicia
+## Differential Expression in vicia
 
 In this step we will carry out qc of the two species RNA-seq libraries and preprocess them.
 
+
 ---
 
-To begin we need to quantitate transcript abundance using the script ```slurm_abundances_vicia``` which uses bowtie and RSEM.
 
+To begin we need to quantitate transcript abundance using the script ```slurm_abundances_vicia``` which uses bowtie and RSEM.
+We need to move the folder generated in the main directory to the ```abundances/vicia``` directory 
 
 After that we can proceed to build expression matrices by:
 
@@ -42,6 +44,7 @@ RSEM_vicia.isoform.counts.matrix
 
 ---
 
+
 Now we need to remove possible contaminants from the gene-counts matrix which we will use for differential expression:
 
 ```
@@ -54,7 +57,7 @@ Then DE is performed using:
 run_DE_analysis.pl --matrix RSEM_vicia.filtered.gene.counts.matrix --samples_file ../../vicia_samples.txt --method DESeq2 --output vicia_deseq_gene
 ```
 
-The resulting output
+The resulting outputs:
 
 ```
 RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.DE_results
@@ -64,5 +67,6 @@ RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.count_matrix
 ```
 
 ---
+
 
 [prev](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_2.md) / [main](https://github.com/for-giobbe/PAINT) / [next](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4.md)

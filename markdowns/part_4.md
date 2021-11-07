@@ -2,7 +2,9 @@
 
 Here a different approach than the one used for vicia will be leveraged, due to the multiple tissues / conditions. 
 
+
 ---
+
 
 Nonetheless the initial steps are different to those carried out for vicia. Transcript abundance can be obtained 
 using the script ```slurm_abundances_crema``` which also uses bowtie and RSEM.
@@ -18,5 +20,22 @@ after moving the outputs to the right place with ```mv RSEM_vicia.* abundances/v
 ```
 ```
 
+
+---
+
+
 *NB:* while for DE analyses we used the raw gene-counts matrix as input, WGCNA requires allready normalized counts
 and se will leverage TMM-normalized TPMs.  
+
+```
+library(edgeR)
+
+> GenewiseCounts <- read.delim("GSE60450_Lactation-GenewiseCounts.txt.gz", row.names="EntrezGeneID")
+colnames(GenewiseCounts) <- substring(colnames(GenewiseCounts),1,7)
+
+> y <- DGEList(GenewiseCounts[,-1], group=group, genes=GenewiseCounts[,1,drop=FALSE])
+options(digits=3)
+
+y <- calcNormFactors(y)
+y$samples
+```

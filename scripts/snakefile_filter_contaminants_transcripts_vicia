@@ -1,38 +1,38 @@
-chunk = [str(x).zfill(2) for x in range(40)]
+chunk = [str(x).zfill(2) for x in range(1,41)]
 
 rule all:
 	input:
-		 'vicia.blastp.contaminants_contigs',
+		 'contaminants/vicia/vicia.blastp.contaminants_contigs.lst',
 	shell:	 'rm *lst snakejob*'
 
 rule split_fasta:
 	input:
-		 'vicia.Trinity.fasta.transdecoder.pep'
+		 'contaminants/vicia/vicia.Trinity.fasta.transdecoder.pep'
 	output:
-                 expand('vicia.blastp.contaminants_contigs-{chunk}.fasta', chunk = chunk)
-	conda:   '../env/pyfasta.yaml'
-	shell:   'fasta-splitter -n-parts 40 --out-dir assemblies/vicia/ {input}'
+                 expand('contaminants/vicia/vicia.Trinity.fasta.transdecoder.part-{chunk}.pep', chunk = chunk)
+	conda:   '../env/fasta-splitter.yaml'
+	shell:   'fasta-splitter -n-parts 40 --measure seq --out-dir contaminants/vicia/ {input}'
 
 rule blastp:
 	input:
-                 'vicia.blastp.contaminants_contigs-{chunk}.fasta'
+                 'contaminants/vicia/vicia.Trinity.fasta.transdecoder.part-{chunk}.pep'
 	output:
-                 'vicia.{chunk}.blastp.outfmt6'
+                 'contaminants/vicia/vicia.{chunk}.blastp.outfmt6'
 	threads: 6
-	conda:   'env/blast.yaml'
-	shell:   'blastp -query {input} -db dbs/uniref90/uniref90.fasta -task blasp-fast -max_hsps 1 -evalue 1e-5 -outfmt "6 qseqid sseqid evalue staxids" -num_threads 6 {threads} > {output}'
+	conda:	 '../env/diamond.yaml'
+	shell:   'blastp -query {input} -db dbs/uniref90/uniref90.fasta -evalue 1e-5 -outfmt "6 qseqid sseqid evalue staxids"  -num_threads {threads} > {output}'
 
 rule taxonomy_assignement:
 	input:
-		 rules.diamond.output
+		 rules.blastp.output
 	output:
-		 contaminants=temp('vicia.{chunk}.contaminants.lst'),
-	conda:   'env/taxonkit.yaml'
-	shell:   'bash taxonomy_filter.sh {input} {output.contaminants}' 
+		 contaminants=temp('contaminants/vicia/vicia.{chunk}.contaminants.lst'),
+	conda:   '../env/taxonkit.yaml'
+	shell:   'bash taxonomy_filter.sh {input} {output.contaminants} Viridiplantae' 
 
 rule merge_contaminants_contigs:
         input:
-                  expand('vicia.{chunk}.contaminants.lst', chunk = chunk)
+                  expand('contaminants/vicia/vicia.{chunk}.contaminants.lst', chunk = chunk)
         output:
-                  'vicia.blastp.contaminants_contigs'
+                  'contaminants/vicia/vicia.blastp.contaminants_contigs.lst'
         shell:    'cat {input} >> {output}'
