@@ -8,6 +8,8 @@ In this step we will carry out qc of the two species RNA-seq libraries and prepr
 
 To begin we need to quantitate transcript abundance using the script ```slurm_abundances_vicia``` which uses bowtie and RSEM.
 We need to move the folder generated in the main directory to the ```abundances/vicia``` directory 
+Move the outputs from the main folder to the appropriate folder usings  ```mv _rep*  abundances/vicia```.
+
 
 After that we can proceed to build expression matrices by:
 
