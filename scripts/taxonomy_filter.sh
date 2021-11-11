@@ -1,7 +1,8 @@
-# script to identify contaminat contigs
-# $1 is blastp output 
-# $2 is contaminants contigs list
-# $3 is the taxonomy to which all the blast hits must derive (e.g. Pancrustacea or Viridiplantae)
+# script to identify contaminat contigs from nr+blastp result
+# $1 - blastp input 
+# $2 - contaminants contigs output
+# $3 - target taxonomy from which blast hits must derive (e.g. Pancrustacea or Viridiplantae)
+# $4 - proportion of blast hits must derive from target taxonomy (e.g. 0.8 or 0.5)
 
 for i in $(awk -F "\t" '{print $1}' $1 | sort -u);
 
@@ -19,7 +20,9 @@ for i in $(awk -F "\t" '{print $1}' $1 | sort -u);
 
         tot=$(wc -l $1"tmp.lineage.lst" | awk '{print $1}');
 
-	if ! [[ $(grep -c $3 $1"tmp.lineage.lst") -ge tot ]] 
+        bound=$(echo "$tot * $4" | bc | awk -F "." '{print $1}')
+
+	if ! [[ $(grep -c $3 $1"tmp.lineage.lst") -ge bound ]] 
 	        then echo $i >> $2;
         fi;
 

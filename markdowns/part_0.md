@@ -46,6 +46,9 @@ large databases can be downloaded using wget on the following links and redirect
 - pfam at ```ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz``` in ```dbs/pfam```
 - swissprot at ```https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz``` in ```dbs/swissprot```
 - uniref90 at ```https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz``` in ```dbs/uniref90```
+- download nr BLAST database with ```for i in {1..55}; do wget https://ftp.ncbi.nlm.nih.gov/blast/db/nr.$i.tar.gz; tar -xf nr.$i.tar.gz; done```
+- wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/prot.accession2taxid.gz
 - taxdump at ```ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz``` and ```tar -zxvf``` in ```dbs/taxdump```
 
 Moreover, remember to ```makeblastdb -dbtype prot -in dbs/uniref90``` and ```makeblastdb -dbtype prot -in dbs/swissprot``, along with ```hmmpress dbs/Pfam-A.hmm```.

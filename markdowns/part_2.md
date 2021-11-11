@@ -235,7 +235,14 @@ and
 snakemake -s scripts/snakefile_filter_contaminants_transcripts_vicia --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
 ```
 
-As we can see this is a quite low number of contaminant contigs - which indeed we will remove from count tables down the line.
+then we can extract contaminants contigs using the following line to cross check them in online blast:
+
+```
+for i in $( cat crema.38.contaminants.lst); do sed -n -e "/$i/,/TRINITY/ p" crema.Trinity.fasta.transdecoder.part-38.pep | head -n -1 | awk '{print $1}'; done 
+```
+
+As we can see, contaminant contigs are <10% which is an expected amount, as a flebile amount of reads can generate a lot of contaminants contigs -
+ which indeed we will remove from count tables down the line.
 
 ---
 
