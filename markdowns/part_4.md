@@ -59,12 +59,27 @@ abundances/crema/D_CT_rep5/RSEM.isoforms.results
 
 after moving the outputs to the right place with ```mv RSEM_vicia.* abundances/vicia/``` we can proceed to remove contaminants:
 
+first we need to reformat the contaminants list:
+
+```
+awk -F "_" 'NF{NF-=1};1' contaminants/crema/crema.blastp.contaminants_contigs.lst | sed 's/ /_/g' > contaminants/crema/crema.blastp.contaminants_genes.lst
+```
+
+and then generate a raw-counts matrix without them:
+
+```
+grep -v -f contaminants/crema/crema.blastp.contaminants_genes.lst abundances/crema/RSEM_crema.gene.counts.matrix > abundances/crema/RSEM_crema.filtered.gene.counts.matrix
+```
+
+Then we perform an exploratory DE analysis using DESeq2:
+
 ```
 run_DE_analysis.pl --matrix crema/RSEM_crema.gene.counts.matrix --samples_file ../samples_crema.txt --method DESeq2 --output crema_deseq_gene
 ```
 
 
 ---
+
 
 
 *NB:* while for DE analyses we used the raw gene-counts matrix as input, WGCNA requires normalized counts
@@ -81,8 +96,31 @@ options(digits=3)
 
 y <- calcNormFactors(y)
 y$samples
+norm_counts <- cpm(y)
 ```
 
+```
+#/ make the DGEList:
+y <- DGEList(...)
+
+#/ calculate TMM normalization factors:
+y <- calcNormFactors(y)
+
+#/ get the normalized counts:
+cpms <- cpm(y, log=FALSE)
+```
+
+```
+library(edgeR)
+
+rnaseqMatrix = read.table("RSEM_crema.isoform.TPM.not_cross_norm", header=T, row.names=1, com='', check.names=F)
+rnaseqMatrix = as.matrix(rnaseqMatrix)
+rnaseqMatrix = round(rnaseqMatrix)
+exp_study = DGEList(counts=rnaseqMatrix, group=factor(colnames(rnaseqMatrix)))
+exp_study = calcNormFactors(exp_study)
+exp_study$samples$eff.lib.size = exp_study$samples$lib.size * exp_study$samples$norm.factors
+write.table(exp_study$samples, file="RSEM_crema.isoform.TPM.not_cross_norm.TMM_info.txt", quote=F, sep="\t", row.names=F)
+```
 
 ---
 

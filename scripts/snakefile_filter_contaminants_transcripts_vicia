@@ -18,9 +18,9 @@ rule blastp:
                  'contaminants/vicia/vicia.Trinity.fasta.transdecoder.part-{chunk}.pep'
 	output:
                  'contaminants/vicia/vicia.{chunk}.blastp.outfmt6'
-	threads: 6
+	threads: 8
 	conda:	 '../env/diamond.yaml'
-	shell:   'blastp -query {input} -db dbs/uniref90/uniref90.fasta -evalue 1e-5 -outfmt "6 qseqid sseqid evalue staxids"  -num_threads {threads} > {output}'
+	shell:   'blastp -query {input} -task blastp-fast -db dbs/nr/nr -max_target_seqs 50 -max_hsps 1 -evalue 1e-7 -outfmt "6 qseqid sseqid evalue staxids"  -num_threads {threads} > {output}'
 
 rule taxonomy_assignement:
 	input:
@@ -28,7 +28,7 @@ rule taxonomy_assignement:
 	output:
 		 contaminants=temp('contaminants/vicia/vicia.{chunk}.contaminants.lst'),
 	conda:   '../env/taxonkit.yaml'
-	shell:   'bash taxonomy_filter.sh {input} {output.contaminants} Viridiplantae' 
+	shell:   'bash scripts/taxonomy_filter.sh {input} {output.contaminants} Viridiplantae 0.8' 
 
 rule merge_contaminants_contigs:
         input:
