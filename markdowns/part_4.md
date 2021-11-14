@@ -81,46 +81,30 @@ run_DE_analysis.pl --matrix crema/RSEM_crema.gene.counts.matrix --samples_file .
 ---
 
 
-
 *NB:* while for DE analyses we used the raw gene-counts matrix as input, WGCNA requires normalized counts
-and for this purpose we will leverage TMM-normalized TPMs.  
+and for this purpose we will leverage TMM-normalized CPMs. 
+These can be opbtained leveraging edgeR: 
 
 ```
 library(edgeR)
 
-> GenewiseCounts <- read.delim("GSE60450_Lactation-GenewiseCounts.txt.gz", row.names="EntrezGeneID")
-colnames(GenewiseCounts) <- substring(colnames(GenewiseCounts),1,7)
-
-> y <- DGEList(GenewiseCounts[,-1], group=group, genes=GenewiseCounts[,1,drop=FALSE])
-options(digits=3)
-
+GenewiseCounts <- read.delim("abundances/crema/RSEM_crema.filtered.gene.counts.matrix")
+y <- DGEList(GenewiseCounts[,-1], genes=GenewiseCounts[,1,drop=FALSE])
+keep <- filterByExpr(y)
+summary(keep)
+y <- y[keep, , keep.lib.sizes=FALSE]
 y <- calcNormFactors(y)
-y$samples
-norm_counts <- cpm(y)
-```
-
-```
-#/ make the DGEList:
-y <- DGEList(...)
-
-#/ calculate TMM normalization factors:
-y <- calcNormFactors(y)
-
-#/ get the normalized counts:
 cpms <- cpm(y, log=FALSE)
+plotMDS(cpms)
+write.table(cpms, file="abundances/crema/RSEM_crema.filtered.gene.TMM.matrix", quote=F, sep="\t", row.names=F
 ```
 
-```
-library(edgeR)
 
-rnaseqMatrix = read.table("RSEM_crema.isoform.TPM.not_cross_norm", header=T, row.names=1, com='', check.names=F)
-rnaseqMatrix = as.matrix(rnaseqMatrix)
-rnaseqMatrix = round(rnaseqMatrix)
-exp_study = DGEList(counts=rnaseqMatrix, group=factor(colnames(rnaseqMatrix)))
-exp_study = calcNormFactors(exp_study)
-exp_study$samples$eff.lib.size = exp_study$samples$lib.size * exp_study$samples$norm.factors
-write.table(exp_study$samples, file="RSEM_crema.isoform.TPM.not_cross_norm.TMM_info.txt", quote=F, sep="\t", row.names=F)
-```
+---
+
+
+Then WGCNA
+
 
 ---
 
