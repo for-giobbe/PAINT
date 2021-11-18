@@ -20,13 +20,16 @@ This is WIP:
 
 - [**part 1**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_1.md) - reads qc & pre-processing
 
-- [**part 2**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_2.md) - trascriptome assembly, annotation and filtering
+- [**part 2**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_2.md) - trascriptomes assembly, annotation and filtering
 
-- [**part 3**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md) - DE in vicia
+- [**part 3**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md) - expression analyses in vicia
 
-- [**part 4**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4.md) - WGCNA in crema
+- [**part 4**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4.md) - expression analyses in crema
 
-- [**part 5**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) - GO/KO annotation and enrichment analyses
+- [**part 5**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) - GO/KO annotation and enrichment
 
 - [**part 6**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) - phylostratigrapy and evolutionary rates
 
+- [**part 7**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md) - addendum 1 - metagenomics
+
+- [**part 8**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_8.md) - addendum 2 - proteomics
