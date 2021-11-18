@@ -100,7 +100,7 @@ Everyting can be seamlessly performed using the command:
 
 
 ```
-Rscript scripts/WGCNA_crema.R
+Rscript scripts/WGCNA_crema.Rscript
 ```
 
 
