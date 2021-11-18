@@ -57,9 +57,9 @@ abundances/crema/D_CT_rep5/RSEM.isoforms.results
 --out_prefix RSEM_crema
 ```
 
-after moving the outputs to the right place with ```mv RSEM_vicia.* abundances/vicia/``` we can proceed to remove contaminants:
+after moving the outputs to the right place with ```mv RSEM_vicia.* abundances/vicia/``` we can proceed to remove contaminants.
 
-first we need to reformat the contaminants list:
+As before, we need to reformat the contaminants list:
 
 ```
 awk -F "_" 'NF{NF-=1};1' contaminants/crema/crema.blastp.contaminants_contigs.lst | sed 's/ /_/g' > contaminants/crema/crema.blastp.contaminants_genes.lst
@@ -81,29 +81,34 @@ run_DE_analysis.pl --matrix crema/RSEM_crema.gene.counts.matrix --samples_file .
 ---
 
 
-*NB:* while for DE analyses we used the raw gene-counts matrix as input, WGCNA requires normalized counts
-and for this purpose we will leverage TMM-normalized CPMs. 
-These can be opbtained leveraging edgeR: 
+Since in this experiment several conditions are present, a WGCNA approach is more suitable.
+Everyting can be seamlessly performed using the command:
+
 
 ```
-library(edgeR)
-
-GenewiseCounts <- read.delim("abundances/crema/RSEM_crema.filtered.gene.counts.matrix")
-y <- DGEList(GenewiseCounts[,-1], genes=GenewiseCounts[,1,drop=FALSE])
-keep <- filterByExpr(y)
-summary(keep)
-y <- y[keep, , keep.lib.sizes=FALSE]
-y <- calcNormFactors(y)
-cpms <- cpm(y, log=FALSE)
-plotMDS(cpms)
-write.table(cpms, file="abundances/crema/RSEM_crema.filtered.gene.TMM.matrix", quote=F, sep="\t", row.names=F
+Rscript scripts/WGCNA_crema.R
 ```
 
 
----
+While for DE analyses we used the raw gene-counts matrix as input, WGCNA requires normalized counts
+and for this purpose the TMM-normalized CPMs provided by edgeR are leveraged. Moreover - as suggested by -
+we resticted the Gene Network inference to the transcripts which are consistently
+expressed troughout all samples,  (27169 genes are kept
 
 
-Then WGCNA
+A signed network has been inferred with a power of 6, 
+a dendrom cut height of 0.1 and leveraging the bidweight midcorrelation.
+The trait file is and the expression matrix is the same used for the preliminary DE analysis.
+
+
+The Rscript will generate several files, including:
+
+- genes in modules positively associated to short term EFN feeding in head+thorax: ```CT_S_POS_modules_genes.lst```
+- genes in modules positively associated to short term EFN feeding in the abdomen: ```AD_S_POS_modules_genes.lst```
+- genes in modules positively associated to long term EFN feeding in head+thorax: ```CT_L_POS_modules_genes.lst```
+- genes in modules positively associated to long term EFN feeding in the abdomen: ```AD_L_POS_modules_genes.lst```
+- the top hub-genes for each module ```hub_genes.lst```
+- genes present in each module
 
 
 ---

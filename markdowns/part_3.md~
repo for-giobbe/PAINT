@@ -55,22 +55,12 @@ RSEM_vicia.isoform.counts.matrix
 Now we need to remove possible contaminants from the gene-counts matrix which we will use for differential expression:
 
 
-Initially the contaminants list needs to be formatted:
-
-```
-awk -F "_" 'NF{NF-=1};1' contaminants/vicia/vicia.blastp.contaminants_contigs.lst | sed 's/ /_/g' > contaminants/vicia/vicia.blastp.contaminants_genes.lst
-```
-
-
-and then a raw-counts matrix without them is generated:
-
-
 ```
 grep -v vicia_contaminants.list RSEM_vicia.gene.counts.matrix > RSEM_vicia.filtered.gene.counts.matrix
 ```
 
 
-The DE is performed using DESeq2:
+Then DE is performed on the raw-count contaminants-filtered matric using DESeq2:
 
 
 ```
@@ -96,9 +86,7 @@ genes can be retrieved using:
 Rscript scripts/DE_genes_vicia.Rscript
 ```
 
-
-From the files  ```abundances/vicia/vicia_gene_deseq/vicia_DN_genes.lst``` and ```abundances/vicia/vicia_gene_deseq/vicia_UP_genes.lst```
-we can see that a total of 332 DE genes are found - of which 214 are upregulated and 214 downregulated.
+A total of 332 DE genes are found - of which 214 are upregulated and 214 downregulated.
 
 
 ---

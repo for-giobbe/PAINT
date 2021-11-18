@@ -222,11 +222,15 @@ which we can move to their place by```mv crema.Trinity.fasta.transdecoder.* anno
 
 Then contaminant contigs are identified.
 In this step proteomes undergo homology serches against UniRef90 - which differently from UniProt includes taxonomy - and reurn all hits taxa ids.
-Subsequently [Taxonkit](https://bioinf.shenwei.me/taxonkit/) will exctract thier full lineage and
-flag as contaminants all contigs which don not have all hits as respectively pancrustacea or viridipalntae.
+The homology search is performed using blastp-fast and an evalue of 1e-7 with the parameters ```-max_target_seqs 50 -max_hsps 1``` to fasten the process.
+Subsequently [Taxonkit](https://bioinf.shenwei.me/taxonkit/) will exctract each hit full lineage and
+flag as contaminants all contigs which don not have at least 80% of the hits 
+as metazoa or viridiplantae respectively for crema and vicia.
+
+The commands are:
 
 ```
-snakemake -s scripts/snakefile_filter_contaminants_transcripts_vicia --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
+snakemake -s scripts/snakefile_filter_contaminants_transcripts_crema --cluster 'sbatch --account=gen_red -p light -t 2800' --use-conda --cores 8 -p
 ```
 
 and
@@ -238,11 +242,16 @@ snakemake -s scripts/snakefile_filter_contaminants_transcripts_vicia --cluster '
 then we can extract contaminants contigs using the following line to cross check them in online blast:
 
 ```
-for i in $( cat crema.38.contaminants.lst); do sed -n -e "/$i/,/TRINITY/ p" crema.Trinity.fasta.transdecoder.part-38.pep | head -n -1 | awk '{print $1}'; done 
+for i in $( cat contaminants/crema/crema.blastp.contaminants_contigs.lst); do sed -n -e "/$i/,/TRINITY/ p" contaminants/crema/crema.Trinity.fasta.transdecoder.pep | head -n -1 | awk '{print $1}'; done
 ```
 
-As we can see, contaminant contigs are <10% which is an expected amount, as a flebile amount of reads can generate a lot of contaminants contigs -
- which indeed we will remove from count tables down the line.
+As we can see, contaminant contigs are <10% - 821 contigs fro crema and 945 contigs for vicia.
+This is expected, as a small amount of reads can generate a lot of contaminants contigs.
+In our case this step is rather important to remve vicia contigs from crema assembly:
+the species is too small to dissect the digestive tract and as such some plant material was most likely present
+in the sample. 
+Having identified contaminat contgis we will still map reads on them - to minimyze possible misalignments -
+but remove them from counts tables down the line.
 
 ---
 
