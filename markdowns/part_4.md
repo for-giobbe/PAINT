@@ -1,6 +1,12 @@
 ## Weighted Gene Coexpression Network in crema
 
 
+---
+
+
+environiment: yaml.WGCNA
+
+
 Here a different approach than the one used for vicia will be leveraged, due to the multiple tissues / conditions. 
 
 
@@ -9,6 +15,7 @@ Here a different approach than the one used for vicia will be leveraged, due to 
 
 Nonetheless the initial steps are different to those carried out for vicia. Transcript abundance can be obtained 
 using the script ```slurm_abundances_crema``` which also uses bowtie and RSEM. 
+
 Move the outputs from the main folder to the appropriate folder usings  ```mv *_rep*  abundances/crema```.
 
 
@@ -74,7 +81,7 @@ sed 's/ /_/g' > contaminants/crema/crema.blastp.contaminants_genes.lst
 ```
 
 
-and then generate a raw-counts matrix without them:
+Generate a raw-counts matrix without them:
 
 
 ```
@@ -83,7 +90,7 @@ abundances/crema/RSEM_crema.filtered.gene.counts.matrix
 ```
 
 
-Then we perform an exploratory DE analysis using DESeq2:
+We can perform an exploratory DE analysis using DESeq2, which is indeed unpractical due to the many conditions:
 
 
 ```

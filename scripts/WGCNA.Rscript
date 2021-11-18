@@ -1,0 +1,321 @@
+############################################################################################ parameters #######
+
+#!/usr/bin/env Rscript
+args = commandArgs(trailingOnly=TRUE)
+
+# test if there is at least one argument: if not, return an error
+if (length(args)<8) {
+  stop("At least one argument must be supplied (input file).n", call.=FALSE)
+}
+
+6 signed 50 0.1 0.6 bicor  
+
+#args[1]  power            #6
+#args[2]  network type     # signed
+#args[3]  minmodulesize    # 50
+#args[4]  mergecutheight   # 0.1
+#args[5]  mincorekme       # 0.6
+#args[6]  cortype          # bicor
+#args[7]  counts           # 
+#args[8]  traits           #
+  
+power = args[1]
+networktype = args[2]
+minmodulesize = args[3]
+mergecutheight = args[4]
+mincorekme = args[5]
+cortype = args[6]
+
+counts = args[7]
+traits = args[8]
+
+############################################################################################ requirements #######
+
+library(edgeR)
+library(WGCNA)
+library(tidyverse)
+library(gtools)
+library(data.table)
+library(stringr)
+library(magrittr)
+
+options(stringsAsFactors = FALSE);
+
+############################################################################################ norm. data ########################################
+
+GenewiseCounts <- read.delim(counts)
+group <- factor(c(1,1,1,1,1,
+                  2,2,2,2,2,
+                  3,3,3,3,3,
+                  4,4,4,4,4,
+                  5,5,5,5,5,
+                  6,6,6,6,6,
+                  7,7,7,7,7,
+                  8,8,8,8,8))
+
+y <- DGEList(GenewiseCounts[,-1], genes=GenewiseCounts[,1,drop=FALSE], group=group)
+keep <- filterByExpr(y)
+summary(keep)
+y <- y[keep, , keep.lib.sizes=FALSE]
+y <- calcNormFactors(y)
+cpms <- cpm(y, log=FALSE)
+rownames(cpms) <- y$genes[,1]
+
+write.table(cpms, file="RSEM_crema.filtered.gene.TMM.matrix", quote=F, sep="\t")
+
+############################################################################################ expr. data ########################################
+
+Data = read.csv("RSEM_crema.filtered.gene.TMM.matrix", sep ="\t")
+dim(Data);
+names(Data);
+
+datExpr0 = as.data.frame(t(Data));
+
+gsg = goodSamplesGenes(datExpr0, verbose = 3);
+gsg$allOK
+
+if (!gsg$allOK)
+{
+  # Optionally, print the gene and sample names that were removed:
+  if (sum(!gsg$goodGenes)>0)
+    printFlush(paste("Removing genes:", paste(names(datExpr0)[!gsg$goodGenes], collapse = ", ")));
+  if (sum(!gsg$goodSamples)>0)
+    printFlush(paste("Removing samples:", paste(rownames(datExpr0)[!gsg$goodSamples], collapse = ", ")));
+  # Remove the offending genes and samples from the data:
+  datExpr0 = datExpr0[gsg$goodSamples, gsg$goodGenes]
+}
+
+############################################################################################ trait data ########################################
+
+traitData = read.csv(traits);
+dim(traitData);
+names(traitData);
+
+traitData$X <-  NULL
+dim(traitData);
+names(traitData);
+
+Samples = rownames(datExpr0);
+traitRows = match(Samples, traitData$sample);
+datTraits = traitData[traitRows, -1];
+rownames(datTraits) = traitData[traitRows, 1];
+collectGarbage();
+
+############################################################################################ network ########################################
+
+allowWGCNAThreads() 
+powers = c(c(1:10), seq(from = 5, to=25, by=1))
+sft = pickSoftThreshold(datExpr0, powerVector = powers, verbose = 5,networkType = "signed")
+
+sizeGrWindow(9, 5)
+par(mfrow = c(1,2));
+cex1 = 0.9;
+# Scale-free topology fit index as a function of the soft-thresholding power
+plot(sft$fitIndices[,1], -sign(sft$fitIndices[,3])*sft$fitIndices[,2],
+     xlab="Soft Threshold (power)",ylab="Scale Free Topology Model Fit,signed R^2",type="n",
+     main = paste("Scale independence"));
+text(sft$fitIndices[,1], -sign(sft$fitIndices[,3])*sft$fitIndices[,2],
+     labels=powers,cex=cex1,col="red");
+# this line corresponds to using an R^2 cut-off of h
+abline(h=0.80,col="red")
+# Mean connectivity as a function of the soft-thresholding power
+plot(sft$fitIndices[,1], sft$fitIndices[,5],
+     xlab="Soft Threshold (power)",ylab="Mean Connectivity", type="n",
+     main = paste("Mean connectivity"))
+text(sft$fitIndices[,1], sft$fitIndices[,5], labels=powers, cex=cex1,col="red")
+
+net = blockwiseModules(datExpr0, power = power,
+                       TOMType = "signed", networkType = networktype, minModuleSize = minmodulesize, 
+                       mergeCutHeight = mergecutheight, minCoreKME = mincorekme,  corType = cortype,
+                       numericLabels = TRUE, pamRespectsDendro = FALSE, replaceMissingAdjacencies = TRUE,
+                       verbose = 3, maxBlockSize = 6000)
+
+# Plot the dendrogram and the module colors underneath
+sizeGrWindow(12, 9)
+mergedColors = labels2colors(net$colors)
+plotDendroAndColors(net$dendrograms[[1]], mergedColors[net$blockGenes[[1]]],
+                    "Module colors",
+                    dendroLabels = FALSE, hang = 0.03,
+                    addGuide = TRUE, guideHang = 0.05)
+
+moduleLabels = net$colors
+moduleColors = labels2colors(net$colors)
+MEs = net$MEs;
+geneTree = net$dendrograms[[1]];
+
+# Recalculate MEs with color labels
+nGenes = ncol(datExpr0);
+nSamples = nrow(datExpr0);
+MEs0 = moduleEigengenes(datExpr0, moduleColors, excludeGrey = TRUE, softPower = power)$eigengenes
+MEs = orderMEs(MEs0)
+moduleTraitCor = cor(MEs, datTraits, use = "all.obs", method = c("pearson"));
+moduleTraitPvalue <-  corPvalueStudent(moduleTraitCor, nSamples);
+moduleTraitPvalue <- p.adjust(moduleTraitPvalue, method = "hochberg", n = length(moduleTraitPvalue))
+
+############################################################################################ standard heatmap #####################
+
+# Display the correlation values within a heatmap plot
+sizeGrWindow(10,6)
+textMatrix = paste(signif(moduleTraitCor, 2), "\n(",
+                   signif(moduleTraitPvalue, 1), ")", sep = "");
+#textMatrix = signif(moduleTraitPvalue, 3)
+dim(textMatrix) = dim(moduleTraitCor)
+par(mar = c(6, 8.5, 3, 3));
+labeledHeatmap(Matrix = moduleTraitCor,
+               xLabels = names(datTraits),
+               yLabels = names(MEs),
+               ySymbols = names(MEs),
+               colorLabels = FALSE,
+               colors = blueWhiteRed(50),
+               textMatrix = textMatrix,
+               setStdMargins = FALSE,
+               cex.text = 0.9,
+               zlim = c(-1,1),
+               main = paste("Module-trait relationships"))
+
+
+pdf("crema_WGCNA_standard_heatmap.pdf", width = 10, height = 10)
+print(p0)
+dev.off()
+
+############################################################################################ custom heatmap #####################
+interesting_modules <- as.data.frame(corPvalueStudent(moduleTraitCor, nSamples))
+
+interesting_modules_FDR <- interesting_modules %>% 
+  as.matrix %>% 
+  as.vector %>% 
+  p.adjust(method='hochberg', n = length(moduleTraitPvalue) ) %>% 
+  matrix(ncol=6)
+
+colnames(interesting_modules_FDR) <- colnames(interesting_modules)
+rownames(interesting_modules_FDR) <- rownames(interesting_modules)
+
+interesting_modules_FDR <- as.data.frame(interesting_modules_FDR)
+
+interesting_modules_FDR <- row.names(subset(interesting_modules_FDR, AD_L<0.05 |  AD_S<0.05 | CT_L<0.05 |  CT_S<0.05))
+interesting_modules_FDR <- str_replace(interesting_modules_FDR, "ME", "")
+
+moduleTraitPvalue = corPvalueStudent(moduleTraitCor, nSamples);
+moduleTraitPvalue  <- p.adjust(moduleTraitPvalue, method = "hochberg", n = length(moduleTraitPvalue))
+
+moduleTraitCor_heat <- moduleTraitCor
+moduleTraitCor_heat_df <- moduleTraitCor_heat %>% as.data.frame 
+moduleTraitCor_heat_df <- setDT(moduleTraitCor_heat_df, keep.rownames = TRUE)[]
+moduleTraitCor_heat_df %>% gather(trait, value, 2:7) -> moduleTraitCor_heat_df
+moduleTraitCor_heat_df["pval"] <- moduleTraitPvalue
+moduleTraitCor_heat_df$rn <- str_replace(moduleTraitCor_heat_df$rn, "ME", "")
+moduleTraitCor_heat_df <- subset(moduleTraitCor_heat_df, rn!="grey")
+moduleTraitCor_heat_df <- subset(moduleTraitCor_heat_df, rn %in% interesting_modules_FDR)
+
+p0 <- ggplot(data = moduleTraitCor_heat_df, aes(x = rn, y = trait)) +
+  theme(axis.text.x = element_text(angle = 90, vjust=0, hjust=0)) +
+  geom_tile(aes(fill = value), color = "white", size=2) + 
+  scale_fill_gradientn(colours = c("lightblue", "white", "orange"), values = scales::rescale(c(-0.5, -0.4, 0, 0.4, 0.5)), name = "module - trait corelation") +
+  #geom_text(aes(label = stars.pval(pval)), size = 5) +
+  geom_text(aes(label = signif(pval, 1)), size = 5) +
+  theme_minimal() + 
+  coord_equal() + 
+  theme(axis.title.x=element_blank()) + 
+  theme(axis.title.y=element_blank()) + 
+  theme(plot.title = element_text(size=16,face="bold")) +
+  labs(title = "WGCNA modules - traits relationship") + 
+  theme(axis.text=element_text(size=12), axis.title=element_text(size=16,face="bold")) 
+
+pdf("crema_WGCNA_custom_heatmap.pdf", width = 10, height = 10)
+print(p0)
+dev.off()
+
+############################################################################################ extract modules genes AD_S #######
+
+moduleTraitCor_AD_S <- moduleTraitCor_heat_df[moduleTraitCor_heat_df$trait == 'AD_S',]
+moduleTraitCor_AD_S <- moduleTraitCor_AD_S[moduleTraitCor_AD_S$rn != 'grey',]
+moduleTraitCor_AD_S <- moduleTraitCor_AD_S[moduleTraitCor_AD_S$pval < 0.05,]
+
+AD_S_POS <- NULL
+moduleTraitCor_AD_S_POS <- moduleTraitCor_AD_S[moduleTraitCor_AD_S$value > 0,]
+for(i in 1:length(moduleTraitCor_AD_S_POS$rn)) {
+  AD_S_POS <- append(AD_S_POS, names(datExpr0)[moduleColors==moduleTraitCor_AD_S_POS$rn[i]])
+}
+fwrite(list(AD_S_POS), file = "AD_S_POS_modules_genes.lst")
+
+AD_S_NEG <- NULL
+moduleTraitCor_AD_S_NEG <- moduleTraitCor_AD_S[moduleTraitCor_AD_S$value < 0,]
+for(i in 1:length(moduleTraitCor_AD_S_NEG$rn)) {
+  AD_S_NEG <- append(AD_S_NEG, names(datExpr0)[moduleColors==moduleTraitCor_AD_S_NEG$rn[i]])
+}
+fwrite(list(AD_S_NEG), file = "AD_S_NEG_modules_genes.lst")
+
+############################################################################################ extract modules genes CT_S #######
+
+moduleTraitCor_CT_S <- moduleTraitCor_heat_df[moduleTraitCor_heat_df$trait == 'CT_S',]
+moduleTraitCor_CT_S <- moduleTraitCor_CT_S[moduleTraitCor_CT_S$rn != 'grey',]
+moduleTraitCor_CT_S <- moduleTraitCor_CT_S[moduleTraitCor_CT_S$pval < 0.05,]
+
+CT_S_POS <- NULL
+moduleTraitCor_CT_S_POS <- moduleTraitCor_CT_S[moduleTraitCor_CT_S$value > 0,]
+for(i in 1:length(moduleTraitCor_CT_S_POS$rn)) {
+  CT_S_POS <- append(CT_S_POS, names(datExpr0)[moduleColors==moduleTraitCor_CT_S_POS$rn[i]])
+}
+fwrite(list(CT_S_POS), file = "CT_S_POS_modules_genes.lst")
+
+CT_S_NEG <- NULL
+moduleTraitCor_CT_S_NEG <- moduleTraitCor_CT_S[moduleTraitCor_CT_S$value < 0,]
+for(i in 1:length(moduleTraitCor_CT_S_NEG$rn)) {
+  CT_S_NEG <- append(CT_S_NEG, names(datExpr0)[moduleColors==moduleTraitCor_CT_S_NEG$rn[i]])
+}
+fwrite(list(CT_S_NEG), file = "CT_S_NEG_modules_genes.lst")
+
+############################################################################################ extract modules genes AD_L #######
+
+moduleTraitCor_AD_L <- moduleTraitCor_heat_df[moduleTraitCor_heat_df$trait == 'AD_L',]
+moduleTraitCor_AD_L <- moduleTraitCor_AD_L[moduleTraitCor_AD_L$rn != 'grey',]
+moduleTraitCor_AD_L <- moduleTraitCor_AD_L[moduleTraitCor_AD_L$pval < 0.05,]
+
+AD_L_POS <- NULL
+moduleTraitCor_AD_L_POS <- moduleTraitCor_AD_L[moduleTraitCor_AD_L$value > 0,]
+for(i in 1:length(moduleTraitCor_AD_L_POS$rn)) {
+  AD_L_POS <- append(AD_L_POS, names(datExpr0)[moduleColors==moduleTraitCor_AD_L_POS$rn[i]])
+}
+fwrite(list(AD_L_POS), file = "AD_L_POS_modules_genes.lst")
+
+AD_L_NEG <- NULL
+moduleTraitCor_AD_L_NEG <- moduleTraitCor_AD_L[moduleTraitCor_AD_L$value < 0,]
+for(i in 1:length(moduleTraitCor_AD_L_NEG$rn)) {
+  AD_L_NEG <- append(AD_L_NEG, names(datExpr0)[moduleColors==moduleTraitCor_AD_L_NEG$rn[i]])
+}
+fwrite(list(AD_L_NEG), file = "AD_L_NEG_modules_genes.lst")
+
+############################################################################################ extract modules genes CT_L #######
+
+moduleTraitCor_CT_L <- moduleTraitCor_heat_df[moduleTraitCor_heat_df$trait == 'CT_L',]
+moduleTraitCor_CT_L <- moduleTraitCor_CT_L[moduleTraitCor_CT_L$rn != 'grey',]
+moduleTraitCor_CT_L <- moduleTraitCor_CT_L[moduleTraitCor_CT_L$pval < 0.05,]
+
+CT_L_POS <- NULL
+moduleTraitCor_CT_L_POS <- moduleTraitCor_CT_L[moduleTraitCor_CT_L$value > 0,]
+for(i in 1:length(moduleTraitCor_CT_L_POS$rn)) {
+  CT_L_POS <- append(CT_L_POS, names(datExpr0)[moduleColors==moduleTraitCor_CT_L_POS$rn[i]])
+}
+fwrite(list(CT_L_POS), file = "CT_L_POS_modules_genes.lst")
+
+CT_L_NEG <- NULL
+moduleTraitCor_CT_L_NEG <- moduleTraitCor_CT_L[moduleTraitCor_CT_L$value < 0,]
+for(i in 1:length(moduleTraitCor_CT_L_NEG$rn)) {
+  CT_L_NEG <- append(CT_L_NEG, names(datExpr0)[moduleColors==moduleTraitCor_CT_L_NEG$rn[i]])
+}
+fwrite(list(CT_L_NEG), file = "CT_L_NEG_modules_genes.lst")
+
+############################################################################################ choose top hub gene in each module  #######
+
+hub <- chooseTopHubInEachModule(datExpr0,moduleColors,type =networktype,power=power)
+hub <- data.frame(hub)
+hub$module <- rownames(hub)
+fwrite(hub, file="hub_genes.lst", sep="\t")
+
+############################################################################################ extract each modules genes #######
+
+for(i in 1:length(rownames(subset(moduleTraitCor_heat, rownames(moduleTraitCor_heat)!="MEgrey")))) {
+  genes <- names(datExpr0)[moduleColors==str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")]
+  module <- str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")
+  write.table(genes, file=paste(module, "_genes.txt", sep=""),row.names=FALSE,col.names=FALSE,sep="\t", quote = FALSE)
+                  }

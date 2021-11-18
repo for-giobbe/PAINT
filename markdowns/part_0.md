@@ -1,7 +1,13 @@
 ## Requirements and dataset explanation
 
 
-You can clone the github to a local host and then:
+---
+
+
+environiment: yaml.main 
+
+
+Clone the github to a local host and then:
 
 
 - install the sotware

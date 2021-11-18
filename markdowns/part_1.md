@@ -1,6 +1,12 @@
 ## reads qc & preprocessing
 
 
+---
+
+
+environiment: yaml.main 
+
+
 In this step we will carry out qc of the two species RNA-seq libraries and preprocess them.
 
 

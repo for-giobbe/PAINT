@@ -1,6 +1,12 @@
 ## Differential Expression in vicia
 
 
+---
+
+
+environiment: yaml.DE
+
+
 Here we will carry out gene Differential Expression in vicia.
 to find the genes which undergo expression changes after crema feeding on EFN.
 
@@ -9,6 +15,8 @@ to find the genes which undergo expression changes after crema feeding on EFN.
 
 
 To begin we need to quantitate transcript abundance using the script ```slurm_abundances_vicia``` which uses bowtie and RSEM.
+
+
 The outputs need to be then moved from the main folder to the appropriate one usings  ```mv _rep*  abundances/vicia```.
 
 
@@ -58,7 +66,8 @@ Now we need to remove possible contaminants from the gene-counts matrix which we
 Initially the contaminants list needs to be formatted:
 
 ```
-awk -F "_" 'NF{NF-=1};1' contaminants/vicia/vicia.blastp.contaminants_contigs.lst | sed 's/ /_/g' > contaminants/vicia/vicia.blastp.contaminants_genes.lst
+awk -F "_" 'NF{NF-=1};1' contaminants/vicia/vicia.blastp.contaminants_contigs.lst | 
+sed 's/ /_/g' > contaminants/vicia/vicia.blastp.contaminants_genes.lst
 ```
 
 
@@ -74,7 +83,8 @@ The DE is performed using DESeq2:
 
 
 ```
-run_DE_analysis.pl --matrix RSEM_vicia.filtered.gene.counts.matrix --samples_file ../../vicia_samples.txt --method DESeq2 --output vicia_deseq_gene
+run_DE_analysis.pl --matrix RSEM_vicia.filtered.gene.counts.matrix --samples_file ../../vicia_samples.txt 
+--method DESeq2 --output vicia_deseq_gene
 ```
 
 
@@ -100,11 +110,11 @@ abundances/vicia/vicia_gene_deseq/vicia_UP_genes.lst
 ```
 
 
-The Rscript takes as input:
+The Rscript takes as inputs:
 
 
 - the adjusted p value to cosider a gene DE
-- the logFC  to cosider a gene downregulated or upregulated (_i.e._ if 2 -> +2 and -2)
+- the logFC  to cosider a gene downregulated or upregulated - _i.e._ if 2 -> +2 and -2
 - the DESeq2 results table
 - upregulated genes output file
 - downregulated genes output file

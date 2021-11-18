@@ -4,6 +4,9 @@
 ---
 
 
+environiment: yaml.main
+
+
 the rationale here is to carry out the assembly using the reads filtered for rRNAs, mtRNA and ptRNA and then 
 find possible additional contaminants (virus, bacteria, _etc_) in order to subsequently exclude them from abundance tables,
 Through this approach - suggested [here](https://groups.google.com/g/trinityrnaseq-users/c/P2Ry72h_puQ/m/LpJ8OLzuBAAJ) by Brian Haas - 
