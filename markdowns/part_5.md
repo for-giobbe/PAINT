@@ -29,13 +29,17 @@ sh scripts/reformat_GOs.sh enrichment/GO_vicia/GO_vicia_predictions.lst enrichme
 The the GO enrichment analysisi is performed using the following commands:
 
 
-```Rscript scripts/GO_enrichment.Rscript GO_crema_geneUniverse_BP . BP 5 weight fisher 0.05```
+```
+Rscript scripts/GO_enrichment.Rscript GO_crema_geneUniverse_BP . BP 5 weight fisher 0.05
+```
 
 
 and
 
 
-```Rscript scripts/GO_enrichment.Rscript GO_crema_geneUniverse_BP . BP 5 weight fisher 0.05```
+```
+Rscript scripts/GO_enrichment.Rscript GO_crema_geneUniverse_BP . BP 5 weight fisher 0.05
+```
 
 
 The Rscript has several positional arguments:
