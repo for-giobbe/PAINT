@@ -123,14 +123,18 @@ To do so we generated two RNA-seq experiments:
 
 
 **A**  -  never visited _Vicia faba_
+
 **B**  -  visited by _Vicia faba_ only until 24h before experiment
+
 **C**  -  visited by _Vicia faba_ only after 24h before experiment 
+
 **D**  -  visited by _Vicia faba_ continuously
 
 
 2. nectarium of _Vicia faba_ which:
 
 **N**  -  were never visited by _Crematogaster scutellaris_
+
 **Y**  -  2' after the visit of _Crematogaster scutellaris_
 
 

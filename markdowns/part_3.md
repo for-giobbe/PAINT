@@ -93,12 +93,24 @@ genes can be retrieved using:
 
 
 ```
-Rscript scripts/DE_genes_vicia.Rscript
+Rscript scripts/DE_genes.Rscript 0.05 2 
+abundances/vicia/vicia_gene_deseq/RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.DE_results 
+abundances/vicia/vicia_gene_deseq/vicia_DN_genes.lst 
+abundances/vicia/vicia_gene_deseq/vicia_UP_genes.lst
 ```
 
 
-From the files  ```abundances/vicia/vicia_gene_deseq/vicia_DN_genes.lst``` and ```abundances/vicia/vicia_gene_deseq/vicia_UP_genes.lst```
-we can see that a total of 332 DE genes are found - of which 214 are upregulated and 214 downregulated.
+The Rscript takes as input:
+
+
+- the adjusted p value to cosider a gene DE
+- the logFC  to cosider a gene downregulated or upregulated (_i.e._ if 2 -> +2 and -2)
+- the DESeq2 results table
+- upregulated genes output file
+- downregulated genes output file
+
+
+A total of 244 DE genes are found - of which 101 are downregulated and 143 upregulated.
 
 
 ---

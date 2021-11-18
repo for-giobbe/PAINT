@@ -1,0 +1,24 @@
+############################################################################################ parameters #######
+
+#!/usr/bin/env Rscript
+args = commandArgs(trailingOnly=TRUE)
+
+if (length(args)<5) {
+  stop("too few arguments", call.=FALSE)
+}
+
+#args[1]	padj_cutoff
+#args[2]	logfc_cutoff
+#args[3]        DESeq2 results table
+#args[4]        upregulated genes file
+#args[5]        dnregulated genes file
+
+############################################################################################ DE genes #########
+
+DE_results = read.table(file = args[3], header = TRUE, sep="\t")
+
+dnregulated_genes <- subset(DE_results, padj < args[1] & log2FoldChange < -(as.numeric(args[2])))
+write(rownames(dnregulated_genes), file = args[4])
+
+upregulated_genes <- subset(DE_results, padj < args[1] & log2FoldChange > as.numeric(args[2]))
+write(rownames(upregulated_genes), file = args[5])
