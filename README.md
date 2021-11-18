@@ -3,7 +3,7 @@
 
 ---
 
-![alt text](https://www.dtservice-fi.com/wp-content/uploads/2020/10/dtservice-disinfestazione-formica-crematogaster-scutellaris-1-thegem-gallery-sidebar.jpg)
+![alt text](https://live.staticflickr.com/65535/49577967752_47f87a76bd_b.jpg)
 
 This repository contains all the code used to study the molecular groundplan of a plant-ant interaction.
 
