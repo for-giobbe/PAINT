@@ -1,4 +1,4 @@
-# **PAINT** - **P**lant **A**nt **INT**eraction
+## **PAINT** - **P**lant **A**nt **INT**eraction
 
 
 ---
