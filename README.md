@@ -1,5 +1,4 @@
 
-
 **PAINT** - **P**lant **A**nt **INT**eraction
 
 

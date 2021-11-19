@@ -30,7 +30,20 @@ Clone the github to a local host and then:
 Most software can be installed via conda using ```conda env create -f yaml.main```.
 
 
-Due to conflicts a specific environiment is necessary for expression analyses. Install it by ```conda env create -f yaml.DE```.
+Due to conflicts specific environiments are necessary for expression analyses. They can be installed by: 
+
+
+```
+conda env create -f yaml.DE
+```
+
+
+and
+
+
+```
+conda env create -f yaml.WCGNA
+``` 
 
 
 ---

@@ -8,9 +8,7 @@ if (length(args)<8) {
   stop("At least one argument must be supplied (input file).n", call.=FALSE)
 }
 
-6 signed 50 0.1 0.6 bicor  
-
-#args[1]  power            #6
+#args[1]  power            # 6
 #args[2]  network type     # signed
 #args[3]  minmodulesize    # 50
 #args[4]  mergecutheight   # 0.1
@@ -19,11 +17,11 @@ if (length(args)<8) {
 #args[7]  counts           # 
 #args[8]  traits           #
   
-power = args[1]
+power = as.numeric(args[1])
 networktype = args[2]
-minmodulesize = args[3]
-mergecutheight = args[4]
-mincorekme = args[5]
+minmodulesize = as.numeric(args[3])
+mergecutheight = as.numeric(args[4])
+mincorekme = as.numeric(args[5])
 cortype = args[6]
 
 counts = args[7]
@@ -61,15 +59,16 @@ y <- calcNormFactors(y)
 cpms <- cpm(y, log=FALSE)
 rownames(cpms) <- y$genes[,1]
 
-write.table(cpms, file="RSEM_crema.filtered.gene.TMM.matrix", quote=F, sep="\t")
+#write.table(cpms, file="RSEM_crema.filtered.gene.TMM.matrix", quote=F, sep="\t")
 
 ############################################################################################ expr. data ########################################
 
-Data = read.csv("RSEM_crema.filtered.gene.TMM.matrix", sep ="\t")
-dim(Data);
-names(Data);
+#Data = read.csv("RSEM_crema.filtered.gene.TMM.matrix", sep ="\t")
+#dim(Data);
+#names(Data);
+#datExpr0 = as.data.frame(t(Data));
 
-datExpr0 = as.data.frame(t(Data));
+datExpr0 = t(cpms);
 
 gsg = goodSamplesGenes(datExpr0, verbose = 3);
 gsg$allOK
@@ -312,10 +311,10 @@ hub <- data.frame(hub)
 hub$module <- rownames(hub)
 fwrite(hub, file="hub_genes.lst", sep="\t")
 
-############################################################################################ extract each modules genes #######
-
-for(i in 1:length(rownames(subset(moduleTraitCor_heat, rownames(moduleTraitCor_heat)!="MEgrey")))) {
-  genes <- names(datExpr0)[moduleColors==str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")]
-  module <- str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")
-  write.table(genes, file=paste(module, "_genes.txt", sep=""),row.names=FALSE,col.names=FALSE,sep="\t", quote = FALSE)
-                  }
+############################################################################################# extract each modules genes #######
+#
+#for(i in 1:length(rownames(subset(moduleTraitCor_heat, rownames(moduleTraitCor_heat)!="MEgrey")))) {
+#  genes <- names(datExpr0)[moduleColors==str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")]
+#  module <- str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")
+#  write.table(genes, file=paste(module, "_genes.txt", sep=""),row.names=FALSE,col.names=FALSE,sep="\t", quote = FALSE)
+#                  }
