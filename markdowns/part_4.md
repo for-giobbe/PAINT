@@ -1,19 +1,16 @@
 ## Weighted Gene Coexpression Network in crema
 
 
----
+*environiment:* yaml.WGCNA
 
-
-environiment: yaml.WGCNA
-
-
-Here a different approach than the one used for vicia will be leveraged, due to the multiple tissues / conditions. 
+*aim:* retrieve genes associate to short-term and long-term EFN feeding with a WGCN approach
 
 
 ---
 
 
-Nonetheless the initial steps are different to those carried out for vicia. 
+A different approach than the one used for vicia is used,
+yet the initial steps are the same as before.
 
 
 Transcript abundance can be obtained 
@@ -138,50 +135,57 @@ The expression matrix is the same used for the preliminary DE analysis and here 
 
 
 ```
-,sample,AD_N,AD_S,AD_L,CT_N,CT_S,CT_L
-01,A_AD_rep1,1,0,0,0,0,0
-02,A_AD_rep2,1,0,0,0,0,0
-03,A_AD_rep3,1,0,0,0,0,0
-04,A_AD_rep4,1,0,0,0,0,0
-05,A_AD_rep5,1,0,0,0,0,0
-06,A_CT_rep1,0,0,0,1,0,0
-07,A_CT_rep2,0,0,0,1,0,0
-08,A_CT_rep3,0,0,0,1,0,0
-09,A_CT_rep4,0,0,0,1,0,0
-10,A_CT_rep5,0,0,0,1,0,0
-11,B_AD_rep1,0,0,1,0,0,0
-12,B_AD_rep2,0,0,1,0,0,0
-13,B_AD_rep3,0,0,1,0,0,0
-14,B_AD_rep4,0,0,1,0,0,0
-15,B_AD_rep5,0,0,1,0,0,0
-16,B_CT_rep1,0,0,0,0,0,1
-17,B_CT_rep2,0,0,0,0,0,1
-18,B_CT_rep3,0,0,0,0,0,1
-19,B_CT_rep4,0,0,0,0,0,1
-20,B_CT_rep5,0,0,0,0,0,1
-21,C_AD_rep1,0,1,0,0,0,0
-22,C_AD_rep2,0,1,0,0,0,0
-23,C_AD_rep3,0,1,0,0,0,0
-24,C_AD_rep4,0,1,0,0,0,0
-25,C_AD_rep5,0,1,0,0,0,0
-26,C_CT_rep1,0,0,0,0,1,0
-27,C_CT_rep2,0,0,0,0,1,0
-28,C_CT_rep3,0,0,0,0,1,0
-29,C_CT_rep4,0,0,0,0,1,0
-30,C_CT_rep5,0,0,0,0,1,0
-31,D_AD_rep1,0,1,1,0,0,0
-32,D_AD_rep2,0,1,1,0,0,0
-33,D_AD_rep3,0,1,1,0,0,0
-34,D_AD_rep4,0,1,1,0,0,0
-35,D_AD_rep5,0,1,1,0,0,0
-36,D_CT_rep1,0,0,0,0,1,1
-37,D_CT_rep2,0,0,0,0,1,1
-38,D_CT_rep3,0,0,0,0,1,1
-39,D_CT_rep4,0,0,0,0,1,1
-40,D_CT_rep5,0,0,0,0,1,1 
+sed 's/,/ /g' abundances/crema/crema_WGCNA_gene/crema_traits | sed "s/sample/n \tsample/g" | column -t
 ```
 
+
+```
+n   sample     AD_N  AD_S  AD_L  CT_N  CT_S  CT_L
+01  A_AD_rep1  1     0     0     0     0     0
+02  A_AD_rep2  1     0     0     0     0     0
+03  A_AD_rep3  1     0     0     0     0     0
+04  A_AD_rep4  1     0     0     0     0     0
+05  A_AD_rep5  1     0     0     0     0     0
+06  A_CT_rep1  0     0     0     1     0     0
+07  A_CT_rep2  0     0     0     1     0     0
+08  A_CT_rep3  0     0     0     1     0     0
+09  A_CT_rep4  0     0     0     1     0     0
+10  A_CT_rep5  0     0     0     1     0     0
+11  B_AD_rep1  0     0     1     0     0     0
+12  B_AD_rep2  0     0     1     0     0     0
+13  B_AD_rep3  0     0     1     0     0     0
+14  B_AD_rep4  0     0     1     0     0     0
+15  B_AD_rep5  0     0     1     0     0     0
+16  B_CT_rep1  0     0     0     0     0     1
+17  B_CT_rep2  0     0     0     0     0     1
+18  B_CT_rep3  0     0     0     0     0     1
+19  B_CT_rep4  0     0     0     0     0     1
+20  B_CT_rep5  0     0     0     0     0     1
+21  C_AD_rep1  0     1     0     0     0     0
+22  C_AD_rep2  0     1     0     0     0     0
+23  C_AD_rep3  0     1     0     0     0     0
+24  C_AD_rep4  0     1     0     0     0     0
+25  C_AD_rep5  0     1     0     0     0     0
+26  C_CT_rep1  0     0     0     0     1     0
+27  C_CT_rep2  0     0     0     0     1     0
+28  C_CT_rep3  0     0     0     0     1     0
+29  C_CT_rep4  0     0     0     0     1     0
+30  C_CT_rep5  0     0     0     0     1     0
+31  D_AD_rep1  0     1     1     0     0     0
+32  D_AD_rep2  0     1     1     0     0     0
+33  D_AD_rep3  0     1     1     0     0     0
+34  D_AD_rep4  0     1     1     0     0     0
+35  D_AD_rep5  0     1     1     0     0     0
+36  D_CT_rep1  0     0     0     0     1     1
+37  D_CT_rep2  0     0     0     0     1     1
+38  D_CT_rep3  0     0     0     0     1     1
+39  D_CT_rep4  0     0     0     0     1     1
+40  D_CT_rep5  0     0     0     0     1     1
+```
+
+
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/crema_WGCNA_custom_heatmap.jpg)
+
 
 The Rscript will generate several files, including:
 
