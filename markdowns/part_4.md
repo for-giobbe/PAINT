@@ -181,7 +181,7 @@ The expression matrix is the same used for the preliminary DE analysis and here 
 40,D_CT_rep5,0,0,0,0,1,1 
 ```
 
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/crema_WGCNA_custom_heatmap.png)
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/crema_WGCNA_custom_heatmap.jpg)
 
 The Rscript will generate several files, including:
 
