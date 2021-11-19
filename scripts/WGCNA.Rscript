@@ -36,6 +36,7 @@ library(gtools)
 library(data.table)
 library(stringr)
 library(magrittr)
+library(ggplot2)
 
 options(stringsAsFactors = FALSE);
 
@@ -174,7 +175,6 @@ labeledHeatmap(Matrix = moduleTraitCor,
 
 
 pdf("crema_WGCNA_standard_heatmap.pdf", width = 10, height = 10)
-print(p0)
 dev.off()
 
 ############################################################################################ custom heatmap #####################
@@ -210,7 +210,6 @@ p0 <- ggplot(data = moduleTraitCor_heat_df, aes(x = rn, y = trait)) +
   theme(axis.text.x = element_text(angle = 90, vjust=0, hjust=0)) +
   geom_tile(aes(fill = value), color = "white", size=2) + 
   scale_fill_gradientn(colours = c("lightblue", "white", "orange"), values = scales::rescale(c(-0.5, -0.4, 0, 0.4, 0.5)), name = "module - trait corelation") +
-  #geom_text(aes(label = stars.pval(pval)), size = 5) +
   geom_text(aes(label = signif(pval, 1)), size = 5) +
   theme_minimal() + 
   coord_equal() + 
@@ -220,9 +219,11 @@ p0 <- ggplot(data = moduleTraitCor_heat_df, aes(x = rn, y = trait)) +
   labs(title = "WGCNA modules - traits relationship") + 
   theme(axis.text=element_text(size=12), axis.title=element_text(size=16,face="bold")) 
 
-pdf("crema_WGCNA_custom_heatmap.pdf", width = 10, height = 10)
+png("crema_WGCNA_custom_heatmap.png", width = 10, height = 10)
 print(p0)
 dev.off()
+
+save.image(file='yoursession.RData')
 
 ############################################################################################ extract modules genes AD_S #######
 
