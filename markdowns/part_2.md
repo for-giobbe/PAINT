@@ -299,7 +299,7 @@ head -n -1 | awk '{print $1}'; done
 ```
 
 
-As we can see, contaminant contigs are <10% - 821 contigs fro crema and 945 contigs for vicia.
+As we can see, contaminant contigs are <10% - 821 contigs fro crema and 947 contigs for vicia.
 This is expected, as a small amount of reads can generate a lot of contaminants contigs.
 In our case this step is rather important to remve vicia contigs from crema assembly:
 the species is too small to dissect the digestive tract and as such some plant material was most likely present

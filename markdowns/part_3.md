@@ -75,7 +75,8 @@ and then a raw-counts matrix without them is generated:
 
 
 ```
-grep -v vicia_contaminants.list RSEM_vicia.gene.counts.matrix > RSEM_vicia.filtered.gene.counts.matrix
+grep -v -f contaminants/vicia/vicia.blastp.contaminants_genes.lst 
+abundances/vicia/RSEM_vicia.gene.counts.matrix > abundances/vicia/RSEM_vicia.filtered.gene.counts.matrix
 ```
 
 
@@ -83,8 +84,8 @@ The DE is performed using DESeq2:
 
 
 ```
-run_DE_analysis.pl --matrix RSEM_vicia.filtered.gene.counts.matrix --samples_file ../../vicia_samples.txt 
---method DESeq2 --output vicia_deseq_gene
+run_DE_analysis.pl --matrix abundances/vicia/RSEM_vicia.filtered.gene.counts.matrix 
+--samples_file samples_vicia.txt --method DESeq2 --output abundances/vicia/vicia_deseq_gene/
 ```
 
 
@@ -98,15 +99,16 @@ RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.Rscript
 RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.count_matrix
 ```
 
+
 Then upregulated (padj < 0.05 & logFC > 2) and downregulated (padj < 0.05 & logFC > -2) 
 genes can be retrieved using:
 
 
 ```
 Rscript scripts/DE_genes.Rscript 0.05 2 
-abundances/vicia/vicia_gene_deseq/RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.DE_results 
-abundances/vicia/vicia_gene_deseq/vicia_DN_genes.lst 
-abundances/vicia/vicia_gene_deseq/vicia_UP_genes.lst
+abundances/vicia/vicia_deseq_gene/RSEM_vicia.filtered.gene.counts.matrix.n_vs_v.DESeq2.DE_results 
+abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst 
+abundances/vicia/vicia_deseq_gene/vicia_UP_genes.lst 
 ```
 
 
@@ -120,7 +122,9 @@ The Rscript takes as inputs:
 - downregulated genes output file
 
 
-A total of 244 DE genes are found - of which 101 are downregulated and 143 upregulated.
+A total of 245 DE genes are found - of which 101 are downregulated and 144 upregulated.
+
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_DE.jpg)
 
 
 ---
