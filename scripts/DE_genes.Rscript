@@ -3,22 +3,48 @@
 #!/usr/bin/env Rscript
 args = commandArgs(trailingOnly=TRUE)
 
-if (length(args)<5) {
+if (length(args)<6) {
   stop("too few arguments", call.=FALSE)
 }
 
 #args[1]	padj_cutoff
 #args[2]	logfc_cutoff
 #args[3]        DESeq2 results table
-#args[4]        upregulated genes file
-#args[5]        dnregulated genes file
+#args[4]        upregulated genes in V / downregulated genes in N / contrast=c("conditions","n","v") / LogFC < logfc_cutoff
+#args[5]        downregulated genes in V / upregulated genes in N / contrast=c("conditions","n","v") / LogFC > logfc_cutoff
+#args[6]        DE plot
+
+############################################################################################ requirements #####
+
+library(ggplot2)
 
 ############################################################################################ DE genes #########
 
 DE_results = read.table(file = args[3], header = TRUE, sep="\t")
 
-dnregulated_genes <- subset(DE_results, padj < args[1] & log2FoldChange < -(as.numeric(args[2])))
-write(rownames(dnregulated_genes), file = args[4])
+upregulated_genes <- subset(DE_results, padj < args[1] & log2FoldChange < -(as.numeric(args[2])))
+write(rownames(upregulated_genes), file = args[4])
 
-upregulated_genes <- subset(DE_results, padj < args[1] & log2FoldChange > as.numeric(args[2]))
-write(rownames(upregulated_genes), file = args[5])
+dnregulated_genes <- subset(DE_results, padj < args[1] & log2FoldChange > as.numeric(args[2]))
+write(rownames(dnregulated_genes), file = args[5])
+
+############################################################################################ plot #############
+
+DE_results$diffexpressed <- "not DE"
+DE_results$diffexpressed[DE_results$log2FoldChange > as.numeric(args[2]) & DE_results$pvalue < as.numeric(args[1])] <- "upregulated in N"
+DE_results$diffexpressed[DE_results$log2FoldChange < -(as.numeric(args[2])) & DE_results$pvalue < as.numeric(args[1])] <- "upregulated in V"
+
+DE_plot <- ggplot(data=DE_results, aes(x=log2FoldChange, y=-log10(pvalue), col=diffexpressed)) +
+ 	   geom_point() + 
+  	   coord_flip() + theme(panel.background = element_rect(fill = 'white', colour = 'white')) + scale_color_manual(values=c("lightgray", "lightblue", "orange")) +
+  	   geom_vline(xintercept=c(-(as.numeric(args[2])),(as.numeric(args[2]))), col="lightgray") +
+  	   geom_hline(yintercept=-log10(as.numeric(args[1])), col="lightgray") + theme(legend.key=element_blank()) +
+	   theme(legend.title=element_blank()) +
+	   theme(panel.background = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.border = element_rect(colour = "lightgray", fill=NA, size=1)) +
+	   theme(legend.position="top") + theme(axis.title.x=element_blank()) + theme(axis.title.y=element_blank())
+
+ggsave(args[6],DE_plot)
+
+
+
+
