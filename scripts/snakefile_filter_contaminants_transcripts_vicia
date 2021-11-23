@@ -1,9 +1,9 @@
-chunk = [str(x).zfill(2) for x in range(1,41)]
+chunk = [str(x).zfill(2) for x in range(1,81)]
 
 rule all:
 	input:
 		 'contaminants/vicia/vicia.blastp.contaminants_contigs.lst',
-	shell:	 'rm *lst snakejob*'
+	shell:	 'rm slurm-*'
 
 rule split_fasta:
 	input:
@@ -11,15 +11,15 @@ rule split_fasta:
 	output:
                  expand('contaminants/vicia/vicia.Trinity.fasta.transdecoder.part-{chunk}.pep', chunk = chunk)
 	conda:   '../env/fasta-splitter.yaml'
-	shell:   'fasta-splitter -n-parts 40 --measure seq --out-dir contaminants/vicia/ {input}'
+	shell:   'fasta-splitter -n-parts 80 --measure seq --out-dir contaminants/vicia/ {input}'
 
 rule blastp:
 	input:
                  'contaminants/vicia/vicia.Trinity.fasta.transdecoder.part-{chunk}.pep'
 	output:
                  'contaminants/vicia/vicia.{chunk}.blastp.outfmt6'
-	threads: 8
-	conda:	 '../env/diamond.yaml'
+	threads: 4
+	conda:	 '../env/blast.yaml'
 	shell:   'blastp -query {input} -task blastp-fast -db dbs/nr/nr -max_target_seqs 50 -max_hsps 1 -evalue 1e-7 -outfmt "6 qseqid sseqid evalue staxids"  -num_threads {threads} > {output}'
 
 rule taxonomy_assignement:

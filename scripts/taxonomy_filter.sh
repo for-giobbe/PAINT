@@ -27,3 +27,5 @@ for i in $(awk -F "\t" '{print $1}' $1 | sort -u);
         fi;
 
 done
+
+if [[ ! -f "$2" ]]; then touch $2; fi

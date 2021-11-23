@@ -1,9 +1,9 @@
 ## Weighted Gene Coexpression Network in crema
 
 
-*environiment:* yaml.WGCNA
+**environiment:** yaml.WGCNA
 
-*aim:* retrieve genes associate to short-term and long-term EFN feeding with a WGCN approach
+**aim:** retrieve genes associate to short-term and long-term EFN feeding with a WGCN approach
 
 
 ---

@@ -4,7 +4,7 @@
 args = commandArgs(trailingOnly=TRUE)
 
 # test if there is at least one argument: if not, return an error
-if (length(args)<8) {
+if (length(args)<9) {
   stop("At least one argument must be supplied (input file).n", call.=FALSE)
 }
 
@@ -16,7 +16,8 @@ if (length(args)<8) {
 #args[6]  cortype          # bicor
 #args[7]  counts           # 
 #args[8]  traits           #
-  
+#args[9]  output folder    #
+
 power = as.numeric(args[1])
 networktype = args[2]
 minmodulesize = as.numeric(args[3])
@@ -40,9 +41,16 @@ library(ggplot2)
 
 options(stringsAsFactors = FALSE);
 
+############################################################################################ import #### ########################################
+
+traitData = read.csv(traits);
+GenewiseCounts <- read.delim(counts)
+
+setwd(args[9])
+
 ############################################################################################ norm. data ########################################
 
-GenewiseCounts <- read.delim(counts)
+#GenewiseCounts <- read.delim(counts)
 group <- factor(c(1,1,1,1,1,
                   2,2,2,2,2,
                   3,3,3,3,3,
@@ -60,16 +68,16 @@ y <- calcNormFactors(y)
 cpms <- cpm(y, log=FALSE)
 rownames(cpms) <- y$genes[,1]
 
-#write.table(cpms, file="RSEM_crema.filtered.gene.TMM.matrix", quote=F, sep="\t")
+write.table(cpms, file="RSEM_crema.filtered.gene.TMM.matrix", quote=F, sep="\t")
 
 ############################################################################################ expr. data ########################################
 
-#Data = read.csv("RSEM_crema.filtered.gene.TMM.matrix", sep ="\t")
-#dim(Data);
-#names(Data);
-#datExpr0 = as.data.frame(t(Data));
+Data = read.csv("RSEM_crema.filtered.gene.TMM.matrix", sep ="\t")
+dim(Data);
+names(Data);
+datExpr0 = as.data.frame(t(Data));
 
-datExpr0 = t(cpms);
+#datExpr0 = t(cpms);
 
 gsg = goodSamplesGenes(datExpr0, verbose = 3);
 gsg$allOK
@@ -85,9 +93,9 @@ if (!gsg$allOK)
   datExpr0 = datExpr0[gsg$goodSamples, gsg$goodGenes]
 }
 
-############################################################################################ trait data ########################################
+############################################################################################ trait data ######################################### 
 
-traitData = read.csv(traits);
+#traitData = read.csv(traits);
 dim(traitData);
 names(traitData);
 
@@ -209,21 +217,20 @@ moduleTraitCor_heat_df <- subset(moduleTraitCor_heat_df, rn %in% interesting_mod
 p0 <- ggplot(data = moduleTraitCor_heat_df, aes(x = rn, y = trait)) +
   theme(axis.text.x = element_text(angle = 90, vjust=0, hjust=0)) +
   geom_tile(aes(fill = value), color = "white", size=2) + 
-  scale_fill_gradientn(colours = c("lightblue", "white", "orange"), values = scales::rescale(c(-0.5, -0.4, 0, 0.4, 0.5)), name = "module - trait corelation") +
-  geom_text(aes(label = signif(pval, 1)), size = 5) +
-  theme_minimal() + 
+  scale_fill_gradientn(colours = c("lightblue", "white", "orange"), values = scales::rescale(c(-0.5, -0.4, 0, 0.4, 0.5)), name = "module - trait correlation") +
+  geom_text(aes(label = signif(pval, 1)), size = 3) +
+  theme(panel.background = element_rect(fill = 'white', colour = 'white')) +
   coord_equal() + 
   theme(axis.title.x=element_blank()) + 
   theme(axis.title.y=element_blank()) + 
-  theme(plot.title = element_text(size=16,face="bold")) +
+  theme(plot.title = element_text(size=8,face="bold")) +
   labs(title = "WGCNA modules - traits relationship") + 
-  theme(axis.text=element_text(size=12), axis.title=element_text(size=16,face="bold")) 
+  theme(axis.text=element_text(size=8), axis.title=element_text(size=8,face="bold")) +
+  theme(legend.text=element_text(size=8)) +
+  theme(plot.title = element_text(size=8)) +
+  theme(legend.title=element_text(size=8))
 
-png("crema_WGCNA_custom_heatmap.png", width = 10, height = 10)
-print(p0)
-dev.off()
-
-save.image(file='yoursession.RData')
+ggsave("crema_WGCNA_custom_heatmap.jpg",p0)
 
 ############################################################################################ extract modules genes AD_S #######
 

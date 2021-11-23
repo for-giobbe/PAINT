@@ -3,7 +3,7 @@ chunk = [str(x).zfill(2) for x in range(1,41)]
 rule all:
 	input:
 		 'contaminants/crema/crema.blastp.contaminants_contigs.lst',
-	shell:	 'rm *lst snakejob*'
+	shell:	 'rm slurm-*'
 
 rule split_fasta:
 	input:
