@@ -1,0 +1,3 @@
+# go back to pushed commit
+git reset --hard HEAD~
+git push --force
