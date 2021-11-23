@@ -1,14 +1,9 @@
 ## Differential Expression in vicia
 
 
----
+*environiment:* yaml.DE
 
-
-environiment: yaml.DE
-
-
-Here we will carry out gene Differential Expression in vicia.
-to find the genes which undergo expression changes after crema feeding on EFN.
+*aim:* retrieve crema genes which undergo expression changes after short-term and long-term EFN feeding.
 
 
 ---

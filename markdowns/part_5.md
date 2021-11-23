@@ -1,11 +1,11 @@
 # GO/KO annotation and enrichment analyses
 
 
-
 *environiment:* yaml.main 
 
 
 *aim:* gain functional insight on the genes associated to crema - vicia interactions.
+
 
 ---
 
@@ -35,7 +35,8 @@ sh scripts/reformat_GOs.sh enrichment/GO_vicia/GO_vicia_predictions.lst enrichme
 The the GO enrichment analysisis is performed using the following commands:
 
 ```
-Rscript scripts/GO_enrichment.Rscript enrichment/GO_vicia/GO_vicia_geneUniverse abundances/vicia/vicia_deseq_gene/ BP 5 elim fisher 0.05
+Rscript scripts/GO_enrichment.Rscript enrichment/GO_vicia/GO_vicia_geneUniverse 
+abundances/vicia/vicia_deseq_gene/ BP 5 elim fisher 0.05
 ```
 
 
@@ -43,7 +44,8 @@ and
 
 
 ```
-Rscript scripts/GO_enrichment.Rscript enrichment/GO_vicia/GO_vicia_geneUniverse abundances/vicia/vicia_deseq_gene/ BP 5 elim fisher 0.05
+Rscript scripts/GO_enrichment.Rscript enrichment/GO_crema/GO_crema_geneUniverse 
+abundances/vicia/crema_deseq_gene/ BP 5 elim fisher 0.05
 ```
 
 
