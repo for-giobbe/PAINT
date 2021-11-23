@@ -1,13 +1,10 @@
-## reads qc & preprocessing
+# reads qc & preprocessing
 
 
----
+*environiment:* yaml.DE
 
 
-environiment: yaml.main 
-
-
-In this step we will carry out qc of the two species RNA-seq libraries and preprocess them.
+*aim:* preprocess reads (low-quality + rRNA / mRNA / pRNA) and QC.
 
 
 ---

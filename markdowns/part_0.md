@@ -1,4 +1,10 @@
-## Requirements and dataset explanation
+# Requirements and dataset explanation
+
+
+*environiment:* yaml.main
+
+
+*aim:* set up conda environiments / obtain large dbs / understand experimental design
 
 
 ---

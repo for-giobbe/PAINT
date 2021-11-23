@@ -1,6 +1,12 @@
 # trascriptomes assembly & filtering
 
 
+*environiment:* yaml.DE
+
+
+*aim:* assemble crema and vicia trascriptomes / annotate CDS / filter contaminats contigs / QC the assembly.
+
+
 ---
 
 
