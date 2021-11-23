@@ -1,15 +1,18 @@
 # GO/KO annotation and enrichment analyses
 
 
+
+*environiment:* yaml.main 
+
+
+*aim:* gain functional insight on the genes associated to crema - vicia interactions.
+
 ---
-
-
-environiment: yaml.main 
 
 
 GO annotation has been carried out using [PANNZER](http://ekhidna2.biocenter.helsinki.fi/sanspanz/)
 using no filtering and defeault parameters. 
-PANNZER assigned 39826 and YYY GO-terms respectively to crema and vicia.
+PANNZER assigned 39826 and 99954 GO-terms respectively to crema and vicia (7526 and 18794 transcripts).
 
 
 Subsequent enrichment analysis legerage [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html)
@@ -32,7 +35,7 @@ sh scripts/reformat_GOs.sh enrichment/GO_vicia/GO_vicia_predictions.lst enrichme
 The the GO enrichment analysisis is performed using the following commands:
 
 ```
-Rscript scripts/GO_enrichment.Rscript GO_crema_geneUniverse_BP . BP 5 weight fisher 0.05
+Rscript scripts/GO_enrichment.Rscript enrichment/GO_vicia/GO_vicia_geneUniverse abundances/vicia/vicia_deseq_gene/ BP 5 elim fisher 0.05
 ```
 
 
@@ -40,7 +43,7 @@ and
 
 
 ```
-Rscript scripts/GO_enrichment.Rscript GO_crema_geneUniverse_BP . BP 5 weight fisher 0.05
+Rscript scripts/GO_enrichment.Rscript enrichment/GO_vicia/GO_vicia_geneUniverse abundances/vicia/vicia_deseq_gene/ BP 5 elim fisher 0.05
 ```
 
 

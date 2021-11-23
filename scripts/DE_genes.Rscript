@@ -44,7 +44,3 @@ DE_plot <- ggplot(data=DE_results, aes(x=log2FoldChange, y=-log10(pvalue), col=d
 	   theme(legend.position="top") + theme(axis.title.x=element_blank()) + theme(axis.title.y=element_blank())
 
 ggsave(args[6],DE_plot)
-
-
-
-

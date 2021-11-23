@@ -100,15 +100,17 @@ RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.count_matrix
 ```
 
 
-Then upregulated (padj < 0.05 & logFC > 2) and downregulated (padj < 0.05 & logFC > -2) 
-genes can be retrieved using:
+Then genes which are upregulated (padj < 0.05 & logFC > +1.5) and downregulated (padj < 0.05 & logFC > -1.5) 
+in the plants which lived alongside crema - _versus_ those which never had any contact with crema - 
+can be retrieved using:
 
 
 ```
-Rscript scripts/DE_genes.Rscript 0.05 2 
+Rscript scripts/DE_genes.Rscript 0.05 1.5 
 abundances/vicia/vicia_deseq_gene/RSEM_vicia.filtered.gene.counts.matrix.n_vs_v.DESeq2.DE_results 
+abundances/vicia/vicia_deseq_gene/vicia_UP_genes.lst  
 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst 
-abundances/vicia/vicia_deseq_gene/vicia_UP_genes.lst 
+images/vicia_DE.jpg
 ```
 
 
@@ -116,15 +118,26 @@ The Rscript takes as inputs:
 
 
 - the adjusted p value to cosider a gene DE
-- the logFC  to cosider a gene downregulated or upregulated - _i.e._ if 2 -> +2 and -2
+- the logFC  to cosider a gene downregulated or upregulated - _i.e._ if 1.5 -> +1.5 and -1.5
 - the DESeq2 results table
 - upregulated genes output file
 - downregulated genes output file
 
 
-A total of 245 DE genes are found - of which 101 are downregulated and 144 upregulated.
+A total of 500 DE genes are found - of which 279 are downregulated and 221 upregulated.
+
 
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_DE.jpg)
+
+
+In this volcano plot the x-axis represent -log(padj) and the y-axis represent the LogFC.
+
+
+NB - in the analysis DESeq2 contast is ```contrast=c("conditions","n","v")``` and thus:
+
+- genes which are upregulated in V have a negative LogFC
+- genes which are downregulated in V have a positve LogFC
+
 
 
 ---
