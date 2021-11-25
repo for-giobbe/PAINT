@@ -75,7 +75,7 @@ Raw GSEA output are available in:
 ```enrichment/GO_vicia/vicia_DN_UP_enrichment.tsv```
 
 
-GO enrichment analyses were further charchteryzed with [rrvgo](http://www.bioconductor.org/packages/release/bioc/vignettes/rrvgo/inst/doc/rrvgo.html], 
+GO enrichment analyses were further charchteryzed with [rrvgo](http://www.bioconductor.org/packages/release/bioc/vignettes/rrvgo/inst/doc/rrvgo.html), 
 using the Rscript ```plot_GO_enrichment.Rscript```
 
 
