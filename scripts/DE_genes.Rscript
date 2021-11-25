@@ -10,9 +10,11 @@ if (length(args)<6) {
 #args[1]	padj_cutoff
 #args[2]	logfc_cutoff
 #args[3]        DESeq2 results table
-#args[4]        upregulated genes in V / downregulated genes in N / contrast=c("conditions","n","v") / LogFC < logfc_cutoff
-#args[5]        downregulated genes in V / upregulated genes in N / contrast=c("conditions","n","v") / LogFC > logfc_cutoff
+#args[4]        upregulated genes in V / downregulated genes in N 
+#args[5]        downregulated genes in V / upregulated genes in N
 #args[6]        DE plot
+
+# contrast=c("conditions","n","v") -> log2FoldChange*(-1)
 
 ############################################################################################ requirements #####
 

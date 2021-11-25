@@ -128,10 +128,8 @@ A total of 500 DE genes are found - of which 279 are downregulated and 221 upreg
 In this volcano plot the x-axis represent -log(padj) and the y-axis represent the LogFC.
 
 
-NB - in the analysis DESeq2 contast is ```contrast=c("conditions","n","v")``` and thus:
-
-- genes which are upregulated in V have a negative LogFC
-- genes which are downregulated in V have a positve LogFC
+NB - in the analysis DESeq2 contast is ```contrast=c("conditions","n","v")``` and thus
+LogFc values are multiplied by -1 in the ```DE_genes.Rscript```.
 
 
 Gene which are upregulated or downregulated in vicia when the association witch vrema is enstablished can be respectively found in: 
