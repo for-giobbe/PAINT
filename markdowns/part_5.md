@@ -68,18 +68,23 @@ included. Terms are considered to be enriched only if p < 0.05
 in Fisher's Exact Test.
 
 
-Raw GSEA output are available in.
+Raw GSEA output are available in:
 
 
-GO enrichment analyses were further charchteryzed using [rrvgo](http://www.bioconductor.org/packages/release/bioc/vignettes/rrvgo/inst/doc/rrvgo.html), 
-using the Rscript.
+```enrichment/GO_vicia/vicia_DN_BP_enrichment.tsv```
+```enrichment/GO_vicia/vicia_DN_UP_enrichment.tsv```
+
+
+GO enrichment analyses were further charchteryzed with [rrvgo](http://www.bioconductor.org/packages/release/bioc/vignettes/rrvgo/inst/doc/rrvgo.html], 
+using the Rscript ```plot_GO_enrichment.Rscript```
 
 
 For vicia:
 
 
 ```
-Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_UP_BP_red_enrichment.tsv Rel BP 0.8 org.At.tair.db orange images/vicia_UP.jpg
+Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_UP_BP_red_enrichment.tsv 
+Rel BP 0.8 org.At.tair.db orange images/vicia_UP.jpg
 ```
 
 
@@ -87,8 +92,21 @@ and
 
 
 ```
-Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_DN_BP_red_enrichment.tsv Rel BP 0.8 org.At.tair.db orange images/vicia_DN.jpg
+Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_DN_BP_red_enrichment.tsv 
+Rel BP 0.8 org.At.tair.db lightblue images/vicia_DN.jpg
 ```
+
+
+The Rscript positional arguments:
+
+
+1. enrivhed goterms alog with their p value
+2. similartiy calculation method
+3. the onyology considered (BP/MF/CC)
+4. treshold for finding high ranking GO terms
+5. the database
+6. color
+7. output files
 
 
 Here are the reults for vicia:

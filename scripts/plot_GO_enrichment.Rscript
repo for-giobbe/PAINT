@@ -1,0 +1,98 @@
+############################################################################################ parameters #######
+
+#!/usr/bin/env Rscript
+args = commandArgs(trailingOnly=TRUE)
+
+# test if there is at least one argument: if not, return an error
+if (length(args)<7) {
+  stop("At least one argument must be supplied (input file).n", call.=FALSE)
+}
+
+#args[1]  goterms 
+#args[2]  method        # rel
+#args[3]  ontology      # BP
+#args[4]  treshold      # 0.8
+#args[5]  db            # org.At.tair.db
+#args[6]  color
+#args[7]  out name
+
+############################################################################################ requirements #######
+
+library(rrvgo)
+library(ggpmisc)
+library(cowplot)
+library(patchwork)
+library(ggplot2)
+library(ggrepel)
+
+'%!in%' <- function(x,y)!('%in%'(x,y))
+
+############################################################################################ PLOT ###############
+
+go_analysis <- read.delim(args[1], sep="\t", header=T)
+simMatrix <- calculateSimMatrix(go_analysis$id,
+                                orgdb=args[5],
+                                ont=args[3],
+                                method=args[2])
+
+scores <- setNames(-log10(go_analysis$pval), go_analysis$id)
+
+reducedTerms <- reduceSimMatrix(simMatrix,
+                                scores,
+                                threshold=args[4],
+                                orgdb=args[5])
+
+x <- cmdscale(as.matrix(as.dist(1 - simMatrix)), eig = TRUE, k = 2)
+
+df <- cbind(as.data.frame(x$points), reducedTerms[match(rownames(x$points), reducedTerms$go), c("term", "parent", "parentTerm", "score")])
+
+df$number <- as.integer(as.factor(df$parent))
+
+df$original <- rownames(df)
+
+df$number[df$original %!in% reducedTerms$parent] <- ""
+
+df <- df[order(as.numeric(df$number)),]
+
+p_real <- ggplot(df, aes(x = V1, y = V2, color = score, fill = score)) + 
+  geom_point(aes(size = score),pch=21,width=0.03,height=0.03) +
+  scale_y_continuous(name = "") + scale_x_continuous(name = "") +
+  theme(panel.background = element_blank(), panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),panel.border = element_rect(colour = "lightgray", fill=NA, size=1)) +
+  xlab("semantic space x") + ylab("semantic space y") +
+  scale_colour_gradientn(colours = c("white", args[6])) +
+  scale_fill_gradientn(colours=alpha(c("lightgray", args[6]), 0.2)) +
+  scale_size(range = c(0, 80)) + 
+  geom_text_repel(aes(label = number), colour="black", segment.color = NA,size = 5, fontface = "bold", force=0.001, force_pull=100) + 
+  coord_fixed() + 
+  xlim(-0.5, 0.5) + ylim(-0.5, 0.5) +
+  theme(legend.direction = "vertical", legend.box = "horizontal") +
+  theme(legend.position = "none") + 
+  theme(axis.text=element_text(size=8), axis.title=element_text(size=8)) +
+  theme(legend.text=element_text(size=8)) +
+  theme(plot.title = element_text(size=16,face="bold"))
+
+p_lgnd1 <- ggplot(df, aes(x = V1, y = V2, color = score)) + 
+  geom_point(aes()) +
+  theme(panel.background = element_blank(), panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),panel.border = element_rect(colour = "lightgray", fill=NA, size=1)) +
+  scale_colour_gradientn(colours = c("lightgray", args[6])) +
+  theme(legend.direction = "vertical", legend.box = "vertical")  +
+  theme(legend.key.height=unit(3,"cm"))
+
+p_lgnd1 <- get_legend(p_lgnd1)
+
+p_lgnd2 <- ggplot(df) + annotate("table", x = 10, y = -10,label = subset(df, df$number > 0)[,c(3,7)], fill="white") +
+  theme(panel.background = element_blank(), panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank()) + 
+  theme(axis.title.x=element_blank(),axis.text.x=element_blank(),axis.ticks.x=element_blank()) +
+  theme(axis.title.y=element_blank(),axis.text.y=element_blank(),axis.ticks.y=element_blank())
+
+lgnd2 <- unique(df[,c(7,5)])
+
+p <- plot_grid(p_real,p_lgnd1,p_lgnd2, ncol = 3, align = "v", axis = "t", rel_widths = c(1,0.1,0.6),
+                scale=c(1,1,0.6), hjust=0.5)
+
+############################################################################################ SAVE ##########################################
+
+ggsave(args[7],p,width = 11, height = 7)
