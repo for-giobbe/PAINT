@@ -1,0 +1,35 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0010200	response to chitin	42	4	0.39	0.00060
+GO:0000165	MAPK cascade	119	6	1.1	0.00083
+GO:0043434	response to peptide hormone	5	2	0.05	0.00084
+GO:0015914	phospholipid transport	25	3	0.23	0.00154
+GO:0080142	regulation of salicylic acid biosyntheti...	7	2	0.06	0.00173
+GO:0045927	positive regulation of growth	27	3	0.25	0.00193
+GO:0009800	cinnamic acid biosynthetic process	8	2	0.07	0.00230
+GO:0006355	regulation of transcription, DNA-templat...	1474	24	13.65	0.00432
+GO:0034204	lipid translocation	14	2	0.13	0.00720
+GO:0002833	positive regulation of response to bioti...	14	2	0.13	0.00720
+GO:0070417	cellular response to cold	15	2	0.14	0.00826
+GO:0043902	positive regulation of multi-organism pr...	16	2	0.15	0.00938
+GO:0006468	protein phosphorylation	1139	23	10.54	0.00981
+GO:0000160	phosphorelay signal transduction system	141	5	1.31	0.01002
+GO:0032103	positive regulation of response to exter...	17	2	0.16	0.01057
+GO:0010224	response to UV-B	27	2	0.25	0.02568
+GO:1990573	potassium ion import across plasma membr...	3	1	0.03	0.02752
+GO:1902476	chloride transmembrane transport	3	1	0.03	0.02752
+GO:0070509	calcium ion import	3	1	0.03	0.02752
+GO:0033528	S-methylmethionine cycle	3	1	0.03	0.02752
+GO:0043570	maintenance of DNA repeat elements	3	1	0.03	0.02752
+GO:0009617	response to bacterium	192	6	1.78	0.02866
+GO:0002229	defense response to oomycetes	29	2	0.27	0.02935
+GO:0006979	response to oxidative stress	262	6	2.43	0.03509
+GO:0010447	response to acidic pH	4	1	0.04	0.03652
+GO:0030574	collagen catabolic process	4	1	0.04	0.03652
+GO:0071216	cellular response to biotic stimulus	4	1	0.04	0.03652
+GO:0055064	chloride ion homeostasis	4	1	0.04	0.03652
+GO:0006884	cell volume homeostasis	4	1	0.04	0.03652
+GO:1990547	mitochondrial phosphate ion transmembran...	5	1	0.05	0.04545
+GO:0010082	regulation of root meristem growth	5	1	0.05	0.04545
+GO:0051560	mitochondrial calcium ion homeostasis	5	1	0.05	0.04545
+GO:0036297	interstrand cross-link repair	5	1	0.05	0.04545
+GO:0006290	pyrimidine dimer repair	5	1	0.05	0.04545

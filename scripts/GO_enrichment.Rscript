@@ -4,7 +4,7 @@
 args = commandArgs(trailingOnly=TRUE)
 
 # test if there is at least one argument: if not, return an error
-if (length(args)<7) {
+if (length(args)<8) {
   stop("At least one argument must be supplied (input file).n", call.=FALSE)
 }
 
@@ -15,6 +15,7 @@ if (length(args)<7) {
 #args[5]  algorithm
 #args[6]  statistic test
 #args[7]  pval cutoff
+#args[8]  out dir
 
 ############################################################################################ requirements #######
 
@@ -29,9 +30,11 @@ geneUniverse <- names(geneID2GO)
 ############################################################################### extract each modules genes #######
 
 modules <- list.files(path=args[2], pattern="*.lst", full.names=TRUE, recursive=FALSE)
+module_names <- list.files(path=args[2], pattern="*.lst", full.names=FALSE, recursive=FALSE)
+
 
 for(i in 1:length(modules)) {
-  module_name <- str_replace(modules[i], "_genes.lst", "")
+  module_name <- str_replace(module_names[i], "_genes.lst", "")
   genesOfInterest <- read.table(modules[i],header=FALSE)
   genesOfInterest <- as.character(genesOfInterest$V1)
   geneList <- factor(as.integer(geneUniverse %in% genesOfInterest))
@@ -42,5 +45,7 @@ for(i in 1:length(modules)) {
                      test = test,
                      orderBy = "test", topNodes=1000)
   allRes <- subset(allRes, test < args[7])
-  write.table(allRes, file=paste(module_name, args[3], "enrichment.tsv", sep="_"),row.names=FALSE,col.names=FALSE,sep="\t", quote = FALSE)
+  allRes_red <- allRes[,c(1,6)]
+  write.table(allRes, file=paste(args[8], paste(module_name, args[3], "enrichment.tsv", sep="_"), sep="/"),row.names=FALSE,col.names=TRUE,sep="\t", quote = FALSE)
+  write.table(allRes_red, file=paste(args[8], paste(module_name, args[3], "red_enrichment.tsv", sep="_"), sep="/"),row.names=FALSE,col.names=TRUE,sep="\t", quote = FALSE)
 }

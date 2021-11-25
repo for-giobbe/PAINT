@@ -1,0 +1,45 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0071277	cellular response to calcium ion	4	2	0.03	0.00043
+GO:0009813	flavonoid biosynthetic process	99	7	0.85	0.00072
+GO:0019264	glycine biosynthetic process from serine	9	2	0.08	0.00253
+GO:0050829	defense response to Gram-negative bacter...	11	2	0.09	0.00382
+GO:0009704	de-etiolation	11	2	0.09	0.00382
+GO:0046655	folic acid metabolic process	11	2	0.09	0.00382
+GO:0018298	protein-chromophore linkage	39	3	0.33	0.00450
+GO:0009773	photosynthetic electron transport in pho...	12	2	0.1	0.00456
+GO:0035999	tetrahydrofolate interconversion	12	2	0.1	0.00456
+GO:1903409	reactive oxygen species biosynthetic pro...	12	2	0.1	0.00456
+GO:0015979	photosynthesis	207	10	1.78	0.00884
+GO:0009626	plant-type hypersensitive response	19	2	0.16	0.01136
+GO:0010119	regulation of stomatal movement	56	3	0.48	0.01229
+GO:0009314	response to radiation	362	11	3.11	0.01335
+GO:2000377	regulation of reactive oxygen species me...	25	2	0.21	0.01927
+GO:0000413	protein peptidyl-prolyl isomerization	73	3	0.63	0.02484
+GO:0007623	circadian rhythm	73	3	0.63	0.02484
+GO:0009765	photosynthesis, light harvesting	29	2	0.25	0.02551
+GO:0019676	ammonia assimilation cycle	3	1	0.03	0.02553
+GO:0010275	NAD(P)H dehydrogenase complex assembly	3	1	0.03	0.02553
+GO:0052838	thiazole metabolic process	3	1	0.03	0.02553
+GO:0009970	cellular response to sulfate starvation	3	1	0.03	0.02553
+GO:0015793	glycerol transport	3	1	0.03	0.02553
+GO:0018131	oxazole or thiazole biosynthetic process	3	1	0.03	0.02553
+GO:1990575	mitochondrial L-ornithine transmembrane ...	3	1	0.03	0.02553
+GO:0042554	superoxide anion generation	3	1	0.03	0.02553
+GO:0010411	xyloglucan metabolic process	30	2	0.26	0.02718
+GO:0042060	wound healing	4	1	0.03	0.03389
+GO:0010555	response to mannitol	4	1	0.03	0.03389
+GO:0015729	oxaloacetate transport	4	1	0.03	0.03389
+GO:0055069	zinc ion homeostasis	4	1	0.03	0.03389
+GO:1990937	xylan acetylation	4	1	0.03	0.03389
+GO:0046688	response to copper ion	4	1	0.03	0.03389
+GO:0019252	starch biosynthetic process	34	2	0.29	0.03428
+GO:0009853	photorespiration	37	2	0.32	0.04003
+GO:0009554	megasporogenesis	5	1	0.04	0.04219
+GO:0043473	pigmentation	5	1	0.04	0.04219
+GO:0010258	NADH dehydrogenase complex (plastoquinon...	5	1	0.04	0.04219
+GO:0006011	UDP-glucose metabolic process	5	1	0.04	0.04219
+GO:0019566	arabinose metabolic process	5	1	0.04	0.04219
+GO:0042737	drug catabolic process	161	6	1.38	0.04330
+GO:0009057	macromolecule catabolic process	677	8	5.81	0.04585
+GO:0072528	pyrimidine-containing compound biosynthe...	65	3	0.56	0.04767
+GO:0042136	neurotransmitter biosynthetic process	15	3	0.13	0.04966
