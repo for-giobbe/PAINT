@@ -22,17 +22,19 @@ library(ggplot2)
 
 DE_results = read.table(file = args[3], header = TRUE, sep="\t")
 
-upregulated_genes <- subset(DE_results, padj < args[1] & log2FoldChange < -(as.numeric(args[2])))
+DE_results$log2FoldChange <- DE_results$log2FoldChange*(-1)
+
+upregulated_genes <- subset(DE_results, padj < args[1] & log2FoldChange > as.numeric(args[2]))
 write(rownames(upregulated_genes), file = args[4])
 
-dnregulated_genes <- subset(DE_results, padj < args[1] & log2FoldChange > as.numeric(args[2]))
+dnregulated_genes <- subset(DE_results, padj < args[1] & log2FoldChange < -(as.numeric(args[2])))
 write(rownames(dnregulated_genes), file = args[5])
 
 ############################################################################################ plot #############
 
 DE_results$diffexpressed <- "not DE"
-DE_results$diffexpressed[DE_results$log2FoldChange > as.numeric(args[2]) & DE_results$pvalue < as.numeric(args[1])] <- "upregulated in N"
-DE_results$diffexpressed[DE_results$log2FoldChange < -(as.numeric(args[2])) & DE_results$pvalue < as.numeric(args[1])] <- "upregulated in V"
+DE_results$diffexpressed[DE_results$log2FoldChange > as.numeric(args[2]) & DE_results$pvalue < as.numeric(args[1])] <- "V upregulated"
+DE_results$diffexpressed[DE_results$log2FoldChange < -(as.numeric(args[2])) & DE_results$pvalue < as.numeric(args[1])] <- "V dnregulated"
 
 DE_plot <- ggplot(data=DE_results, aes(x=log2FoldChange, y=-log10(pvalue), col=diffexpressed)) +
  	   geom_point() + 

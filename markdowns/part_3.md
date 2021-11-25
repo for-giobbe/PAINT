@@ -134,6 +134,13 @@ NB - in the analysis DESeq2 contast is ```contrast=c("conditions","n","v")``` an
 - genes which are downregulated in V have a positve LogFC
 
 
+Gene which are upregulated or downregulated in vicia when the association witch vrema is enstablished can be respectively found in: 
+
+
+- ```abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst```
+- ```abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst```
+
+
 ---
 
 
