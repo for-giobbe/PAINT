@@ -10,9 +10,6 @@
 ---
 
 
-environiment: yaml.main 
-
-
 Clone the github to a local host and then:
 
 

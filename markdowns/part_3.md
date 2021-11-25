@@ -134,7 +134,6 @@ NB - in the analysis DESeq2 contast is ```contrast=c("conditions","n","v")``` an
 - genes which are downregulated in V have a positve LogFC
 
 
-
 ---
 
 

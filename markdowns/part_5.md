@@ -34,9 +34,10 @@ sh scripts/reformat_GOs.sh enrichment/GO_vicia/GO_vicia_predictions.lst enrichme
 
 The the GO enrichment analysisis is performed using the following commands:
 
+
 ```
 Rscript scripts/GO_enrichment.Rscript enrichment/GO_vicia/GO_vicia_geneUniverse 
-abundances/vicia/vicia_deseq_gene/ BP 5 elim fisher 0.05
+abundances/vicia/vicia_deseq_gene/ BP 3 weight fisher 0.05 enrichment/GO_vicia/
 ```
 
 
@@ -45,7 +46,7 @@ and
 
 ```
 Rscript scripts/GO_enrichment.Rscript enrichment/GO_crema/GO_crema_geneUniverse 
-abundances/vicia/crema_deseq_gene/ BP 5 elim fisher 0.05
+abundances/vicia/crema_deseq_gene/ BP 3 weight fisher 0.05 enrichment/GO_crema/
 ```
 
 
@@ -62,9 +63,47 @@ The Rscript has several positional arguments:
 
 
 For this project, a hierachy-aware algoryhm (weight) was used to find enriched BP terms 
-and nodes are required to have at least 5 genes associated to be 
+and nodes are required to have at least 3 genes associated to be 
 included. Terms are considered to be enriched only if p < 0.05
 in Fisher's Exact Test.
+
+
+Raw GSEA output are available in.
+
+
+GO enrichment analyses were further charchteryzed using [rrvgo](http://www.bioconductor.org/packages/release/bioc/vignettes/rrvgo/inst/doc/rrvgo.html), 
+using the Rscript.
+
+
+For vicia:
+
+
+```
+Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_UP_BP_red_enrichment.tsv Rel BP 0.8 org.At.tair.db orange images/vicia_UP.jpg
+```
+
+
+and
+
+
+```
+Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_DN_BP_red_enrichment.tsv Rel BP 0.8 org.At.tair.db orange images/vicia_DN.jpg
+```
+
+
+Here are the reults for vicia:
+
+
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_UP.jpg)
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_DN.jpg)
+
+
+in brief:
+
+
+- p values are -log10 transformed and used as scores
+- calculateSimMatrix function is used to calculate score similarities between GO terms, using Rel method and org.At.tair.db db
+- reduceSimMatrix is used to identify high ranking GO terms based on their semantic similarity and scores, using a treshold of 8
 
 
 ---
