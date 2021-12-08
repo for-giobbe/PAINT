@@ -104,20 +104,109 @@ run_DE_analysis.pl --matrix crema/RSEM_crema.gene.counts.matrix --samples_file .
 
 
 Since in this experiment several conditions are present, a WGCNA approach is more suitable.
-Everyting can be seamlessly performed using the command:
+Everyting can be seamlessly performed using the commands:
 
 
 ```
-Rscript scripts/WGCNA.Rscript 6 signed 50 0.1 0.6 bicor 
-abundances/crema/RSEM_crema.filtered.gene.counts.matrix abundances/crema/crema_WGCNA_gene/crema_traits
+Rscript scripts/WGCNA.Rscript 22 signed 50 0.3 0.6 pearson 
+abundances/crema/RSEM_crema.filtered.gene.counts.matrix abundances/crema/crema_WGCNA_gene/crema_traits 
+abundances/crema/crema_WGCNA_gene/ none 0.05 20 AD
 ```
+
+
+and
+
+
+```
+Rscript scripts/WGCNA.Rscript 14 signed 50 0.3 0.6 pearson
+abundances/crema/RSEM_crema.filtered.gene.counts.matrix abundances/crema/crema_WGCNA_gene/crema_traits 
+abundances/crema/crema_WGCNA_gene/ none 0.05 20 CT
+```
+
+
+15401 transcripts are analyzed for CT and here is the powers table:
+
+
+```
+   Power SFT.R.sq slope truncated.R.sq mean.k. median.k. max.k.
+1      1   0.0836 13.90          0.983 7720.00   7720.00 8050.0
+2      2   0.1090 -6.23          0.817 4180.00   4160.00 4640.0
+3      3   0.4950 -7.30          0.863 2410.00   2370.00 3010.0
+4      4   0.5840 -4.64          0.898 1460.00   1420.00 2100.0
+5      5   0.6730 -3.44          0.923  930.00    886.00 1530.0
+6      5   0.6730 -3.44          0.923  930.00    886.00 1530.0
+7      6   0.7600 -2.84          0.950  614.00    571.00 1170.0
+8      7   0.8070 -2.61          0.958  420.00    378.00  927.0
+9      7   0.8070 -2.61          0.958  420.00    378.00  927.0
+10     8   0.8310 -2.41          0.959  295.00    258.00  753.0
+11     9   0.8470 -2.27          0.955  213.00    179.00  624.0
+12     9   0.8470 -2.27          0.955  213.00    179.00  624.0
+13    10   0.8640 -2.17          0.959  158.00    127.00  524.0
+14    11   0.8800 -2.07          0.961  119.00     91.10  447.0
+15    13   0.8980 -1.94          0.962   71.60     49.30  335.0
+16    15   0.9080 -1.85          0.964   45.70     28.00  259.0
+17    17   0.9150 -1.79          0.965   30.60     16.50  206.0
+18    19   0.9280 -1.72          0.971   21.30     10.10  167.0
+19    21   0.9380 -1.66          0.977   15.30      6.32  137.0
+20    23   0.9360 -1.63          0.974   11.30      4.09  115.0
+21    25   0.9420 -1.60          0.976    8.58      2.70   97.1
+22    27   0.9370 -1.59          0.973    6.63      1.82   83.7
+23    29   0.9360 -1.58          0.975    5.21      1.25   73.2
+```
+
+
+Here is a heatmap representing the trait-modules associations for CT:
+
+
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/CT_crema_WGCNA_custom_heatmap.jpg)
+
+
+11228 transcripts are analyzed for AD and here is the powers table:
+
+
+```
+   Power SFT.R.sq slope truncated.R.sq mean.k. median.k. max.k.
+1      1   0.0282  3.46          0.832 5640.00   5650.00 6000.0
+2      2   0.3960 -8.79          0.877 3100.00   3070.00 3660.0
+3      3   0.4670 -6.21          0.923 1820.00   1790.00 2440.0
+4      4   0.5140 -4.69          0.944 1130.00   1110.00 1740.0
+5      5   0.5260 -3.73          0.950  736.00    718.00 1300.0
+6      5   0.5260 -3.73          0.950  736.00    718.00 1300.0
+7      6   0.5490 -3.17          0.949  498.00    481.00  998.0
+8      7   0.5650 -2.89          0.938  347.00    332.00  788.0
+9      7   0.5650 -2.89          0.938  347.00    332.00  788.0
+10     8   0.5770 -2.68          0.926  249.00    234.00  635.0
+11     9   0.6170 -2.44          0.938  183.00    169.00  519.0
+12     9   0.6170 -2.44          0.938  183.00    169.00  519.0
+13    10   0.6380 -2.32          0.935  138.00    124.00  431.0
+14    11   0.6920 -2.16          0.959  105.00     92.40  362.0
+15    13   0.7790 -1.96          0.990   64.40     53.40  262.0
+16    15   0.8310 -1.95          0.998   41.50     32.10  203.0
+17    17   0.8560 -2.00          0.995   27.90     20.10  166.0
+18    19   0.8730 -2.05          0.994   19.50     13.10  138.0
+19    21   0.8880 -2.09          0.987   13.90      8.61  118.0
+20    23   0.9070 -2.09          0.981   10.20      5.83  102.0
+21    25   0.9200 -2.09          0.978    7.69      4.00   89.4
+22    27   0.9180 -2.11          0.968    5.88      2.80   79.2
+23    29   0.9300 -2.09          0.963    4.57      1.98   70.9
+```
+
+
+Here is a heatmap representing the trait-modules associations for AD:
+
+
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/AD_crema_WGCNA_custom_heatmap.jpg)
+
+
+In the figures only the modules which have a significative correlation to AD_S / AD_L / CT_S / CT_L are represented.
+Moreover, modules which also have a correlation of the same direction to respectively AD_0 / CT_0 are excluded.
 
 
 While for DE analyses we used the raw gene-counts matrix as input, WGCNA requires normalized counts
-and for this purpose the TMM-normalized CPMs provided by edgeR are generated by the script. 
+and for this purpose the [vst-normalized](https://www.rdocumentation.org/packages/DESeq2/versions/1.12.3/topics/varianceStabilizingTransformation) TPMs. 
 Moreover - as suggested by authors [here](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/faq.html) -
 we resticted the Gene Network inference to the transcripts which are consistently
-expressed troughout all samples (27169).
+expressed troughout all samples (at least 20 raw-counts in each samples - n=17935).
 
 
 Furthermore, the script includes several parameters:
@@ -129,9 +218,16 @@ Furthermore, the script includes several parameters:
 - dendrogram cut height for module merging
 - minimum eigengene coinnectivtivty for a module not to be disbanded
 - correlation used
+- the counts
+- the traits
+- the output directory
+- the pvalue correction for trait-modules corelation
+- the adjusted pvalue cutoff
+- the minimum number of raw-counts to retain a trascript
 
-A signed network has been inferred with a power of 6, 
-a dendrom cut height of 0.1 and leveraging the bidweight midcorrelation.
+
+A signed network has been inferred with a power of 13, 
+a dendrom cut height of 0.2 and leveraging peason midcorrelation.
 The expression matrix is the same used for the preliminary DE analysis and here is the trait file:
 
 
@@ -141,7 +237,7 @@ sed 's/,/ /g' abundances/crema/crema_WGCNA_gene/crema_traits | sed "s/sample/n \
 
 
 ```
-n   sample     AD_N  AD_S  AD_L  CT_N  CT_S  CT_L
+n   sample     AD_0  AD_S  AD_L  CT_0  CT_S  CT_L
 01  A_AD_rep1  1     0     0     0     0     0
 02  A_AD_rep2  1     0     0     0     0     0
 03  A_AD_rep3  1     0     0     0     0     0
@@ -185,18 +281,32 @@ n   sample     AD_N  AD_S  AD_L  CT_N  CT_S  CT_L
 ```
 
 
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/crema_WGCNA_custom_heatmap.jpg)
+Just a quick recap of the traits meaning:
 
 
-The Rscript will generate several files, including:
+- AD_0 - abdomen / crema never got in contact with vicia
+- AD_S - abdomen / crema got in contact with vicia in the 24h prior to the sacrifice
+- AD_L - abdomen / crema got in contact with vicia continuously until 24h prior to the sacrifice 
+- CT_0 - head + thorax / crema never got in contact with vicia
+- CT_S - head + thorax / crema got in contact with vicia in the 24h prior to the sacrifice
+- CT_L - head + thorax / crema got in contact with vicia continuously until 24h prior to the sacrifice
 
 
-- genes in modules positively associated to short term EFN feeding in head+thorax: ```CT_S_POS_modules_genes.lst```
-- genes in modules positively associated to short term EFN feeding in the abdomen: ```AD_S_POS_modules_genes.lst```
-- genes in modules positively associated to long term EFN feeding in head+thorax: ```CT_L_POS_modules_genes.lst```
-- genes in modules positively associated to long term EFN feeding in the abdomen: ```AD_L_POS_modules_genes.lst```
+Below is a heatmap which descripes the modules corelation to the traits - 
+tile colouring is proportional to corelation strength and tile numbers are the adjusted p values.
+
+
+The Rscript will generate several additional files, representing genes lists:
+
+
+- genes in modules positively associated exclusively to short term EFN feeding in head+thorax: ```moduleTraitCor_CT_S_POS_exclusive.lst```
+- genes in modules positively associated exclusively to long term EFN feeding in head+thorax: ```moduleTraitCor_CT_L_POS_exclusive.lst```
+- genes in modules positively associated exclusively to both short and long term EFN feeding in head+thorax: ```moduleTraitCor_CT_POS_exclusive.lst```
+- genes in modules positively associated exclusively to short term EFN feeding in the abdomen: ```moduleTraitCor_AD_L_POS_exclusive.lst```
+- genes in modules positively associated exclusively to long term EFN feeding in the abdomen: ```moduleTraitCor_AD_L_POS_exclusive.lst```
+- genes in modules positively associated exclusively to both short and long term EFN feeding in abdomen: ```moduleTraitCor_AD_POS_exclusive.lst```
 - the top hub-genes for each module ```hub_genes.lst```
-- genes present in each module
+- genes present in each module ...
 
 
 ---

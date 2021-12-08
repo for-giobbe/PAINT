@@ -49,3 +49,10 @@ for(i in 1:length(modules)) {
   write.table(allRes, file=paste(args[8], paste(module_name, args[3], "enrichment.tsv", sep="_"), sep="/"),row.names=FALSE,col.names=TRUE,sep="\t", quote = FALSE)
   write.table(allRes_red, file=paste(args[8], paste(module_name, args[3], "red_enrichment.tsv", sep="_"), sep="/"),row.names=FALSE,col.names=TRUE,sep="\t", quote = FALSE)
 }
+
+save.image("enrichment.RData")
+
+############################################################################### extract ###########################
+
+#myterms <- c("GO:0004984")
+#mygenes <- genesInTerm(myGOdata, myterms)

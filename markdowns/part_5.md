@@ -46,7 +46,7 @@ and
 
 ```
 Rscript scripts/GO_enrichment.Rscript enrichment/GO_crema/GO_crema_geneUniverse 
-abundances/vicia/crema_deseq_gene/ BP 3 weight fisher 0.05 enrichment/GO_crema/
+abundances/vicia/crema_WGCNA_gene/ BP 3 weight fisher 0.05 enrichment/GO_crema/
 ```
 
 
@@ -71,8 +71,13 @@ in Fisher's Exact Test.
 Raw GSEA output are available in:
 
 
-```enrichment/GO_vicia/vicia_DN_BP_enrichment.tsv```
-```enrichment/GO_vicia/vicia_DN_UP_enrichment.tsv```
+```enrichment/GO_vicia/*tsv```
+
+
+```enrichment/GO_crema/*tsv```
+
+
+---
 
 
 GO enrichment analyses were further charchteryzed with [rrvgo](http://www.bioconductor.org/packages/release/bioc/vignettes/rrvgo/inst/doc/rrvgo.html), 
@@ -142,11 +147,14 @@ Rel BP 0.8 org.At.tair.db orange images/vicia_UP.jpg
 ```
 Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_DN_BP_red_enrichment.tsv
 Rel BP 0.8 org.At.tair.db lightblue images/vicia_DN.jpg
+```
+
 
 Here are the results for crema (upreg in orange dnreg in blue):
 
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_UP.jpg)
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_DN.jpg)
+
 
 ---
 

@@ -104,22 +104,22 @@ NB: databases were downloaded in November 2021.
 ### download the experiment data
 
 
-Let's start by downlading the raw RNA-seq reads reads from SRA (only available after the paper is published) into the reads/crema_raw and and reads/vicia_raw folders.
+Let's start by downlading the raw RNA-seq reads reads from SRA - only available after the paper is published!
 
 
-vicia has accessions SRR15671599 - SRR15671608
+All reads have been deposited under bioproject PRJNA758979 and can be downloaded using:
 
 
-crema has accessions SRR15728993 - SRR15729012
+```
+for i in $(grep "Crema" SRA_accession.tsv | awk '{print $1}'); do fastq-dump --defline-seq '@$sn[_$rn]/$ri' 
+--split-files reads/vicia_raw/$i; done
+```
 
 
-they can be downloaded using:
-
-
-```for i in {15671599..15671608}; do fastq-dump --defline-seq '@$sn[_$rn]/$ri' --split-files reads/vicia_raw/SRR$i```
-
-
-```for i in {15728993..15729012}; do fastq-dump --defline-seq '@$sn[_$rn]/$ri' --split-files reads/crema_raw/SRR$i```
+```
+for i in $(grep "Vicia" SRA_accession.tsv | awk '{print $1}'); do fastq-dump --defline-seq '@$sn[_$rn]/$ri' 
+--split-files reads/vicia_raw/$i; done
+```
 
 
 Reference transcriptome assemblies are deposited on TSA with accession XXX and YYY respectively for vicia and crema.
