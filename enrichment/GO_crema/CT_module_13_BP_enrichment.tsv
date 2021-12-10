@@ -1,0 +1,34 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0008203	cholesterol metabolic process	10	3	0.16	0.00041
+GO:0019377	glycolipid catabolic process	3	2	0.05	0.00072
+GO:0006635	fatty acid beta-oxidation	12	3	0.19	0.00073
+GO:0015740	C4-dicarboxylate transport	4	2	0.06	0.00142
+GO:0007041	lysosomal transport	18	3	0.28	0.00254
+GO:0006888	ER to Golgi vesicle-mediated transport	19	3	0.3	0.00298
+GO:0019915	lipid storage	20	3	0.31	0.00346
+GO:0005978	glycogen biosynthetic process	7	2	0.11	0.00481
+GO:0006629	lipid metabolic process	313	19	4.89	0.00573
+GO:0019400	alditol metabolic process	8	2	0.12	0.00635
+GO:1902358	sulfate transmembrane transport	9	2	0.14	0.00809
+GO:0008340	determination of adult lifespan	30	3	0.47	0.01102
+GO:0001676	long-chain fatty acid metabolic process	11	2	0.17	0.01210
+GO:0000302	response to reactive oxygen species	11	2	0.17	0.01210
+GO:0002252	immune effector process	19	3	0.3	0.01410
+GO:0007040	lysosome organization	14	2	0.22	0.01943
+GO:0006665	sphingolipid metabolic process	37	3	0.58	0.01951
+GO:0015893	drug transport	15	2	0.23	0.02219
+GO:0015909	long-chain fatty acid transport	16	2	0.25	0.02511
+GO:0009064	glutamine family amino acid metabolic pr...	17	2	0.27	0.02817
+GO:0030203	glycosaminoglycan metabolic process	18	2	0.28	0.03138
+GO:0046471	phosphatidylglycerol metabolic process	3	1	0.05	0.04614
+GO:0034063	stress granule assembly	3	1	0.05	0.04614
+GO:0046579	positive regulation of Ras protein signa...	3	1	0.05	0.04614
+GO:0030576	Cajal body organization	3	1	0.05	0.04614
+GO:0030260	entry into host cell	3	1	0.05	0.04614
+GO:0016199	axon midline choice point recognition	3	1	0.05	0.04614
+GO:0060573	cell fate specification involved in patt...	3	1	0.05	0.04614
+GO:2000134	negative regulation of G1/S transition o...	3	1	0.05	0.04614
+GO:1902017	regulation of cilium assembly	3	1	0.05	0.04614
+GO:0035309	wing and notum subfield formation	3	1	0.05	0.04614
+GO:0070584	mitochondrion morphogenesis	3	1	0.05	0.04614
+GO:0072578	neurotransmitter-gated ion channel clust...	3	1	0.05	0.04614

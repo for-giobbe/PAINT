@@ -1,0 +1,26 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007379	segment specification	5	3	0.12	0.00012
+GO:0035290	trunk segmentation	3	2	0.07	0.00162
+GO:0090254	cell elongation involved in imaginal dis...	4	2	0.09	0.00319
+GO:0060969	negative regulation of gene silencing	4	2	0.09	0.00319
+GO:0030335	positive regulation of cell migration	15	3	0.35	0.00470
+GO:0043547	positive regulation of GTPase activity	15	3	0.35	0.00470
+GO:0042078	germ-line stem cell division	5	2	0.12	0.00524
+GO:0008354	germ cell migration	6	2	0.14	0.00774
+GO:1901606	alpha-amino acid catabolic process	23	4	0.54	0.01061
+GO:0030322	stabilization of membrane potential	7	2	0.16	0.01067
+GO:0006188	IMP biosynthetic process	7	2	0.16	0.01067
+GO:0007030	Golgi organization	21	3	0.49	0.01240
+GO:0010004	gastrulation involving germ band extensi...	8	2	0.19	0.01401
+GO:0016310	phosphorylation	550	23	12.94	0.02020
+GO:0006144	purine nucleobase metabolic process	10	2	0.24	0.02183
+GO:0035222	wing disc pattern formation	10	2	0.24	0.02183
+GO:0044550	secondary metabolite biosynthetic proces...	10	2	0.24	0.02183
+GO:0006672	ceramide metabolic process	11	2	0.26	0.02628
+GO:0007218	neuropeptide signaling pathway	28	3	0.66	0.02713
+GO:0008045	motor neuron axon guidance	12	2	0.28	0.03105
+GO:0009067	aspartate family amino acid biosynthetic...	12	2	0.28	0.03105
+GO:0033674	positive regulation of kinase activity	31	3	0.73	0.03538
+GO:0000184	nuclear-transcribed mRNA catabolic proce...	13	2	0.31	0.03614
+GO:0009072	aromatic amino acid family metabolic pro...	13	2	0.31	0.03614
+GO:0001934	positive regulation of protein phosphory...	38	4	0.89	0.04082

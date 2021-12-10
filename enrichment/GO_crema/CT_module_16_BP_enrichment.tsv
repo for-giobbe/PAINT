@@ -1,0 +1,11 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006342	chromatin silencing	20	2	0.08	0.003
+GO:0070681	glutaminyl-tRNAGln biosynthesis via tran...	3	1	0.01	0.012
+GO:0006269	DNA replication, synthesis of RNA primer	3	1	0.01	0.012
+GO:0043001	Golgi to plasma membrane protein transpo...	4	1	0.02	0.016
+GO:0060966	regulation of gene silencing by RNA	4	1	0.02	0.016
+GO:0031167	rRNA methylation	7	1	0.03	0.029
+GO:0060811	intracellular mRNA localization involved...	7	1	0.03	0.029
+GO:0031146	SCF-dependent proteasomal ubiquitin-depe...	7	1	0.03	0.029
+GO:0007314	oocyte anterior/posterior axis specifica...	9	1	0.04	0.037
+GO:0046854	phosphatidylinositol phosphorylation	10	1	0.04	0.041

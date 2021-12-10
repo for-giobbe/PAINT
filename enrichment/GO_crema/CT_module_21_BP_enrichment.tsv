@@ -1,0 +1,16 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0043966	histone H3 acetylation	3	1	0.01	0.012
+GO:0046471	phosphatidylglycerol metabolic process	3	1	0.01	0.012
+GO:0034644	cellular response to UV	4	1	0.02	0.016
+GO:0009642	response to light intensity	4	1	0.02	0.016
+GO:1902882	regulation of response to oxidative stre...	4	1	0.02	0.016
+GO:0042572	retinol metabolic process	5	1	0.02	0.020
+GO:0042574	retinal metabolic process	5	1	0.02	0.020
+GO:0043666	regulation of phosphoprotein phosphatase...	5	1	0.02	0.020
+GO:0003407	neural retina development	5	1	0.02	0.020
+GO:0060042	retina morphogenesis in camera-type eye	6	1	0.02	0.023
+GO:0018210	peptidyl-threonine modification	6	1	0.02	0.023
+GO:0000027	ribosomal large subunit assembly	7	1	0.03	0.027
+GO:0008363	larval chitin-based cuticle development	9	1	0.04	0.035
+GO:0034620	cellular response to unfolded protein	11	1	0.04	0.043
+GO:0006364	rRNA processing	85	2	0.34	0.044

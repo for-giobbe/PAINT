@@ -1,0 +1,39 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0042811	pheromone biosynthetic process	4	2	0.02	0.00013
+GO:0001523	retinoid metabolic process	6	2	0.03	0.00031
+GO:0031644	regulation of neurological system proces...	6	2	0.03	0.00031
+GO:0034308	primary alcohol metabolic process	9	2	0.04	0.00074
+GO:0032787	monocarboxylic acid metabolic process	115	4	0.54	0.00181
+GO:0034754	cellular hormone metabolic process	16	2	0.07	0.00242
+GO:0008299	isoprenoid biosynthetic process	17	2	0.08	0.00273
+GO:0006721	terpenoid metabolic process	8	3	0.04	0.00861
+GO:0031063	regulation of histone deacetylation	3	1	0.01	0.01394
+GO:0035067	negative regulation of histone acetylati...	3	1	0.01	0.01394
+GO:0019233	sensory perception of pain	3	1	0.01	0.01394
+GO:0007110	meiosis I cytokinesis	3	1	0.01	0.01394
+GO:0042447	hormone catabolic process	3	1	0.01	0.01394
+GO:0045572	positive regulation of imaginal disc gro...	3	1	0.01	0.01394
+GO:0009744	response to sucrose	3	1	0.01	0.01394
+GO:0000915	actomyosin contractile ring assembly	4	1	0.02	0.01855
+GO:0006941	striated muscle contraction	4	1	0.02	0.01855
+GO:0015800	acidic amino acid transport	4	1	0.02	0.01855
+GO:0015740	C4-dicarboxylate transport	4	1	0.02	0.01855
+GO:0031058	positive regulation of histone modificat...	5	1	0.02	0.02313
+GO:0000212	meiotic spindle organization	5	1	0.02	0.02313
+GO:0009084	glutamine family amino acid biosynthetic...	5	1	0.02	0.02313
+GO:0007112	male meiosis cytokinesis	6	1	0.03	0.02769
+GO:0060294	cilium movement involved in cell motilit...	6	1	0.03	0.02769
+GO:0040018	positive regulation of multicellular org...	7	1	0.03	0.03224
+GO:0008277	regulation of G protein-coupled receptor...	7	1	0.03	0.03224
+GO:0045048	protein insertion into ER membrane	7	1	0.03	0.03224
+GO:1902653	secondary alcohol biosynthetic process	8	1	0.04	0.03676
+GO:0006937	regulation of muscle contraction	8	1	0.04	0.03676
+GO:0006614	SRP-dependent cotranslational protein ta...	8	1	0.04	0.03676
+GO:0006541	glutamine metabolic process	9	1	0.04	0.04126
+GO:0070328	triglyceride homeostasis	9	1	0.04	0.04126
+GO:0045793	positive regulation of cell size	9	1	0.04	0.04126
+GO:0008345	larval locomotory behavior	9	1	0.04	0.04126
+GO:0050673	epithelial cell proliferation	9	1	0.04	0.04126
+GO:0006144	purine nucleobase metabolic process	10	1	0.05	0.04575
+GO:0016126	sterol biosynthetic process	10	1	0.05	0.04575
+GO:0046889	positive regulation of lipid biosyntheti...	10	1	0.05	0.04575

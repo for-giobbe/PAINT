@@ -1,0 +1,17 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006397	mRNA processing	144	17	5.4	0.00018
+GO:0045893	positive regulation of transcription, DN...	94	11	3.53	0.00071
+GO:0006468	protein phosphorylation	286	22	10.73	0.00129
+GO:0010467	gene expression	1193	87	44.76	0.00191
+GO:0061647	histone H3-K9 modification	3	2	0.11	0.00410
+GO:0007062	sister chromatid cohesion	10	3	0.38	0.00514
+GO:0034968	histone lysine methylation	21	4	0.79	0.00697
+GO:0008592	regulation of Toll signaling pathway	4	2	0.15	0.00800
+GO:0034502	protein localization to chromosome	4	2	0.15	0.00800
+GO:0016973	poly(A)+ mRNA export from nucleus	4	2	0.15	0.00800
+GO:0080009	mRNA methylation	5	2	0.19	0.01300
+GO:0007097	nuclear migration	5	2	0.19	0.01300
+GO:0006325	chromatin organization	173	16	6.49	0.02168
+GO:0031935	regulation of chromatin silencing	7	2	0.26	0.02598
+GO:0000462	maturation of SSU-rRNA from tricistronic...	9	2	0.34	0.04239
+GO:0006284	base-excision repair	9	2	0.34	0.04239

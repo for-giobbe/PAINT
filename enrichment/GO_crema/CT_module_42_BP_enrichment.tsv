@@ -1,0 +1,75 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0008360	regulation of cell shape	13	5	0.61	0.00021
+GO:0097659	nucleic acid-templated transcription	588	48	27.66	0.00030
+GO:0010468	regulation of gene expression	674	57	31.7	0.00032
+GO:0032012	regulation of ARF protein signal transdu...	4	3	0.19	0.00040
+GO:0048790	maintenance of presynaptic active zone s...	4	3	0.19	0.00040
+GO:2000112	regulation of cellular macromolecule bio...	592	47	27.85	0.00137
+GO:0050919	negative chemotaxis	6	3	0.28	0.00185
+GO:0035332	positive regulation of hippo signaling	6	3	0.28	0.00185
+GO:0061564	axon development	78	12	3.67	0.00262
+GO:0007498	mesoderm development	11	4	0.52	0.00310
+GO:0007629	flight behavior	7	3	0.33	0.00313
+GO:0008589	regulation of smoothened signaling pathw...	14	4	0.66	0.00329
+GO:0007219	Notch signaling pathway	27	6	1.27	0.00366
+GO:0048667	cell morphogenesis involved in neuron di...	92	12	4.33	0.00384
+GO:0030036	actin cytoskeleton organization	111	16	5.22	0.00421
+GO:0003002	regionalization	80	12	3.76	0.00498
+GO:0016567	protein ubiquitination	126	13	5.93	0.00598
+GO:0007268	chemical synaptic transmission	84	11	3.95	0.00599
+GO:0035335	peptidyl-tyrosine dephosphorylation	36	6	1.69	0.00605
+GO:1903312	negative regulation of mRNA metabolic pr...	3	2	0.14	0.00641
+GO:0007448	anterior/posterior pattern specification...	3	2	0.14	0.00641
+GO:0008291	acetylcholine metabolic process	3	2	0.14	0.00641
+GO:0031114	regulation of microtubule depolymerizati...	3	2	0.14	0.00641
+GO:0010171	body morphogenesis	3	2	0.14	0.00641
+GO:0009065	glutamine family amino acid catabolic pr...	3	2	0.14	0.00641
+GO:0048542	lymph gland development	9	3	0.42	0.00700
+GO:0035120	post-embryonic appendage morphogenesis	49	7	2.3	0.00741
+GO:0007417	central nervous system development	58	8	2.73	0.00818
+GO:0007155	cell adhesion	104	13	4.89	0.00827
+GO:0048511	rhythmic process	36	6	1.69	0.00855
+GO:0035114	imaginal disc-derived appendage morphoge...	51	7	2.4	0.00923
+GO:0035162	embryonic hemopoiesis	4	2	0.19	0.01242
+GO:0051896	regulation of protein kinase B signaling	4	2	0.19	0.01242
+GO:0007485	imaginal disc-derived male genitalia dev...	4	2	0.19	0.01242
+GO:0006560	proline metabolic process	4	2	0.19	0.01242
+GO:0090175	regulation of establishment of planar po...	4	2	0.19	0.01242
+GO:0043489	RNA stabilization	4	2	0.19	0.01242
+GO:0038063	collagen-activated tyrosine kinase recep...	4	2	0.19	0.01242
+GO:0042659	regulation of cell fate specification	4	2	0.19	0.01242
+GO:1903706	regulation of hemopoiesis	4	2	0.19	0.01242
+GO:0051283	negative regulation of sequestering of c...	4	2	0.19	0.01242
+GO:0042110	T cell activation	4	2	0.19	0.01242
+GO:0030239	myofibril assembly	12	3	0.56	0.01650
+GO:0007291	sperm individualization	12	3	0.56	0.01650
+GO:0007517	muscle organ development	22	4	1.03	0.01791
+GO:0035821	modification of morphology or physiology...	22	4	1.03	0.01791
+GO:0035556	intracellular signal transduction	255	29	11.99	0.01951
+GO:0046530	photoreceptor cell differentiation	33	6	1.55	0.01966
+GO:0046843	dorsal appendage formation	5	2	0.24	0.02006
+GO:0006536	glutamate metabolic process	5	2	0.24	0.02006
+GO:0072583	clathrin-dependent endocytosis	5	2	0.24	0.02006
+GO:0060402	calcium ion transport into cytosol	5	2	0.24	0.02006
+GO:0016579	protein deubiquitination	34	5	1.6	0.02014
+GO:0016573	histone acetylation	37	5	1.74	0.02817
+GO:0018210	peptidyl-threonine modification	6	2	0.28	0.02916
+GO:0045570	regulation of imaginal disc growth	6	2	0.28	0.02916
+GO:0030336	negative regulation of cell migration	6	2	0.28	0.02916
+GO:0045451	pole plasm oskar mRNA localization	6	2	0.28	0.02916
+GO:0030865	cortical cytoskeleton organization	15	3	0.71	0.03076
+GO:0030431	sleep	15	3	0.71	0.03076
+GO:0001751	compound eye photoreceptor cell differen...	27	4	1.27	0.03578
+GO:0008037	cell recognition	19	4	0.89	0.03626
+GO:0060560	developmental growth involved in morphog...	28	4	1.32	0.03641
+GO:0010507	negative regulation of autophagy	7	2	0.33	0.03957
+GO:0006491	N-glycan processing	7	2	0.33	0.03957
+GO:0048015	phosphatidylinositol-mediated signaling	7	2	0.33	0.03957
+GO:0000245	spliceosomal complex assembly	7	2	0.33	0.03957
+GO:1903818	positive regulation of voltage-gated pot...	7	2	0.33	0.03957
+GO:0006814	sodium ion transport	41	5	1.93	0.04165
+GO:0006413	translational initiation	90	9	4.23	0.04225
+GO:0050768	negative regulation of neurogenesis	17	3	0.8	0.04290
+GO:0006887	exocytosis	56	6	2.63	0.04640
+GO:0030038	contractile actin filament bundle assemb...	4	2	0.19	0.04688
+GO:0060074	synapse maturation	4	2	0.19	0.04688

@@ -1,0 +1,4 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0034204	lipid translocation	5	1	0	0.0027
+GO:0015914	phospholipid transport	11	1	0.01	0.0059
+GO:0050808	synapse organization	77	1	0.04	0.0409

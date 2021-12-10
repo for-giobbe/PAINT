@@ -1,0 +1,33 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006486	protein glycosylation	67	3	0.35	0.0049
+GO:0070983	dendrite guidance	3	1	0.02	0.0155
+GO:0035309	wing and notum subfield formation	3	1	0.02	0.0155
+GO:0042693	muscle cell fate commitment	3	1	0.02	0.0155
+GO:2000249	regulation of actin cytoskeleton reorgan...	3	1	0.02	0.0155
+GO:0001963	synaptic transmission, dopaminergic	3	1	0.02	0.0155
+GO:0030512	negative regulation of transforming grow...	3	1	0.02	0.0155
+GO:0071322	cellular response to carbohydrate stimul...	3	1	0.02	0.0155
+GO:0043433	negative regulation of DNA-binding trans...	3	1	0.02	0.0155
+GO:0009744	response to sucrose	3	1	0.02	0.0155
+GO:0060573	cell fate specification involved in patt...	3	1	0.02	0.0155
+GO:0046665	amnioserosa maintenance	3	1	0.02	0.0155
+GO:0048149	behavioral response to ethanol	4	1	0.02	0.0207
+GO:0007390	germ-band shortening	4	1	0.02	0.0207
+GO:0008258	head involution	4	1	0.02	0.0207
+GO:0009312	oligosaccharide biosynthetic process	4	1	0.02	0.0207
+GO:0050922	negative regulation of chemotaxis	4	1	0.02	0.0207
+GO:0006688	glycosphingolipid biosynthetic process	4	1	0.02	0.0207
+GO:0000289	nuclear-transcribed mRNA poly(A) tail sh...	6	1	0.03	0.0308
+GO:0050650	chondroitin sulfate proteoglycan biosynt...	6	1	0.03	0.0308
+GO:0046847	filopodium assembly	6	1	0.03	0.0308
+GO:0030308	negative regulation of cell growth	6	1	0.03	0.0308
+GO:0048841	regulation of axon extension involved in...	6	1	0.03	0.0308
+GO:0050919	negative chemotaxis	6	1	0.03	0.0308
+GO:0071526	semaphorin-plexin signaling pathway	6	1	0.03	0.0308
+GO:0031146	SCF-dependent proteasomal ubiquitin-depe...	7	1	0.04	0.0359
+GO:0036065	fucosylation	7	1	0.04	0.0359
+GO:0048665	neuron fate specification	7	1	0.04	0.0359
+GO:0008407	chaeta morphogenesis	8	1	0.04	0.0409
+GO:0010977	negative regulation of neuron projection...	9	1	0.05	0.0459
+GO:0048542	lymph gland development	9	1	0.05	0.0459
+GO:0048190	wing disc dorsal/ventral pattern formati...	9	1	0.05	0.0459

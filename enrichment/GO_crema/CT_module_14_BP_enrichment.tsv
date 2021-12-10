@@ -1,0 +1,37 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0072595	maintenance of protein localization in o...	3	2	0.03	0.00033
+GO:0033108	mitochondrial respiratory chain complex ...	14	3	0.15	0.00038
+GO:0007286	spermatid development	20	3	0.21	0.00113
+GO:2001259	positive regulation of cation channel ac...	9	2	0.1	0.00379
+GO:0032456	endocytic recycling	11	2	0.12	0.00571
+GO:0090503	RNA phosphodiester bond hydrolysis, exon...	11	2	0.12	0.00571
+GO:0017004	cytochrome complex assembly	11	2	0.12	0.00571
+GO:0006875	cellular metal ion homeostasis	49	3	0.52	0.01473
+GO:0007041	lysosomal transport	18	2	0.19	0.01514
+GO:0090305	nucleic acid phosphodiester bond hydroly...	217	8	2.3	0.01629
+GO:0007030	Golgi organization	21	2	0.22	0.02036
+GO:0000413	protein peptidyl-prolyl isomerization	22	2	0.23	0.02224
+GO:0042742	defense response to bacterium	24	2	0.25	0.02622
+GO:0010637	negative regulation of mitochondrial fus...	3	1	0.03	0.03145
+GO:0019896	axonal transport of mitochondrion	3	1	0.03	0.03145
+GO:0019835	cytolysis	3	1	0.03	0.03145
+GO:1903580	positive regulation of ATP metabolic pro...	3	1	0.03	0.03145
+GO:0046427	positive regulation of JAK-STAT cascade	3	1	0.03	0.03145
+GO:0006573	valine metabolic process	3	1	0.03	0.03145
+GO:0050731	positive regulation of peptidyl-tyrosine...	3	1	0.03	0.03145
+GO:0019233	sensory perception of pain	3	1	0.03	0.03145
+GO:1901019	regulation of calcium ion transmembrane ...	3	1	0.03	0.03145
+GO:0042407	cristae formation	3	1	0.03	0.03145
+GO:0009266	response to temperature stimulus	27	2	0.29	0.03268
+GO:0019692	deoxyribose phosphate metabolic process	4	1	0.04	0.04171
+GO:0009435	NAD biosynthetic process	4	1	0.04	0.04171
+GO:1901658	glycosyl compound catabolic process	4	1	0.04	0.04171
+GO:1901642	nucleoside transmembrane transport	4	1	0.04	0.04171
+GO:0051881	regulation of mitochondrial membrane pot...	4	1	0.04	0.04171
+GO:0032933	SREBP signaling pathway	4	1	0.04	0.04171
+GO:0042542	response to hydrogen peroxide	4	1	0.04	0.04171
+GO:0048137	spermatocyte division	4	1	0.04	0.04171
+GO:0031125	rRNA 3'-end processing	4	1	0.04	0.04171
+GO:0032324	molybdopterin cofactor biosynthetic proc...	4	1	0.04	0.04171
+GO:0034644	cellular response to UV	4	1	0.04	0.04171
+GO:0016482	cytosolic transport	33	2	0.35	0.04722

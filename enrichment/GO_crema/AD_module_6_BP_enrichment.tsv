@@ -1,0 +1,78 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006099	tricarboxylic acid cycle	21	7	1.38	0.00026
+GO:0046940	nucleoside monophosphate phosphorylation	3	3	0.2	0.00028
+GO:0006119	oxidative phosphorylation	30	9	1.98	0.00072
+GO:0045047	protein targeting to ER	13	5	0.86	0.00100
+GO:0015985	energy coupled proton transport, down el...	8	4	0.53	0.00105
+GO:0140013	meiotic nuclear division	27	7	1.78	0.00143
+GO:0006006	glucose metabolic process	15	5	0.99	0.00209
+GO:0051050	positive regulation of transport	41	10	2.7	0.00228
+GO:0000387	spliceosomal snRNP assembly	10	4	0.66	0.00283
+GO:0051188	cofactor biosynthetic process	86	19	5.67	0.00314
+GO:0032543	mitochondrial translation	17	5	1.12	0.00386
+GO:0006486	protein glycosylation	67	12	4.41	0.00401
+GO:0008298	intracellular mRNA localization	13	4	0.86	0.00486
+GO:0006120	mitochondrial electron transport, NADH t...	6	3	0.4	0.00488
+GO:0006739	NADP metabolic process	7	3	0.46	0.00813
+GO:0045048	protein insertion into ER membrane	7	3	0.46	0.00813
+GO:0002252	immune effector process	19	5	1.25	0.00818
+GO:0016485	protein processing	20	5	1.32	0.00821
+GO:0043632	modification-dependent macromolecule cat...	153	22	10.08	0.00956
+GO:0005975	carbohydrate metabolic process	160	27	10.54	0.01084
+GO:0045292	mRNA cis splicing, via spliceosome	8	3	0.53	0.01238
+GO:0045022	early endosome to late endosome transpor...	8	3	0.53	0.01238
+GO:0110095	cellular detoxification of aldehyde	3	2	0.2	0.01242
+GO:0006108	malate metabolic process	3	2	0.2	0.01242
+GO:0071034	CUT catabolic process	3	2	0.2	0.01242
+GO:0043687	post-translational protein modification	3	2	0.2	0.01242
+GO:0006048	UDP-N-acetylglucosamine biosynthetic pro...	3	2	0.2	0.01242
+GO:0009133	nucleoside diphosphate biosynthetic proc...	3	2	0.2	0.01242
+GO:0061484	hematopoietic stem cell homeostasis	3	2	0.2	0.01242
+GO:0009219	pyrimidine deoxyribonucleotide metabolic...	3	2	0.2	0.01242
+GO:0046385	deoxyribose phosphate biosynthetic proce...	3	2	0.2	0.01242
+GO:0065001	specification of axis polarity	3	2	0.2	0.01242
+GO:0070831	basement membrane assembly	3	2	0.2	0.01242
+GO:0050775	positive regulation of dendrite morphoge...	3	2	0.2	0.01242
+GO:0072344	rescue of stalled ribosome	3	2	0.2	0.01242
+GO:0000413	protein peptidyl-prolyl isomerization	22	5	1.45	0.01251
+GO:0000381	regulation of alternative mRNA splicing,...	15	4	0.99	0.01415
+GO:0042135	neurotransmitter catabolic process	9	3	0.59	0.01768
+GO:0031365	N-terminal protein amino acid modificati...	9	3	0.59	0.01768
+GO:0006541	glutamine metabolic process	9	3	0.59	0.01768
+GO:0016556	mRNA modification	9	3	0.59	0.01768
+GO:0070328	triglyceride homeostasis	9	3	0.59	0.01768
+GO:0000288	nuclear-transcribed mRNA catabolic proce...	16	4	1.05	0.01790
+GO:0030433	ubiquitin-dependent ERAD pathway	16	4	1.05	0.01790
+GO:0033500	carbohydrate homeostasis	16	4	1.05	0.01790
+GO:0022900	electron transport chain	50	9	3.29	0.02140
+GO:0006506	GPI anchor biosynthetic process	17	4	1.12	0.02222
+GO:0038063	collagen-activated tyrosine kinase recep...	4	2	0.26	0.02377
+GO:0009200	deoxyribonucleoside triphosphate metabol...	4	2	0.26	0.02377
+GO:0045910	negative regulation of DNA recombination	4	2	0.26	0.02377
+GO:0005991	trehalose metabolic process	4	2	0.26	0.02377
+GO:0046889	positive regulation of lipid biosyntheti...	10	3	0.66	0.02404
+GO:1905039	carboxylic acid transmembrane transport	10	3	0.66	0.02404
+GO:0000097	sulfur amino acid biosynthetic process	10	3	0.66	0.02404
+GO:0006555	methionine metabolic process	10	3	0.66	0.02404
+GO:0061077	chaperone-mediated protein folding	10	3	0.66	0.02404
+GO:0044257	cellular protein catabolic process	166	20	10.94	0.02701
+GO:0072521	purine-containing compound metabolic pro...	141	29	9.29	0.02790
+GO:1901607	alpha-amino acid biosynthetic process	26	6	1.71	0.03219
+GO:0006605	protein targeting	41	10	2.7	0.03239
+GO:0035305	negative regulation of dephosphorylation	5	2	0.33	0.03790
+GO:0032981	mitochondrial respiratory chain complex ...	5	2	0.33	0.03790
+GO:0050810	regulation of steroid biosynthetic proce...	5	2	0.33	0.03790
+GO:0071051	polyadenylation-dependent snoRNA 3'-end ...	5	2	0.33	0.03790
+GO:0061371	determination of heart left/right asymme...	5	2	0.33	0.03790
+GO:0045456	ecdysteroid biosynthetic process	5	2	0.33	0.03790
+GO:0090481	pyrimidine nucleotide-sugar transmembran...	5	2	0.33	0.03790
+GO:0034427	nuclear-transcribed mRNA catabolic proce...	5	2	0.33	0.03790
+GO:0046513	ceramide biosynthetic process	5	2	0.33	0.03790
+GO:0051016	barbed-end actin filament capping	5	2	0.33	0.03790
+GO:0042572	retinol metabolic process	5	2	0.33	0.03790
+GO:0006415	translational termination	5	2	0.33	0.03790
+GO:0030198	extracellular matrix organization	15	5	0.99	0.03947
+GO:0097502	mannosylation	18	4	1.19	0.03980
+GO:0006875	cellular metal ion homeostasis	49	7	3.23	0.03985
+GO:0015833	peptide transport	262	32	17.26	0.04825
+GO:0072503	cellular divalent inorganic cation homeo...	31	5	2.04	0.04980

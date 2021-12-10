@@ -1,0 +1,49 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0044247	cellular polysaccharide catabolic proces...	3	2	0.04	0.0004
+GO:0009251	glucan catabolic process	3	2	0.04	0.0004
+GO:0070374	positive regulation of ERK1 and ERK2 cas...	5	2	0.06	0.0013
+GO:0035159	regulation of tube length, open tracheal...	8	2	0.09	0.0036
+GO:0009950	dorsal/ventral axis specification	10	2	0.12	0.0057
+GO:0005977	glycogen metabolic process	12	2	0.14	0.0082
+GO:0016310	phosphorylation	550	17	6.42	0.0134
+GO:1903008	organelle disassembly	17	2	0.2	0.0163
+GO:0007605	sensory perception of sound	21	2	0.25	0.0244
+GO:0007179	transforming growth factor beta receptor...	6	2	0.07	0.0341
+GO:0002683	negative regulation of immune system pro...	7	2	0.08	0.0341
+GO:0009954	proximal/distal pattern formation	3	1	0.04	0.0346
+GO:0061343	cell adhesion involved in heart morphoge...	3	1	0.04	0.0346
+GO:0034063	stress granule assembly	3	1	0.04	0.0346
+GO:0051973	positive regulation of telomerase activi...	3	1	0.04	0.0346
+GO:0006122	mitochondrial electron transport, ubiqui...	3	1	0.04	0.0346
+GO:0046339	diacylglycerol metabolic process	3	1	0.04	0.0346
+GO:0060857	establishment of glial blood-brain barri...	3	1	0.04	0.0346
+GO:0045444	fat cell differentiation	3	1	0.04	0.0346
+GO:0035277	spiracle morphogenesis, open tracheal sy...	3	1	0.04	0.0346
+GO:0035225	determination of genital disc primordium	3	1	0.04	0.0346
+GO:2000134	negative regulation of G1/S transition o...	3	1	0.04	0.0346
+GO:0045572	positive regulation of imaginal disc gro...	3	1	0.04	0.0346
+GO:0072073	kidney epithelium development	3	1	0.04	0.0346
+GO:0032212	positive regulation of telomere maintena...	3	1	0.04	0.0346
+GO:0060573	cell fate specification involved in patt...	3	1	0.04	0.0346
+GO:0030278	regulation of ossification	3	1	0.04	0.0346
+GO:0001742	oenocyte differentiation	3	1	0.04	0.0346
+GO:1901072	glucosamine-containing compound cataboli...	3	1	0.04	0.0346
+GO:0035309	wing and notum subfield formation	3	1	0.04	0.0346
+GO:0007482	haltere development	3	1	0.04	0.0346
+GO:0140115	export across plasma membrane	3	1	0.04	0.0346
+GO:0045596	negative regulation of cell differentiat...	26	2	0.3	0.0364
+GO:0009266	response to temperature stimulus	27	2	0.32	0.0390
+GO:0002028	regulation of sodium ion transport	4	1	0.05	0.0459
+GO:0032496	response to lipopolysaccharide	4	1	0.05	0.0459
+GO:0032012	regulation of ARF protein signal transdu...	4	1	0.05	0.0459
+GO:0045824	negative regulation of innate immune res...	4	1	0.05	0.0459
+GO:0043462	regulation of ATPase activity	4	1	0.05	0.0459
+GO:0007390	germ-band shortening	4	1	0.05	0.0459
+GO:0018126	protein hydroxylation	4	1	0.05	0.0459
+GO:0051781	positive regulation of cell division	4	1	0.05	0.0459
+GO:0008355	olfactory learning	4	1	0.05	0.0459
+GO:0048149	behavioral response to ethanol	4	1	0.05	0.0459
+GO:0070839	divalent metal ion export	4	1	0.05	0.0459
+GO:1902882	regulation of response to oxidative stre...	4	1	0.05	0.0459
+GO:0035459	cargo loading into vesicle	4	1	0.05	0.0459
+GO:0008340	determination of adult lifespan	30	2	0.35	0.0473

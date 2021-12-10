@@ -1,0 +1,31 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0000077	DNA damage checkpoint	10	2	0.03	0.00039
+GO:0006313	transposition, DNA-mediated	109	3	0.33	0.00406
+GO:0040040	thermosensory behavior	3	1	0.01	0.00913
+GO:0040031	snRNA modification	3	1	0.01	0.00913
+GO:0003323	type B pancreatic cell development	3	1	0.01	0.00913
+GO:0001174	transcriptional start site selection at ...	3	1	0.01	0.00913
+GO:0007615	anesthesia-resistant memory	3	1	0.01	0.00913
+GO:0031440	regulation of mRNA 3'-end processing	3	1	0.01	0.00913
+GO:0033143	regulation of intracellular steroid horm...	4	1	0.01	0.01216
+GO:0042542	response to hydrogen peroxide	4	1	0.01	0.01216
+GO:0050727	regulation of inflammatory response	4	1	0.01	0.01216
+GO:0060260	regulation of transcription initiation f...	4	1	0.01	0.01216
+GO:0043154	negative regulation of cysteine-type end...	5	1	0.02	0.01517
+GO:0060173	limb development	5	1	0.02	0.01517
+GO:0050796	regulation of insulin secretion	6	1	0.02	0.01818
+GO:0007616	long-term memory	6	1	0.02	0.01818
+GO:0009713	catechol-containing compound biosyntheti...	6	1	0.02	0.01818
+GO:0048082	regulation of adult chitin-containing cu...	6	1	0.02	0.01818
+GO:0043052	thermotaxis	7	1	0.02	0.02118
+GO:0001522	pseudouridine synthesis	9	1	0.03	0.02715
+GO:0042401	cellular biogenic amine biosynthetic pro...	9	1	0.03	0.02715
+GO:0042752	regulation of circadian rhythm	11	1	0.03	0.03309
+GO:0007478	leg disc morphogenesis	11	1	0.03	0.03309
+GO:0006584	catecholamine metabolic process	11	1	0.03	0.03309
+GO:0030856	regulation of epithelial cell differenti...	11	1	0.03	0.03309
+GO:0009072	aromatic amino acid family metabolic pro...	13	1	0.04	0.03900
+GO:0000381	regulation of alternative mRNA splicing,...	15	1	0.05	0.04487
+GO:0031349	positive regulation of defense response	15	1	0.05	0.04487
+GO:0032103	positive regulation of response to exter...	15	1	0.05	0.04487
+GO:0042136	neurotransmitter biosynthetic process	16	1	0.05	0.04779

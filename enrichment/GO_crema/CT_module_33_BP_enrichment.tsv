@@ -1,0 +1,60 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007616	long-term memory	6	4	0.45	0.00041
+GO:0034332	adherens junction organization	9	4	0.67	0.00288
+GO:0031629	synaptic vesicle fusion to presynaptic a...	5	3	0.37	0.00372
+GO:0045216	cell-cell junction organization	19	6	1.42	0.00447
+GO:0045886	negative regulation of synaptic growth a...	10	4	0.75	0.00452
+GO:0045475	locomotor rhythm	11	4	0.82	0.00669
+GO:0018212	peptidyl-tyrosine modification	58	11	4.34	0.00676
+GO:0097164	ammonium ion metabolic process	27	7	2.02	0.00710
+GO:0006468	protein phosphorylation	286	33	21.41	0.00879
+GO:0019722	calcium-mediated signaling	12	4	0.9	0.00945
+GO:0007274	neuromuscular synaptic transmission	19	5	1.42	0.01109
+GO:0006576	cellular biogenic amine metabolic proces...	11	4	0.82	0.01156
+GO:0035269	protein O-linked mannosylation	7	3	0.52	0.01161
+GO:0071482	cellular response to light stimulus	13	4	0.97	0.01285
+GO:0042493	response to drug	43	9	3.22	0.01322
+GO:0050808	synapse organization	77	14	5.76	0.01426
+GO:0007614	short-term memory	3	2	0.22	0.01594
+GO:0072488	ammonium transmembrane transport	3	2	0.22	0.01594
+GO:0043393	regulation of protein binding	3	2	0.22	0.01594
+GO:0090316	positive regulation of intracellular pro...	3	2	0.22	0.01594
+GO:0009154	purine ribonucleotide catabolic process	3	2	0.22	0.01594
+GO:0015695	organic cation transport	3	2	0.22	0.01594
+GO:0097120	receptor localization to synapse	3	2	0.22	0.01594
+GO:0090278	negative regulation of peptide hormone s...	3	2	0.22	0.01594
+GO:0045761	regulation of adenylate cyclase activity	3	2	0.22	0.01594
+GO:0070509	calcium ion import	3	2	0.22	0.01594
+GO:0043087	regulation of GTPase activity	28	7	2.1	0.02469
+GO:0031145	anaphase-promoting complex-dependent cat...	9	3	0.67	0.02490
+GO:0036099	female germ-line stem cell population ma...	9	3	0.67	0.02490
+GO:1902532	negative regulation of intracellular sig...	23	5	1.72	0.02506
+GO:0042136	neurotransmitter biosynthetic process	16	4	1.2	0.02736
+GO:0043631	RNA polyadenylation	16	4	1.2	0.02736
+GO:0060359	response to ammonium ion	7	3	0.52	0.03021
+GO:0052803	imidazole-containing compound metabolic ...	4	2	0.3	0.03031
+GO:0008585	female gonad development	4	2	0.3	0.03031
+GO:0042908	xenobiotic transport	4	2	0.3	0.03031
+GO:0098693	regulation of synaptic vesicle cycle	4	2	0.3	0.03031
+GO:2000379	positive regulation of reactive oxygen s...	4	2	0.3	0.03031
+GO:0003014	renal system process	4	2	0.3	0.03031
+GO:0045842	positive regulation of mitotic metaphase...	4	2	0.3	0.03031
+GO:0044092	negative regulation of molecular functio...	68	11	5.09	0.03254
+GO:0060047	heart contraction	10	3	0.75	0.03363
+GO:0042048	olfactory behavior	10	3	0.75	0.03363
+GO:0007409	axonogenesis	74	10	5.54	0.03619
+GO:0007155	cell adhesion	104	14	7.79	0.03667
+GO:0006865	amino acid transport	34	6	2.55	0.03804
+GO:0090596	sensory organ morphogenesis	57	9	4.27	0.04017
+GO:0050804	modulation of chemical synaptic transmis...	44	7	3.29	0.04306
+GO:0042752	regulation of circadian rhythm	11	3	0.82	0.04374
+GO:2001257	regulation of cation channel activity	11	3	0.82	0.04374
+GO:0000122	negative regulation of transcription by ...	27	5	2.02	0.04709
+GO:0009266	response to temperature stimulus	27	5	2.02	0.04709
+GO:1903409	reactive oxygen species biosynthetic pro...	5	2	0.37	0.04804
+GO:0042423	catecholamine biosynthetic process	5	2	0.37	0.04804
+GO:0010453	regulation of cell fate commitment	5	2	0.37	0.04804
+GO:0090630	activation of GTPase activity	5	2	0.37	0.04804
+GO:0017158	regulation of calcium ion-dependent exoc...	5	2	0.37	0.04804
+GO:0040036	regulation of fibroblast growth factor r...	5	2	0.37	0.04804
+GO:0006874	cellular calcium ion homeostasis	27	6	2.02	0.04832

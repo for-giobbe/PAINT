@@ -1,0 +1,46 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0036503	ERAD pathway	20	6	0.9	0.00018
+GO:1903052	positive regulation of proteolysis invol...	22	6	0.99	0.00031
+GO:1905475	regulation of protein localization to me...	4	3	0.18	0.00035
+GO:0032374	regulation of cholesterol transport	4	3	0.18	0.00035
+GO:0015868	purine ribonucleotide transport	5	3	0.22	0.00084
+GO:0051503	adenine nucleotide transport	5	3	0.22	0.00084
+GO:0001676	long-chain fatty acid metabolic process	11	4	0.49	0.00102
+GO:0005977	glycogen metabolic process	12	4	0.54	0.00147
+GO:0007291	sperm individualization	12	4	0.54	0.00147
+GO:0019915	lipid storage	20	5	0.9	0.00156
+GO:0008654	phospholipid biosynthetic process	51	8	2.29	0.00175
+GO:0010951	negative regulation of endopeptidase act...	26	6	1.17	0.00194
+GO:0019058	viral life cycle	7	3	0.31	0.00273
+GO:1905954	positive regulation of lipid localizatio...	7	3	0.31	0.00273
+GO:0009396	folic acid-containing compound biosynthe...	3	2	0.13	0.00584
+GO:0015031	protein transport	259	23	11.62	0.00589
+GO:0070328	triglyceride homeostasis	9	3	0.4	0.00614
+GO:1901570	fatty acid derivative biosynthetic proce...	9	3	0.4	0.00614
+GO:0006754	ATP biosynthetic process	28	5	1.26	0.00736
+GO:0032102	negative regulation of response to exter...	10	3	0.45	0.00848
+GO:0042886	amide transport	267	26	11.98	0.01103
+GO:0070050	neuron cellular homeostasis	11	3	0.49	0.01127
+GO:1905897	regulation of response to endoplasmic re...	4	2	0.18	0.01134
+GO:0060260	regulation of transcription initiation f...	4	2	0.18	0.01134
+GO:0022600	digestive system process	4	2	0.18	0.01134
+GO:0048072	compound eye pigmentation	4	2	0.18	0.01134
+GO:0001508	action potential	4	2	0.18	0.01134
+GO:0050708	regulation of protein secretion	12	3	0.54	0.01454
+GO:0006766	vitamin metabolic process	12	3	0.54	0.01454
+GO:0016125	sterol metabolic process	17	4	0.76	0.01813
+GO:0009581	detection of external stimulus	17	3	0.76	0.01827
+GO:0009582	detection of abiotic stimulus	17	3	0.76	0.01827
+GO:0035337	fatty-acyl-CoA metabolic process	13	3	0.58	0.01829
+GO:0110110	positive regulation of animal organ morp...	5	2	0.22	0.01834
+GO:0070374	positive regulation of ERK1 and ERK2 cas...	5	2	0.22	0.01834
+GO:0045944	positive regulation of transcription by ...	35	5	1.57	0.01886
+GO:0050790	regulation of catalytic activity	276	24	12.39	0.02577
+GO:0007179	transforming growth factor beta receptor...	6	2	0.27	0.02670
+GO:0032482	Rab protein signal transduction	6	2	0.27	0.02670
+GO:0009266	response to temperature stimulus	27	4	1.21	0.03083
+GO:0016567	protein ubiquitination	126	12	5.66	0.03345
+GO:0031532	actin cytoskeleton reorganization	7	2	0.31	0.03629
+GO:0043174	nucleoside salvage	7	2	0.31	0.03629
+GO:0042632	cholesterol homeostasis	7	2	0.31	0.03629
+GO:0031348	negative regulation of defense response	8	2	0.36	0.04697

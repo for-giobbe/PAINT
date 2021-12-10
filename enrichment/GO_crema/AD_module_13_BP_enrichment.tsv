@@ -1,0 +1,18 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006893	Golgi to plasma membrane transport	10	3	0.2	0.00083
+GO:0099022	vesicle tethering	3	2	0.06	0.00117
+GO:0001510	RNA methylation	30	4	0.6	0.00275
+GO:0006904	vesicle docking involved in exocytosis	5	2	0.1	0.00378
+GO:0031060	regulation of histone methylation	5	2	0.1	0.00378
+GO:0006412	translation	269	14	5.36	0.00423
+GO:0051301	cell division	115	8	2.29	0.00528
+GO:0001822	kidney development	6	2	0.12	0.00560
+GO:0031935	regulation of chromatin silencing	7	2	0.14	0.00774
+GO:0006396	RNA processing	316	32	6.3	0.01099
+GO:0006354	DNA-templated transcription, elongation	17	3	0.34	0.01274
+GO:0000466	maturation of 5.8S rRNA from tricistroni...	11	2	0.22	0.01925
+GO:0006289	nucleotide-excision repair	15	2	0.3	0.03490
+GO:0007034	vacuolar transport	37	3	0.74	0.03664
+GO:0006457	protein folding	65	4	1.3	0.03995
+GO:0006606	protein import into nucleus	17	2	0.34	0.04405
+GO:0016197	endosomal transport	40	3	0.8	0.04465

@@ -1,0 +1,56 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007367	segment polarity determination	10	2	0.08	0.0029
+GO:0008406	gonad development	14	2	0.12	0.0057
+GO:0007308	oocyte construction	15	2	0.12	0.0065
+GO:0018209	peptidyl-serine modification	20	2	0.17	0.0115
+GO:0001708	cell fate specification	20	2	0.17	0.0115
+GO:0055085	transmembrane transport	473	9	3.91	0.0133
+GO:0035225	determination of genital disc primordium	3	1	0.02	0.0246
+GO:0030727	germarium-derived female germ-line cyst ...	3	1	0.02	0.0246
+GO:0035309	wing and notum subfield formation	3	1	0.02	0.0246
+GO:0046058	cAMP metabolic process	3	1	0.02	0.0246
+GO:0016199	axon midline choice point recognition	3	1	0.02	0.0246
+GO:0009954	proximal/distal pattern formation	3	1	0.02	0.0246
+GO:0007294	germarium-derived oocyte fate determinat...	3	1	0.02	0.0246
+GO:1903830	magnesium ion transmembrane transport	3	1	0.02	0.0246
+GO:0001742	oenocyte differentiation	3	1	0.02	0.0246
+GO:2000134	negative regulation of G1/S transition o...	3	1	0.02	0.0246
+GO:0007530	sex determination	3	1	0.02	0.0246
+GO:0007482	haltere development	3	1	0.02	0.0246
+GO:0045572	positive regulation of imaginal disc gro...	3	1	0.02	0.0246
+GO:0016540	protein autoprocessing	3	1	0.02	0.0246
+GO:0031114	regulation of microtubule depolymerizati...	3	1	0.02	0.0246
+GO:0008069	dorsal/ventral axis specification, ovari...	3	1	0.02	0.0246
+GO:0035277	spiracle morphogenesis, open tracheal sy...	3	1	0.02	0.0246
+GO:0043066	negative regulation of apoptotic process	34	2	0.28	0.0317
+GO:0008355	olfactory learning	4	1	0.03	0.0326
+GO:0051781	positive regulation of cell division	4	1	0.03	0.0326
+GO:0048790	maintenance of presynaptic active zone s...	4	1	0.03	0.0326
+GO:0007390	germ-band shortening	4	1	0.03	0.0326
+GO:0051091	positive regulation of DNA-binding trans...	4	1	0.03	0.0326
+GO:0002028	regulation of sodium ion transport	4	1	0.03	0.0326
+GO:0018990	ecdysis, chitin-based cuticle	4	1	0.03	0.0326
+GO:0048149	behavioral response to ethanol	4	1	0.03	0.0326
+GO:0045478	fusome organization	4	1	0.03	0.0326
+GO:0008643	carbohydrate transport	35	2	0.29	0.0334
+GO:0035335	peptidyl-tyrosine dephosphorylation	36	2	0.3	0.0352
+GO:0050810	regulation of steroid biosynthetic proce...	5	1	0.04	0.0406
+GO:0045197	establishment or maintenance of epitheli...	5	1	0.04	0.0406
+GO:0046843	dorsal appendage formation	5	1	0.04	0.0406
+GO:0017085	response to insecticide	5	1	0.04	0.0406
+GO:0006123	mitochondrial electron transport, cytoch...	5	1	0.04	0.0406
+GO:0070374	positive regulation of ERK1 and ERK2 cas...	5	1	0.04	0.0406
+GO:0060612	adipose tissue development	5	1	0.04	0.0406
+GO:1903036	positive regulation of response to wound...	5	1	0.04	0.0406
+GO:0006369	termination of RNA polymerase II transcr...	5	1	0.04	0.0406
+GO:0090162	establishment of epithelial cell polarit...	5	1	0.04	0.0406
+GO:0016318	ommatidial rotation	5	1	0.04	0.0406
+GO:0035149	lumen formation, open tracheal system	5	1	0.04	0.0406
+GO:0018345	protein palmitoylation	6	1	0.05	0.0486
+GO:0007020	microtubule nucleation	6	1	0.05	0.0486
+GO:0008586	imaginal disc-derived wing vein morphoge...	6	1	0.05	0.0486
+GO:0001649	osteoblast differentiation	6	1	0.05	0.0486
+GO:0060294	cilium movement involved in cell motilit...	6	1	0.05	0.0486
+GO:0007443	Malpighian tubule morphogenesis	6	1	0.05	0.0486
+GO:0035332	positive regulation of hippo signaling	6	1	0.05	0.0486
+GO:0023052	signaling	942	14	7.78	0.0498

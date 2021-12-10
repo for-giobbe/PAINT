@@ -1,0 +1,57 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0042391	regulation of membrane potential	46	4	0.3	0.00020
+GO:0006828	manganese ion transport	4	2	0.03	0.00024
+GO:0070588	calcium ion transmembrane transport	24	3	0.16	0.00046
+GO:0046330	positive regulation of JNK cascade	7	2	0.05	0.00084
+GO:0046626	regulation of insulin receptor signaling...	8	2	0.05	0.00111
+GO:0043269	regulation of ion transport	43	3	0.28	0.00256
+GO:0050804	modulation of chemical synaptic transmis...	44	3	0.28	0.00274
+GO:0042127	regulation of cell proliferation	51	3	0.33	0.00417
+GO:0051480	regulation of cytosolic calcium ion conc...	16	2	0.1	0.00460
+GO:0032434	regulation of proteasomal ubiquitin-depe...	17	2	0.11	0.00520
+GO:0007601	visual perception	19	2	0.12	0.00648
+GO:0048640	negative regulation of developmental gro...	20	2	0.13	0.00717
+GO:0006468	protein phosphorylation	286	8	1.85	0.00995
+GO:0055088	lipid homeostasis	25	2	0.16	0.01110
+GO:0042594	response to starvation	33	2	0.21	0.01891
+GO:0071356	cellular response to tumor necrosis fact...	3	1	0.02	0.01927
+GO:0051642	centrosome localization	3	1	0.02	0.01927
+GO:0046154	rhodopsin metabolic process	3	1	0.02	0.01927
+GO:0035002	liquid clearance, open tracheal system	3	1	0.02	0.01927
+GO:0045186	zonula adherens assembly	3	1	0.02	0.01927
+GO:0045737	positive regulation of cyclin-dependent ...	3	1	0.02	0.01927
+GO:0045176	apical protein localization	3	1	0.02	0.01927
+GO:0046664	dorsal closure, amnioserosa morphology c...	3	1	0.02	0.01927
+GO:0046665	amnioserosa maintenance	3	1	0.02	0.01927
+GO:0014065	phosphatidylinositol 3-kinase signaling	3	1	0.02	0.01927
+GO:0061058	regulation of peptidoglycan recognition ...	3	1	0.02	0.01927
+GO:1900425	negative regulation of defense response ...	3	1	0.02	0.01927
+GO:0001959	regulation of cytokine-mediated signalin...	3	1	0.02	0.01927
+GO:0016579	protein deubiquitination	34	2	0.22	0.02001
+GO:1902533	positive regulation of intracellular sig...	49	4	0.32	0.02448
+GO:0007249	I-kappaB kinase/NF-kappaB signaling	4	1	0.03	0.02561
+GO:0042110	T cell activation	4	1	0.03	0.02561
+GO:0060438	trachea development	4	1	0.03	0.02561
+GO:0051283	negative regulation of sequestering of c...	4	1	0.03	0.02561
+GO:0043462	regulation of ATPase activity	4	1	0.03	0.02561
+GO:0019217	regulation of fatty acid metabolic proce...	4	1	0.03	0.02561
+GO:0019432	triglyceride biosynthetic process	5	1	0.03	0.03191
+GO:2001020	regulation of response to DNA damage sti...	5	1	0.03	0.03191
+GO:0016334	establishment or maintenance of polarity...	5	1	0.03	0.03191
+GO:0003383	apical constriction	5	1	0.03	0.03191
+GO:2000045	regulation of G1/S transition of mitotic...	5	1	0.03	0.03191
+GO:0006511	ubiquitin-dependent protein catabolic pr...	135	5	0.87	0.03325
+GO:0030036	actin cytoskeleton organization	111	3	0.72	0.03415
+GO:0045570	regulation of imaginal disc growth	6	1	0.04	0.03817
+GO:0035088	establishment or maintenance of apical/b...	6	1	0.04	0.03817
+GO:0007443	Malpighian tubule morphogenesis	6	1	0.04	0.03817
+GO:0045746	negative regulation of Notch signaling p...	6	1	0.04	0.03817
+GO:0098659	inorganic cation import across plasma me...	6	1	0.04	0.03817
+GO:0035249	synaptic transmission, glutamatergic	6	1	0.04	0.03817
+GO:0033157	regulation of intracellular protein tran...	6	1	0.04	0.03817
+GO:0030514	negative regulation of BMP signaling pat...	7	1	0.05	0.04440
+GO:0050821	protein stabilization	7	1	0.05	0.04440
+GO:0043052	thermotaxis	7	1	0.05	0.04440
+GO:0042052	rhabdomere development	7	1	0.05	0.04440
+GO:1901992	positive regulation of mitotic cell cycl...	7	1	0.05	0.04440
+GO:0016567	protein ubiquitination	126	3	0.81	0.04694

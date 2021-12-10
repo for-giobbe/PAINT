@@ -1,0 +1,37 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007291	sperm individualization	12	2	0.08	0.0027
+GO:0001709	cell fate determination	17	2	0.11	0.0055
+GO:1902532	negative regulation of intracellular sig...	23	2	0.15	0.0100
+GO:0006511	ubiquitin-dependent protein catabolic pr...	135	4	0.9	0.0117
+GO:0010559	regulation of glycoprotein biosynthetic ...	3	1	0.02	0.0198
+GO:0046154	rhodopsin metabolic process	3	1	0.02	0.0198
+GO:0017062	respiratory chain complex III assembly	3	1	0.02	0.0198
+GO:0006108	malate metabolic process	3	1	0.02	0.0198
+GO:0090129	positive regulation of synapse maturatio...	3	1	0.02	0.0198
+GO:0060348	bone development	3	1	0.02	0.0198
+GO:0006241	CTP biosynthetic process	3	1	0.02	0.0198
+GO:0042982	amyloid precursor protein metabolic proc...	3	1	0.02	0.0198
+GO:0046664	dorsal closure, amnioserosa morphology c...	3	1	0.02	0.0198
+GO:0034198	cellular response to amino acid starvati...	4	1	0.03	0.0263
+GO:0019184	nonribosomal peptide biosynthetic proces...	4	1	0.03	0.0263
+GO:0060250	germ-line stem-cell niche homeostasis	4	1	0.03	0.0263
+GO:0008293	torso signaling pathway	4	1	0.03	0.0263
+GO:0008053	mitochondrial fusion	4	1	0.03	0.0263
+GO:0008258	head involution	4	1	0.03	0.0263
+GO:0007370	ventral furrow formation	4	1	0.03	0.0263
+GO:0031034	myosin filament assembly	4	1	0.03	0.0263
+GO:0006726	eye pigment biosynthetic process	5	1	0.03	0.0328
+GO:0060402	calcium ion transport into cytosol	5	1	0.03	0.0328
+GO:0051924	regulation of calcium ion transport	5	1	0.03	0.0328
+GO:0006488	dolichol-linked oligosaccharide biosynth...	5	1	0.03	0.0328
+GO:0051016	barbed-end actin filament capping	5	1	0.03	0.0328
+GO:0060173	limb development	5	1	0.03	0.0328
+GO:0003383	apical constriction	5	1	0.03	0.0328
+GO:0051181	cofactor transport	6	1	0.04	0.0392
+GO:0048705	skeletal system morphogenesis	6	1	0.04	0.0392
+GO:0036098	male germ-line stem cell population main...	6	1	0.04	0.0392
+GO:0051216	cartilage development	6	1	0.04	0.0392
+GO:0009263	deoxyribonucleotide biosynthetic process	7	1	0.05	0.0456
+GO:0050821	protein stabilization	7	1	0.05	0.0456
+GO:0040018	positive regulation of multicellular org...	7	1	0.05	0.0456
+GO:0006508	proteolysis	576	10	3.83	0.0459

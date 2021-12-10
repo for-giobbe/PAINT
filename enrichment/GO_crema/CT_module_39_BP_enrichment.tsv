@@ -1,0 +1,25 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0046488	phosphatidylinositol metabolic process	43	2	0.12	0.0065
+GO:0010868	negative regulation of triglyceride bios...	3	1	0.01	0.0086
+GO:0071071	regulation of phospholipid biosynthetic ...	3	1	0.01	0.0086
+GO:0032511	late endosome to vacuole transport via m...	3	1	0.01	0.0086
+GO:0008355	olfactory learning	4	1	0.01	0.0114
+GO:0006904	vesicle docking involved in exocytosis	5	1	0.01	0.0143
+GO:0016056	rhodopsin mediated signaling pathway	6	1	0.02	0.0171
+GO:0032482	Rab protein signal transduction	6	1	0.02	0.0171
+GO:0043052	thermotaxis	7	1	0.02	0.0199
+GO:0043162	ubiquitin-dependent protein catabolic pr...	8	1	0.02	0.0228
+GO:0008345	larval locomotory behavior	9	1	0.03	0.0256
+GO:0046889	positive regulation of lipid biosyntheti...	10	1	0.03	0.0284
+GO:0072666	establishment of protein localization to...	10	1	0.03	0.0284
+GO:0009612	response to mechanical stimulus	11	1	0.03	0.0312
+GO:0007416	synapse assembly	35	2	0.1	0.0320
+GO:0006906	vesicle fusion	12	1	0.03	0.0340
+GO:0007291	sperm individualization	12	1	0.03	0.0340
+GO:0043112	receptor metabolic process	14	1	0.04	0.0395
+GO:0017157	regulation of exocytosis	14	1	0.04	0.0395
+GO:0010883	regulation of lipid storage	14	1	0.04	0.0395
+GO:0007528	neuromuscular junction development	39	2	0.11	0.0425
+GO:0042136	neurotransmitter biosynthetic process	16	1	0.05	0.0450
+GO:0006221	pyrimidine nucleotide biosynthetic proce...	16	1	0.05	0.0450
+GO:0016125	sterol metabolic process	17	1	0.05	0.0478

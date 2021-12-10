@@ -1,0 +1,24 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006796	phosphate-containing compound metabolic ...	835	28	13.94	0.00067
+GO:0043666	regulation of phosphoprotein phosphatase...	5	2	0.08	0.00267
+GO:0018345	protein palmitoylation	6	2	0.1	0.00396
+GO:0007006	mitochondrial membrane organization	7	2	0.12	0.00548
+GO:0006313	transposition, DNA-mediated	109	6	1.82	0.00940
+GO:0007031	peroxisome organization	10	2	0.17	0.01138
+GO:0006839	mitochondrial transport	31	3	0.52	0.01445
+GO:0033108	mitochondrial respiratory chain complex ...	14	2	0.23	0.02203
+GO:0072655	establishment of protein localization to...	15	2	0.25	0.02514
+GO:0006605	protein targeting	41	3	0.68	0.03041
+GO:0032543	mitochondrial translation	17	2	0.28	0.03187
+GO:0007286	spermatid development	20	2	0.33	0.04312
+GO:0048016	inositol phosphate-mediated signaling	3	1	0.05	0.04927
+GO:1902476	chloride transmembrane transport	3	1	0.05	0.04927
+GO:0035001	dorsal trunk growth, open tracheal syste...	3	1	0.05	0.04927
+GO:0070525	tRNA threonylcarbamoyladenosine metaboli...	3	1	0.05	0.04927
+GO:0018231	peptidyl-S-diacylglycerol-L-cysteine bio...	3	1	0.05	0.04927
+GO:0043461	proton-transporting ATP synthase complex...	3	1	0.05	0.04927
+GO:0001682	tRNA 5'-leader removal	3	1	0.05	0.04927
+GO:0006122	mitochondrial electron transport, ubiqui...	3	1	0.05	0.04927
+GO:0070681	glutaminyl-tRNAGln biosynthesis via tran...	3	1	0.05	0.04927
+GO:0017062	respiratory chain complex III assembly	3	1	0.05	0.04927
+GO:0008637	apoptotic mitochondrial changes	3	1	0.05	0.04927

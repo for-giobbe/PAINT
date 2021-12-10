@@ -1,0 +1,4 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006999	nuclear pore organization	3	1	0	0.0038
+GO:0070932	histone H3 deacetylation	6	1	0.01	0.0075
+GO:0008643	carbohydrate transport	35	1	0.04	0.0432

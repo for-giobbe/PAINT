@@ -1,0 +1,15 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006269	DNA replication, synthesis of RNA primer	3	1	0.01	0.0091
+GO:0006020	inositol metabolic process	3	1	0.01	0.0091
+GO:0006882	cellular zinc ion homeostasis	3	1	0.01	0.0091
+GO:0010312	detoxification of zinc ion	4	1	0.01	0.0122
+GO:0046855	inositol phosphate dephosphorylation	5	1	0.02	0.0152
+GO:0006829	zinc ion transport	6	1	0.02	0.0182
+GO:0009253	peptidoglycan catabolic process	6	1	0.02	0.0182
+GO:0006508	proteolysis	576	7	1.76	0.0187
+GO:0043248	proteasome assembly	8	1	0.02	0.0242
+GO:1902358	sulfate transmembrane transport	9	1	0.03	0.0272
+GO:0046854	phosphatidylinositol phosphorylation	10	1	0.03	0.0301
+GO:0046173	polyol biosynthetic process	12	1	0.04	0.0361
+GO:0034637	cellular carbohydrate biosynthetic proce...	15	1	0.05	0.0449
+GO:0030433	ubiquitin-dependent ERAD pathway	16	1	0.05	0.0478

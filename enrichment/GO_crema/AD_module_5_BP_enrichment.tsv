@@ -1,0 +1,57 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0010942	positive regulation of cell death	22	10	2.68	0.00024
+GO:0032008	positive regulation of TOR signaling	11	6	1.34	0.00086
+GO:0050000	chromosome localization	5	4	0.61	0.00099
+GO:0009083	branched-chain amino acid catabolic proc...	8	5	0.98	0.00108
+GO:1900264	positive regulation of DNA-directed DNA ...	3	3	0.37	0.00180
+GO:0008631	intrinsic apoptotic signaling pathway in...	3	3	0.37	0.00180
+GO:0035510	DNA dealkylation	3	3	0.37	0.00180
+GO:0001819	positive regulation of cytokine producti...	3	3	0.37	0.00180
+GO:0016226	iron-sulfur cluster assembly	13	6	1.58	0.00258
+GO:0006626	protein targeting to mitochondrion	13	6	1.58	0.00258
+GO:0038202	TORC1 signaling	6	4	0.73	0.00268
+GO:0006518	peptide metabolic process	312	85	38.03	0.00322
+GO:0072593	reactive oxygen species metabolic proces...	17	7	2.07	0.00404
+GO:0098869	cellular oxidant detoxification	33	10	4.02	0.00454
+GO:0042773	ATP synthesis coupled electron transport	19	7	2.32	0.00521
+GO:0044743	protein transmembrane import into intrac...	11	5	1.34	0.00652
+GO:0006450	regulation of translational fidelity	11	5	1.34	0.00652
+GO:0034629	cellular protein-containing complex loca...	4	3	0.49	0.00656
+GO:0072329	monocarboxylic acid catabolic process	20	7	2.44	0.00719
+GO:0031647	regulation of protein stability	12	5	1.46	0.01007
+GO:0008366	axon ensheathment	8	4	0.98	0.01023
+GO:0140053	mitochondrial gene expression	34	10	4.14	0.01172
+GO:0000278	mitotic cell cycle	119	25	14.51	0.01435
+GO:0007526	larval somatic muscle development	13	5	1.58	0.01475
+GO:0071230	cellular response to amino acid stimulus	5	3	0.61	0.01492
+GO:0006388	tRNA splicing, via endonucleolytic cleav...	5	3	0.61	0.01492
+GO:0006954	inflammatory response	5	3	0.61	0.01492
+GO:0006189	'de novo' IMP biosynthetic process	5	3	0.61	0.01492
+GO:0007052	mitotic spindle organization	18	6	2.19	0.01637
+GO:0001522	pseudouridine synthesis	9	4	1.1	0.01665
+GO:0045814	negative regulation of gene expression, ...	24	7	2.93	0.02080
+GO:0072659	protein localization to plasma membrane	19	6	2.32	0.02152
+GO:0034470	ncRNA processing	151	31	18.41	0.02301
+GO:0046907	intracellular transport	307	62	37.42	0.02349
+GO:0042176	regulation of protein catabolic process	37	6	4.51	0.02529
+GO:0043524	negative regulation of neuron apoptotic ...	6	3	0.73	0.02715
+GO:0034315	regulation of Arp2/3 complex-mediated ac...	6	3	0.73	0.02715
+GO:1900424	regulation of defense response to bacter...	6	3	0.73	0.02715
+GO:0006782	protoporphyrinogen IX biosynthetic proce...	6	3	0.73	0.02715
+GO:1901606	alpha-amino acid catabolic process	23	7	2.8	0.03469
+GO:0051604	protein maturation	48	11	5.85	0.04074
+GO:0015833	peptide transport	262	50	31.94	0.04077
+GO:0043461	proton-transporting ATP synthase complex...	3	2	0.37	0.04091
+GO:0043457	regulation of cellular respiration	3	2	0.37	0.04091
+GO:0031440	regulation of mRNA 3'-end processing	3	2	0.37	0.04091
+GO:0071786	endoplasmic reticulum tubular network or...	3	2	0.37	0.04091
+GO:0061053	somite development	3	2	0.37	0.04091
+GO:0032042	mitochondrial DNA metabolic process	3	2	0.37	0.04091
+GO:0001174	transcriptional start site selection at ...	3	2	0.37	0.04091
+GO:0051642	centrosome localization	3	2	0.37	0.04091
+GO:0050764	regulation of phagocytosis	3	2	0.37	0.04091
+GO:0019835	cytolysis	3	2	0.37	0.04091
+GO:0006012	galactose metabolic process	7	3	0.85	0.04328
+GO:0098542	defense response to other organism	34	10	4.14	0.04565
+GO:0055072	iron ion homeostasis	17	5	2.07	0.04701
+GO:0006457	protein folding	65	13	7.92	0.04931

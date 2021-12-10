@@ -1,0 +1,48 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0036265	RNA (guanine-N7)-methylation	3	2	0.03	0.00034
+GO:0006744	ubiquinone biosynthetic process	14	3	0.15	0.00040
+GO:0032981	mitochondrial respiratory chain complex ...	5	2	0.05	0.00112
+GO:0036388	pre-replicative complex assembly	5	2	0.05	0.00112
+GO:0032508	DNA duplex unwinding	49	4	0.53	0.00180
+GO:0000727	double-strand break repair via break-ind...	7	2	0.08	0.00231
+GO:0050829	defense response to Gram-negative bacter...	8	2	0.09	0.00306
+GO:0044743	protein transmembrane import into intrac...	11	2	0.12	0.00590
+GO:0006270	DNA replication initiation	11	2	0.12	0.00590
+GO:0065002	intracellular protein transmembrane tran...	15	2	0.16	0.01095
+GO:0006281	DNA repair	149	8	1.61	0.01096
+GO:1990542	mitochondrial transmembrane transport	19	2	0.2	0.01735
+GO:0007029	endoplasmic reticulum organization	19	2	0.2	0.01735
+GO:0045814	negative regulation of gene expression, ...	24	2	0.26	0.02705
+GO:0006625	protein targeting to peroxisome	3	1	0.03	0.03197
+GO:0070127	tRNA aminoacylation for mitochondrial pr...	3	1	0.03	0.03197
+GO:0002786	regulation of antibacterial peptide prod...	3	1	0.03	0.03197
+GO:0050830	defense response to Gram-positive bacter...	3	1	0.03	0.03197
+GO:0061058	regulation of peptidoglycan recognition ...	3	1	0.03	0.03197
+GO:0045943	positive regulation of transcription by ...	3	1	0.03	0.03197
+GO:2000641	regulation of early endosome to late end...	3	1	0.03	0.03197
+GO:0006145	purine nucleobase catabolic process	3	1	0.03	0.03197
+GO:0007307	eggshell chorion gene amplification	3	1	0.03	0.03197
+GO:0000492	box C/D snoRNP assembly	3	1	0.03	0.03197
+GO:1902017	regulation of cilium assembly	3	1	0.03	0.03197
+GO:0006552	leucine catabolic process	3	1	0.03	0.03197
+GO:0072595	maintenance of protein localization in o...	3	1	0.03	0.03197
+GO:0001881	receptor recycling	3	1	0.03	0.03197
+GO:0048056	R3/R4 cell differentiation	3	1	0.03	0.03197
+GO:0008630	intrinsic apoptotic signaling pathway in...	3	1	0.03	0.03197
+GO:0030576	Cajal body organization	3	1	0.03	0.03197
+GO:0043966	histone H3 acetylation	3	1	0.03	0.03197
+GO:1901836	regulation of transcription of nucleolar...	3	1	0.03	0.03197
+GO:0008069	dorsal/ventral axis specification, ovari...	3	1	0.03	0.03197
+GO:0006360	transcription by RNA polymerase I	8	2	0.09	0.04174
+GO:1900182	positive regulation of protein localizat...	4	1	0.04	0.04241
+GO:0035307	positive regulation of protein dephospho...	4	1	0.04	0.04241
+GO:0045910	negative regulation of DNA recombination	4	1	0.04	0.04241
+GO:0016973	poly(A)+ mRNA export from nucleus	4	1	0.04	0.04241
+GO:1902969	mitotic DNA replication	4	1	0.04	0.04241
+GO:0007021	tubulin complex assembly	4	1	0.04	0.04241
+GO:0001764	neuron migration	4	1	0.04	0.04241
+GO:0046329	negative regulation of JNK cascade	4	1	0.04	0.04241
+GO:0045824	negative regulation of innate immune res...	4	1	0.04	0.04241
+GO:0015919	peroxisomal membrane transport	4	1	0.04	0.04241
+GO:0021543	pallium development	4	1	0.04	0.04241
+GO:0032324	molybdopterin cofactor biosynthetic proc...	4	1	0.04	0.04241

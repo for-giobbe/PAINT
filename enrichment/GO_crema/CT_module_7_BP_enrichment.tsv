@@ -1,0 +1,7 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0022900	electron transport chain	50	2	0.04	0.00047
+GO:0035096	larval midgut cell programmed cell death	3	1	0	0.00215
+GO:0016239	positive regulation of macroautophagy	4	1	0	0.00287
+GO:0006119	oxidative phosphorylation	30	1	0.02	0.02138
+GO:0007033	vacuole organization	36	1	0.03	0.02561
+GO:0006796	phosphate-containing compound metabolic ...	835	3	0.6	0.04298

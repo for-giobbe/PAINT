@@ -1,0 +1,29 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0000038	very long-chain fatty acid metabolic pro...	11	2	0.03	0.00042
+GO:0030148	sphingolipid biosynthetic process	25	2	0.07	0.00223
+GO:0006633	fatty acid biosynthetic process	46	2	0.13	0.00744
+GO:0006729	tetrahydrobiopterin biosynthetic process	3	1	0.01	0.00859
+GO:0009396	folic acid-containing compound biosynthe...	3	1	0.01	0.00859
+GO:0045448	mitotic cell cycle, embryonic	3	1	0.01	0.00859
+GO:0043095	regulation of GTP cyclohydrolase I activ...	3	1	0.01	0.00859
+GO:0072347	response to anesthetic	3	1	0.01	0.00859
+GO:0033301	cell cycle comprising mitosis without cy...	3	1	0.01	0.00859
+GO:0061355	Wnt protein secretion	4	1	0.01	0.01144
+GO:0048072	compound eye pigmentation	4	1	0.01	0.01144
+GO:0055064	chloride ion homeostasis	4	1	0.01	0.01144
+GO:0006488	dolichol-linked oligosaccharide biosynth...	5	1	0.01	0.01429
+GO:2000274	regulation of epithelial cell migration,...	5	1	0.01	0.01429
+GO:0006884	cell volume homeostasis	5	1	0.01	0.01429
+GO:0055078	sodium ion homeostasis	6	1	0.02	0.01712
+GO:0018991	oviposition	6	1	0.02	0.01712
+GO:0018345	protein palmitoylation	6	1	0.02	0.01712
+GO:0046653	tetrahydrofolate metabolic process	6	1	0.02	0.01712
+GO:0055075	potassium ion homeostasis	7	1	0.02	0.01995
+GO:0009410	response to xenobiotic stimulus	7	1	0.02	0.01995
+GO:0060359	response to ammonium ion	7	1	0.02	0.01995
+GO:0043162	ubiquitin-dependent protein catabolic pr...	8	1	0.02	0.02276
+GO:0003333	amino acid transmembrane transport	8	1	0.02	0.02276
+GO:0008363	larval chitin-based cuticle development	9	1	0.03	0.02558
+GO:0048067	cuticle pigmentation	9	1	0.03	0.02558
+GO:0072666	establishment of protein localization to...	10	1	0.03	0.02838
+GO:0045475	locomotor rhythm	11	1	0.03	0.03118

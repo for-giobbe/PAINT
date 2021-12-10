@@ -1,0 +1,10 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0050975	sensory perception of touch	4	1	0.01	0.0086
+GO:0007168	receptor guanylyl cyclase signaling path...	5	1	0.01	0.0107
+GO:0035249	synaptic transmission, glutamatergic	6	1	0.01	0.0129
+GO:0050905	neuromuscular process	6	1	0.01	0.0129
+GO:0006336	DNA replication-independent nucleosome a...	6	1	0.01	0.0129
+GO:0006182	cGMP biosynthetic process	9	1	0.02	0.0192
+GO:0060078	regulation of postsynaptic membrane pote...	15	1	0.03	0.0319
+GO:0035235	ionotropic glutamate receptor signaling ...	18	1	0.04	0.0381
+GO:0007605	sensory perception of sound	21	1	0.05	0.0444

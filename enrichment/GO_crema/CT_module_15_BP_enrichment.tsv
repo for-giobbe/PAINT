@@ -1,0 +1,26 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0001525	angiogenesis	5	2	0.06	0.0014
+GO:0042059	negative regulation of epidermal growth ...	5	2	0.06	0.0014
+GO:0055085	transmembrane transport	473	13	5.77	0.0143
+GO:0034030	ribonucleoside bisphosphate biosynthetic...	16	2	0.2	0.0158
+GO:0034033	purine nucleoside bisphosphate biosynthe...	16	2	0.2	0.0158
+GO:0007298	border follicle cell migration	20	2	0.24	0.0242
+GO:0098657	import into cell	98	4	1.2	0.0311
+GO:0007186	G protein-coupled receptor signaling pat...	145	5	1.77	0.0313
+GO:0001700	embryonic development via the syncytial ...	24	2	0.29	0.0341
+GO:0048016	inositol phosphate-mediated signaling	3	1	0.04	0.0362
+GO:0032291	axon ensheathment in central nervous sys...	3	1	0.04	0.0362
+GO:2000249	regulation of actin cytoskeleton reorgan...	3	1	0.04	0.0362
+GO:0048268	clathrin coat assembly	3	1	0.04	0.0362
+GO:0072578	neurotransmitter-gated ion channel clust...	3	1	0.04	0.0362
+GO:0014003	oligodendrocyte development	3	1	0.04	0.0362
+GO:0016540	protein autoprocessing	3	1	0.04	0.0362
+GO:0043087	regulation of GTPase activity	28	2	0.34	0.0453
+GO:0051094	positive regulation of developmental pro...	66	3	0.81	0.0462
+GO:0006582	melanin metabolic process	8	2	0.1	0.0473
+GO:0035011	melanotic encapsulation of foreign targe...	4	1	0.05	0.0480
+GO:0031646	positive regulation of neurological syst...	4	1	0.05	0.0480
+GO:0019321	pentose metabolic process	4	1	0.05	0.0480
+GO:0035459	cargo loading into vesicle	4	1	0.05	0.0480
+GO:0055064	chloride ion homeostasis	4	1	0.05	0.0480
+GO:0002943	tRNA dihydrouridine synthesis	4	1	0.05	0.0480

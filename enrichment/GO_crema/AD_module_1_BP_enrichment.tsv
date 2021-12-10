@@ -1,0 +1,25 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006937	regulation of muscle contraction	8	3	0.2	0.00074
+GO:0044247	cellular polysaccharide catabolic proces...	3	2	0.07	0.00177
+GO:0009251	glucan catabolic process	3	2	0.07	0.00177
+GO:0040034	regulation of development, heterochronic	3	2	0.07	0.00177
+GO:0043562	cellular response to nitrogen levels	4	2	0.1	0.00349
+GO:0000122	negative regulation of transcription by ...	27	4	0.66	0.00396
+GO:0042133	neurotransmitter metabolic process	28	4	0.69	0.00453
+GO:0006417	regulation of translation	49	5	1.21	0.00669
+GO:0046112	nucleobase biosynthetic process	11	3	0.27	0.00834
+GO:0007632	visual behavior	6	2	0.15	0.00844
+GO:0005978	glycogen biosynthetic process	7	2	0.17	0.01163
+GO:0007419	ventral cord development	8	2	0.2	0.01526
+GO:0009968	negative regulation of signal transducti...	83	6	2.04	0.01591
+GO:0048190	wing disc dorsal/ventral pattern formati...	9	2	0.22	0.01931
+GO:0002098	tRNA wobble uridine modification	9	2	0.22	0.01931
+GO:0065004	protein-DNA complex assembly	44	4	1.08	0.02223
+GO:0000077	DNA damage checkpoint	10	2	0.25	0.02375
+GO:0060047	heart contraction	10	2	0.25	0.02375
+GO:0051321	meiotic cell cycle	47	4	1.16	0.02761
+GO:0035601	protein deacylation	16	3	0.39	0.02822
+GO:0007304	chorion-containing eggshell formation	11	2	0.27	0.02856
+GO:0060255	regulation of macromolecule metabolic pr...	824	34	20.27	0.02965
+GO:0008652	cellular amino acid biosynthetic process	29	3	0.71	0.03336
+GO:0007602	phototransduction	13	2	0.32	0.03923

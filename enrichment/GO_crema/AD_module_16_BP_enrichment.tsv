@@ -1,0 +1,78 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007166	cell surface receptor signaling pathway	267	53	28.57	0.00022
+GO:0001678	cellular glucose homeostasis	5	4	0.54	0.00059
+GO:0009749	response to glucose	3	3	0.32	0.00122
+GO:0007424	open tracheal system development	52	14	5.56	0.00144
+GO:0016331	morphogenesis of embryonic epithelium	18	7	1.93	0.00171
+GO:0008587	imaginal disc-derived wing margin morpho...	14	6	1.5	0.00207
+GO:0009880	embryonic pattern specification	34	9	3.64	0.00339
+GO:0048015	phosphatidylinositol-mediated signaling	7	4	0.75	0.00349
+GO:1903706	regulation of hemopoiesis	4	3	0.43	0.00449
+GO:0007485	imaginal disc-derived male genitalia dev...	4	3	0.43	0.00449
+GO:1901606	alpha-amino acid catabolic process	23	8	2.46	0.00467
+GO:0006355	regulation of transcription, DNA-templat...	525	77	56.18	0.00552
+GO:0001708	cell fate specification	20	8	2.14	0.00635
+GO:0010004	gastrulation involving germ band extensi...	8	4	0.86	0.00639
+GO:0042219	cellular modified amino acid catabolic p...	8	4	0.86	0.00639
+GO:0046835	carbohydrate phosphorylation	8	4	0.86	0.00639
+GO:0009064	glutamine family amino acid metabolic pr...	17	6	1.82	0.00644
+GO:0030036	actin cytoskeleton organization	111	19	11.88	0.00665
+GO:0007173	epidermal growth factor receptor signali...	13	5	1.39	0.00854
+GO:0007411	axon guidance	60	14	6.42	0.01002
+GO:0031279	regulation of cyclase activity	5	3	0.54	0.01033
+GO:0051339	regulation of lyase activity	5	3	0.54	0.01033
+GO:0043666	regulation of phosphoprotein phosphatase...	5	3	0.54	0.01033
+GO:0090630	activation of GTPase activity	5	3	0.54	0.01033
+GO:0008363	larval chitin-based cuticle development	9	4	0.96	0.01053
+GO:0008582	regulation of synaptic growth at neuromu...	24	7	2.57	0.01055
+GO:0001709	cell fate determination	17	6	1.82	0.01207
+GO:0072359	circulatory system development	43	9	4.6	0.01394
+GO:0007267	cell-cell signaling	161	27	17.23	0.01488
+GO:0048646	anatomical structure formation involved ...	103	22	11.02	0.01561
+GO:0046854	phosphatidylinositol phosphorylation	10	4	1.07	0.01609
+GO:1904398	positive regulation of neuromuscular jun...	10	4	1.07	0.01609
+GO:0051965	positive regulation of synapse assembly	10	4	1.07	0.01609
+GO:0048477	oogenesis	92	19	9.84	0.01627
+GO:0010975	regulation of neuron projection developm...	36	10	3.85	0.01633
+GO:0006986	response to unfolded protein	15	5	1.61	0.01663
+GO:0045570	regulation of imaginal disc growth	6	3	0.64	0.01903
+GO:0007520	myoblast fusion	6	3	0.64	0.01903
+GO:0035332	positive regulation of hippo signaling	6	3	0.64	0.01903
+GO:0050919	negative chemotaxis	6	3	0.64	0.01903
+GO:0030336	negative regulation of cell migration	6	3	0.64	0.01903
+GO:0051056	regulation of small GTPase mediated sign...	21	6	2.25	0.01949
+GO:0022604	regulation of cell morphogenesis	44	11	4.71	0.01988
+GO:0045665	negative regulation of neuron differenti...	11	4	1.18	0.02318
+GO:0009855	determination of bilateral symmetry	11	4	1.18	0.02318
+GO:2000060	positive regulation of ubiquitin-depende...	17	5	1.82	0.02863
+GO:0010506	regulation of autophagy	23	6	2.46	0.03018
+GO:0046165	alcohol biosynthetic process	23	6	2.46	0.03018
+GO:0006071	glycerol metabolic process	7	3	0.75	0.03069
+GO:0006072	glycerol-3-phosphate metabolic process	7	3	0.75	0.03069
+GO:0007629	flight behavior	7	3	0.75	0.03069
+GO:0016203	muscle attachment	7	3	0.75	0.03069
+GO:0048580	regulation of post-embryonic development	7	3	0.75	0.03069
+GO:0048863	stem cell differentiation	18	5	1.93	0.03183
+GO:0043967	histone H4 acetylation	3	2	0.32	0.03186
+GO:0070509	calcium ion import	3	2	0.32	0.03186
+GO:0046331	lateral inhibition	3	2	0.32	0.03186
+GO:0042149	cellular response to glucose starvation	3	2	0.32	0.03186
+GO:0032790	ribosome disassembly	3	2	0.32	0.03186
+GO:0045464	R8 cell fate specification	3	2	0.32	0.03186
+GO:0009073	aromatic amino acid family biosynthetic ...	3	2	0.32	0.03186
+GO:0007448	anterior/posterior pattern specification...	3	2	0.32	0.03186
+GO:0007162	negative regulation of cell adhesion	3	2	0.32	0.03186
+GO:0043507	positive regulation of JUN kinase activi...	3	2	0.32	0.03186
+GO:0042693	muscle cell fate commitment	3	2	0.32	0.03186
+GO:0071322	cellular response to carbohydrate stimul...	3	2	0.32	0.03186
+GO:0006641	triglyceride metabolic process	12	4	1.28	0.03189
+GO:0043648	dicarboxylic acid metabolic process	12	4	1.28	0.03189
+GO:0016310	phosphorylation	550	82	58.85	0.03246
+GO:0000902	cell morphogenesis	127	29	13.59	0.03343
+GO:0071773	cellular response to BMP stimulus	18	5	1.93	0.03626
+GO:0007155	cell adhesion	104	20	11.13	0.04161
+GO:0043297	apical junction assembly	13	4	1.39	0.04227
+GO:0040008	regulation of growth	73	16	7.81	0.04356
+GO:0009116	nucleoside metabolic process	34	7	3.64	0.04503
+GO:1905330	regulation of morphogenesis of an epithe...	8	3	0.86	0.04527
+GO:0008407	chaeta morphogenesis	8	3	0.86	0.04527

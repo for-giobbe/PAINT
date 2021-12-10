@@ -1,0 +1,12 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0009649	entrainment of circadian clock	3	1	0.01	0.0054
+GO:0018298	protein-chromophore linkage	3	1	0.01	0.0054
+GO:0032922	circadian regulation of gene expression	3	1	0.01	0.0054
+GO:1905515	non-motile cilium assembly	4	1	0.01	0.0072
+GO:0009200	deoxyribonucleoside triphosphate metabol...	4	1	0.01	0.0072
+GO:0043154	negative regulation of cysteine-type end...	5	1	0.01	0.0089
+GO:0035246	peptidyl-arginine N-methylation	6	1	0.01	0.0107
+GO:0031398	positive regulation of protein ubiquitin...	7	1	0.01	0.0125
+GO:0000727	double-strand break repair via break-ind...	7	1	0.01	0.0125
+GO:0007224	smoothened signaling pathway	19	1	0.03	0.0336
+GO:1901292	nucleoside phosphate catabolic process	26	1	0.05	0.0457

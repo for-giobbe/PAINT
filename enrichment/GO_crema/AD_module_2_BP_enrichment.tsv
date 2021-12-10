@@ -1,0 +1,30 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007605	sensory perception of sound	21	6	0.98	0.00029
+GO:0006629	lipid metabolic process	313	50	14.61	0.00053
+GO:0006639	acylglycerol metabolic process	17	5	0.79	0.00083
+GO:0000038	very long-chain fatty acid metabolic pro...	11	4	0.51	0.00118
+GO:0006084	acetyl-CoA metabolic process	7	3	0.33	0.00306
+GO:0006071	glycerol metabolic process	7	3	0.33	0.00306
+GO:0030148	sphingolipid biosynthetic process	25	5	1.17	0.00525
+GO:0006625	protein targeting to peroxisome	3	2	0.14	0.00631
+GO:0032469	endoplasmic reticulum calcium ion homeos...	3	2	0.14	0.00631
+GO:0042335	cuticle development	37	6	1.73	0.00670
+GO:0062013	positive regulation of small molecule me...	9	3	0.42	0.00685
+GO:0035336	long-chain fatty-acyl-CoA metabolic proc...	10	3	0.47	0.00945
+GO:0015919	peroxisomal membrane transport	4	2	0.19	0.01223
+GO:0019320	hexose catabolic process	4	2	0.19	0.01223
+GO:0051865	protein autoubiquitination	4	2	0.19	0.01223
+GO:0006662	glycerol ether metabolic process	4	2	0.19	0.01223
+GO:0006098	pentose-phosphate shunt	4	2	0.19	0.01223
+GO:0019217	regulation of fatty acid metabolic proce...	4	2	0.19	0.01223
+GO:0006006	glucose metabolic process	15	4	0.7	0.01602
+GO:0090140	regulation of mitochondrial fission	5	2	0.23	0.01977
+GO:0055070	copper ion homeostasis	5	2	0.23	0.01977
+GO:0001525	angiogenesis	5	2	0.23	0.01977
+GO:0006777	Mo-molybdopterin cofactor biosynthetic p...	5	2	0.23	0.01977
+GO:0018208	peptidyl-proline modification	24	4	1.12	0.02357
+GO:0019395	fatty acid oxidation	14	3	0.65	0.02496
+GO:0015936	coenzyme A metabolic process	6	2	0.28	0.02874
+GO:0042559	pteridine-containing compound biosynthet...	6	2	0.28	0.02874
+GO:0035269	protein O-linked mannosylation	7	2	0.33	0.03902
+GO:0006012	galactose metabolic process	7	2	0.33	0.03902

@@ -1,0 +1,28 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:1902600	proton transmembrane transport	30	7	1.21	0.00014
+GO:0006222	UMP biosynthetic process	6	3	0.24	0.00117
+GO:0000972	transcription-dependent tethering of RNA...	3	2	0.12	0.00470
+GO:0070593	dendrite self-avoidance	3	2	0.12	0.00470
+GO:0006814	sodium ion transport	41	6	1.65	0.00546
+GO:0015914	phospholipid transport	11	3	0.44	0.00833
+GO:0009311	oligosaccharide metabolic process	8	3	0.32	0.00909
+GO:0034394	protein localization to cell surface	4	2	0.16	0.00916
+GO:0003014	renal system process	4	2	0.16	0.00916
+GO:0035148	tube formation	12	3	0.48	0.01078
+GO:0006820	anion transport	123	15	4.95	0.01178
+GO:0008643	carbohydrate transport	35	5	1.41	0.01219
+GO:0030149	sphingolipid catabolic process	5	2	0.2	0.01486
+GO:0090224	regulation of spindle organization	5	2	0.2	0.01486
+GO:1901617	organic hydroxy compound biosynthetic pr...	40	5	1.61	0.02101
+GO:0006207	'de novo' pyrimidine nucleobase biosynth...	6	2	0.24	0.02170
+GO:0051647	nucleus localization	6	2	0.24	0.02170
+GO:0006891	intra-Golgi vesicle-mediated transport	7	2	0.28	0.02958
+GO:0051495	positive regulation of cytoskeleton orga...	31	4	1.25	0.03419
+GO:1902115	regulation of organelle assembly	8	2	0.32	0.03841
+GO:0019991	septate junction assembly	8	2	0.32	0.03841
+GO:0030866	cortical actin cytoskeleton organization	12	3	0.48	0.04776
+GO:0051302	regulation of cell division	12	3	0.48	0.04776
+GO:0051180	vitamin transport	9	2	0.36	0.04810
+GO:1902358	sulfate transmembrane transport	9	2	0.36	0.04810
+GO:0007314	oocyte anterior/posterior axis specifica...	9	2	0.36	0.04810
+GO:1903829	positive regulation of cellular protein ...	9	2	0.36	0.04810

@@ -1,0 +1,26 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006261	DNA-dependent DNA replication	32	6	0.86	0.00088
+GO:0007049	cell cycle	275	20	7.36	0.00090
+GO:0034661	ncRNA catabolic process	11	4	0.29	0.00093
+GO:0031100	animal organ regeneration	3	2	0.08	0.00210
+GO:0097120	receptor localization to synapse	3	2	0.08	0.00210
+GO:0006974	cellular response to DNA damage stimulus	171	14	4.57	0.00536
+GO:0006399	tRNA metabolic process	89	9	2.38	0.00605
+GO:0034475	U4 snRNA 3'-end processing	5	2	0.13	0.00674
+GO:0034427	nuclear-transcribed mRNA catabolic proce...	5	2	0.13	0.00674
+GO:0071051	polyadenylation-dependent snoRNA 3'-end ...	5	2	0.13	0.00674
+GO:0034453	microtubule anchoring	6	2	0.16	0.00993
+GO:0071028	nuclear mRNA surveillance	6	2	0.16	0.00993
+GO:0051568	histone H3-K4 methylation	7	2	0.19	0.01367
+GO:0000027	ribosomal large subunit assembly	7	2	0.19	0.01367
+GO:0009263	deoxyribonucleotide biosynthetic process	7	2	0.19	0.01367
+GO:0031167	rRNA methylation	7	2	0.19	0.01367
+GO:0006305	DNA alkylation	7	2	0.19	0.01367
+GO:0000727	double-strand break repair via break-ind...	7	2	0.19	0.01367
+GO:0061982	meiosis I cell cycle process	22	3	0.59	0.01990
+GO:0031023	microtubule organizing center organizati...	16	3	0.43	0.02239
+GO:0044728	DNA methylation or demethylation	9	2	0.24	0.02262
+GO:0006144	purine nucleobase metabolic process	10	2	0.27	0.02778
+GO:0000959	mitochondrial RNA metabolic process	10	2	0.27	0.02778
+GO:0007059	chromosome segregation	56	4	1.5	0.03754
+GO:0032508	DNA duplex unwinding	49	4	1.31	0.04112

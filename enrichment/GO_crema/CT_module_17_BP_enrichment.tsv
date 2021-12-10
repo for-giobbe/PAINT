@@ -1,0 +1,85 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006399	tRNA metabolic process	89	34	14.8	0.00012
+GO:0000278	mitotic cell cycle	119	34	19.78	0.00033
+GO:0006790	sulfur compound metabolic process	88	26	14.63	0.00077
+GO:0007005	mitochondrion organization	76	25	12.63	0.00083
+GO:0071826	ribonucleoprotein complex subunit organi...	71	31	11.8	0.00135
+GO:0009267	cellular response to starvation	22	10	3.66	0.00145
+GO:0010628	positive regulation of gene expression	128	35	21.28	0.00191
+GO:0035317	imaginal disc-derived wing hair organiza...	7	5	1.16	0.00197
+GO:0007430	terminal branching, open tracheal system	7	5	1.16	0.00197
+GO:0000959	mitochondrial RNA metabolic process	10	6	1.66	0.00238
+GO:0061136	regulation of proteasomal protein catabo...	23	10	3.82	0.00273
+GO:0051301	cell division	115	34	19.12	0.00285
+GO:0009451	RNA modification	64	22	10.64	0.00298
+GO:0006388	tRNA splicing, via endonucleolytic cleav...	5	4	0.83	0.00330
+GO:0031058	positive regulation of histone modificat...	5	4	0.83	0.00330
+GO:0050000	chromosome localization	5	4	0.83	0.00330
+GO:0050658	RNA transport	47	16	7.81	0.00362
+GO:0016192	vesicle-mediated transport	271	71	45.05	0.00389
+GO:0006914	autophagy	60	20	9.97	0.00421
+GO:0050790	regulation of catalytic activity	276	72	45.88	0.00427
+GO:0032008	positive regulation of TOR signaling	11	6	1.83	0.00451
+GO:0045292	mRNA cis splicing, via spliceosome	8	5	1.33	0.00453
+GO:0050772	positive regulation of axonogenesis	8	5	1.33	0.00453
+GO:0006457	protein folding	65	20	10.81	0.00567
+GO:0048232	male gamete generation	64	19	10.64	0.00638
+GO:0035150	regulation of tube size	12	6	1.99	0.00776
+GO:0031647	regulation of protein stability	12	6	1.99	0.00776
+GO:0034622	cellular protein-containing complex asse...	215	65	35.74	0.00777
+GO:0031123	RNA 3'-end processing	35	13	5.82	0.00847
+GO:0071028	nuclear mRNA surveillance	6	4	1	0.00858
+GO:0006023	aminoglycan biosynthetic process	9	5	1.5	0.00880
+GO:0051726	regulation of cell cycle	106	30	17.62	0.00951
+GO:0035303	regulation of dephosphorylation	16	7	2.66	0.00983
+GO:0030509	BMP signaling pathway	16	7	2.66	0.00983
+GO:0048870	cell motility	98	24	16.29	0.01095
+GO:0031400	negative regulation of protein modificat...	30	12	4.99	0.01220
+GO:0002252	immune effector process	19	8	3.16	0.01234
+GO:0070925	organelle assembly	116	32	19.28	0.01516
+GO:0042256	mature ribosome assembly	4	3	0.66	0.01605
+GO:0006004	fucose metabolic process	4	3	0.66	0.01605
+GO:0043277	apoptotic cell clearance	4	3	0.66	0.01605
+GO:0008283	cell proliferation	68	20	11.3	0.01686
+GO:0007015	actin filament organization	67	19	11.14	0.01765
+GO:0018022	peptidyl-lysine methylation	26	9	4.32	0.01997
+GO:0061024	membrane organization	83	23	13.8	0.02273
+GO:0007292	female gamete generation	96	26	15.96	0.02307
+GO:0032456	endocytic recycling	11	5	1.83	0.02413
+GO:0006450	regulation of translational fidelity	11	5	1.83	0.02413
+GO:0016575	histone deacetylation	11	5	1.83	0.02413
+GO:0032446	protein modification by small protein co...	133	33	22.11	0.02708
+GO:0051402	neuron apoptotic process	8	5	1.33	0.02749
+GO:0042773	ATP synthesis coupled electron transport	19	7	3.16	0.02750
+GO:0001775	cell activation	7	4	1.16	0.02754
+GO:0051438	regulation of ubiquitin-protein transfer...	5	3	0.83	0.02758
+GO:1990748	cellular detoxification	36	11	5.98	0.02758
+GO:0009101	glycoprotein biosynthetic process	74	21	12.3	0.02835
+GO:0044087	regulation of cellular component biogene...	86	24	14.3	0.02898
+GO:0035148	tube formation	12	6	1.99	0.03014
+GO:0051646	mitochondrion localization	12	6	1.99	0.03014
+GO:1905330	regulation of morphogenesis of an epithe...	8	4	1.33	0.03029
+GO:0030201	heparan sulfate proteoglycan metabolic p...	8	4	1.33	0.03029
+GO:0030099	myeloid cell differentiation	8	4	1.33	0.03029
+GO:0071229	cellular response to acid chemical	8	4	1.33	0.03029
+GO:0009083	branched-chain amino acid catabolic proc...	8	4	1.33	0.03029
+GO:0043162	ubiquitin-dependent protein catabolic pr...	8	4	1.33	0.03029
+GO:0006352	DNA-templated transcription, initiation	34	12	5.65	0.03201
+GO:0034612	response to tumor necrosis factor	5	3	0.83	0.03518
+GO:0045197	establishment or maintenance of epitheli...	5	3	0.83	0.03518
+GO:0006369	termination of RNA polymerase II transcr...	5	3	0.83	0.03518
+GO:0031060	regulation of histone methylation	5	3	0.83	0.03518
+GO:0002521	leukocyte differentiation	5	3	0.83	0.03518
+GO:0007097	nuclear migration	5	3	0.83	0.03518
+GO:0042819	vitamin B6 biosynthetic process	5	3	0.83	0.03518
+GO:1903432	regulation of TORC1 signaling	5	3	0.83	0.03518
+GO:0006997	nucleus organization	16	6	2.66	0.03715
+GO:0000380	alternative mRNA splicing, via spliceoso...	16	6	2.66	0.03715
+GO:0044267	cellular protein metabolic process	1150	308	191.18	0.04243
+GO:0006470	protein dephosphorylation	77	19	12.8	0.04448
+GO:0043066	negative regulation of apoptotic process	34	10	5.65	0.04472
+GO:0043065	positive regulation of apoptotic process	12	6	1.99	0.04724
+GO:0046173	polyol biosynthetic process	12	6	1.99	0.04724
+GO:0002098	tRNA wobble uridine modification	9	4	1.5	0.04749
+GO:0034308	primary alcohol metabolic process	9	4	1.5	0.04749
+GO:1903008	organelle disassembly	17	6	2.83	0.04958

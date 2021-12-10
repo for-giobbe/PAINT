@@ -1,0 +1,10 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006692	prostanoid metabolic process	3	1	0	0.0038
+GO:0045792	negative regulation of cell size	3	1	0	0.0038
+GO:0007168	receptor guanylyl cyclase signaling path...	5	1	0.01	0.0063
+GO:0016556	mRNA modification	9	1	0.01	0.0113
+GO:0006182	cGMP biosynthetic process	9	1	0.01	0.0113
+GO:0042147	retrograde transport, endosome to Golgi	14	1	0.02	0.0175
+GO:0045931	positive regulation of mitotic cell cycl...	14	1	0.02	0.0175
+GO:0008284	positive regulation of cell proliferatio...	17	1	0.02	0.0212
+GO:0007030	Golgi organization	21	1	0.03	0.0261

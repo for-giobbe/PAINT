@@ -1,0 +1,22 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0031061	negative regulation of histone methylati...	3	1	0.01	0.013
+GO:0070525	tRNA threonylcarbamoyladenosine metaboli...	3	1	0.01	0.013
+GO:0000022	mitotic spindle elongation	4	1	0.02	0.018
+GO:0033143	regulation of intracellular steroid horm...	4	1	0.02	0.018
+GO:0061061	muscle structure development	51	2	0.23	0.022
+GO:0044837	actomyosin contractile ring organization	5	1	0.02	0.022
+GO:0035076	ecdysone receptor-mediated signaling pat...	5	1	0.02	0.022
+GO:0090307	mitotic spindle assembly	6	1	0.03	0.027
+GO:0017196	N-terminal peptidyl-methionine acetylati...	6	1	0.03	0.027
+GO:0040018	positive regulation of multicellular org...	7	1	0.03	0.031
+GO:0032506	cytokinetic process	7	1	0.03	0.031
+GO:0032507	maintenance of protein location in cell	7	1	0.03	0.031
+GO:0006891	intra-Golgi vesicle-mediated transport	7	1	0.03	0.031
+GO:0006084	acetyl-CoA metabolic process	7	1	0.03	0.031
+GO:0032786	positive regulation of DNA-templated tra...	7	1	0.03	0.031
+GO:0034243	regulation of transcription elongation f...	8	1	0.04	0.035
+GO:0010977	negative regulation of neuron projection...	9	1	0.04	0.040
+GO:0090090	negative regulation of canonical Wnt sig...	9	1	0.04	0.040
+GO:0032008	positive regulation of TOR signaling	11	1	0.05	0.048
+GO:0000281	mitotic cytokinesis	11	1	0.05	0.048
+GO:0045892	negative regulation of transcription, DN...	80	2	0.36	0.049
