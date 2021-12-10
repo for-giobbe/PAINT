@@ -50,7 +50,7 @@ for(i in 1:length(modules)) {
   write.table(allRes_red, file=paste(args[8], paste(module_name, args[3], "red_enrichment.tsv", sep="_"), sep="/"),row.names=FALSE,col.names=TRUE,sep="\t", quote = FALSE)
 }
 
-save.image("enrichment.RData")
+save.image(file=paste(args[8], "enrichment.Rdata", sep="/"))
 
 ############################################################################### extract ###########################
 

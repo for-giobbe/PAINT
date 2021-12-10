@@ -85,7 +85,8 @@ rownames(cpms) <- y$genes[,1]
 write.table(cpms, file="RSEM_crema.filtered.gene.vsd_CPM.matrix", quote=F, sep="\t")
 Data = read.csv("RSEM_crema.filtered.gene.vsd_CPM.matrix", sep ="\t")
 datExpr0 = as.data.frame(t(Data));
-names(datExpr0);
+
+#names(datExpr0);
 
 #
 
@@ -171,7 +172,7 @@ moduleTraitPvalue <- p.adjust(moduleTraitPvalue, method = pcor, n = length(modul
 ############################################################################################ standard heatmap #####################
 
 # Display the correlation values within a heatmap plot
-#sizeGrWindow(24,18)
+# sizeGrWindow(24,18)
 textMatrix = paste(signif(moduleTraitCor, 2), "\n(",
                    signif(moduleTraitPvalue, 1), ")", sep = "");
 dim(textMatrix) = dim(moduleTraitCor)
@@ -184,22 +185,61 @@ labeledHeatmap(Matrix = moduleTraitCor,
                colors = blueWhiteRed(50),
                textMatrix = textMatrix,
                setStdMargins = FALSE,
-               cex.text = 0.9,
+               cex.text = 0.6,
                zlim = c(-1,1),
                main = paste("Module-trait relationships"))
 
-
 ############################################################################################ massage data #######
 
-moduleTraitCor_heat <- moduleTraitCor
-moduleTraitCor_heat_df <- moduleTraitCor_heat %>% as.data.frame 
-moduleTraitCor_heat_df <- setDT(moduleTraitCor_heat_df, keep.rownames = TRUE)[]
-moduleTraitCor_heat_df %>% gather(trait, value, 2:4) -> moduleTraitCor_heat_df
-moduleTraitCor_heat_df["pval"] <- moduleTraitPvalue
-moduleTraitCor_heat_df$rn <- str_replace(moduleTraitCor_heat_df$rn, "ME", "")
-moduleTraitCor_heat_df <- subset(moduleTraitCor_heat_df, rn!="grey")
+if (tissue == "AD") {
+  
+  moduleTraitPvalue = corPvalueStudent(moduleTraitCor, nSamples)[,1:3];
+  moduleTraitPvalue  <- p.adjust(moduleTraitPvalue, method = pcor, n = length(moduleTraitPvalue))
+  
+  moduleTraitCor_heat <- moduleTraitCor
+  moduleTraitCor_heat_df <- moduleTraitCor_heat %>% as.data.frame 
+  moduleTraitCor_heat_df <- setDT(moduleTraitCor_heat_df, keep.rownames = TRUE)[]
+  moduleTraitCor_heat_df$rn <- str_replace(moduleTraitCor_heat_df$rn, "ME", "")
+  moduleTraitCor_heat_bp <- moduleTraitCor_heat_df
+  
+  moduleColorslength <- vector()
+  for(i in 1:length(moduleTraitCor_heat_df$rn)) {
+    moduleColorslength <- append(moduleColorslength, length(names(datExpr0)[moduleColors==moduleTraitCor_heat_df$rn[i]]))
+  }
+  
+  moduleTraitCor_heat_df$rn <- paste(1:length(moduleTraitCor_heat_df$rn),"AD_n.genes",moduleColorslength,sep="_")
+  moduleTraitCor_heat_bp$rn <- paste(1:length(moduleTraitCor_heat_df$rn),"AD_n.genes",moduleColorslength,sep="_")
+  
+  moduleTraitCor_heat_df %>% gather(trait, value, 2:4) -> moduleTraitCor_heat_df
+  moduleTraitCor_heat_df["pval"] <- moduleTraitPvalue
+}
+
+
+if (tissue == "CT") {
+  
+  moduleTraitPvalue = corPvalueStudent(moduleTraitCor, nSamples)[,1:3];
+  moduleTraitPvalue  <- p.adjust(moduleTraitPvalue, method = pcor, n = length(moduleTraitPvalue))
+  
+  moduleTraitCor_heat <- moduleTraitCor
+  moduleTraitCor_heat_df <- moduleTraitCor_heat %>% as.data.frame 
+  moduleTraitCor_heat_df <- setDT(moduleTraitCor_heat_df, keep.rownames = TRUE)[]
+  moduleTraitCor_heat_df$rn <- str_replace(moduleTraitCor_heat_df$rn, "ME", "")
+  moduleTraitCor_heat_bp <- moduleTraitCor_heat_df
+  
+  moduleColorslength <- vector()
+  for(i in 1:length(moduleTraitCor_heat_df$rn)) {
+    moduleColorslength <- append(moduleColorslength, length(names(datExpr0)[moduleColors==moduleTraitCor_heat_df$rn[i]]))
+  }
+  
+  moduleTraitCor_heat_df$rn <- paste(1:length(moduleTraitCor_heat_df$rn),"CT_n.genes",moduleColorslength,sep="_")
+  moduleTraitCor_heat_bp$rn <- paste(1:length(moduleTraitCor_heat_df$rn),"CT_n.genes",moduleColorslength,sep="_")
+  
+  moduleTraitCor_heat_df %>% gather(trait, value, 2:4) -> moduleTraitCor_heat_df
+  moduleTraitCor_heat_df["pval"] <- moduleTraitPvalue
+}
 
 ############################################################################################ extract modules genes AD #######
+
 if (tissue == "AD") {
   
 moduleTraitCor_AD_0 <- moduleTraitCor_heat_df[moduleTraitCor_heat_df$trait == 'AD_0',]
@@ -230,70 +270,70 @@ moduleTraitCor_AD_L_NEG <- moduleTraitCor_AD_L_NEG$rn
 moduleTraitCor_AD_POS_exclusive <- intersect(moduleTraitCor_AD_L_POS,moduleTraitCor_AD_S_POS)               # modules having positive corelation with both S and L conditions
 moduleTraitCor_AD_POS_exclusive <- setdiff(moduleTraitCor_AD_POS_exclusive, moduleTraitCor_AD_0_POS)        # but do not have positive correlation with the untreated tissue
 moduleTraitCor_AD_POS_exclusive
-if (length(moduleTraitCor_AD_POS_exclusive) != 0) {
-  moduleTraitCor_AD_POS_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_AD_POS_exclusive)) {
-    moduleTraitCor_AD_POS_exclusive_genes <- append(moduleTraitCor_AD_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_POS_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_AD_POS_exclusive_genes), file = "moduleTraitCor_AD_POS_exclusive.lst")
-}
+#if (length(moduleTraitCor_AD_POS_exclusive) != 0) {
+#  moduleTraitCor_AD_POS_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_AD_POS_exclusive)) {
+#    moduleTraitCor_AD_POS_exclusive_genes <- append(moduleTraitCor_AD_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_POS_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_AD_POS_exclusive_genes), file = "moduleTraitCor_AD_POS_exclusive.lst")
+#}
 
 moduleTraitCor_AD_S_POS_exclusive <- setdiff(moduleTraitCor_AD_S_POS,moduleTraitCor_AD_L_POS)               # modules having positive corelation with S conditions only
 moduleTraitCor_AD_S_POS_exclusive <- setdiff(moduleTraitCor_AD_S_POS_exclusive, moduleTraitCor_AD_0_POS)    # and do not have positive correlation with the untreated tissue
 moduleTraitCor_AD_S_POS_exclusive
-if (length(moduleTraitCor_AD_S_POS_exclusive) != 0) {
-  moduleTraitCor_AD_S_POS_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_AD_S_POS_exclusive)) {
-    moduleTraitCor_AD_S_POS_exclusive_genes <- append(moduleTraitCor_AD_S_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_S_POS_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_AD_S_POS_exclusive_genes), file = "moduleTraitCor_AD_S_POS_exclusive.lst")
-}
+#if (length(moduleTraitCor_AD_S_POS_exclusive) != 0) {
+#  moduleTraitCor_AD_S_POS_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_AD_S_POS_exclusive)) {
+#    moduleTraitCor_AD_S_POS_exclusive_genes <- append(moduleTraitCor_AD_S_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_S_POS_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_AD_S_POS_exclusive_genes), file = "moduleTraitCor_AD_S_POS_exclusive.lst")
+#}
 
 moduleTraitCor_AD_L_POS_exclusive <- setdiff(moduleTraitCor_AD_L_POS,moduleTraitCor_AD_S_POS)               # modules having positive corelation with both L conditions only
 moduleTraitCor_AD_L_POS_exclusive <- setdiff(moduleTraitCor_AD_L_POS_exclusive, moduleTraitCor_AD_0_POS)    # and do not have positive correlation with the untreated tissue
 moduleTraitCor_AD_L_POS_exclusive
-if (length(moduleTraitCor_AD_L_POS_exclusive) != 0) {
-  moduleTraitCor_AD_L_POS_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_AD_L_POS_exclusive)) {
-    moduleTraitCor_AD_L_POS_exclusive_genes <- append(moduleTraitCor_AD_L_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_L_POS_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_AD_L_POS_exclusive_genes), file = "moduleTraitCor_AD_L_POS_exclusive.lst")
-}
+#if (length(moduleTraitCor_AD_L_POS_exclusive) != 0) {
+#  moduleTraitCor_AD_L_POS_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_AD_L_POS_exclusive)) {
+#    moduleTraitCor_AD_L_POS_exclusive_genes <- append(moduleTraitCor_AD_L_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_L_POS_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_AD_L_POS_exclusive_genes), file = "moduleTraitCor_AD_L_POS_exclusive.lst")
+#}
 
 #
 
 moduleTraitCor_AD_NEG_exclusive <- intersect(moduleTraitCor_AD_L_NEG,moduleTraitCor_AD_S_NEG)               # modules having negative corelation with both S and L conditions
 moduleTraitCor_AD_NEG_exclusive <- setdiff(moduleTraitCor_AD_NEG_exclusive, moduleTraitCor_AD_0_NEG)        # but do not have negative correlation with the untreated tissue
 moduleTraitCor_AD_NEG_exclusive
-if (length(moduleTraitCor_AD_NEG_exclusive) != 0) {
-  moduleTraitCor_AD_NEG_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_AD_NEG_exclusive)) {
-    moduleTraitCor_AD_NEG_exclusive_genes <- append(moduleTraitCor_AD_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_NEG_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_AD_NEG_exclusive_genes), file = "moduleTraitCor_AD_NEG_exclusive.lst")
-}
+#if (length(moduleTraitCor_AD_NEG_exclusive) != 0) {
+#  moduleTraitCor_AD_NEG_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_AD_NEG_exclusive)) {
+#    moduleTraitCor_AD_NEG_exclusive_genes <- append(moduleTraitCor_AD_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_NEG_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_AD_NEG_exclusive_genes), file = "moduleTraitCor_AD_NEG_exclusive.lst")
+#}
 
 moduleTraitCor_AD_S_NEG_exclusive <- setdiff(moduleTraitCor_AD_S_NEG,moduleTraitCor_AD_L_NEG)               # modules having negative corelation with S conditions only
 moduleTraitCor_AD_S_NEG_exclusive <- setdiff(moduleTraitCor_AD_S_NEG_exclusive, moduleTraitCor_AD_0_NEG)    # and do not have negative correlation with the untreated tissue
 moduleTraitCor_AD_S_NEG_exclusive
-if (length(moduleTraitCor_AD_S_NEG_exclusive) != 0) {
-  moduleTraitCor_AD_S_NEG_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_AD_S_NEG_exclusive)) {
-    moduleTraitCor_AD_S_NEG_exclusive_genes <- append(moduleTraitCor_AD_S_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_S_NEG_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_AD_S_NEG_exclusive_genes), file = "moduleTraitCor_AD_S_NEG_exclusive.lst")
-}
+#if (length(moduleTraitCor_AD_S_NEG_exclusive) != 0) {
+#  moduleTraitCor_AD_S_NEG_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_AD_S_NEG_exclusive)) {
+#    moduleTraitCor_AD_S_NEG_exclusive_genes <- append(moduleTraitCor_AD_S_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_S_NEG_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_AD_S_NEG_exclusive_genes), file = "moduleTraitCor_AD_S_NEG_exclusive.lst")
+#}
 
 moduleTraitCor_AD_L_NEG_exclusive <- setdiff(moduleTraitCor_AD_L_NEG,moduleTraitCor_AD_S_NEG)               # modules having negative corelation with both L conditions only
 moduleTraitCor_AD_L_NEG_exclusive <- setdiff(moduleTraitCor_AD_L_NEG_exclusive, moduleTraitCor_AD_0_NEG)    # and do not have negative correlation with the untreated tissue
 moduleTraitCor_AD_L_NEG_exclusive
-if (length(moduleTraitCor_AD_L_NEG_exclusive) != 0) {
-  moduleTraitCor_AD_L_NEG_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_AD_L_NEG_exclusive)) {
-    moduleTraitCor_AD_L_NEG_exclusive_genes <- append(moduleTraitCor_AD_L_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_L_NEG_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_AD_L_NEG_exclusive_genes), file = "moduleTraitCor_AD_L_NEG_exclusive.lst")
-}
+#if (length(moduleTraitCor_AD_L_NEG_exclusive) != 0) {
+#  moduleTraitCor_AD_L_NEG_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_AD_L_NEG_exclusive)) {
+#    moduleTraitCor_AD_L_NEG_exclusive_genes <- append(moduleTraitCor_AD_L_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_AD_L_NEG_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_AD_L_NEG_exclusive_genes), file = "moduleTraitCor_AD_L_NEG_exclusive.lst")
+#}
 
 }
 ############################################################################################ extract modules genes CT #######
@@ -327,86 +367,113 @@ moduleTraitCor_CT_L_NEG <- moduleTraitCor_CT_L_NEG$rn
 moduleTraitCor_CT_POS_exclusive <- intersect(moduleTraitCor_CT_L_POS,moduleTraitCor_CT_S_POS)               # modules having positive corelation with both S and L conditions
 moduleTraitCor_CT_POS_exclusive <- setdiff(moduleTraitCor_CT_POS_exclusive, moduleTraitCor_CT_0_POS)        # but do not have positive correlation with the untreated tissue
 moduleTraitCor_CT_POS_exclusive
-if (length(moduleTraitCor_CT_POS_exclusive) != 0) {
-  moduleTraitCor_CT_POS_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_CT_POS_exclusive)) {
-    moduleTraitCor_CT_POS_exclusive_genes <- append(moduleTraitCor_CT_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_POS_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_CT_POS_exclusive_genes), file = "moduleTraitCor_CT_POS_exclusive.lst")
-}
+#if (length(moduleTraitCor_CT_POS_exclusive) != 0) {
+#  moduleTraitCor_CT_POS_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_CT_POS_exclusive)) {
+#    moduleTraitCor_CT_POS_exclusive_genes <- append(moduleTraitCor_CT_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_POS_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_CT_POS_exclusive_genes), file = "moduleTraitCor_CT_POS_exclusive.lst")
+#}
 
 moduleTraitCor_CT_S_POS_exclusive <- setdiff(moduleTraitCor_CT_S_POS,moduleTraitCor_CT_L_POS)               # modules having positive corelation with S conditions only
 moduleTraitCor_CT_S_POS_exclusive <- setdiff(moduleTraitCor_CT_S_POS_exclusive, moduleTraitCor_CT_0_POS)    # and do not have positive correlation with the untreated tissue
 moduleTraitCor_CT_S_POS_exclusive
-if (length(moduleTraitCor_CT_S_POS_exclusive) != 0) {
-  moduleTraitCor_CT_S_POS_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_CT_S_POS_exclusive)) {
-    moduleTraitCor_CT_S_POS_exclusive_genes <- append(moduleTraitCor_CT_S_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_S_POS_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_CT_S_POS_exclusive_genes), file = "moduleTraitCor_CT_S_POS_exclusive.lst")
-}
+#if (length(moduleTraitCor_CT_S_POS_exclusive) != 0) {
+#  moduleTraitCor_CT_S_POS_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_CT_S_POS_exclusive)) {
+#    moduleTraitCor_CT_S_POS_exclusive_genes <- append(moduleTraitCor_CT_S_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_S_POS_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_CT_S_POS_exclusive_genes), file = "moduleTraitCor_CT_S_POS_exclusive.lst")
+#}
 
 moduleTraitCor_CT_L_POS_exclusive <- setdiff(moduleTraitCor_CT_L_POS,moduleTraitCor_CT_S_POS)               # modules having positive corelation with both L conditions only
 moduleTraitCor_CT_L_POS_exclusive <- setdiff(moduleTraitCor_CT_L_POS_exclusive, moduleTraitCor_CT_0_POS)    # and do not have positive correlation with the untreated tissue
 moduleTraitCor_CT_L_POS_exclusive
-if (length(moduleTraitCor_CT_L_POS_exclusive) != 0) {
-  moduleTraitCor_CT_L_POS_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_CT_L_POS_exclusive)) {
-    moduleTraitCor_CT_L_POS_exclusive_genes <- append(moduleTraitCor_CT_L_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_L_POS_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_CT_L_POS_exclusive_genes), file = "moduleTraitCor_CT_L_POS_exclusive.lst")
-}
+#if (length(moduleTraitCor_CT_L_POS_exclusive) != 0) {
+#  moduleTraitCor_CT_L_POS_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_CT_L_POS_exclusive)) {
+#    moduleTraitCor_CT_L_POS_exclusive_genes <- append(moduleTraitCor_CT_L_POS_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_L_POS_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_CT_L_POS_exclusive_genes), file = "moduleTraitCor_CT_L_POS_exclusive.lst")
+#}
 
 #
 
 moduleTraitCor_CT_NEG_exclusive <- intersect(moduleTraitCor_CT_L_NEG,moduleTraitCor_CT_S_NEG)               # modules having negative corelation with both S and L conditions
 moduleTraitCor_CT_NEG_exclusive <- setdiff(moduleTraitCor_CT_NEG_exclusive, moduleTraitCor_CT_0_NEG)        # but do not have negative correlation with the untreated tissue
 moduleTraitCor_CT_NEG_exclusive
-if (length(moduleTraitCor_CT_NEG_exclusive) != 0) {
-  moduleTraitCor_CT_NEG_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_CT_NEG_exclusive)) {
-    moduleTraitCor_CT_NEG_exclusive_genes <- append(moduleTraitCor_CT_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_NEG_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_CT_NEG_exclusive_genes), file = "moduleTraitCor_CT_NEG_exclusive.lst")
-}
+#if (length(moduleTraitCor_CT_NEG_exclusive) != 0) {
+#  moduleTraitCor_CT_NEG_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_CT_NEG_exclusive)) {
+#    moduleTraitCor_CT_NEG_exclusive_genes <- append(moduleTraitCor_CT_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_NEG_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_CT_NEG_exclusive_genes), file = "moduleTraitCor_CT_NEG_exclusive.lst")
+#}
 
 moduleTraitCor_CT_S_NEG_exclusive <- setdiff(moduleTraitCor_CT_S_NEG,moduleTraitCor_CT_L_NEG)               # modules having negative corelation with S conditions only
 moduleTraitCor_CT_S_NEG_exclusive <- setdiff(moduleTraitCor_CT_S_NEG_exclusive, moduleTraitCor_CT_0_NEG)    # and do not have negative correlation with the untreated tissue
 moduleTraitCor_CT_S_NEG_exclusive
-if (length(moduleTraitCor_CT_S_NEG_exclusive) != 0) {
-  moduleTraitCor_CT_S_NEG_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_CT_S_NEG_exclusive)) {
-    moduleTraitCor_CT_S_NEG_exclusive_genes <- append(moduleTraitCor_CT_S_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_S_NEG_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_CT_S_NEG_exclusive_genes), file = "moduleTraitCor_CT_S_NEG_exclusive.lst")
-}
+#if (length(moduleTraitCor_CT_S_NEG_exclusive) != 0) {
+#  moduleTraitCor_CT_S_NEG_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_CT_S_NEG_exclusive)) {
+#    moduleTraitCor_CT_S_NEG_exclusive_genes <- append(moduleTraitCor_CT_S_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_S_NEG_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_CT_S_NEG_exclusive_genes), file = "moduleTraitCor_CT_S_NEG_exclusive.lst")
+#}
 
 moduleTraitCor_CT_L_NEG_exclusive <- setdiff(moduleTraitCor_CT_L_NEG,moduleTraitCor_CT_S_NEG)               # modules having negative corelation with both L conditions only
 moduleTraitCor_CT_L_NEG_exclusive <- setdiff(moduleTraitCor_CT_L_NEG_exclusive, moduleTraitCor_CT_0_NEG)    # and do not have negative correlation with the untreated tissue
 moduleTraitCor_CT_L_NEG_exclusive
-if (length(moduleTraitCor_CT_L_NEG_exclusive) != 0) {
-  moduleTraitCor_CT_L_NEG_exclusive_genes <- vector()
-  for(i in 1:length(moduleTraitCor_CT_L_NEG_exclusive)) {
-    moduleTraitCor_CT_L_NEG_exclusive_genes <- append(moduleTraitCor_CT_L_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_L_NEG_exclusive[i]])
-  }
-  fwrite(list(moduleTraitCor_CT_L_NEG_exclusive_genes), file = "moduleTraitCor_CT_L_NEG_exclusive.lst")
-}
+#if (length(moduleTraitCor_CT_L_NEG_exclusive) != 0) {
+#  moduleTraitCor_CT_L_NEG_exclusive_genes <- vector()
+#  for(i in 1:length(moduleTraitCor_CT_L_NEG_exclusive)) {
+#    moduleTraitCor_CT_L_NEG_exclusive_genes <- append(moduleTraitCor_CT_L_NEG_exclusive_genes, names(datExpr0)[moduleColors==moduleTraitCor_CT_L_NEG_exclusive[i]])
+#  }
+#  fwrite(list(moduleTraitCor_CT_L_NEG_exclusive_genes), file = "moduleTraitCor_CT_L_NEG_exclusive.lst")
+#}
+
 }
 ############################################################################################ choose top hub gene in each module  #######
 
 hub <- chooseTopHubInEachModule(datExpr0,moduleColors,type =networktype,power=power)
 hub <- data.frame(hub)
-hub$module <- rownames(hub)
-#fwrite(hub, file="hub_genes.tsv", sep="\t")
+hub$module_col <- rownames(hub)
+hub$module_num <- rownames(moduleTraitCor_heat_bp)
 write.table(hub, file=paste(tissue, "_hub_genes.tsv", sep=""),row.names=FALSE,col.names=FALSE,sep="\t", quote = FALSE)
 
 ############################################################################################# extract each modules genes ###############
 
+#for(i in 1:length(rownames(subset(moduleTraitCor_heat, rownames(moduleTraitCor_heat)!="MEgrey")))) {
+#  genes <- names(datExpr0)[moduleColors==str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")]
+#  module <- str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")
+#  write.table(genes, file=paste(tissue, "_module_", module, "_genes.lst", sep=""),row.names=FALSE,col.names=FALSE,sep="\t", quote = FALSE)
+#}
+
 for(i in 1:length(rownames(subset(moduleTraitCor_heat, rownames(moduleTraitCor_heat)!="MEgrey")))) {
   genes <- names(datExpr0)[moduleColors==str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")]
-  module <- str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")
+  module <- str_replace(rownames(moduleTraitCor_heat_bp)[i], "ME", "")
   write.table(genes, file=paste(tissue, "_module_", module, "_genes.lst", sep=""),row.names=FALSE,col.names=FALSE,sep="\t", quote = FALSE)
 }
+
+############################################################################################ standard heatmap #####################
+
+pb <- ggplot(data = moduleTraitCor_heat_df, aes(x = rn, y = trait)) +
+  theme(axis.text.x = element_text(angle = 90, vjust=0, hjust=0)) +
+  geom_tile(aes(fill = value), color = "white", size=2) +
+  scale_fill_gradientn(colours = c("lightblue", "white", "orange"), values = scales::rescale(c(-0.5, -0.3, 0, 0.3, 0.5)), name = "module - trait correlation") +
+  geom_text(aes(label = signif(pval, 2)), size = 4) +
+  theme(panel.background = element_rect(fill = 'white', colour = 'white')) +
+  coord_equal() +
+  theme(axis.title.x=element_blank()) +
+  theme(axis.title.y=element_blank()) +
+  theme(plot.title = element_text(size=12,face="bold")) +
+  labs(title = "WGCNA modules - traits relationship") +
+  theme(axis.text=element_text(size=12), axis.title=element_text(size=8,face="bold")) +
+  theme(legend.text=element_text(size=12)) +
+  theme(plot.title = element_text(size=12)) +
+  theme(legend.title=element_text(size=12))
+
+ggsave(file=paste(tissue, "_crema_WGCNA_standard_heatmap.jpg", sep=""),pb, width = 20, height = 10)
 
 ############################################################################################ custom heatmap #####################
 
@@ -466,4 +533,4 @@ p0 <- ggplot(data = moduleTraitCor_heat_df_plot, aes(x = rn, y = trait)) +
   theme(plot.title = element_text(size=12)) +
   theme(legend.title=element_text(size=12))
 
-ggsave(file=paste(tissue, "_crema_WGCNA_custom_heatmap.jpg", sep=""),p0)
+ggsave(file=paste(tissue, "_crema_WGCNA_custom_heatmap.jpg", sep=""),p0, width = 20, height = 10)
