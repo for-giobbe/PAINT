@@ -158,6 +158,16 @@ Here are the results for crema (upreg in orange dnreg in blue):
 
 ---
 
+extract genes associated to certain GOterms
+
+
+```
+Rscript scripts/GO_extract.Rscript enrichment/GO_crema/enrichment.Rdata GO:0034389 abundances/crema/crema_WGCNA_gene/CT_module_18_genes.lst 
+```
+
+
+---
+
 
 KO annotation has been carried out using [BlastKOALA](https://www.kegg.jp/blastkoala/)
 leveraging the correct Taxonomy ID and the family_eukaryotes database.
