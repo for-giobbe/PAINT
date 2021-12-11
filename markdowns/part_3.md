@@ -106,6 +106,7 @@ abundances/vicia/vicia_deseq_gene/RSEM_vicia.filtered.gene.counts.matrix.n_vs_v.
 abundances/vicia/vicia_deseq_gene/vicia_UP_genes.lst  
 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst 
 images/vicia_DE.jpg
+TRUE
 ```
 
 
@@ -117,7 +118,7 @@ The Rscript takes as inputs:
 - the DESeq2 results table
 - upregulated genes output file
 - downregulated genes output file
-
+- wetger to flip contrast (boolean - LogFc values are multiplied by -1)
 
 A total of 500 DE genes are found - of which 279 are downregulated and 221 upregulated.
 
@@ -129,13 +130,12 @@ In this volcano plot the x-axis represent -log(padj) and the y-axis represent th
 
 
 NB - in the analysis DESeq2 contast is ```contrast=c("conditions","n","v")``` and thus
-LogFc values are multiplied by -1 in the ```DE_genes.Rscript```.
-
+the contrast if flipped.
 
 Gene which are upregulated or downregulated in vicia when the association witch vrema is enstablished can be respectively found in: 
 
 
-- ```abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst```
+- ```abundances/vicia/vicia_deseq_gene/vicia_UP_genes.lst```
 - ```abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst```
 
 

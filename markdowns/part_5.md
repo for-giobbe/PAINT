@@ -158,11 +158,36 @@ Here are the results for crema (upreg in orange dnreg in blue):
 
 ---
 
-extract genes associated to certain GOterms
+
+Then the genes associated to GOterms of interest were extracted;
+here are some examples for:
+
+
+- vicia downregulated genes associated to GO:0010200 - response to chitin:
 
 
 ```
-Rscript scripts/GO_extract.Rscript enrichment/GO_crema/enrichment.Rdata GO:0034389 abundances/crema/crema_WGCNA_gene/CT_module_18_genes.lst 
+Rscript scripts/GO_extract.Rscript enrichment/GO_vicia/enrichment.Rdata GO:0010200 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst
+```
+
+
+```
+[1] "TRINITY_DN1300_c0_g1"  "TRINITY_DN1556_c0_g1"  "TRINITY_DN2451_c0_g1" 
+[4] "TRINITY_DN573_c0_g1"   "TRINITY_DN578_c1_g1"   "TRINITY_DN87739_c2_g1"
+[7] "TRINITY_DN9863_c0_g1" 
+```
+
+
+- crema genes in AD module 3 associated to GO:0042811 - pheromone biosynthetic process:
+
+
+```
+Rscript scripts/GO_extract.Rscript enrichment/GO_crema/enrichment.Rdata GO:0042811 abundances/crema/crema_WGCNA_gene/AD_module_3_genes.lst
+```
+
+
+```
+[1] "TRINITY_DN255_c0_g1"   "TRINITY_DN52942_c0_g1"
 ```
 
 
