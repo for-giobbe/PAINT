@@ -1,35 +1,42 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0010200	response to chitin	42	4	0.39	0.00060
-GO:0000165	MAPK cascade	119	6	1.1	0.00083
-GO:0043434	response to peptide hormone	5	2	0.05	0.00084
-GO:0015914	phospholipid transport	25	3	0.23	0.00154
-GO:0080142	regulation of salicylic acid biosyntheti...	7	2	0.06	0.00173
-GO:0045927	positive regulation of growth	27	3	0.25	0.00193
-GO:0009800	cinnamic acid biosynthetic process	8	2	0.07	0.00230
-GO:0006355	regulation of transcription, DNA-templat...	1474	24	13.65	0.00432
-GO:0034204	lipid translocation	14	2	0.13	0.00720
-GO:0002833	positive regulation of response to bioti...	14	2	0.13	0.00720
-GO:0070417	cellular response to cold	15	2	0.14	0.00826
-GO:0043902	positive regulation of multi-organism pr...	16	2	0.15	0.00938
-GO:0006468	protein phosphorylation	1139	23	10.54	0.00981
-GO:0000160	phosphorelay signal transduction system	141	5	1.31	0.01002
-GO:0032103	positive regulation of response to exter...	17	2	0.16	0.01057
-GO:0010224	response to UV-B	27	2	0.25	0.02568
-GO:1990573	potassium ion import across plasma membr...	3	1	0.03	0.02752
-GO:1902476	chloride transmembrane transport	3	1	0.03	0.02752
-GO:0070509	calcium ion import	3	1	0.03	0.02752
-GO:0033528	S-methylmethionine cycle	3	1	0.03	0.02752
-GO:0043570	maintenance of DNA repeat elements	3	1	0.03	0.02752
-GO:0009617	response to bacterium	192	6	1.78	0.02866
-GO:0002229	defense response to oomycetes	29	2	0.27	0.02935
-GO:0006979	response to oxidative stress	262	6	2.43	0.03509
-GO:0010447	response to acidic pH	4	1	0.04	0.03652
-GO:0030574	collagen catabolic process	4	1	0.04	0.03652
-GO:0071216	cellular response to biotic stimulus	4	1	0.04	0.03652
-GO:0055064	chloride ion homeostasis	4	1	0.04	0.03652
-GO:0006884	cell volume homeostasis	4	1	0.04	0.03652
-GO:1990547	mitochondrial phosphate ion transmembran...	5	1	0.05	0.04545
-GO:0010082	regulation of root meristem growth	5	1	0.05	0.04545
-GO:0051560	mitochondrial calcium ion homeostasis	5	1	0.05	0.04545
-GO:0036297	interstrand cross-link repair	5	1	0.05	0.04545
-GO:0006290	pyrimidine dimer repair	5	1	0.05	0.04545
+GO:0009873	ethylene-activated signaling pathway	93	8	1.53	0.00015
+GO:0006355	regulation of transcription, DNA-templat...	1474	41	24.3	0.00058
+GO:0002229	defense response to oomycetes	29	4	0.48	0.00124
+GO:0007166	cell surface receptor signaling pathway	101	7	1.67	0.00140
+GO:0050832	defense response to fungus	119	7	1.96	0.00356
+GO:0042537	benzene-containing compound metabolic pr...	39	4	0.64	0.00377
+GO:0042742	defense response to bacterium	155	8	2.56	0.00420
+GO:0045927	positive regulation of growth	27	3	0.45	0.00967
+GO:0010224	response to UV-B	27	3	0.45	0.00967
+GO:0006970	response to osmotic stress	217	9	3.58	0.01001
+GO:0009627	systemic acquired resistance	28	3	0.46	0.01070
+GO:0008361	regulation of cell size	10	2	0.16	0.01117
+GO:0051702	interaction with symbiont	10	2	0.16	0.01117
+GO:0010337	regulation of salicylic acid metabolic p...	10	2	0.16	0.01117
+GO:0009814	defense response, incompatible interacti...	29	3	0.48	0.01179
+GO:0046189	phenol-containing compound biosynthetic ...	11	2	0.18	0.01350
+GO:0009074	aromatic amino acid family catabolic pro...	12	2	0.2	0.01603
+GO:0017000	antibiotic biosynthetic process	13	2	0.21	0.01874
+GO:0009607	response to biotic stimulus	449	19	7.4	0.02093
+GO:0010229	inflorescence development	14	2	0.23	0.02162
+GO:0051707	response to other organism	411	18	6.78	0.02200
+GO:0043207	response to external biotic stimulus	411	18	6.78	0.02200
+GO:0098542	defense response to other organism	305	15	5.03	0.02345
+GO:0009414	response to water deprivation	136	6	2.24	0.02522
+GO:0006470	protein dephosphorylation	215	8	3.55	0.02638
+GO:0046885	regulation of hormone biosynthetic proce...	16	2	0.26	0.02791
+GO:2000022	regulation of jasmonic acid mediated sig...	16	2	0.26	0.02791
+GO:0009415	response to water	142	6	2.34	0.03031
+GO:0047484	regulation of response to osmotic stress	18	2	0.3	0.03483
+GO:0006665	sphingolipid metabolic process	44	3	0.73	0.03572
+GO:0032535	regulation of cellular component size	45	3	0.74	0.03782
+GO:0090066	regulation of anatomical structure size	45	3	0.74	0.03782
+GO:0018345	protein palmitoylation	19	2	0.31	0.03851
+GO:0009696	salicylic acid metabolic process	19	2	0.31	0.03851
+GO:0007154	cell communication	1332	55	21.96	0.03925
+GO:0009651	response to salt stress	192	7	3.17	0.04012
+GO:0090333	regulation of stomatal closure	20	2	0.33	0.04233
+GO:0098660	inorganic ion transmembrane transport	281	9	4.63	0.04371
+GO:0007178	transmembrane receptor protein serine/th...	48	3	0.79	0.04449
+GO:0007167	enzyme linked receptor protein signaling...	48	3	0.79	0.04449
+GO:0080163	regulation of protein serine/threonine p...	21	2	0.35	0.04629
