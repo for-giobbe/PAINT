@@ -101,7 +101,7 @@ can be retrieved using:
 
 
 ```
-Rscript scripts/DE_genes.Rscript 0.05 1.5 
+Rscript scripts/DE_genes.Rscript 0.01 1 
 abundances/vicia/vicia_deseq_gene/RSEM_vicia.filtered.gene.counts.matrix.n_vs_v.DESeq2.DE_results 
 abundances/vicia/vicia_deseq_gene/vicia_UP_genes.lst  
 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst 

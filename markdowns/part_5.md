@@ -37,7 +37,7 @@ The the GO enrichment analysisis is performed using the following commands:
 
 ```
 Rscript scripts/GO_enrichment.Rscript enrichment/GO_vicia/GO_vicia_geneUniverse 
-abundances/vicia/vicia_deseq_gene/ BP 3 weight fisher 0.05 enrichment/GO_vicia/
+abundances/vicia/vicia_deseq_gene/ BP 10 elim fisher 0.05 enrichment/GO_vicia/
 ```
 
 
@@ -167,7 +167,8 @@ here are some examples for:
 
 
 ```
-Rscript scripts/GO_extract.Rscript enrichment/GO_vicia/enrichment.Rdata GO:0010200 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst
+Rscript scripts/GO_extract.Rscript enrichment/GO_vicia/enrichment.Rdata 
+GO:0010200 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst
 ```
 
 
@@ -182,7 +183,8 @@ Rscript scripts/GO_extract.Rscript enrichment/GO_vicia/enrichment.Rdata GO:00102
 
 
 ```
-Rscript scripts/GO_extract.Rscript enrichment/GO_crema/enrichment.Rdata GO:0042811 abundances/crema/crema_WGCNA_gene/AD_module_3_genes.lst
+Rscript scripts/GO_extract.Rscript enrichment/GO_crema/enrichment.Rdata 
+GO:0042811 abundances/crema/crema_WGCNA_gene/AD_module_3_genes.lst
 ```
 
 
