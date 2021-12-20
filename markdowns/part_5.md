@@ -12,7 +12,7 @@
 
 GO annotation has been carried out using [PANNZER](http://ekhidna2.biocenter.helsinki.fi/sanspanz/)
 using no filtering and defeault parameters. 
-PANNZER assigned 39826 and 99954 GO-terms respectively to crema and vicia (7526 and 18794 transcripts).
+PANNZER assigned 39809 and 99382 GO-terms respectively to crema and vicia (7523 and 18695 transcripts).
 
 
 Subsequent enrichment analysis legerage [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html)
@@ -114,11 +114,11 @@ For vicia:
 
 
 ```
-Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_UP_BP_red_enrichment.tsv 
+Rscript scripts/plot_GO_enrichment.Rscript enrichment/GO_vicia/vicia_UP_BP_red_enrichment.tsv 
 Rel BP 0.7 org.At.tair.db orange images/vicia_UP.jpg
 ```
 ```
-Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_DN_BP_red_enrichment.tsv 
+Rscript scripts/plot_GO_enrichment.Rscript enrichment/GO_vicia/vicia_DN_BP_red_enrichment.tsv 
 Rel BP 0.7 org.At.tair.db lightblue images/vicia_DN.jpg
 ```
 
@@ -135,24 +135,21 @@ For crema, semantic clustering - leveraging D. melanogaster annotation - can be 
 
 
 ```
-for i in {1..45}; do
-Rscript scripts/scripts/plot_GO_enrichment.Rscript  enrichment/GO_crema/AD_module_$i_BP_red_enrichment.tsv
-Rel BP 0.7 org.At.tair.db orange images/vicia_UP.jpg;
-done
+Rscript scripts/plot_GO_enrichment.Rscript enrichment/GO_crema/CT_module_41_BP_red_enrichment.tsv
+Rel BP 0.7 org.Dm.eg.db orange images/CT_module_41.jpg
 ```
 
 
 just a couple of interesting modules are reported here:
 
 
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_UP.jpg)
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/CT_module_41.jpg)
 
 
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_UP.jpg)
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/CT_module_14.jpg)
 
 
-The full list of clustering of trait-associated modules can be found [here].
-
+The full list of clustering of trait-associated modules can be found [here]().
 
 
 ---
@@ -174,6 +171,8 @@ GO:0042136 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst
 ```
 [1] "TRINITY_DN36133_c0_g1" "TRINITY_DN833_c0_g1" 
 ```
+
+
 The first is a homolog to serine hydroxymethyltransferase, the second to inducible nitrate reductase. 
 
 
