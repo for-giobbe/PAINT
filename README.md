@@ -11,7 +11,10 @@
 This repository contains all the code used to study the molecular groundplan of a plant-ant interaction.
 
 
-Most of the code was generated for RNA-seq of the plant _Vicia faba_ and the ant _Crematogaster scutellaris_.
+Most of the code was generated for RNA-seq of the ant _Crematogaster scutellaris_ and the plant _Vicia faba_.
+
+
+Additionaly, metagenomics of leaf lamina and and proteomics of extra-floral nectar have been performedfor the plant.
 
 
 In here _Vicia faba_ will be reverenced as **vicia** and _Crematogaster scutellaris_ as **crema**.
@@ -20,13 +23,10 @@ In here _Vicia faba_ will be reverenced as **vicia** and _Crematogaster scutella
 Experiment reads have been deposited under the BioProject **PRJNA758979**.
 
 
-Additionaly, metagenomics of the plant surface and protemoics of its EFN have been performed.
-
-
 This is WIP:
 
 
-- [**part 0**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_0.md) - setting up the environiments
+- [**part 0**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_0.md) - requirements and dataset explanation
 
 - [**part 1**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_1.md) - reads qc & pre-processing
 
