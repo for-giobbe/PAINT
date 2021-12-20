@@ -46,7 +46,7 @@ and
 
 ```
 Rscript scripts/GO_enrichment.Rscript enrichment/GO_crema/GO_crema_geneUniverse 
-abundances/vicia/crema_WGCNA_gene/ BP 3 weight fisher 0.05 enrichment/GO_crema/
+abundances/vicia/crema_WGCNA_gene/ BP 10 weight fisher 0.05 enrichment/GO_crema/
 ```
 
 

@@ -200,7 +200,7 @@ Here is a heatmap representing the trait-modules associations for AD:
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/AD_crema_WGCNA_custom_heatmap.jpg)
 
 
-In the figures only the modules which have a significative correlation to AD_S / AD_L / CT_S / CT_L are represented.
+In the figures only the modules which have a significative (wether positive or negative) correlation to AD_S / AD_L / CT_S / CT_L are represented.
 Moreover, modules which also have a correlation of the same direction to respectively AD_0 / CT_0 are excluded.
 
 
@@ -218,7 +218,7 @@ Furthermore, the script includes several parameters:
 - network type
 - minimum module size for module detection
 - dendrogram cut height for module merging
-- minimum eigengene coinnectivtivty for a module not to be disbanded
+- minimum eigengene connectivity for a module not to be disbanded
 - correlation used
 - the counts
 - the traits
@@ -229,8 +229,18 @@ Furthermore, the script includes several parameters:
 - the tissue
 
 
-A signed networks have been inferred with a power of 13, 
-a dendrom cut height of 0.2 and leveraging peason correlation.
+Signed networks have been inferred with:
+
+- a power of 22 for AD and 14 for CT
+- a minimum module size of 50
+- a dendrom cut height of 0.3 
+- a min. eigengene connectivity of 0.6
+- leveraging peason correlation
+- no pvalue correction for module-trait correlation
+- a p value cutoff of 0.5
+- at least 20 counts across all samples to retain the transcript
+
+
 The expression matrix is the same used for the preliminary DE analysis and here is the trait file:
 
 
@@ -295,11 +305,7 @@ Just a quick recap of the traits meaning:
 - CT_L - head + thorax / crema got in contact with vicia continuously until 24h prior to the sacrifice
 
 
-Below is a heatmap which descripes the modules corelation to the traits - 
-tile colouring is proportional to corelation strength and tile numbers are the adjusted p values.
-
-
-The Rscript will generate:
+Additionally, the Rscript will generate:
 
 - the top hub-genes for each module in ```hub_genes.lst```
 - lists of genes present in each module
