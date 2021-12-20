@@ -1,7 +1,0 @@
-GO.ID	Term	Annotated	Significant	Expected	test
-GO:0052652	cyclic purine nucleotide metabolic proce...	11	1	0	0.0039
-GO:0046068	cGMP metabolic process	12	1	0	0.0043
-GO:0009152	purine ribonucleotide biosynthetic proce...	70	1	0.03	0.0250
-GO:0009260	ribonucleotide biosynthetic process	79	1	0.03	0.0282
-GO:0046390	ribose phosphate biosynthetic process	81	1	0.03	0.0289
-GO:0007167	enzyme linked receptor protein signaling...	82	1	0.03	0.0292
