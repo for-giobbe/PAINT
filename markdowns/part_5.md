@@ -146,7 +146,7 @@ just a couple of interesting modules are reported here:
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/CT_module_41.jpg)
 
 
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/CT_module_14.jpg)
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/AD_module_14.jpg)
 
 
 The full list of clustering of trait-associated modules can be found [here]().
