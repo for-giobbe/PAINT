@@ -38,14 +38,8 @@ Due to conflicts specific environiments are necessary for expression analyses. T
 
 ```
 conda env create -f yaml.DE
-```
-
-
-and
-
-
-```
 conda env create -f yaml.WCGNA
+conda env create -f yaml.enrichment
 ``` 
 
 
@@ -64,12 +58,11 @@ large one can be downloaded using wget on the following links and redirecting th
 - swissprot at ```https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz``` in ```dbs/swissprot```
 - uniref90 at ```https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz``` in ```dbs/uniref90```
 - download nr BLAST database with ```for i in {1..55}; do wget https://ftp.ncbi.nlm.nih.gov/blast/db/nr.$i.tar.gz; tar -xf nr.$i.tar.gz; done```
-- wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz
 - ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/prot.accession2taxid.gz
 - taxdump at ```ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz``` and ```tar -zxvf``` in ```dbs/taxdump```
 
 
-Moreover, remember to ```makeblastdb -dbtype prot -in dbs/uniref90``` and ```makeblastdb -dbtype prot -in dbs/swissprot``, along with ```hmmpress dbs/Pfam-A.hmm```.
+Moreover, remember to ```makeblastdb -dbtype prot -in dbs/uniref90``` and ```makeblastdb -dbtype prot -in dbs/swissprot```, along with ```hmmpress dbs/Pfam-A.hmm```.
 
 
 Available Fabaceae and Formicidae assemblies for phylostratigrapy and rates analyses were retrieved using:
@@ -96,7 +89,8 @@ Subsequently these lists were manually curated to remove assemblies of conspecif
 Nucleotides CDS for the two families can be downloaded by ```sh download_fabaceae_cds.sh``` and ```sh download_formicidae_cds.sh```.
 
 
-NB: databases were downloaded in November 2021.
+**NB:** databases were downloaded in November 2021.
+
 
 ---
 
@@ -134,30 +128,30 @@ Reference transcriptome assemblies are deposited on TSA with accession XXX and Y
 This project revolves around the interaction between _Vicia faba_ and _Crematogaster scutellaris_, with two major aims:
 
 
-1. charachterize in _Crematogaster scutellaris_ genes associated with feeding on _Vicia faba_ EFN in different tissues and timepoints.
-2. understand wether we could identify in _Vicia faba_ any gene expression change associated to the interaction.
+1. charachterize in crema genes associated with feeding on vicia extra-floral nectar (EFN) in different tissues and timespans.
+2. understand wether we could identify in vicia any gene expression change associated to the interaction.
 
 
 To do so we generated two RNA-seq experiments:
 
 
-1. two different tissue (haead+thorax and abdomen) and four different conditions were considered for _Crematogaster scutellaris_:
+1. two different tissue (haead+thorax and abdomen) and four different conditions were considered for crema:
 
 
-**A**  -  never visited _Vicia faba_
+**A**  -  never got in contact with vicia
 
-**B**  -  visited by _Vicia faba_ only until 24h before experiment
+**B**  -  got in contact with vicia only until 24h before experiment
 
-**C**  -  visited by _Vicia faba_ only after 24h before experiment 
+**C**  -  got in contact with vicia only since 24h before experiment 
 
-**D**  -  visited by _Vicia faba_ continuously
+**D**  -  got in contact with vicia continuously
 
 
-2. nectarium of _Vicia faba_ which:
+2. nectarium of vicia which:
 
-**N**  -  were never visited by _Crematogaster scutellaris_
+**N**  -  never got in contact with crema
 
-**Y**  -  2' after the visit of _Crematogaster scutellaris_
+**Y**  -  2' after beeing visited by crema
 
 
 ---

@@ -1,19 +1,16 @@
-# trascriptomes assembly & filtering
+# trascriptomes assembly, annotation and filtering
 
 
 *environiment:* yaml.DE
 
 
-*aim:* assemble crema and vicia trascriptomes / annotate CDS / filter contaminats contigs / QC the assembly.
+*aim:* assemble crema and vicia trascriptomes / annotate CDS / filter contaminats contigs / QC the assemblies.
 
 
 ---
 
 
-environiment: yaml.main
-
-
-the rationale here is to carry out the assembly using the reads filtered for rRNAs, mtRNA and ptRNA and then 
+The rationale here is to carry out the assembly using the reads filtered for rRNAs, mtRNA and ptRNA and then 
 find possible additional contaminants (virus, bacteria, _etc_) in order to subsequently exclude them from abundance tables,
 Through this approach - suggested [here](https://groups.google.com/g/trinityrnaseq-users/c/P2Ry72h_puQ/m/LpJ8OLzuBAAJ) by Brian Haas - 
 we mimize the possibility of reads misalignment while removing possible contaminants from the differential expression step.
@@ -220,7 +217,7 @@ Number of non-ACGTN (nt)	0
 
 As we can seee, the scores are rather high! There are quite a lot of multi-copy orthologs 
 but it is somehow expected as we have kept all lowly expressed genes and multiple isoforms.
-NB: vicia seem to have a lower transcript length compared to crema, 
+**NB:** vicia seem to have a lower transcript length compared to crema, 
 but this does not seem to derive from a fragmente assembly as BUSCO partial genes are just 1.9%!
 
 
@@ -230,7 +227,7 @@ but this does not seem to derive from a fragmente assembly as BUSCO partial gene
 Transcriptome annotation is then carried out usins [Transdecoder](https://github.com/TransDecoder/TransDecoder/wiki) and:
 
 
-- considering just the longest isoform per gene
+- considering the longest isoform per gene only
 - integrating homology searches as CDS retention criteria (Pfam and SwissProt)
 
 
@@ -270,7 +267,7 @@ which we can move to their place by```mv crema.Trinity.fasta.transdecoder.* anno
 
 
 Then contaminant contigs are identified.
-In this step proteomes undergo homology serches against UniRef90 - which differently from UniProt includes taxonomy - and reurn all hits taxa ids.
+In this step proteomes undergo homology serches against UniRef90 - which differently from UniProt includes taxonomy - and reurn all hits taxids.
 The homology search is performed using blastp-fast and an evalue of 1e-7 with the parameters ```-max_target_seqs 50 -max_hsps 1``` to fasten the process.
 Subsequently [Taxonkit](https://bioinf.shenwei.me/taxonkit/) will exctract each hit full lineage and
 flag as contaminants all contigs which don not have at least 80% of the hits 
@@ -307,7 +304,7 @@ head -n -1 | awk '{print $1}'; done
 
 As we can see, contaminant contigs are <10% - 821 contigs fro crema and 947 contigs for vicia.
 This is expected, as a small amount of reads can generate a lot of contaminants contigs.
-In our case this step is rather important to remve vicia contigs from crema assembly:
+In our case this step is rather important to remove vicia contigs from crema assembly:
 the species is too small to dissect the digestive tract and as such some plant material was most likely present
 in the sample. 
 Having identified contaminat contgis we will still map reads on them - to minimyze possible misalignments -

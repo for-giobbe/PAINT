@@ -1,18 +1,18 @@
-# Differential Expression in vicia
+# expression analyses in vicia
 
 
 *environiment:* yaml.DE
 
-*aim:* retrieve crema genes which undergo expression changes after short-term and long-term EFN feeding.
+*aim:* retrieve vicia genes which undergo expression changes subsequently the interaction with crema.
 
 
 ---
 
 
-To begin we need to quantitate transcript abundance using the script ```slurm_abundances_vicia``` which uses bowtie and RSEM.
+To begin, transcript abundances are inferred using the script ```slurm_abundances_vicia``` which uses bowtie and RSEM.
 
 
-The outputs need to be then moved from the main folder to the appropriate one usings  ```mv _rep*  abundances/vicia```.
+The outputs need to be then moved from the main folder to the appropriate one usings ```mv _rep*  abundances/vicia```.
 
 
 After that we can proceed to build expression matrices by:
@@ -58,7 +58,7 @@ RSEM_vicia.isoform.counts.matrix
 Now we need to remove possible contaminants from the gene-counts matrix which we will use for differential expression:
 
 
-Initially the contaminants list needs to be formatted:
+Initially the contaminants list needs to be formatted from isoforms to genes:
 
 ```
 awk -F "_" 'NF{NF-=1};1' contaminants/vicia/vicia.blastp.contaminants_contigs.lst | 
@@ -66,7 +66,7 @@ sed 's/ /_/g' > contaminants/vicia/vicia.blastp.contaminants_genes.lst
 ```
 
 
-and then a raw-counts matrix without them is generated:
+and then a gene-level raw-counts matrix without them is generated:
 
 
 ```
@@ -84,20 +84,11 @@ run_DE_analysis.pl --matrix abundances/vicia/RSEM_vicia.filtered.gene.counts.mat
 ```
 
 
-The resulting outputs consist in:
-
-
-```
-RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.DE_results
-RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.DE_results.MA_n_Volcano.pdf
-RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.Rscript
-RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.count_matrix
-```
+The main output of this step is ```RSEM_vicia.gene.counts.matrix.n_vs_v.DESeq2.DE_results```.
 
 
 Then genes which are upregulated (padj < 0.05 & logFC > +1.5) and downregulated (padj < 0.05 & logFC > -1.5) 
-in the plants which lived alongside crema - _versus_ those which never had any contact with crema - 
-can be retrieved using:
+in the plants which lived side-to-side with crema can be retrieved using:
 
 
 ```
@@ -114,13 +105,13 @@ The Rscript takes as inputs:
 
 
 - the adjusted p value to cosider a gene DE
-- the logFC  to cosider a gene downregulated or upregulated - _i.e._ if 1.5 -> +1.5 and -1.5
+- the logFC  to cosider a gene downregulated or upregulated - _i.e._ if 1 -> +1 and -1
 - the DESeq2 results table
 - upregulated genes output file
 - downregulated genes output file
-- wetger to flip contrast (boolean - LogFc values are multiplied by -1)
+- wether to flip contrast (boolean - LogFc values are multiplied by -1)
 
-A total of 500 DE genes are found - of which 279 are downregulated and 221 upregulated.
+A total of 566 DE genes are found - of which 372 are downregulated and 194 upregulated.
 
 
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_DE.jpg)
@@ -129,10 +120,10 @@ A total of 500 DE genes are found - of which 279 are downregulated and 221 upreg
 In this volcano plot the x-axis represent -log(padj) and the y-axis represent the LogFC.
 
 
-NB - in the analysis DESeq2 contast is ```contrast=c("conditions","n","v")``` and thus
+**NB:** in the analysis DESeq2 contast is ```contrast=c("conditions","n","v")``` and thus
 the contrast if flipped.
 
-Gene which are upregulated or downregulated in vicia when the association witch vrema is enstablished can be respectively found in: 
+Gene which are upregulated or downregulated in vicia when the association witch crema is enstablished can be found respectively in: 
 
 
 - ```abundances/vicia/vicia_deseq_gene/vicia_UP_genes.lst```

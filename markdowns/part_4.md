@@ -1,10 +1,10 @@
-# Weighted Gene Coexpression Network in crema
+# expression analyses in crema
 
 
 *environiment:* yaml.WGCNA
 
 
-*aim:* retrieve genes associate to short-term and long-term EFN feeding with a WGCN approach
+*aim:* retrieve genes associate to short-term and long-term extra-floral nectar feeding with a WGCN approach
 
 
 ---
@@ -104,7 +104,9 @@ run_DE_analysis.pl --matrix crema/RSEM_crema.gene.counts.matrix --samples_file .
 
 
 Since in this experiment several conditions are present, a WGCNA approach is more suitable.
-Everyting can be seamlessly performed using the commands:
+An approach in which the two tissue are analyzed separately is preferred, in order to exlude that
+their strong transcriptional eterogeneity could generate spurious module-trait associations.
+Everyting can be seamlessly performed using separate commands for each tissue:
 
 
 ```
@@ -124,34 +126,34 @@ abundances/crema/crema_WGCNA_gene/ none 0.05 20 CT
 ```
 
 
-15401 transcripts are analyzed for CT and here is the powers table:
+15439 transcripts are analyzed for CT and here is the powers table:
 
 
 ```
    Power SFT.R.sq slope truncated.R.sq mean.k. median.k. max.k.
-1      1   0.0836 13.90          0.983 7720.00   7720.00 8050.0
-2      2   0.1090 -6.23          0.817 4180.00   4160.00 4640.0
-3      3   0.4950 -7.30          0.863 2410.00   2370.00 3010.0
-4      4   0.5840 -4.64          0.898 1460.00   1420.00 2100.0
-5      5   0.6730 -3.44          0.923  930.00    886.00 1530.0
-6      5   0.6730 -3.44          0.923  930.00    886.00 1530.0
-7      6   0.7600 -2.84          0.950  614.00    571.00 1170.0
-8      7   0.8070 -2.61          0.958  420.00    378.00  927.0
-9      7   0.8070 -2.61          0.958  420.00    378.00  927.0
-10     8   0.8310 -2.41          0.959  295.00    258.00  753.0
-11     9   0.8470 -2.27          0.955  213.00    179.00  624.0
-12     9   0.8470 -2.27          0.955  213.00    179.00  624.0
-13    10   0.8640 -2.17          0.959  158.00    127.00  524.0
-14    11   0.8800 -2.07          0.961  119.00     91.10  447.0
-15    13   0.8980 -1.94          0.962   71.60     49.30  335.0
-16    15   0.9080 -1.85          0.964   45.70     28.00  259.0
-17    17   0.9150 -1.79          0.965   30.60     16.50  206.0
-18    19   0.9280 -1.72          0.971   21.30     10.10  167.0
-19    21   0.9380 -1.66          0.977   15.30      6.32  137.0
-20    23   0.9360 -1.63          0.974   11.30      4.09  115.0
-21    25   0.9420 -1.60          0.976    8.58      2.70   97.1
-22    27   0.9370 -1.59          0.973    6.63      1.82   83.7
-23    29   0.9360 -1.58          0.975    5.21      1.25   73.2
+1      1   0.0809 13.70          0.983 7740.00   7740.00 8070.0
+2      2   0.1110 -6.32          0.818 4190.00   4170.00 4650.0
+3      3   0.4970 -7.33          0.863 2410.00   2380.00 3020.0
+4      4   0.5850 -4.66          0.897 1470.00   1420.00 2100.0
+5      5   0.6740 -3.45          0.922  931.00    887.00 1540.0
+6      5   0.6740 -3.45          0.922  931.00    887.00 1540.0
+7      6   0.7610 -2.86          0.949  615.00    571.00 1170.0
+8      7   0.8080 -2.62          0.958  420.00    378.00  928.0
+9      7   0.8080 -2.62          0.958  420.00    378.00  928.0
+10     8   0.8340 -2.43          0.959  296.00    257.00  754.0
+11     9   0.8460 -2.29          0.953  213.00    179.00  625.0
+12     9   0.8460 -2.29          0.953  213.00    179.00  625.0
+13    10   0.8660 -2.18          0.960  158.00    127.00  525.0
+14    11   0.8820 -2.08          0.961  119.00     91.10  448.0
+15    13   0.8960 -1.95          0.960   71.60     49.20  335.0
+16    15   0.9080 -1.85          0.964   45.70     27.90  260.0
+17    17   0.9150 -1.79          0.965   30.60     16.40  206.0
+18    19   0.9230 -1.72          0.968   21.30     10.00  167.0
+19    21   0.9360 -1.67          0.976   15.30      6.29  138.0
+20    23   0.9340 -1.64          0.972   11.30      4.07  115.0
+21    25   0.9390 -1.60          0.975    8.57      2.69   97.4
+22    27   0.9350 -1.59          0.972    6.62      1.81   83.9
+23    29   0.9370 -1.58          0.976    5.20      1.24   73.5
 ```
 
 
@@ -161,34 +163,34 @@ Here is a heatmap representing the trait-modules associations for CT:
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/CT_crema_WGCNA_custom_heatmap.jpg)
 
 
-11228 transcripts are analyzed for AD and here is the powers table:
+11239 transcripts are analyzed for AD and here is the powers table:
 
 
 ```
    Power SFT.R.sq slope truncated.R.sq mean.k. median.k. max.k.
-1      1   0.0282  3.46          0.832 5640.00   5650.00 6000.0
-2      2   0.3960 -8.79          0.877 3100.00   3070.00 3660.0
-3      3   0.4670 -6.21          0.923 1820.00   1790.00 2440.0
-4      4   0.5140 -4.69          0.944 1130.00   1110.00 1740.0
-5      5   0.5260 -3.73          0.950  736.00    718.00 1300.0
-6      5   0.5260 -3.73          0.950  736.00    718.00 1300.0
-7      6   0.5490 -3.17          0.949  498.00    481.00  998.0
-8      7   0.5650 -2.89          0.938  347.00    332.00  788.0
-9      7   0.5650 -2.89          0.938  347.00    332.00  788.0
-10     8   0.5770 -2.68          0.926  249.00    234.00  635.0
-11     9   0.6170 -2.44          0.938  183.00    169.00  519.0
-12     9   0.6170 -2.44          0.938  183.00    169.00  519.0
-13    10   0.6380 -2.32          0.935  138.00    124.00  431.0
-14    11   0.6920 -2.16          0.959  105.00     92.40  362.0
-15    13   0.7790 -1.96          0.990   64.40     53.40  262.0
-16    15   0.8310 -1.95          0.998   41.50     32.10  203.0
+1      1   0.0279  3.46          0.833 5650.00   5660.00 6000.0
+2      2   0.3950 -8.80          0.876 3100.00   3070.00 3660.0
+3      3   0.4670 -6.21          0.922 1820.00   1790.00 2450.0
+4      4   0.5150 -4.71          0.944 1130.00   1110.00 1740.0
+5      5   0.5280 -3.73          0.949  737.00    718.00 1300.0
+6      5   0.5280 -3.73          0.949  737.00    718.00 1300.0
+7      6   0.5500 -3.18          0.949  498.00    481.00  998.0
+8      7   0.5690 -2.86          0.941  347.00    332.00  788.0
+9      7   0.5690 -2.86          0.941  347.00    332.00  788.0
+10     8   0.5770 -2.68          0.925  249.00    234.00  635.0
+11     9   0.6180 -2.44          0.937  183.00    169.00  519.0
+12     9   0.6180 -2.44          0.937  183.00    169.00  519.0
+13    10   0.6390 -2.32          0.935  138.00    124.00  431.0
+14    11   0.6930 -2.16          0.959  105.00     92.40  362.0
+15    13   0.7800 -1.96          0.990   64.40     53.40  262.0
+16    15   0.8320 -1.95          0.998   41.50     32.10  204.0
 17    17   0.8560 -2.00          0.995   27.90     20.10  166.0
-18    19   0.8730 -2.05          0.994   19.50     13.10  138.0
-19    21   0.8880 -2.09          0.987   13.90      8.61  118.0
-20    23   0.9070 -2.09          0.981   10.20      5.83  102.0
-21    25   0.9200 -2.09          0.978    7.69      4.00   89.4
-22    27   0.9180 -2.11          0.968    5.88      2.80   79.2
-23    29   0.9300 -2.09          0.963    4.57      1.98   70.9
+18    19   0.8730 -2.05          0.994   19.50     13.00  139.0
+19    21   0.8890 -2.09          0.987   13.90      8.59  118.0
+20    23   0.9070 -2.09          0.982   10.20      5.81  102.0
+21    25   0.9210 -2.09          0.978    7.69      3.98   89.5
+22    27   0.9180 -2.11          0.968    5.88      2.79   79.3
+23    29   0.9300 -2.09          0.964    4.57      1.98   71.0
 ```
 
 
@@ -206,7 +208,7 @@ While for DE analyses we used the raw gene-counts matrix as input, WGCNA require
 and for this purpose the [vst-normalized](https://www.rdocumentation.org/packages/DESeq2/versions/1.12.3/topics/varianceStabilizingTransformation) TPMs. 
 Moreover - as suggested by authors [here](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/faq.html) -
 we resticted the Gene Network inference to the transcripts which are consistently
-expressed troughout all samples (at least 20 raw-counts in each samples - n=17935).
+expressed troughout all samples (at least 20 raw-counts in each samples).
 
 
 Furthermore, the script includes several parameters:
@@ -224,10 +226,11 @@ Furthermore, the script includes several parameters:
 - the pvalue correction for trait-modules corelation
 - the adjusted pvalue cutoff
 - the minimum number of raw-counts to retain a trascript
+- the tissue
 
 
-A signed network has been inferred with a power of 13, 
-a dendrom cut height of 0.2 and leveraging peason midcorrelation.
+A signed networks have been inferred with a power of 13, 
+a dendrom cut height of 0.2 and leveraging peason correlation.
 The expression matrix is the same used for the preliminary DE analysis and here is the trait file:
 
 
@@ -296,17 +299,10 @@ Below is a heatmap which descripes the modules corelation to the traits -
 tile colouring is proportional to corelation strength and tile numbers are the adjusted p values.
 
 
-The Rscript will generate several additional files, representing genes lists:
+The Rscript will generate:
 
-
-- genes in modules positively associated exclusively to short term EFN feeding in head+thorax: ```moduleTraitCor_CT_S_POS_exclusive.lst```
-- genes in modules positively associated exclusively to long term EFN feeding in head+thorax: ```moduleTraitCor_CT_L_POS_exclusive.lst```
-- genes in modules positively associated exclusively to both short and long term EFN feeding in head+thorax: ```moduleTraitCor_CT_POS_exclusive.lst```
-- genes in modules positively associated exclusively to short term EFN feeding in the abdomen: ```moduleTraitCor_AD_L_POS_exclusive.lst```
-- genes in modules positively associated exclusively to long term EFN feeding in the abdomen: ```moduleTraitCor_AD_L_POS_exclusive.lst```
-- genes in modules positively associated exclusively to both short and long term EFN feeding in abdomen: ```moduleTraitCor_AD_POS_exclusive.lst```
-- the top hub-genes for each module ```hub_genes.lst```
-- genes present in each module ...
+- the top hub-genes for each module in ```hub_genes.lst```
+- lists of genes present in each module
 
 
 ---

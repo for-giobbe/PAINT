@@ -115,45 +115,44 @@ For vicia:
 
 ```
 Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_UP_BP_red_enrichment.tsv 
-Rel BP 0.8 org.At.tair.db orange images/vicia_UP.jpg
+Rel BP 0.7 org.At.tair.db orange images/vicia_UP.jpg
 ```
 ```
 Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_DN_BP_red_enrichment.tsv 
-Rel BP 0.8 org.At.tair.db lightblue images/vicia_DN.jpg
+Rel BP 0.7 org.At.tair.db lightblue images/vicia_DN.jpg
 ```
 
-Here are the results for vicia (upreg in orange dnreg in blue):
+Here are the results for vicia (upreg in orange dnreg inlightblue):
 
 
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_UP.jpg)
+
+
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_DN.jpg)
 
 
-For crema:
+For crema, semantic clustering - leveraging D. melanogaster annotation - can be generated with:
 
 
 ```
-Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_UP_BP_red_enrichment.tsv
-Rel BP 0.8 org.At.tair.db orange images/vicia_UP.jpg
-```
-```
-Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_DN_BP_red_enrichment.tsv
-Rel BP 0.8 org.At.tair.db lightblue images/vicia_DN.jpg
-```
-```
-Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_UP_BP_red_enrichment.tsv
-Rel BP 0.8 org.At.tair.db orange images/vicia_UP.jpg
-```
-```
-Rscript scripts/enrichment_vicia_def2.R enrichment/GO_vicia/vicia_DN_BP_red_enrichment.tsv
-Rel BP 0.8 org.At.tair.db lightblue images/vicia_DN.jpg
+for i in {1..45}; do
+Rscript scripts/scripts/plot_GO_enrichment.Rscript  enrichment/GO_crema/AD_module_$i_BP_red_enrichment.tsv
+Rel BP 0.7 org.At.tair.db orange images/vicia_UP.jpg;
+done
 ```
 
 
-Here are the results for crema (upreg in orange dnreg in blue):
+just a couple of interesting modules are reported here:
+
 
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_UP.jpg)
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_DN.jpg)
+
+
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_UP.jpg)
+
+
+The full list of clustering of trait-associated modules can be found [here].
+
 
 
 ---
@@ -163,20 +162,19 @@ Then the genes associated to GOterms of interest were extracted;
 here are some examples for:
 
 
-- vicia downregulated genes associated to GO:0010200 - response to chitin:
+- vicia downregulated genes associated to GO:0042136 -  neurotransmitter biosynthetic process: 
 
 
 ```
 Rscript scripts/GO_extract.Rscript enrichment/GO_vicia/enrichment.Rdata 
-GO:0010200 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst
+GO:0042136 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst
 ```
 
 
 ```
-[1] "TRINITY_DN1300_c0_g1"  "TRINITY_DN1556_c0_g1"  "TRINITY_DN2451_c0_g1" 
-[4] "TRINITY_DN573_c0_g1"   "TRINITY_DN578_c1_g1"   "TRINITY_DN87739_c2_g1"
-[7] "TRINITY_DN9863_c0_g1" 
+[1] "TRINITY_DN36133_c0_g1" "TRINITY_DN833_c0_g1" 
 ```
+The first is a homolog to serine hydroxymethyltransferase, the second to inducible nitrate reductase. 
 
 
 - crema genes in AD module 3 associated to GO:0042811 - pheromone biosynthetic process:

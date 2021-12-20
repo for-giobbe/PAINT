@@ -19,20 +19,10 @@ Use the lines ```sh scripts/rename_vicia_SRA.sh reads/vicia_raw``` and ```sh scr
 *NB*: to rename reads from how they were received from the sequencing facilities use:
 
 
-```
-sh scripts/rename_vicia.sh reads/vicia_raw
-``` 
+```sh scripts/rename_vicia.sh reads/vicia_raw``` and ```sh scripts/rename_crema.sh reads/crema_raw```
 
 
-and 
-
-
-```
-sh scripts/rename_crema.sh reads/crema_raw
-```
-
-
-After the initial conversion, libraries filenames are organized in 4 relevant underscore-separated fields:
+After the initial conversion, libraries filenames are organized in 4 underscore-separated fields:
 
         1st filed	species
         2nd field	condition
@@ -40,7 +30,7 @@ After the initial conversion, libraries filenames are organized in 4 relevant un
         4th field	tissue
 
 
-For Vicia sp:
+For vicia:
 
         1st	VI for Vicia
         2nd	N for "never visited" / V for "visited"
@@ -48,7 +38,7 @@ For Vicia sp:
         4th	NP for "nectarium plantae"
 
 
-for Crematogaster sp:
+for crema:
 
         1st     CR for Crematogaster
         2nd     A for "lt:N; st:N" / B for "lt:N; st:Y" / C for "lt:Y; st:N" / D for "lt:Y; st:Y"
@@ -60,6 +50,7 @@ To check samples:
 
 
 ```ll reads/crema_ref/ | awk '{print $9}' |  awk -F "_" '{print $1"_"$2"_"$3"_"$4}' | sort -u ```
+
 
 ```ll reads/crema_ref/ | awk '{print $9}' |  awk -F "_" '{print $1"_"$2"_"$3"_"$4}' | sort -u ```
 
@@ -101,13 +92,13 @@ Let's start by building a database of undesired sequences, which include:
 
 - rfam (5S, 5.8s)
 - silva (16s, 23s, 18s, 28s)
-- partial rRNA sequences of Vicia genus (which are exluced from rRNA dbs)
+- partial rRNA sequences of vicia genus (which are excluded from rRNA dbs)
 - vicia plastid and mitochondrion
 - crema (congeneric) mitochondrion
 - closely related hymenopteran mitochondria
 
 
-Use the line:
+Use the lines:
 
 
 ``` 
@@ -135,10 +126,6 @@ properly account for library differences of 2X _circa_.
 Moreover we we can see now there is a single GC peak, implying that rRNAs were the major source of contamination and that we managed to succesfully remove those!
 I think this is the correct approach, as it rapresents a non-biological signal which - if removed - won't bias downstream expression analyses.
 In crema cleaned libraries are much less variable in size and range from 29.4M to 27.0M read pairs. 
-
-
-The fastqc files can be found [here](https://github.com/for-giobbe/PAINT/tree/main/reads/crema_ref) for crema 
-and [here](https://github.com/for-giobbe/PAINT/tree/main/reads/vicia_ref) for vicia.
 
 
 ---
