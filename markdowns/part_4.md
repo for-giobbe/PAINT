@@ -105,7 +105,7 @@ run_DE_analysis.pl --matrix crema/RSEM_crema.gene.counts.matrix --samples_file .
 
 Since in this experiment several conditions are present, a WGCNA approach is more suitable.
 An approach in which the two tissue are analyzed separately is preferred, in order to exlude that
-their strong transcriptional eterogeneity could generate spurious module-trait associations.
+their strong transcriptional eterogeneity could generate spurious module-trait correlations.
 Everyting can be seamlessly performed using separate commands for each tissue:
 
 
@@ -202,10 +202,10 @@ Here is a heatmap representing the trait-modules associations for AD:
 
 In the figures only the modules which have a significative (wether positive or negative) correlation to AD_S / AD_L / CT_S / CT_L are represented.
 Moreover, modules which also have a correlation of the same direction to respectively AD_0 / CT_0 are excluded.
+Modules are named as increasing numbers and attached they have the total number of genes they consist of. 
 
-
-While for DE analyses we used the raw gene-counts matrix as input, WGCNA requires normalized counts
-and for this purpose the [vst-normalized](https://www.rdocumentation.org/packages/DESeq2/versions/1.12.3/topics/varianceStabilizingTransformation) TPMs. 
+**NB:** for DE analyses we used the raw gene-counts matrix as input, but WGCNA requires normalized counts;
+the script here leverages [vst-normalized](https://www.rdocumentation.org/packages/DESeq2/versions/1.12.3/topics/varianceStabilizingTransformation) TPMs. 
 Moreover - as suggested by authors [here](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/faq.html) -
 we resticted the Gene Network inference to the transcripts which are consistently
 expressed troughout all samples (at least 20 raw-counts in each samples).
@@ -229,19 +229,21 @@ Furthermore, the script includes several parameters:
 - the tissue
 
 
-Signed networks have been inferred with:
+In our analyses networks have been inferred:
 
-- a power of 22 for AD and 14 for CT
-- a minimum module size of 50
-- a dendrom cut height of 0.3 
-- a min. eigengene connectivity of 0.6
+- as signed
+- with a power of 22 for AD and 14 for CT
+- with a minimum module size of 50
+- with a dendrom cut height of 0.3 
+- with a min. eigengene connectivity of 0.6
 - leveraging peason correlation
-- no pvalue correction for module-trait correlation
-- a p value cutoff of 0.5
-- at least 20 counts across all samples to retain the transcript
+- with no pvalue correction for module-trait correlation
+- with a p value cutoff of 0.5
+- considering only  transcripts with at least 20 counts across all tissue samples
 
 
-The expression matrix is the same used for the preliminary DE analysis and here is the trait file:
+The expression matrix is the [same](https://github.com/for-giobbe/PAINT/blob/main/abundances/crema/RSEM_crema.filtered.gene.counts.matrix) 
+used for the preliminary DE analysis and here is the trait file:
 
 
 ```

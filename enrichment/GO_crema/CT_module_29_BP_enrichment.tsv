@@ -1,13 +1,18 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0061951	establishment of protein localization to...	6	2	0.03	0.00047
-GO:0010256	endomembrane system organization	63	3	0.36	0.00541
-GO:0016482	cytosolic transport	33	3	0.19	0.01185
-GO:0043461	proton-transporting ATP synthase complex...	3	1	0.02	0.01714
-GO:2000641	regulation of early endosome to late end...	3	1	0.02	0.01714
-GO:0072344	rescue of stalled ribosome	3	1	0.02	0.01714
-GO:0061512	protein localization to cilium	3	1	0.02	0.01714
-GO:0045478	fusome organization	4	1	0.02	0.02279
-GO:1905475	regulation of protein localization to me...	4	1	0.02	0.02279
-GO:0034394	protein localization to cell surface	4	1	0.02	0.02279
-GO:0019985	translesion synthesis	4	1	0.02	0.02279
-GO:0042073	intraciliary transport	8	1	0.05	0.04507
+GO:0006139	nucleobase-containing compound metabolic...	1854	10	5	0.0084
+GO:0071897	DNA biosynthetic process	191	3	0.51	0.0133
+GO:0090304	nucleic acid metabolic process	1660	9	4.47	0.0145
+GO:0051336	regulation of hydrolase activity	86	2	0.23	0.0217
+GO:0043487	regulation of RNA stability	10	1	0.03	0.0266
+GO:0007009	plasma membrane organization	10	1	0.03	0.0266
+GO:0090503	RNA phosphodiester bond hydrolysis, exon...	11	1	0.03	0.0293
+GO:0006259	DNA metabolic process	687	5	1.85	0.0294
+GO:0006313	transposition, DNA-mediated	109	2	0.29	0.0338
+GO:0050790	regulation of catalytic activity	275	3	0.74	0.0349
+GO:0032196	transposition	111	2	0.3	0.0349
+GO:0043547	positive regulation of GTPase activity	15	1	0.04	0.0397
+GO:0008038	neuron recognition	15	1	0.04	0.0397
+GO:0065009	regulation of molecular function	303	3	0.82	0.0446
+GO:0042775	mitochondrial ATP synthesis coupled elec...	17	1	0.05	0.0449
+GO:0031330	negative regulation of cellular cataboli...	17	1	0.05	0.0449
+GO:0009895	negative regulation of catabolic process	18	1	0.05	0.0475

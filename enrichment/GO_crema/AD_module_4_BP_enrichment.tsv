@@ -1,46 +1,110 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0036503	ERAD pathway	20	6	0.9	0.00018
-GO:1903052	positive regulation of proteolysis invol...	22	6	0.99	0.00031
-GO:1905475	regulation of protein localization to me...	4	3	0.18	0.00035
-GO:0032374	regulation of cholesterol transport	4	3	0.18	0.00035
-GO:0015868	purine ribonucleotide transport	5	3	0.22	0.00084
-GO:0051503	adenine nucleotide transport	5	3	0.22	0.00084
-GO:0001676	long-chain fatty acid metabolic process	11	4	0.49	0.00102
-GO:0005977	glycogen metabolic process	12	4	0.54	0.00147
-GO:0007291	sperm individualization	12	4	0.54	0.00147
-GO:0019915	lipid storage	20	5	0.9	0.00156
-GO:0008654	phospholipid biosynthetic process	51	8	2.29	0.00175
-GO:0010951	negative regulation of endopeptidase act...	26	6	1.17	0.00194
-GO:0019058	viral life cycle	7	3	0.31	0.00273
-GO:1905954	positive regulation of lipid localizatio...	7	3	0.31	0.00273
-GO:0009396	folic acid-containing compound biosynthe...	3	2	0.13	0.00584
-GO:0015031	protein transport	259	23	11.62	0.00589
-GO:0070328	triglyceride homeostasis	9	3	0.4	0.00614
-GO:1901570	fatty acid derivative biosynthetic proce...	9	3	0.4	0.00614
-GO:0006754	ATP biosynthetic process	28	5	1.26	0.00736
-GO:0032102	negative regulation of response to exter...	10	3	0.45	0.00848
-GO:0042886	amide transport	267	26	11.98	0.01103
-GO:0070050	neuron cellular homeostasis	11	3	0.49	0.01127
-GO:1905897	regulation of response to endoplasmic re...	4	2	0.18	0.01134
-GO:0060260	regulation of transcription initiation f...	4	2	0.18	0.01134
-GO:0022600	digestive system process	4	2	0.18	0.01134
-GO:0048072	compound eye pigmentation	4	2	0.18	0.01134
-GO:0001508	action potential	4	2	0.18	0.01134
-GO:0050708	regulation of protein secretion	12	3	0.54	0.01454
-GO:0006766	vitamin metabolic process	12	3	0.54	0.01454
-GO:0016125	sterol metabolic process	17	4	0.76	0.01813
-GO:0009581	detection of external stimulus	17	3	0.76	0.01827
-GO:0009582	detection of abiotic stimulus	17	3	0.76	0.01827
-GO:0035337	fatty-acyl-CoA metabolic process	13	3	0.58	0.01829
-GO:0110110	positive regulation of animal organ morp...	5	2	0.22	0.01834
-GO:0070374	positive regulation of ERK1 and ERK2 cas...	5	2	0.22	0.01834
-GO:0045944	positive regulation of transcription by ...	35	5	1.57	0.01886
-GO:0050790	regulation of catalytic activity	276	24	12.39	0.02577
-GO:0007179	transforming growth factor beta receptor...	6	2	0.27	0.02670
-GO:0032482	Rab protein signal transduction	6	2	0.27	0.02670
-GO:0009266	response to temperature stimulus	27	4	1.21	0.03083
-GO:0016567	protein ubiquitination	126	12	5.66	0.03345
-GO:0031532	actin cytoskeleton reorganization	7	2	0.31	0.03629
-GO:0043174	nucleoside salvage	7	2	0.31	0.03629
-GO:0042632	cholesterol homeostasis	7	2	0.31	0.03629
-GO:0031348	negative regulation of defense response	8	2	0.36	0.04697
+GO:0034613	cellular protein localization	252	55	33.14	0.00047
+GO:0034599	cellular response to oxidative stress	15	7	1.97	0.00163
+GO:0043065	positive regulation of apoptotic process	12	6	1.58	0.00231
+GO:0042255	ribosome assembly	16	7	2.1	0.00257
+GO:0006457	protein folding	65	17	8.55	0.00349
+GO:0022618	ribonucleoprotein complex assembly	66	27	8.68	0.00354
+GO:0034622	cellular protein-containing complex asse...	215	58	28.27	0.00376
+GO:0016226	iron-sulfur cluster assembly	13	6	1.71	0.00382
+GO:0008544	epidermis development	13	6	1.71	0.00382
+GO:0042775	mitochondrial ATP synthesis coupled elec...	17	7	2.24	0.00388
+GO:0042254	ribosome biogenesis	129	32	16.96	0.00494
+GO:0009081	branched-chain amino acid metabolic proc...	10	5	1.31	0.00552
+GO:0044267	cellular protein metabolic process	1150	219	151.21	0.00615
+GO:0034470	ncRNA processing	151	31	19.85	0.00679
+GO:0016192	vesicle-mediated transport	271	50	35.63	0.00694
+GO:0046395	carboxylic acid catabolic process	53	14	6.97	0.00701
+GO:1990542	mitochondrial transmembrane transport	19	7	2.5	0.00794
+GO:0032008	positive regulation of TOR signaling	11	5	1.45	0.00904
+GO:0044743	protein transmembrane import into intrac...	11	5	1.45	0.00904
+GO:0006996	organelle organization	723	120	95.07	0.00911
+GO:0140053	mitochondrial gene expression	34	10	4.47	0.00980
+GO:0072329	monocarboxylic acid catabolic process	20	7	2.63	0.01086
+GO:0072657	protein localization to membrane	56	14	7.36	0.01164
+GO:0043412	macromolecule modification	863	135	113.48	0.01168
+GO:0055114	oxidation-reduction process	102	26	13.41	0.01194
+GO:0006414	translational elongation	35	10	4.6	0.01215
+GO:0009063	cellular amino acid catabolic process	30	9	3.94	0.01224
+GO:0009062	fatty acid catabolic process	16	6	2.1	0.01260
+GO:0006364	rRNA processing	85	19	11.18	0.01277
+GO:0016072	rRNA metabolic process	103	22	13.54	0.01322
+GO:0031647	regulation of protein stability	12	5	1.58	0.01385
+GO:0006635	fatty acid beta-oxidation	12	5	1.58	0.01385
+GO:0010770	positive regulation of cell morphogenesi...	12	5	1.58	0.01385
+GO:0002183	cytoplasmic translational initiation	12	5	1.58	0.01385
+GO:0003002	regionalization	80	18	10.52	0.01415
+GO:1990748	cellular detoxification	36	10	4.73	0.01490
+GO:0006886	intracellular protein transport	166	32	21.83	0.01520
+GO:0051640	organelle localization	81	18	10.65	0.01603
+GO:0007005	mitochondrion organization	76	17	9.99	0.01780
+GO:0015031	protein transport	259	49	34.06	0.01954
+GO:0000278	mitotic cell cycle	119	24	15.65	0.01973
+GO:0022616	DNA strand elongation	13	5	1.71	0.02011
+GO:0006626	protein targeting to mitochondrion	13	5	1.71	0.02011
+GO:0048193	Golgi vesicle transport	54	13	7.1	0.02015
+GO:0007389	pattern specification process	89	19	11.7	0.02050
+GO:0098869	cellular oxidant detoxification	33	9	4.34	0.02302
+GO:0009895	negative regulation of catabolic process	18	6	2.37	0.02320
+GO:0051656	establishment of organelle localization	55	13	7.23	0.02332
+GO:0015833	peptide transport	262	49	34.45	0.02369
+GO:0060560	developmental growth involved in morphog...	28	8	3.68	0.02393
+GO:0010769	regulation of cell morphogenesis involve...	28	8	3.68	0.02393
+GO:1901606	alpha-amino acid catabolic process	23	7	3.02	0.02417
+GO:0045184	establishment of protein localization	269	50	35.37	0.02420
+GO:0002009	morphogenesis of an epithelium	109	22	14.33	0.02470
+GO:0009100	glycoprotein metabolic process	85	18	11.18	0.02560
+GO:0060271	cilium assembly	39	10	5.13	0.02592
+GO:0097237	cellular response to toxic substance	39	10	5.13	0.02592
+GO:0019395	fatty acid oxidation	14	5	1.84	0.02797
+GO:0033108	mitochondrial respiratory chain complex ...	14	5	1.84	0.02797
+GO:0006518	peptide metabolic process	312	99	41.02	0.02988
+GO:0006888	ER to Golgi vesicle-mediated transport	19	6	2.5	0.03024
+GO:0007029	endoplasmic reticulum organization	19	6	2.5	0.03024
+GO:0050770	regulation of axonogenesis	19	6	2.5	0.03024
+GO:0072659	protein localization to plasma membrane	19	6	2.5	0.03024
+GO:0042274	ribosomal small subunit biogenesis	24	7	3.16	0.03036
+GO:0016049	cell growth	40	10	5.26	0.03063
+GO:0060627	regulation of vesicle-mediated transport	40	10	5.26	0.03063
+GO:0042886	amide transport	267	49	35.11	0.03214
+GO:0036293	response to decreased oxygen levels	10	4	1.31	0.03238
+GO:0048645	animal organ formation	10	4	1.31	0.03238
+GO:0070482	response to oxygen levels	10	4	1.31	0.03238
+GO:0061077	chaperone-mediated protein folding	10	4	1.31	0.03238
+GO:2000116	regulation of cysteine-type endopeptidas...	10	4	1.31	0.03238
+GO:0001666	response to hypoxia	10	4	1.31	0.03238
+GO:0044782	cilium organization	46	11	6.05	0.03269
+GO:0007163	establishment or maintenance of cell pol...	35	9	4.6	0.03318
+GO:1901605	alpha-amino acid metabolic process	58	13	7.63	0.03506
+GO:0036211	protein modification process	794	121	104.4	0.03559
+GO:0006464	cellular protein modification process	794	121	104.4	0.03559
+GO:0098754	detoxification	41	10	5.39	0.03592
+GO:0006605	protein targeting	41	10	5.39	0.03592
+GO:1901565	organonitrogen compound catabolic proces...	250	43	32.87	0.03599
+GO:0060429	epithelium development	171	31	22.48	0.03681
+GO:0048675	axon extension	15	5	1.97	0.03754
+GO:0034314	Arp2/3 complex-mediated actin nucleation	15	5	1.97	0.03754
+GO:0065002	intracellular protein transmembrane tran...	15	5	1.97	0.03754
+GO:0034440	lipid oxidation	15	5	1.97	0.03754
+GO:0072655	establishment of protein localization to...	15	5	1.97	0.03754
+GO:1990778	protein localization to cell periphery	20	6	2.63	0.03855
+GO:0031346	positive regulation of cell projection o...	20	6	2.63	0.03855
+GO:0006399	tRNA metabolic process	89	18	11.7	0.03895
+GO:0043632	modification-dependent macromolecule cat...	153	28	20.12	0.04102
+GO:0090150	establishment of protein localization to...	31	8	4.08	0.04264
+GO:0048729	tissue morphogenesis	115	22	15.12	0.04264
+GO:0051604	protein maturation	48	11	6.31	0.04346
+GO:0006950	response to stress	408	70	53.65	0.04392
+GO:0002376	immune system process	103	20	13.54	0.04504
+GO:0018193	peptidyl-amino acid modification	207	36	27.22	0.04505
+GO:0000302	response to reactive oxygen species	11	4	1.45	0.04571
+GO:0006450	regulation of translational fidelity	11	4	1.45	0.04571
+GO:0032784	regulation of DNA-templated transcriptio...	11	4	1.45	0.04571
+GO:0071985	multivesicular body sorting pathway	11	4	1.45	0.04571
+GO:0070646	protein modification by small protein re...	37	9	4.87	0.04608
+GO:0042176	regulation of protein catabolic process	37	9	4.87	0.04608
+GO:0010623	programmed cell death involved in cell d...	16	5	2.1	0.04888
+GO:0062012	regulation of small molecule metabolic p...	16	5	2.1	0.04888
+GO:0070585	protein localization to mitochondrion	16	5	2.1	0.04888
+GO:0006612	protein targeting to membrane	16	5	2.1	0.04888
+GO:0010976	positive regulation of neuron projection...	16	5	2.1	0.04888

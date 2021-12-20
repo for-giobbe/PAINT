@@ -1,36 +1,21 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:1902743	regulation of lamellipodium organization	6	3	0.28	0.0017
-GO:0007049	cell cycle	275	26	12.64	0.0020
-GO:1904356	regulation of telomere maintenance via t...	5	3	0.23	0.0021
-GO:0031047	gene silencing by RNA	26	6	1.19	0.0022
-GO:0045943	positive regulation of transcription by ...	3	2	0.14	0.0061
-GO:0000056	ribosomal small subunit export from nucl...	3	2	0.14	0.0061
-GO:0000737	DNA catabolic process, endonucleolytic	3	2	0.14	0.0061
-GO:0032508	DNA duplex unwinding	49	7	2.25	0.0065
-GO:0006457	protein folding	65	8	2.99	0.0093
-GO:0006338	chromatin remodeling	29	5	1.33	0.0095
-GO:0001510	RNA methylation	30	5	1.38	0.0109
-GO:0006360	transcription by RNA polymerase I	8	4	0.37	0.0117
-GO:0051972	regulation of telomerase activity	4	2	0.18	0.0119
-GO:0018990	ecdysis, chitin-based cuticle	4	2	0.18	0.0119
-GO:0008592	regulation of Toll signaling pathway	4	2	0.18	0.0119
-GO:0034660	ncRNA metabolic process	202	27	9.28	0.0183
-GO:2001234	negative regulation of apoptotic signali...	5	2	0.23	0.0192
-GO:0009452	7-methylguanosine RNA capping	5	2	0.23	0.0192
-GO:0001889	liver development	5	2	0.23	0.0192
-GO:0006383	transcription by RNA polymerase III	13	3	0.6	0.0195
-GO:0090501	RNA phosphodiester bond hydrolysis	62	7	2.85	0.0227
-GO:0010467	gene expression	1193	106	54.83	0.0230
-GO:0051053	negative regulation of DNA metabolic pro...	10	3	0.46	0.0278
-GO:1902692	regulation of neuroblast proliferation	6	2	0.28	0.0279
-GO:0007020	microtubule nucleation	6	2	0.28	0.0279
-GO:0006266	DNA ligation	6	2	0.28	0.0279
-GO:0006367	transcription initiation from RNA polyme...	15	3	0.69	0.0290
-GO:0032386	regulation of intracellular transport	16	3	0.74	0.0345
-GO:0043010	camera-type eye development	16	3	0.74	0.0345
-GO:0010976	positive regulation of neuron projection...	16	3	0.74	0.0345
-GO:0051568	histone H3-K4 methylation	7	2	0.32	0.0379
-GO:0032786	positive regulation of DNA-templated tra...	7	2	0.32	0.0379
-GO:0006260	DNA replication	92	11	4.23	0.0385
-GO:0032543	mitochondrial translation	17	3	0.78	0.0405
-GO:0070897	transcription preinitiation complex asse...	8	2	0.37	0.0490
+GO:0010970	transport along microtubule	19	2	0.08	0.0029
+GO:0006418	tRNA aminoacylation for protein translat...	33	2	0.14	0.0087
+GO:0006865	amino acid transport	34	2	0.15	0.0092
+GO:0006414	translational elongation	35	2	0.15	0.0097
+GO:0031503	protein-containing complex localization	41	2	0.18	0.0132
+GO:0044782	cilium organization	46	2	0.2	0.0164
+GO:0005975	carbohydrate metabolic process	160	3	0.69	0.0303
+GO:2000112	regulation of cellular macromolecule bio...	592	6	2.55	0.0358
+GO:0010556	regulation of macromolecule biosynthetic...	594	6	2.56	0.0363
+GO:0031326	regulation of cellular biosynthetic proc...	606	6	2.61	0.0395
+GO:0009889	regulation of biosynthetic process	614	6	2.65	0.0418
+GO:0046889	positive regulation of lipid biosyntheti...	10	1	0.04	0.0423
+GO:1903825	organic acid transmembrane transport	10	1	0.04	0.0423
+GO:0006893	Golgi to plasma membrane transport	10	1	0.04	0.0423
+GO:0098876	vesicle-mediated transport to the plasma...	10	1	0.04	0.0423
+GO:1905039	carboxylic acid transmembrane transport	10	1	0.04	0.0423
+GO:0016575	histone deacetylation	11	1	0.05	0.0465
+GO:0006450	regulation of translational fidelity	11	1	0.05	0.0465
+GO:0140029	exocytic process	11	1	0.05	0.0465
+GO:0031056	regulation of histone modification	11	1	0.05	0.0465

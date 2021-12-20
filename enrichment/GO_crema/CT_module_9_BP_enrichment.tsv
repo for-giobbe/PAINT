@@ -1,4 +1,19 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0006999	nuclear pore organization	3	1	0	0.0038
-GO:0070932	histone H3 deacetylation	6	1	0.01	0.0075
-GO:0008643	carbohydrate transport	35	1	0.04	0.0432
+GO:0120192	tight junction assembly	10	2	0.07	0.0022
+GO:0008049	male courtship behavior	10	2	0.07	0.0022
+GO:0030534	adult behavior	39	3	0.28	0.0026
+GO:0042493	response to drug	43	3	0.31	0.0035
+GO:0007186	G protein-coupled receptor signaling pat...	145	5	1.04	0.0035
+GO:0043297	apical junction assembly	13	2	0.09	0.0037
+GO:0000226	microtubule cytoskeleton organization	93	4	0.67	0.0042
+GO:2000241	regulation of reproductive process	15	2	0.11	0.0050
+GO:0007422	peripheral nervous system development	17	2	0.12	0.0064
+GO:0007298	border follicle cell migration	20	2	0.14	0.0088
+GO:0014070	response to organic cyclic compound	25	2	0.18	0.0136
+GO:1901564	organonitrogen compound metabolic proces...	1812	19	13.02	0.0343
+GO:0022610	biological adhesion	104	3	0.75	0.0380
+GO:0007155	cell adhesion	104	3	0.75	0.0380
+GO:0098609	cell-cell adhesion	46	2	0.33	0.0427
+GO:0051258	protein polymerization	47	2	0.34	0.0444
+GO:0007626	locomotory behavior	48	2	0.34	0.0461
+GO:0006508	proteolysis	575	8	4.13	0.0486

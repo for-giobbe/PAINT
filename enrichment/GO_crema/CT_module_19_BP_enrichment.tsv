@@ -1,16 +1,5 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0045448	mitotic cell cycle, embryonic	3	1	0.01	0.007
-GO:0033301	cell cycle comprising mitosis without cy...	3	1	0.01	0.007
-GO:0045911	positive regulation of DNA recombination	3	1	0.01	0.007
-GO:0001835	blastocyst hatching	3	1	0.01	0.007
-GO:0010972	negative regulation of G2/M transition o...	5	1	0.01	0.012
-GO:0006312	mitotic recombination	6	1	0.01	0.014
-GO:0000245	spliceosomal complex assembly	7	1	0.02	0.016
-GO:0000027	ribosomal large subunit assembly	7	1	0.02	0.016
-GO:0009411	response to UV	7	1	0.02	0.016
-GO:0000470	maturation of LSU-rRNA	11	1	0.03	0.025
-GO:0045995	regulation of embryonic development	12	1	0.03	0.028
-GO:0006744	ubiquinone biosynthetic process	14	1	0.03	0.032
-GO:0006289	nucleotide-excision repair	15	1	0.04	0.034
-GO:0034314	Arp2/3 complex-mediated actin nucleation	15	1	0.04	0.034
-GO:0051983	regulation of chromosome segregation	18	1	0.04	0.041
+GO:0007186	G protein-coupled receptor signaling pat...	145	2	0.21	0.017
+GO:0000288	nuclear-transcribed mRNA catabolic proce...	16	1	0.02	0.023
+GO:0007229	integrin-mediated signaling pathway	23	1	0.03	0.033
+GO:0000956	nuclear-transcribed mRNA catabolic proce...	35	1	0.05	0.049

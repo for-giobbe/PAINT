@@ -1,124 +1,80 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0055067	monovalent inorganic cation homeostasis	14	7	1.33	0.00011
-GO:0043409	negative regulation of MAPK cascade	8	5	0.76	0.00034
-GO:0030029	actin filament-based process	117	25	11.13	0.00042
-GO:0065009	regulation of molecular function	304	57	28.93	0.00081
-GO:0007043	cell-cell junction assembly	18	7	1.71	0.00085
-GO:0016325	oocyte microtubule cytoskeleton organiza...	3	3	0.29	0.00086
-GO:0040015	negative regulation of multicellular org...	3	3	0.29	0.00086
-GO:0006511	ubiquitin-dependent protein catabolic pr...	135	26	12.85	0.00110
-GO:0007431	salivary gland development	25	9	2.38	0.00122
-GO:0016567	protein ubiquitination	126	25	11.99	0.00139
-GO:0035335	peptidyl-tyrosine dephosphorylation	36	10	3.43	0.00145
-GO:0045859	regulation of protein kinase activity	38	11	3.62	0.00170
-GO:0060828	regulation of canonical Wnt signaling pa...	15	6	1.43	0.00171
-GO:0008361	regulation of cell size	31	9	2.95	0.00173
-GO:0016049	cell growth	40	11	3.81	0.00207
-GO:0099003	vesicle-mediated transport in synapse	26	8	2.47	0.00212
-GO:0032872	regulation of stress-activated MAPK casc...	17	7	1.62	0.00215
-GO:0002168	instar larval development	21	7	2	0.00241
-GO:1903508	positive regulation of nucleic acid-temp...	114	22	10.85	0.00279
-GO:0006688	glycosphingolipid biosynthetic process	4	3	0.38	0.00319
-GO:0055064	chloride ion homeostasis	4	3	0.38	0.00319
-GO:0035821	modification of morphology or physiology...	22	7	2.09	0.00325
-GO:0071375	cellular response to peptide hormone sti...	23	8	2.19	0.00353
-GO:0035556	intracellular signal transduction	255	52	24.26	0.00418
-GO:0006351	transcription, DNA-templated	584	80	55.57	0.00422
-GO:0051056	regulation of small GTPase mediated sign...	21	8	2	0.00486
-GO:0051223	regulation of protein transport	19	6	1.81	0.00665
-GO:0019725	cellular homeostasis	80	14	7.61	0.00688
-GO:0043624	cellular protein complex disassembly	22	6	2.09	0.00688
-GO:0016333	morphogenesis of follicular epithelium	9	4	0.86	0.00692
-GO:0036099	female germ-line stem cell population ma...	9	4	0.86	0.00692
-GO:0050795	regulation of behavior	9	4	0.86	0.00692
-GO:0030177	positive regulation of Wnt signaling pat...	9	4	0.86	0.00692
-GO:0051345	positive regulation of hydrolase activit...	31	8	2.95	0.00699
-GO:0016318	ommatidial rotation	5	3	0.48	0.00740
-GO:0040036	regulation of fibroblast growth factor r...	5	3	0.48	0.00740
-GO:0010453	regulation of cell fate commitment	5	3	0.48	0.00740
-GO:0072583	clathrin-dependent endocytosis	5	3	0.48	0.00740
-GO:0006984	ER-nucleus signaling pathway	5	3	0.48	0.00740
-GO:0051225	spindle assembly	14	5	1.33	0.00740
-GO:0048589	developmental growth	76	19	7.23	0.00869
-GO:0042127	regulation of cell proliferation	51	11	4.85	0.00972
-GO:0003007	heart morphogenesis	14	5	1.33	0.01063
-GO:0001667	ameboidal-type cell migration	38	10	3.62	0.01092
-GO:0007219	Notch signaling pathway	27	7	2.57	0.01113
-GO:0061564	axon development	78	15	7.42	0.01230
-GO:0051128	regulation of cellular component organiz...	225	38	21.41	0.01275
-GO:0030707	ovarian follicle cell development	42	11	4	0.01330
-GO:0043087	regulation of GTPase activity	28	7	2.66	0.01366
-GO:0043954	cellular component maintenance	10	4	0.95	0.01372
-GO:0033692	cellular polysaccharide biosynthetic pro...	11	4	1.05	0.01372
-GO:0008586	imaginal disc-derived wing vein morphoge...	6	3	0.57	0.01376
-GO:0050650	chondroitin sulfate proteoglycan biosynt...	6	3	0.57	0.01376
-GO:0001941	postsynaptic membrane organization	6	3	0.57	0.01376
-GO:0015012	heparan sulfate proteoglycan biosyntheti...	6	3	0.57	0.01376
-GO:0001704	formation of primary germ layer	6	3	0.57	0.01376
-GO:0036465	synaptic vesicle recycling	11	4	1.05	0.01553
-GO:0061726	mitochondrion disassembly	11	4	1.05	0.01553
-GO:0016050	vesicle organization	40	9	3.81	0.01747
-GO:0050769	positive regulation of neurogenesis	25	7	2.38	0.01784
-GO:0060538	skeletal muscle organ development	12	4	1.14	0.02158
-GO:2000241	regulation of reproductive process	15	6	1.43	0.02214
-GO:0006024	glycosaminoglycan biosynthetic process	7	3	0.67	0.02240
-GO:0033227	dsRNA transport	7	3	0.67	0.02240
-GO:0000245	spliceosomal complex assembly	7	3	0.67	0.02240
-GO:0035160	maintenance of epithelial integrity, ope...	7	3	0.67	0.02240
-GO:0009620	response to fungus	7	3	0.67	0.02240
-GO:0046856	phosphatidylinositol dephosphorylation	7	3	0.67	0.02240
-GO:0016192	vesicle-mediated transport	271	46	25.79	0.02319
-GO:0046847	filopodium assembly	6	4	0.57	0.02524
-GO:0010888	negative regulation of lipid storage	3	2	0.29	0.02540
-GO:0046665	amnioserosa maintenance	3	2	0.29	0.02540
-GO:0030720	oocyte localization involved in germariu...	3	2	0.29	0.02540
-GO:0046627	negative regulation of insulin receptor ...	3	2	0.29	0.02540
-GO:2000331	regulation of terminal button organizati...	3	2	0.29	0.02540
-GO:0030098	lymphocyte differentiation	3	2	0.29	0.02540
-GO:0014013	regulation of gliogenesis	3	2	0.29	0.02540
-GO:0035158	regulation of tube diameter, open trache...	3	2	0.29	0.02540
-GO:0045176	apical protein localization	3	2	0.29	0.02540
-GO:0007492	endoderm development	3	2	0.29	0.02540
-GO:0001959	regulation of cytokine-mediated signalin...	3	2	0.29	0.02540
-GO:0042069	regulation of catecholamine metabolic pr...	3	2	0.29	0.02540
-GO:0071361	cellular response to ethanol	3	2	0.29	0.02540
-GO:0048538	thymus development	3	2	0.29	0.02540
-GO:0002092	positive regulation of receptor internal...	3	2	0.29	0.02540
-GO:0032387	negative regulation of intracellular tra...	3	2	0.29	0.02540
-GO:0030202	heparin metabolic process	3	2	0.29	0.02540
-GO:0006913	nucleocytoplasmic transport	59	12	5.61	0.02722
-GO:0048754	branching morphogenesis of an epithelial...	17	5	1.62	0.02877
-GO:0007631	feeding behavior	13	4	1.24	0.02888
-GO:0061572	actin filament bundle organization	13	4	1.24	0.02888
-GO:0007173	epidermal growth factor receptor signali...	13	4	1.24	0.02888
-GO:0006888	ER to Golgi vesicle-mediated transport	19	5	1.81	0.02888
-GO:0042981	regulation of apoptotic process	63	12	5.99	0.03203
-GO:0015031	protein transport	259	40	24.64	0.03263
-GO:1903322	positive regulation of protein modificat...	8	3	0.76	0.03334
-GO:0017148	negative regulation of translation	8	3	0.76	0.03334
-GO:0016241	regulation of macroautophagy	8	3	0.76	0.03334
-GO:0048102	autophagic cell death	8	3	0.76	0.03334
-GO:1903688	positive regulation of border follicle c...	8	3	0.76	0.03334
-GO:0045880	positive regulation of smoothened signal...	8	3	0.76	0.03334
-GO:0007389	pattern specification process	89	19	8.47	0.03556
-GO:0018393	internal peptidyl-lysine acetylation	41	8	3.9	0.03655
-GO:0016579	protein deubiquitination	34	7	3.24	0.03781
-GO:0008154	actin polymerization or depolymerization	41	7	3.9	0.04315
-GO:0007178	transmembrane receptor protein serine/th...	24	7	2.28	0.04597
-GO:0061448	connective tissue development	12	4	1.14	0.04639
-GO:0046620	regulation of organ growth	9	3	0.86	0.04655
-GO:0048190	wing disc dorsal/ventral pattern formati...	9	3	0.86	0.04655
-GO:1900073	regulation of neuromuscular synaptic tra...	9	3	0.86	0.04655
-GO:0046532	regulation of photoreceptor cell differe...	6	3	0.57	0.04748
-GO:0042044	fluid transport	7	3	0.67	0.04750
-GO:0043462	regulation of ATPase activity	4	2	0.38	0.04762
-GO:0021954	central nervous system neuron developmen...	4	2	0.38	0.04762
-GO:0019933	cAMP-mediated signaling	4	2	0.38	0.04762
-GO:1902745	positive regulation of lamellipodium org...	4	2	0.38	0.04762
-GO:0048709	oligodendrocyte differentiation	4	2	0.38	0.04762
-GO:0021543	pallium development	4	2	0.38	0.04762
-GO:0008258	head involution	4	2	0.38	0.04762
-GO:0097105	presynaptic membrane assembly	4	2	0.38	0.04762
-GO:0035019	somatic stem cell population maintenance	4	2	0.38	0.04762
-GO:0045824	negative regulation of innate immune res...	4	2	0.38	0.04762
-GO:0006751	glutathione catabolic process	4	2	0.38	0.04762
+GO:0016126	sterol biosynthetic process	10	5	0.61	0.00016
+GO:0044255	cellular lipid metabolic process	232	52	14.09	0.00102
+GO:0006006	glucose metabolic process	15	5	0.91	0.00145
+GO:0006637	acyl-CoA metabolic process	23	6	1.4	0.00200
+GO:0044283	small molecule biosynthetic process	165	36	10.02	0.00311
+GO:0000038	very long-chain fatty acid metabolic pro...	11	4	0.67	0.00313
+GO:0008654	phospholipid biosynthetic process	51	9	3.1	0.00317
+GO:0055085	transmembrane transport	473	43	28.72	0.00415
+GO:0006766	vitamin metabolic process	12	4	0.73	0.00447
+GO:0045834	positive regulation of lipid metabolic p...	12	4	0.73	0.00447
+GO:1901264	carbohydrate derivative transport	19	5	1.15	0.00459
+GO:0032787	monocarboxylic acid metabolic process	115	31	6.98	0.00502
+GO:0007005	mitochondrion organization	76	11	4.61	0.00572
+GO:1902652	secondary alcohol metabolic process	13	4	0.79	0.00616
+GO:0007605	sensory perception of sound	21	5	1.28	0.00726
+GO:0006066	alcohol metabolic process	52	11	3.16	0.00774
+GO:0015711	organic anion transport	82	14	4.98	0.00836
+GO:0044057	regulation of system process	22	5	1.34	0.00894
+GO:0000413	protein peptidyl-prolyl isomerization	22	5	1.34	0.00894
+GO:0046942	carboxylic acid transport	60	9	3.64	0.00952
+GO:0006839	mitochondrial transport	31	6	1.88	0.00968
+GO:0046165	alcohol biosynthetic process	23	5	1.4	0.01087
+GO:0046486	glycerolipid metabolic process	72	10	4.37	0.01099
+GO:0034976	response to endoplasmic reticulum stress	32	6	1.94	0.01132
+GO:0006732	coenzyme metabolic process	97	16	5.89	0.01209
+GO:0016311	dephosphorylation	131	15	7.95	0.01254
+GO:0062012	regulation of small molecule metabolic p...	16	4	0.97	0.01356
+GO:0046890	regulation of lipid biosynthetic process	16	4	0.97	0.01356
+GO:0006865	amino acid transport	34	6	2.06	0.01517
+GO:0030148	sphingolipid biosynthetic process	25	5	1.52	0.01554
+GO:0030258	lipid modification	44	7	2.67	0.01565
+GO:0090407	organophosphate biosynthetic process	176	23	10.69	0.01617
+GO:0019748	secondary metabolic process	17	4	1.03	0.01691
+GO:0006638	neutral lipid metabolic process	17	4	1.03	0.01691
+GO:0006639	acylglycerol metabolic process	17	4	1.03	0.01691
+GO:0071705	nitrogen compound transport	347	31	21.07	0.01801
+GO:0009108	coenzyme biosynthetic process	67	9	4.07	0.01900
+GO:0044550	secondary metabolite biosynthetic proces...	10	3	0.61	0.01933
+GO:0009225	nucleotide-sugar metabolic process	10	3	0.61	0.01933
+GO:0055090	acylglycerol homeostasis	10	3	0.61	0.01933
+GO:0035336	long-chain fatty-acyl-CoA metabolic proc...	10	3	0.61	0.01933
+GO:0046889	positive regulation of lipid biosyntheti...	10	3	0.61	0.01933
+GO:0008203	cholesterol metabolic process	10	3	0.61	0.01933
+GO:0055114	oxidation-reduction process	102	12	6.19	0.01994
+GO:0051186	cofactor metabolic process	151	20	9.17	0.02018
+GO:0046128	purine ribonucleoside metabolic process	18	4	1.09	0.02072
+GO:0009408	response to heat	18	4	1.09	0.02072
+GO:0019751	polyol metabolic process	27	5	1.64	0.02138
+GO:0090502	RNA phosphodiester bond hydrolysis, endo...	37	6	2.25	0.02252
+GO:0015748	organophosphate ester transport	19	4	1.15	0.02502
+GO:1901568	fatty acid derivative metabolic process	19	4	1.15	0.02502
+GO:0042278	purine nucleoside metabolic process	19	4	1.15	0.02502
+GO:0009612	response to mechanical stimulus	11	3	0.67	0.02541
+GO:0006767	water-soluble vitamin metabolic process	11	3	0.67	0.02541
+GO:0006936	muscle contraction	11	3	0.67	0.02541
+GO:0001676	long-chain fatty acid metabolic process	11	3	0.67	0.02541
+GO:0046467	membrane lipid biosynthetic process	49	7	2.98	0.02711
+GO:0007286	spermatid development	20	4	1.21	0.02983
+GO:0043062	extracellular structure organization	20	4	1.21	0.02983
+GO:0045017	glycerolipid biosynthetic process	40	6	2.43	0.03196
+GO:0007291	sperm individualization	12	3	0.73	0.03239
+GO:0015807	L-amino acid transport	12	3	0.73	0.03239
+GO:0007610	behavior	110	12	6.68	0.03374
+GO:0006631	fatty acid metabolic process	79	26	4.8	0.03395
+GO:0051188	cofactor biosynthetic process	86	10	5.22	0.03444
+GO:0006629	lipid metabolic process	313	61	19	0.03468
+GO:0048515	spermatid differentiation	21	4	1.28	0.03514
+GO:0033674	positive regulation of kinase activity	31	5	1.88	0.03696
+GO:0010821	regulation of mitochondrion organization	13	3	0.79	0.04025
+GO:0003012	muscle system process	13	3	0.79	0.04025
+GO:0001568	blood vessel development	13	3	0.79	0.04025
+GO:0035337	fatty-acyl-CoA metabolic process	13	3	0.79	0.04025
+GO:0006112	energy reserve metabolic process	13	3	0.79	0.04025
+GO:0008610	lipid biosynthetic process	151	42	9.17	0.04588
+GO:0044272	sulfur compound biosynthetic process	33	5	2	0.04680
+GO:0015931	nucleobase-containing compound transport	67	8	4.07	0.04852
+GO:0072358	cardiovascular system development	14	3	0.85	0.04899
+GO:0001944	vasculature development	14	3	0.85	0.04899
+GO:0019395	fatty acid oxidation	14	3	0.85	0.04899

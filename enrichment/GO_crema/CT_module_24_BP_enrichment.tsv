@@ -1,23 +1,133 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0070646	protein modification by small protein re...	37	4	0.41	0.0007
-GO:0042274	ribosomal small subunit biogenesis	24	3	0.27	0.0023
-GO:0043062	extracellular structure organization	20	2	0.22	0.0204
-GO:0072006	nephron development	3	1	0.03	0.0330
-GO:0043122	regulation of I-kappaB kinase/NF-kappaB ...	3	1	0.03	0.0330
-GO:0070979	protein K11-linked ubiquitination	3	1	0.03	0.0330
-GO:0061462	protein localization to lysosome	3	1	0.03	0.0330
-GO:0001881	receptor recycling	3	1	0.03	0.0330
-GO:0060348	bone development	3	1	0.03	0.0330
-GO:0072073	kidney epithelium development	3	1	0.03	0.0330
-GO:0006625	protein targeting to peroxisome	3	1	0.03	0.0330
-GO:0050830	defense response to Gram-positive bacter...	3	1	0.03	0.0330
-GO:0051123	RNA polymerase II preinitiation complex ...	3	1	0.03	0.0330
-GO:0016310	phosphorylation	550	11	6.12	0.0424
-GO:0061318	renal filtration cell differentiation	4	1	0.04	0.0438
-GO:0008053	mitochondrial fusion	4	1	0.04	0.0438
-GO:0019184	nonribosomal peptide biosynthetic proces...	4	1	0.04	0.0438
-GO:0042823	pyridoxal phosphate biosynthetic process	4	1	0.04	0.0438
-GO:0015919	peroxisomal membrane transport	4	1	0.04	0.0438
-GO:0055064	chloride ion homeostasis	4	1	0.04	0.0438
-GO:0060966	regulation of gene silencing by RNA	4	1	0.04	0.0438
-GO:0008361	regulation of cell size	31	2	0.35	0.0461
+GO:0035821	modification of morphology or physiology...	22	4	0.38	0.00046
+GO:0044267	cellular protein metabolic process	1150	42	19.62	0.00066
+GO:0035329	hippo signaling	15	3	0.26	0.00189
+GO:0051640	organelle localization	81	6	1.38	0.00244
+GO:0030705	cytoskeleton-dependent intracellular tra...	34	4	0.58	0.00249
+GO:0048511	rhythmic process	36	4	0.61	0.00309
+GO:0035335	peptidyl-tyrosine dephosphorylation	36	4	0.61	0.00309
+GO:0016573	histone acetylation	37	4	0.63	0.00342
+GO:0007274	neuromuscular synaptic transmission	19	3	0.32	0.00383
+GO:0010468	regulation of gene expression	673	21	11.48	0.00396
+GO:0051252	regulation of RNA metabolic process	565	18	9.64	0.00636
+GO:0050794	regulation of cellular process	1720	47	29.35	0.00792
+GO:0006511	ubiquitin-dependent protein catabolic pr...	135	7	2.3	0.00792
+GO:0006351	transcription, DNA-templated	584	18	9.97	0.00891
+GO:0070647	protein modification by small protein co...	173	8	2.95	0.00901
+GO:1902533	positive regulation of intracellular sig...	49	4	0.84	0.00938
+GO:2000112	regulation of cellular macromolecule bio...	592	18	10.1	0.01020
+GO:0010556	regulation of macromolecule biosynthetic...	594	18	10.14	0.01055
+GO:0042133	neurotransmitter metabolic process	28	3	0.48	0.01158
+GO:0030834	regulation of actin filament depolymeriz...	10	2	0.17	0.01186
+GO:0099518	vesicle cytoskeletal trafficking	10	2	0.17	0.01186
+GO:0032147	activation of protein kinase activity	10	2	0.17	0.01186
+GO:0035222	wing disc pattern formation	10	2	0.17	0.01186
+GO:0043954	cellular component maintenance	10	2	0.17	0.01186
+GO:0030010	establishment of cell polarity	10	2	0.17	0.01186
+GO:0030042	actin filament depolymerization	10	2	0.17	0.01186
+GO:0051650	establishment of vesicle localization	29	3	0.49	0.01276
+GO:0031326	regulation of cellular biosynthetic proc...	606	18	10.34	0.01283
+GO:0065009	regulation of molecular function	303	11	5.17	0.01352
+GO:0051656	establishment of organelle localization	55	4	0.94	0.01398
+GO:0051648	vesicle localization	30	3	0.51	0.01400
+GO:0042752	regulation of circadian rhythm	11	2	0.19	0.01434
+GO:0030837	negative regulation of actin filament po...	11	2	0.19	0.01434
+GO:0032272	negative regulation of protein polymeriz...	11	2	0.19	0.01434
+GO:0009889	regulation of biosynthetic process	614	18	10.48	0.01456
+GO:0006355	regulation of transcription, DNA-templat...	525	16	8.96	0.01517
+GO:0045861	negative regulation of proteolysis	31	3	0.53	0.01532
+GO:1903506	regulation of nucleic acid-templated tra...	527	16	8.99	0.01569
+GO:2001141	regulation of RNA biosynthetic process	527	16	8.99	0.01569
+GO:0009653	anatomical structure morphogenesis	313	11	5.34	0.01689
+GO:0007271	synaptic transmission, cholinergic	12	2	0.2	0.01702
+GO:1901879	regulation of protein depolymerization	12	2	0.2	0.01702
+GO:0034764	positive regulation of transmembrane tra...	12	2	0.2	0.01702
+GO:1902904	negative regulation of supramolecular fi...	12	2	0.2	0.01702
+GO:0030048	actin filament-based movement	12	2	0.2	0.01702
+GO:0043412	macromolecule modification	863	32	14.73	0.01761
+GO:0032880	regulation of protein localization	33	3	0.56	0.01814
+GO:0016579	protein deubiquitination	34	3	0.58	0.01966
+GO:0031333	negative regulation of protein complex a...	13	2	0.22	0.01989
+GO:0008360	regulation of cell shape	13	2	0.22	0.01989
+GO:0051494	negative regulation of cytoskeleton orga...	13	2	0.22	0.01989
+GO:0043297	apical junction assembly	13	2	0.22	0.01989
+GO:0007447	imaginal disc pattern formation	13	2	0.22	0.01989
+GO:0048667	cell morphogenesis involved in neuron di...	92	5	1.57	0.01994
+GO:0000902	cell morphogenesis	127	6	2.17	0.02085
+GO:0006816	calcium ion transport	35	3	0.6	0.02124
+GO:0007163	establishment or maintenance of cell pol...	35	3	0.6	0.02124
+GO:0018193	peptidyl-amino acid modification	207	11	3.53	0.02129
+GO:0032268	regulation of cellular protein metabolic...	203	8	3.46	0.02193
+GO:0010604	positive regulation of macromolecule met...	243	9	4.15	0.02213
+GO:0051261	protein depolymerization	14	2	0.24	0.02295
+GO:0043244	regulation of protein complex disassembl...	14	2	0.24	0.02295
+GO:0048812	neuron projection morphogenesis	96	5	1.64	0.02351
+GO:0006325	chromatin organization	173	10	2.95	0.02397
+GO:0120039	plasma membrane bounded cell projection ...	97	5	1.66	0.02447
+GO:0048858	cell projection morphogenesis	97	5	1.66	0.02447
+GO:0070646	protein modification by small protein re...	37	3	0.63	0.02461
+GO:0031329	regulation of cellular catabolic process	66	4	1.13	0.02565
+GO:0032990	cell part morphogenesis	99	5	1.69	0.02644
+GO:0030162	regulation of proteolysis	67	4	1.14	0.02693
+GO:0000904	cell morphogenesis involved in different...	100	5	1.71	0.02747
+GO:0051172	negative regulation of nitrogen compound...	173	7	2.95	0.02767
+GO:0010608	posttranscriptional regulation of gene e...	68	4	1.16	0.02825
+GO:0048523	negative regulation of cellular process	340	11	5.8	0.02914
+GO:0036211	protein modification process	794	30	13.55	0.02959
+GO:0006464	cellular protein modification process	794	30	13.55	0.02959
+GO:0042136	neurotransmitter biosynthetic process	16	2	0.27	0.02960
+GO:0023052	signaling	942	28	16.08	0.03041
+GO:0007154	cell communication	946	28	16.14	0.03181
+GO:0051246	regulation of protein metabolic process	218	8	3.72	0.03185
+GO:0051050	positive regulation of transport	41	3	0.7	0.03216
+GO:0098916	anterograde trans-synaptic signaling	92	7	1.57	0.03235
+GO:0010557	positive regulation of macromolecule bio...	141	6	2.41	0.03273
+GO:0070507	regulation of microtubule cytoskeleton o...	17	2	0.29	0.03318
+GO:0008284	positive regulation of cell proliferatio...	17	2	0.29	0.03318
+GO:0031330	negative regulation of cellular cataboli...	17	2	0.29	0.03318
+GO:0032434	regulation of proteasomal ubiquitin-depe...	17	2	0.29	0.03318
+GO:0001709	cell fate determination	17	2	0.29	0.03318
+GO:0051171	regulation of nitrogen compound metaboli...	765	25	13.05	0.03325
+GO:0099536	synaptic signaling	93	7	1.59	0.03378
+GO:0099537	trans-synaptic signaling	93	7	1.59	0.03378
+GO:0051049	regulation of transport	106	5	1.81	0.03417
+GO:0006928	movement of cell or subcellular componen...	222	8	3.79	0.03495
+GO:0007043	cell-cell junction assembly	18	2	0.31	0.03692
+GO:0009895	negative regulation of catabolic process	18	2	0.31	0.03692
+GO:0009605	response to external stimulus	184	7	3.14	0.03695
+GO:0007165	signal transduction	873	25	14.9	0.03745
+GO:0031175	neuron projection development	109	5	1.86	0.03787
+GO:0051716	cellular response to stimulus	1140	30	19.45	0.03823
+GO:0040029	regulation of gene expression, epigeneti...	44	3	0.75	0.03853
+GO:0099177	regulation of trans-synaptic signaling	44	3	0.75	0.03853
+GO:0050804	modulation of chemical synaptic transmis...	44	3	0.75	0.03853
+GO:0022604	regulation of cell morphogenesis	44	3	0.75	0.03853
+GO:0009894	regulation of catabolic process	75	4	1.28	0.03856
+GO:0031324	negative regulation of cellular metaboli...	186	7	3.17	0.03883
+GO:0032989	cellular component morphogenesis	147	6	2.51	0.03895
+GO:0045216	cell-cell junction organization	19	2	0.32	0.04082
+GO:0051223	regulation of protein transport	19	2	0.32	0.04082
+GO:0042330	taxis	77	4	1.31	0.04185
+GO:0035556	intracellular signal transduction	255	12	4.35	0.04220
+GO:0006813	potassium ion transport	46	3	0.78	0.04311
+GO:0031328	positive regulation of cellular biosynth...	151	6	2.58	0.04349
+GO:0048519	negative regulation of biological proces...	408	12	6.96	0.04357
+GO:0010605	negative regulation of macromolecule met...	233	8	3.98	0.04451
+GO:0009893	positive regulation of metabolic process	276	9	4.71	0.04484
+GO:2000058	regulation of ubiquitin-dependent protei...	20	2	0.34	0.04486
+GO:0070201	regulation of establishment of protein l...	20	2	0.34	0.04486
+GO:0032886	regulation of microtubule-based process	20	2	0.34	0.04486
+GO:0034329	cell junction assembly	20	2	0.34	0.04486
+GO:0018209	peptidyl-serine modification	20	2	0.34	0.04486
+GO:0080090	regulation of primary metabolic process	781	25	13.33	0.04732
+GO:0051093	negative regulation of developmental pro...	48	3	0.82	0.04795
+GO:0016569	covalent chromatin modification	87	7	1.48	0.04850
+GO:0016570	histone modification	87	7	1.48	0.04850
+GO:0045860	positive regulation of protein kinase ac...	21	2	0.36	0.04904
+GO:0034968	histone lysine methylation	21	2	0.36	0.04904
+GO:0030100	regulation of endocytosis	21	2	0.36	0.04904
+GO:0007435	salivary gland morphogenesis	21	2	0.36	0.04904
+GO:0022612	gland morphogenesis	21	2	0.36	0.04904
+GO:0090087	regulation of peptide transport	21	2	0.36	0.04904
+GO:0051173	positive regulation of nitrogen compound...	238	8	4.06	0.04937
+GO:0009891	positive regulation of biosynthetic proc...	156	6	2.66	0.04962

@@ -1,39 +1,28 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0042811	pheromone biosynthetic process	4	2	0.02	0.00013
-GO:0001523	retinoid metabolic process	6	2	0.03	0.00031
-GO:0031644	regulation of neurological system proces...	6	2	0.03	0.00031
-GO:0034308	primary alcohol metabolic process	9	2	0.04	0.00074
-GO:0032787	monocarboxylic acid metabolic process	115	4	0.54	0.00181
-GO:0034754	cellular hormone metabolic process	16	2	0.07	0.00242
-GO:0008299	isoprenoid biosynthetic process	17	2	0.08	0.00273
-GO:0006721	terpenoid metabolic process	8	3	0.04	0.00861
-GO:0031063	regulation of histone deacetylation	3	1	0.01	0.01394
-GO:0035067	negative regulation of histone acetylati...	3	1	0.01	0.01394
-GO:0019233	sensory perception of pain	3	1	0.01	0.01394
-GO:0007110	meiosis I cytokinesis	3	1	0.01	0.01394
-GO:0042447	hormone catabolic process	3	1	0.01	0.01394
-GO:0045572	positive regulation of imaginal disc gro...	3	1	0.01	0.01394
-GO:0009744	response to sucrose	3	1	0.01	0.01394
-GO:0000915	actomyosin contractile ring assembly	4	1	0.02	0.01855
-GO:0006941	striated muscle contraction	4	1	0.02	0.01855
-GO:0015800	acidic amino acid transport	4	1	0.02	0.01855
-GO:0015740	C4-dicarboxylate transport	4	1	0.02	0.01855
-GO:0031058	positive regulation of histone modificat...	5	1	0.02	0.02313
-GO:0000212	meiotic spindle organization	5	1	0.02	0.02313
-GO:0009084	glutamine family amino acid biosynthetic...	5	1	0.02	0.02313
-GO:0007112	male meiosis cytokinesis	6	1	0.03	0.02769
-GO:0060294	cilium movement involved in cell motilit...	6	1	0.03	0.02769
-GO:0040018	positive regulation of multicellular org...	7	1	0.03	0.03224
-GO:0008277	regulation of G protein-coupled receptor...	7	1	0.03	0.03224
-GO:0045048	protein insertion into ER membrane	7	1	0.03	0.03224
-GO:1902653	secondary alcohol biosynthetic process	8	1	0.04	0.03676
-GO:0006937	regulation of muscle contraction	8	1	0.04	0.03676
-GO:0006614	SRP-dependent cotranslational protein ta...	8	1	0.04	0.03676
-GO:0006541	glutamine metabolic process	9	1	0.04	0.04126
-GO:0070328	triglyceride homeostasis	9	1	0.04	0.04126
-GO:0045793	positive regulation of cell size	9	1	0.04	0.04126
-GO:0008345	larval locomotory behavior	9	1	0.04	0.04126
-GO:0050673	epithelial cell proliferation	9	1	0.04	0.04126
-GO:0006144	purine nucleobase metabolic process	10	1	0.05	0.04575
-GO:0016126	sterol biosynthetic process	10	1	0.05	0.04575
-GO:0046889	positive regulation of lipid biosyntheti...	10	1	0.05	0.04575
+GO:0007173	epidermal growth factor receptor signali...	13	2	0.08	0.0029
+GO:0008038	neuron recognition	15	2	0.09	0.0038
+GO:0006643	membrane lipid metabolic process	60	3	0.38	0.0061
+GO:0019915	lipid storage	20	2	0.13	0.0068
+GO:0006820	anion transport	123	4	0.77	0.0070
+GO:0072330	monocarboxylic acid biosynthetic process	67	3	0.42	0.0083
+GO:0032989	cellular component morphogenesis	147	4	0.92	0.0129
+GO:0006631	fatty acid metabolic process	79	3	0.5	0.0130
+GO:0008610	lipid biosynthetic process	151	4	0.95	0.0142
+GO:0015711	organic anion transport	82	3	0.52	0.0144
+GO:0034765	regulation of ion transmembrane transpor...	30	2	0.19	0.0150
+GO:0034762	regulation of transmembrane transport	31	2	0.19	0.0159
+GO:0040011	locomotion	162	4	1.02	0.0179
+GO:0006665	sphingolipid metabolic process	37	2	0.23	0.0223
+GO:0071804	cellular potassium ion transport	39	2	0.25	0.0246
+GO:0071805	potassium ion transmembrane transport	39	2	0.25	0.0246
+GO:0055085	transmembrane transport	473	7	2.97	0.0254
+GO:0006091	generation of precursor metabolites and ...	105	3	0.66	0.0276
+GO:0043269	regulation of ion transport	43	2	0.27	0.0295
+GO:0042493	response to drug	43	2	0.27	0.0295
+GO:0006813	potassium ion transport	46	2	0.29	0.0334
+GO:0006633	fatty acid biosynthetic process	46	2	0.29	0.0334
+GO:0044262	cellular carbohydrate metabolic process	47	2	0.3	0.0348
+GO:0061061	muscle structure development	51	2	0.32	0.0404
+GO:0000902	cell morphogenesis	127	3	0.8	0.0447
+GO:1901575	organic substance catabolic process	421	6	2.65	0.0450
+GO:0016042	lipid catabolic process	56	2	0.35	0.0479

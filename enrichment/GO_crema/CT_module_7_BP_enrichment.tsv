@@ -1,7 +1,28 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0022900	electron transport chain	50	2	0.04	0.00047
-GO:0035096	larval midgut cell programmed cell death	3	1	0	0.00215
-GO:0016239	positive regulation of macroautophagy	4	1	0	0.00287
-GO:0006119	oxidative phosphorylation	30	1	0.02	0.02138
-GO:0007033	vacuole organization	36	1	0.03	0.02561
-GO:0006796	phosphate-containing compound metabolic ...	835	3	0.6	0.04298
+GO:0000077	DNA damage checkpoint	10	1	0.01	0.0090
+GO:0007093	mitotic cell cycle checkpoint	10	1	0.01	0.0090
+GO:0000082	G1/S transition of mitotic cell cycle	11	1	0.01	0.0098
+GO:0007405	neuroblast proliferation	11	1	0.01	0.0098
+GO:0006270	DNA replication initiation	11	1	0.01	0.0098
+GO:0006275	regulation of DNA replication	12	1	0.01	0.0107
+GO:0007293	germarium-derived egg chamber formation	14	1	0.01	0.0125
+GO:1901991	negative regulation of mitotic cell cycl...	15	1	0.01	0.0134
+GO:0007140	male meiotic nuclear division	15	1	0.01	0.0134
+GO:1901988	negative regulation of cell cycle phase ...	15	1	0.01	0.0134
+GO:0010948	negative regulation of cell cycle proces...	17	1	0.02	0.0152
+GO:0001700	embryonic development via the syncytial ...	24	1	0.02	0.0214
+GO:1901990	regulation of mitotic cell cycle phase t...	26	1	0.02	0.0231
+GO:1901987	regulation of cell cycle phase transitio...	26	1	0.02	0.0231
+GO:0140013	meiotic nuclear division	27	1	0.02	0.0240
+GO:0051052	regulation of DNA metabolic process	29	1	0.03	0.0258
+GO:0032880	regulation of protein localization	33	1	0.03	0.0293
+GO:1903046	meiotic cell cycle process	34	1	0.03	0.0302
+GO:0009792	embryo development ending in birth or eg...	41	1	0.04	0.0363
+GO:0030707	ovarian follicle cell development	42	1	0.04	0.0372
+GO:0002065	columnar/cuboidal epithelial cell differ...	46	1	0.04	0.0407
+GO:0002066	columnar/cuboidal epithelial cell develo...	46	1	0.04	0.0407
+GO:0051321	meiotic cell cycle	47	1	0.04	0.0415
+GO:0045165	cell fate commitment	49	1	0.04	0.0433
+GO:0010564	regulation of cell cycle process	50	1	0.04	0.0441
+GO:0007283	spermatogenesis	52	1	0.05	0.0459
+GO:0002064	epithelial cell development	53	1	0.05	0.0467

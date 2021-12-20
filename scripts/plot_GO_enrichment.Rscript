@@ -95,5 +95,5 @@ p <- plot_grid(p_real,p_lgnd1,p_lgnd2, ncol = 3, align = "v", axis = "t", rel_wi
 
 ############################################################################################ SAVE ##########################################
 
-ggsave(args[7],p,width = 10, height = 10)
+ggsave(args[7],p,width = 12, height = 12)
 

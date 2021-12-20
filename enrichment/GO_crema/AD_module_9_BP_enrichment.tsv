@@ -1,28 +1,22 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:1902600	proton transmembrane transport	30	7	1.21	0.00014
-GO:0006222	UMP biosynthetic process	6	3	0.24	0.00117
-GO:0000972	transcription-dependent tethering of RNA...	3	2	0.12	0.00470
-GO:0070593	dendrite self-avoidance	3	2	0.12	0.00470
-GO:0006814	sodium ion transport	41	6	1.65	0.00546
-GO:0015914	phospholipid transport	11	3	0.44	0.00833
-GO:0009311	oligosaccharide metabolic process	8	3	0.32	0.00909
-GO:0034394	protein localization to cell surface	4	2	0.16	0.00916
-GO:0003014	renal system process	4	2	0.16	0.00916
-GO:0035148	tube formation	12	3	0.48	0.01078
-GO:0006820	anion transport	123	15	4.95	0.01178
-GO:0008643	carbohydrate transport	35	5	1.41	0.01219
-GO:0030149	sphingolipid catabolic process	5	2	0.2	0.01486
-GO:0090224	regulation of spindle organization	5	2	0.2	0.01486
-GO:1901617	organic hydroxy compound biosynthetic pr...	40	5	1.61	0.02101
-GO:0006207	'de novo' pyrimidine nucleobase biosynth...	6	2	0.24	0.02170
-GO:0051647	nucleus localization	6	2	0.24	0.02170
-GO:0006891	intra-Golgi vesicle-mediated transport	7	2	0.28	0.02958
-GO:0051495	positive regulation of cytoskeleton orga...	31	4	1.25	0.03419
-GO:1902115	regulation of organelle assembly	8	2	0.32	0.03841
-GO:0019991	septate junction assembly	8	2	0.32	0.03841
-GO:0030866	cortical actin cytoskeleton organization	12	3	0.48	0.04776
-GO:0051302	regulation of cell division	12	3	0.48	0.04776
-GO:0051180	vitamin transport	9	2	0.36	0.04810
-GO:1902358	sulfate transmembrane transport	9	2	0.36	0.04810
-GO:0007314	oocyte anterior/posterior axis specifica...	9	2	0.36	0.04810
-GO:1903829	positive regulation of cellular protein ...	9	2	0.36	0.04810
+GO:0008033	tRNA processing	47	6	1.49	0.0034
+GO:0034660	ncRNA metabolic process	202	17	6.42	0.0083
+GO:0031047	gene silencing by RNA	26	4	0.83	0.0085
+GO:0042158	lipoprotein biosynthetic process	28	4	0.89	0.0111
+GO:0006497	protein lipidation	28	4	0.89	0.0111
+GO:0035303	regulation of dephosphorylation	16	3	0.51	0.0130
+GO:0032543	mitochondrial translation	17	3	0.54	0.0155
+GO:0042157	lipoprotein metabolic process	32	4	1.02	0.0177
+GO:0043412	macromolecule modification	863	38	27.44	0.0199
+GO:0140053	mitochondrial gene expression	34	4	1.08	0.0218
+GO:1903046	meiotic cell cycle process	34	4	1.08	0.0218
+GO:0006807	nitrogen compound metabolic process	3165	123	100.63	0.0228
+GO:0043170	macromolecule metabolic process	2903	117	92.3	0.0228
+GO:0008152	metabolic process	3792	140	120.56	0.0262
+GO:0006260	DNA replication	92	7	2.93	0.0264
+GO:0043039	tRNA aminoacylation	38	4	1.21	0.0314
+GO:0007059	chromosome segregation	56	5	1.78	0.0317
+GO:0043038	amino acid activation	39	4	1.24	0.0342
+GO:0035304	regulation of protein dephosphorylation	10	2	0.32	0.0382
+GO:0006399	tRNA metabolic process	89	10	2.83	0.0399
+GO:0090305	nucleic acid phosphodiester bond hydroly...	217	12	6.9	0.0428

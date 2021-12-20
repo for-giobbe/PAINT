@@ -1,35 +1,12 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0043388	positive regulation of DNA binding	3	1	0.02	0.019
-GO:0030202	heparin metabolic process	3	1	0.02	0.019
-GO:0009396	folic acid-containing compound biosynthe...	3	1	0.02	0.019
-GO:0034063	stress granule assembly	3	1	0.02	0.019
-GO:0031053	primary miRNA processing	3	1	0.02	0.019
-GO:0034085	establishment of sister chromatid cohesi...	3	1	0.02	0.019
-GO:0030727	germarium-derived female germ-line cyst ...	3	1	0.02	0.019
-GO:0032775	DNA methylation on adenine	3	1	0.02	0.019
-GO:0071786	endoplasmic reticulum tubular network or...	3	1	0.02	0.019
-GO:0035999	tetrahydrofolate interconversion	3	1	0.02	0.019
-GO:0007294	germarium-derived oocyte fate determinat...	3	1	0.02	0.019
-GO:0090502	RNA phosphodiester bond hydrolysis, endo...	37	2	0.23	0.022
-GO:0032007	negative regulation of TOR signaling	4	1	0.03	0.025
-GO:0019563	glycerol catabolic process	4	1	0.03	0.025
-GO:0034502	protein localization to chromosome	4	1	0.03	0.025
-GO:0000290	deadenylation-dependent decapping of nuc...	4	1	0.03	0.025
-GO:0035076	ecdysone receptor-mediated signaling pat...	5	1	0.03	0.031
-GO:0006094	gluconeogenesis	5	1	0.03	0.031
-GO:0030513	positive regulation of BMP signaling pat...	5	1	0.03	0.031
-GO:0097352	autophagosome maturation	5	1	0.03	0.031
-GO:0007064	mitotic sister chromatid cohesion	5	1	0.03	0.031
-GO:0090263	positive regulation of canonical Wnt sig...	6	1	0.04	0.037
-GO:0035065	regulation of histone acetylation	6	1	0.04	0.037
-GO:0035176	social behavior	6	1	0.04	0.037
-GO:1901071	glucosamine-containing compound metaboli...	6	1	0.04	0.037
-GO:0015012	heparan sulfate proteoglycan biosyntheti...	6	1	0.04	0.037
-GO:0006072	glycerol-3-phosphate metabolic process	7	1	0.04	0.043
-GO:0006024	glycosaminoglycan biosynthetic process	7	1	0.04	0.043
-GO:0019236	response to pheromone	7	1	0.04	0.043
-GO:0035070	salivary gland histolysis	8	1	0.05	0.049
-GO:0045880	positive regulation of smoothened signal...	8	1	0.05	0.049
-GO:0016319	mushroom body development	8	1	0.05	0.049
-GO:0106074	aminoacyl-tRNA metabolism involved in tr...	8	1	0.05	0.049
-GO:0030488	tRNA methylation	8	1	0.05	0.049
+GO:0042752	regulation of circadian rhythm	11	1	0.01	0.0079
+GO:0007224	smoothened signaling pathway	19	1	0.01	0.0136
+GO:0000724	double-strand break repair via homologou...	21	1	0.02	0.0150
+GO:0000725	recombinational repair	21	1	0.02	0.0150
+GO:0006302	double-strand break repair	29	1	0.02	0.0207
+GO:0009416	response to light stimulus	32	1	0.02	0.0228
+GO:0060271	cilium assembly	39	1	0.03	0.0277
+GO:0009314	response to radiation	42	1	0.03	0.0298
+GO:0044782	cilium organization	46	1	0.03	0.0327
+GO:0120031	plasma membrane bounded cell projection ...	51	1	0.04	0.0362
+GO:0030031	cell projection assembly	54	1	0.04	0.0382

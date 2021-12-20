@@ -1,31 +1,20 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0018209	peptidyl-serine modification	20	2	0.18	0.014
-GO:0035331	negative regulation of hippo signaling	3	1	0.03	0.027
-GO:0090278	negative regulation of peptide hormone s...	3	1	0.03	0.027
-GO:0014013	regulation of gliogenesis	3	1	0.03	0.027
-GO:0046464	acylglycerol catabolic process	3	1	0.03	0.027
-GO:1904263	positive regulation of TORC1 signaling	3	1	0.03	0.027
-GO:0071034	CUT catabolic process	3	1	0.03	0.027
-GO:0071035	nuclear polyadenylation-dependent rRNA c...	3	1	0.03	0.027
-GO:0071038	nuclear polyadenylation-dependent tRNA c...	3	1	0.03	0.027
-GO:0015693	magnesium ion transport	4	1	0.04	0.035
-GO:0048680	positive regulation of axon regeneration	4	1	0.04	0.035
-GO:0046622	positive regulation of organ growth	4	1	0.04	0.035
-GO:0043928	exonucleolytic nuclear-transcribed mRNA ...	4	1	0.04	0.035
-GO:0090209	negative regulation of triglyceride meta...	4	1	0.04	0.035
-GO:0010884	positive regulation of lipid storage	4	1	0.04	0.035
-GO:0018023	peptidyl-lysine trimethylation	4	1	0.04	0.035
-GO:0071033	nuclear retention of pre-mRNA at the sit...	4	1	0.04	0.035
-GO:0006310	DNA recombination	205	5	1.84	0.036
-GO:0007186	G protein-coupled receptor signaling pat...	145	4	1.3	0.040
-GO:0048010	vascular endothelial growth factor recep...	5	1	0.04	0.044
-GO:0043666	regulation of phosphoprotein phosphatase...	5	1	0.04	0.044
-GO:0001525	angiogenesis	5	1	0.04	0.044
-GO:0043491	protein kinase B signaling	5	1	0.04	0.044
-GO:0034475	U4 snRNA 3'-end processing	5	1	0.04	0.044
-GO:0016255	attachment of GPI anchor to protein	5	1	0.04	0.044
-GO:0034427	nuclear-transcribed mRNA catabolic proce...	5	1	0.04	0.044
-GO:0018202	peptidyl-histidine modification	5	1	0.04	0.044
-GO:0090481	pyrimidine nucleotide-sugar transmembran...	5	1	0.04	0.044
-GO:0071051	polyadenylation-dependent snoRNA 3'-end ...	5	1	0.04	0.044
-GO:0050805	negative regulation of synaptic transmis...	5	1	0.04	0.044
+GO:1904064	positive regulation of cation transmembr...	10	2	0.06	0.0014
+GO:2001257	regulation of cation channel activity	11	2	0.06	0.0017
+GO:0032456	endocytic recycling	11	2	0.06	0.0017
+GO:0032414	positive regulation of ion transmembrane...	11	2	0.06	0.0017
+GO:0001578	microtubule bundle formation	13	2	0.07	0.0024
+GO:0010959	regulation of metal ion transport	17	2	0.1	0.0041
+GO:1901264	carbohydrate derivative transport	19	2	0.11	0.0052
+GO:0042742	defense response to bacterium	24	2	0.14	0.0082
+GO:0007167	enzyme linked receptor protein signaling...	82	3	0.47	0.0112
+GO:0032196	transposition	111	3	0.64	0.0252
+GO:0099177	regulation of trans-synaptic signaling	44	2	0.25	0.0261
+GO:0050804	modulation of chemical synaptic transmis...	44	2	0.25	0.0261
+GO:0070925	organelle assembly	116	3	0.67	0.0282
+GO:0070838	divalent metal ion transport	49	2	0.28	0.0318
+GO:0072511	divalent inorganic cation transport	49	2	0.28	0.0318
+GO:0006820	anion transport	123	3	0.71	0.0328
+GO:0007169	transmembrane receptor protein tyrosine ...	54	2	0.31	0.0381
+GO:0048193	Golgi vesicle transport	54	2	0.31	0.0381
+GO:0071705	nitrogen compound transport	347	5	1.99	0.0459

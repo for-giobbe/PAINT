@@ -1,15 +1,17 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0006269	DNA replication, synthesis of RNA primer	3	1	0.01	0.0091
-GO:0006020	inositol metabolic process	3	1	0.01	0.0091
-GO:0006882	cellular zinc ion homeostasis	3	1	0.01	0.0091
-GO:0010312	detoxification of zinc ion	4	1	0.01	0.0122
-GO:0046855	inositol phosphate dephosphorylation	5	1	0.02	0.0152
-GO:0006829	zinc ion transport	6	1	0.02	0.0182
-GO:0009253	peptidoglycan catabolic process	6	1	0.02	0.0182
-GO:0006508	proteolysis	576	7	1.76	0.0187
-GO:0043248	proteasome assembly	8	1	0.02	0.0242
-GO:1902358	sulfate transmembrane transport	9	1	0.03	0.0272
-GO:0046854	phosphatidylinositol phosphorylation	10	1	0.03	0.0301
-GO:0046173	polyol biosynthetic process	12	1	0.04	0.0361
-GO:0034637	cellular carbohydrate biosynthetic proce...	15	1	0.05	0.0449
-GO:0030433	ubiquitin-dependent ERAD pathway	16	1	0.05	0.0478
+GO:0018212	peptidyl-tyrosine modification	58	2	0.07	0.0022
+GO:0000278	mitotic cell cycle	119	2	0.15	0.0089
+GO:0052652	cyclic purine nucleotide metabolic proce...	11	1	0.01	0.0138
+GO:0046068	cGMP metabolic process	12	1	0.02	0.0150
+GO:0045931	positive regulation of mitotic cell cycl...	14	1	0.02	0.0175
+GO:0009190	cyclic nucleotide biosynthetic process	17	1	0.02	0.0212
+GO:0008284	positive regulation of cell proliferatio...	17	1	0.02	0.0212
+GO:0016310	phosphorylation	549	3	0.69	0.0247
+GO:0009187	cyclic nucleotide metabolic process	20	1	0.03	0.0249
+GO:0007030	Golgi organization	21	1	0.03	0.0261
+GO:0045787	positive regulation of cell cycle	22	1	0.03	0.0274
+GO:0006333	chromatin assembly or disassembly	28	1	0.04	0.0347
+GO:0008361	regulation of cell size	31	1	0.04	0.0384
+GO:0007166	cell surface receptor signaling pathway	267	2	0.34	0.0410
+GO:0045944	positive regulation of transcription by ...	35	1	0.04	0.0432
+GO:0006468	protein phosphorylation	286	2	0.36	0.0465

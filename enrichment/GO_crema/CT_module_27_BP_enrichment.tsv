@@ -1,44 +1,10 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0034762	regulation of transmembrane transport	31	9	3.18	0.00032
-GO:0071805	potassium ion transmembrane transport	39	12	4	0.00035
-GO:0099504	synaptic vesicle cycle	25	9	2.56	0.00053
-GO:0007059	chromosome segregation	56	14	5.74	0.00129
-GO:0051259	protein complex oligomerization	19	7	1.95	0.00192
-GO:0043269	regulation of ion transport	43	12	4.41	0.00228
-GO:0006468	protein phosphorylation	286	45	29.32	0.00231
-GO:0050806	positive regulation of synaptic transmis...	7	4	0.72	0.00297
-GO:0051588	regulation of neurotransmitter transport	7	4	0.72	0.00297
-GO:0007186	G protein-coupled receptor signaling pat...	145	26	14.86	0.00301
-GO:0060079	excitatory postsynaptic potential	11	5	1.13	0.00304
-GO:0042273	ribosomal large subunit biogenesis	29	10	2.97	0.00361
-GO:0006265	DNA topological change	4	3	0.41	0.00396
-GO:0097104	postsynaptic membrane assembly	4	3	0.41	0.00396
-GO:0097105	presynaptic membrane assembly	4	3	0.41	0.00396
-GO:0099537	trans-synaptic signaling	93	26	9.53	0.00410
-GO:0099643	signal release from synapse	22	9	2.26	0.00509
-GO:0050795	regulation of behavior	9	4	0.92	0.00904
-GO:0030951	establishment or maintenance of microtub...	5	3	0.51	0.00915
-GO:0045132	meiotic chromosome segregation	5	3	0.51	0.00915
-GO:0006836	neurotransmitter transport	38	12	3.9	0.01050
-GO:0006816	calcium ion transport	35	9	3.59	0.01312
-GO:0007204	positive regulation of cytosolic calcium...	10	4	1.03	0.01386
-GO:0008049	male courtship behavior	10	4	1.03	0.01386
-GO:0001505	regulation of neurotransmitter levels	54	14	5.54	0.01550
-GO:1903047	mitotic cell cycle process	87	15	8.92	0.01687
-GO:0098659	inorganic cation import across plasma me...	6	3	0.62	0.01691
-GO:0034220	ion transmembrane transport	215	43	22.04	0.01832
-GO:0006814	sodium ion transport	41	9	4.2	0.02059
-GO:0042254	ribosome biogenesis	129	27	13.22	0.02424
-GO:0006397	mRNA processing	144	24	14.76	0.02542
-GO:2000146	negative regulation of cell motility	7	3	0.72	0.02737
-GO:0070076	histone lysine demethylation	7	3	0.72	0.02737
-GO:0030322	stabilization of membrane potential	7	3	0.72	0.02737
-GO:0015844	monoamine transport	8	4	0.82	0.02919
-GO:0030720	oocyte localization involved in germariu...	3	2	0.31	0.02933
-GO:0036158	outer dynein arm assembly	3	2	0.31	0.02933
-GO:0001682	tRNA 5'-leader removal	3	2	0.31	0.02933
-GO:0048703	embryonic viscerocranium morphogenesis	3	2	0.31	0.02933
-GO:0007173	epidermal growth factor receptor signali...	13	4	1.33	0.03683
-GO:0017156	calcium ion regulated exocytosis	13	4	1.33	0.03683
-GO:0000463	maturation of LSU-rRNA from tricistronic...	8	3	0.82	0.04051
-GO:0016072	rRNA metabolic process	103	18	10.56	0.04382
+GO:2000113	negative regulation of cellular macromol...	110	3	0.41	0.0077
+GO:0010629	negative regulation of gene expression	158	3	0.6	0.0205
+GO:0051172	negative regulation of nitrogen compound...	173	3	0.65	0.0260
+GO:0045892	negative regulation of transcription, DN...	80	2	0.3	0.0359
+GO:0061525	hindgut development	10	1	0.04	0.0371
+GO:0060968	regulation of gene silencing	11	1	0.04	0.0408
+GO:0007389	pattern specification process	89	2	0.34	0.0436
+GO:0048546	digestive tract morphogenesis	12	1	0.05	0.0444
+GO:0009948	anterior/posterior axis specification	13	1	0.05	0.0480

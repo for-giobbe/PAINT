@@ -1,25 +1,218 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0006937	regulation of muscle contraction	8	3	0.2	0.00074
-GO:0044247	cellular polysaccharide catabolic proces...	3	2	0.07	0.00177
-GO:0009251	glucan catabolic process	3	2	0.07	0.00177
-GO:0040034	regulation of development, heterochronic	3	2	0.07	0.00177
-GO:0043562	cellular response to nitrogen levels	4	2	0.1	0.00349
-GO:0000122	negative regulation of transcription by ...	27	4	0.66	0.00396
-GO:0042133	neurotransmitter metabolic process	28	4	0.69	0.00453
-GO:0006417	regulation of translation	49	5	1.21	0.00669
-GO:0046112	nucleobase biosynthetic process	11	3	0.27	0.00834
-GO:0007632	visual behavior	6	2	0.15	0.00844
-GO:0005978	glycogen biosynthetic process	7	2	0.17	0.01163
-GO:0007419	ventral cord development	8	2	0.2	0.01526
-GO:0009968	negative regulation of signal transducti...	83	6	2.04	0.01591
-GO:0048190	wing disc dorsal/ventral pattern formati...	9	2	0.22	0.01931
-GO:0002098	tRNA wobble uridine modification	9	2	0.22	0.01931
-GO:0065004	protein-DNA complex assembly	44	4	1.08	0.02223
-GO:0000077	DNA damage checkpoint	10	2	0.25	0.02375
-GO:0060047	heart contraction	10	2	0.25	0.02375
-GO:0051321	meiotic cell cycle	47	4	1.16	0.02761
-GO:0035601	protein deacylation	16	3	0.39	0.02822
-GO:0007304	chorion-containing eggshell formation	11	2	0.27	0.02856
-GO:0060255	regulation of macromolecule metabolic pr...	824	34	20.27	0.02965
-GO:0008652	cellular amino acid biosynthetic process	29	3	0.71	0.03336
-GO:0007602	phototransduction	13	2	0.32	0.03923
+GO:0006355	regulation of transcription, DNA-templat...	525	74	50.55	0.00033
+GO:1901606	alpha-amino acid catabolic process	23	8	2.21	0.00093
+GO:0007424	open tracheal system development	52	13	5.01	0.00099
+GO:0008582	regulation of synaptic growth at neuromu...	24	8	2.31	0.00128
+GO:0007015	actin filament organization	67	15	6.45	0.00142
+GO:0030097	hemopoiesis	26	8	2.5	0.00228
+GO:0009855	determination of bilateral symmetry	11	5	1.06	0.00229
+GO:0051146	striated muscle cell differentiation	21	7	2.02	0.00258
+GO:0031325	positive regulation of cellular metaboli...	258	39	24.84	0.00265
+GO:0033500	carbohydrate homeostasis	16	6	1.54	0.00267
+GO:0060562	epithelial tube morphogenesis	82	20	7.9	0.00321
+GO:0040013	negative regulation of locomotion	12	5	1.16	0.00362
+GO:0007560	imaginal disc morphogenesis	60	13	5.78	0.00392
+GO:0071310	cellular response to organic substance	121	21	11.65	0.00524
+GO:0051241	negative regulation of multicellular org...	42	10	4.04	0.00543
+GO:0031324	negative regulation of cellular metaboli...	186	29	17.91	0.00581
+GO:0023061	signal release	36	9	3.47	0.00584
+GO:0048477	oogenesis	92	17	8.86	0.00607
+GO:0006464	cellular protein modification process	794	109	76.45	0.00616
+GO:1902531	regulation of intracellular signal trans...	100	18	9.63	0.00640
+GO:0050767	regulation of neurogenesis	57	12	5.49	0.00699
+GO:0009725	response to hormone	57	12	5.49	0.00699
+GO:0007548	sex differentiation	19	6	1.83	0.00705
+GO:0048608	reproductive structure development	19	6	1.83	0.00705
+GO:0051336	regulation of hydrolase activity	86	16	8.28	0.00715
+GO:0007431	salivary gland development	25	7	2.41	0.00759
+GO:0022604	regulation of cell morphogenesis	44	10	4.24	0.00768
+GO:0046486	glycerolipid metabolic process	72	14	6.93	0.00777
+GO:0007391	dorsal closure	14	5	1.35	0.00778
+GO:0007166	cell surface receptor signaling pathway	267	38	25.71	0.00832
+GO:0051962	positive regulation of nervous system de...	38	9	3.66	0.00850
+GO:0031329	regulation of cellular catabolic process	66	13	6.35	0.00909
+GO:0001708	cell fate specification	20	6	1.93	0.00927
+GO:0033993	response to lipid	26	7	2.5	0.00955
+GO:0006164	purine nucleotide biosynthetic process	74	14	7.12	0.00992
+GO:0120039	plasma membrane bounded cell projection ...	97	17	9.34	0.01035
+GO:0044093	positive regulation of molecular functio...	97	17	9.34	0.01035
+GO:0048858	cell projection morphogenesis	97	17	9.34	0.01035
+GO:0030182	neuron differentiation	169	26	16.27	0.01039
+GO:0007167	enzyme linked receptor protein signaling...	82	15	7.9	0.01058
+GO:0002065	columnar/cuboidal epithelial cell differ...	46	10	4.43	0.01060
+GO:0002066	columnar/cuboidal epithelial cell develo...	46	10	4.43	0.01060
+GO:0061919	process utilizing autophagic mechanism	60	12	5.78	0.01060
+GO:0006914	autophagy	60	12	5.78	0.01060
+GO:0097659	nucleic acid-templated transcription	588	86	56.61	0.01068
+GO:0048663	neuron fate commitment	15	5	1.44	0.01076
+GO:0001700	embryonic development via the syncytial ...	24	9	2.31	0.01086
+GO:0007423	sensory organ development	90	16	8.67	0.01108
+GO:1903530	regulation of secretion by cell	33	8	3.18	0.01112
+GO:0051046	regulation of secretion	33	8	3.18	0.01112
+GO:0051965	positive regulation of synapse assembly	10	4	0.96	0.01113
+GO:0046854	phosphatidylinositol phosphorylation	10	4	0.96	0.01113
+GO:0046834	lipid phosphorylation	10	4	0.96	0.01113
+GO:1904398	positive regulation of neuromuscular jun...	10	4	0.96	0.01113
+GO:0051961	negative regulation of nervous system de...	27	7	2.6	0.01184
+GO:0019751	polyol metabolic process	27	7	2.6	0.01184
+GO:0009952	anterior/posterior pattern specification	27	7	2.6	0.01184
+GO:0048880	sensory system development	76	14	7.32	0.01251
+GO:0032990	cell part morphogenesis	99	17	9.53	0.01263
+GO:0051174	regulation of phosphorus metabolic proce...	99	17	9.53	0.01263
+GO:0019220	regulation of phosphate metabolic proces...	99	17	9.53	0.01263
+GO:0065009	regulation of molecular function	303	47	29.17	0.01269
+GO:0048667	cell morphogenesis involved in neuron di...	92	16	8.86	0.01360
+GO:0002009	morphogenesis of an epithelium	109	26	10.49	0.01363
+GO:0051172	negative regulation of nitrogen compound...	173	26	16.66	0.01389
+GO:0000904	cell morphogenesis involved in different...	100	17	9.63	0.01391
+GO:0043085	positive regulation of catalytic activit...	77	14	7.41	0.01398
+GO:0048666	neuron development	132	21	12.71	0.01407
+GO:0009152	purine ribonucleotide biosynthetic proce...	70	13	6.74	0.01479
+GO:0006468	protein phosphorylation	286	39	27.54	0.01496
+GO:0007517	muscle organ development	22	6	2.12	0.01512
+GO:0051130	positive regulation of cellular componen...	101	17	9.72	0.01528
+GO:0031175	neuron projection development	109	18	10.49	0.01542
+GO:0061564	axon development	78	14	7.51	0.01559
+GO:0032774	RNA biosynthetic process	599	87	57.67	0.01569
+GO:0031123	RNA 3'-end processing	35	8	3.37	0.01590
+GO:0016575	histone deacetylation	11	4	1.06	0.01618
+GO:0042706	eye photoreceptor cell fate commitment	11	4	1.06	0.01618
+GO:0001752	compound eye photoreceptor fate commitme...	11	4	1.06	0.01618
+GO:0034620	cellular response to unfolded protein	11	4	1.06	0.01618
+GO:0007476	imaginal disc-derived wing morphogenesis	42	9	4.04	0.01646
+GO:0030707	ovarian follicle cell development	42	9	4.04	0.01646
+GO:0009168	purine ribonucleoside monophosphate bios...	42	9	4.04	0.01646
+GO:0009127	purine nucleoside monophosphate biosynth...	42	9	4.04	0.01646
+GO:0035120	post-embryonic appendage morphogenesis	49	10	4.72	0.01646
+GO:0006351	transcription, DNA-templated	584	85	56.23	0.01660
+GO:0016569	covalent chromatin modification	87	15	8.38	0.01786
+GO:0016570	histone modification	87	15	8.38	0.01786
+GO:0048646	anatomical structure formation involved ...	103	17	9.92	0.01835
+GO:0051253	negative regulation of RNA metabolic pro...	103	17	9.92	0.01835
+GO:0045934	negative regulation of nucleobase-contai...	111	18	10.69	0.01837
+GO:0009167	purine ribonucleoside monophosphate meta...	72	13	6.93	0.01851
+GO:0009126	purine nucleoside monophosphate metaboli...	72	13	6.93	0.01851
+GO:0009790	embryo development	110	21	10.59	0.01881
+GO:0032268	regulation of cellular protein metabolic...	203	29	19.55	0.01882
+GO:0010506	regulation of autophagy	23	6	2.21	0.01883
+GO:0007229	integrin-mediated signaling pathway	23	6	2.21	0.01883
+GO:0009156	ribonucleoside monophosphate biosyntheti...	50	10	4.81	0.01887
+GO:0046488	phosphatidylinositol metabolic process	43	9	4.14	0.01910
+GO:0045892	negative regulation of transcription, DN...	80	14	7.7	0.01923
+GO:0050790	regulation of catalytic activity	275	43	26.48	0.01925
+GO:0051173	positive regulation of nitrogen compound...	238	33	22.92	0.01926
+GO:1903507	negative regulation of nucleic acid-temp...	96	16	9.24	0.01996
+GO:1902679	negative regulation of RNA biosynthetic ...	96	16	9.24	0.01996
+GO:0048812	neuron projection morphogenesis	96	16	9.24	0.01996
+GO:0022610	biological adhesion	104	17	10.01	0.02005
+GO:0007155	cell adhesion	104	17	10.01	0.02005
+GO:0048522	positive regulation of cellular process	433	64	41.69	0.02040
+GO:0046390	ribose phosphate biosynthetic process	81	14	7.8	0.02127
+GO:0009161	ribonucleoside monophosphate metabolic p...	81	14	7.8	0.02127
+GO:0035114	imaginal disc-derived appendage morphoge...	51	10	4.91	0.02152
+GO:0048749	compound eye development	51	10	4.91	0.02152
+GO:0030258	lipid modification	44	9	4.24	0.02203
+GO:0007472	wing disc morphogenesis	44	9	4.24	0.02203
+GO:0046552	photoreceptor cell fate commitment	12	4	1.16	0.02245
+GO:0042593	glucose homeostasis	12	4	1.16	0.02245
+GO:0046173	polyol biosynthetic process	12	4	1.16	0.02245
+GO:0060538	skeletal muscle organ development	12	4	1.16	0.02245
+GO:0051017	actin filament bundle assembly	12	4	1.16	0.02245
+GO:0016236	macroautophagy	24	6	2.31	0.02313
+GO:0050803	regulation of synapse structure or activ...	42	13	4.04	0.02313
+GO:0071495	cellular response to endogenous stimulus	82	14	7.9	0.02347
+GO:0010605	negative regulation of macromolecule met...	233	32	22.43	0.02375
+GO:0000902	cell morphogenesis	127	24	12.23	0.02376
+GO:0009408	response to heat	18	5	1.73	0.02413
+GO:0007369	gastrulation	18	5	1.73	0.02413
+GO:0009124	nucleoside monophosphate biosynthetic pr...	52	10	5.01	0.02443
+GO:0010604	positive regulation of macromolecule met...	243	33	23.4	0.02537
+GO:0006836	neurotransmitter transport	38	8	3.66	0.02561
+GO:0031399	regulation of protein modification proce...	99	16	9.53	0.02605
+GO:0007411	axon guidance	60	11	5.78	0.02614
+GO:0048736	appendage development	60	11	5.78	0.02614
+GO:0051246	regulation of protein metabolic process	218	30	20.99	0.02732
+GO:0006366	transcription by RNA polymerase II	280	37	26.96	0.02737
+GO:0048737	imaginal disc-derived appendage developm...	53	10	5.1	0.02762
+GO:0002064	epithelial cell development	53	10	5.1	0.02762
+GO:0031327	negative regulation of cellular biosynth...	116	18	11.17	0.02767
+GO:0010557	positive regulation of macromolecule bio...	141	21	13.58	0.02783
+GO:0048639	positive regulation of developmental gro...	25	6	2.41	0.02803
+GO:0014070	response to organic cyclic compound	25	6	2.41	0.02803
+GO:0048598	embryonic morphogenesis	53	13	5.1	0.02854
+GO:0032870	cellular response to hormone stimulus	46	9	4.43	0.02885
+GO:0097485	neuron projection guidance	61	11	5.87	0.02923
+GO:0031331	positive regulation of cellular cataboli...	39	8	3.75	0.02960
+GO:0009890	negative regulation of biosynthetic proc...	117	18	11.26	0.02990
+GO:0061572	actin filament bundle organization	13	4	1.25	0.03002
+GO:0007526	larval somatic muscle development	13	4	1.25	0.03002
+GO:0006476	protein deacetylation	13	4	1.25	0.03002
+GO:0006626	protein targeting to mitochondrion	13	4	1.25	0.03002
+GO:0009072	aromatic amino acid family metabolic pro...	13	4	1.25	0.03002
+GO:0008360	regulation of cell shape	13	4	1.25	0.03002
+GO:0006470	protein dephosphorylation	77	13	7.41	0.03086
+GO:0031328	positive regulation of cellular biosynth...	151	22	14.54	0.03094
+GO:0035107	appendage morphogenesis	54	10	5.2	0.03110
+GO:0007169	transmembrane receptor protein tyrosine ...	54	10	5.2	0.03110
+GO:0009123	nucleoside monophosphate metabolic proce...	85	14	8.18	0.03110
+GO:0017144	drug metabolic process	143	21	13.77	0.03194
+GO:0045664	regulation of neuron differentiation	47	9	4.53	0.03276
+GO:0010558	negative regulation of macromolecule bio...	110	17	10.59	0.03291
+GO:2000113	negative regulation of cellular macromol...	110	17	10.59	0.03291
+GO:0032989	cellular component morphogenesis	147	26	14.15	0.03319
+GO:0110053	regulation of actin filament organizatio...	40	8	3.85	0.03400
+GO:1901361	organic cyclic compound catabolic proces...	111	17	10.69	0.03554
+GO:0006935	chemotaxis	63	11	6.07	0.03619
+GO:0051338	regulation of transferase activity	63	11	6.07	0.03619
+GO:0001654	eye development	71	12	6.84	0.03691
+GO:0043549	regulation of kinase activity	48	9	4.62	0.03702
+GO:0032956	regulation of actin cytoskeleton organiz...	48	9	4.62	0.03702
+GO:0051093	negative regulation of developmental pro...	48	9	4.62	0.03702
+GO:0009260	ribonucleotide biosynthetic process	79	13	7.61	0.03718
+GO:0035152	regulation of tube architecture, open tr...	20	5	1.93	0.03721
+GO:0048640	negative regulation of developmental gro...	20	5	1.93	0.03721
+GO:0001736	establishment of planar polarity	20	5	1.93	0.03721
+GO:0050807	regulation of synapse organization	38	12	3.66	0.03760
+GO:0008154	actin polymerization or depolymerization	41	8	3.95	0.03883
+GO:0006368	transcription elongation from RNA polyme...	14	4	1.35	0.03892
+GO:0031124	mRNA 3'-end processing	14	4	1.35	0.03892
+GO:0035214	eye-antennal disc development	14	4	1.35	0.03892
+GO:0035218	leg disc development	14	4	1.35	0.03892
+GO:2000027	regulation of animal organ morphogenesis	14	4	1.35	0.03892
+GO:0042147	retrograde transport, endosome to Golgi	14	4	1.35	0.03892
+GO:0032879	regulation of localization	172	24	16.56	0.03927
+GO:0001751	compound eye photoreceptor cell differen...	27	6	2.6	0.03979
+GO:0030030	cell projection organization	181	25	17.43	0.03994
+GO:0009116	nucleoside metabolic process	34	7	3.27	0.03996
+GO:0009150	purine ribonucleotide metabolic process	121	18	11.65	0.04013
+GO:0150063	visual system development	72	12	6.93	0.04059
+GO:0042325	regulation of phosphorylation	80	13	7.7	0.04066
+GO:0003002	regionalization	80	13	7.7	0.04066
+GO:0032970	regulation of actin filament-based proce...	49	9	4.72	0.04164
+GO:0009891	positive regulation of biosynthetic proc...	156	22	15.02	0.04253
+GO:0048729	tissue morphogenesis	115	26	11.07	0.04254
+GO:0006650	glycerophospholipid metabolic process	57	10	5.49	0.04334
+GO:1901700	response to oxygen-containing compound	89	14	8.57	0.04389
+GO:1903508	positive regulation of nucleic acid-temp...	114	17	10.98	0.04434
+GO:1902680	positive regulation of RNA biosynthetic ...	114	17	10.98	0.04434
+GO:0051094	positive regulation of developmental pro...	66	15	6.35	0.04477
+GO:0030718	germ-line stem cell population maintenan...	21	5	2.02	0.04511
+GO:0007435	salivary gland morphogenesis	21	5	2.02	0.04511
+GO:0022612	gland morphogenesis	21	5	2.02	0.04511
+GO:0007164	establishment of tissue polarity	21	5	2.02	0.04511
+GO:0051056	regulation of small GTPase mediated sign...	21	5	2.02	0.04511
+GO:0048565	digestive tract development	21	5	2.02	0.04511
+GO:0006886	intracellular protein transport	166	23	15.98	0.04601
+GO:0010769	regulation of cell morphogenesis involve...	28	6	2.7	0.04669
+GO:0009967	positive regulation of signal transducti...	90	14	8.67	0.04759
+GO:0010629	negative regulation of gene expression	158	22	15.21	0.04797
+GO:0007417	central nervous system development	58	10	5.58	0.04807
+GO:0007409	axonogenesis	74	12	7.12	0.04871
+GO:0055001	muscle cell development	15	4	1.44	0.04916
+GO:0055002	striated muscle cell development	15	4	1.44	0.04916
+GO:0009066	aspartate family amino acid metabolic pr...	15	4	1.44	0.04916
+GO:0072655	establishment of protein localization to...	15	4	1.44	0.04916
+GO:0006986	response to unfolded protein	15	4	1.44	0.04916
+GO:0120035	regulation of plasma membrane bounded ce...	43	8	4.14	0.04981
+GO:0009896	positive regulation of catabolic process	43	8	4.14	0.04981
+GO:0031344	regulation of cell projection organizati...	43	8	4.14	0.04981

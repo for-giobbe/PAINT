@@ -1,24 +1,112 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0006796	phosphate-containing compound metabolic ...	835	28	13.94	0.00067
-GO:0043666	regulation of phosphoprotein phosphatase...	5	2	0.08	0.00267
-GO:0018345	protein palmitoylation	6	2	0.1	0.00396
-GO:0007006	mitochondrial membrane organization	7	2	0.12	0.00548
-GO:0006313	transposition, DNA-mediated	109	6	1.82	0.00940
-GO:0007031	peroxisome organization	10	2	0.17	0.01138
-GO:0006839	mitochondrial transport	31	3	0.52	0.01445
-GO:0033108	mitochondrial respiratory chain complex ...	14	2	0.23	0.02203
-GO:0072655	establishment of protein localization to...	15	2	0.25	0.02514
-GO:0006605	protein targeting	41	3	0.68	0.03041
-GO:0032543	mitochondrial translation	17	2	0.28	0.03187
-GO:0007286	spermatid development	20	2	0.33	0.04312
-GO:0048016	inositol phosphate-mediated signaling	3	1	0.05	0.04927
-GO:1902476	chloride transmembrane transport	3	1	0.05	0.04927
-GO:0035001	dorsal trunk growth, open tracheal syste...	3	1	0.05	0.04927
-GO:0070525	tRNA threonylcarbamoyladenosine metaboli...	3	1	0.05	0.04927
-GO:0018231	peptidyl-S-diacylglycerol-L-cysteine bio...	3	1	0.05	0.04927
-GO:0043461	proton-transporting ATP synthase complex...	3	1	0.05	0.04927
-GO:0001682	tRNA 5'-leader removal	3	1	0.05	0.04927
-GO:0006122	mitochondrial electron transport, ubiqui...	3	1	0.05	0.04927
-GO:0070681	glutaminyl-tRNAGln biosynthesis via tran...	3	1	0.05	0.04927
-GO:0017062	respiratory chain complex III assembly	3	1	0.05	0.04927
-GO:0008637	apoptotic mitochondrial changes	3	1	0.05	0.04927
+GO:0071427	mRNA-containing ribonucleoprotein comple...	12	6	0.89	0.00010
+GO:0042273	ribosomal large subunit biogenesis	29	11	2.16	0.00018
+GO:0051028	mRNA transport	25	8	1.86	0.00031
+GO:0006281	DNA repair	149	27	11.08	0.00037
+GO:0045893	positive regulation of transcription, DN...	94	17	6.99	0.00047
+GO:1903047	mitotic cell cycle process	87	16	6.47	0.00057
+GO:0051276	chromosome organization	279	53	20.75	0.00070
+GO:0051298	centrosome duplication	11	5	0.82	0.00070
+GO:0043044	ATP-dependent chromatin remodeling	11	5	0.82	0.00070
+GO:0016070	RNA metabolic process	999	154	74.29	0.00112
+GO:0001510	RNA methylation	30	8	2.23	0.00119
+GO:0042274	ribosomal small subunit biogenesis	24	7	1.78	0.00136
+GO:0000184	nuclear-transcribed mRNA catabolic proce...	13	5	0.97	0.00173
+GO:0010629	negative regulation of gene expression	158	26	11.75	0.00197
+GO:0009987	cellular process	4526	385	336.58	0.00220
+GO:0045596	negative regulation of cell differentiat...	26	7	1.93	0.00227
+GO:0071426	ribonucleoprotein complex export from nu...	21	10	1.56	0.00268
+GO:0032508	DNA duplex unwinding	49	10	3.64	0.00274
+GO:0010467	gene expression	1192	179	88.65	0.00290
+GO:0034968	histone lysine methylation	21	6	1.56	0.00338
+GO:0000724	double-strand break repair via homologou...	21	6	1.56	0.00338
+GO:0006974	cellular response to DNA damage stimulus	171	33	12.72	0.00357
+GO:0043484	regulation of RNA splicing	28	7	2.08	0.00359
+GO:0007049	cell cycle	275	48	20.45	0.00396
+GO:0051053	negative regulation of DNA metabolic pro...	10	4	0.74	0.00441
+GO:0006893	Golgi to plasma membrane transport	10	4	0.74	0.00441
+GO:0009950	dorsal/ventral axis specification	10	4	0.74	0.00441
+GO:0051301	cell division	115	17	8.55	0.00459
+GO:0044085	cellular component biogenesis	529	80	39.34	0.00581
+GO:0000466	maturation of 5.8S rRNA from tricistroni...	11	4	0.82	0.00653
+GO:0000470	maturation of LSU-rRNA	11	4	0.82	0.00653
+GO:0031056	regulation of histone modification	11	4	0.82	0.00653
+GO:0051656	establishment of organelle localization	55	10	4.09	0.00654
+GO:0045786	negative regulation of cell cycle	31	7	2.31	0.00657
+GO:1902275	regulation of chromatin organization	17	7	1.26	0.00674
+GO:0016072	rRNA metabolic process	103	27	7.66	0.00717
+GO:0051726	regulation of cell cycle	106	19	7.88	0.00795
+GO:0051172	negative regulation of nitrogen compound...	173	25	12.87	0.00814
+GO:2001251	negative regulation of chromosome organi...	18	5	1.34	0.00845
+GO:0006417	regulation of translation	49	9	3.64	0.00906
+GO:0010564	regulation of cell cycle process	50	9	3.72	0.01035
+GO:0006351	transcription, DNA-templated	584	66	43.43	0.01126
+GO:0008380	RNA splicing	115	29	8.55	0.01245
+GO:0006414	translational elongation	35	7	2.6	0.01299
+GO:0097659	nucleic acid-templated transcription	588	66	43.73	0.01303
+GO:0000075	cell cycle checkpoint	20	5	1.49	0.01352
+GO:0022607	cellular component assembly	414	43	30.79	0.01402
+GO:0010558	negative regulation of macromolecule bio...	110	15	8.18	0.01546
+GO:2000113	negative regulation of cellular macromol...	110	15	8.18	0.01546
+GO:0030490	maturation of SSU-rRNA	14	4	1.04	0.01657
+GO:0006260	DNA replication	92	13	6.84	0.01774
+GO:0051169	nuclear transport	59	17	4.39	0.01815
+GO:0006913	nucleocytoplasmic transport	59	17	4.39	0.01815
+GO:0031324	negative regulation of cellular metaboli...	186	25	13.83	0.01857
+GO:0032774	RNA biosynthetic process	599	66	44.55	0.01910
+GO:0051253	negative regulation of RNA metabolic pro...	103	14	7.66	0.01945
+GO:0006468	protein phosphorylation	286	31	21.27	0.02021
+GO:0061982	meiosis I cell cycle process	22	5	1.64	0.02032
+GO:0031400	negative regulation of protein modificat...	30	6	2.23	0.02096
+GO:0007059	chromosome segregation	56	9	4.16	0.02111
+GO:0006887	exocytosis	56	9	4.16	0.02111
+GO:1901991	negative regulation of mitotic cell cycl...	15	4	1.12	0.02130
+GO:1901988	negative regulation of cell cycle phase ...	15	4	1.12	0.02130
+GO:0006367	transcription initiation from RNA polyme...	15	4	1.12	0.02130
+GO:0006986	response to unfolded protein	15	4	1.12	0.02130
+GO:0000280	nuclear division	75	11	5.58	0.02175
+GO:0006325	chromatin organization	173	32	12.87	0.02218
+GO:0022618	ribonucleoprotein complex assembly	66	10	4.91	0.02277
+GO:0031327	negative regulation of cellular biosynth...	116	15	8.63	0.02410
+GO:0000070	mitotic sister chromatid segregation	31	6	2.31	0.02441
+GO:0009890	negative regulation of biosynthetic proc...	117	15	8.7	0.02583
+GO:0098813	nuclear chromosome segregation	40	7	2.97	0.02618
+GO:0006473	protein acetylation	49	8	3.64	0.02653
+GO:0006612	protein targeting to membrane	16	4	1.19	0.02677
+GO:0034622	cellular protein-containing complex asse...	215	24	15.99	0.02820
+GO:0043933	protein-containing complex subunit organ...	283	30	21.05	0.02902
+GO:0034504	protein localization to nucleus	33	6	2.45	0.03242
+GO:0044772	mitotic cell cycle phase transition	33	6	2.45	0.03242
+GO:0006606	protein import into nucleus	17	4	1.26	0.03301
+GO:0010948	negative regulation of cell cycle proces...	17	4	1.26	0.03301
+GO:0006354	DNA-templated transcription, elongation	17	4	1.26	0.03301
+GO:0000079	regulation of cyclin-dependent protein s...	10	3	0.74	0.03305
+GO:1904029	regulation of cyclin-dependent protein k...	10	3	0.74	0.03305
+GO:0045892	negative regulation of transcription, DN...	80	11	5.95	0.03341
+GO:0045934	negative regulation of nucleobase-contai...	111	17	8.25	0.03355
+GO:0051252	regulation of RNA metabolic process	565	66	42.02	0.03377
+GO:0010563	negative regulation of phosphorus metabo...	25	5	1.86	0.03414
+GO:0045936	negative regulation of phosphate metabol...	25	5	1.86	0.03414
+GO:0033365	protein localization to organelle	101	13	7.51	0.03546
+GO:0071826	ribonucleoprotein complex subunit organi...	71	10	5.28	0.03588
+GO:0048285	organelle fission	81	11	6.02	0.03619
+GO:0006352	DNA-templated transcription, initiation	34	6	2.53	0.03699
+GO:0022402	cell cycle process	149	28	11.08	0.03773
+GO:0065003	protein-containing complex assembly	244	26	18.15	0.03819
+GO:0016043	cellular component organization	1039	119	77.27	0.03830
+GO:0006338	chromatin remodeling	29	9	2.16	0.03876
+GO:0072594	establishment of protein localization to...	72	10	5.35	0.03903
+GO:1901990	regulation of mitotic cell cycle phase t...	26	5	1.93	0.03978
+GO:1901987	regulation of cell cycle phase transitio...	26	5	1.93	0.03978
+GO:0006996	organelle organization	723	95	53.77	0.04154
+GO:0140014	mitotic nuclear division	44	7	3.27	0.04176
+GO:0006270	DNA replication initiation	11	3	0.82	0.04300
+GO:0060968	regulation of gene silencing	11	3	0.82	0.04300
+GO:0007405	neuroblast proliferation	11	3	0.82	0.04300
+GO:0140029	exocytic process	11	3	0.82	0.04300
+GO:0000910	cytokinesis	27	5	2.01	0.04596
+GO:0000819	sister chromatid segregation	36	6	2.68	0.04732
+GO:0044770	cell cycle phase transition	36	6	2.68	0.04732
+GO:0010721	negative regulation of cell development	19	4	1.41	0.04783
+GO:0045930	negative regulation of mitotic cell cycl...	19	4	1.41	0.04783
+GO:0001933	negative regulation of protein phosphory...	19	4	1.41	0.04783
