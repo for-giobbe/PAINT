@@ -14,7 +14,26 @@ if (length(args)<7) {
 #args[4]  treshold      # 0.8
 #args[5]  db            # org.At.tair.db
 #args[6]  color
-#args[7]  out name
+#args[7]  out
+#args[8]  priority
+
+goterms <- args[1]
+method <- args[2]
+ontology <- args[3]
+treshold <- args[4]
+db <- args[5]
+color <- args[6]
+out <- args[7]
+priority <- args[8]
+
+#goterms <- "/Users/Giobbe/Desktop/GO_vicia/vicia_DN_BP_red_enrichment.tsv"
+#method <- "Rel"
+#ontology <- "BP"
+#treshold <- "0.6"
+#db <- "org.At.tair.db"
+#color <- "lightblue"
+#out <- "/Users/Giobbe/Desktop/test.pdf"
+#priority <- ""
 
 ############################################################################################ requirements #######
 
@@ -29,18 +48,32 @@ library(ggrepel)
 
 ############################################################################################ PLOT ###############
 
-go_analysis <- read.delim(args[1], sep="\t", header=T)
+go_analysis <- read.delim(goterms, sep="\t", header=T)
 simMatrix <- calculateSimMatrix(go_analysis$GO.ID,
-                                orgdb=args[5],
-                                ont=args[3],
-                                method=args[2])
+                                orgdb=db,
+                                ont=ontology,
+                                method=method)
 
 scores <- setNames(-log10(go_analysis$test), go_analysis$GO.ID)
 
 reducedTerms <- reduceSimMatrix(simMatrix,
                                 scores,
-                                threshold=args[4],
-                                orgdb=args[5])
+                                threshold=treshold,
+                                orgdb=db)
+
+############################################################################################ priority ###########
+
+priority <- strsplit(priority, ",")
+priority <- unlist(priority)
+
+if (length(priority) > 0){
+  for (i in 1:length(priority)) { 
+    cluster <- reducedTerms[reducedTerms$go==priority[i],2]
+    reducedTerms[reducedTerms$cluster==cluster,3] <- priority[i]
+  }
+}
+
+############################################################################################ continue ###########
 
 x <- cmdscale(as.matrix(as.dist(1 - simMatrix)), eig = TRUE, k = 2)
 
@@ -54,18 +87,23 @@ df$number[df$original %!in% reducedTerms$parent] <- ""
 
 df <- df[order(as.numeric(df$number)),]
 
-p_real <- ggplot(df, aes(x = V1, y = V2, color = score, fill = score)) + 
+df$size <- go_analysis$Significant
+
+############################################################################################ PLOT ###############
+
+p_real <- ggplot(df, aes(x = V1, y = V2, color = size, fill = size)) + 
   geom_point(aes(size = score),pch=21) +
   scale_y_continuous(name = "") + scale_x_continuous(name = "") +
   theme(aspect.ratio=1) +
   theme(panel.background = element_blank(), panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),panel.border = element_rect(colour = "lightgray", fill=NA, size=1)) +
+        panel.grid.minor = element_blank(),panel.border = element_rect(colour = "gray90", fill=NA, size=1)) +
   xlab("semantic space x") + ylab("semantic space y") +
-  scale_colour_gradientn(colours = c("white", args[6])) +
-  scale_fill_gradientn(colours=alpha(c("lightgray", args[6]), 0.2)) +
-  scale_size(range = c(0, 80)) + 
-  geom_text_repel(aes(label = number), colour="black", segment.color = NA,size = 3, fontface = "bold", force=0.001, force_pull=100,
+  scale_colour_gradientn(colours=alpha(c("gray95", color), 1)) +
+  scale_fill_gradientn(colours=alpha(c("gray95", color), 0.2)) +
+  scale_size(range = c(0, 60)) + 
+  geom_text_repel(aes(label = number), colour="black", segment.color = NA,size = 4, fontface = "bold", force=0.001, force_pull=75,
                   max.overlaps = Inf) + 
+  #xlim(-1, 1) + ylim(-1, 1) +
   theme(legend.direction = "vertical", legend.box = "horizontal") +
   theme(legend.position = "none") + 
   theme(axis.text=element_text(size=8), axis.title=element_text(size=8)) +
@@ -75,8 +113,8 @@ p_real <- ggplot(df, aes(x = V1, y = V2, color = score, fill = score)) +
 p_lgnd1 <- ggplot(df, aes(x = V1, y = V2, color = score)) + 
   geom_point(aes()) +
   theme(panel.background = element_blank(), panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),panel.border = element_rect(colour = "lightgray", fill=NA, size=1)) +
-  scale_colour_gradientn(colours = c("lightgray", args[6])) +
+        panel.grid.minor = element_blank(),panel.border = element_rect(colour = "gray90", fill=NA, size=1)) +
+  scale_colour_gradientn(colours = c("gray90", color)) +
   theme(legend.direction = "vertical", legend.box = "vertical")  +
   theme(legend.key.height=unit(3,"cm"))
 
@@ -93,7 +131,8 @@ lgnd2 <- unique(df[,c(7,5)])
 p <- plot_grid(p_real,p_lgnd1,p_lgnd2, ncol = 3, align = "v", axis = "t", rel_widths = c(1,0.1,0.7),
                 scale=c(1,1,0.7), hjust=0.3)
 
+p
+
 ############################################################################################ SAVE ##########################################
 
-ggsave(args[7],p,width = 12, height = 12)
-
+ggsave(out,p,width = 12, height = 12)

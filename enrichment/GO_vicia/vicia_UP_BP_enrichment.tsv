@@ -1,46 +1,26 @@
 GO.ID	Term	Annotated	Significant	Expected	test
+GO:0009069	serine family amino acid metabolic proce...	61	5	0.47	0.00010
 GO:0009071	serine family amino acid catabolic proce...	14	3	0.11	0.00015
+GO:0022900	electron transport chain	156	7	1.2	0.00020
 GO:0016126	sterol biosynthetic process	16	3	0.12	0.00023
-GO:0005975	carbohydrate metabolic process	942	19	7.23	0.00115
+GO:0010035	response to inorganic substance	368	10	2.82	0.00053
+GO:0015979	photosynthesis	195	7	1.5	0.00076
 GO:0046686	response to cadmium ion	104	5	0.8	0.00123
+GO:0009416	response to light stimulus	346	9	2.66	0.00138
+GO:0009314	response to radiation	362	9	2.78	0.00188
 GO:0019252	starch biosynthetic process	34	3	0.26	0.00221
+GO:0005976	polysaccharide metabolic process	304	8	2.33	0.00237
+GO:0009640	photomorphogenesis	35	3	0.27	0.00241
 GO:1990066	energy quenching	10	2	0.08	0.00252
+GO:0006082	organic acid metabolic process	895	15	6.87	0.00345
 GO:0009773	photosynthetic electron transport in pho...	12	2	0.09	0.00366
-GO:0022900	electron transport chain	156	7	1.2	0.00468
-GO:0006112	energy reserve metabolic process	24	5	0.18	0.00475
+GO:0044281	small molecule metabolic process	1473	21	11.3	0.00380
 GO:0006790	sulfur compound metabolic process	276	7	2.12	0.00538
-GO:0042136	neurotransmitter biosynthetic process	15	2	0.12	0.00574
+GO:0005982	starch metabolic process	47	3	0.36	0.00558
+GO:0006694	steroid biosynthetic process	47	3	0.36	0.00558
 GO:0006544	glycine metabolic process	16	2	0.12	0.00653
 GO:0071241	cellular response to inorganic substance	16	2	0.12	0.00653
-GO:0010038	response to metal ion	160	8	1.23	0.00818
-GO:0090333	regulation of stomatal closure	20	2	0.15	0.01014
-GO:0015979	photosynthesis	195	7	1.5	0.01252
-GO:0044283	small molecule biosynthetic process	664	11	5.1	0.01301
-GO:0046394	carboxylic acid biosynthetic process	497	9	3.81	0.01425
-GO:0090332	stomatal closure	24	2	0.18	0.01443
-GO:0016053	organic acid biosynthetic process	499	9	3.83	0.01459
-GO:0006575	cellular modified amino acid metabolic p...	124	4	0.95	0.01526
-GO:0006749	glutathione metabolic process	68	3	0.52	0.01537
-GO:0045454	cell redox homeostasis	26	2	0.2	0.01683
-GO:0000413	protein peptidyl-prolyl isomerization	73	3	0.56	0.01856
-GO:0016052	carbohydrate catabolic process	202	5	1.55	0.01971
-GO:0006563	L-serine metabolic process	30	2	0.23	0.02208
-GO:0044281	small molecule metabolic process	1473	21	11.3	0.02238
-GO:0090378	seed trichome elongation	31	2	0.24	0.02348
-GO:0043648	dicarboxylic acid metabolic process	81	3	0.62	0.02437
-GO:0010027	thylakoid membrane organization	35	2	0.27	0.02946
-GO:0006534	cysteine metabolic process	35	2	0.27	0.02946
-GO:0098869	cellular oxidant detoxification	225	5	1.73	0.02963
-GO:0018208	peptidyl-proline modification	88	3	0.68	0.03016
-GO:0006082	organic acid metabolic process	895	15	6.87	0.03079
-GO:0009853	photorespiration	36	2	0.28	0.03104
-GO:0009668	plastid membrane organization	37	2	0.28	0.03265
-GO:1990748	cellular detoxification	238	5	1.83	0.03642
-GO:0097237	cellular response to toxic substance	240	5	1.84	0.03755
-GO:0009813	flavonoid biosynthetic process	99	3	0.76	0.04061
-GO:0009069	serine family amino acid metabolic proce...	61	5	0.47	0.04103
-GO:0006004	fucose metabolic process	42	2	0.32	0.04119
-GO:0080167	response to karrikin	43	2	0.33	0.04298
-GO:0098754	detoxification	252	5	1.93	0.04473
-GO:0009812	flavonoid metabolic process	104	3	0.8	0.04588
-GO:0000272	polysaccharide catabolic process	106	3	0.81	0.04808
+GO:0008610	lipid biosynthetic process	447	9	3.43	0.00746
+GO:0016125	sterol metabolic process	53	3	0.41	0.00780
+GO:0043436	oxoacid metabolic process	893	14	6.85	0.00836
+GO:1901606	alpha-amino acid catabolic process	57	3	0.44	0.00953
