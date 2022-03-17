@@ -38,8 +38,6 @@ This is WIP:
 
 - [**part 5**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) - GO/KO annotation and enrichment
 
-- [**part 6**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) - phylostratigrapy and evolutionary rates
+- [**part 6**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md) - addendum 1 - metagenomics
 
-- [**part 7**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md) - addendum 1 - metagenomics
-
-- [**part 8**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_8.md) - addendum 2 - proteomics
+- [**part 7**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_8.md) - addendum 2 - proteomics
