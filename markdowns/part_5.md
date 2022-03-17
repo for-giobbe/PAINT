@@ -37,16 +37,19 @@ The the GO enrichment analysisis is performed using the following commands:
 
 ```
 Rscript scripts/GO_enrichment.Rscript enrichment/GO_vicia/GO_vicia_geneUniverse 
-abundances/vicia/vicia_deseq_gene/ BP 10 elim fisher 0.05 enrichment/GO_vicia/
+abundances/vicia/vicia_deseq_gene/ BP 10 classic fisher 0.01 enrichment/GO_vicia/
 ```
-
-
-and
 
 
 ```
 Rscript scripts/GO_enrichment.Rscript enrichment/GO_crema/GO_crema_geneUniverse 
-abundances/vicia/crema_WGCNA_gene/ BP 10 weight fisher 0.05 enrichment/GO_crema/
+abundances/vicia/crema_WGCNA_gene/ BP 10 classic fisher 0.01 enrichment/GO_crema/
+```
+
+
+```
+Rscript scripts/GO_enrichment.Rscript enrichment/GO_crema/GO_crema_geneUniverse 
+abundances/crema/crema_deseq2_gene/ BP 15 weight fisher 0.01 enrichment/GO_crema/
 ```
 
 
@@ -63,8 +66,8 @@ The Rscript has several positional arguments:
 
 
 For this project, a hierachy-aware algoryhm (weight) was used to find enriched BP terms 
-and nodes are required to have at least 3 genes associated to be 
-included. Terms are considered to be enriched only if p < 0.05
+and nodes are required to have at least 10 genes associated to be 
+included. Terms are considered to be enriched only if p < 0.01
 in Fisher's Exact Test.
 
 
@@ -100,7 +103,7 @@ The Rscript positional arguments:
 5. the database
 6. color
 7. output files
-
+8. GO terms to prioritize in cluster
 
 in brief:
 
@@ -115,11 +118,11 @@ For vicia:
 
 ```
 Rscript scripts/plot_GO_enrichment.Rscript enrichment/GO_vicia/vicia_UP_BP_red_enrichment.tsv 
-Rel BP 0.7 org.At.tair.db orange images/vicia_UP.jpg
+Rel BP 0.6 org.At.tair.db orange images/vicia_UP.jpg GO:0015979
 ```
 ```
 Rscript scripts/plot_GO_enrichment.Rscript enrichment/GO_vicia/vicia_DN_BP_red_enrichment.tsv 
-Rel BP 0.7 org.At.tair.db lightblue images/vicia_DN.jpg
+Rel BP 0.6 org.At.tair.db lightblue images/vicia_DN.jpg GO:0098542,GO:0009873
 ```
 
 Here are the results for vicia (upreg in orange dnreg inlightblue):
@@ -150,6 +153,25 @@ just a couple of interesting modules are reported here:
 
 
 The full list of clustering of trait-associated modules can be found [here]().
+
+
+---
+
+
+For crema DE, due to the many possible contrasts which can be considered - yet not all biologically meaningfull - 
+we plotted the GSEA results in a different way. 
+
+
+First we generate a table containing all enriched GOterms across all comparisons and their p value:
+```
+
+```
+
+
+Then we plot the table as a heatmap: 
+```
+
+```
 
 
 ---
@@ -199,6 +221,9 @@ BlastKOALA assigned XXX and YYY KO-terms respectively to crema and vicia.
 
 
 Subsequent enrichment analysis legeraged [KEGGREST](https://www.bioconductor.org/packages/release/bioc/html/KEGGREST.html)
+
+
+grep -f abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst enrichment/KO_vicia/vicia_family-eukaryotes_blastKOALA.lst | grep K
 
 
 ---

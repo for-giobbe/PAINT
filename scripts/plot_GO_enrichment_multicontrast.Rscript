@@ -1,0 +1,37 @@
+############################################################################################ parameters #######
+
+#!/usr/bin/env Rscript
+args = commandArgs(trailingOnly=TRUE)
+
+# test if there is at least one argument: if not, return an error
+if (length(args)<1) {
+  stop("At least one argument must be supplied (input file).n", call.=FALSE)
+}
+
+#args[1]  goterms 
+goterms <- args[1]
+
+############################################################################################ requirements #######
+
+library(tidyr)
+library(ggplot2)
+
+data <- read.csv("Desktop/test copy.csv", header = T)
+
+############################################################################################ PLOT ###############
+
+
+long_data <- data %>% gather(comparison, pval, AB_CT_UP:AD_AD_DN)
+
+long_data$pval  <- ifelse(long_data$comparison == "AB_CT_DN", -long_data$pval, long_data$pval)
+long_data$pval  <- ifelse(long_data$comparison == "AB_AD_DN", -long_data$pval, long_data$pval)
+long_data$pval  <- ifelse(long_data$comparison == "AC_CT_DN", -long_data$pval, long_data$pval)
+long_data$pval  <- ifelse(long_data$comparison == "AC_AD_DN", -long_data$pval, long_data$pval)
+long_data$pval  <- ifelse(long_data$comparison == "AD_CT_DN", -long_data$pval, long_data$pval)
+long_data$pval  <- ifelse(long_data$comparison == "AD_AD_DN", -long_data$pval, long_data$pval)
+
+ggplot(long_data, aes(comparison, description, fill= pval)) + 
+  geom_tile(colour="white", size=0.1) +
+  scale_fill_gradient2(low="lightblue", mid="white", high="orange", na.value="grey97") +
+  theme_minimal() + coord_fixed() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
