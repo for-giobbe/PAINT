@@ -14,7 +14,7 @@ This repository contains all the code used to study the molecular groundplan of 
 Most of the code was generated for RNA-seq of the ant _Crematogaster scutellaris_ and the plant _Vicia faba_.
 
 
-Additionaly, metagenomics of leaf lamina and and proteomics of extra-floral nectar have been performedfor the plant.
+Additionaly, metagenomics of leaf lamina and and proteomics of extra-floral nectar have been performed.
 
 
 In here _Vicia faba_ will be reverenced as **vicia** and _Crematogaster scutellaris_ as **crema**.
