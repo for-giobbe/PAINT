@@ -1,0 +1,46 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0019827	stem cell population maintenance	72	11	2.84	0.00010
+GO:0048749	compound eye development	298	35	11.75	0.00012
+GO:0003002	regionalization	357	34	14.08	0.00015
+GO:0007411	axon guidance	232	23	9.15	0.00028
+GO:0007475	apposition of dorsal and ventral imagina...	16	5	0.63	0.00028
+GO:0048584	positive regulation of response to stimu...	334	30	13.17	0.00030
+GO:0046843	dorsal appendage formation	36	7	1.42	0.00043
+GO:0007517	muscle organ development	87	11	3.43	0.00057
+GO:0042051	compound eye photoreceptor development	77	10	3.04	0.00082
+GO:0042659	regulation of cell fate specification	30	6	1.18	0.00095
+GO:0048813	dendrite morphogenesis	123	13	4.85	0.00106
+GO:0031532	actin cytoskeleton reorganization	21	5	0.83	0.00111
+GO:0046580	negative regulation of Ras protein signa...	21	5	0.83	0.00111
+GO:0042127	regulation of cell proliferation	184	16	7.26	0.00120
+GO:0043506	regulation of JUN kinase activity	13	4	0.51	0.00128
+GO:0061572	actin filament bundle organization	32	6	1.26	0.00136
+GO:0051493	regulation of cytoskeleton organization	125	14	4.93	0.00181
+GO:0042060	wound healing	58	8	2.29	0.00182
+GO:0010004	gastrulation involving germ band extensi...	25	5	0.99	0.00255
+GO:0007419	ventral cord development	36	6	1.42	0.00256
+GO:0001666	response to hypoxia	50	7	1.97	0.00321
+GO:0007298	border follicle cell migration	102	11	4.02	0.00368
+GO:0035147	branch fusion, open tracheal system	17	4	0.67	0.00375
+GO:0007426	tracheal outgrowth, open tracheal system	17	4	0.67	0.00375
+GO:0040003	chitin-based cuticle development	65	8	2.56	0.00398
+GO:0031589	cell-substrate adhesion	28	5	1.1	0.00429
+GO:0031098	stress-activated protein kinase signalin...	75	10	2.96	0.00445
+GO:0009966	regulation of signal transduction	604	56	23.82	0.00506
+GO:0032147	activation of protein kinase activity	42	6	1.66	0.00565
+GO:1905954	positive regulation of lipid localizatio...	10	3	0.39	0.00592
+GO:0032368	regulation of lipid transport	10	3	0.39	0.00592
+GO:0035152	regulation of tube architecture, open tr...	70	8	2.76	0.00598
+GO:0001752	compound eye photoreceptor fate commitme...	43	6	1.7	0.00636
+GO:0008344	adult locomotory behavior	71	8	2.8	0.00652
+GO:0045807	positive regulation of endocytosis	31	5	1.22	0.00673
+GO:0007166	cell surface receptor signaling pathway	594	53	23.42	0.00726
+GO:0007482	haltere development	11	3	0.43	0.00791
+GO:0007479	leg disc proximal/distal pattern formati...	11	3	0.43	0.00791
+GO:0090288	negative regulation of cellular response...	21	4	0.83	0.00833
+GO:0007379	segment specification	21	4	0.83	0.00833
+GO:0032388	positive regulation of intracellular tra...	21	4	0.83	0.00833
+GO:0050953	sensory perception of light stimulus	33	5	1.3	0.00882
+GO:0035222	wing disc pattern formation	60	7	2.37	0.00888
+GO:0032102	negative regulation of response to exter...	22	4	0.87	0.00987
+GO:0002805	regulation of antimicrobial peptide bios...	22	4	0.87	0.00987

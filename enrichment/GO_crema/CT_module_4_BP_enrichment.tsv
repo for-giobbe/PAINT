@@ -1,0 +1,21 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0140014	mitotic nuclear division	116	12	3.49	0.00025
+GO:0033554	cellular response to stress	507	34	15.26	0.00058
+GO:0032543	mitochondrial translation	38	6	1.14	0.00086
+GO:0034622	cellular protein-containing complex asse...	354	22	10.66	0.00086
+GO:0034660	ncRNA metabolic process	258	26	7.77	0.00091
+GO:0035194	posttranscriptional gene silencing by RN...	41	6	1.23	0.00129
+GO:0072666	establishment of protein localization to...	18	4	0.54	0.00175
+GO:0006396	RNA processing	432	40	13.01	0.00185
+GO:0007034	vacuolar transport	45	6	1.35	0.00212
+GO:0006302	double-strand break repair	64	7	1.93	0.00294
+GO:0006260	DNA replication	113	11	3.4	0.00309
+GO:0009411	response to UV	22	4	0.66	0.00381
+GO:0000956	nuclear-transcribed mRNA catabolic proce...	53	6	1.6	0.00489
+GO:0010669	epithelial structure maintenance	24	4	0.72	0.00529
+GO:0097352	autophagosome maturation	25	4	0.75	0.00615
+GO:0006360	transcription by RNA polymerase I	13	3	0.39	0.00615
+GO:0045451	pole plasm oskar mRNA localization	40	5	1.2	0.00658
+GO:0032509	endosome transport via multivesicular bo...	26	4	0.78	0.00709
+GO:0032508	DNA duplex unwinding	60	6	1.81	0.00897
+GO:0031099	regeneration	25	4	0.75	0.00928

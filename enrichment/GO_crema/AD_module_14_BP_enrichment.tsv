@@ -1,0 +1,20 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0009612	response to mechanical stimulus	37	9	2.15	0.00020
+GO:0044550	secondary metabolite biosynthetic proces...	26	8	1.51	0.00081
+GO:0090407	organophosphate biosynthetic process	223	25	12.95	0.00093
+GO:0019318	hexose metabolic process	46	9	2.67	0.00111
+GO:1901568	fatty acid derivative metabolic process	23	6	1.34	0.00160
+GO:0070328	triglyceride homeostasis	23	6	1.34	0.00160
+GO:0062013	positive regulation of small molecule me...	17	5	0.99	0.00223
+GO:0018208	peptidyl-proline modification	25	6	1.45	0.00255
+GO:1901264	carbohydrate derivative transport	26	6	1.51	0.00315
+GO:0016126	sterol biosynthetic process	19	5	1.1	0.00381
+GO:0045924	regulation of female receptivity	20	5	1.16	0.00484
+GO:0034599	cellular response to oxidative stress	29	6	1.68	0.00561
+GO:0019233	sensory perception of pain	29	6	1.68	0.00561
+GO:0044057	regulation of system process	50	9	2.9	0.00654
+GO:0006839	mitochondrial transport	49	8	2.85	0.00668
+GO:0045834	positive regulation of lipid metabolic p...	14	4	0.81	0.00705
+GO:0000038	very long-chain fatty acid metabolic pro...	14	4	0.81	0.00705
+GO:0030148	sphingolipid biosynthetic process	22	5	1.28	0.00747
+GO:0007619	courtship behavior	68	9	3.95	0.00852

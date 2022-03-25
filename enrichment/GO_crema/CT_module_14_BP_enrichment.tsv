@@ -1,0 +1,5 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0098656	anion transmembrane transport	114	2	0.05	0.00076
+GO:0015711	organic anion transport	131	2	0.06	0.00101
+GO:0035076	ecdysone receptor-mediated signaling pat...	11	1	0	0.00466
+GO:0034219	carbohydrate transmembrane transport	14	1	0.01	0.00593

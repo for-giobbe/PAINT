@@ -140,9 +140,9 @@ To do so we generated two RNA-seq experiments:
 
 **A**  -  never got in contact with vicia
 
-**B**  -  got in contact with vicia only until 24h before experiment
+**B**  -  got in contact with vicia only since 24h before experiment
 
-**C**  -  got in contact with vicia only since 24h before experiment 
+**C**  -  got in contact with vicia only until 24h before experiment 
 
 **D**  -  got in contact with vicia continuously
 

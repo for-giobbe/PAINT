@@ -1,0 +1,10 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0019233	sensory perception of pain	29	5	0.96	0.0024
+GO:0072499	photoreceptor cell axon guidance	30	5	0.99	0.0027
+GO:0051098	regulation of binding	19	4	0.63	0.0031
+GO:0035268	protein mannosylation	10	3	0.33	0.0036
+GO:0007613	memory	95	9	3.14	0.0040
+GO:0007218	neuropeptide signaling pathway	35	5	1.16	0.0055
+GO:0042455	ribonucleoside biosynthetic process	23	4	0.76	0.0063
+GO:0070050	neuron cellular homeostasis	24	4	0.79	0.0074
+GO:1900073	regulation of neuromuscular synaptic tra...	26	4	0.86	0.0098

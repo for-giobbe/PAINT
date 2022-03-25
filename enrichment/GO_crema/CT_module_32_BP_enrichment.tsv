@@ -1,0 +1,4 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0016321	female meiosis chromosome segregation	10	2	0.04	0.00053
+GO:0034728	nucleosome organization	57	6	0.2	0.00327
+GO:0007526	larval somatic muscle development	28	2	0.1	0.00428

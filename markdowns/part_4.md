@@ -99,7 +99,9 @@ run_DE_analysis.pl --matrix crema/RSEM_crema.gene.counts.matrix --samples_file .
 --method DESeq2 --output crema_deseq_gene
 ```
 
+
 Then we can find all gene genes with a LogFC >+1 or LogFC <-1 and an adjusted p value < 0.01, using:  
+
 
 ```
 Rscript scripts/DE_genes.Rscript 0.01 1 
@@ -138,6 +140,27 @@ abundances/crema/crema_deseq2_gene/crema_A_AD_vs_D_AD_UP_genes.lst
 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_D_AD_DN_genes.lst 
 images/crema_A_AD_vs_D_AD_DE.jpg TRUE
 ```
+
+
+And here are the number of DE genes:
+
+
+```
+ wc -l abundances/crema/crema_deseq2_gene/*_genes.lst
+      150 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_B_AD_DN_genes.lst
+      352 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_B_AD_UP_genes.lst
+       81 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_C_AD_DN_genes.lst
+      262 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_C_AD_UP_genes.lst
+      119 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_D_AD_DN_genes.lst
+      174 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_D_AD_UP_genes.lst
+       69 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_B_CT_DN_genes.lst
+      172 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_B_CT_UP_genes.lst
+       50 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_C_CT_DN_genes.lst
+      270 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_C_CT_UP_genes.lst
+       30 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_D_CT_DN_genes.lst
+      192 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_D_CT_UP_genes.lst
+```
+
 
 ---
 

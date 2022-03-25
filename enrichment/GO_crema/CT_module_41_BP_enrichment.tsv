@@ -1,0 +1,17 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0009112	nucleobase metabolic process	29	5	0.66	0.00044
+GO:0019318	hexose metabolic process	46	6	1.05	0.00056
+GO:0008610	lipid biosynthetic process	179	11	4.07	0.00248
+GO:0008652	cellular amino acid biosynthetic process	43	5	0.98	0.00275
+GO:1901605	alpha-amino acid metabolic process	91	9	2.07	0.00296
+GO:1901136	carbohydrate derivative catabolic proces...	41	5	0.93	0.00387
+GO:0008063	Toll signaling pathway	29	4	0.66	0.00394
+GO:0043094	cellular metabolic compound salvage	15	3	0.34	0.00430
+GO:0019359	nicotinamide nucleotide biosynthetic pro...	31	4	0.71	0.00503
+GO:1901565	organonitrogen compound catabolic proces...	386	13	8.78	0.00532
+GO:0009620	response to fungus	33	4	0.75	0.00632
+GO:0009072	aromatic amino acid family metabolic pro...	18	3	0.41	0.00734
+GO:0019991	septate junction assembly	36	4	0.82	0.00863
+GO:0044262	cellular carbohydrate metabolic process	88	7	2	0.00896
+GO:0006665	sphingolipid metabolic process	37	4	0.84	0.00951
+GO:0030203	glycosaminoglycan metabolic process	20	3	0.46	0.00992

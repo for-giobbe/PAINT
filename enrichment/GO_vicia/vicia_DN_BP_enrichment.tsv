@@ -1,53 +1,55 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0010243	response to organonitrogen compound	118	9	1.92	0.00013
+GO:0009725	response to hormone	852	29	13.88	0.00014
 GO:0009873	ethylene-activated signaling pathway	93	8	1.52	0.00014
-GO:0009725	response to hormone	852	29	13.89	0.00014
-GO:0043207	response to external biotic stimulus	410	18	6.68	0.00014
-GO:0051707	response to other organism	410	18	6.68	0.00014
-GO:0009607	response to biotic stimulus	448	19	7.3	0.00014
+GO:0043207	response to external biotic stimulus	411	18	6.7	0.00014
+GO:0051707	response to other organism	411	18	6.7	0.00014
+GO:0009607	response to biotic stimulus	449	19	7.32	0.00014
 GO:0098542	defense response to other organism	305	15	4.97	0.00015
 GO:0009719	response to endogenous stimulus	861	29	14.03	0.00016
 GO:0071369	cellular response to ethylene stimulus	96	8	1.56	0.00017
-GO:0018193	peptidyl-amino acid modification	604	22	9.85	0.00037
-GO:0016310	phosphorylation	2369	59	38.61	0.00041
-GO:0006355	regulation of transcription, DNA-templat...	1471	41	23.98	0.00043
-GO:1903506	regulation of nucleic acid-templated tra...	1471	41	23.98	0.00043
-GO:2001141	regulation of RNA biosynthetic process	1471	41	23.98	0.00043
+GO:0018193	peptidyl-amino acid modification	604	22	9.84	0.00037
+GO:0016310	phosphorylation	2369	59	38.6	0.00041
+GO:0006355	regulation of transcription, DNA-templat...	1471	41	23.97	0.00043
+GO:1903506	regulation of nucleic acid-templated tra...	1471	41	23.97	0.00043
+GO:2001141	regulation of RNA biosynthetic process	1471	41	23.97	0.00043
 GO:0000160	phosphorelay signal transduction system	141	9	2.3	0.00051
 GO:1901700	response to oxygen-containing compound	705	24	11.49	0.00053
 GO:1901698	response to nitrogen compound	143	9	2.33	0.00056
 GO:0009863	salicylic acid mediated signaling pathwa...	24	4	0.39	0.00057
-GO:0042221	response to chemical	1600	43	26.08	0.00066
+GO:0042221	response to chemical	1600	43	26.07	0.00066
 GO:0071446	cellular response to salicylic acid stim...	26	4	0.42	0.00078
-GO:0051252	regulation of RNA metabolic process	1535	41	25.02	0.00102
-GO:0009723	response to ethylene	130	8	2.12	0.00131
-GO:0007166	cell surface receptor signaling pathway	101	7	1.65	0.00131
-GO:0032774	RNA biosynthetic process	1717	44	27.99	0.00150
-GO:0006351	transcription, DNA-templated	1617	42	26.36	0.00151
+GO:0051252	regulation of RNA metabolic process	1535	41	25.01	0.00101
+GO:0002229	defense response to oomycetes	29	4	0.47	0.00119
+GO:0009723	response to ethylene	130	8	2.12	0.00130
+GO:0007166	cell surface receptor signaling pathway	102	7	1.66	0.00139
+GO:0032774	RNA biosynthetic process	1717	44	27.98	0.00150
+GO:0006351	transcription, DNA-templated	1617	42	26.35	0.00150
 GO:0071236	cellular response to antibiotic	31	4	0.51	0.00153
-GO:0097659	nucleic acid-templated transcription	1622	42	26.44	0.00160
+GO:0097659	nucleic acid-templated transcription	1622	42	26.43	0.00160
 GO:0046677	response to antibiotic	107	7	1.74	0.00183
 GO:0009856	pollination	138	8	2.25	0.00191
+GO:0002239	response to oomycetes	33	4	0.54	0.00194
 GO:0044706	multi-multicellular organism process	139	8	2.27	0.00200
-GO:0006796	phosphate-containing compound metabolic ...	3068	69	50.01	0.00209
-GO:0019219	regulation of nucleobase-containing comp...	1600	41	26.08	0.00223
-GO:0009605	response to external stimulus	608	20	9.91	0.00231
+GO:0006796	phosphate-containing compound metabolic ...	3068	69	49.99	0.00207
+GO:0019219	regulation of nucleobase-containing comp...	1600	41	26.07	0.00222
 GO:0009751	response to salicylic acid	57	5	0.93	0.00232
-GO:2000112	regulation of cellular macromolecule bio...	1612	41	26.28	0.00255
-GO:0010556	regulation of macromolecule biosynthetic...	1615	41	26.32	0.00264
-GO:0006793	phosphorus metabolic process	3097	69	50.48	0.00267
-GO:0044267	cellular protein metabolic process	3709	80	60.46	0.00270
-GO:0050832	defense response to fungus	119	7	1.94	0.00335
+GO:0009605	response to external stimulus	609	20	9.92	0.00235
+GO:2000112	regulation of cellular macromolecule bio...	1612	41	26.27	0.00254
+GO:0010556	regulation of macromolecule biosynthetic...	1615	41	26.32	0.00263
+GO:0006793	phosphorus metabolic process	3097	69	50.47	0.00265
+GO:0044267	cellular protein metabolic process	3711	80	60.47	0.00272
+GO:0050832	defense response to fungus	119	7	1.94	0.00334
 GO:0042537	benzene-containing compound metabolic pr...	39	4	0.64	0.00362
-GO:0031326	regulation of cellular biosynthetic proc...	1650	41	26.89	0.00388
-GO:0042742	defense response to bacterium	155	8	2.53	0.00392
-GO:0009889	regulation of biosynthetic process	1668	41	27.19	0.00469
+GO:0031326	regulation of cellular biosynthetic proc...	1650	41	26.89	0.00386
+GO:0042742	defense response to bacterium	155	8	2.53	0.00391
+GO:0009889	regulation of biosynthetic process	1668	41	27.18	0.00467
 GO:0035690	cellular response to drug	43	4	0.7	0.00516
-GO:0019538	protein metabolic process	4270	88	69.6	0.00586
-GO:0010468	regulation of gene expression	1796	43	29.27	0.00601
-GO:0080090	regulation of primary metabolic process	1919	45	31.28	0.00716
-GO:0051171	regulation of nitrogen compound metaboli...	1873	44	30.53	0.00761
-GO:0006970	response to osmotic stress	216	9	3.52	0.00906
+GO:0019538	protein metabolic process	4272	88	69.61	0.00589
+GO:0010468	regulation of gene expression	1796	43	29.27	0.00598
+GO:0080090	regulation of primary metabolic process	1920	45	31.29	0.00719
+GO:0051171	regulation of nitrogen compound metaboli...	1874	44	30.54	0.00764
+GO:0006970	response to osmotic stress	216	9	3.52	0.00905
 GO:0010224	response to UV-B	27	3	0.44	0.00937
-GO:0071495	cellular response to endogenous stimulus	600	18	9.78	0.00954
-GO:0001101	response to acid chemical	512	16	8.35	0.00989
+GO:0071495	cellular response to endogenous stimulus	600	18	9.78	0.00951
+GO:0001101	response to acid chemical	512	16	8.34	0.00987

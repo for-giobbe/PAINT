@@ -1,0 +1,5 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0002164	larval development	125	2	0.09	0.0030
+GO:0071025	RNA surveillance	10	1	0.01	0.0070
+GO:0034661	ncRNA catabolic process	11	1	0.01	0.0078
+GO:0006284	base-excision repair	11	1	0.01	0.0078

@@ -1,0 +1,4 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0018991	oviposition	16	2	0.09	0.0039
+GO:0046785	microtubule polymerization	18	2	0.11	0.0050
+GO:0007188	adenylate cyclase-modulating G protein-c...	22	2	0.13	0.0074

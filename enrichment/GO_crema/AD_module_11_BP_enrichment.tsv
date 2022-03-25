@@ -1,0 +1,10 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0046165	alcohol biosynthetic process	35	3	0.26	0.0021
+GO:0051181	cofactor transport	10	2	0.07	0.0023
+GO:0051123	RNA polymerase II preinitiation complex ...	10	2	0.07	0.0023
+GO:0001522	pseudouridine synthesis	11	2	0.08	0.0028
+GO:0006984	ER-nucleus signaling pathway	12	2	0.09	0.0033
+GO:0045456	ecdysteroid biosynthetic process	15	2	0.11	0.0052
+GO:0043967	histone H4 acetylation	16	2	0.12	0.0060
+GO:0000469	cleavage involved in rRNA processing	18	2	0.13	0.0075
+GO:0016126	sterol biosynthetic process	19	2	0.14	0.0084

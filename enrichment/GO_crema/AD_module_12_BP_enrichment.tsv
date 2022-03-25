@@ -1,0 +1,20 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0000422	autophagy of mitochondrion	23	3	0.24	0.0017
+GO:0010623	programmed cell death involved in cell d...	83	5	0.87	0.0017
+GO:0009267	cellular response to starvation	64	4	0.67	0.0044
+GO:0071577	zinc ion transmembrane transport	10	2	0.1	0.0046
+GO:0003407	neural retina development	10	2	0.1	0.0046
+GO:0055069	zinc ion homeostasis	10	2	0.1	0.0046
+GO:0006637	acyl-CoA metabolic process	33	3	0.35	0.0048
+GO:0002224	toll-like receptor signaling pathway	11	2	0.12	0.0056
+GO:0051865	protein autoubiquitination	11	2	0.12	0.0056
+GO:0072659	protein localization to plasma membrane	35	3	0.37	0.0057
+GO:0007586	digestion	12	2	0.13	0.0067
+GO:0046132	pyrimidine ribonucleoside biosynthetic p...	12	2	0.13	0.0067
+GO:0016239	positive regulation of macroautophagy	12	2	0.13	0.0067
+GO:0006206	pyrimidine nucleobase metabolic process	13	2	0.14	0.0078
+GO:0009220	pyrimidine ribonucleotide biosynthetic p...	13	2	0.14	0.0078
+GO:0048190	wing disc dorsal/ventral pattern formati...	41	3	0.43	0.0088
+GO:0035149	lumen formation, open tracheal system	14	2	0.15	0.0091
+GO:0061912	selective autophagy	14	2	0.15	0.0091
+GO:0032007	negative regulation of TOR signaling	14	2	0.15	0.0091

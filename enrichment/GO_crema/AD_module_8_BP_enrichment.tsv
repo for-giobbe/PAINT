@@ -1,0 +1,9 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006399	tRNA metabolic process	98	11	2.41	0.00016
+GO:0006401	RNA catabolic process	82	9	2.02	0.00087
+GO:0030952	establishment or maintenance of cytoskel...	34	5	0.84	0.00133
+GO:0017148	negative regulation of translation	34	5	0.84	0.00133
+GO:0008582	regulation of synaptic growth at neuromu...	105	8	2.58	0.00418
+GO:0000132	establishment of mitotic spindle orienta...	16	3	0.39	0.00647
+GO:0000959	mitochondrial RNA metabolic process	16	3	0.39	0.00647
+GO:0045214	sarcomere organization	33	4	0.81	0.00829

@@ -1,0 +1,28 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0009451	RNA modification	81	17	6.06	0.00013
+GO:0051656	establishment of organelle localization	151	25	11.29	0.00016
+GO:0022613	ribonucleoprotein complex biogenesis	244	57	18.24	0.00020
+GO:0000070	mitotic sister chromatid segregation	75	17	5.61	0.00022
+GO:0007288	sperm axoneme assembly	10	5	0.75	0.00042
+GO:0006903	vesicle targeting	11	5	0.82	0.00072
+GO:0045448	mitotic cell cycle, embryonic	28	8	2.09	0.00075
+GO:0010501	RNA secondary structure unwinding	23	7	1.72	0.00107
+GO:0006354	DNA-templated transcription, elongation	30	8	2.24	0.00124
+GO:0090501	RNA phosphodiester bond hydrolysis	85	15	6.36	0.00141
+GO:0051726	regulation of cell cycle	249	39	18.62	0.00143
+GO:0000956	nuclear-transcribed mRNA catabolic proce...	53	11	3.96	0.00156
+GO:0032392	DNA geometric change	61	12	4.56	0.00159
+GO:0033260	nuclear DNA replication	13	5	0.97	0.00178
+GO:0046621	negative regulation of organ growth	19	6	1.42	0.00198
+GO:0051053	negative regulation of DNA metabolic pro...	21	6	1.57	0.00349
+GO:0070828	heterochromatin organization	35	8	2.62	0.00358
+GO:0070897	transcription preinitiation complex asse...	15	5	1.12	0.00366
+GO:0006892	post-Golgi vesicle-mediated transport	28	7	2.09	0.00372
+GO:0006997	nucleus organization	51	10	3.81	0.00392
+GO:0000723	telomere maintenance	36	8	2.69	0.00431
+GO:0006367	transcription initiation from RNA polyme...	45	9	3.36	0.00532
+GO:0016325	oocyte microtubule cytoskeleton organiza...	23	6	1.72	0.00571
+GO:0007294	germarium-derived oocyte fate determinat...	23	6	1.72	0.00571
+GO:0016081	synaptic vesicle docking	11	4	0.82	0.00667
+GO:0035317	imaginal disc-derived wing hair organiza...	47	9	3.51	0.00715
+GO:0035825	homologous recombination	25	6	1.87	0.00882

@@ -1,0 +1,17 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0046916	cellular transition metal ion homeostasi...	25	6	0.79	0.00010
+GO:0035148	tube formation	25	5	0.79	0.00096
+GO:0002791	regulation of peptide secretion	26	5	0.82	0.00116
+GO:0003014	renal system process	16	4	0.51	0.00132
+GO:0099131	ATP hydrolysis coupled ion transmembrane...	19	4	0.6	0.00261
+GO:0099132	ATP hydrolysis coupled cation transmembr...	19	4	0.6	0.00261
+GO:0051452	intracellular pH reduction	10	3	0.32	0.00319
+GO:0071577	zinc ion transmembrane transport	10	3	0.32	0.00319
+GO:0051048	negative regulation of secretion	10	3	0.32	0.00319
+GO:0009311	oligosaccharide metabolic process	21	4	0.66	0.00383
+GO:0055072	iron ion homeostasis	21	4	0.66	0.00383
+GO:0051646	mitochondrion localization	22	4	0.7	0.00424
+GO:0015672	monovalent inorganic cation transport	146	13	4.62	0.00448
+GO:0001666	response to hypoxia	50	6	1.58	0.00467
+GO:0019991	septate junction assembly	36	5	1.14	0.00515
+GO:0006855	drug transmembrane transport	24	4	0.76	0.00631

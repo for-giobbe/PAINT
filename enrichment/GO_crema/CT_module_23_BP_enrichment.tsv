@@ -1,0 +1,5 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006030	chitin metabolic process	32	3	0.14	0.00038
+GO:0031057	negative regulation of histone modificat...	12	2	0.05	0.00127
+GO:0006023	aminoglycan biosynthetic process	14	2	0.06	0.00174
+GO:0042073	intraciliary transport	15	2	0.07	0.00201

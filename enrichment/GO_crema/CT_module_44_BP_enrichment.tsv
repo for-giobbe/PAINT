@@ -1,0 +1,27 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007188	adenylate cyclase-modulating G protein-c...	22	5	0.53	0.00014
+GO:0007162	negative regulation of cell adhesion	15	4	0.36	0.00036
+GO:0007268	chemical synaptic transmission	238	20	5.72	0.00087
+GO:0016319	mushroom body development	52	6	1.25	0.00144
+GO:0050975	sensory perception of touch	10	3	0.24	0.00144
+GO:0070593	dendrite self-avoidance	11	3	0.26	0.00195
+GO:0042493	response to drug	142	10	3.41	0.00213
+GO:0007474	imaginal disc-derived wing vein specific...	39	5	0.94	0.00224
+GO:0018108	peptidyl-tyrosine phosphorylation	59	6	1.42	0.00277
+GO:0030534	adult behavior	124	9	2.98	0.00288
+GO:0060079	excitatory postsynaptic potential	26	4	0.62	0.00318
+GO:0006813	potassium ion transport	62	6	1.49	0.00356
+GO:0072553	terminal button organization	27	4	0.65	0.00367
+GO:0006816	calcium ion transport	63	6	1.51	0.00386
+GO:0071456	cellular response to hypoxia	28	4	0.67	0.00420
+GO:0001708	cell fate specification	74	7	1.78	0.00441
+GO:0016348	imaginal disc-derived leg joint morphoge...	15	3	0.36	0.00501
+GO:0035725	sodium ion transmembrane transport	48	5	1.15	0.00561
+GO:0060581	cell fate commitment involved in pattern...	28	4	0.67	0.00599
+GO:0097164	ammonium ion metabolic process	31	4	0.74	0.00610
+GO:0042058	regulation of epidermal growth factor re...	49	5	1.18	0.00613
+GO:0008347	glial cell migration	32	4	0.77	0.00684
+GO:0015696	ammonium transport	17	3	0.41	0.00723
+GO:0046627	negative regulation of insulin receptor ...	17	3	0.41	0.00723
+GO:0045926	negative regulation of growth	96	7	2.31	0.00811
+GO:0008407	chaeta morphogenesis	34	4	0.82	0.00851

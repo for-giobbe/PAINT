@@ -1,0 +1,25 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0051962	positive regulation of nervous system de...	107	10	2.28	0.00010
+GO:0071359	cellular response to dsRNA	13	4	0.28	0.00012
+GO:0070918	production of small RNA involved in gene...	14	4	0.3	0.00017
+GO:0046669	regulation of compound eye retinal cell ...	14	4	0.3	0.00017
+GO:0060828	regulation of canonical Wnt signaling pa...	57	7	1.22	0.00019
+GO:0007442	hindgut morphogenesis	41	6	0.88	0.00021
+GO:1902532	negative regulation of intracellular sig...	101	11	2.16	0.00031
+GO:0007032	endosome organization	17	4	0.36	0.00038
+GO:0045746	negative regulation of Notch signaling p...	38	5	0.81	0.00118
+GO:1903510	mucopolysaccharide metabolic process	11	3	0.23	0.00139
+GO:0051493	regulation of cytoskeleton organization	125	10	2.67	0.00151
+GO:0045466	R7 cell differentiation	48	5	1.02	0.00339
+GO:0061640	cytoskeleton-dependent cytokinesis	85	7	1.81	0.00356
+GO:0045165	cell fate commitment	239	15	5.1	0.00370
+GO:0045732	positive regulation of protein catabolic...	53	5	1.13	0.00425
+GO:0008283	cell proliferation	273	19	5.83	0.00464
+GO:0007298	border follicle cell migration	102	7	2.18	0.00597
+GO:0045475	locomotor rhythm	56	5	1.2	0.00660
+GO:0051302	regulation of cell division	36	4	0.77	0.00691
+GO:0001578	microtubule bundle formation	36	4	0.77	0.00691
+GO:0051098	regulation of binding	19	3	0.41	0.00719
+GO:0098534	centriole assembly	20	3	0.43	0.00832
+GO:0016579	protein deubiquitination	38	4	0.81	0.00838
+GO:0046580	negative regulation of Ras protein signa...	21	3	0.45	0.00956

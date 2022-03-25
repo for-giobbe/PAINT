@@ -1,0 +1,7 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0051259	protein complex oligomerization	41	3	0.36	0.0054
+GO:0000381	regulation of alternative mRNA splicing,...	41	3	0.36	0.0054
+GO:0002790	peptide secretion	57	4	0.5	0.0063
+GO:0016322	neuron remodeling	46	3	0.4	0.0074
+GO:1904263	positive regulation of TORC1 signaling	16	2	0.14	0.0084
+GO:0042594	response to starvation	94	4	0.82	0.0091

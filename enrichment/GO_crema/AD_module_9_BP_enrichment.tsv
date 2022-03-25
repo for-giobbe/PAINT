@@ -1,0 +1,13 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007059	chromosome segregation	128	12	3.65	0.00066
+GO:0006919	activation of cysteine-type endopeptidas...	15	4	0.43	0.00069
+GO:0140053	mitochondrial gene expression	53	7	1.51	0.00070
+GO:0034587	piRNA metabolic process	10	3	0.29	0.00237
+GO:0007100	mitotic centrosome separation	11	3	0.31	0.00319
+GO:0006298	mismatch repair	12	3	0.34	0.00417
+GO:0022412	cellular process involved in reproductio...	607	32	17.33	0.00440
+GO:1902850	microtubule cytoskeleton organization in...	73	7	2.08	0.00461
+GO:0042321	negative regulation of circadian sleep/w...	13	3	0.37	0.00531
+GO:0010529	negative regulation of transposition	13	3	0.37	0.00531
+GO:0006399	tRNA metabolic process	98	10	2.8	0.00600
+GO:0018107	peptidyl-threonine phosphorylation	15	3	0.43	0.00810
