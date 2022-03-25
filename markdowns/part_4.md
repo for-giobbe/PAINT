@@ -109,31 +109,46 @@ abundances/crema/crema_deseq2_gene/RSEM_crema.filtered.gene.counts.matrix.A_CT_v
 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_B_CT_UP_genes.lst 
 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_B_CT_DN_genes.lst 
 images/crema_A_CT_vs_B_CT_DE.jpg TRUE
+```
 
+
+```
 Rscript scripts/DE_genes.Rscript 0.01 1 
 abundances/crema/crema_deseq2_gene/RSEM_crema.filtered.gene.counts.matrix.A_CT_vs_C_CT.DESeq2.DE_results 
 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_C_CT_UP_genes.lst 
 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_C_CT_DN_genes.lst 
 images/crema_A_CT_vs_C_CT_DE.jpg TRUE
+```
 
+
+```
 Rscript scripts/DE_genes.Rscript 0.01 1 
 abundances/crema/crema_deseq2_gene/RSEM_crema.filtered.gene.counts.matrix.A_CT_vs_D_CT.DESeq2.DE_results 
 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_D_CT_UP_genes.lst 
 abundances/crema/crema_deseq2_gene/crema_A_CT_vs_D_CT_DN_genes.lst 
 images/crema_A_CT_vs_D_CT_DE.jpg TRUE
+```
 
+
+```
 Rscript scripts/DE_genes.Rscript 0.01 1 
 abundances/crema/crema_deseq2_gene/RSEM_crema.filtered.gene.counts.matrix.A_AD_vs_B_AD.DESeq2.DE_results 
 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_B_AD_UP_genes.lst 
 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_B_AD_DN_genes.lst 
 images/crema_A_AD_vs_B_AD_DE.jpg TRUE
+```
 
+
+```
 Rscript scripts/DE_genes.Rscript 0.01 1 
 abundances/crema/crema_deseq2_gene/RSEM_crema.filtered.gene.counts.matrix.A_AD_vs_C_AD.DESeq2.DE_results 
 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_C_AD_UP_genes.lst 
 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_C_AD_DN_genes.lst 
 images/crema_A_AD_vs_C_AD_DE.jpg TRUE
+```
 
+
+```
 Rscript scripts/DE_genes.Rscript 0.01 1 
 abundances/crema/crema_deseq2_gene/RSEM_crema.filtered.gene.counts.matrix.A_AD_vs_D_AD.DESeq2.DE_results 
 abundances/crema/crema_deseq2_gene/crema_A_AD_vs_D_AD_UP_genes.lst 

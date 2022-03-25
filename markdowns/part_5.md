@@ -30,7 +30,9 @@ and for this purpose the PANNZER and EggNOG-mapper outputs need to be reformatte
 
 
 ```
-sh scripts/reformat_GOs.sh enrichment/PANNZER_crema/GO_crema_predictions.lst enrichment/eggNOG_crema/crema_eggNOG-mapper_annotations.tsv 
+sh scripts/reformat_GOs.sh 
+enrichment/PANNZER_crema/GO_crema_predictions.lst 
+enrichment/eggNOG_crema/crema_eggNOG-mapper_annotations.tsv 
 enrichment/GO_crema/GO_crema_geneUniverse
 ```
 
@@ -39,7 +41,9 @@ and
 
 
 ```
-sh scripts/reformat_GOs.sh enrichment/PANNZER_vicia/GO_vicia_predictions.lst enrichment/eggNOG_vicia/vicia_eggNOG-mapper_annotations.tsv 
+sh scripts/reformat_GOs.sh 
+enrichment/PANNZER_vicia/GO_vicia_predictions.lst 
+enrichment/eggNOG_vicia/vicia_eggNOG-mapper_annotations.tsv 
 enrichment/GO_vicia/GO_vicia_geneUniverse
 ```
 
