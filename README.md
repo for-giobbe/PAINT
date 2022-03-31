@@ -38,6 +38,6 @@ This is WIP:
 
 - [**part 5**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) - GO/KO annotation and enrichment
 
-- [**part 6**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md) - addendum 1 - metagenomics
+- [**part 6**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) - genes evolutionary history
 
-- [**part 7**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_8.md) - addendum 2 - proteomics
+- [**part 7**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md) - leaf lamina and ant body metagenomics
