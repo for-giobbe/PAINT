@@ -321,4 +321,5 @@ but remove them from counts tables down the line.
 [3](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md) / 
 [4](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4.md) / 
 [5](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) / 
-[6](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md)
+[6](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) /
+[7](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md)

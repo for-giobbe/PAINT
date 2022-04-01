@@ -1,0 +1,32 @@
+genus	species	taxonomy	stratum	cds	acc
+Medicago truncatula	Papilionoideae	Papilionoideae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/473/485/GCF_003473485.1_MtrunA17r5.0-ANR/GCF_003473485.1_MtrunA17r5.0-ANR_cds_from_genomic.fna.gz	GCF_003473485.1
+Cicer arietinum	Papilionoideae	Papilionoideae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/331/145/GCF_000331145.1_ASM33114v1/GCF_000331145.1_ASM33114v1_cds_from_genomic.fna.gz	GCF_000331145.1
+Glycine max	Papilionoideae	Papilionoideae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/004/515/GCF_000004515.6_Glycine_max_v4.0/GCF_000004515.6_Glycine_max_v4.0_cds_from_genomic.fna.gz	GCF_000004515.6
+Trifolium pratense	Papilionoideae	Papilionoideae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/020/283/565/GCF_020283565.1_ARS_RC_1.1/GCF_020283565.1_ARS_RC_1.1_cds_from_genomic.fna.gz	GCF_020283565.1
+Lupinus angustifolius	Papilionoideae	Papilionoideae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/865/875/GCF_001865875.1_LupAngTanjil_v1.0/GCF_001865875.1_LupAngTanjil_v1.0_cds_from_genomic.fna.gz	GCF_001865875.1
+Arachis	hypogea	Papilionoideae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/086/295/GCF_003086295.2_arahy.Tifrunner.gnm1.KYV3/GCF_003086295.2_arahy.Tifrunner.gnm1.KYV3_cds_from_genomic.fna.gz	GCF_003086295.2
+Phaseolus vulgaris	Papilionoideae	Papilionoideae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/499/845/GCF_000499845.1_PhaVulg1_0/GCF_000499845.1_PhaVulg1_0_cds_from_genomic.fna.gz	GCF_000499845.1
+Mucuna pruriens	Papilionoideae	Papilionoideae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/370/565/GCA_003370565.1_ASM337056v1/GCA_003370565.1_ASM337056v1_cds_from_genomic.fna.gz	GCA_003370565.1
+Spatholobus suberectus	Papilionoideae	Papilionoideae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/329/165/GCA_004329165.1_ASM432916v1/GCA_004329165.1_ASM432916v1_cds_from_genomic.fna.gz	GCA_004329165.1
+Prosopis alba	Caesalpinioideae	Fabales	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/004/799/145/GCF_004799145.1_ASM479914v1/GCF_004799145.1_ASM479914v1_cds_from_genomic.fna.gz	GCF_004799145.1
+Senna tora 	Caesalpinioideae	Fabales	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/851/425/GCA_014851425.1_ASM1485142v1/GCA_014851425.1_ASM1485142v1_cds_from_genomic.fna.gz	GCA_014851425.1
+Tripterygium wilfordii	Celastrales	Rosids	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/013/401/445/GCF_013401445.1_ASM1340144v1/GCF_013401445.1_ASM1340144v1_cds_from_genomic.fna.gz	GCF_013401445.1	
+Arabidopsis taliana	Brassicales	Rosids	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/735/GCF_000001735.4_TAIR10.1/GCF_000001735.4_TAIR10.1_cds_from_genomic.fna.gz	GCF_000001735.4
+Hibiscus syriacus	Malvales	Rosids	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/006/381/635/GCF_006381635.1_ASM638163v2/GCF_006381635.1_ASM638163v2_cds_from_genomic.fna.gz	GCF_006381635.1
+Citrus clementina	Sapindales	Rosids	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/493/195/GCF_000493195.1_Citrus_clementina_v1.0/GCF_000493195.1_Citrus_clementina_v1.0_cds_from_genomic.fna.gz	GCF_000493195.1
+Populus alba	Malphighiales	Rosids	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/005/239/225/GCF_005239225.1_ASM523922v1/GCF_005239225.1_ASM523922v1_cds_from_genomic.fna.gz	GCF_005239225.1
+Quercus suber	Fagales	Rosids	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/906/115/GCF_002906115.1_CorkOak1.0/GCF_002906115.1_CorkOak1.0_cds_from_genomic.fna.gz	GCF_002906115.1
+Prunus persicae	Rosales	Rosids	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/346/465/GCF_000346465.2_Prunus_persica_NCBIv2/GCF_000346465.2_Prunus_persica_NCBIv2_cds_from_genomic.fna.gz	GCF_000346465.2
+Vitis vinifera	Vitales	Eudicots	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/003/745/GCF_000003745.3_12X/GCF_000003745.3_12X_cds_from_genomic.fna.gz	GCF_000003745.3
+Camellia sinensis 	Asterids	Eudicots	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/004/153/795/GCF_004153795.1_AHAU_CSS_1/GCF_004153795.1_AHAU_CSS_1_cds_from_genomic.fna.gz	GCF_004153795.1
+Solanum lycopersicum	Asterids	Eudicots	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/188/115/GCF_000188115.4_SL3.0/GCF_000188115.4_SL3.0_cds_from_genomic.fna.gz	GCF_000188115.4
+Artemisia annua	Asterids	Eudicots	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/112/345/GCA_003112345.1_ASM311234v1/GCA_003112345.1_ASM311234v1_cds_from_genomic.fna.gz	GCA_003112345.1
+Acer yangbiense 	Asterids	Eudicots	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/008/009/225/GCA_008009225.1_AYv1.1/GCA_008009225.1_AYv1.1_cds_from_genomic.fna.gz	GCA_008009225.1
+Ipomoea nil 	Asterids	Eudicots	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/879/475/GCF_001879475.1_Asagao_1.1/GCF_001879475.1_Asagao_1.1_cds_from_genomic.fna.gz	GCF_001879475.1
+Heliosperma pusillum 	Caryophyllales	Eudicots	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/022/085/475/GCA_022085475.1_ASM2208547v1/GCA_022085475.1_ASM2208547v1_cds_from_genomic.fna.gz	GCA_022085475.1
+Aristolochia fimbriata	Magnoliids	Angiosperm	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/019/845/555/GCA_019845555.1_ASM1984555v1/GCA_019845555.1_ASM1984555v1_cds_from_genomic.fna.gz	GCA_019845555.1
+Dendrobium catenatum	Monocots	Angiosperm	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/605/985/GCF_001605985.2_ASM160598v2/GCF_001605985.2_ASM160598v2_cds_from_genomic.fna.gz	GCF_001605985.2
+Panicum virgatum	Monocots	Angiosperm	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/016/808/335/GCF_016808335.1_P.virgatum_v5/GCF_016808335.1_P.virgatum_v5_cds_from_genomic.fna.gz	GCF_016808335.1
+Musa acuminata 	Monocots	Angiosperm	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/313/855/GCF_000313855.2_ASM31385v2/GCF_000313855.2_ASM31385v2_cds_from_genomic.fna.gz	GCF_000313855.2
+Taxus chinensis	Gymnosperm	Spermatophyte	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/019/776/745/GCA_019776745.2_Ta-2021/GCA_019776745.2_Ta-2021_cds_from_genomic.fna.gz	GCA_019776745.2
+

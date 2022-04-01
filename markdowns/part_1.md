@@ -138,5 +138,5 @@ In crema cleaned libraries are much less variable in size and range from 29.4M t
 [3](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md) / 
 [4](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4.md) / 
 [5](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) / 
-[6](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md)
-
+[6](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) /
+[7](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md)

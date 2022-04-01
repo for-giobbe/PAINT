@@ -257,4 +257,5 @@ grep -f abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst enrichment/KO_vicia
 [3](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md) / 
 [4](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4.md) / 
 [5](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) / 
-[6](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md)
+[6](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) /
+[7](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md)

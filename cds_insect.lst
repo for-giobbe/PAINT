@@ -1,8 +1,8 @@
-species	taxonomy	stratum	cds	acc
+genus	species	taxonomy	stratum	cds	acc
 Atta cephalotes	Myrmicinae	Myrmicinae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/143/395/GCF_000143395.1_Attacep1.0/GCF_000143395.1_Attacep1.0_cds_from_genomic.fna.gz	GCF_000143395.1
 Solenopsis invicta	Myrmicinae	Myrmicinae	https://ftp.ncbi.nlm.nih.gov/genomes/refseq/invertebrate/Solenopsis_invicta/latest_assembly_versions/GCF_016802725.1_UNIL_Sinv_3.0/GCF_016802725.1_UNIL_Sinv_3.0_cds_from_genomic.fna.gz	GCF_016802725.1
 Wasmannia auropunctata	Myrmicinae	Myrmicinae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/956/235/GCF_000956235.1_wasmannia.A_1.0/GCF_000956235.1_wasmannia.A_1.0_cds_from_genomic.fna.gz	GCF_000956235.1
-Vollenhovia emery	Myrmicinae	Myrmicinae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/949/405/GCF_000949405.1_V.emery_V1.0/GCF_000949405.1_V.emery_V1.0_cds_from_genomic.fna.gz	GCF_000949405
+Vollenhovia emery	Myrmicinae	Myrmicinae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/949/405/GCF_000949405.1_V.emery_V1.0/GCF_000949405.1_V.emery_V1.0_cds_from_genomic.fna.gz	GCF_000949405.1
 Temnothorax curvispinosus	Myrmicinae	Myrmicinae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/070/985/GCF_003070985.1_ASM307098v1/GCF_003070985.1_ASM307098v1_cds_from_genomic.fna.gz	GCF_003070985.1
 Formica exsecta	Formicinae	Formicidae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/651/465/GCF_003651465.1_ASM365146v1/GCF_003651465.1_ASM365146v1_cds_from_genomic.fna.gz	GCF_003651465.1
 Lasius niger	Formicinae	Formicidae	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/045/655/GCA_001045655.1_ASM104565v1/GCA_001045655.1_ASM104565v1_cds_from_genomic.fna.gz	GCA_001045655.1

@@ -237,7 +237,7 @@ abundances/crema/crema_WGCNA_gene/ none 0.05 20 CT
 Here is a heatmap representing the trait-modules associations for CT:
 
 
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/CT_crema_WGCNA_custom_heatmap.jpg)
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/abundances/crema/crema_WGCNA_gene/CT_crema_WGCNA_custom_heatmap.jpg)
 
 
 11239 transcripts are analyzed for AD and here is the powers table:
@@ -274,7 +274,7 @@ Here is a heatmap representing the trait-modules associations for CT:
 Here is a heatmap representing the trait-modules associations for AD:
 
 
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/AD_crema_WGCNA_custom_heatmap.jpg)
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/abundances/crema/crema_WGCNA_gene/AD_crema_WGCNA_custom_heatmap.jpg)
 
 
 In the figures only the modules which have a significative (wether positive or negative) correlation to AD_S / AD_L / CT_S / CT_L are represented.
@@ -400,4 +400,5 @@ Additionally, the Rscript will generate:
 [3](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_3.md) / 
 [4](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4.md) / 
 [5](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) / 
-[6](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md)
+[6](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) /
+[7](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md)

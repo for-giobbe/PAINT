@@ -13,7 +13,7 @@ for transcript in $(cat $1_WGCNA_genes.tmp);
 			if echo $line | grep -q -e GCA_000507165 -e GCA_000376725; then 
 				echo -e "$transcript\tPAL";
 
-			elif echo $line | grep -q -e GCA_003018175 -e GCF_000696155; then
+			elif echo $line | grep -q -e GCA_003018175 -e GCF_000696155 -e GCF_021461395; then
                                 echo -e "$transcript\tNEO";
 
 			elif echo $line | grep -q -e GCF_000001215 -e GCF_000005575 -e GCF_014905235 -e GCF_009731565 -e GCF_000002335 -e GCF_000390285 -e GCF_000696795 -e GCF_005508785; then
@@ -25,7 +25,7 @@ for transcript in $(cat $1_WGCNA_genes.tmp);
                         elif echo $line | grep -q -e GCF_003651465 -e GCA_001045655 -e GCF_010583005 -e GCF_000217595 -e GCF_003672135 -e GCF_002006095; then
                                 echo -e "$transcript\tFOR";
 
-                        elif echo $line | grep -q -e CF_000143395 -e GCF_016802725 -e GCF_000956235; then
+                        elif echo $line | grep -q -e CF_000143395 -e GCF_016802725 -e GCF_000956235 -e GCF_000949405 -e GCF_003070985; then
                                 echo -e "$transcript\tMYR";
 			else 
 				echo -e "$transcript\tspecies-specific";
