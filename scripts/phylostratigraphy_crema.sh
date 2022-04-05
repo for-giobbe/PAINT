@@ -8,7 +8,7 @@ for transcript in $(cat $1_WGCNA_genes.tmp);
 
 		then
 
-		line=$(grep $transcript crema/OrthoFinder/Results_Mar30_1/Orthogroups/Orthogroups.txt)
+		line=$(grep $transcript crema/Orthogroups.txt)
 
 			if echo $line | grep -q -e GCA_000507165 -e GCA_000376725; then 
 				echo -e "$transcript\tPAL";

@@ -7,6 +7,8 @@
 *aim:* gain evolutionary insight on the genes associated to crema-vicia interactions, using phylostratigraphy and dnds analyses.
 
 sp | Papilionoideae | Fabales     | Rosids      | Eudicotds	 | Angiosperms | Spermatophyte |
+
+
 sp | Myrmicinae     | Formicoidea | Hymenoptera | Holometabola	 | Neoptera    | Paleoptera    |
 
 
@@ -109,10 +111,7 @@ After ```rm crema.Trinity.fasta.transdecoder.cds crema.fa``` we can launch the o
 When the orthology inference is over phylostratigraphy tables can be obtained using:
 
 
-```sh scripts/phylostratigraphy_crema.sh AD > comparative_genomics/phylostratigraphy_crema_AD.tsv``` for AD
-
-
-```sh scripts/phylostratigraphy_crema.sh CT > comparative_genomics/phylostratigraphy_crema_CT.tsv``` for CT
+```sh scripts/phylostratigraphy_vicia.sh```
 
 
 Then the tables can be plotted in R.
