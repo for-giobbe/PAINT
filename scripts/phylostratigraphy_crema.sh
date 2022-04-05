@@ -31,10 +31,6 @@ for transcript in $(cat $1_WGCNA_genes.tmp);
 				echo -e "$transcript\tspecies-specific";
 			fi
 
-	else
-	
-		echo -e "$transcript\tnoncoding";
-
 	fi
 
 done
