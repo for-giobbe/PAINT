@@ -1,0 +1,47 @@
+############################################################################################ parameters #######
+
+#!/usr/bin/env Rscript
+args = commandArgs(trailingOnly=TRUE)
+
+# test if there is at least one argument: if not, return an error
+if (length(args)<3) {
+  stop("At least three argument must be supplied", call.=FALSE)
+}
+
+#args[1]  = input
+#args[2]  = modules
+#args[3]  = output
+
+############################################################################################ requirements #####
+library(ggplot2)
+library(dplyr)
+
+crema <- read.csv(args[1],sep="\t", header=T)
+
+crema["stratum"][crema["stratum"] == "PAL"] <- "older"
+crema["stratum"][crema["stratum"] == "NEO"] <- "older"
+crema["stratum"][crema["stratum"] == "HOL"] <- "older"
+#crema["stratum"][crema["stratum"] == "HYM"] <- "older"
+crema["module"][crema["module"] == "0"] <- "in network"
+
+
+crema_pct_mod <- crema %>% count(module, stratum) %>%
+  mutate(pct=n/sum(n))
+
+crema_pct_tot <- crema %>% count(stratum) %>%
+  mutate(pct=n/sum(n))
+crema_pct_tot$module <- "total"
+
+crema <- rbind(crema_pct_tot,crema_pct_mod)
+
+keep <- c(scan(text=args[2], sep=",", quiet=TRUE),"total")
+
+crema <- crema[crema$module %in% keep, ]
+
+p <- ggplot(crema, aes(fill=factor(stratum, levels=c("species-specific", "MYR", "FOR","HYM","older")), y=pct, x=module)) + 
+  geom_bar(position="fill", stat="identity") + coord_flip() + theme_minimal() +
+  scale_fill_manual(values=c("gray50","gray60","gray70","gray80","gray90")) +
+  theme(legend.title=element_blank()) + 
+  theme(aspect.ratio = 0.3) + theme(axis.title = element_blank())
+
+ggsave(args[3],p,width = 15, height = 5)
