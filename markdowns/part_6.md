@@ -6,10 +6,16 @@
 
 *aim:* gain evolutionary insight on the genes associated to crema-vicia interactions, using phylostratigraphy and dnds analyses.
 
-sp | Papilionoideae | Fabales     | Rosids      | Eudicotds	 | Angiosperms | Spermatophyte |
+
+Here is an overview of the strata considered; in the figures anything above Eudicots and Hymenoptera
+has been considered as "old". Of course the limitation (both technical and conceptual) of phylostratigrapy
+are many, but they will not be discussed here. Just a disclaimer:
+while the strata are the same number for crema and vicia, they can not obviously be compared.
 
 
-sp | Myrmicinae     | Formicoidea | Hymenoptera | Holometabola	 | Neoptera    | Paleoptera    |
+| sp | Papilionoideae | Fabales     | Rosids      | Eudicots     | Angiosperms | Spermatophyte |
+|----|----------------|-------------|-------------|--------------|-------------|---------------|
+| sp | Myrmicinae     | Formicoidea | Hymenoptera | Holometabola | Neoptera    | Paleoptera    |
 
 
 ---
@@ -71,8 +77,26 @@ Then the tables can be plotted in R, using as argument:
 
 
 ```
-Rscript plot_phylostratigraphy.Rscript.R phylostratigraphy_crema_AD.txt 1,2,12,13,14,15 AD.jpg
+Rscript scripts/plot_phylostratigraphy_crema.Rscript
+comparative_genomics/phylostratigraphy_crema_AD.tsv 
+1,2,12,13,14,15
+comparative_genomics/phylostratigraphy_crema_AD.jpg
 ```
+
+
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/comparative_genomics/phylostratigraphy_crema_AD.jpg)
+
+
+```
+Rscript scripts/plot_phylostratigraphy_crema.Rscript 
+comparative_genomics/phylostratigraphy_crema_CT.tsv 
+18,20,31,32,33,34,38,39,4,41,43,44,6,9 
+comparative_genomics/phylostratigraphy_crema_CT.jpg
+```
+
+
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/comparative_genomics/phylostratigraphy_crema_CT.jpg)
+
 
 Then we can find the single copy genes in crema for dnds analyses. 
 We are going to restrict our analyses to this subset, due to the difficulties in analyzing
@@ -81,9 +105,6 @@ branch leading to the multicopy genes or the terminal branches only.
 As we are interested in the bigger picture, I think that - if the genes underlying
 the ant-plant interaction evolve at a faster rate than the average - we would 
 be able to see this phenomenon anyway.
-
-
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/comparative_genomics/phylostratigraphy_crema_AD.jpg)
 
 
 ```
