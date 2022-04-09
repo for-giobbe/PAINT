@@ -2,8 +2,6 @@ cd comparative_genomics
 
 echo -e "transcript\tstratum\texpression"
 
-grep ">" ../annotations/vicia/vicia.Trinity.fasta.transdecoder.cds | awk -F "." '{print $1}' | sed "s/_i[0-9]*//" | tr -d ">" > vicia_genes.tmp
-
 for transcript in $(grep ">" ../annotations/vicia/vicia.Trinity.fasta.transdecoder.cds | awk -F "." '{print $1}' | sed "s/_i[0-9]*//" | tr -d ">");
 	
 	do

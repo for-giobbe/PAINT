@@ -51,10 +51,11 @@ p <- ggplot(crema, aes(fill=factor(stratum, levels=c("species-specific",
                              "#67ca66",
                              "#27b27f",
                              "#009688")) +
-  geom_bar(position="fill", stat="identity") + coord_flip() + theme_minimal() +
+  geom_bar(position="fill", stat="identity") + coord_flip() +
   theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank()) +
   theme(legend.title=element_blank()) + 
-  theme(aspect.ratio = 0.4) + theme(axis.title = element_blank())
+  theme(aspect.ratio = 0.4) + theme(axis.title = element_blank()) + 
+  theme( panel.background = element_rect(fill = "white", colour = "white"))
 
 ggsave(args[3],p,width = 10, height = 5)
 
