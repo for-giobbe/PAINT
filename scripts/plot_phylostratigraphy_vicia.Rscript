@@ -44,7 +44,7 @@ p <- ggplot(vicia, aes(fill=factor(stratum, levels=c("species-specific",
                                                      "eudicotyledons",
                                                      "Magnoliophyta",
                                                      "older")), y=pct, x=factor(expression, levels=c("UP","DN","total")))) + 
-  geom_bar(position="fill", stat="identity") + coord_flip() + theme_minimal() +
+  geom_bar(position="fill", stat="identity") + coord_flip() +
   scale_fill_manual(values=c("#ffea00",
                              "#c8e331",
                              "#95d84f",
@@ -52,8 +52,9 @@ p <- ggplot(vicia, aes(fill=factor(stratum, levels=c("species-specific",
                              "#3cba78",
                              "#11a984",
                              "#009688")) +
+  theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank()) +
   theme(legend.title=element_blank()) + 
-  theme(aspect.ratio = 0.3) + theme(axis.title = element_blank()) +
+  theme(aspect.ratio = 0.4) + theme(axis.title = element_blank()) +
   theme( panel.background = element_rect(fill = "white", colour = "white"))
 
 ggsave(args[2],p,width = 15, height = 5)
