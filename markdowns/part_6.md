@@ -13,6 +13,8 @@ are many, but they will not be discussed here. Just a disclaimer:
 while the strata are the same number for crema and vicia, they can not obviously be compared.
 
 
+|   |   |
+|---|---|
 | sp | Papilionoideae | Fabales     | Rosids      | Eudicots     | Angiosperms | Spermatophyte |
 |----|----------------|-------------|-------------|--------------|-------------|---------------|
 | sp | Myrmicinae     | Formicoidea | Hymenoptera | Holometabola | Neoptera    | Paleoptera    |
@@ -57,7 +59,16 @@ grep -v -A 1 -f ../../contaminants/crema/crema.blastp.contaminants_genes.lst cre
 ```
 
 
-After ```rm crema.Trinity.fasta.transdecoder.cds crema.fa``` we can launch the orthology inference using ```orthofinder -f -d ```
+After ```rm crema.Trinity.fasta.transdecoder.cds crema.fa``` we can translate everything into amminoacids using:
+
+
+```
+for i in *fa; do transeq -sequence $i -outseq ${i::-7}.aa.ref.fa; done
+```
+
+
+Then, after having sorted amminoacids and nucleotides in different folders,
+we can launch the orthology inference using ```orthofinder -f aa```
 
 
 When the orthology inference is over phylostratigraphy tables can be obtained using:
@@ -66,10 +77,13 @@ When the orthology inference is over phylostratigraphy tables can be obtained us
 ```sh scripts/phylostratigraphy_crema.sh AD > comparative_genomics/phylostratigraphy_crema_AD.tsv``` for AD
 
 
+and
+
+
 ```sh scripts/phylostratigraphy_crema.sh CT > comparative_genomics/phylostratigraphy_crema_CT.tsv``` for CT
 
 
-Then the tables can be plotted in R, using as argument:
+Tables can be plotted with an Rscript, using as arguments:
 
 - the phylostratigraphy file
 - the modules to be plotted (in addition to the total)
@@ -100,11 +114,11 @@ comparative_genomics/phylostratigraphy_crema_CT.jpg
 
 Then we can find the single copy genes in crema for dnds analyses. 
 We are going to restrict our analyses to this subset, due to the difficulties in analyzing
-multi-copy ones: for this it is not straightforward if one should consider the 
-branch leading to the multicopy genes or the terminal branches only.
+multi-copy genes: for these it is not straightforward if one should consider the 
+speciation branch leading to the multicopy genes or the terminal branches only.
 As we are interested in the bigger picture, I think that - if the genes underlying
 the ant-plant interaction evolve at a faster rate than the average - we would 
-be able to see this phenomenon anyway.
+be able to see such a signal anyway. Here are all orthogroups in which crema has a single-copy gene.
 
 
 ```
@@ -162,10 +176,20 @@ After ```rm crema.Trinity.fasta.transdecoder.cds crema.fa``` we can launch the o
 When the orthology inference is over phylostratigraphy tables can be obtained using:
 
 
-```sh scripts/phylostratigraphy_vicia.sh```
+```sh scripts/phylostratigraphy_vicia.sh > comparative_genomics/phylostratigraphy_vicia.tsv ```
 
 
 Then the tables can be plotted in R.
+
+
+```
+Rscript scripts/plot_phylostratigraphy_vicia.Rscript
+comparative_genomics/phylostratigraphy_vicia.tsv
+comparative_genomics/phylostratigraphy_vicia.jpg
+```
+
+
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/comparative_genomics/phylostratigraphy_vicia.jpg)
 
 
 ---
