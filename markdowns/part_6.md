@@ -63,7 +63,37 @@ When the orthology inference is over phylostratigraphy tables can be obtained us
 ```sh scripts/phylostratigraphy_crema.sh CT > comparative_genomics/phylostratigraphy_crema_CT.tsv``` for CT
 
 
-Then the tables can be plotted in R.
+Then the tables can be plotted in R, using as argument:
+
+- the phylostratigraphy file
+- the modules to be plotted (in addition to the total)
+- the output plot name
+
+
+```
+Rscript plot_phylostratigraphy.Rscript.R phylostratigraphy_crema_AD.txt 1,2,12,13,14,15 AD.jpg
+```
+
+Then we can find the single copy genes in crema for dnds analyses. 
+We are going to restrict our analyses to this subset, due to the difficulties in analyzing
+multi-copy ones: for this it is not straightforward if one should consider the 
+branch leading to the multicopy genes or the terminal branches only.
+As we are interested in the bigger picture, I think that - if the genes underlying
+the ant-plant interaction evolve at a faster rate than the average - we would 
+be able to see this phenomenon anyway.
+
+
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/comparative_genomics/phylostratigraphy_crema_AD.jpg)
+
+
+```
+while read line; 
+	do 
+	copy=$(echo $line | grep -o "crema" | wc -w); 
+	if [[ $copy == 1 ]]; then echo $line | awk '{print $1}'; 
+	fi; 
+done < crema/Orthogroups.txt
+```
 
 
 ---
