@@ -21,9 +21,12 @@ crema <- read.csv(args[1],sep="\t", header=T)
 crema["stratum"][crema["stratum"] == "PAL"] <- "older"
 crema["stratum"][crema["stratum"] == "NEO"] <- "older"
 crema["stratum"][crema["stratum"] == "HOL"] <- "older"
-#crema["stratum"][crema["stratum"] == "HYM"] <- "older"
-crema["module"][crema["module"] == "0"] <- "in network"
 
+crema["stratum"][crema["stratum"] == "MYR"] <- "Myrmicinae"
+crema["stratum"][crema["stratum"] == "FOR"] <- "Formicidae"
+crema["stratum"][crema["stratum"] == "HYM"] <- "Hymenoptera"
+
+crema["module"][crema["module"] == "0"] <- "in network"
 
 crema_pct_mod <- crema %>% count(module, stratum) %>%
   mutate(pct=n/sum(n))
@@ -38,10 +41,20 @@ keep <- c(scan(text=args[2], sep=",", quiet=TRUE),"total")
 
 crema <- crema[crema$module %in% keep, ]
 
-p <- ggplot(crema, aes(fill=factor(stratum, levels=c("species-specific", "MYR", "FOR","HYM","older")), y=pct, x=module)) + 
+p <- ggplot(crema, aes(fill=factor(stratum, levels=c("species-specific",
+                                                     "Myrmicinae",
+                                                     "Formicidae",
+                                                     "Hymenoptera",
+                                                     "older")), y=pct, x=module)) + 
+  scale_fill_manual(values=c("#ffea00",
+                             "#aede41",
+                             "#67ca66",
+                             "#27b27f",
+                             "#009688")) +
   geom_bar(position="fill", stat="identity") + coord_flip() + theme_minimal() +
-  scale_fill_manual(values=c("gray50","gray60","gray70","gray80","gray90")) +
+  theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank()) +
   theme(legend.title=element_blank()) + 
-  theme(aspect.ratio = 0.3) + theme(axis.title = element_blank())
+  theme(aspect.ratio = 0.4) + theme(axis.title = element_blank())
 
-ggsave(args[3],p,width = 15, height = 5)
+ggsave(args[3],p,width = 10, height = 5)
+

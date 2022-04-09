@@ -45,13 +45,13 @@ p <- ggplot(vicia, aes(fill=factor(stratum, levels=c("species-specific",
                                                      "Magnoliophyta",
                                                      "older")), y=pct, x=factor(expression, levels=c("UP","DN","total")))) + 
   geom_bar(position="fill", stat="identity") + coord_flip() + theme_minimal() +
-  scale_fill_manual(values=c("gray30",
-                             "gray40",
-                             "gray50",
-                             "gray60",
-                             "gray70",
-                             "gray80",
-                             "gray90")) +
+  scale_fill_manual(values=c("#ffea00",
+                             "#c8e331",
+                             "#95d84f",
+                             "#67ca66",
+                             "#3cba78",
+                             "#11a984",
+                             "#009688")) +
   theme(legend.title=element_blank()) + 
   theme(aspect.ratio = 0.3) + theme(axis.title = element_blank())
 
