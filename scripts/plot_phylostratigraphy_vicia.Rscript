@@ -57,5 +57,5 @@ p <- ggplot(vicia, aes(fill=factor(stratum, levels=c("species-specific",
   theme(aspect.ratio = 0.4) + theme(axis.title = element_blank()) +
   theme( panel.background = element_rect(fill = "white", colour = "white"))
 
-ggsave(args[2],p,width = 15, height = 5)
+ggsave(args[2],p,width = 10, height = 5)
 
