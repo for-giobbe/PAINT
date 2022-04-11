@@ -23,7 +23,7 @@ In here _Vicia faba_ will be reverenced as **vicia** and _Crematogaster scutella
 Experiment reads have been deposited under the BioProject **PRJNA758979**.
 
 
-This is WIP:
+A WIP manuscript is available [here](https://docs.google.com/document/d/1bPlYGwkswf-VBD2lAnfqwFXU0Pm_4UYIW2xuc6ijjYE/edit?usp=sharing).
 
 
 - [**part 0**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_0.md) - requirements and dataset explanation
