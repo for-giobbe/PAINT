@@ -1,18 +1,15 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0045727	positive regulation of translation	34	6	0.81	0.00013
-GO:0034249	negative regulation of cellular amide me...	37	6	0.88	0.00021
-GO:0044057	regulation of system process	50	6	1.19	0.00086
-GO:0008306	associative learning	48	6	1.15	0.00091
-GO:0006378	mRNA polyadenylation	21	4	0.5	0.00137
-GO:0008298	intracellular mRNA localization	67	7	1.6	0.00187
-GO:0046011	regulation of oskar mRNA translation	11	3	0.26	0.00192
-GO:0042133	neurotransmitter metabolic process	38	5	0.91	0.00194
-GO:0001775	cell activation	12	3	0.29	0.00251
-GO:0005977	glycogen metabolic process	25	4	0.6	0.00268
-GO:0009566	fertilization	26	4	0.62	0.00311
-GO:0045886	negative regulation of synaptic growth a...	46	5	1.1	0.00455
-GO:0007283	spermatogenesis	159	10	3.8	0.00463
-GO:0007143	female meiotic nuclear division	31	4	0.74	0.00598
-GO:0048678	response to axon injury	17	3	0.41	0.00712
-GO:0006936	muscle contraction	19	3	0.45	0.00979
-GO:0061013	regulation of mRNA catabolic process	19	3	0.45	0.00979
+GO:0032365	intracellular lipid transport	10	3	0.2	0.00084
+GO:0043161	proteasome-mediated ubiquitin-dependent ...	153	11	3.05	0.00096
+GO:1903052	positive regulation of proteolysis invol...	39	5	0.78	0.00098
+GO:0034440	lipid oxidation	24	4	0.48	0.00118
+GO:0035010	encapsulation of foreign target	26	4	0.52	0.00161
+GO:0046883	regulation of hormone secretion	18	3	0.36	0.00508
+GO:0097502	mannosylation	18	3	0.36	0.00508
+GO:0019915	lipid storage	37	4	0.74	0.00599
+GO:0016197	endosomal transport	85	6	1.69	0.00678
+GO:0031532	actin cytoskeleton reorganization	21	3	0.42	0.00792
+GO:0006643	membrane lipid metabolic process	60	5	1.2	0.00851
+GO:0006644	phospholipid metabolic process	108	7	2.15	0.00897
+GO:0032102	negative regulation of response to exter...	22	3	0.44	0.00904
+GO:0010921	regulation of phosphatase activity	22	3	0.44	0.00904

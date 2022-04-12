@@ -1,4 +1,1 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0043112	receptor metabolic process	15	3	0.25	0.0018
-GO:0055085	transmembrane transport	518	19	8.71	0.0042
-GO:0006633	fatty acid biosynthetic process	50	4	0.84	0.0097

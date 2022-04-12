@@ -1,3 +1,16 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0006182	cGMP biosynthetic process	16	1	0	0.0045
-GO:0019935	cyclic-nucleotide-mediated signaling	26	1	0.01	0.0073
+GO:0003012	muscle system process	24	5	0.53	0.00015
+GO:0035296	regulation of tube diameter	14	4	0.31	0.00019
+GO:0007390	germ-band shortening	16	4	0.35	0.00034
+GO:0010906	regulation of glucose metabolic process	10	3	0.22	0.00113
+GO:0007525	somatic muscle development	74	7	1.63	0.00116
+GO:0002224	toll-like receptor signaling pathway	11	3	0.24	0.00152
+GO:0035206	regulation of hemocyte proliferation	25	4	0.55	0.00200
+GO:0007155	cell adhesion	190	11	4.19	0.00277
+GO:0035149	lumen formation, open tracheal system	14	3	0.31	0.00320
+GO:0048139	female germ-line cyst encapsulation	14	3	0.31	0.00320
+GO:0014902	myotube differentiation	46	5	1.01	0.00323
+GO:0051017	actin filament bundle assembly	29	4	0.64	0.00351
+GO:0007015	actin filament organization	127	10	2.8	0.00355
+GO:0007498	mesoderm development	51	5	1.12	0.00507
+GO:0042060	wound healing	58	5	1.28	0.00875

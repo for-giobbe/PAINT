@@ -1,17 +1,44 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0009112	nucleobase metabolic process	29	5	0.66	0.00044
-GO:0019318	hexose metabolic process	46	6	1.05	0.00056
-GO:0008610	lipid biosynthetic process	179	11	4.07	0.00248
-GO:0008652	cellular amino acid biosynthetic process	43	5	0.98	0.00275
-GO:1901605	alpha-amino acid metabolic process	91	9	2.07	0.00296
-GO:1901136	carbohydrate derivative catabolic proces...	41	5	0.93	0.00387
-GO:0008063	Toll signaling pathway	29	4	0.66	0.00394
-GO:0043094	cellular metabolic compound salvage	15	3	0.34	0.00430
-GO:0019359	nicotinamide nucleotide biosynthetic pro...	31	4	0.71	0.00503
-GO:1901565	organonitrogen compound catabolic proces...	386	13	8.78	0.00532
-GO:0009620	response to fungus	33	4	0.75	0.00632
-GO:0009072	aromatic amino acid family metabolic pro...	18	3	0.41	0.00734
-GO:0019991	septate junction assembly	36	4	0.82	0.00863
-GO:0044262	cellular carbohydrate metabolic process	88	7	2	0.00896
-GO:0006665	sphingolipid metabolic process	37	4	0.84	0.00951
-GO:0030203	glycosaminoglycan metabolic process	20	3	0.46	0.00992
+GO:0042273	ribosomal large subunit biogenesis	45	15	5.25	0.00010
+GO:0098534	centriole assembly	20	9	2.33	0.00019
+GO:0034968	histone lysine methylation	38	13	4.43	0.00022
+GO:0006342	chromatin silencing	80	21	9.33	0.00024
+GO:0016071	mRNA metabolic process	290	58	33.82	0.00027
+GO:0046627	negative regulation of insulin receptor ...	17	8	1.98	0.00031
+GO:0007615	anesthesia-resistant memory	10	6	1.17	0.00034
+GO:1900073	regulation of neuromuscular synaptic tra...	26	10	3.03	0.00040
+GO:0007416	synapse assembly	152	32	17.72	0.00042
+GO:0031047	gene silencing by RNA	56	16	6.53	0.00046
+GO:0016322	neuron remodeling	46	14	5.36	0.00051
+GO:0000460	maturation of 5.8S rRNA	23	9	2.68	0.00068
+GO:0018210	peptidyl-threonine modification	19	8	2.22	0.00077
+GO:0060811	intracellular mRNA localization involved...	53	15	6.18	0.00077
+GO:0045448	mitotic cell cycle, embryonic	28	10	3.27	0.00080
+GO:0044087	regulation of cellular component biogene...	250	49	29.15	0.00124
+GO:0010468	regulation of gene expression	1101	187	128.39	0.00124
+GO:0099518	vesicle cytoskeletal trafficking	16	7	1.87	0.00126
+GO:0033301	cell cycle comprising mitosis without cy...	16	7	1.87	0.00126
+GO:0035825	homologous recombination	25	9	2.92	0.00138
+GO:0034332	adherens junction organization	31	10	3.61	0.00196
+GO:0042461	photoreceptor cell development	93	21	10.84	0.00198
+GO:0006281	DNA repair	181	43	21.11	0.00205
+GO:0071359	cellular response to dsRNA	13	6	1.52	0.00205
+GO:0048512	circadian behavior	88	19	10.26	0.00268
+GO:1903530	regulation of secretion by cell	66	19	7.7	0.00273
+GO:0032508	DNA duplex unwinding	60	15	7	0.00300
+GO:0045132	meiotic chromosome segregation	38	11	4.43	0.00312
+GO:0017156	calcium ion regulated exocytosis	49	13	5.71	0.00320
+GO:0009187	cyclic nucleotide metabolic process	24	7	2.8	0.00324
+GO:0006338	chromatin remodeling	73	17	8.51	0.00366
+GO:0030178	negative regulation of Wnt signaling pat...	35	10	4.08	0.00528
+GO:0050808	synapse organization	240	51	27.99	0.00537
+GO:0060402	calcium ion transport into cytosol	11	5	1.28	0.00538
+GO:0061564	axon development	301	53	35.1	0.00544
+GO:0045433	male courtship behavior, veined wing gen...	20	7	2.33	0.00563
+GO:0007298	border follicle cell migration	102	21	11.89	0.00629
+GO:0007143	female meiotic nuclear division	31	9	3.61	0.00714
+GO:0006959	humoral immune response	59	11	6.88	0.00760
+GO:0072384	organelle transport along microtubule	21	7	2.45	0.00762
+GO:0048609	multicellular organismal reproductive pr...	737	131	85.94	0.00779
+GO:0007611	learning or memory	135	30	15.74	0.00837
+GO:0051091	positive regulation of DNA-binding trans...	17	6	1.98	0.00983

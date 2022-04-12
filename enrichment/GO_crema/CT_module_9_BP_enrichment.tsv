@@ -1,4 +1,6 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0018991	oviposition	16	2	0.09	0.0039
-GO:0046785	microtubule polymerization	18	2	0.11	0.0050
-GO:0007188	adenylate cyclase-modulating G protein-c...	22	2	0.13	0.0074
+GO:0070646	protein modification by small protein re...	49	4	0.54	0.0020
+GO:0008593	regulation of Notch signaling pathway	100	5	1.1	0.0048
+GO:0016310	phosphorylation	626	14	6.9	0.0057
+GO:0007094	mitotic spindle assembly checkpoint	11	2	0.12	0.0062
+GO:0006665	sphingolipid metabolic process	37	3	0.41	0.0077

@@ -1,21 +1,10 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0006886	intracellular protein transport	244	48	29.31	0.00033
-GO:0009062	fatty acid catabolic process	25	10	3	0.00036
-GO:0006458	'de novo' protein folding	17	8	2.04	0.00038
-GO:0007030	Golgi organization	61	17	7.33	0.00061
-GO:0022616	DNA strand elongation	19	8	2.28	0.00094
-GO:0034470	ncRNA processing	192	41	23.07	0.00117
-GO:0072657	protein localization to membrane	83	20	9.97	0.00156
-GO:0016226	iron-sulfur cluster assembly	13	6	1.56	0.00240
-GO:0006281	DNA repair	181	35	21.75	0.00269
-GO:0045005	DNA-dependent DNA replication maintenanc...	10	5	1.2	0.00371
-GO:0006379	mRNA cleavage	14	6	1.68	0.00378
-GO:0051445	regulation of meiotic cell cycle	14	6	1.68	0.00378
-GO:0044743	protein transmembrane import into intrac...	14	6	1.68	0.00378
-GO:0032456	endocytic recycling	28	9	3.36	0.00413
-GO:0032008	positive regulation of TOR signaling	24	8	2.88	0.00528
-GO:0090068	positive regulation of cell cycle proces...	29	9	3.48	0.00537
-GO:0045292	mRNA cis splicing, via spliceosome	11	5	1.32	0.00613
-GO:0072593	reactive oxygen species metabolic proces...	26	8	3.12	0.00903
-GO:0009081	branched-chain amino acid metabolic proc...	12	5	1.44	0.00948
-GO:0032386	regulation of intracellular transport	50	12	6.01	0.00989
+GO:0046165	alcohol biosynthetic process	35	3	0.26	0.0021
+GO:0051181	cofactor transport	10	2	0.07	0.0023
+GO:0051123	RNA polymerase II preinitiation complex ...	10	2	0.07	0.0023
+GO:0001522	pseudouridine synthesis	11	2	0.08	0.0028
+GO:0006984	ER-nucleus signaling pathway	12	2	0.09	0.0033
+GO:0045456	ecdysteroid biosynthetic process	15	2	0.11	0.0052
+GO:0043967	histone H4 acetylation	16	2	0.12	0.0060
+GO:0000469	cleavage involved in rRNA processing	18	2	0.13	0.0075
+GO:0016126	sterol biosynthetic process	19	2	0.14	0.0084

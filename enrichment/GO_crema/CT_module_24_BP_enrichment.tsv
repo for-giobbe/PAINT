@@ -1,41 +1,5 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0010160	formation of animal organ boundary	33	5	0.58	0.00025
-GO:0016199	axon midline choice point recognition	19	4	0.34	0.00029
-GO:0030177	positive regulation of Wnt signaling pat...	35	5	0.62	0.00034
-GO:0040008	regulation of growth	264	14	4.66	0.00041
-GO:0007268	chemical synaptic transmission	238	13	4.2	0.00042
-GO:0046777	protein autophosphorylation	37	5	0.65	0.00044
-GO:0051124	synaptic growth at neuromuscular junctio...	130	9	2.3	0.00046
-GO:0007616	long-term memory	59	6	1.04	0.00057
-GO:1901880	negative regulation of protein depolymer...	10	3	0.18	0.00059
-GO:0035222	wing disc pattern formation	60	6	1.06	0.00062
-GO:0070507	regulation of microtubule cytoskeleton o...	42	5	0.74	0.00080
-GO:0048311	mitochondrion distribution	11	3	0.19	0.00080
-GO:0043954	cellular component maintenance	25	4	0.44	0.00088
-GO:0022416	chaeta development	65	6	1.15	0.00095
-GO:0007422	peripheral nervous system development	65	6	1.15	0.00095
-GO:0007019	microtubule depolymerization	12	3	0.21	0.00105
-GO:0009649	entrainment of circadian clock	13	3	0.23	0.00135
-GO:0048749	compound eye development	298	18	5.27	0.00137
-GO:0006338	chromatin remodeling	73	6	1.29	0.00175
-GO:0034332	adherens junction organization	31	4	0.55	0.00202
-GO:0046530	photoreceptor cell differentiation	164	11	2.9	0.00241
-GO:0099518	vesicle cytoskeletal trafficking	16	3	0.28	0.00255
-GO:0007411	axon guidance	232	15	4.1	0.00258
-GO:0006342	chromatin silencing	80	6	1.41	0.00279
-GO:0070828	heterochromatin organization	35	4	0.62	0.00318
-GO:0008586	imaginal disc-derived wing vein morphoge...	35	4	0.62	0.00318
-GO:0035335	peptidyl-tyrosine dephosphorylation	36	4	0.64	0.00353
-GO:1902904	negative regulation of supramolecular fi...	18	3	0.32	0.00362
-GO:0030718	germ-line stem cell population maintenan...	59	5	1.04	0.00371
-GO:0098722	asymmetric stem cell division	48	5	0.85	0.00382
-GO:0007317	regulation of pole plasm oskar mRNA loca...	19	3	0.34	0.00424
-GO:0061013	regulation of mRNA catabolic process	19	3	0.34	0.00424
-GO:0043966	histone H3 acetylation	19	3	0.34	0.00424
-GO:0009266	response to temperature stimulus	90	6	1.59	0.00501
-GO:0032147	activation of protein kinase activity	42	4	0.74	0.00619
-GO:0016476	regulation of embryonic cell shape	22	3	0.39	0.00649
-GO:0035330	regulation of hippo signaling	44	4	0.78	0.00731
-GO:0051494	negative regulation of cytoskeleton orga...	23	3	0.41	0.00737
-GO:0007294	germarium-derived oocyte fate determinat...	23	3	0.41	0.00737
-GO:0030010	establishment of cell polarity	48	4	0.85	0.00992
+GO:0098656	anion transmembrane transport	114	2	0.05	0.00076
+GO:0015711	organic anion transport	131	2	0.06	0.00101
+GO:0035076	ecdysone receptor-mediated signaling pat...	11	1	0	0.00466
+GO:0034219	carbohydrate transmembrane transport	14	1	0.01	0.00593

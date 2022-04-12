@@ -1,1 +1,40 @@
 GO.ID	Term	Annotated	Significant	Expected	test
+GO:0009101	glycoprotein biosynthetic process	88	31	16.36	0.00015
+GO:0070085	glycosylation	85	30	15.8	0.00018
+GO:0001510	RNA methylation	38	17	7.06	0.00019
+GO:0034599	cellular response to oxidative stress	29	14	5.39	0.00026
+GO:0034613	cellular protein localization	401	135	74.53	0.00042
+GO:1990542	mitochondrial transmembrane transport	28	13	5.2	0.00069
+GO:0048137	spermatocyte division	13	8	2.42	0.00074
+GO:0016226	iron-sulfur cluster assembly	13	8	2.42	0.00074
+GO:0007030	Golgi organization	61	22	11.34	0.00092
+GO:0043162	ubiquitin-dependent protein catabolic pr...	17	9	3.16	0.00148
+GO:0006261	DNA-dependent DNA replication	67	23	12.45	0.00154
+GO:0071824	protein-DNA complex subunit organization	90	29	16.73	0.00157
+GO:0022900	electron transport chain	65	27	12.08	0.00166
+GO:0061983	meiosis II cell cycle process	21	10	3.9	0.00228
+GO:0006221	pyrimidine nucleotide biosynthetic proce...	21	10	3.9	0.00228
+GO:0045454	cell redox homeostasis	18	9	3.35	0.00248
+GO:0006744	ubiquinone biosynthetic process	12	7	2.23	0.00249
+GO:0006779	porphyrin-containing compound biosynthet...	15	8	2.79	0.00259
+GO:0042775	mitochondrial ATP synthesis coupled elec...	25	11	4.65	0.00302
+GO:0051052	regulation of DNA metabolic process	59	20	10.97	0.00361
+GO:0071427	mRNA-containing ribonucleoprotein comple...	29	12	5.39	0.00367
+GO:0009123	nucleoside monophosphate metabolic proce...	123	43	22.86	0.00400
+GO:0030866	cortical actin cytoskeleton organization	44	16	8.18	0.00405
+GO:0046034	ATP metabolic process	85	30	15.8	0.00416
+GO:0002098	tRNA wobble uridine modification	10	6	1.86	0.00432
+GO:0042559	pteridine-containing compound biosynthet...	10	6	1.86	0.00432
+GO:0044804	autophagy of nucleus	10	6	1.86	0.00432
+GO:0000959	mitochondrial RNA metabolic process	16	8	2.97	0.00434
+GO:0015988	energy coupled proton transmembrane tran...	13	7	2.42	0.00454
+GO:0061136	regulation of proteasomal protein catabo...	45	16	8.36	0.00523
+GO:0060627	regulation of vesicle-mediated transport	117	34	21.75	0.00554
+GO:0045747	positive regulation of Notch signaling p...	34	13	6.32	0.00568
+GO:0019751	polyol metabolic process	36	14	6.69	0.00611
+GO:0034314	Arp2/3 complex-mediated actin nucleation	17	8	3.16	0.00688
+GO:0140029	exocytic process	35	13	6.51	0.00753
+GO:0042168	heme metabolic process	14	7	2.6	0.00763
+GO:0001522	pseudouridine synthesis	11	6	2.04	0.00801
+GO:0048278	vesicle docking	21	9	3.9	0.00881
+GO:0048232	male gamete generation	196	58	36.43	0.00909

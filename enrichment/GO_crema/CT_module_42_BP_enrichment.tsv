@@ -1,3 +1,2 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0032446	protein modification by small protein co...	192	4	0.76	0.0065
-GO:0031146	SCF-dependent proteasomal ubiquitin-depe...	34	2	0.13	0.0078
+GO:0043547	positive regulation of GTPase activity	89	2	0.09	0.0032

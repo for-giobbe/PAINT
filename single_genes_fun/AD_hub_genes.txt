@@ -5,4 +5,3 @@ TRINITY_DN3503_c0_g1    09	B+	PAL	strong	Y	Pre-mRNA-splicing regulator female-le
 TRINITY_DN9981_c0_g1    10	S+	PAL	strong	Y	beta-ureidopropionase	UPB1	Catalyzes a late step in pyrimidine degradation
 TRINITY_DN235_c0_g2     12	L-	PAL     strong  Y	protein transport protein Sec24C	SEC24C	-
 TRINITY_DN3289_c1_g1	14     	L-	PAL	strong	Y	E3 ubiquitin-protein ligase ariadne-1	ari-1	neuronal development + regulates ecdysone hormonal pathway
-

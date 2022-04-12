@@ -1,0 +1,240 @@
+############################################################################################################################ VICIA INTERESTING GENES
+
+downregulated gene associated to GO:0010200 - response to chitin
+
+TRINITY_DN1556_c0_g1	zinc finger protein ZAT10
+TRINITY_DN2451_c0_g1	U-box domain-containing protein 16
+TRINITY_DN573_c0_g1	WRKY transcription factor 70
+TRINITY_DN578_c1_g1	ethylene-responsive transcription factor
+TRINITY_DN9863_c0_g1    scarecrow-like protein 
+
+and some not really chitin-related
+
+TRINITY_DN671_c0_g1	MAP kinase-activated protein kinase 3
+TRINITY_DN87739_c2_g1	NAC domain-containing protein 1
+
+#####################################################################################
+
+upregulated genes associated to GO:0090333 - regulation of stomatal closure
+
+TRINITY_DN3338_c0_g1	Rhodanese/Cell cycle control phosphatase superfamily protein
+TRINITY_DN5286_c0_g1	Calcium sensing receptor
+
+#####################################################################################
+
+downregulated genes associated to GO:0090333 - regulation of stomatal closure
+
+TRINITY_DN573_c0_g1	WRKY transcription factor 70
+TRINITY_DN6621_c0_g1	Exocyst complex component EXO70B1
+
+#####################################################################################
+
+downregulated genes associated to GO:0009856 - pollination
+
+TRINITY_DN10327_c0_g2	G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN21317_c0_g3	G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN2749_c0_g1	G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN3059_c0_g1	G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN3679_c0_g1	G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN51662_c0_g1	G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN66307_c0_g1	G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN671_c0_g1	Mitogen-activated protein kinase 3
+
+#####################################################################################
+
+downregulated genes associated to GO:0035690 - cellular response to drug
+
+TRINITY_DN2886_c0_g1	MACPF domain-containing protein CAD1
+TRINITY_DN46835_c0_g2	MACPF domain-containing protein At1g14780
+TRINITY_DN5619_c0_g1	regulatory protein NPR3	
+TRINITY_DN573_c0_g1	WRKY transcription factor 70
+
+#####################################################################################
+
+downregulated genes associated to GO:0000160 - phosphorelay signal transduction system
+
+TRINITY_DN104466_c0_g1	ethylene-response factor C3
+TRINITY_DN11806_c0_g1	ethylene-response factor 1A
+TRINITY_DN1657_c0_g1	ethylene-response factor 2 like
+TRINITY_DN2783_c0_g1	ethylene-response factor 1B
+TRINITY_DN5035_c0_g1	ethylene-responsive transcription factor ERF098-like
+TRINITY_DN573_c0_g1	WRKY transcription factor 70
+TRINITY_DN578_c1_g1	ethylene-responsive transcription factor 6 
+TRINITY_DN811_c1_g1	ethylene receptor 2
+TRINITY_DN9902_c0_g1	ethylene response factor 8
+
+#####################################################################################
+
+downregulated genes associated to GO:0006970 - response to osmotic stress
+
+TRINITY_DN12169_c0_g1	mitochondrial phosphate carrier protein 3
+TRINITY_DN18904_c0_g1	Sugar transport protein 13
+TRINITY_DN2593_c0_g1	precursor of CEP14
+TRINITY_DN5619_c0_g1	regulatory protein NPR3
+TRINITY_DN573_c0_g1	WRKY transcription factor 70
+TRINITY_DN5939_c0_g1	Calmodulin-binding receptor-like cytoplasmic kinase 2
+TRINITY_DN671_c0_g1	Mitogen-activated protein kinase 3
+TRINITY_DN9244_c0_g1	calmodulin-binding receptor-like cytoplasmic kinase 1
+TRINITY_DN971_c5_g1	peptide methionine sulfoxide reductase-like
+
+#####################################################################################
+
+upregulated genes associated to GO:0009069 - serine family amino acid metabolic processes
+
+TRINITY_DN10324_c6_g1	Glycine dehydrogenase (decarboxylating) 1, mitochondrial
+TRINITY_DN3206_c0_g1	Bifunctional D-cysteine desulfhydrase/1-aminocyclopropane-1-carboxylate deaminase, mitochondrial
+TRINITY_DN36133_c0_g1	serine hydroxymethyltransferase
+TRINITY_DN6078_c1_g1	cystathionine gamma-synthase
+TRINITY_DN9690_c0_g1	phosphoserine phosphatase, chloroplastic
+
+#####################################################################################
+
+upregulated genes associated to GO:0009416 - response to light stimulus
+
+TRINITY_DN11635_c0_g1	unknown
+TRINITY_DN19207_c1_g1	naringenin,2-oxoglutarate 3-dioxygenase                      
+TRINITY_DN3338_c0_g1	Rhodanese/Cell cycle control phosphatase superfamily protein
+TRINITY_DN36133_c0_g1	serine hydroxymethyltransferase
+TRINITY_DN3824_c0_g1	photosystem II 22 kDa protein chloroplastic-like
+TRINITY_DN5286_c0_g1	Calcium sensing receptor
+TRINITY_DN5644_c0_g1	PLASTID REDOX INSENSITIVE 2, chloroplastic-like
+TRINITY_DN654_c0_g1	heat shock protein 90-5, chloroplastic 
+TRINITY_DN799_c1_g1	photosystem II core complex proteins psbY, chloroplastic-like
+
+#####################################################################################
+
+upregulated genes associated to GO:0008610 - lipid metabolic process
+
+TRINITY_DN3756_c0_g1	squalene monooxygenase 1
+TRINITY_DN3756_c0_g2	squalene epoxidase
+TRINITY_DN5338_c0_g1	1-deoxy-D-xylulose 5-phosphate reductoisomerase
+TRINITY_DN5782_c0_g1	obtusifoliol 14-alpha demethylase
+TRINITY_DN5964_c0_g1	Protein NRT1/ PTR FAMILY 7.3
+TRINITY_DN64801_c0_g2	3-ketoacyl-CoA synthase 6
+TRINITY_DN7812_c1_g1	enoyl-ACP reductase
+TRINITY_DN93084_c3_g1	inositol-3-phosphate synthase
+TRINITY_DN9401_c0_g1	heterodimeric geranylgeranyl pyrophosphate synthase small subunit chloroplastic-like
+
+#####################################################################################
+
+upregulated genes associated to GO:0043436 - oxoacid metabolic process
+
+TRINITY_DN10324_c6_g1	glycine dehydrogenase
+TRINITY_DN11_c0_g1	fructose-bisphosphate aldolase 1
+TRINITY_DN2200_c0_g1	malate dehydrogenase [NADP], chloroplastic
+TRINITY_DN3206_c0_g1	putative D-cysteine desulfhydrase 1
+TRINITY_DN36133_c0_g1	serine hydroxymethyltransferase
+TRINITY_DN4942_c0_g1	probable low-specificity L-threonine aldolase 1
+TRINITY_DN5338_c0_g1	1-deoxy-D-xylulose 5-phosphate reductoisomerase
+TRINITY_DN6078_c1_g1	cystathionine gamma-synthase
+TRINITY_DN64801_c0_g2	3-ketoacyl-CoA synthase 6
+TRINITY_DN7468_c1_g2	omega-3 fatty acid desaturase chloroplastic-like
+TRINITY_DN7812_c1_g1	enoyl-ACP reductase
+TRINITY_DN82008_c6_g1	phospho-2-dehydro-3-deoxyheptonate aldolase 2, chloroplastic
+TRINITY_DN833_c0_g1	nitrate reductase
+TRINITY_DN9690_c0_g1	phosphoserine phosphatase
+
+#####################################################################################
+
+upregulated genes associated to GO:0005976 - polysaccharide metabolic process
+
+TRINITY_DN12733_c2_g1	1,4-alpha-glucan-branching enzyme 1
+TRINITY_DN13393_c0_g1	UTP-glucose-1-phosphate uridylyltransferase
+TRINITY_DN1392_c0_g1	soluble inorganic pyrophosphatase PPA1
+TRINITY_DN15501_c0_g1	beta-amylase
+TRINITY_DN2894_c0_g1	beta-amylase
+TRINITY_DN2993_c0_g1	ADP-glucose pyrophosphorylase
+TRINITY_DN54912_c0_g1	pectinesterase 2
+TRINITY_DN9640_c0_g1	ADP-glucose pyrophosphorylase
+
+#####################################################################################
+
+KO downregulated - MAPK signaling pathway - plant (9)
+
+MPK4
+MPK3
+MPK6
+WRKY33
+RAN1
+ETR/ERS
+EIN3/EIL
+ERF1
+PYR/PYL
+RbohD
+
+#####################################################################################
+
+KO downregulated -  Plant-pathogen interaction (10)
+
+CNGs
+CDPK
+Rboh
+CaMCML
+MPK4
+WRKY25
+MPK3/6
+RPM1
+EDS1
+Rd19
+
+#####################################################################################
+
+KO downregulated - Biosynthesis of secondary metabolites (8)
+
+BHMT2   -	homocysteine S-methyltransferase [EC:2.1.1.10]
+ilvE    -	branched-chain amino acid aminotransferase [EC:2.6.1.42]
+AOS     -	hydroperoxide dehydratase [EC:4.2.1.92]
+hemH    -	protoporphyrin/coproporphyrin ferrochelatase [EC:4.98.1.1 4.99.1.9]
+PAL     -	phenylalanine ammonia-lyase [EC:4.3.1.24]
+LCLAT1  -	lysocardiolipin and lysophospholipid acyltransferase [EC:2.3.1.- 2.3.1.51]
+CSE     -	caffeoylshikimate esterase [EC:3.1.1.-]
+CYP92A6 -	typhasterol/6-deoxotyphasterol 2alpha-hydroxylase
+
+#####################################################################################
+
+KO upregulated - Plant-pathogen interaction (2)
+
+KCS1	-	Suppression of plant HR and defense response
+HSP90B	-	may have a different role in fabales
+
+#####################################################################################
+
+KO upregulated - Photosynthesis (4)
+
+PsbQ
+PsbY
+PsbS
+PetF
+
+#####################################################################################
+
+KO upregulated - Flavonoid biosynthesis (2)
+
+HCT     -	shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133]
+F3H     -	naringenin 3-dioxygenase [EC:1.14.11.9]
+
+#####################################################################################
+
+KO upregulated
+
+Metabolic pathways (40)
+Biosynthesis of secondary metabolites (27)
+
+Carbon metabolism (7)
+Biosynthesis of amino acids (7)
+Starch and sucrose metabolism (6)
+Glycine, serine and threonine metabolism (5)
+Glyoxylate and dicarboxylate metabolism (4)
+Biosynthesis of cofactors (4)
+Carbon fixation in photosynthetic organisms (3)
+Steroid biosynthesis (2)
+Cysteine and methionine metabolism (2)
+Glutathione metabolism (2)
+Cyanoamino acid metabolism (2)
+Flavonoid biosynthesis (2)
+Phenylpropanoid biosynthesis (2)
+Terpenoid backbone biosynthesis (2)
+
+############################################################################################################################ END
+
+

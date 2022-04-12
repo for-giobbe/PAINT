@@ -1,9 +1,6 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0071456	cellular response to hypoxia	28	3	0.19	0.00080
-GO:0050804	modulation of chemical synaptic transmis...	114	5	0.76	0.00089
-GO:0030178	negative regulation of Wnt signaling pat...	35	3	0.23	0.00155
-GO:0051124	synaptic growth at neuromuscular junctio...	130	5	0.86	0.00160
-GO:0007613	memory	95	4	0.63	0.00350
-GO:0071805	potassium ion transmembrane transport	56	3	0.37	0.00595
-GO:0060828	regulation of canonical Wnt signaling pa...	57	3	0.38	0.00626
-GO:0007274	neuromuscular synaptic transmission	59	3	0.39	0.00689
+GO:0044773	mitotic DNA damage checkpoint	16	2	0.02	0.00010
+GO:1901991	negative regulation of mitotic cell cycl...	35	2	0.03	0.00049
+GO:0072331	signal transduction by p53 class mediato...	10	1	0.01	0.00986
+GO:0010332	response to gamma radiation	10	1	0.01	0.00986
+GO:1900182	positive regulation of protein localizat...	10	1	0.01	0.00986

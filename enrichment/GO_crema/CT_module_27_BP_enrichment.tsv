@@ -1,7 +1,9 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0036011	imaginal disc-derived leg segmentation	24	3	0.12	0.00021
-GO:0016574	histone ubiquitination	11	2	0.05	0.00127
-GO:0031058	positive regulation of histone modificat...	16	2	0.08	0.00273
-GO:0014019	neuroblast development	19	2	0.09	0.00386
-GO:0007406	negative regulation of neuroblast prolif...	21	2	0.1	0.00471
-GO:0048867	stem cell fate determination	24	2	0.12	0.00613
+GO:0060260	regulation of transcription initiation f...	10	1	0.01	0.0070
+GO:0016973	poly(A)+ mRNA export from nucleus	10	1	0.01	0.0070
+GO:0036098	male germ-line stem cell population main...	11	1	0.01	0.0078
+GO:0009303	rRNA transcription	11	1	0.01	0.0078
+GO:0043903	regulation of symbiosis, encompassing mu...	12	1	0.01	0.0085
+GO:0050688	regulation of defense response to virus	13	1	0.01	0.0092
+GO:0034605	cellular response to heat	14	1	0.01	0.0099
+GO:0035821	modification of morphology or physiology...	14	1	0.01	0.0099

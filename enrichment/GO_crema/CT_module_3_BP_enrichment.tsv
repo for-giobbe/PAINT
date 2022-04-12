@@ -1,6 +1,30 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0070646	protein modification by small protein re...	49	4	0.54	0.0020
-GO:0008593	regulation of Notch signaling pathway	100	5	1.1	0.0048
-GO:0016310	phosphorylation	626	14	6.9	0.0057
-GO:0007094	mitotic spindle assembly checkpoint	11	2	0.12	0.0062
-GO:0006665	sphingolipid metabolic process	37	3	0.41	0.0077
+GO:0015985	energy coupled proton transport, down el...	14	6	0.89	0.00013
+GO:0030198	extracellular matrix organization	40	10	2.55	0.00015
+GO:0010817	regulation of hormone levels	82	16	5.23	0.00015
+GO:0046496	nicotinamide nucleotide metabolic proces...	43	10	2.74	0.00029
+GO:0005996	monosaccharide metabolic process	51	11	3.25	0.00029
+GO:1903532	positive regulation of secretion by cell	22	7	1.4	0.00030
+GO:0002793	positive regulation of peptide secretion	11	5	0.7	0.00034
+GO:0006629	lipid metabolic process	389	62	24.8	0.00037
+GO:0006081	cellular aldehyde metabolic process	30	8	1.91	0.00043
+GO:0055085	transmembrane transport	518	58	33.02	0.00077
+GO:0062012	regulation of small molecule metabolic p...	35	8	2.23	0.00131
+GO:0006639	acylglycerol metabolic process	28	7	1.78	0.00149
+GO:0009060	aerobic respiration	36	8	2.29	0.00159
+GO:0055069	zinc ion homeostasis	10	4	0.64	0.00251
+GO:0007029	endoplasmic reticulum organization	23	6	1.47	0.00258
+GO:0070328	triglyceride homeostasis	23	6	1.47	0.00258
+GO:0033500	carbohydrate homeostasis	39	8	2.49	0.00273
+GO:0006820	anion transport	175	24	11.16	0.00360
+GO:0042775	mitochondrial ATP synthesis coupled elec...	25	6	1.59	0.00406
+GO:0046890	regulation of lipid biosynthetic process	19	5	1.21	0.00567
+GO:0006767	water-soluble vitamin metabolic process	19	5	1.21	0.00567
+GO:0010821	regulation of mitochondrion organization	19	5	1.21	0.00567
+GO:0044242	cellular lipid catabolic process	44	8	2.8	0.00594
+GO:0006721	terpenoid metabolic process	20	5	1.27	0.00717
+GO:0045924	regulation of female receptivity	20	5	1.27	0.00717
+GO:0010675	regulation of cellular carbohydrate meta...	13	4	0.83	0.00734
+GO:0031644	regulation of neurological system proces...	13	4	0.83	0.00734
+GO:1901607	alpha-amino acid biosynthetic process	37	7	2.36	0.00791
+GO:1901292	nucleoside phosphate catabolic process	37	7	2.36	0.00791

@@ -1,9 +1,11 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0006399	tRNA metabolic process	98	11	2.41	0.00016
-GO:0006401	RNA catabolic process	82	9	2.02	0.00087
-GO:0030952	establishment or maintenance of cytoskel...	34	5	0.84	0.00133
-GO:0017148	negative regulation of translation	34	5	0.84	0.00133
-GO:0008582	regulation of synaptic growth at neuromu...	105	8	2.58	0.00418
-GO:0000132	establishment of mitotic spindle orienta...	16	3	0.39	0.00647
-GO:0000959	mitochondrial RNA metabolic process	16	3	0.39	0.00647
-GO:0045214	sarcomere organization	33	4	0.81	0.00829
+GO:0008543	fibroblast growth factor receptor signal...	17	3	0.11	0.00014
+GO:0055002	striated muscle cell development	61	4	0.38	0.00052
+GO:0007525	somatic muscle development	74	4	0.46	0.00109
+GO:0007522	visceral muscle development	10	2	0.06	0.00165
+GO:0006672	ceramide metabolic process	11	2	0.07	0.00201
+GO:0007272	ensheathment of neurons	14	2	0.09	0.00328
+GO:0044773	mitotic DNA damage checkpoint	16	2	0.1	0.00429
+GO:0006644	phospholipid metabolic process	108	4	0.67	0.00436
+GO:0007338	single fertilization	22	2	0.14	0.00807
+GO:0034285	response to disaccharide	24	2	0.15	0.00957

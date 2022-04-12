@@ -1,11 +1,42 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0008543	fibroblast growth factor receptor signal...	17	3	0.11	0.00014
-GO:0055002	striated muscle cell development	61	4	0.38	0.00052
-GO:0007525	somatic muscle development	74	4	0.46	0.00109
-GO:0007522	visceral muscle development	10	2	0.06	0.00165
-GO:0006672	ceramide metabolic process	11	2	0.07	0.00201
-GO:0007272	ensheathment of neurons	14	2	0.09	0.00328
-GO:0044773	mitotic DNA damage checkpoint	16	2	0.1	0.00429
-GO:0006644	phospholipid metabolic process	108	4	0.67	0.00436
-GO:0007338	single fertilization	22	2	0.14	0.00807
-GO:0034285	response to disaccharide	24	2	0.15	0.00957
+GO:0033500	carbohydrate homeostasis	39	12	3.66	0.00015
+GO:1903508	positive regulation of nucleic acid-temp...	312	49	29.28	0.00019
+GO:0007391	dorsal closure	93	20	8.73	0.00031
+GO:0001736	establishment of planar polarity	95	19	8.92	0.00112
+GO:0030032	lamellipodium assembly	19	7	1.78	0.00114
+GO:0010259	multicellular organism aging	118	22	11.07	0.00126
+GO:0008582	regulation of synaptic growth at neuromu...	105	20	9.85	0.00158
+GO:0007629	flight behavior	15	6	1.41	0.00159
+GO:0009408	response to heat	50	12	4.69	0.00182
+GO:0051094	positive regulation of developmental pro...	183	30	17.17	0.00189
+GO:0006366	transcription by RNA polymerase II	551	73	51.71	0.00193
+GO:0032231	regulation of actin filament bundle asse...	11	5	1.03	0.00205
+GO:0009996	negative regulation of cell fate specifi...	21	7	1.97	0.00223
+GO:0048803	imaginal disc-derived male genitalia mor...	22	7	2.06	0.00302
+GO:0030336	negative regulation of cell migration	12	5	1.13	0.00324
+GO:0035215	genital disc development	45	14	4.22	0.00382
+GO:0030097	hemopoiesis	66	14	6.19	0.00403
+GO:0007494	midgut development	35	9	3.28	0.00405
+GO:0007411	axon guidance	232	35	21.77	0.00469
+GO:0042058	regulation of epidermal growth factor re...	49	11	4.6	0.00484
+GO:0043506	regulation of JUN kinase activity	13	5	1.22	0.00487
+GO:0010629	negative regulation of gene expression	412	53	38.67	0.00491
+GO:0046843	dorsal appendage formation	36	9	3.38	0.00496
+GO:0010669	epithelial structure maintenance	24	7	2.25	0.00519
+GO:0007300	ovarian nurse cell to oocyte transport	30	8	2.82	0.00522
+GO:0030036	actin cytoskeleton organization	241	42	22.62	0.00537
+GO:0098739	import across plasma membrane	16	5	1.5	0.00658
+GO:0033993	response to lipid	64	14	6.01	0.00680
+GO:0050803	regulation of synapse structure or activ...	161	31	15.11	0.00694
+GO:0009855	determination of bilateral symmetry	14	5	1.31	0.00700
+GO:0007448	anterior/posterior pattern specification...	14	5	1.31	0.00700
+GO:0098781	ncRNA transcription	14	5	1.31	0.00700
+GO:0016310	phosphorylation	626	84	58.75	0.00735
+GO:0120039	plasma membrane bounded cell projection ...	387	58	36.32	0.00785
+GO:0010506	regulation of autophagy	74	14	6.95	0.00806
+GO:2000113	negative regulation of cellular macromol...	301	42	28.25	0.00818
+GO:0120034	positive regulation of plasma membrane b...	20	6	1.88	0.00822
+GO:0051046	regulation of secretion	69	14	6.48	0.00941
+GO:0071711	basement membrane organization	15	5	1.41	0.00970
+GO:0046173	polyol biosynthetic process	15	5	1.41	0.00970
+GO:1903507	negative regulation of nucleic acid-temp...	269	38	25.25	0.00993

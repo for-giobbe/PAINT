@@ -1,15 +1,9 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0032365	intracellular lipid transport	10	3	0.2	0.00084
-GO:0043161	proteasome-mediated ubiquitin-dependent ...	153	11	3.05	0.00096
-GO:1903052	positive regulation of proteolysis invol...	39	5	0.78	0.00098
-GO:0034440	lipid oxidation	24	4	0.48	0.00118
-GO:0035010	encapsulation of foreign target	26	4	0.52	0.00161
-GO:0046883	regulation of hormone secretion	18	3	0.36	0.00508
-GO:0097502	mannosylation	18	3	0.36	0.00508
-GO:0019915	lipid storage	37	4	0.74	0.00599
-GO:0016197	endosomal transport	85	6	1.69	0.00678
-GO:0031532	actin cytoskeleton reorganization	21	3	0.42	0.00792
-GO:0006643	membrane lipid metabolic process	60	5	1.2	0.00851
-GO:0006644	phospholipid metabolic process	108	7	2.15	0.00897
-GO:0032102	negative regulation of response to exter...	22	3	0.44	0.00904
-GO:0010921	regulation of phosphatase activity	22	3	0.44	0.00904
+GO:0006399	tRNA metabolic process	98	11	2.41	0.00016
+GO:0006401	RNA catabolic process	82	9	2.02	0.00087
+GO:0030952	establishment or maintenance of cytoskel...	34	5	0.84	0.00133
+GO:0017148	negative regulation of translation	34	5	0.84	0.00133
+GO:0008582	regulation of synaptic growth at neuromu...	105	8	2.58	0.00418
+GO:0000132	establishment of mitotic spindle orienta...	16	3	0.39	0.00647
+GO:0000959	mitochondrial RNA metabolic process	16	3	0.39	0.00647
+GO:0045214	sarcomere organization	33	4	0.81	0.00829

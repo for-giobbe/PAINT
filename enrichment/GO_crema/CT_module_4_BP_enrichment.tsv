@@ -1,21 +1,41 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0140014	mitotic nuclear division	116	12	3.49	0.00025
-GO:0033554	cellular response to stress	507	34	15.26	0.00058
-GO:0032543	mitochondrial translation	38	6	1.14	0.00086
-GO:0034622	cellular protein-containing complex asse...	354	22	10.66	0.00086
-GO:0034660	ncRNA metabolic process	258	26	7.77	0.00091
-GO:0035194	posttranscriptional gene silencing by RN...	41	6	1.23	0.00129
-GO:0072666	establishment of protein localization to...	18	4	0.54	0.00175
-GO:0006396	RNA processing	432	40	13.01	0.00185
-GO:0007034	vacuolar transport	45	6	1.35	0.00212
-GO:0006302	double-strand break repair	64	7	1.93	0.00294
-GO:0006260	DNA replication	113	11	3.4	0.00309
-GO:0009411	response to UV	22	4	0.66	0.00381
-GO:0000956	nuclear-transcribed mRNA catabolic proce...	53	6	1.6	0.00489
-GO:0010669	epithelial structure maintenance	24	4	0.72	0.00529
-GO:0097352	autophagosome maturation	25	4	0.75	0.00615
-GO:0006360	transcription by RNA polymerase I	13	3	0.39	0.00615
-GO:0045451	pole plasm oskar mRNA localization	40	5	1.2	0.00658
-GO:0032509	endosome transport via multivesicular bo...	26	4	0.78	0.00709
-GO:0032508	DNA duplex unwinding	60	6	1.81	0.00897
-GO:0031099	regeneration	25	4	0.75	0.00928
+GO:0010160	formation of animal organ boundary	33	5	0.58	0.00025
+GO:0016199	axon midline choice point recognition	19	4	0.34	0.00029
+GO:0030177	positive regulation of Wnt signaling pat...	35	5	0.62	0.00034
+GO:0040008	regulation of growth	264	14	4.66	0.00041
+GO:0007268	chemical synaptic transmission	238	13	4.2	0.00042
+GO:0046777	protein autophosphorylation	37	5	0.65	0.00044
+GO:0051124	synaptic growth at neuromuscular junctio...	130	9	2.3	0.00046
+GO:0007616	long-term memory	59	6	1.04	0.00057
+GO:1901880	negative regulation of protein depolymer...	10	3	0.18	0.00059
+GO:0035222	wing disc pattern formation	60	6	1.06	0.00062
+GO:0070507	regulation of microtubule cytoskeleton o...	42	5	0.74	0.00080
+GO:0048311	mitochondrion distribution	11	3	0.19	0.00080
+GO:0043954	cellular component maintenance	25	4	0.44	0.00088
+GO:0022416	chaeta development	65	6	1.15	0.00095
+GO:0007422	peripheral nervous system development	65	6	1.15	0.00095
+GO:0007019	microtubule depolymerization	12	3	0.21	0.00105
+GO:0009649	entrainment of circadian clock	13	3	0.23	0.00135
+GO:0048749	compound eye development	298	18	5.27	0.00137
+GO:0006338	chromatin remodeling	73	6	1.29	0.00175
+GO:0034332	adherens junction organization	31	4	0.55	0.00202
+GO:0046530	photoreceptor cell differentiation	164	11	2.9	0.00241
+GO:0099518	vesicle cytoskeletal trafficking	16	3	0.28	0.00255
+GO:0007411	axon guidance	232	15	4.1	0.00258
+GO:0006342	chromatin silencing	80	6	1.41	0.00279
+GO:0070828	heterochromatin organization	35	4	0.62	0.00318
+GO:0008586	imaginal disc-derived wing vein morphoge...	35	4	0.62	0.00318
+GO:0035335	peptidyl-tyrosine dephosphorylation	36	4	0.64	0.00353
+GO:1902904	negative regulation of supramolecular fi...	18	3	0.32	0.00362
+GO:0030718	germ-line stem cell population maintenan...	59	5	1.04	0.00371
+GO:0098722	asymmetric stem cell division	48	5	0.85	0.00382
+GO:0007317	regulation of pole plasm oskar mRNA loca...	19	3	0.34	0.00424
+GO:0061013	regulation of mRNA catabolic process	19	3	0.34	0.00424
+GO:0043966	histone H3 acetylation	19	3	0.34	0.00424
+GO:0009266	response to temperature stimulus	90	6	1.59	0.00501
+GO:0032147	activation of protein kinase activity	42	4	0.74	0.00619
+GO:0016476	regulation of embryonic cell shape	22	3	0.39	0.00649
+GO:0035330	regulation of hippo signaling	44	4	0.78	0.00731
+GO:0051494	negative regulation of cytoskeleton orga...	23	3	0.41	0.00737
+GO:0007294	germarium-derived oocyte fate determinat...	23	3	0.41	0.00737
+GO:0030010	establishment of cell polarity	48	4	0.85	0.00992

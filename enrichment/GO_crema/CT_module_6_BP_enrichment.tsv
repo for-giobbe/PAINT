@@ -1,6 +1,5 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0050965	detection of temperature stimulus involv...	12	2	0.06	0.0017
-GO:0051924	regulation of calcium ion transport	16	2	0.08	0.0030
-GO:1901264	carbohydrate derivative transport	26	2	0.14	0.0080
-GO:0070848	response to growth factor	69	3	0.36	0.0083
-GO:0032456	endocytic recycling	28	2	0.15	0.0092
+GO:0000469	cleavage involved in rRNA processing	18	2	0.04	0.00081
+GO:0090502	RNA phosphodiester bond hydrolysis, endo...	47	2	0.11	0.00551
+GO:0008306	associative learning	48	2	0.12	0.00574
+GO:0007616	long-term memory	59	2	0.14	0.00858

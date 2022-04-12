@@ -1,5 +1,17 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0006030	chitin metabolic process	32	3	0.14	0.00038
-GO:0031057	negative regulation of histone modificat...	12	2	0.05	0.00127
-GO:0006023	aminoglycan biosynthetic process	14	2	0.06	0.00174
-GO:0042073	intraciliary transport	15	2	0.07	0.00201
+GO:0009081	branched-chain amino acid metabolic proc...	12	4	0.36	0.00033
+GO:0010975	regulation of neuron projection developm...	93	11	2.8	0.00086
+GO:0009156	ribonucleoside monophosphate biosyntheti...	69	8	2.08	0.00102
+GO:0055002	striated muscle cell development	61	7	1.84	0.00223
+GO:0035025	positive regulation of Rho protein signa...	10	3	0.3	0.00276
+GO:0046460	neutral lipid biosynthetic process	10	3	0.3	0.00276
+GO:0008345	larval locomotory behavior	33	5	0.99	0.00281
+GO:0031532	actin cytoskeleton reorganization	21	4	0.63	0.00319
+GO:0045010	actin nucleation	23	4	0.69	0.00451
+GO:0030322	stabilization of membrane potential	12	3	0.36	0.00484
+GO:0006793	phosphorus metabolic process	980	47	29.5	0.00677
+GO:0014065	phosphatidylinositol 3-kinase signaling	14	3	0.42	0.00766
+GO:0046112	nucleobase biosynthetic process	14	3	0.42	0.00766
+GO:0045448	mitotic cell cycle, embryonic	28	4	0.84	0.00927
+GO:0043401	steroid hormone mediated signaling pathw...	28	4	0.84	0.00927
+GO:0071901	negative regulation of protein serine/th...	15	3	0.45	0.00937

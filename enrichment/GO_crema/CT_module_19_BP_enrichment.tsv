@@ -1,1 +1,5 @@
 GO.ID	Term	Annotated	Significant	Expected	test
+GO:0009226	nucleotide-sugar biosynthetic process	10	1	0.01	0.0070
+GO:0006672	ceramide metabolic process	11	1	0.01	0.0078
+GO:0006744	ubiquinone biosynthetic process	12	1	0.01	0.0085
+GO:0008203	cholesterol metabolic process	14	1	0.01	0.0099

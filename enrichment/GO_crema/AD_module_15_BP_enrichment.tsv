@@ -1,14 +1,13 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0072521	purine-containing compound metabolic pro...	210	32	7.98	0.00063
-GO:0006487	protein N-linked glycosylation	22	5	0.84	0.00118
-GO:0072599	establishment of protein localization to...	15	4	0.57	0.00200
-GO:0044281	small molecule metabolic process	704	78	26.77	0.00242
-GO:0046890	regulation of lipid biosynthetic process	19	4	0.72	0.00504
-GO:0006605	protein targeting	57	7	2.17	0.00552
-GO:0034030	ribonucleoside bisphosphate biosynthetic...	20	4	0.76	0.00612
-GO:0034033	purine nucleoside bisphosphate biosynthe...	20	4	0.76	0.00612
-GO:0045910	negative regulation of DNA recombination	11	3	0.42	0.00715
-GO:0006120	mitochondrial electron transport, NADH t...	11	3	0.42	0.00715
-GO:0006221	pyrimidine nucleotide biosynthetic proce...	21	4	0.8	0.00733
-GO:0042593	glucose homeostasis	33	5	1.25	0.00759
-GO:0042135	neurotransmitter catabolic process	12	3	0.46	0.00926
+GO:0007059	chromosome segregation	128	12	3.65	0.00066
+GO:0006919	activation of cysteine-type endopeptidas...	15	4	0.43	0.00069
+GO:0140053	mitochondrial gene expression	53	7	1.51	0.00070
+GO:0034587	piRNA metabolic process	10	3	0.29	0.00237
+GO:0007100	mitotic centrosome separation	11	3	0.31	0.00319
+GO:0006298	mismatch repair	12	3	0.34	0.00417
+GO:0022412	cellular process involved in reproductio...	607	32	17.33	0.00440
+GO:1902850	microtubule cytoskeleton organization in...	73	7	2.08	0.00461
+GO:0042321	negative regulation of circadian sleep/w...	13	3	0.37	0.00531
+GO:0010529	negative regulation of transposition	13	3	0.37	0.00531
+GO:0006399	tRNA metabolic process	98	10	2.8	0.00600
+GO:0018107	peptidyl-threonine phosphorylation	15	3	0.43	0.00810

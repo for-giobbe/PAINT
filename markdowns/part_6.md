@@ -1,7 +1,7 @@
 # evolutionary age and rates of ant-plant interaction genes
 
 
-*environiment:* yaml.main
+*environiment:* yaml.WGCNA / yaml.rates
 
 
 *aim:* gain evolutionary insight on the genes associated to crema-vicia interactions, using phylostratigraphy and dnds analyses.
@@ -124,11 +124,21 @@ be able to see such a signal anyway. Here are all orthogroups in which crema has
 while read line; 
 	do 
 	copy=$(echo $line | grep -o "crema" | wc -w); 
-	if [[ $copy == 1 ]]; then echo $line | awk '{print $1}'; 
-	fi; 
-done < crema/Orthogroups.txt
+	if [[ $copy == 1 ]]; 
+		then total=$(echo $line | wc -w); 
+		if [[ $total -gt 5 ]]; 
+			then echo $line | awk -F ":" '{print $1}';
+			fi; 
+		fi; 
+	done < crema/Orthogroups.txt > crema/SingleCopyOrthogroups.txt
 ```
 
+
+This resulted in 5789 genes: of those XXX are in coexpression modules associated to the interaction.
+
+
+Prior to dnds inference, we need to retrotranslate the orthogroups from amminoacids to nucleotides, 
+then to align them.
 
 ---
 

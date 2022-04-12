@@ -1,5 +1,5 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0070588	calcium ion transmembrane transport	54	4	0.31	0.00023
-GO:0050982	detection of mechanical stimulus	15	2	0.08	0.00312
-GO:0001895	retina homeostasis	18	2	0.1	0.00450
-GO:0051480	regulation of cytosolic calcium ion conc...	24	2	0.14	0.00795
+GO:0002164	larval development	125	2	0.09	0.0030
+GO:0071025	RNA surveillance	10	1	0.01	0.0070
+GO:0034661	ncRNA catabolic process	11	1	0.01	0.0078
+GO:0006284	base-excision repair	11	1	0.01	0.0078

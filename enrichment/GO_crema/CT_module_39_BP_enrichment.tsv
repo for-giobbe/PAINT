@@ -1,3 +1,4 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0009101	glycoprotein biosynthetic process	88	4	0.5	0.0015
-GO:0110111	negative regulation of animal organ morp...	20	2	0.11	0.0056
+GO:0035073	pupariation	13	2	0.06	0.0015
+GO:0050911	detection of chemical stimulus involved ...	199	5	0.9	0.0018
+GO:0035006	melanization defense response	29	2	0.13	0.0075

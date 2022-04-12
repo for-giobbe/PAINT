@@ -1,6 +1,4 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0044773	mitotic DNA damage checkpoint	16	2	0.02	0.00010
-GO:1901991	negative regulation of mitotic cell cycl...	35	2	0.03	0.00049
-GO:0072331	signal transduction by p53 class mediato...	10	1	0.01	0.00986
-GO:0010332	response to gamma radiation	10	1	0.01	0.00986
-GO:1900182	positive regulation of protein localizat...	10	1	0.01	0.00986
+GO:0018991	oviposition	16	2	0.09	0.0039
+GO:0046785	microtubule polymerization	18	2	0.11	0.0050
+GO:0007188	adenylate cyclase-modulating G protein-c...	22	2	0.13	0.0074
