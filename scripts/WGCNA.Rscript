@@ -8,18 +8,18 @@ if (length(args)<13) {
   stop("too few arguments", call.=FALSE)
 }
 
-#args[1]  power                   # 13
+#args[1]  power                   # 14 / 22
 #args[2]  network type            # signed
 #args[3]  minmodulesize           # 30
-#args[4]  mergecutheight          # 0.2
-#args[5]  mincorekme              # 0.5
+#args[4]  mergecutheight          # 0.3
+#args[5]  mincorekme              # 0.6
 #args[6]  cortype                 # pearson
 #args[7]  counts                  # 
 #args[8]  traits                  #
 #args[9]  output folder           #
-#args[10] p value correction      # fdr
+#args[10] p value correction      # none
 #args[10] p value cutoff	  # 0.05
-#args[12] min counts              # 10
+#args[12] min counts              # 20
 #args[13] tissue                  # AD or CT
 
 power = as.numeric(args[1])
@@ -191,6 +191,10 @@ labeledHeatmap(Matrix = moduleTraitCor,
 
 ############################################################################################ massage data #######
 
+moduleTraitCor <- moduleTraitCor[order(row.names(moduleTraitCor)),]
+
+moduleTraitCor
+
 if (tissue == "AD") {
   
   moduleTraitPvalue = corPvalueStudent(moduleTraitCor, nSamples)[,1:3];
@@ -201,7 +205,7 @@ if (tissue == "AD") {
   moduleTraitCor_heat_df <- setDT(moduleTraitCor_heat_df, keep.rownames = TRUE)[]
   moduleTraitCor_heat_df$rn <- str_replace(moduleTraitCor_heat_df$rn, "ME", "")
   moduleTraitCor_heat_bp <- moduleTraitCor_heat_df
-  
+
   moduleColorslength <- vector()
   for(i in 1:length(moduleTraitCor_heat_df$rn)) {
     moduleColorslength <- append(moduleColorslength, length(names(datExpr0)[moduleColors==moduleTraitCor_heat_df$rn[i]]))
@@ -336,9 +340,11 @@ moduleTraitCor_AD_L_NEG_exclusive
 #}
 
 }
+
 ############################################################################################ extract modules genes CT #######
 
 if (tissue == "CT") {
+
 moduleTraitCor_CT_0 <- moduleTraitCor_heat_df[moduleTraitCor_heat_df$trait == 'CT_0',]
 moduleTraitCor_CT_0 <- moduleTraitCor_CT_0[moduleTraitCor_CT_0$pval < pcut,]
 moduleTraitCor_CT_0_POS <- moduleTraitCor_CT_0[moduleTraitCor_CT_0$value > 0,]
@@ -433,21 +439,14 @@ moduleTraitCor_CT_L_NEG_exclusive
 #}
 
 }
+
 ############################################################################################ choose top hub gene in each module  #######
 
 hub <- chooseTopHubInEachModule(datExpr0,moduleColors,type =networktype,power=power)
 hub <- data.frame(hub)
-hub$module_col <- rownames(hub)
-hub$module_num <- rownames(moduleTraitCor_heat_bp)
 write.table(hub, file=paste(tissue, "_hub_genes.tsv", sep=""),row.names=FALSE,col.names=FALSE,sep="\t", quote = FALSE)
 
 ############################################################################################# extract each modules genes ###############
-
-#for(i in 1:length(rownames(subset(moduleTraitCor_heat, rownames(moduleTraitCor_heat)!="MEgrey")))) {
-#  genes <- names(datExpr0)[moduleColors==str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")]
-#  module <- str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")
-#  write.table(genes, file=paste(tissue, "_module_", module, "_genes.lst", sep=""),row.names=FALSE,col.names=FALSE,sep="\t", quote = FALSE)
-#}
 
 for(i in 1:length(rownames(subset(moduleTraitCor_heat, rownames(moduleTraitCor_heat)!="MEgrey")))) {
   genes <- names(datExpr0)[moduleColors==str_replace(rownames(moduleTraitCor_heat)[i], "ME", "")]
@@ -474,6 +473,7 @@ pb <- ggplot(data = moduleTraitCor_heat_df, aes(x = rn, y = trait)) +
   theme(legend.title=element_text(size=12))
 
 ggsave(file=paste(tissue, "_crema_WGCNA_standard_heatmap.jpg", sep=""),pb, width = 20, height = 10)
+ggsave(file=paste(tissue, "_crema_WGCNA_standard_heatmap.pdf", sep=""),pb, width = 20, height = 10)
 
 ############################################################################################ custom heatmap #####################
 
@@ -521,16 +521,18 @@ p0 <- ggplot(data = moduleTraitCor_heat_df_plot, aes(x = rn, y = trait)) +
   theme(axis.text.x = element_text(angle = 90, vjust=0, hjust=0)) +
   geom_tile(aes(fill = value), color = "white", size=2) +
   scale_fill_gradientn(colours = c("lightblue", "white", "orange"), values = scales::rescale(c(-0.5, -0.3, 0, 0.3, 0.5)), name = "module - trait correlation") +
-  geom_text(aes(label = signif(pval, 2)), size = 4) +
+  geom_text(aes(label = signif(pval, 2)), size = 6) +
   theme(panel.background = element_rect(fill = 'white', colour = 'white')) +
   coord_equal() +
   theme(axis.title.x=element_blank()) +
   theme(axis.title.y=element_blank()) +
-  theme(plot.title = element_text(size=12,face="bold")) +
+  theme(plot.title = element_text(size=16,face="bold")) +
   labs(title = "WGCNA modules - traits relationship") +
-  theme(axis.text=element_text(size=12), axis.title=element_text(size=8,face="bold")) +
-  theme(legend.text=element_text(size=12)) +
+  theme(axis.text=element_text(size=16), axis.title=element_text(size=8,face="bold")) +
+  theme(legend.text=element_text(size=16)) +
   theme(plot.title = element_text(size=12)) +
   theme(legend.title=element_text(size=12))
 
 ggsave(file=paste(tissue, "_crema_WGCNA_custom_heatmap.jpg", sep=""),p0, width = 20, height = 10)
+ggsave(file=paste(tissue, "_crema_WGCNA_custom_heatmap.pdf", sep=""),p0, width = 20, height = 10)
+
