@@ -1,0 +1,8 @@
+transcript	module	correlation	stratum	support	coding	gene name	short name	comment
+TRINITY_DN5158_c0_g1    01      S+	PAL     average	Y	receptor-type tyrosine-protein phosphatase S/K/mu/F/U/T/... -like	-	-
+TRINITY_DN505_c4_g1	03	B-	PAL	strong	Y	SNF-related serine/threonine-protein kinase	SNRK	insulin signaling pathway
+TRINITY_DN3503_c0_g1    09	B+	PAL	strong	Y	Pre-mRNA-splicing regulator female-lethal(2)D	fl(2)d	associated with mail traits
+TRINITY_DN9981_c0_g1    10	S+	PAL	strong	Y	beta-ureidopropionase	UPB1	Catalyzes a late step in pyrimidine degradation
+TRINITY_DN235_c0_g2     12	L-	PAL     strong  Y	protein transport protein Sec24C	SEC24C	-
+TRINITY_DN3289_c1_g1	14     	L-	PAL	strong	Y	E3 ubiquitin-protein ligase ariadne-1	ari-1	neuronal development + regulates ecdysone hormonal pathway
+

@@ -1,0 +1,15 @@
+transcript	module	correlation	stratum	support coding  gene name	short name	comment
+TRINITY_DN1118_c1_g1	03	L+	PAL	strong	Y	2-hydroxyacyl-CoA lyase 1	HACL1	fatty acid alpha-oxidation
+TRINITY_DN153_c1_g1	07	L-	NEO	strong	Y	DNA fragmentation factor subunit beta	DFFB	apoptosis
+TRINITY_DN2375_c0_g2	12	L+	-	average	N	uncharachterized	-	-
+TRINITY_DN760_c1_g3	13	S+	PAL	strong	Y	Hisotne 3	H3	-
+TRINITY_DN202_c0_g2	14	L-	PAL	average	Y	retinal homeobox protein 	Rx2	in insects - no visual system but brain and clypeus development
+TRINITY_DN2310_c0_g1	15	L-	PAL	strong	Y	uncharachterized	CG40498-RF in Dmel	expressed in the brain
+TRINITY_DN1641_c0_g1	16	L+	NEO	strong	Y	uncharachterized	-	-
+TRINITY_DN2746_c0_g1    18	L+	NEO	strong	Y	vacuolar protein sorting-associated protein 16 homolog	Vps16A	 endocytic membrane transport and autophagic pathways / starvation
+TRINITY_DN10689_c0_g1	21	L-	-	strong	N	partial homology to tyrosine-protein kinase Abl 
+TRINITY_DN1286_c0_g2	23	S-	PAL	strong	Y	tRNA methyltransferase 10 homolog A	TM10	epigenetics machinery
+TRINITY_DN1178_c0_g1    31	L-	PAL	strong	Y	protein maelstrom 2	mael2	piRNA and miRNA / gene silencing
+TRINITY_DN1248_c0_g1	36	S-	PAL	strong	Y	N-alpha-acetyltransferase 60	Naa60	histone acetyltransferase activity / chromatin organization
+TRINITY_DN4835_c0_g1    39	L+	PAL	good    Y	odorant receptor coreceptor	Orco	chemical stimuli and pherormones 
+TRINITY_DN777_c0_g2     41	L-	SPS	low     Y	uncharachteryzed	-	-
