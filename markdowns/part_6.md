@@ -16,6 +16,10 @@ while the strata are the same number for crema and vicia, they can not obviously
 | stratum 1 | stratum 2      | stratum 3   | stratum 4   | stratum 5    | stratum 6   | stratum 7     |
 |-----------|----------------|-------------|-------------|--------------|-------------|---------------|
 | sp        | Myrmicinae     | Formicoidea | Hymenoptera | Holometabola | Neoptera    | Paleoptera    |
+
+
+| stratum 1 | stratum 2      | stratum 3   | stratum 4   | stratum 5    | stratum 6   | stratum 7     |
+|-----------|----------------|-------------|-------------|--------------|-------------|---------------|
 | sp        | Papilionoideae | Fabales     | Rosids      | Eudicots     | Angiosperms | Spermatophyte |
 
 

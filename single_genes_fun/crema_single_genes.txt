@@ -1,0 +1,557 @@
+################################################################################################ CT_module_39_L+
+
+Hub	TRINITY_DN4835_c0_g1	Orco
+
+TRINITY_DN10705_c1_g1	good	SNMP1	Sensory neuron membrane protein 1	pheromones or plant volatiles
+TRINITY_DN14046_c0_g1	stong	Or22c	Odorant receptor 22c	pheromones or plant volatiles
+TRINITY_DN6138_c0_g1	average Or49a	Odorant receptor 49a
+TRINITY_DN7734_c0_g1	strong 	SCARB1	Scavenger receptor class B member 1	pheroromnes
+TRINITY_DN195_c0_g2_i1	strong	ANO-4	anoctamin 4	ion channels
+TRINITY_DN3916_c0_g1_i1	good	a10	Putative odorant-binding protein A10
+TRINITY_DN5336_c0_g2_i1	strong	dyw	Circadian clock-controlled protein daywake
+TRINITY_DN5819_c0_g1_i1	strong	Obp69a	General odorant-binding protein 69a	aggressive behaviour
+
+############################################################################################### CT_module_13_S+
+
+Hub	TRINITY_DN760_c1_g3	histone H2A-like
+
+TRINITY_DN4679_c2_g2_i1	strong	H2B	histone 2B
+TRINITY_DN4679_c2_g2_i2	strong  H2B     histone 2B
+TRINITY_DN276_c0_g2_i1	strong	H3	histone H3
+TRINITY_DN725_c0_g1_i1	strong	H4	histone H4
+TRINITY_DN725_c0_g1_i2	strong	H4	histone H4
+TRINITY_DN1744_c0_g2_i1	strong	CYP4C1	cytochrome P450 4C1-like
+TRINITY_DN2094_c2_g2_i1	average	-	cytochrome P450 6A1
+TRINITY_DN2199_c0_g1_i9	good	NEMP1	nuclear envelope integral membrane protein 1
+TRINITY_DN296_c2_g1_i1	strong	DMRTA2	Doublesex- and mab-3-related transcription factor A2
+TRINITY_DN3289_c2_g1_i1	strong	SETMAR	Histone-lysine N-methyltransferase SETMAR-like
+TRINITY_DN760_c1_g3	strong  SETMAR  Histone-lysine N-methyltransferase SETMAR-like
+
+############################################################################################### CT_module_03_L+
+
+Hub	TRINITY_DN1118_c1_g1	2-hydroxyacyl-CoA lyase 1	HACL1
+
+GO:0010817	regulation of hormone levels
+
+TRINITY_DN1124_c0_g1	strong	ADIPOR1	Adiponectin receptor protein 1
+TRINITY_DN1592_c0_g2	strong	Gld	Glucose dehydrogenase [FAD, quinone]
+TRINITY_DN1592_c1_g1	strong	Gld	Glucose dehydrogenase [FAD, quinone]
+TRINITY_DN1870_c0_g2	strong	HSD17B11	Estradiol 17-beta-dehydrogenase 11
+TRINITY_DN20106_c0_g1	-
+TRINITY_DN2238_c0_g1	strong	Gld	Glucose dehydrogenase [FAD, quinone]
+TRINITY_DN236_c0_g6	strong	-	Venom carboxylesterase-6
+TRINITY_DN255_c0_g1	strong	-	Acyl-CoA Delta(11) desaturase
+TRINITY_DN2609_c0_g1	strong	Slc22a21	Solute carrier family 22 member 21
+TRINITY_DN3377_c0_g1	strong	CYP4C1	cytochrome P450 4C1-like
+TRINITY_DN3526_c0_g1	strong	RAB1A	Ras-related protein Rab-1A
+TRINITY_DN3780_c0_g1	strong	Gld	Glucose dehydrogenase [FAD, quinone]
+TRINITY_DN41103_c0_g3	strong	dimm	dimmed  Transcription factor that regulates neurosecretory (NS) cell function and neuroendocrine cell fate
+TRINITY_DN435_c0_g1	strong	Gld	Glucose dehydrogenase [FAD, quinone]
+TRINITY_DN449_c1_g1	strong	SDR16C5	hort chain dehydrogenase/reductase family 16C member 5 
+TRINITY_DN796_c0_g1	strong	EH2	Juvenile hormone epoxide hydrolase 2	aggressive behaviour
+
+GO:0046496	nicotinamide nucleotide metabolic proces...
+
+TRINITY_DN11124_c0_g1	strong	TPI1	Triosephosphate isomerase
+TRINITY_DN14949_c0_g1	strong	DCXR	L-xylulose reductase
+TRINITY_DN22693_c0_g1	strong	GD6P	Glucose-6-phosphate 1-dehydrogenase
+TRINITY_DN2462_c0_g1	strong	ENO1	Enolase 1
+TRINITY_DN3396_c0_g1	strong	PGAM1	Phosphoglycerate mutase 1
+TRINITY_DN34919_c0_g1	strong	MDH1	Malate dehydrogenase, cytoplasmic
+TRINITY_DN4515_c1_g3	strong	GLUD1	Glutamate dehydrogenase 1, mitochondrial
+TRINITY_DN601_c0_g1	strong	PKM	Pyruvate kinase PKM
+TRINITY_DN712_c0_g1	strong	Taldo	Probable transaldolase
+TRINITY_DN78762_c0_g1	strong	PGK1	Phosphoglycerate kinase 1
+
+GO:1903532	positive regulation of secretion by cell
+
+TRINITY_DN1124_c0_g1	strong	ADIPOR1	adiponectin receptor protein 1
+TRINITY_DN235_c0_g2	strong	SEC24	protein transport protein Sec24
+TRINITY_DN2801_c0_g1	strong	PTPN23	tyrosine-protein phosphatase non-receptor type 23
+TRINITY_DN3497_c0_g1	strong	jar	Myosin heavy chain 95F
+TRINITY_DN3526_c0_g1	strong	RAB1A	Ras-related protein Rab-1A
+TRINITY_DN41103_c0_g3	strong	dimm	dimmed	Transcription factor that regulates neurosecretory (NS) cell function and neuroendocrine cell fate
+TRINITY_DN891_c0_g1	strong	Adamts10	A disintegrin and metalloproteinase with thrombospondin motifs 10
+
+GO:0006721	terpenoid metabolic process
+
+TRINITY_DN1710_c2_g1	strong	FDPS	Farnesyl pyrophosphate synthase
+TRINITY_DN1870_c0_g2	strong	HSD17B11	Estradiol 17-beta-dehydrogenase 11
+TRINITY_DN20106_c0_g1	-
+TRINITY_DN449_c1_g1	strong	DHRS3	Short-chain dehydrogenase/reductase 3
+TRINITY_DN796_c0_g1	strong  EH2     Juvenile hormone epoxide hydrolase 2    aggressive behaviour
+
+GO:0031644	regulation of neurological system proceses
+
+TRINITY_DN1814_c0_g2	strong	ACP3	Prostatic acid phosphatase	
+TRINITY_DN213_c0_g1	strong	FMR1	Synaptic functional regulator FMR1
+TRINITY_DN2609_c0_g1	strong	Slc22a21	Solute carrier family 22 member 21
+TRINITY_DN628_c0_g1	strong	PRKN	E3 ubiquitin-protein ligase parkin
+
+associated to p450
+
+TRINITY_DN1091_c0_g1	cytochrome P450 9e2
+TRINITY_DN1091_c0_g2	cytochrome P450 9e2
+TRINITY_DN1247_c0_g3	cytochrome P450 4C1
+TRINITY_DN145_c4_g1	cytochrome P450 4g15
+TRINITY_DN1596_c0_g2	cytochrome P450 4c21
+TRINITY_DN182_c0_g1	cytochrome P450 4g15
+TRINITY_DN1877_c1_g1	cytochrome P450 6a14
+TRINITY_DN1976_c5_g1	cytochrome P450 6k1
+TRINITY_DN2108_c0_g1	cytochrome P450 9e2
+TRINITY_DN2756_c0_g1	cytochrome P450 4C1
+TRINITY_DN290_c6_g1	cytochrome P450 9e2
+TRINITY_DN35686_c0_g1	cytochrome P450 3A19
+TRINITY_DN364_c0_g1	cytochrome P450 9e2
+TRINITY_DN3846_c0_g1	cytochrome P450 9e2
+TRINITY_DN408_c0_g2	cytochrome P450 4C1
+TRINITY_DN4387_c0_g1	cytochrome P450 9e2
+TRINITY_DN4590_c0_g1	cytochrome P450 9e2
+TRINITY_DN5738_c1_g2	cytochrome P450 9e2
+TRINITY_DN605_c0_g1	cytochrome P450 6a14 
+TRINITY_DN605_c0_g2	cytochrome P450 6a14 
+TRINITY_DN6067_c0_g1	cytochrome P450 9e2
+TRINITY_DN634_c0_g1	cytochrome P450 9e2
+TRINITY_DN688_c1_g1	cytochrome P450 4C1
+TRINITY_DN70_c3_g1	cytochrome P450 4C1
+TRINITY_DN7510_c0_g1	cytochrome P450 4C1
+TRINITY_DN8406_c0_g1	cytochrome P450 9e2
+TRINITY_DN943_c0_g1	cytochrome P450 6a13
+TRINITY_DN9661_c1_g1	cytochrome P450 9e2
+
+############################################################################################### CT_module_18_L+
+
+hub	vacuolar protein sorting-associated protein 16 homolog	Vps16A
+
+TRINITY_DN2514_c2_g2	NAPRT	nicotinate phosphoribosyltransferase
+TRINITY_DN412_c0_g1_i10	-	transferrin	antimicrobial activity
+
+GO:0009112	nucleobase metabolic process
+
+TRINITY_DN1144_c0_g1	ry	Xanthine dehydrogenase  purine degradation
+TRINITY_DN288_c0_g4	MTHFD1	C-1-tetrahydrofolate synthase, cytoplasmic
+TRINITY_DN3683_c0_g1	URAH	5-hydroxyisourate hydrolase
+TRINITY_DN5726_c0_g2	CAD	CAD protein
+TRINITY_DN792_c2_g1	DPYD    Dihydropyrimidine dehydrogenase [NADP(+)]
+
+GO:0019359	nicotinamide nucleotide biosynthetic processes
+
+TRINITY_DN11124_c0_g1	TPI1	Triosephosphate isomerase
+TRINITY_DN2462_c0_g1	-	enolase
+TRINITY_DN3396_c0_g1	PGAM1	Phosphoglycerate mutase 1
+TRINITY_DN601_c0_g1	PKM	Pyruvate kinase
+TRINITY_DN78762_c0_g1	PGK1	Phosphoglycerate kinase
+
+GO:0006665	sphingolipid metabolic process
+
+TRINITY_DN1488_c0_g1	TCHH	Trichohyalin
+TRINITY_DN1876_c0_g1	HEXB	hexosaminidase subunit beta
+TRINITY_DN2576_c0_g1	PSAP	prosaposin
+TRINITY_DN7748_c0_g1	SMPD1	sphingomyelin phosphodiesterase 1-like
+
+GO:0030203	glycosaminoglycan metabolic process
+	
+TRINITY_DN1876_c0_g1	HEXB	Beta-hexosaminidase subunit beta
+TRINITY_DN1891_c2_g1	B3GAT1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransferase 1
+TRINITY_DN554_c1_g1	SGSH	N-sulphoglucosamine sulphohydrolase
+
+GO:0008063	Toll signaling pathway
+
+TRINITY_DN2096_c0_g1	UB1AD1	UbiA prenyltransferase domain-containing protein 1
+TRINITY_DN4167_c0_g2	spz3	Protein spaetzle 3
+TRINITY_DN603_c0_g1	ea	Serine protease easter
+TRINITY_DN7584_c0_g1	pll	Serine/threonine-protein kinase pelle
+
+GO:1901565	organonitrogen compound catabolic proces...
+
+TRINITY_DN1144_c0_g1	ry	Xanthine dehydrogenase	purine degradation
+TRINITY_DN1421_c0_g1	Gstz1	Maleylacetoacetate isomerase
+TRINITY_DN1488_c0_g1	CLIP1	CAP-Gly domain-containing linker protein 1
+TRINITY_DN1876_c0_g1	HEXB	Beta-hexosaminidase subunit beta
+TRINITY_DN268_c0_g2	ENOSF1	mitochondrial enolase superfamily member 1-like
+TRINITY_DN505_c0_g2	PRMT5	Protein arginine N-methyltransferase 5
+TRINITY_DN554_c1_g1	SGSH	N-sulphoglucosamine sulphohydrolase
+TRINITY_DN561_c0_g1	-	-
+TRINITY_DN689_c0_g1	IUNH	Inosine-uridine preferring nucleoside hydrolase
+TRINITY_DN7748_c0_g1	SMPD1	Sphingomyelin phosphodiesterase
+TRINITY_DN792_c2_g1	DPYD	Dihydropyrimidine dehydrogenase [NADP(+)]
+TRINITY_DN912_c0_g1	-	-
+TRINITY_DN990_c0_g1	Ranbp2	E3 SUMO-protein ligase RanBP2
+ 
+GO:0009620	response to fungus
+
+TRINITY_DN21_c0_g1	-	Beta-1,3-glucan-binding protein
+TRINITY_DN412_c0_g1	-	transferrin     antimicrobial activity
+TRINITY_DN603_c0_g1	ea	Serine protease easter
+TRINITY_DN7584_c0_g1	pll	Serine/threonine-protein kinase pelle
+
+############################################################################################### AD_module_01_S+
+
+hub	receptor-type tyrosine-protein phosphatase S/K/mu/F/U/T/... -like
+
+GO:0006720     isoprenoid metabolic process
+
+TRINITY_DN1014_c0_g1	HMGCS1	Hydroxymethylglutaryl-CoA synthase, cytoplasmic
+TRINITY_DN10282_c0_g1	dps1	Decaprenyl-diphosphate synthase subunit 1
+TRINITY_DN125_c0_g1	ggps1	Geranylgeranyl pyrophosphate synthase
+TRINITY_DN1710_c2_g1	FDPS	Farnesyl pyrophosphate synthase
+TRINITY_DN360_c1_g1	HMGCR	3-hydroxy-3-methylglutaryl-coenzyme A reductase
+TRINITY_DN4725_c1_g2	ggps1	Geranylgeranyl pyrophosphate synthase
+TRINITY_DN6085_c0_g1	PDSS2	All trans-polyprenyl-diphosphate synthase PDSS2
+TRINITY_DN20106_c0_g1	jhamt   Juvenile hormone acid O-methyltransferase
+
+GO:0034599	cellular response to oxidative stress
+
+TRINITY_DN145_c0_g2	PDI	protein disulfide-isomerase	
+TRINITY_DN145_c0_g3	PDI	protein disulfide-isomerase  
+TRINITY_DN1859_c0_g1	MTF1	MTF1 factor
+TRINITY_DN2745_c0_g3	OGG1	N-glycosylase/DNA lyase
+TRINITY_DN351_c0_g1	ULK2	serine/threonine-protein kinase ULK2 
+TRINITY_DN3915_c0_g1	SODC	superoxide dismutase 
+
+GO:0009612	response to mechanical stimulus
+
+TRINITY_DN1268_c0_g1	-	Transient receptor potential cation channel protein painless-like protein 
+TRINITY_DN1268_c0_g2	-	-
+TRINITY_DN1855_c1_g2	-       Transient receptor potential cation channel protein painless-like protein
+RINITY_DN2001_c0_g1	ETNK1	Ethanolamine kinase 1
+TRINITY_DN213_c0_g1	FMR1    Synaptic functional regulator 1
+TRINITY_DN274_c0_g1	SLC6A1	Sodium- and chloride-dependent GABA transporter 1
+RINITY_DN2799_c0_g2	APRT	Adenine phosphoribosyltransferase
+TRINITY_DN3268_c1_g2	ATP1B2	Sodium/potassium-transporting ATPase subunit beta-2
+TRINITY_DN75_c0_g1	DYNC2H1 Cytoplasmic dynein 2 heavy chain 1
+
+GO:0044550	secondary metabolite biosynthetic proceses
+
+TRINITY_DN14958_c0_g1	-	protein yellow-like
+TRINITY_DN236_c0_g6	-	Venom carboxylesterase-6 
+TRINITY_DN255_c0_g1 	-	Acyl-CoA Delta desaturase
+TRINITY_DN313_c0_g2	HSD17B8	Estradiol 17-beta-dehydrogenase 8
+TRINITY_DN453_c0_g1	AP3B2	AP-3 complex subunit beta-2
+TRINITY_DN492_c1_g1	AP3M1	AP-3 complex subunit mu-1
+TRINITY_DN52942_c0_g1	-	-	
+TRINITY_DN975_c0_g1	MOCOS	Molybdenum cofactor sulfurase
+
+GO:0090407	organophosphate biosynthetic process
+
+TRINITY_DN1014_c0_g1	-	hydroxymethylglutaryl-CoA synthase 1 
+TRINITY_DN10612_c0_g1	CDIPT	CDP-diacylglycerol--inositol 3-phosphatidyltransferase
+TRINITY_DN1381_c0_g1	XXYLT1	Xyloside xylosyltransferase 1
+TRINITY_DN1449_c0_g1	ISYNA1	Inositol-3-phosphate synthase 1
+TRINITY_DN145_c0_g1	GPAM	Glycerol-3-phosphate acyltransferase 1, mitochondrial
+TRINITY_DN1554_c2_g1	AGPAT1	1-acyl-sn-glycerol-3-phosphate acyltransferase alpha
+TRINITY_DN16605_c0_g1	ACLY	ATP-citrate synthase
+TRINITY_DN1710_c2_g1	FDPS	Farnesyl pyrophosphate synthase
+TRINITY_DN1800_c0_g2	LPCAT3	Lysophospholipid acyltransferase 5
+TRINITY_DN1980_c0_g1	gpi1	N-acetylglucosaminyl-phosphatidylinositol biosynthetic protein
+TRINITY_DN2001_c0_g1	ETNK1	Ethanolamine kinase 1
+TRINITY_DN2057_c0_g1	PANK1	Pantothenate kinase 1
+TRINITY_DN2367_c0_g1	CYC1	Cytochrome c1, heme protein, mitochondrial
+TRINITY_DN270_c0_g1	MLYCD	Malonyl-CoA decarboxylase, mitochondrial
+TRINITY_DN2799_c0_g2	APRT	adenine phosphoribosyltransferase
+TRINITY_DN3049_c0_g2	ERH	Enhancer of rudimentary homolog
+TRINITY_DN3129_c0_g1	TPK1	Thiamin pyrophosphokinase 1
+TRINITY_DN3177_c0_g2    NPR1    Atrial natriuretic peptide receptor 1
+TRINITY_DN3589_c0_g1    GK5     putative glycerol kinase 5
+TRINITY_DN377_c1_g1     ATP5F1B ATP synthase subunit beta, mitochondrial
+TRINITY_DN4174_c1_g1    MOCS2   Molybdopterin synthase catalytic subunit
+TRINITY_DN4629_c1_g2    PIGC    Phosphatidylinositol N-acetylglucosaminyltransferase subunit C
+TRINITY_DN579_c0_g1     acs     acetyl-coenzyme A synthetase
+TRINITY_DN92_c1_g1	DHAPAT  dihydroxyacetone phosphate acyltransferase
+TRINITY_DN975_c0_g1     MOCOS   Molybdenum cofactor sulfurase
+
+GO:0062013	positive regulation of small molecule metabolism
+
+TRINITY_DN270_c0_g1	MLYCD	Malonyl-CoA Decarboxylase
+TRINITY_DN3324_c0_g1	LPGAT1	Acyl-CoA:lysophosphatidylglycerol acyltransferase 1
+TRINITY_DN351_c0_g1	ULK2	Serine/threonine-protein kinase
+TRINITY_DN668_c0_g1	GSY	Glycogen [starch] synthase 
+TRINITY_DN994_c0_g3	PYG	PYG phosphorylase 
+
+GO:0018208	peptidyl-proline modification	
+
+TRINITY_DN1125_c1_g1	-	FK506-binding protein 2
+TRINITY_DN3085_c0_g3	ZNF585A	Zinc finger protein 585A
+TRINITY_DN3159_c0_g1	PPIL1	Peptidyl-prolyl cis-trans isomerase-like 1
+TRINITY_DN5530_c0_g1	PÂ3H1	Prolyl 3-hydroxylase 1
+TRINITY_DN7215_c0_g1	PELO	Protein pelota
+TRINITY_DN809_c0_g1	Fkbp59	FK506-binding protein 59
+
+GO:1901568	fatty acid derivative metabolic process
+
+TRINITY_DN1065_c0_g1	wat	Fatty acyl-CoA reductase wat
+TRINITY_DN2178_c0_g2	FAR1	Fatty acyl-CoA reductase 1
+TRINITY_DN26622_c0_g1	CG5065	Putative fatty acyl-CoA reductase 
+TRINITY_DN3712_c0_g1	Oxct1	Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondrial
+TRINITY_DN56_c3_g1	Far1	Fatty acyl-CoA reductase 1
+TRINITY_DN928_c0_g1	CPT2	carnitine O-palmitoyltransferase 2, mitochondrial
+
+GO:0007619	courtship behavior
+
+TRINITY_DN1268_c0_g1	weak	TrpA1	Protein Transient receptor potential cation channel subfamily A member 1
+TRINITY_DN1268_c0_g2	strong	pain	transient receptor potential cation channel protein painless
+TRINITY_DN1855_c1_g2	strong	pain 	transient receptor potential cation channel protein painless
+TRINITY_DN20106_c0_g1	strong	jhamt   Juvenile hormone acid O-methyltransferase
+TRINITY_DN213_c0_g1	strong	Fxr1	Fragile X mental retardation syndrome-related protein 1
+TRINITY_DN236_c0_g6	strong	-	Venom carboxylesterase-6
+TRINITY_DN255_c0_g1	strong	-	Acyl-CoA Delta desaturase
+TRINITY_DN483_c0_g1	strong	SLC7A6	Y+L amino acid transporter2
+TRINITY_DN75_c0_g1	strong	DYNC2H1	Cytoplasmic dynein 2 heavy chain 1
+
+GO:0030148	sphingolipid biosynthetic process
+
+TRINITY_DN102675_c0_g1	SPTLC1	Serine palmitoyltransferase 1
+TRINITY_DN1299_c1_g1	ELOVL1	Elongation of very long chain fatty acids protein 1
+TRINITY_DN2410_c0_g3	ELOVL1	Elongation of very long chain fatty acids protein 1
+TRINITY_DN52942_c0_g1	ELOVL1  Elongation of very long chain fatty acids protein 1
+TRINITY_DN669_c0_g1	ELOVL1  Elongation of very long chain fatty acids protein 1
+
+############################################################################################### AD_module_09_B+
+
+hub	Pre-mRNA-splicing regulator female-lethal(2)D	fl(2)d
+
+GO:0072521	purine-containing compound metabolic processes
+
+TRINITY_DN1014_c0_g1	Hydroxymethylglutaryl-CoA synthase 1
+TRINITY_DN1065_c0_g1	fatty acyl-CoA reductase wat-like
+TRINITY_DN16605_c0_g1	ATP-citrate synthase
+TRINITY_DN1814_c0_g2	prostatic acid phosphatase-like 
+TRINITY_DN2057_c0_g1	pantothenate kinase 3 
+TRINITY_DN2178_c0_g2	fatty acyl-CoA reductase 1
+TRINITY_DN2367_c0_g1	cytochrome c1, heme protein, mitochondrial 
+TRINITY_DN26622_c0_g1	fatty acyl-CoA reductase CG5065
+TRINITY_DN270_c0_g1	Malonyl-CoA decarboxylase, mitochondrial 
+TRINITY_DN2799_c0_g2	adenine phosphoribosyltransferase 
+TRINITY_DN3177_c0_g2	atrial natriuretic peptide receptor 1
+TRINITY_DN360_c1_g1	3-hydroxy-3-methylglutaryl-coenzyme A reductase
+TRINITY_DN377_c1_g1	ATP synthase subunit beta, mitochondrial
+TRINITY_DN405_c1_g1	S-methyl-5'-thioadenosine phosphorylase
+TRINITY_DN4174_c1_g1	molybdopterin synthase catalytic subunit
+TRINITY_DN56_c3_g1	Fatty acyl-CoA reductase
+TRINITY_DN579_c0_g1	acetyl-coenzyme A synthetase
+TRINITY_DN975_c0_g1	molybdenum cofactor sulfurase 3
+
+GO:0042135	neurotransmitter catabolic process
+
+TRINITY_DN2081_c0_g1	aminomethyltransferase
+TRINITY_DN2112_c0_g1	Esterase E4
+TRINITY_DN2112_c0_g2	Esterase E4
+
+Metabolism
+
+Global and overview maps
+01100 Metabolic pathways (86)
+01110 Biosynthesis of secondary metabolites (46)
+01120 Microbial metabolism in diverse environments (27)
+01200 Carbon metabolism (22)
+01210 2-Oxocarboxylic acid metabolism (4)
+01212 Fatty acid metabolism (6)
+01230 Biosynthesis of amino acids (14)
+01232 Nucleotide metabolism (8)
+01250 Biosynthesis of nucleotide sugars (2)
+01240 Biosynthesis of cofactors (12)
+
+Carbohydrate metabolism
+00010 Glycolysis / Gluconeogenesis (11)
+00020 Citrate cycle (TCA cycle) (8)
+00030 Pentose phosphate pathway (4)
+00040 Pentose and glucuronate interconversions (3)
+00051 Fructose and mannose metabolism (5)
+00052 Galactose metabolism (2)
+00053 Ascorbate and aldarate metabolism (4)
+00500 Starch and sucrose metabolism (2)
+00520 Amino sugar and nucleotide sugar metabolism (2)
+00620 Pyruvate metabolism (8)
+00630 Glyoxylate and dicarboxylate metabolism (7)
+00640 Propanoate metabolism (1)
+00650 Butanoate metabolism (1)
+00562 Inositol phosphate metabolism (3)
+
+Energy metabolism
+00190 Oxidative phosphorylation (7)
+00710 Carbon fixation in photosynthetic organisms (7)
+00720 Carbon fixation pathways in prokaryotes (3)
+00680 Methane metabolism (4)
+00910 Nitrogen metabolism (1)
+
+Lipid metabolism
+00061 Fatty acid biosynthesis (2)
+00062 Fatty acid elongation (2)
+00071 Fatty acid degradation (5)
+00100 Steroid biosynthesis (2)
+00120 Primary bile acid biosynthesis (1)
+00140 Steroid hormone biosynthesis (1)
+00561 Glycerolipid metabolism (3)
+00564 Glycerophospholipid metabolism (2)
+00565 Ether lipid metabolism (1)
+00600 Sphingolipid metabolism (2)
+00590 Arachidonic acid metabolism (1)
+00591 Linoleic acid metabolism (1)
+00592 alpha-Linolenic acid metabolism (1)
+01040 Biosynthesis of unsaturated fatty acids (2)
+Nucleotide metabolism
+00230 Purine metabolism (8)
+00240 Pyrimidine metabolism (4)
+
+Amino acid metabolism
+00250 Alanine, aspartate and glutamate metabolism (2)
+00260 Glycine, serine and threonine metabolism (7)
+00270 Cysteine and methionine metabolism (4)
+00280 Valine, leucine and isoleucine degradation (5)
+00310 Lysine degradation (4)
+00220 Arginine biosynthesis (2)
+00330 Arginine and proline metabolism (4)
+00340 Histidine metabolism (2)
+00380 Tryptophan metabolism (3)
+Metabolism of other amino acids
+00410 beta-Alanine metabolism (3)
+00430 Taurine and hypotaurine metabolism (1)
+00450 Selenocompound metabolism (1)
+00480 Glutathione metabolism (3)
+
+Glycan biosynthesis and metabolism
+00510 N-Glycan biosynthesis (6)
+00513 Various types of N-glycan biosynthesis (4)
+00514 Other types of O-glycan biosynthesis (1)
+00531 Glycosaminoglycan degradation (3)
+00563 Glycosylphosphatidylinositol (GPI)-anchor biosynthesis (2)
+00604 Glycosphingolipid biosynthesis - ganglio series (1)
+00511 Other glycan degradation (1)
+
+Metabolism of cofactors and vitamins
+00730 Thiamine metabolism (1)
+00750 Vitamin B6 metabolism (1)
+00770 Pantothenate and CoA biosynthesis (3)
+00790 Folate biosynthesis (1)
+00670 One carbon pool by folate (2)
+00830 Retinol metabolism (2)
+00860 Porphyrin metabolism (4)
+00130 Ubiquinone and other terpenoid-quinone biosynthesis (2)
+Metabolism of terpenoids and polyketides
+00900 Terpenoid backbone biosynthesis (3)
+00981 Insect hormone biosynthesis (1)
+00903 Limonene and pinene degradation (1)
+01051 Biosynthesis of ansamycins (1)
+
+Biosynthesis of other secondary metabolites
+00940 Phenylpropanoid biosynthesis (1)
+00944 Flavone and flavonol biosynthesis (1)
+00232 Caffeine metabolism (1)
+00521 Streptomycin biosynthesis (2)
+00524 Neomycin, kanamycin and gentamicin biosynthesis (1)
+
+Xenobiotics biodegradation and metabolism
+00362 Benzoate degradation (1)
+00625 Chloroalkane and chloroalkene degradation (1)
+00980 Metabolism of xenobiotics by cytochrome P450 (1)
+00982 Drug metabolism - cytochrome P450 (1)
+00983 Drug metabolism - other enzymes (6)
+
+############################################################################################### AD_module_10_S+
+
+hub	beta-ureidopropionase	UPB1
+
+GO:0034249	negative regulation of cellular amide me...
+
+TRINITY_DN1900_c0_g1	EIF4E	Eukaryotic translation initiation factor 4E
+TRINITY_DN2124_c0_g1	Hrb27C	Heterogeneous nuclear ribonucleoprotein 27C
+TRINITY_DN266_c0_g1	SHMT2	Serine hydroxymethyltransferase, mitochondrial
+TRINITY_DN2747_c0_g1	MYLIP	E3 ubiquitin-protein ligase MYLIP
+TRINITY_DN5326_c0_g1	CPEB1	Cytoplasmic Polyadenylation Element Binding Protein 1
+TRINITY_DN8405_c0_g1	NANOS1	NANOS1
+
+GO:0008306	associative learning
+
+TRINITY_DN1206_c0_g1	NEBA	Neurobeachin
+TRINITY_DN1331_c0_g1	osk	Maternal effect protein oskar
+TRINITY_DN16243_c0_g1	RPS6KB2	Ribosomal protein S6 kinase beta-2
+TRINITY_DN2609_c0_g1	Slc22a21	Solute carrier family 22 member 21
+TRINITY_DN355_c0_g1	ATP1A1	Sodium/potassium-transporting ATPase subunit alpha-1
+TRINITY_DN4067_c1_g4	me31B	ATP-dependent RNA helicase me31b
+
+GO:0042133	neurotransmitter metabolic process
+
+TRINITY_DN266_c0_g1	SHMT2	Serine hydroxymethyltransferase, mitochondrial
+TRINITY_DN3265_c0_g1	DAGLB	sn1-specific diacylglycerol lipase beta-like
+TRINITY_DN560_c0_g1	THA2	Probable low-specificity L-threonine aldolase 2
+TRINITY_DN8816_c0_g1	ALDH5A1	Succinate-semialdehyde dehydrogenase, mitochondrial
+TRINITY_DN9981_c0_g1	UBP1	Beta-ureidopropionase
+
+GO:0001775	cell activation
+
+
+TRINITY_DN1620_c0_g1	gld2    Poly(A) RNA polymerase gld-2 homolog A
+TRINITY_DN1620_c0_g2	gld2    Poly(A) RNA polymerase gld-2 homolog A
+TRINITY_DN6199_c0_g1	ndl	Serine protease nudel
+
+GO:0009566	fertilization
+
+TRINITY_DN1620_c0_g1	gld2	Poly(A) RNA polymerase gld-2 homolog A
+TRINITY_DN1620_c0_g2	gld2	Poly(A) RNA polymerase gld-2 homolog A
+TRINITY_DN355_c0_g1	ATP1A1	sodium/potassium-transporting ATPase subunit alpha-like
+TRINITY_DN6199_c0_g1	ndl	Serine protease nudel
+
+GO:0007283	spermatogenesis
+
+TRINITY_DN1900_c0_g1	EIF4E	Eukaryotic translation initiation factor 4E
+TRINITY_DN19857_c0_g2	CDK1	Cyclin-dependent kinase 1
+TRINITY_DN2318_c0_g1	FUBP3	Far Upstream Element Binding Protein 3
+TRINITY_DN355_c0_g1	ATP1A1  Sodium/potassium-transporting ATPase subunit alpha-1
+TRINITY_DN3570_c0_g1	GPS1	COP9 signalosome complex subunit 1
+TRINITY_DN3940_c0_g1	BOLL	Protein boule-like
+TRINITY_DN401_c6_g1	IGF2	insulin-like growth factor 2
+TRINITY_DN6498_c0_g1	RACGAP1	rac GTPase-activating protein 1-like
+TRINITY_DN815_c0_g1  	PIWIL2	Piwi-like protein 2
+TRINITY_DN8405_c0_g1	nanos	nanos
+
+GO:0007143	female meiotic nuclear division
+
+TRINITY_DN1620_c0_g1	gld2    Poly(A) RNA polymerase gld-2 homolog A
+TRINITY_DN1620_c0_g2	gld2    Poly(A) RNA polymerase gld-2 homolog A
+TRINITY_DN5159_c0_g1	RAD51	DNA repair protein RAD51 homolog 1
+TRINITY_DN725_c0_g1	H4	Histone H4
+
+GO:0006936	muscle contraction
+
+TRINITY_DN355_c0_g1	ATP1A1  sodium/potassium-transporting ATPase subunit alpha-like
+TRINITY_DN3700_c0_g1	NOX5	NADPH oxidase 5
+TRINITY_DN4830_c0_g1	CG4928	UNC93-like protein
+
+############################################################################################### AD_module_14_B-
+
+hun	3 ubiquitin-protein ligase ariadne-1	ari-1
+
+GO:0007611	learning or memory
+
+TRINITY_DN1018_c1_g1	Protein argonaute-2
+TRINITY_DN1112_c1_g1	Signal transducer and activator of transcription 5B
+TRINITY_DN11729_c0_g1	EGFR	epidermal growth factor receptor 
+TRINITY_DN131_c3_g1	neuralized
+TRINITY_DN1379_c0_g1	AF4/FMR2 family member 4
+TRINITY_DN141_c0_g1	Sap47	Synapse-associated protein of 47 kDa
+TRINITY_DN1557_c0_g2	amyloid-beta-like protein
+TRINITY_DN1608_c0_g1	cAMP-dependent protein kinase catalytic subunit
+TRINITY_DN17_c2_g1	Protein kinase C
+TRINITY_DN178_c1_g1	Pumilio homolog 2 
+TRINITY_DN17891_c0_g1	glucosylceramidase-like isoform
+TRINITY_DN189_c0_g1	DPYS	 dihydropyrimidinase
+TRINITY_DN2059_c1_g1	JAK	Janus kinase
+TRINITY_DN247_c0_g1	EHMT2	histone-lysine N-methyltransferase
+TRINITY_DN2742_c1_g2	RNF38	ring finger protein 38
+TRINITY_DN293_c2_g2	STXBP5	Syntaxin-binding protein 5
+TRINITY_DN2958_c1_g1	-	Protein BTG2
+TRINITY_DN2992_c0_g1	CanG1A	Centaurin-gamma-1A
+TRINITY_DN343_c0_g1	GATAD2A	transcriptional repressor p66-alpha
+TRINITY_DN3501_c0_g1	-	dynamin
+TRINITY_DN4286_c0_g2	-	tyrosine-protein phosphatase 10D 
+TRINITY_DN505_c5_g1	-	Pumilio homolog 2
+TRINITY_DN506_c0_g1	-	mitogen-activated protein kinase
+TRINITY_DN5359_c0_g1	LRP6	Low-density lipoprotein receptor-related protein 6
+TRINITY_DN562_c2_g2	eag	Potassium voltage-gated channel protein eag
+TRINITY_DN6122_c1_g4	GNAS	Guanine nucleotide-binding protein G(s) subunit alpha isoforms short
+TRINITY_DN7_c52_g1	Mblk1	Mushroom body large-type Kenyon cell-specific protein 1
+TRINITY_DN727_c0_g2	Mblk1	Mushroom body large-type Kenyon cell-specific protein 1
+TRINITY_DN727_c4_g1	APL1	Tyrosine-protein kinase ABL1
+TRINITY_DN729_c0_g2	bs	Serum response factor homolog
+TRINITY_DN735_c2_g2	Mblk1   Mushroom body large-type Kenyon cell-specific protein 1
+TRINITY_DN888_c0_g1	CAMK2A	Calcium/calmodulin-dependent protein kinase type II subunit alpha
