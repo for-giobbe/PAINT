@@ -92,7 +92,7 @@ Tables can be plotted with an Rscript, using as arguments:
 ```
 Rscript scripts/plot_phylostratigraphy_crema.Rscript
 comparative_genomics/phylostratigraphy_crema_AD.tsv 
-1,2,12,13,14,15
+1,10,12,14,3,9
 comparative_genomics/phylostratigraphy_crema_AD.jpg
 ```
 
@@ -103,7 +103,7 @@ comparative_genomics/phylostratigraphy_crema_AD.jpg
 ```
 Rscript scripts/plot_phylostratigraphy_crema.Rscript 
 comparative_genomics/phylostratigraphy_crema_CT.tsv 
-18,20,31,32,33,34,38,39,4,41,43,44,6,9 
+ 12,13,14,15,16,18,21,23,3,31,36,39,41,7
 comparative_genomics/phylostratigraphy_crema_CT.jpg
 ```
 
