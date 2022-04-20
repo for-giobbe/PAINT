@@ -13,6 +13,13 @@ are many, but they will not be discussed here. Just a disclaimer:
 while the strata are the same number for crema and vicia, they can not obviously be compared.
 
 
+sp / Myrmicinae / Formicoidea / Hymenoptera / Holometabola / Neoptera / Paleoptera
+
+
+sp / Papilionoideae / Fabales / Rosids / Eudicots / Angiosperms / Spermatophyte
+
+
+
 | stratum 1 | stratum 2      | stratum 3   | stratum 4   | stratum 5    | stratum 6   | stratum 7     |
 |-----------|----------------|-------------|-------------|--------------|-------------|---------------|
 | sp        | Myrmicinae     | Formicoidea | Hymenoptera | Holometabola | Neoptera    | Paleoptera    |
@@ -98,6 +105,7 @@ Rscript scripts/plot_phylostratigraphy_crema.Rscript
 comparative_genomics/phylostratigraphy_crema_AD.tsv 
 1,10,12,14,3,9
 comparative_genomics/phylostratigraphy_crema_AD.jpg
+comparative_genomics/phylostratigraphy_crema_AD_summary.tsv
 ```
 
 
@@ -107,8 +115,9 @@ comparative_genomics/phylostratigraphy_crema_AD.jpg
 ```
 Rscript scripts/plot_phylostratigraphy_crema.Rscript 
 comparative_genomics/phylostratigraphy_crema_CT.tsv 
- 12,13,14,15,16,18,21,23,3,31,36,39,41,7
+12,13,14,15,16,18,21,23,3,31,36,39,41,7
 comparative_genomics/phylostratigraphy_crema_CT.jpg
+comparative_genomics/phylostratigraphy_crema_CT_summary.tsv
 ```
 
 
