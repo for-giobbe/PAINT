@@ -2,30 +2,30 @@
 
 Hub	TRINITY_DN4835_c0_g1	Orco
 
-TRINITY_DN10705_c1_g1	good	SNMP1	Sensory neuron membrane protein 1	pheromones or plant volatiles
-TRINITY_DN14046_c0_g1	stong	Or22c	Odorant receptor 22c	pheromones or plant volatiles
-TRINITY_DN6138_c0_g1	average Or49a	Odorant receptor 49a
-TRINITY_DN7734_c0_g1	strong 	SCARB1	Scavenger receptor class B member 1	pheroromnes
-TRINITY_DN195_c0_g2_i1	strong	ANO-4	anoctamin 4	ion channels
-TRINITY_DN3916_c0_g1_i1	good	a10	Putative odorant-binding protein A10
-TRINITY_DN5336_c0_g2_i1	strong	dyw	Circadian clock-controlled protein daywake
-TRINITY_DN5819_c0_g1_i1	strong	Obp69a	General odorant-binding protein 69a	aggressive behaviour
+TRINITY_DN10705_c1_g1	SNMP1	Sensory neuron membrane protein 1	pheromones or plant volatiles
+TRINITY_DN14046_c0_g1	Or22c	Odorant receptor 22c	pheromones or plant volatiles
+TRINITY_DN6138_c0_g1	Or49a	Odorant receptor 49a
+TRINITY_DN7734_c0_g1	SCARB1	Scavenger receptor class B member 1	pheroromnes
+TRINITY_DN195_c0_g2_i1	ANO-4	anoctamin 4	ion channels
+TRINITY_DN3916_c0_g1_i1	a10	Putative odorant-binding protein A10
+TRINITY_DN5336_c0_g2_i1	dyw	Circadian clock-controlled protein daywake
+TRINITY_DN5819_c0_g1_i1	Obp69a	General odorant-binding protein 69a	aggressive behaviour
 
 ############################################################################################### CT_module_13_S+
 
 Hub	TRINITY_DN760_c1_g3	histone H2A-like
 
-TRINITY_DN4679_c2_g2_i1	strong	H2B	histone 2B
-TRINITY_DN4679_c2_g2_i2	strong  H2B     histone 2B
-TRINITY_DN276_c0_g2_i1	strong	H3	histone H3
-TRINITY_DN725_c0_g1_i1	strong	H4	histone H4
-TRINITY_DN725_c0_g1_i2	strong	H4	histone H4
-TRINITY_DN1744_c0_g2_i1	strong	CYP4C1	cytochrome P450 4C1-like
-TRINITY_DN2094_c2_g2_i1	average	-	cytochrome P450 6A1
-TRINITY_DN2199_c0_g1_i9	good	NEMP1	nuclear envelope integral membrane protein 1
-TRINITY_DN296_c2_g1_i1	strong	DMRTA2	Doublesex- and mab-3-related transcription factor A2
-TRINITY_DN3289_c2_g1_i1	strong	SETMAR	Histone-lysine N-methyltransferase SETMAR-like
-TRINITY_DN760_c1_g3	strong  SETMAR  Histone-lysine N-methyltransferase SETMAR-like
+TRINITY_DN4679_c2_g2_i1	H2B	histone 2B
+TRINITY_DN4679_c2_g2_i2	H2B     histone 2B
+TRINITY_DN276_c0_g2_i1	H3	histone H3
+TRINITY_DN725_c0_g1_i1	H4	histone H4
+TRINITY_DN725_c0_g1_i2	H4	histone H4
+TRINITY_DN1744_c0_g2_i1	CYP4C1	cytochrome P450 4C1-like
+TRINITY_DN2094_c2_g2_i1	-	cytochrome P450 6A1
+TRINITY_DN2199_c0_g1_i9	NEMP1	nuclear envelope integral membrane protein 1
+TRINITY_DN296_c2_g1_i1	DMRTA2	Doublesex- and mab-3-related transcription factor A2
+TRINITY_DN3289_c2_g1_i1	SETMAR	Histone-lysine N-methyltransferase SETMAR-like
+TRINITY_DN760_c1_g3	SETMAR  Histone-lysine N-methyltransferase SETMAR-like
 
 ############################################################################################### CT_module_03_L+
 
@@ -33,60 +33,60 @@ Hub	TRINITY_DN1118_c1_g1	2-hydroxyacyl-CoA lyase 1	HACL1
 
 GO:0010817	regulation of hormone levels
 
-TRINITY_DN1124_c0_g1	strong	ADIPOR1	Adiponectin receptor protein 1
-TRINITY_DN1592_c0_g2	strong	Gld	Glucose dehydrogenase [FAD, quinone]
-TRINITY_DN1592_c1_g1	strong	Gld	Glucose dehydrogenase [FAD, quinone]
-TRINITY_DN1870_c0_g2	strong	HSD17B11	Estradiol 17-beta-dehydrogenase 11
+TRINITY_DN1124_c0_g1	ADIPOR1	Adiponectin receptor protein 1
+TRINITY_DN1592_c0_g2	Gld	Glucose dehydrogenase [FAD, quinone]
+TRINITY_DN1592_c1_g1	Gld	Glucose dehydrogenase [FAD, quinone]
+TRINITY_DN1870_c0_g2	HSD17B11	Estradiol 17-beta-dehydrogenase 11
 TRINITY_DN20106_c0_g1	-
-TRINITY_DN2238_c0_g1	strong	Gld	Glucose dehydrogenase [FAD, quinone]
-TRINITY_DN236_c0_g6	strong	-	Venom carboxylesterase-6
-TRINITY_DN255_c0_g1	strong	-	Acyl-CoA Delta(11) desaturase
-TRINITY_DN2609_c0_g1	strong	Slc22a21	Solute carrier family 22 member 21
-TRINITY_DN3377_c0_g1	strong	CYP4C1	cytochrome P450 4C1-like
-TRINITY_DN3526_c0_g1	strong	RAB1A	Ras-related protein Rab-1A
-TRINITY_DN3780_c0_g1	strong	Gld	Glucose dehydrogenase [FAD, quinone]
-TRINITY_DN41103_c0_g3	strong	dimm	dimmed  Transcription factor that regulates neurosecretory (NS) cell function and neuroendocrine cell fate
-TRINITY_DN435_c0_g1	strong	Gld	Glucose dehydrogenase [FAD, quinone]
-TRINITY_DN449_c1_g1	strong	SDR16C5	hort chain dehydrogenase/reductase family 16C member 5 
-TRINITY_DN796_c0_g1	strong	EH2	Juvenile hormone epoxide hydrolase 2	aggressive behaviour
+TRINITY_DN2238_c0_g1	Gld	Glucose dehydrogenase [FAD, quinone]
+TRINITY_DN236_c0_g6	-	Venom carboxylesterase-6
+TRINITY_DN255_c0_g1	-	Acyl-CoA Delta(11) desaturase
+TRINITY_DN2609_c0_g1	Slc22a21	Solute carrier family 22 member 21
+TRINITY_DN3377_c0_g1	CYP4C1	cytochrome P450 4C1-like
+TRINITY_DN3526_c0_g1	RAB1A	Ras-related protein Rab-1A
+TRINITY_DN3780_c0_g1	Gld	Glucose dehydrogenase [FAD, quinone]
+TRINITY_DN41103_c0_g3	dimm	dimmed  Transcription factor that regulates neurosecretory (NS) cell function and neuroendocrine cell fate
+TRINITY_DN435_c0_g1	Gld	Glucose dehydrogenase [FAD, quinone]
+TRINITY_DN449_c1_g1	SDR16C5	hort chain dehydrogenase/reductase family 16C member 5 
+TRINITY_DN796_c0_g1	EH2	Juvenile hormone epoxide hydrolase 2	aggressive behaviour
 
 GO:0046496	nicotinamide nucleotide metabolic proces...
 
-TRINITY_DN11124_c0_g1	strong	TPI1	Triosephosphate isomerase
-TRINITY_DN14949_c0_g1	strong	DCXR	L-xylulose reductase
-TRINITY_DN22693_c0_g1	strong	GD6P	Glucose-6-phosphate 1-dehydrogenase
-TRINITY_DN2462_c0_g1	strong	ENO1	Enolase 1
-TRINITY_DN3396_c0_g1	strong	PGAM1	Phosphoglycerate mutase 1
-TRINITY_DN34919_c0_g1	strong	MDH1	Malate dehydrogenase, cytoplasmic
-TRINITY_DN4515_c1_g3	strong	GLUD1	Glutamate dehydrogenase 1, mitochondrial
-TRINITY_DN601_c0_g1	strong	PKM	Pyruvate kinase PKM
-TRINITY_DN712_c0_g1	strong	Taldo	Probable transaldolase
-TRINITY_DN78762_c0_g1	strong	PGK1	Phosphoglycerate kinase 1
+TRINITY_DN11124_c0_g1	TPI1	Triosephosphate isomerase
+TRINITY_DN14949_c0_g1	DCXR	L-xylulose reductase
+TRINITY_DN22693_c0_g1	GD6P	Glucose-6-phosphate 1-dehydrogenase
+TRINITY_DN2462_c0_g1	ENO1	Enolase 1
+TRINITY_DN3396_c0_g1	PGAM1	Phosphoglycerate mutase 1
+TRINITY_DN34919_c0_g1	MDH1	Malate dehydrogenase, cytoplasmic
+TRINITY_DN4515_c1_g3	GLUD1	Glutamate dehydrogenase 1, mitochondrial
+TRINITY_DN601_c0_g1	PKM	Pyruvate kinase PKM
+TRINITY_DN712_c0_g1	Taldo	Probable transaldolase
+TRINITY_DN78762_c0_g1	PGK1	Phosphoglycerate kinase 1
 
 GO:1903532	positive regulation of secretion by cell
 
-TRINITY_DN1124_c0_g1	strong	ADIPOR1	adiponectin receptor protein 1
-TRINITY_DN235_c0_g2	strong	SEC24	protein transport protein Sec24
-TRINITY_DN2801_c0_g1	strong	PTPN23	tyrosine-protein phosphatase non-receptor type 23
-TRINITY_DN3497_c0_g1	strong	jar	Myosin heavy chain 95F
-TRINITY_DN3526_c0_g1	strong	RAB1A	Ras-related protein Rab-1A
-TRINITY_DN41103_c0_g3	strong	dimm	dimmed	Transcription factor that regulates neurosecretory (NS) cell function and neuroendocrine cell fate
-TRINITY_DN891_c0_g1	strong	Adamts10	A disintegrin and metalloproteinase with thrombospondin motifs 10
+TRINITY_DN1124_c0_g1	ADIPOR1	adiponectin receptor protein 1
+TRINITY_DN235_c0_g2	SEC24	protein transport protein Sec24
+TRINITY_DN2801_c0_g1	PTPN23	tyrosine-protein phosphatase non-receptor type 23
+TRINITY_DN3497_c0_g1	jar	Myosin heavy chain 95F
+TRINITY_DN3526_c0_g1	RAB1A	Ras-related protein Rab-1A
+TRINITY_DN41103_c0_g3	dimm	dimmed	Transcription factor that regulates neurosecretory (NS) cell function and neuroendocrine cell fate
+TRINITY_DN891_c0_g1	Adamts10	A disintegrin and metalloproteinase with thrombospondin motifs 10
 
 GO:0006721	terpenoid metabolic process
 
-TRINITY_DN1710_c2_g1	strong	FDPS	Farnesyl pyrophosphate synthase
-TRINITY_DN1870_c0_g2	strong	HSD17B11	Estradiol 17-beta-dehydrogenase 11
+TRINITY_DN1710_c2_g1	FDPS	Farnesyl pyrophosphate synthase
+TRINITY_DN1870_c0_g2	HSD17B11	Estradiol 17-beta-dehydrogenase 11
 TRINITY_DN20106_c0_g1	-
-TRINITY_DN449_c1_g1	strong	DHRS3	Short-chain dehydrogenase/reductase 3
-TRINITY_DN796_c0_g1	strong  EH2     Juvenile hormone epoxide hydrolase 2    aggressive behaviour
+TRINITY_DN449_c1_g1	DHRS3	Short-chain dehydrogenase/reductase 3
+TRINITY_DN796_c0_g1	EH2     Juvenile hormone epoxide hydrolase 2    aggressive behaviour
 
 GO:0031644	regulation of neurological system proceses
 
-TRINITY_DN1814_c0_g2	strong	ACP3	Prostatic acid phosphatase	
-TRINITY_DN213_c0_g1	strong	FMR1	Synaptic functional regulator FMR1
-TRINITY_DN2609_c0_g1	strong	Slc22a21	Solute carrier family 22 member 21
-TRINITY_DN628_c0_g1	strong	PRKN	E3 ubiquitin-protein ligase parkin
+TRINITY_DN1814_c0_g2	ACP3	Prostatic acid phosphatase	
+TRINITY_DN213_c0_g1	FMR1	Synaptic functional regulator FMR1
+TRINITY_DN2609_c0_g1	Slc22a21	Solute carrier family 22 member 21
+TRINITY_DN628_c0_g1	PRKN	E3 ubiquitin-protein ligase parkin
 
 associated to p450
 
@@ -288,15 +288,15 @@ TRINITY_DN928_c0_g1	CPT2	carnitine O-palmitoyltransferase 2, mitochondrial
 
 GO:0007619	courtship behavior
 
-TRINITY_DN1268_c0_g1	weak	TrpA1	Protein Transient receptor potential cation channel subfamily A member 1
-TRINITY_DN1268_c0_g2	strong	pain	transient receptor potential cation channel protein painless
-TRINITY_DN1855_c1_g2	strong	pain 	transient receptor potential cation channel protein painless
-TRINITY_DN20106_c0_g1	strong	jhamt   Juvenile hormone acid O-methyltransferase
-TRINITY_DN213_c0_g1	strong	Fxr1	Fragile X mental retardation syndrome-related protein 1
-TRINITY_DN236_c0_g6	strong	-	Venom carboxylesterase-6
-TRINITY_DN255_c0_g1	strong	-	Acyl-CoA Delta desaturase
-TRINITY_DN483_c0_g1	strong	SLC7A6	Y+L amino acid transporter2
-TRINITY_DN75_c0_g1	strong	DYNC2H1	Cytoplasmic dynein 2 heavy chain 1
+TRINITY_DN1268_c0_g1	TrpA1	Protein Transient receptor potential cation channel subfamily A member 1
+TRINITY_DN1268_c0_g2	pain	transient receptor potential cation channel protein painless
+TRINITY_DN1855_c1_g2	pain 	transient receptor potential cation channel protein painless
+TRINITY_DN20106_c0_g1	jhamt   Juvenile hormone acid O-methyltransferase
+TRINITY_DN213_c0_g1	Fxr1	Fragile X mental retardation syndrome-related protein 1
+TRINITY_DN236_c0_g6	-	Venom carboxylesterase-6
+TRINITY_DN255_c0_g1	-	Acyl-CoA Delta desaturase
+TRINITY_DN483_c0_g1	SLC7A6	Y+L amino acid transporter2
+TRINITY_DN75_c0_g1	DYNC2H1	Cytoplasmic dynein 2 heavy chain 1
 
 GO:0030148	sphingolipid biosynthetic process
 

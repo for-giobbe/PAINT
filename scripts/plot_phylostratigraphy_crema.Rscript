@@ -4,13 +4,14 @@
 args = commandArgs(trailingOnly=TRUE)
 
 # test if there is at least one argument: if not, return an error
-if (length(args)<3) {
-  stop("At least three argument must be supplied", call.=FALSE)
+if (length(args)<4) {
+  stop("At least four argument must be supplied", call.=FALSE)
 }
 
 #args[1]  = input
 #args[2]  = modules
-#args[3]  = output
+#args[3]  = plot name
+#args[4]  = table name
 
 ############################################################################################ requirements #####
 
@@ -27,18 +28,18 @@ crema["stratum"][crema["stratum"] == "MYR"] <- "Myrmicinae"
 crema["stratum"][crema["stratum"] == "FOR"] <- "Formicidae"
 crema["stratum"][crema["stratum"] == "HYM"] <- "Hymenoptera"
 
-crema["module"][crema["module"] == "0"] <- "in network"
-
 crema_pct_mod <- crema %>% count(module, stratum) %>%
   mutate(pct=n/sum(n))
 
 crema_pct_tot <- crema %>% count(stratum) %>%
   mutate(pct=n/sum(n))
-crema_pct_tot$module <- "total"
+crema_pct_tot$module <- 0
 
 crema <- rbind(crema_pct_tot,crema_pct_mod)
 
-keep <- c(scan(text=args[2], sep=",", quiet=TRUE),"total")
+write.table(crema, file = args[4], sep = "\t")
+
+keep <- c(scan(text=args[2], sep=",", quiet=TRUE),0)
 
 crema <- crema[crema$module %in% keep, ]
 
@@ -46,7 +47,7 @@ p <- ggplot(crema, aes(fill=factor(stratum, levels=c("species-specific",
                                                      "Myrmicinae",
                                                      "Formicidae",
                                                      "Hymenoptera",
-                                                     "older")), y=pct, x=module)) + 
+                                                     "older")), y=pct, x=as.factor(module))) + 
   scale_fill_manual(values=c("#ffea00",
                              "#aede41",
                              "#67ca66",
