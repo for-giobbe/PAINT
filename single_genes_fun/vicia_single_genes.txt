@@ -25,46 +25,67 @@ TRINITY_DN654_c0_g1	HSP90-5	Heat shock protein 90-5, chloroplastic
 
 upregulated genes associated to GO:0009069 - serine family amino acid metabolic proceses (4)
 
-TRINITY_DN10324_c6_g1   SPE     strong  GDLC    glycine dehydrogenase
-TRINITY_DN3206_c0_g1    SPE     strong  -	putative D-cysteine desulfhydrase 1
-TRINITY_DN36133_c0_g1   SPE     strong  SHMT2   serine hydroxymethyltransferase, mitochondrial
-TRINITY_DN6078_c1_g1    SPE     strong  metB    cystathionine gamma-synthase
-TRINITY_DN9690_c0_g1    SPE     strong  PSP     Phosphoserine phosphatase, chloroplastic
+TRINITY_DN10324_c6_g1   SPE     GDLC    glycine dehydrogenase
+TRINITY_DN3206_c0_g1    SPE     -	putative D-cysteine desulfhydrase 1
+TRINITY_DN36133_c0_g1   SPE     SHMT2   serine hydroxymethyltransferase, mitochondrial
+TRINITY_DN6078_c1_g1    SPE     metB    cystathionine gamma-synthase
+TRINITY_DN9690_c0_g1    SPE     PSP     Phosphoserine phosphatase, chloroplastic
 
 GO:0006694	steroid biosynthetic process (4)
 
-TRINITY_DN3756_c0_g1    SPE     strong  SQP1    squalene monooxygenase 1
-TRINITY_DN3756_c0_g2    SPE     strong  SE	squalene epoxidase
-TRINITY_DN3756_c0_g3	SPE     strong  SQP1    squalene monooxygenase 1
-TRINITY_DN5782_c0_g1    SPE     strong  CYP51   obtusifoliol 14-alpha demethylase
+TRINITY_DN3756_c0_g1    SPE     SQP1    squalene monooxygenase 1
+TRINITY_DN3756_c0_g2    SPE     SE	squalene epoxidase
+TRINITY_DN3756_c0_g3	SPE     SQP1    squalene monooxygenase 1
+TRINITY_DN5782_c0_g1    SPE     CYP51   obtusifoliol 14-alpha demethylase
 
 GO:0005976	polysaccharide metabolic process (10)
 
-upregulated genes associated to GO:0005976 - polysaccharide metabolic process
-TRINITY_DN12733_c2_g1   SPE     strong GBE1     1,4-alpha-glucan-branching enzyme
-TRINITY_DN13393_c0_g1   SPE     strong  -	UTP--glucose-1-phosphate uridylyltransferase
-TRINITY_DN1392_c0_g1    SPE     strong  BMY1    Beta-amylase
-TRINITY_DN15501_c0_g1   SPE     strong  -	Beta-amylase
-TRINITY_DN2894_c0_g1    SPE     strong  -	Beta-amylase
-TRINITY_DN2993_c0_g1    SPE     strong  agpl2   ADP-glucose pyrophosphorylase
-TRINITY_DN9640_c0_g1    SPE     strong  agpl2   ADP-glucose pyrophosphorylase
-TRINITY_DN54912_c0_g1   SPE     strong  PME2    pectinesterase 2
+TRINITY_DN12733_c2_g1   SPE     GBE1     1,4-alpha-glucan-branching enzyme
+TRINITY_DN13393_c0_g1   SPE     -	UTP--glucose-1-phosphate uridylyltransferase
+TRINITY_DN1392_c0_g1    SPE     BMY1    Beta-amylase
+TRINITY_DN15501_c0_g1   SPE     -	Beta-amylase
+TRINITY_DN2894_c0_g1    SPE	-	Beta-amylase
+TRINITY_DN2993_c0_g1    SPE	agpl2   ADP-glucose pyrophosphorylase
+TRINITY_DN9640_c0_g1    SPE	agpl2   ADP-glucose pyrophosphorylase
+TRINITY_DN54912_c0_g1   SPE	PME2    pectinesterase 2
 
-upregulated genes associated to GO:0017144 - drug metabolic process (13)
+upregulated genes associated to GO:0017144 - drug metabolic process (13)	NB:FALSE POSITIVE!!!
+
+TRINITY_DN10324_c6_g1	GLDC	Glycine dehydrogenase (decarboxylating), mitochondrial
+TRINITY_DN11_c0_g1	FBA1	fructose-bisphosphate aldolase 1, chloroplastic 
+TRINITY_DN13574_c0_g1	MSR1	Protein MANNAN SYNTHESIS-RELATED 1
+TRINITY_DN1392_c0_g1	PPA1	Soluble inorganic pyrophosphatase 1
+TRINITY_DN2050_c0_g1	PRXIIF	Peroxiredoxin-2F, mitochondrial
+TRINITY_DN20911_c0_g1	UGT74G1	UDP-glycosyltransferase 74G1	
+TRINITY_DN212_c2_g1	THI-2	Thiamine thiazole synthase 2, chloroplastic
+TRINITY_DN2200_c0_g1	At5g58330	Malate dehydrogenase [NADP], chloroplastic
+TRINITY_DN36133_c0_g1	SHMT2	Serine hydroxymethyltransferase, mitochondrial
+TRINITY_DN54912_c0_g1	PECS-2.1	Pectinesterase 2
+TRINITY_DN6418_c0_g1	PAL1	Phenylalanine ammonia-lyase 1
+TRINITY_DN833_c0_g1	NIA2	Nitrate reductase [NADH] 2
+TRINITY_DN93084_c3_g1	ISYNA1	Inositol-3-phosphate synthase 1
 
 upregulated genes associated to GO:0006520 - cellular amino acid metabolic process (9)
 
-upregulated genes associated to GO:0042133 - neurotransmitter metabolic process (3)
+TRINITY_DN10324_c6_g1	GLDC	Glycine dehydrogenase (decarboxylating), mitochondrial
+TRINITY_DN20911_c0_g1	UGT74G1	UDP-glycosyltransferase 74G1
+TRINITY_DN3206_c0_g1	-	Putative D-cysteine desulfhydrase 1, mitochondrial 
+TRINITY_DN36133_c0_g1	SHMT2	Serine hydroxymethyltransferase, mitochondrial
+TRINITY_DN3833_c0_g1	CYP71A1	Cytochrome P450 71A1	FRUIT RIPENING
+TRINITY_DN4942_c0_g1	THA1	Low-specificity L-threonine aldolase 1
+TRINITY_DN6078_c1_g1	CGS1	Cystathionine gamma-synthase 1, chloroplastic
+TRINITY_DN82008_c6_g1	DAHPS2	Phospho-2-dehydro-3-deoxyheptonate aldolase 2, chloroplastic
+TRINITY_DN9690_c0_g1	PSP	Phosphoserine phosphatase, chloroplastic
+
+upregulated genes associated to GO:0042133 - neurotransmitter metabolic process (3)        NB:FALSE POSITIVE!!!
 
 TRINITY_DN10324_c6_g1   SPE     strong  GLDC    glycine dehydrogenase
 TRINITY_DN36133_c0_g1   SPE     strong  SHMT    serine hydroxymethyltransferase
 TRINITY_DN833_c0_g1     SPE     strong  NNR1    Nitrate reductase [NADH] 1
 
-upregulated genes associated to  GO:0006520 - cellular amino acid metabolic process (9)
-
 upregulated genes associated to GO:0006082 - organic acid metabolic process (18)
 
-TRINITY_DN10324_c6_g1	-	GDLC	glycine dehydrogenase
+TRINITY_DN10324_c6_g1	GDLC	glycine dehydrogenase
 TRINITY_DN11_c0_g1	-	fructose-bisphosphate aldolase 1
 TRINITY_DN2200_c0_g1	-	malate dehydrogenase [NADP], chloroplastic
 TRINITY_DN3206_c0_g1	DCD	Bifunctional D-cysteine desulfhydrase/1-aminocyclopropane-1-carboxylate deaminase, mitochondrial
@@ -79,10 +100,13 @@ TRINITY_DN82008_c6_g1	-	phospho-2-dehydro-3-deoxyheptonate aldolase 2, chloropla
 TRINITY_DN82582_c0_g1	CYN	cyanate hydratase-like
 TRINITY_DN833_c0_g1	NNR1	Nitrate reductase [NADH] 1
 TRINITY_DN9690_c0_g1	PSP	Phosphoserine phosphatase, chloroplastic
+TRINITY_DN20911_c0_g1	UGT74G1	UDP-glycosyltransferase 74G1
+TRINITY_DN3833_c0_g1	CYP71A1	Cytochrome P450 71A1	Involved in the metabolism of compounds associated with the development of flavor in the ripening fruit process
+TRINITY_DN6418_c0_g1	PAL	Phenylalanine ammonia-lyase
 
 upregulated genes associated to GO:0019252 - starch biosynthetic process (3)
 
-TRINITY_DN12733_c2_g1	SBEII	 Starch branching enzyme II
+TRINITY_DN12733_c2_g1	SBEII	Starch branching enzyme II
 TRINITY_DN2993_c0_g1	AGPS-1	ADP glucose pyrophosphorylase small subunit
 TRINITY_DN9640_c0_g1	AGPL-1  ADP glucose pyrophosphorylase large subunit
 
@@ -111,7 +135,12 @@ TRINITY_DN20911_c0_g1	UGT74G1	UDP-glycosyltransferase 74G1
 TRINITY_DN8240_c0_g1	PPH	Pheophytinase, chloroplastic
 TRINITY_DN99150_c0_g1	-	Glutathione S-transferase, N-terminal domain protein
 
-upregulated genes associated to GO:0015979 - photosynthesis (11)	NB: NOT ENRICHED
+upregulated genes associated to GO:0001678 - cellular glucose homeostasis (2)
+
+TRINITY_DN1087_c2_g1	RISBZ4	bZIP transcription factor RISBZ4
+TRINITY_DN12733_c2_g1	SBEI	1,4-alpha-glucan-branching enzyme 1, chloroplastic/amyloplastic
+
+upregulated genes associated to GO:0015979 - photosynthesis (11)	NB: NOT ENRICHED!!!
 
 TRINITY_DN105149_c1_g1	-	ultraviolet-B-repressible protein
 TRINITY_DN192_c0_g1	-	arbonic anhydrase
@@ -330,6 +359,15 @@ TRINITY_DN573_c0_g1     WRKY70  Probable WRKY transcription factor 70
 TRINITY_DN6621_c0_g1    EXO70B1 Exocyst complex component EXO70B1
 TRINITY_DN771_c0_g1	PCRK1   Serine/threonine-protein kinase PCRK1
 
+TRINITY_DN10327_c0_g2   G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN21317_c0_g3   G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN2749_c0_g1    G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN3059_c0_g1    G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN3679_c0_g1    G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN51662_c0_g1   G-type lectin S-receptor-like serine/threonine-protein kinase
+TRINITY_DN66307_c0_g1   G-type lectin S-receptor-like serine/threonine-protein kinase
+
+
 ##################################################################################### KO downregulated - MAPK signaling pathway - plant (9)
 
 MPK4
@@ -381,8 +419,8 @@ PetF
 
 ##################################################################################### KO upregulated - Flavonoid biosynthesis (2)
 
-HCT     -	shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133]
-F3H     -	naringenin 3-dioxygenase [EC:1.14.11.9]
+HCT     -	shikimate O-hydroxycinnamoyltransferase
+F3H     -	naringenin 3-dioxygenase
 
 ############################################################################################################################ KO upregulated
 
@@ -464,92 +502,3 @@ Signal transduction
 04075 Plant hormone signal transduction (7)
 Environmental adaptation
 04626 Plant-pathogen interaction (10)
-
-############################################################################################################################ VICIA RANDOM INTERESTING GENES
-
-TRINITY_DN1556_c0_g1    zinc finger protein ZAT10
-TRINITY_DN2451_c0_g1    U-box domain-containing protein 16
-TRINITY_DN573_c0_g1     WRKY transcription factor 70
-TRINITY_DN578_c1_g1     ethylene-responsive transcription factor
-TRINITY_DN9863_c0_g1    scarecrow-like protein
-TRINITY_DN671_c0_g1     MAP kinase-activated protein kinase 3
-TRINITY_DN87739_c2_g1   NAC domain-containing protein 1
-TRINITY_DN3338_c0_g1    Rhodanese/Cell cycle control phosphatase superfamily protein
-TRINITY_DN5286_c0_g1    Calcium sensing receptor
-TRINITY_DN573_c0_g1     WRKY transcription factor 70
-TRINITY_DN6621_c0_g1    Exocyst complex component EXO70B1
-TRINITY_DN10327_c0_g2   G-type lectin S-receptor-like serine/threonine-protein kinase
-TRINITY_DN21317_c0_g3   G-type lectin S-receptor-like serine/threonine-protein kinase
-TRINITY_DN2749_c0_g1    G-type lectin S-receptor-like serine/threonine-protein kinase
-TRINITY_DN3059_c0_g1    G-type lectin S-receptor-like serine/threonine-protein kinase
-TRINITY_DN3679_c0_g1    G-type lectin S-receptor-like serine/threonine-protein kinase
-TRINITY_DN51662_c0_g1   G-type lectin S-receptor-like serine/threonine-protein kinase
-TRINITY_DN66307_c0_g1   G-type lectin S-receptor-like serine/threonine-protein kinase
-TRINITY_DN671_c0_g1     Mitogen-activated protein kinase 3
-TRINITY_DN2886_c0_g1    MACPF domain-containing protein CAD1
-TRINITY_DN46835_c0_g2   MACPF domain-containing protein At1g14780
-TRINITY_DN5619_c0_g1    regulatory protein NPR3
-TRINITY_DN573_c0_g1     WRKY transcription factor 70
-TRINITY_DN104466_c0_g1  ethylene-response factor C3
-TRINITY_DN11806_c0_g1   ethylene-response factor 1A
-TRINITY_DN1657_c0_g1    ethylene-response factor 2 like
-TRINITY_DN2783_c0_g1    ethylene-response factor 1B
-TRINITY_DN5035_c0_g1    ethylene-responsive transcription factor ERF098-like
-TRINITY_DN573_c0_g1     WRKY transcription factor 70
-TRINITY_DN578_c1_g1     ethylene-responsive transcription factor 6
-TRINITY_DN811_c1_g1     ethylene receptor 2
-TRINITY_DN9902_c0_g1    ethylene response factor 8
-TRINITY_DN12169_c0_g1   mitochondrial phosphate carrier protein 3
-TRINITY_DN18904_c0_g1   Sugar transport protein 13
-TRINITY_DN2593_c0_g1    precursor of CEP14
-TRINITY_DN5619_c0_g1    regulatory protein NPR3
-TRINITY_DN573_c0_g1     WRKY transcription factor 70
-TRINITY_DN5939_c0_g1    Calmodulin-binding receptor-like cytoplasmic kinase 2
-TRINITY_DN671_c0_g1     Mitogen-activated protein kinase 3
-TRINITY_DN9244_c0_g1    calmodulin-binding receptor-like cytoplasmic kinase 1
-TRINITY_DN10324_c6_g1   Glycine dehydrogenase (decarboxylating) 1, mitochondrial
-TRINITY_DN3206_c0_g1    Bifunctional D-cysteine desulfhydrase/1-aminocyclopropane-1-carboxylate deaminase, mitochondrial
-TRINITY_DN36133_c0_g1   serine hydroxymethyltransferase
-TRINITY_DN6078_c1_g1    cystathionine gamma-synthase
-TRINITY_DN9690_c0_g1    phosphoserine phosphatase, chloroplastic
-TRINITY_DN11635_c0_g1   unknown
-TRINITY_DN19207_c1_g1   naringenin,2-oxoglutarate 3-dioxygenase
-TRINITY_DN3338_c0_g1    Rhodanese/Cell cycle control phosphatase superfamily protein
-TRINITY_DN36133_c0_g1   serine hydroxymethyltransferase
-TRINITY_DN3824_c0_g1    photosystem II 22 kDa protein chloroplastic-like
-TRINITY_DN5286_c0_g1    Calcium sensing receptor
-TRINITY_DN5644_c0_g1    PLASTID REDOX INSENSITIVE 2, chloroplastic-like
-TRINITY_DN654_c0_g1     heat shock protein 90-5, chloroplastic
-TRINITY_DN799_c1_g1     photosystem II core complex proteins psbY, chloroplastic-like
-TRINITY_DN3756_c0_g1    squalene monooxygenase 1
-TRINITY_DN3756_c0_g2    squalene epoxidase
-TRINITY_DN5338_c0_g1    1-deoxy-D-xylulose 5-phosphate reductoisomerase
-TRINITY_DN5782_c0_g1    obtusifoliol 14-alpha demethylase
-TRINITY_DN5964_c0_g1    Protein NRT1/ PTR FAMILY 7.3
-TRINITY_DN64801_c0_g2   3-ketoacyl-CoA synthase 6
-TRINITY_DN7812_c1_g1    enoyl-ACP reductase
-TRINITY_DN93084_c3_g1   inositol-3-phosphate synthase
-TRINITY_DN9401_c0_g1    heterodimeric geranylgeranyl pyrophosphate synthase small subunit chloroplastic-like
-TRINITY_DN10324_c6_g1   glycine dehydrogenase
-TRINITY_DN11_c0_g1	fructose-bisphosphate aldolase 1
-TRINITY_DN2200_c0_g1    malate dehydrogenase [NADP], chloroplastic
-TRINITY_DN3206_c0_g1    putative D-cysteine desulfhydrase 1
-TRINITY_DN36133_c0_g1   serine hydroxymethyltransferase
-TRINITY_DN4942_c0_g1    probable low-specificity L-threonine aldolase 1
-TRINITY_DN5338_c0_g1    1-deoxy-D-xylulose 5-phosphate reductoisomerase
-TRINITY_DN6078_c1_g1    cystathionine gamma-synthase
-TRINITY_DN64801_c0_g2   3-ketoacyl-CoA synthase 6
-TRINITY_DN7468_c1_g2    omega-3 fatty acid desaturase chloroplastic-like
-TRINITY_DN7812_c1_g1    enoyl-ACP reductase
-TRINITY_DN82008_c6_g1   phospho-2-dehydro-3-deoxyheptonate aldolase 2, chloroplastic
-TRINITY_DN833_c0_g1     nitrate reductase
-TRINITY_DN833_c0_g1     nitrate reductase
-TRINITY_DN9690_c0_g1    phosphoserine phosphatase
-TRINITY_DN12733_c2_g1   1,4-alpha-glucan-branching enzyme 1
-TRINITY_DN13393_c0_g1   UTP-glucose-1-phosphate uridylyltransferase
-TRINITY_DN1392_c0_g1    soluble inorganic pyrophosphatase PPA1
-TRINITY_DN15501_c0_g1   beta-amylase
-TRINITY_DN2894_c0_g1    beta-amylase
-TRINITY_DN2993_c0_g1    ADP-glucose pyrophosphorylase
-TRINITY_DN54912_c0_g1   pectinesterase 2
-TRINITY_DN9640_c0_g1    ADP-glucose pyrophosphorylase
