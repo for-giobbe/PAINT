@@ -8,14 +8,14 @@ TRINITY_DN13393_c0_g1	UGP2	UTP--glucose-1-phosphate uridylyltransferase
 TRINITY_DN2200_c0_g1	-	Malate dehydrogenase [NADP], chloroplastic
 TRINITY_DN2993_c0_g1	-	Glucose-1-phosphate adenylyltransferase small subunit, chloroplastic/amyloplastic
 TRINITY_DN4785_c0_g1	-	-
-TRINITY_DN9640_c0_g1	- 	ADP-glucose pyrophosphorylase
+TRINITY_DN9640_c0_g1	-	ADP-glucose pyrophosphorylase
 
 upregulated genes associated to GO:0005977 - glycogen metabolic process (4)
 
 TRINITY_DN11130_c1_g1	-	Alpha-glucan phosphorylase, H isozyme
 TRINITY_DN12733_c2_g1	SBEII	1,4-alpha-glucan-branching enzyme 1, chloroplastic/amyloplastic
-TRINITY_DN2993_c0_g1    -	Glucose-1-phosphate adenylyltransferase small subunit, chloroplastic/amyloplastic
-TRINITY_DN9640_c0_g1    -	ADP-glucose pyrophosphorylase
+TRINITY_DN2993_c0_g1	-	Glucose-1-phosphate adenylyltransferase small subunit, chloroplastic/amyloplastic
+TRINITY_DN9640_c0_g1	-	ADP-glucose pyrophosphorylase
 
 upregulated genes associated to GO:0009704 - de-etiolation (3)
 
@@ -25,29 +25,29 @@ TRINITY_DN654_c0_g1	HSP90-5	Heat shock protein 90-5, chloroplastic
 
 upregulated genes associated to GO:0009069 - serine family amino acid metabolic proceses (4)
 
-TRINITY_DN10324_c6_g1   SPE     GDLC    glycine dehydrogenase
-TRINITY_DN3206_c0_g1    SPE     -	putative D-cysteine desulfhydrase 1
-TRINITY_DN36133_c0_g1   SPE     SHMT2   serine hydroxymethyltransferase, mitochondrial
-TRINITY_DN6078_c1_g1    SPE     metB    cystathionine gamma-synthase
-TRINITY_DN9690_c0_g1    SPE     PSP     Phosphoserine phosphatase, chloroplastic
+TRINITY_DN10324_c6_g1	GDLC    glycine dehydrogenase
+TRINITY_DN3206_c0_g1    -	putative D-cysteine desulfhydrase 1
+TRINITY_DN36133_c0_g1   SHMT2   serine hydroxymethyltransferase, mitochondrial
+TRINITY_DN6078_c1_g1    metB    cystathionine gamma-synthase
+TRINITY_DN9690_c0_g1    PSP     Phosphoserine phosphatase, chloroplastic
 
 GO:0006694	steroid biosynthetic process (4)
 
-TRINITY_DN3756_c0_g1    SPE     SQP1    squalene monooxygenase 1
-TRINITY_DN3756_c0_g2    SPE     SE	squalene epoxidase
-TRINITY_DN3756_c0_g3	SPE     SQP1    squalene monooxygenase 1
-TRINITY_DN5782_c0_g1    SPE     CYP51   obtusifoliol 14-alpha demethylase
+TRINITY_DN3756_c0_g1    SQP1    squalene monooxygenase 1
+TRINITY_DN3756_c0_g2    SE	squalene epoxidase
+TRINITY_DN3756_c0_g3	SQP1    squalene monooxygenase 1
+TRINITY_DN5782_c0_g1    CYP51   obtusifoliol 14-alpha demethylase
 
 GO:0005976	polysaccharide metabolic process (10)
 
-TRINITY_DN12733_c2_g1   SPE     GBE1     1,4-alpha-glucan-branching enzyme
-TRINITY_DN13393_c0_g1   SPE     -	UTP--glucose-1-phosphate uridylyltransferase
-TRINITY_DN1392_c0_g1    SPE     BMY1    Beta-amylase
-TRINITY_DN15501_c0_g1   SPE     -	Beta-amylase
-TRINITY_DN2894_c0_g1    SPE	-	Beta-amylase
-TRINITY_DN2993_c0_g1    SPE	agpl2   ADP-glucose pyrophosphorylase
-TRINITY_DN9640_c0_g1    SPE	agpl2   ADP-glucose pyrophosphorylase
-TRINITY_DN54912_c0_g1   SPE	PME2    pectinesterase 2
+TRINITY_DN12733_c2_g1     GBE1     1,4-alpha-glucan-branching enzyme
+TRINITY_DN13393_c0_g1     -	UTP--glucose-1-phosphate uridylyltransferase
+TRINITY_DN1392_c0_g1      BMY1    Beta-amylase
+TRINITY_DN15501_c0_g1     -	Beta-amylase
+TRINITY_DN2894_c0_g1 	-	Beta-amylase
+TRINITY_DN2993_c0_g1 	agpl2   ADP-glucose pyrophosphorylase
+TRINITY_DN9640_c0_g1 	agpl2   ADP-glucose pyrophosphorylase
+TRINITY_DN54912_c0_g1	PME2    pectinesterase 2
 
 upregulated genes associated to GO:0017144 - drug metabolic process (13)	NB:FALSE POSITIVE!!!
 
@@ -79,9 +79,9 @@ TRINITY_DN9690_c0_g1	PSP	Phosphoserine phosphatase, chloroplastic
 
 upregulated genes associated to GO:0042133 - neurotransmitter metabolic process (3)        NB:FALSE POSITIVE!!!
 
-TRINITY_DN10324_c6_g1   SPE     strong  GLDC    glycine dehydrogenase
-TRINITY_DN36133_c0_g1   SPE     strong  SHMT    serine hydroxymethyltransferase
-TRINITY_DN833_c0_g1     SPE     strong  NNR1    Nitrate reductase [NADH] 1
+TRINITY_DN10324_c6_g1	GLDC    glycine dehydrogenase
+TRINITY_DN36133_c0_g1	SHMT    serine hydroxymethyltransferase
+TRINITY_DN833_c0_g1  NNR1    Nitrate reductase [NADH] 1
 
 upregulated genes associated to GO:0006082 - organic acid metabolic process (18)
 
@@ -272,10 +272,10 @@ TRINITY_DN8226_c0_g1	ATL6	E3 ubiquitin-protein ligase ATL6
 
 dnregulated genes associated to GO:0009862 - systemic acquired resistance, salicylic acid mediated signaling pathway (4)
 
-TRINITY_DN503_c0_g1     PDR1    Pleiotropic drug resistance protein 1
-TRINITY_DN514_c0_g1     WRKY70  Probable WRKY transcription factor 70
-TRINITY_DN5619_c0_g1    NPR3    Regulatory protein NPR3
-TRINITY_DN573_c0_g1     WRKY70  Probable WRKY transcription factor 70
+TRINITY_DN503_c0_g1	PDR1    Pleiotropic drug resistance protein 1
+TRINITY_DN514_c0_g1	WRKY70  Probable WRKY transcription factor 70
+TRINITY_DN5619_c0_g1	NPR3    Regulatory protein NPR3
+TRINITY_DN573_c0_g1	WRKY70  Probable WRKY transcription factor 70
 
 dnregulated genes associated to GO:0009627 - systemic acquired resistance (7)
 
@@ -359,6 +359,8 @@ TRINITY_DN573_c0_g1     WRKY70  Probable WRKY transcription factor 70
 TRINITY_DN6621_c0_g1    EXO70B1 Exocyst complex component EXO70B1
 TRINITY_DN771_c0_g1	PCRK1   Serine/threonine-protein kinase PCRK1
 
+additionally - not enriched (7):
+
 TRINITY_DN10327_c0_g2   G-type lectin S-receptor-like serine/threonine-protein kinase
 TRINITY_DN21317_c0_g3   G-type lectin S-receptor-like serine/threonine-protein kinase
 TRINITY_DN2749_c0_g1    G-type lectin S-receptor-like serine/threonine-protein kinase
@@ -367,32 +369,31 @@ TRINITY_DN3679_c0_g1    G-type lectin S-receptor-like serine/threonine-protein k
 TRINITY_DN51662_c0_g1   G-type lectin S-receptor-like serine/threonine-protein kinase
 TRINITY_DN66307_c0_g1   G-type lectin S-receptor-like serine/threonine-protein kinase
 
-
 ##################################################################################### KO downregulated - MAPK signaling pathway - plant (9)
 
-MPK4
-MPK3
-MPK6
-WRKY33
-RAN1
-ETR/ERS
-EIN3/EIL
-ERF1
-PYR/PYL
-RbohD
+MPK4	-	Mitogen-activated protein kinase 4
+MPK3	-	Mitogen-activated protein kinase 3
+MPK6	-	Mitogen-activated protein kinase 6
+WRKY33	-	WRKY transcription factor 33
+RAN1	-	Copper-transporting ATPase RAN1
+ETR/ERS	-	ethylene response sensor
+EIN3/EIL	-	ethylene-insensitive 3-like
+ERF1	-	ethylene response factor 1
+PYR/PYL	-	pyrabactin resistance receptor
+RbohD	-	Respiratory burst oxidase homolog protein D
 
 ##################################################################################### KO downregulated -  Plant-pathogen interaction (10)
 
-CNGs
-CDPK
-Rboh
-CaMCML
-MPK4
-WRKY25
-MPK3/6
-RPM1
-EDS1
-Rd19
+CTSF	-	cathepsin F
+CNGC	-	cyclic nucleotide gated channel
+CDPK	-	calcium‐dependent protein kinase	NB:3 transcripts
+WRKY33	-	WRKY transcription factor 33	NB:3 transcripts
+Rboh	-	Respiratory burst oxidase homolog protein
+CaMCML	-	calcium-binding protein CML	NB:4 transcripts
+RPM1	-	Disease resistance protein RPM1
+EDS1	-	enhanced disease susceptibility 1 protein
+MPK3	-	Mitogen-activated protein kinase 3
+MPK4	-	Mitogen-activated protein kinase 4
 
 ##################################################################################### KO downregulated - Biosynthesis of secondary metabolites (8)
 
@@ -407,15 +408,15 @@ CYP92A6 -	typhasterol/6-deoxotyphasterol 2alpha-hydroxylase
 
 ##################################################################################### KO upregulated - Plant-pathogen interaction (2)
 
-KCS1	-	Suppression of plant HR and defense response
-HSP90B	-	may have a different role in fabales
+KCS1	-	3-ketoacyl-CoA synthase 1
+HSP90B	-	Heat shock protein HSP 90-beta
 
 ##################################################################################### KO upregulated - Photosynthesis (4)
 
-PsbQ
-PsbY
-PsbS
-PetF
+PsbQ	-	Photosystem II oxygen-evolving complex protein 3
+PsbY	-	Photosystem II core complex proteins psbY, chloroplastic
+PsbS	-	Photosystem II 22 kDa protein, chloroplastic
+PetF	-	Ferredoxin, chloroplastic
 
 ##################################################################################### KO upregulated - Flavonoid biosynthesis (2)
 
@@ -434,6 +435,7 @@ Global and overview maps
 01230 Biosynthesis of amino acids (7)
 01250 Biosynthesis of nucleotide sugars (2)
 01240 Biosynthesis of cofactors (4)
+
 Carbohydrate metabolism
 00010 Glycolysis / Gluconeogenesis (1)
 00030 Pentose phosphate pathway (1)
@@ -445,6 +447,7 @@ Carbohydrate metabolism
 00620 Pyruvate metabolism (1)
 00630 Glyoxylate and dicarboxylate metabolism (4)
 00562 Inositol phosphate metabolism (1)
+
 Energy metabolism
 00190 Oxidative phosphorylation (1)
 00195 Photosynthesis (4)
@@ -452,6 +455,7 @@ Energy metabolism
 00680 Methane metabolism (3)
 00910 Nitrogen metabolism (3)
 00920 Sulfur metabolism (1)
+
 Lipid metabolism
 00061 Fatty acid biosynthesis (1)
 00062 Fatty acid elongation (1)
@@ -461,6 +465,7 @@ Lipid metabolism
 00564 Glycerophospholipid metabolism (1)
 00590 Arachidonic acid metabolism (1)
 00592 alpha-Linolenic acid metabolism (1)
+
 Amino acid metabolism
 00250 Alanine, aspartate and glutamate metabolism (1)
 00260 Glycine, serine and threonine metabolism (5)
@@ -477,28 +482,43 @@ Global and overview maps
 01210 2-Oxocarboxylic acid metabolism (1)
 01230 Biosynthesis of amino acids (1)
 01250 Biosynthesis of nucleotide sugars (1)
-01240 Biosynthesis of cofactors (2)Carbohydrate metabolism
-00520 Amino sugar and nucleotide sugar metabolism (1)Lipid metabolism
+01240 Biosynthesis of cofactors (2)
+
+Carbohydrate metabolism
+00520 Amino sugar and nucleotide sugar metabolism (1)
+
+Lipid metabolism
 00561 Glycerolipid metabolism (1)
 00564 Glycerophospholipid metabolism (1)
 00600 Sphingolipid metabolism (1)
-00592 alpha-Linolenic acid metabolism (1)Nucleotide metabolism
-00230 Purine metabolism (1)Amino acid metabolism
+00592 alpha-Linolenic acid metabolism (1)
+
+Nucleotide metabolism
+00230 Purine metabolism (1)
+
+Amino acid metabolism
 00250 Alanine, aspartate and glutamate metabolism (1)
 00270 Cysteine and methionine metabolism (2)
 00280 Valine, leucine and isoleucine degradation (1)
 00290 Valine, leucine and isoleucine biosynthesis (1)
-00360 Phenylalanine metabolism (1)Metabolism of cofactors and vitamins
+00360 Phenylalanine metabolism (1)
+
+Metabolism of cofactors and vitamins
 00770 Pantothenate and CoA biosynthesis (1)
-00860 Porphyrin metabolism (1)Metabolism of terpenoids and polyketides
-00905 Brassinosteroid biosynthesis (1)Biosynthesis of other secondary metabolites
+00860 Porphyrin metabolism (1)
+
+Metabolism of terpenoids and polyketides
+00905 Brassinosteroid biosynthesis (1)
+
+Biosynthesis of other secondary metabolites
 00940 Phenylpropanoid biosynthesis (2)
 00966 Glucosinolate biosynthesis (1)
-Genetic Information Processing
+
 Signal transduction
 04010 MAPK signaling pathway (1)
 04016 MAPK signaling pathway - plant (9)
 04020 Calcium signaling pathway (1)
 04075 Plant hormone signal transduction (7)
+
 Environmental adaptation
 04626 Plant-pathogen interaction (10)
