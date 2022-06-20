@@ -1,0 +1,21 @@
+module	GABAergic synapse	Dopaminergic synapse	Glutamatergic synapse 	Cholinergic synapse 	Serotonergic synapse
+1_AD	3	1	2	1	0
+3_AD	2	0	2	1	0
+9_AD	0	0	0	0	0
+10_AD	0	0	0	1	0
+12_AD	0	0	0	0	0
+14_AD	6	12	10	11	8
+3_CT	1	1	1	1	0
+7_CT	1	0	1	0	1
+12_CT	0	0	0	0	0
+13_CT	0	0	0	0	0
+14_CT	5	0	3	2	2
+15_CT	5	4	6	6	2
+16_CT	0	0	0	1	0
+18_CT	0	0	0	0	0
+21_CT	0	0	0	0	0
+23_CT	0	2	1	1	1
+31_CT	1	0	0	0	0
+36_CT	0	0	0	0	0
+39_CT	0	0	0	0	0
+41_CT	5	12	5	9	12
