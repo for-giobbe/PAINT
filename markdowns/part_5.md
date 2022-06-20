@@ -286,6 +286,14 @@ done
 A detailed description of genes can be found here for vicia
 and here for crema.
 
+---
+
+For crema a signalp analysis was carried out and then,
+
+```
+for i in {1..45}; do secreted=$(grep -f abundances/crema/crema_WGCNA_gene/CT_module_"$i"_genes.lst enrichment/signalp_crema/crema_transdecoder_signalp.out | grep -c -w SP); total=$(wc -l abundances/crema/crema_WGCNA_gene/CT_module_"$i"_genes.lst | awk '{print $1}'); echo -e "module_$i\t$secreted\t$total"; done > single_genes_fun/crema_signalp_CT.lst
+for i in {1..15}; do secreted=$(grep -f abundances/crema/crema_WGCNA_gene/AD_module_"$i"_genes.lst enrichment/signalp_crema/crema_transdecoder_signalp.out | grep -c -w SP); total=$(wc -l abundances/crema/crema_WGCNA_gene/CT_module_"$i"_genes.lst | awk '{print $1}'); echo -e "module_$i\t$secreted\t$total"; done > single_genes_fun/crema_signalp_AD.lst
+```
 
 ---
 
