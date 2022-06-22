@@ -286,14 +286,101 @@ done
 A detailed description of genes can be found here for vicia
 and here for crema.
 
+
 ---
 
-For crema a signalp analysis was carried out and then,
+
+For crema a signalp analysis was carried out and then the number of protein with a secretion peptide 
+was assigned to each module with:
+
 
 ```
-for i in {1..45}; do secreted=$(grep -f abundances/crema/crema_WGCNA_gene/CT_module_"$i"_genes.lst enrichment/signalp_crema/crema_transdecoder_signalp.out | grep -c -w SP); total=$(wc -l abundances/crema/crema_WGCNA_gene/CT_module_"$i"_genes.lst | awk '{print $1}'); echo -e "module_$i\t$secreted\t$total"; done > single_genes_fun/crema_signalp_CT.lst
-for i in {1..15}; do secreted=$(grep -f abundances/crema/crema_WGCNA_gene/AD_module_"$i"_genes.lst enrichment/signalp_crema/crema_transdecoder_signalp.out | grep -c -w SP); total=$(wc -l abundances/crema/crema_WGCNA_gene/CT_module_"$i"_genes.lst | awk '{print $1}'); echo -e "module_$i\t$secreted\t$total"; done > single_genes_fun/crema_signalp_AD.lst
+for i in {1..45}; 
+	do 
+	secreted=$(grep -f abundances/crema/crema_WGCNA_gene/CT_module_"$i"_genes.lst enrichment/signalp_crema/crema_transdecoder_signalp.out | grep -c -w SP); 
+	total=$(wc -l abundances/crema/crema_WGCNA_gene/CT_module_"$i"_genes.lst | awk '{print $1}'); 
+	echo -e "module_$i\t$secreted\t$total"; 
+	done > single_genes_fun/crema_signalp_CT.lst
 ```
+
+
+and
+
+
+```
+for i in {1..15}; 
+	do 
+	secreted=$(grep -f abundances/crema/crema_WGCNA_gene/AD_module_"$i"_genes.lst enrichment/signalp_crema/crema_transdecoder_signalp.out | grep -c -w SP); 
+	total=$(wc -l abundances/crema/crema_WGCNA_gene/CT_module_"$i"_genes.lst | awk '{print $1}'); 
+	echo -e "module_$i\t$secreted\t$total"; 
+	done > single_genes_fun/crema_signalp_AD.lst
+```
+
+The associated otputs can be found in the folder ```single_genes_fun```
+
+
+---
+
+
+Furthermore, for crema we manually charachterized both venom and antimicrobial proteis. Two databases were created
+from uniprot:
+
+- one using "taxonomy:"Insecta [50557]" keyword:"Antimicrobial [KW-0929]" AND reviewed:yes"
+- another based on [VenomZone (insecta)](https://venomzone.expasy.org/1413)
+
+After building the dbs using:
+
+```makeblastdb -in uniprot-taxonomy__Insecta+\[50557\]_+\(keyword__Antimicrobial+\[KW--.fasta -dbtype prot```
+
+and
+
+```makeblastdb -in antimicrobial_peptides.fasta -dbtype prot```
+
+blastp searches were carried out, using:
+
+```
+blastp -query annotations/crema/crema.Trinity.fasta.transdecoder.pep -db enrichment/crema_antimb/antimicrobial_peptides.fasta 
+-evalue 1e-5 -outfmt "6 qseqid sseqid evalue qcovs" -max_target_seqs 1 > enrichment/crema_antimb/crema_antimb_blastp.out
+```
+
+and
+
+```
+blastp -query annotations/crema/crema.Trinity.fasta.transdecoder.pep -db enrichment/crema_venoms/antimicrobial_peptides.fasta
+-evalue 1e-5 -outfmt "6 qseqid sseqid evalue qcovs" -max_target_seqs 1 > enrichment/crema_antimb/crema_antimb_blastp.out
+```
+
+Subsequently, the expression level and DE statistcis for the comparison between "untreated" (A) tissues was performed with:
+
+
+```
+echo -e "transcript\thomolog\tmean_AD\tmean_CT\tlogFC\tpadj\tmodule_AD\tmodule_CT" > single_genes_fun/crema_antimicrobial_peptides.tsv;
+
+for i in $(awk '{print $1}' enrichment/crema_antimb/crema_antimb_blastp.out | awk -F "_i" 'NF{NF-=1};1');
+	do
+	homolog=$(grep $i enrichment/crema_antimb/crema_antimb_blastp.out | awk '{print $2}' | head -1);
+	exp=$(grep -w $i abundances/crema/crema_deseq2_gene/RSEM_crema.filtered.gene.counts.matrix.A_AD_vs_A_CT.DESeq2.DE_results | awk '{print $5"\t"$6"\t"$7"\t"$NF}'); if [ -z "$exp" ]; then exp="-\t-\t-\t-"; fi;
+	module_AD=$(grep -w $i abundances/crema/crema_WGCNA_gene/*AD*lst | awk -F "_" '{print $5}'); if [ -z "$module_AD" ]; then module_AD="notGCN"; fi;
+	module_CT=$(grep -w $i abundances/crema/crema_WGCNA_gene/*CT*lst | awk -F "_" '{print $5}'); if [ -z "$module_CT" ]; then module_CT="notGCN"; fi;
+	echo -e "$i\t$homolog\t$exp\t$module_AD\t$module_CT";
+	done >> single_genes_fun/crema_antimicrobial_peptides.tsv
+```
+
+and
+
+```
+echo -e "transcript\thomolog\tmean_AD\tmean_CT\tlogFC\tpadj\tmodule_AD\tmodule_CT" > single_genes_fun/crema_venom_peptides.tsv;
+
+for i in $(awk '{print $1}' enrichment/crema_venoms/crema_venoms_blastp.out | awk -F "_i" 'NF{NF-=1};1');
+	do
+	homolog=$(grep $i enrichment/crema_venoms/crema_venoms_blastp.out | awk '{print $2}' | head -1);
+	exp=$(grep -w $i abundances/crema/crema_deseq2_gene/RSEM_crema.filtered.gene.counts.matrix.A_AD_vs_A_CT.DESeq2.DE_results | awk '{print $5"\t"$6"\t"$7"\t"$NF}'); if [ -z "$exp" ]; then exp="-\t-\t-\t-"; fi;
+	module_AD=$(grep -w $i abundances/crema/crema_WGCNA_gene/*AD*lst | awk -F "_" '{print $5}'); if [ -z "$module_AD" ]; then module_AD="notGCN"; fi;
+	module_CT=$(grep -w $i abundances/crema/crema_WGCNA_gene/*CT*lst | awk -F "_" '{print $5}'); if [ -z "$module_CT" ]; then module_CT="notGCN"; fi;
+	echo -e "$i\t$homolog\t$exp\t$module_AD\t$module_CT";
+	done >> single_genes_fun/crema_venom_peptides.tsv
+```
+
 
 ---
 
