@@ -222,9 +222,6 @@ GO:0042136 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst
 ```
 
 
-The first is a homolog to serine hydroxymethyltransferase, the second to inducible nitrate reductase. 
-
-
 - crema genes in AD module 3 associated to GO:0042811 - pheromone biosynthetic process:
 
 
@@ -239,9 +236,7 @@ GO:0042811 abundances/crema/crema_WGCNA_gene/AD_module_3_genes.lst
 ```
 
 
----
-
-manual blast
+Then we extracted the transcripts amminoacid sequences using:
 
 
 ```
@@ -249,6 +244,7 @@ for i in $(cat abundances/crema/crema_WGCNA_gene/CT_module_13_genes.lst); do
 sed -n -e "/$i/,/TRINITY/ p" annotations/crema/crema.Trinity.fasta.transdecoder.pep | head -n -1 | awk '{print $1}';
 done
 ```
+
 
 ---
 
@@ -283,13 +279,6 @@ done
 ---
 
 
-A detailed description of genes can be found here for vicia
-and here for crema.
-
-
----
-
-
 For crema a signalp analysis was carried out and then the number of protein with a secretion peptide 
 was assigned to each module with:
 
@@ -316,7 +305,8 @@ for i in {1..15};
 	done > single_genes_fun/crema_signalp_AD.lst
 ```
 
-The associated otputs can be found in the folder ```single_genes_fun```
+
+The associated otputs can be found in the folder ```single_genes_fun```.
 
 
 ---
@@ -339,15 +329,19 @@ and
 blastp searches were carried out, using:
 
 ```
-blastp -query annotations/crema/crema.Trinity.fasta.transdecoder.pep -db enrichment/crema_antimb/antimicrobial_peptides.fasta 
--evalue 1e-5 -outfmt "6 qseqid sseqid evalue qcovs" -max_target_seqs 1 > enrichment/crema_antimb/crema_antimb_blastp.out
+blastp -query annotations/crema/crema.Trinity.fasta.transdecoder.pep 
+-db enrichment/crema_antimb/antimicrobial_peptides.fasta 
+-evalue 1e-5 -outfmt "6 qseqid sseqid evalue qcovs" 
+-max_target_seqs 1 > enrichment/crema_antimb/crema_antimb_blastp.out
 ```
 
 and
 
 ```
-blastp -query annotations/crema/crema.Trinity.fasta.transdecoder.pep -db enrichment/crema_venoms/antimicrobial_peptides.fasta
--evalue 1e-5 -outfmt "6 qseqid sseqid evalue qcovs" -max_target_seqs 1 > enrichment/crema_antimb/crema_antimb_blastp.out
+blastp -query annotations/crema/crema.Trinity.fasta.transdecoder.pep 
+-db enrichment/crema_venoms/antimicrobial_peptides.fasta
+-evalue 1e-5 -outfmt "6 qseqid sseqid evalue qcovs" 
+-max_target_seqs 1 > enrichment/crema_antimb/crema_antimb_blastp.out
 ```
 
 Subsequently, the expression level and DE statistcis for the comparison between "untreated" (A) tissues was performed with:
@@ -380,6 +374,9 @@ for i in $(awk '{print $1}' enrichment/crema_venoms/crema_venoms_blastp.out | aw
 	echo -e "$i\t$homolog\t$exp\t$module_AD\t$module_CT";
 	done >> single_genes_fun/crema_venom_peptides.tsv
 ```
+
+
+The associated otputs can be found in the folder ```single_genes_fun```
 
 
 ---
