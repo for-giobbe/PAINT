@@ -38,6 +38,6 @@ A WIP manuscript is available [here](https://docs.google.com/document/d/1bPlYGwk
 
 - [**part 5**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_5.md) - genes functional annotation
 
-- [**part 6**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) - genes evolutionary history
+- [**part 6**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) - comparative genomics
 
-- [**part 7**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md) - leaf lamina metagenomics
+- [**part 7**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md) - metagenomics
