@@ -17,6 +17,7 @@ yet the initial steps are the same as before.
 Transcript abundance can be obtained 
 using the script ```slurm_abundances_crema``` which also uses bowtie and RSEM. 
 
+
 Move the outputs from the main folder to the appropriate folder usings  ```mv *_rep*  abundances/crema```.
 
 
@@ -187,9 +188,9 @@ Everyting can be seamlessly performed using separate commands for each tissue:
 
 
 ```
-Rscript scripts/WGCNA.Rscript 22 signed 50 0.3 0.6 pearson 
-abundances/crema/RSEM_crema.filtered.gene.counts.matrix abundances/crema/crema_WGCNA_gene/crema_traits 
-abundances/crema/crema_WGCNA_gene/ none 0.05 20 AD
+Rscript scripts/WGCNA_contrast2.Rscript 22 signed 50 0.3 0.6 pearson 
+abundances/crema/RSEM_crema.filtered.gene.counts.matrix abundances/crema/crema_WGCNA_gene/crema_traits abundances/crema/crema_WGCNA_gene/ 
+none 0.05 20 AD
 ```
 
 
@@ -197,9 +198,9 @@ and
 
 
 ```
-Rscript scripts/WGCNA.Rscript 14 signed 50 0.3 0.6 pearson
-abundances/crema/RSEM_crema.filtered.gene.counts.matrix abundances/crema/crema_WGCNA_gene/crema_traits 
-abundances/crema/crema_WGCNA_gene/ none 0.05 20 CT
+Rscript scripts/WGCNA_contrast2.Rscript 14 signed 50 0.3 0.6 pearson
+abundances/crema/RSEM_crema.filtered.gene.counts.matrix abundances/crema/crema_WGCNA_gene/crema_traits abundances/crema/crema_WGCNA_gene/
+none 0.05 20 CT
 ```
 
 
@@ -277,9 +278,9 @@ Here is a heatmap representing the trait-modules associations for AD:
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/abundances/crema/crema_WGCNA_gene/AD_crema_WGCNA_custom_heatmap.jpg)
 
 
-In the figures only the modules which have a significative (wether positive or negative) correlation to AD_S / AD_L / CT_S / CT_L are represented.
-Moreover, modules which also have a correlation of the same direction to respectively AD_0 / CT_0 are excluded.
-Modules are named as increasing numbers and attached they have the total number of genes they consist of. 
+In the figures only the modules which have (1) a significative (wether positive or negative) correlation to conditions A / B / C / D 
+and (2) have a correlation of the opposite direction respectively between "control" (condition A) and "treatment" (conditions B,C,D).
+Modules are named as increasing numbers with attached the total number of genes they consist of. 
 
 **NB:** for DE analyses we used the raw gene-counts matrix as input, but WGCNA requires normalized counts;
 the script here leverages [vst-normalized](https://www.rdocumentation.org/packages/DESeq2/versions/1.12.3/topics/varianceStabilizingTransformation) TPMs. 
@@ -329,51 +330,66 @@ sed 's/,/ /g' abundances/crema/crema_WGCNA_gene/crema_traits | sed "s/sample/n \
 
 
 ```
-n   sample     AD_0  AD_S  AD_L  CT_0  CT_S  CT_L
-01  A_AD_rep1  1     0     0     0     0     0
-02  A_AD_rep2  1     0     0     0     0     0
-03  A_AD_rep3  1     0     0     0     0     0
-04  A_AD_rep4  1     0     0     0     0     0
-05  A_AD_rep5  1     0     0     0     0     0
-06  A_CT_rep1  0     0     0     1     0     0
-07  A_CT_rep2  0     0     0     1     0     0
-08  A_CT_rep3  0     0     0     1     0     0
-09  A_CT_rep4  0     0     0     1     0     0
-10  A_CT_rep5  0     0     0     1     0     0
-11  B_AD_rep1  0     0     1     0     0     0
-12  B_AD_rep2  0     0     1     0     0     0
-13  B_AD_rep3  0     0     1     0     0     0
-14  B_AD_rep4  0     0     1     0     0     0
-15  B_AD_rep5  0     0     1     0     0     0
-16  B_CT_rep1  0     0     0     0     0     1
-17  B_CT_rep2  0     0     0     0     0     1
-18  B_CT_rep3  0     0     0     0     0     1
-19  B_CT_rep4  0     0     0     0     0     1
-20  B_CT_rep5  0     0     0     0     0     1
-21  C_AD_rep1  0     1     0     0     0     0
-22  C_AD_rep2  0     1     0     0     0     0
-23  C_AD_rep3  0     1     0     0     0     0
-24  C_AD_rep4  0     1     0     0     0     0
-25  C_AD_rep5  0     1     0     0     0     0
-26  C_CT_rep1  0     0     0     0     1     0
-27  C_CT_rep2  0     0     0     0     1     0
-28  C_CT_rep3  0     0     0     0     1     0
-29  C_CT_rep4  0     0     0     0     1     0
-30  C_CT_rep5  0     0     0     0     1     0
-31  D_AD_rep1  0     1     1     0     0     0
-32  D_AD_rep2  0     1     1     0     0     0
-33  D_AD_rep3  0     1     1     0     0     0
-34  D_AD_rep4  0     1     1     0     0     0
-35  D_AD_rep5  0     1     1     0     0     0
-36  D_CT_rep1  0     0     0     0     1     1
-37  D_CT_rep2  0     0     0     0     1     1
-38  D_CT_rep3  0     0     0     0     1     1
-39  D_CT_rep4  0     0     0     0     1     1
-40  D_CT_rep5  0     0     0     0     1     1
+n   sample     AD_0  AD_S  AD_L  CT_0  CT_S  CT_L  A_AD  B_AD  C_AD  D_AD  A_CT  B_CT  C_CT  D_CT
+01  A_AD_rep1  1     0     0     0     0     0     1     0     0     0     0     0     0     0
+02  A_AD_rep2  1     0     0     0     0     0     1     0     0     0     0     0     0     0
+03  A_AD_rep3  1     0     0     0     0     0     1     0     0     0     0     0     0     0
+04  A_AD_rep4  1     0     0     0     0     0     1     0     0     0     0     0     0     0
+05  A_AD_rep5  1     0     0     0     0     0     1     0     0     0     0     0     0     0
+06  A_CT_rep1  0     0     0     1     0     0     0     0     0     0     1     0     0     0
+07  A_CT_rep2  0     0     0     1     0     0     0     0     0     0     1     0     0     0
+08  A_CT_rep3  0     0     0     1     0     0     0     0     0     0     1     0     0     0
+09  A_CT_rep4  0     0     0     1     0     0     0     0     0     0     1     0     0     0
+10  A_CT_rep5  0     0     0     1     0     0     0     0     0     0     1     0     0     0
+11  B_AD_rep1  0     1     0     0     0     0     0     1     0     0     0     0     0     0
+12  B_AD_rep2  0     1     0     0     0     0     0     1     0     0     0     0     0     0
+13  B_AD_rep3  0     1     0     0     0     0     0     1     0     0     0     0     0     0
+14  B_AD_rep4  0     1     0     0     0     0     0     1     0     0     0     0     0     0
+15  B_AD_rep5  0     1     0     0     0     0     0     1     0     0     0     0     0     0
+16  B_CT_rep1  0     0     0     0     1     0     0     0     0     0     0     1     0     0
+17  B_CT_rep2  0     0     0     0     1     0     0     0     0     0     0     1     0     0
+18  B_CT_rep3  0     0     0     0     1     0     0     0     0     0     0     1     0     0
+19  B_CT_rep4  0     0     0     0     1     0     0     0     0     0     0     1     0     0
+20  B_CT_rep5  0     0     0     0     1     0     0     0     0     0     0     1     0     0
+21  C_AD_rep1  0     0     1     0     0     0     0     0     1     0     0     0     0     0
+22  C_AD_rep2  0     0     1     0     0     0     0     0     1     0     0     0     0     0
+23  C_AD_rep3  0     0     1     0     0     0     0     0     1     0     0     0     0     0
+24  C_AD_rep4  0     0     1     0     0     0     0     0     1     0     0     0     0     0
+25  C_AD_rep5  0     0     1     0     0     0     0     0     1     0     0     0     0     0
+26  C_CT_rep1  0     0     0     0     0     1     0     0     0     0     0     0     1     0
+27  C_CT_rep2  0     0     0     0     0     1     0     0     0     0     0     0     1     0
+28  C_CT_rep3  0     0     0     0     0     1     0     0     0     0     0     0     1     0
+29  C_CT_rep4  0     0     0     0     0     1     0     0     0     0     0     0     1     0
+30  C_CT_rep5  0     0     0     0     0     1     0     0     0     0     0     0     1     0
+31  D_AD_rep1  0     1     1     0     0     0     0     0     0     1     0     0     0     0
+32  D_AD_rep2  0     1     1     0     0     0     0     0     0     1     0     0     0     0
+33  D_AD_rep3  0     1     1     0     0     0     0     0     0     1     0     0     0     0
+34  D_AD_rep4  0     1     1     0     0     0     0     0     0     1     0     0     0     0
+35  D_AD_rep5  0     1     1     0     0     0     0     0     0     1     0     0     0     0
+36  D_CT_rep1  0     0     0     0     1     1     0     0     0     1     0     0     0     1
+37  D_CT_rep2  0     0     0     0     1     1     0     0     0     0     0     0     0     1
+38  D_CT_rep3  0     0     0     0     1     1     0     0     0     0     0     0     0     1
+39  D_CT_rep4  0     0     0     0     1     1     0     0     0     0     0     0     0     1
+40  D_CT_rep5  0     0     0     0     1     1     0     0     0     0     0     0     0     1
 ```
 
 
 Just a quick recap of the traits meaning:
+
+
+- AD_A - never got in contact with vicia
+- AD_B - got in contact with vicia only since 24h before experiment 
+- AD_C - got in contact with vicia only until 24h before experiment
+- AD_D - got in contact with vicia continuously
+
+
+- CT_A - never got in contact with vicia
+- CT_B - got in contact with vicia only since 24h before experiment
+- CT_C - got in contact with vicia only until 24h before experiment
+- CT_D - got in contact with vicia continuously
+
+
+We also included an alternative trati coding, which can be leveraged using ```scripts/WGCNA_contrast2.Rscript```.
 
 
 - AD_0 - abdomen / crema never got in contact with vicia
@@ -385,6 +401,7 @@ Just a quick recap of the traits meaning:
 
 
 Additionally, the Rscript will generate:
+
 
 - the top hub-genes for each module in ```hub_genes.lst```
 - lists of genes present in each module
