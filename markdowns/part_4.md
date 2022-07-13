@@ -189,8 +189,8 @@ Everyting can be seamlessly performed using separate commands for each tissue:
 
 ```
 Rscript scripts/WGCNA_contrast2.Rscript 22 signed 50 0.3 0.6 pearson 
-abundances/crema/RSEM_crema.filtered.gene.counts.matrix abundances/crema/crema_WGCNA_gene/crema_traits abundances/crema/crema_WGCNA_gene/ 
-none 0.05 20 AD
+abundances/crema/RSEM_crema.filtered.gene.counts.matrix abundances/crema/crema_WGCNA_gene/crema_traits 
+abundances/crema/crema_WGCNA_gene/ none 0.05 20 AD
 ```
 
 
@@ -199,8 +199,8 @@ and
 
 ```
 Rscript scripts/WGCNA_contrast2.Rscript 14 signed 50 0.3 0.6 pearson
-abundances/crema/RSEM_crema.filtered.gene.counts.matrix abundances/crema/crema_WGCNA_gene/crema_traits abundances/crema/crema_WGCNA_gene/
-none 0.05 20 CT
+abundances/crema/RSEM_crema.filtered.gene.counts.matrix abundances/crema/crema_WGCNA_gene/crema_traits 
+abundances/crema/crema_WGCNA_gene/ none 0.05 20 CT
 ```
 
 
@@ -381,8 +381,6 @@ Just a quick recap of the traits meaning:
 - AD_B - got in contact with vicia only since 24h before experiment 
 - AD_C - got in contact with vicia only until 24h before experiment
 - AD_D - got in contact with vicia continuously
-
-
 - CT_A - never got in contact with vicia
 - CT_B - got in contact with vicia only since 24h before experiment
 - CT_C - got in contact with vicia only until 24h before experiment
