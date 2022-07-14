@@ -114,7 +114,7 @@ The Rscript takes as inputs:
 A total of 566 DE genes are found - of which 372 are downregulated and 194 upregulated.
 
 
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_DE.jpg)
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/abundances/vicia/vicia_deseq_gene/vicia_DE.jpg)
 
 
 In this volcano plot the x-axis represent -log(padj) and the y-axis represent the LogFC.
