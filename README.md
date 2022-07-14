@@ -26,6 +26,9 @@ Experiment reads have been deposited under the BioProject **PRJNA758979**.
 A WIP manuscript is available [here](https://docs.google.com/document/d/1bPlYGwkswf-VBD2lAnfqwFXU0Pm_4UYIW2xuc6ijjYE/edit?usp=sharing).
 
 
+[Here](https://paperpile.com/shared/6I5Mga) is a paper collection on the topic.
+
+
 - [**part 0**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_0.md) - requirements and dataset explanation
 
 - [**part 1**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_1.md) - reads qc & pre-processing
