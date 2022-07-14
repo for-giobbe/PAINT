@@ -23,10 +23,13 @@ In here _Vicia faba_ will be reverenced as **vicia** and _Crematogaster scutella
 Experiment reads have been deposited under the BioProject **PRJNA758979**.
 
 
+A paper collection on the topic is available [here](https://paperpile.com/shared/6I5Mga).
+
+
+A to do list for the project is available [here](https://github.com/for-giobbe/PAINT/blob/main/todo.md.)
+
+
 A WIP manuscript is available [here](https://docs.google.com/document/d/1bPlYGwkswf-VBD2lAnfqwFXU0Pm_4UYIW2xuc6ijjYE/edit?usp=sharing).
-
-
-[Here](https://paperpile.com/shared/6I5Mga) is a paper collection on the topic.
 
 
 - [**part 0**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_0.md) - requirements and dataset explanation
@@ -44,3 +47,5 @@ A WIP manuscript is available [here](https://docs.google.com/document/d/1bPlYGwk
 - [**part 6**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_6.md) - comparative genomics
 
 - [**part 7**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_7.md) - metagenomics
+
+- [**part 8**](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_8.md) - behavioural and physiological expreriments
