@@ -1,10 +1,83 @@
-# evolutionary age and rates of ant-plant interaction genes
+# comparative genomics
 
 
 *environiment:* yaml.WGCNA / yaml.rates
 
 
-*aim:* gain evolutionary insight on the genes associated to crema-vicia interactions, using phylostratigraphy and dnds analyses.
+*aim:* gain evolutionary insight on the genes associated to crema-vicia interactions, using phylogenetic and molecular evolution approaches.
+
+
+---
+
+
+To charachterize the p450 genes present in crema, we gathered them relying on eggNOG-mapper and transdecoder annotaitons:
+
+
+```
+grep p450 enrichment/eggNOG_crema/crema_eggNOG-mapper_annotations.tsv | awk '{print $1}' | tr -d ">" > comparative_genomics/crema_p450/p450_eggNOG-mapper.lst
+
+grep p450 annotations/crema/crema.Trinity.fasta.transdecoder.pep | awk '{print $1}' | tr -d ">" > comparative_genomics/crema_p450/p450_transdecoder.lst
+
+for i in $(cat comparative_genomics/crema_p450/p450_eggNOG-mapper.lst comparative_genomics/crema_p450/p450_transdecoder.lst | sort -u); 
+	do 
+	sed -n -e "/$i/,/TRINITY/ p" annotations/crema/crema.Trinity.fasta.transdecoder.pep | head -n -1 | awk '{print $1}'; 
+done > comparative_genomics/crema_p450/Crematogaster_scutellaris_p450.fa
+```
+
+Then all p450 protein sequences relative to the species _Apis mellifera_, _Lasius niger_, _Ooceraea biroi_ and _Themnotorax curvispinusus_ were downloaded from Uniprot
+and merged with crema ones. Aalignement using mafft-gisni:
+
+```
+ginsi p450.fa > p450.tmp.aln
+```
+
+
+The alignment was then cleaned using timal:
+
+
+```
+trimal -in p450.tmp.aln -out p450.tmp.gappyout.aln -gappyout
+```
+
+
+The filogenetic inference was perfromed using iqtree2:
+
+
+```
+iqtree2 -s p450_tot_clean.aln -B 1000 -T 16
+```
+
+
+The annotiton file for the phylogeny has been generate with the following code:
+
+
+```
+grep ">" p450.fa > tmp
+
+while read line; do 
+
+	tr=$(echo $line | awk '{print $1}' | tr -d ">"); 
+	
+	if echo $tr | grep -q TRINITY; 
+	
+		then 
+		gn="-"; 
+		sp="Crematogaster scutellaris"; 
+		
+		else 
+		gn=$(echo $line | awk -F "OS" '{print $1}' | awk '{$1=""}1'); 
+		sp=$(echo $line | awk -F "OS=" '{print $2}' | awk -F "OX=" '{print $1}'); 
+	fi; 
+	
+	echo -e "$tr\t$gn\t$sp"; 
+	
+done < tmp > p450.annotation
+
+rm tmp
+```
+
+
+---
 
 
 Here is an overview of the strata considered; in the figures anything above Eudicots and Hymenoptera
@@ -61,6 +134,7 @@ We then need to reformat crema cds:
 awk '/^>/ {printf("\n%s\n",$0);next; } { printf("%s",$0);}  END {printf("\n");}' crema.Trinity.fasta.transdecoder.cds | awk '{print $1}' | sed "s/>/>crema-/g" > crema.fa
 ```
 
+
 And we also need to remove the contaminants we previously found:
 
 
@@ -94,6 +168,7 @@ and
 
 
 Tables can be plotted with an Rscript, using as arguments:
+
 
 - the phylostratigraphy file
 - the modules to be plotted (in addition to the total)
