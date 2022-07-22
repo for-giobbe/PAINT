@@ -74,7 +74,7 @@ comparative_genomics/crema_p450/p450.pdf
 And here is the result:
 
 
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/comparative_genomics/crema_p450/p450.pdf)
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/comparative_genomics/crema_p450/p450.jpg)
 
 
 ---
