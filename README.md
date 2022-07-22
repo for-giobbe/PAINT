@@ -26,7 +26,7 @@ Experiment reads have been deposited under the BioProject **PRJNA758979**.
 A paper collection on the topic is available [here](https://paperpile.com/shared/6I5Mga).
 
 
-A to do list for the project is available [here](https://github.com/for-giobbe/PAINT/blob/main/todo.md.)
+A to do list for the project is available [here](https://github.com/for-giobbe/PAINT/blob/main/todo.md).
 
 
 A WIP manuscript is available [here](https://docs.google.com/document/d/1bPlYGwkswf-VBD2lAnfqwFXU0Pm_4UYIW2xuc6ijjYE/edit?usp=sharing).
