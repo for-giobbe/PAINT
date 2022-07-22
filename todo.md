@@ -1,10 +1,8 @@
 *TO DO LIST*
 
--	bulid an aggression genes database.
--	redo phylostratigraphy plots.
+DONE	bulid an aggression genes database.
+DONE	redo phylostratigraphy plots.
+DONE    p450 gene tree with expression values mapped on tips.
 -	dnds rates analyses.
--	connect dopamine with ovarian development in MS.
--	redo enriched GOterms semantic clutering plots for the plant.
--	p450 gene tree with expression values mapped on tips.
--	analyze physiological and behavioral data.
+-	redo enriched GOterms semantic clutering plots.
 -	characterize dopamine pathway in the ant.

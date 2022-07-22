@@ -185,25 +185,6 @@ The full list of clustering of trait-associated modules can be found [here]().
 ---
 
 
-For crema DE, due to the many possible contrasts which can be considered - yet not all biologically meaningfull - 
-we plotted the GSEA results also in a different way. 
-
-
-First we generate a table containing all enriched GOterms across all comparisons and their p value:
-```
-sh scripts/crema_enriched_GO_DE_table.sh
-```
-
-
-Then we plot the table as a heatmap: 
-```
-Rscript scripts/plot_GO_enrichment_multicontrast.Rscript theMFtable
-```
-
-
----
-
-
 Then the genes associated to GOterms of interest were extracted;
 here are some examples for:
 
@@ -312,11 +293,19 @@ The associated otputs can be found in the folder ```single_genes_fun```.
 ---
 
 
-Furthermore, for crema we manually charachterized both venom and antimicrobial proteis. Two databases were created
-from uniprot:
+Furthermore, for crema we manually charachterized
 
-- one using "taxonomy:"Insecta [50557]" keyword:"Antimicrobial [KW-0929]" AND reviewed:yes"
-- another based on [VenomZone (insecta)](https://venomzone.expasy.org/1413)
+- venom-associate proteins
+- antimicrobial peptides
+- aggression-related genes
+
+
+Ddatabases were respectively created
+
+
+- one based on [VenomZone (insecta)](https://venomzone.expasy.org/1413)
+- one using "taxonomy:"Insecta [50557]" keyword:"Antimicrobial [KW-0929]" AND reviewed:yes" on Uniprot
+- one manually curated based on the [relevant litterature](https://github.com/for-giobbe/PAINT/blob/main/enrichment/crema_aggression/aggression_db.csv)
 
 
 Only the workflow for the antimicrobial peptides will be shown. After building the dbs using:
@@ -326,6 +315,7 @@ Only the workflow for the antimicrobial peptides will be shown. After building t
 
 
 blastp searches were carried out, using:
+
 
 ```
 blastp -query annotations/crema/crema.Trinity.fasta.transdecoder.pep 
@@ -361,8 +351,10 @@ sh scripts/extract_exp_val_crema_treatm_contrast.sh  enrichment/crema_antimb/cre
 
 The associated otputs can be found:
 
-- here for antimicrobial peptides
-- here for venom-associated proteins
+
+- [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/crema_venoms) for venom-associated proteins
+- [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/crema_antimb) for antimicrobial peptides
+- [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/crema_venoms) for aggression-related genes
 
 
 ---
