@@ -25,8 +25,8 @@ and
 
 ```
 for i in $(cat comparative_genomics/crema_p450/p450_eggNOG-mapper.lst comparative_genomics/crema_p450/p450_transdecoder.lst | sort -u); 
-	do 
-	sed -n -e "/$i/,/TRINITY/ p" annotations/crema/crema.Trinity.fasta.transdecoder.pep | head -n -1 | awk '{print $1}'; 
+do 
+sed -n -e "/$i/,/TRINITY/ p" annotations/crema/crema.Trinity.fasta.transdecoder.pep | head -n -1 | awk '{print $1}'; 
 done > comparative_genomics/crema_p450/Crematogaster_scutellaris_p450.fa
 ```
 
@@ -69,7 +69,7 @@ Crema p450  expression file has been generate with the following code:
 
 
 ```
-sh scripts/extract_exp_val_crema.sh 
+sh scripts/extract_exp_val_crema_treatm_contrast.sh
 comparative_genomics/crema_p450/p450_Crematogaster_scutellaris.lst 
 > comparative_genomics/crema_p450/p450_Crematogaster_scutellaris_exppression.tsv
 ```
@@ -83,7 +83,7 @@ Rscript scripts/plot_crema_phy+exp.Rscript
 comparative_genomics/crema_p450/p450_trim2.aln.treefile 
 comparative_genomics/crema_p450/annotation.tsv 
 comparative_genomics/crema_p450/p450_Crematogaster_scutellaris_exppression.tsv 
-comparative_genomics/crema_p450/p450.pdf
+0.01 0 comparative_genomics/crema_p450/p450.pdf
 ```
 
 The arguments of this script are:
@@ -91,6 +91,8 @@ The arguments of this script are:
 - a nwk tree file
 - a tsv file for tip annotation (columns are: tip name, gene name, species)
 - an expression table for crema genes 
+- a p treshold for the differential expression to be plotted
+- a logFC treshold for the differential expression to be plotted
 - the name of the output figure
 
 
@@ -98,6 +100,9 @@ And here is the result:
 
 
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/comparative_genomics/crema_p450/p450.jpg)
+
+
+NB: we flipped the contrast so that genes which are upregolated in the "treatments" have positive logFC.
 
 
 As we can see, p450s expression profile are charachterized by a large number of changes, but with modest intensity.
