@@ -298,17 +298,19 @@ Furthermore, for crema we manually charachterized
 - venom-associate proteins
 - antimicrobial peptides
 - aggression-related genes
+- genes involved in dopamine methabolism
 
 
-Ddatabases were respectively created
+Databases were respectively:
 
 
 - one based on [VenomZone (insecta)](https://venomzone.expasy.org/1413)
 - one using "taxonomy:"Insecta [50557]" keyword:"Antimicrobial [KW-0929]" AND reviewed:yes" on Uniprot
 - one manually curated based on the [relevant litterature](https://github.com/for-giobbe/PAINT/blob/main/enrichment/crema_aggression/aggression_db.csv)
+- one manually curated for genes involved in dopamine methabolism 
 
 
-Only the workflow for the antimicrobial peptides will be shown. After building the dbs using:
+Only the workflow for the antimicrobial peptides will be shown, as others are identical. After building the blastp db using:
 
 
 ```makeblastdb -in antimicrobial_peptides.fasta -dbtype prot```
@@ -354,7 +356,8 @@ The associated otputs can be found:
 
 - [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/crema_venoms) for venom-associated proteins
 - [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/crema_antimb) for antimicrobial peptides
-- [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/crema_venoms) for aggression-related genes
+- [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/crema_aggression) for aggression-related genes
+- [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/crema_dopamine) for genes involved in dopamine methabolism
 
 
 ---
