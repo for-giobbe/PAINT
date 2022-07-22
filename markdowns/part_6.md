@@ -49,13 +49,33 @@ iqtree2 -s p450_trim2.aln -B 1000 -T AUTO -m MFP -pers 0.2 -nstop 1000 -allnni -
 ```
 
 
+```
+sed -i "s/_i[0-9]\.p[0-9]//g" comparative_genomics/crema_p450/p450_trim2.aln.treefile
+```
+
 The expression file for the phylogeny has been generate with the following code:
 
 ```
 sh scripts/extract_exp_val_crema.sh comparative_genomics/crema_p450/p450_Crematogaster_scutellaris.lst >  comparative_genomics/crema_p450/p450_Crematogaster_scutellaris_exppression.tsv
 ```
 
-Then R was used
+Then R was used:
+
+
+```
+Rscript scripts/plot_crema_phy+exp.Rscript 
+comparative_genomics/crema_p450/p450_trim2.aln.treefile 
+comparative_genomics/crema_p450/annotation.tsv 
+comparative_genomics/crema_p450/p450_Crematogaster_scutellaris_exppression.tsv 
+comparative_genomics/crema_p450/p450.pdf
+```
+
+
+And here is the result:
+
+
+![Image description](https://github.com/for-giobbe/PAINT/blob/main/comparative_genomics/crema_p450/p450.pdf)
+
 
 ---
 
