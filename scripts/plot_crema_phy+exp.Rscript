@@ -9,8 +9,10 @@ if (length(args)<4) {
 
 #args[1]	newick tree
 #args[2]	annotation
-#args[3]  expression values
-#args[4]  plot
+#args[3]	expression values
+#args[4]	pval
+#args[5]	LogFC
+#args[6]	plot
 
 ######################################################################################### Requirements ##############
 
@@ -39,33 +41,33 @@ exp$logFC_AC_CT <- exp$logFC_AC_CT*-1
 exp$logFC_AD_CT <- exp$logFC_AD_CT*-1
 
 exp_AB_AD <- exp[,5:6]
-exp_AB_AD <- subset(exp_AB_AD, padj_AB_AD < 0.05)
-exp_AB_AD <- subset(exp_AB_AD, logFC_AB_AD < -1 | logFC_AB_AD > 1)
+exp_AB_AD <- subset(exp_AB_AD, padj_AB_AD < args[4])
+#exp_AB_AD <- subset(exp_AB_AD, logFC_AB_AD < -args[5] | logFC_AB_AD > args[5])
 exp_AB_AD <- exp_AB_AD['logFC_AB_AD']
 
 exp_AC_AD <- exp[,7:8]
-exp_AC_AD <- subset(exp_AC_AD, padj_AC_AD < 0.05)
-#exp_AC_AD <- subset(exp_AC_AD, logFC_AC_AD < -1 | logFC_AC_AD > 1)
+exp_AC_AD <- subset(exp_AC_AD, padj_AC_AD < args[4])
+#exp_AC_AD <- subset(exp_AC_AD, logFC_AC_AD < -args[5] | logFC_AC_AD > args[5])
 exp_AC_AD <- exp_AC_AD['logFC_AC_AD']
 
 exp_AD_AD <- exp[,9:10]
-exp_AD_AD <- subset(exp_AD_AD, padj_AD_AD < 0.05)
-#exp_AD_AD <- subset(exp_AD_AD, logFC_AD_AD < -1 | logFC_AD_AD > 1)
+exp_AD_AD <- subset(exp_AD_AD, padj_AD_AD < args[4])
+#exp_AD_AD <- subset(exp_AD_AD, logFC_AD_AD < -args[5] | logFC_AD_AD > args[5])
 exp_AD_AD <- exp_AD_AD['logFC_AD_AD']
 
 exp_AB_CT <- exp[,11:12]
-exp_AB_CT <- subset(exp_AB_CT, padj_AB_CT < 0.05)
-#exp_AB_CT <- subset(exp_AB_CT, logFC_AB_CT < -1 | logFC_AB_CT > 1)
+exp_AB_CT <- subset(exp_AB_CT, padj_AB_CT < args[4])
+#exp_AB_CT <- subset(exp_AB_CT, logFC_AB_CT < -args[5] | logFC_AB_CT > args[5])
 exp_AB_CT <- exp_AB_CT['logFC_AB_CT']
 
 exp_AC_CT <- exp[,13:14]
-exp_AC_CT <- subset(exp_AC_CT, padj_AC_CT < 0.05)
-#exp_AC_CT <- subset(exp_AC_CT, logFC_AC_CT < -1 | logFC_AC_CT > 1)
+exp_AC_CT <- subset(exp_AC_CT, padj_AC_CT < args[4])
+#exp_AC_CT <- subset(exp_AC_CT, logFC_AC_CT < -args[5] | logFC_AC_CT > args[5])
 exp_AC_CT <- exp_AC_CT['logFC_AC_CT']
 
 exp_AD_CT <- exp[,15:16]
-exp_AD_CT <- subset(exp_AD_CT, padj_AD_CT < 0.05)
-#exp_AD_CT <- subset(exp_AD_CT, logFC_AD_CT < -1 | logFC_AD_CT > 1)
+exp_AD_CT <- subset(exp_AD_CT, padj_AD_CT < args[4])
+#exp_AD_CT <- subset(exp_AD_CT, logFC_AD_CT < -args[5] | logFC_AD_CT > args[5])
 exp_AD_CT <- exp_AC_CT['logFC_AC_CT']
 
 p0 <- ggtree(tree, layout="fan",branch.length='none', open.angle=0)
@@ -82,5 +84,4 @@ p <- p6  %<+% annot + geom_tiplab2(aes(label=gene, color=sp), offset = 4, size=2
   scale_fill_gradient2(low = "lightblue", high = "orange", na.value = "white") +
   geom_tippoint(aes(color=sp), shape=20, size=1.5)
 
-ggsave(args[4],p,width = 11, height = 11)
-
+ggsave(args[6],p,width = 11, height = 11)
