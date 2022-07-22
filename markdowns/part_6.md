@@ -10,25 +10,34 @@
 ---
 
 
-To charachterize the p450 genes present in crema, we gathered them relying on eggNOG-mapper and transdecoder annotaitons:
+To charachterize the p450 genes which present transcriptional differences in the ant following plant association, 
+we initially gathered them relying on eggNOG-mapper and transdecoder annotations:
 
 
 ```
 grep p450 enrichment/eggNOG_crema/crema_eggNOG-mapper_annotations.tsv | awk '{print $1}' | tr -d ">" > comparative_genomics/crema_p450/p450_eggNOG-mapper.lst
-
 grep p450 annotations/crema/crema.Trinity.fasta.transdecoder.pep | awk '{print $1}' | tr -d ">" > comparative_genomics/crema_p450/p450_transdecoder.lst
+```
 
+
+and
+
+
+```
 for i in $(cat comparative_genomics/crema_p450/p450_eggNOG-mapper.lst comparative_genomics/crema_p450/p450_transdecoder.lst | sort -u); 
 	do 
 	sed -n -e "/$i/,/TRINITY/ p" annotations/crema/crema.Trinity.fasta.transdecoder.pep | head -n -1 | awk '{print $1}'; 
 done > comparative_genomics/crema_p450/Crematogaster_scutellaris_p450.fa
 ```
 
-Then all p450 protein sequences relative to the species _Apis mellifera_ and _Themnotorax curvispinusus_ were downloaded from Uniprot
-and merged with crema ones. Aalignement using mafft-gisni:
+Then all p450 protein sequences relative to the species _Apis mellifera_ and _Themnotorax curvispinusus_ were collected:
+
+
+After merging them with crema p450s, the alignement has been carried out using mafft-gisni:
+
 
 ```
-ginsi p450.fa > p450.tmp.aln
+ginsi p450.fa > p450.aln
 ```
 
 
@@ -49,15 +58,22 @@ iqtree2 -s p450_trim2.aln -B 1000 -T AUTO -m MFP -pers 0.2 -nstop 1000 -allnni -
 ```
 
 
+The tree has to be slightly reformatted (removing the isoform notation) to be fed to following steps:
+
 ```
 sed -i "s/_i[0-9]\.p[0-9]//g" comparative_genomics/crema_p450/p450_trim2.aln.treefile
 ```
 
-The expression file for the phylogeny has been generate with the following code:
+
+Crema p450  expression file has been generate with the following code:
+
 
 ```
-sh scripts/extract_exp_val_crema.sh comparative_genomics/crema_p450/p450_Crematogaster_scutellaris.lst >  comparative_genomics/crema_p450/p450_Crematogaster_scutellaris_exppression.tsv
+sh scripts/extract_exp_val_crema.sh 
+comparative_genomics/crema_p450/p450_Crematogaster_scutellaris.lst 
+> comparative_genomics/crema_p450/p450_Crematogaster_scutellaris_exppression.tsv
 ```
+
 
 Then R was used:
 
@@ -70,11 +86,21 @@ comparative_genomics/crema_p450/p450_Crematogaster_scutellaris_exppression.tsv
 comparative_genomics/crema_p450/p450.pdf
 ```
 
+The arguments of this script are:
+
+- a nwk tree file
+- a tsv file for tip annotation (columns are: tip name, gene name, species)
+- an expression table for crema genes 
+- the name of the output figure
+
 
 And here is the result:
 
 
 ![Image description](https://github.com/for-giobbe/PAINT/blob/main/comparative_genomics/crema_p450/p450.jpg)
+
+
+As we can see, p450s expression profile are charachterized by a large number of changes, but with modest intensity.
 
 
 ---
