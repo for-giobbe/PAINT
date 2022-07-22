@@ -1,4 +1,4 @@
--ehit\tevalue\tqcover\ttranscript\tlogFC_AB_AD\tpadj_AB_AD\tlogFC_AC_AD\tpadj_AC_AD\tlogFC_AD_AD\tpadj_AD_AD\tlogFC_AB_CT\tpadj_AB_CT\tlogFC_AC_CT\tpadj_AC_CT\tlogFC_AD_CT\tpadj_AD_CT\tAD\tCT
+hit	evalue	qcover	transcript	logFC_AB_AD	padj_AB_AD	logFC_AC_AD	padj_AC_AD	logFC_AD_AD	padj_AD_AD	logFC_AB_CT	padj_AB_CT	logFC_AC_CT	padj_AC_CT	logFC_AD_CT	padj_AD_CT	AD	CT
 alpha-coatomer	1.63e-08	86	TRINITY_DN101908_c0_g1	NA NA	NA NA	NA NA	NA NA	NA NA	NA NA	NA	NA
 CG14478	1.68e-11	73	TRINITY_DN102201_c0_g1	NA NA	NA NA	NA NA	NA NA	NA NA	NA NA	NA	NA
 CG2767	2.70e-28	91	TRINITY_DN102948_c0_g1	NA NA	NA NA	NA NA	NA NA	NA NA	NA NA	NA	NA
