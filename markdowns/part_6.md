@@ -24,7 +24,7 @@ for i in $(cat comparative_genomics/crema_p450/p450_eggNOG-mapper.lst comparativ
 done > comparative_genomics/crema_p450/Crematogaster_scutellaris_p450.fa
 ```
 
-Then all p450 protein sequences relative to the species _Apis mellifera_, _Lasius niger_, _Ooceraea biroi_ and _Themnotorax curvispinusus_ were downloaded from Uniprot
+Then all p450 protein sequences relative to the species _Apis mellifera_ and _Themnotorax curvispinusus_ were downloaded from Uniprot
 and merged with crema ones. Aalignement using mafft-gisni:
 
 ```
@@ -36,7 +36,8 @@ The alignment was then cleaned using timal:
 
 
 ```
-trimal -in p450.tmp.aln -out p450.tmp.gappyout.aln -gappyout
+trimal -in p450.aln -out p450_trim1.aln -gt 0.9 -cons 20
+trimal -in p450_trim1.aln -out p450_trim2.aln -resoverlap 0.6 -seqoverlap 60
 ```
 
 
@@ -44,38 +45,17 @@ The filogenetic inference was perfromed using iqtree2:
 
 
 ```
-iqtree2 -s p450_tot_clean.aln -B 1000 -T 16
+iqtree2 -s p450_trim2.aln -B 1000 -T AUTO -m MFP -pers 0.2 -nstop 1000 -allnni -redo
 ```
 
 
-The annotiton file for the phylogeny has been generate with the following code:
-
+The expression file for the phylogeny has been generate with the following code:
 
 ```
-grep ">" p450.fa > tmp
-
-while read line; do 
-
-	tr=$(echo $line | awk '{print $1}' | tr -d ">"); 
-	
-	if echo $tr | grep -q TRINITY; 
-	
-		then 
-		gn="-"; 
-		sp="Crematogaster scutellaris"; 
-		
-		else 
-		gn=$(echo $line | awk -F "OS" '{print $1}' | awk '{$1=""}1'); 
-		sp=$(echo $line | awk -F "OS=" '{print $2}' | awk -F "OX=" '{print $1}'); 
-	fi; 
-	
-	echo -e "$tr\t$gn\t$sp"; 
-	
-done < tmp > p450.annotation
-
-rm tmp
+sh scripts/extract_exp_val_crema.sh comparative_genomics/crema_p450/p450_Crematogaster_scutellaris.lst >  comparative_genomics/crema_p450/p450_Crematogaster_scutellaris_exppression.tsv
 ```
 
+Then R was used
 
 ---
 
