@@ -38,6 +38,19 @@ TRINITY_DN3756_c0_g2    SE	squalene epoxidase
 TRINITY_DN3756_c0_g3	SQP1    squalene monooxygenase 1
 TRINITY_DN5782_c0_g1    CYP51   obtusifoliol 14-alpha demethylase
 
+GO:0009636	response to toxic substance (10)
+
+TRINITY_DN1953_c0_g1	-	-
+TRINITY_DN19643_c0_g1	-	thioredoxin
+TRINITY_DN2050_c0_g1	-	peroxiredoxin-2F
+TRINITY_DN20911_c0_g1	-	UDP-glycosyltransferase 74G1
+TRINITY_DN3066_c2_g2	-	transcriptional corepressor SEUSS
+TRINITY_DN6418_c0_g1	-	phenylalanine ammonia-lyase
+TRINITY_DN6720_c0_g1	-	glutathione S-transferase parC
+TRINITY_DN8240_c0_g1	-	pheophytinase
+TRINITY_DN93084_c3_g1	-	inositol-3-phosphate synthase
+TRINITY_DN99150_c0_g1	-	S-crystallin 
+
 GO:0005976	polysaccharide metabolic process (10)
 
 TRINITY_DN12733_c2_g1     GBE1     1,4-alpha-glucan-branching enzyme
@@ -120,6 +133,14 @@ TRINITY_DN4346_c0_g1	GSTZ5	Protein IN2-1 homolog B
 TRINITY_DN6078_c1_g1	metB	Cystathionine gamma-synthase
 TRINITY_DN6720_c0_g1	PARC	Probable glutathione S-transferase parC
 TRINITY_DN99150_c0_g1	-	Glutathione S-transferase, N-terminal domain protein
+
+upregulated genes associated to GO:0046395 - carboxylic acid catabolic process
+
+TRINITY_DN10324_c6_g1	-	glycine dehydrogenase
+TRINITY_DN3206_c0_g1	-	D-cysteine desulfhydrase
+TRINITY_DN36133_c0_g1	-	serine hydroxymethyltransferase
+TRINITY_DN4942_c0_g1	-	L-threonine aldolase
+TRINITY_DN6418_c0_g1	-	phenylalanine ammonia-lyase dopa
 
 upregulated genes associated to	GO:0006544 - glycine metabolic process (2)
 

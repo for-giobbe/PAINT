@@ -389,10 +389,10 @@ Lipid metabolism
 00591 Linoleic acid metabolism (1)
 00592 alpha-Linolenic acid metabolism (1)
 01040 Biosynthesis of unsaturated fatty acids (2)
+
 Nucleotide metabolism
 00230 Purine metabolism (8)
 00240 Pyrimidine metabolism (4)
-
 Amino acid metabolism
 00250 Alanine, aspartate and glutamate metabolism (2)
 00260 Glycine, serine and threonine metabolism (7)
@@ -403,9 +403,14 @@ Amino acid metabolism
 00330 Arginine and proline metabolism (4)
 00340 Histidine metabolism (2)
 00380 Tryptophan metabolism (3)
+
 Metabolism of other amino acids
 00410 beta-Alanine metabolism (3)
+	K00128	TRINITY_DN1492_c0_g1_i8.p1, TRINITY_DN1963_c0_g1_i1.p1
+	K14085	TRINITY_DN3744_c0_g1_i3.p1
+	K18966	TRINITY_DN251_c1_g1_i3.p1
 00430 Taurine and hypotaurine metabolism (1)
+	K18966	TRINITY_DN251_c1_g1_i3.p1
 00450 Selenocompound metabolism (1)
 00480 Glutathione metabolism (3)
 
@@ -427,6 +432,7 @@ Metabolism of cofactors and vitamins
 00830 Retinol metabolism (2)
 00860 Porphyrin metabolism (4)
 00130 Ubiquinone and other terpenoid-quinone biosynthesis (2)
+
 Metabolism of terpenoids and polyketides
 00900 Terpenoid backbone biosynthesis (3)
 00981 Insect hormone biosynthesis (1)
@@ -437,8 +443,13 @@ Biosynthesis of other secondary metabolites
 00940 Phenylpropanoid biosynthesis (1)
 00944 Flavone and flavonol biosynthesis (1)
 00232 Caffeine metabolism (1)
+
 00521 Streptomycin biosynthesis (2)
+	K00010	TRINITY_DN1977_c0_g1_i1.p2
+	K00844	TRINITY_DN5140_c0_g1_i7.p1
+
 00524 Neomycin, kanamycin and gentamicin biosynthesis (1)
+	K00844	TRINITY_DN5140_c0_g1_i7.p1
 
 Xenobiotics biodegradation and metabolism
 00362 Benzoate degradation (1)
@@ -446,6 +457,145 @@ Xenobiotics biodegradation and metabolism
 00980 Metabolism of xenobiotics by cytochrome P450 (1)
 00982 Drug metabolism - cytochrome P450 (1)
 00983 Drug metabolism - other enzymes (6)
+	K00106	TRINITY_DN233_c0_g2_i6.p1
+	K00699	TRINITY_DN2207_c0_g1_i6.p1
+	K00940	TRINITY_DN2355_c0_g1_i3.p1
+	K01195	TRINITY_DN824_c0_g1_i18.p1
+	K01519	TRINITY_DN3824_c0_g1_i2.p1
+	K13800	TRINITY_DN1726_c0_g2_i1.p1
+
+Genetic Information Processing
+
+Transcription
+03020 RNA polymerase (1)
+03040 Spliceosome (6)Translation
+03010 Ribosome (1)
+00970 Aminoacyl-tRNA biosynthesis (1)
+03013 Nucleocytoplasmic transport (2)
+03015 mRNA surveillance pathway (4)
+03008 Ribosome biogenesis in eukaryotes (3)
+Folding, sorting and degradation
+03060 Protein export (4)
+04141 Protein processing in endoplasmic reticulum (9)
+04130 SNARE interactions in vesicular transport (2)
+04120 Ubiquitin mediated proteolysis (1)
+03050 Proteasome (5)
+03018 RNA degradation (3)
+Replication and repair
+03030 DNA replication (3)
+03410 Base excision repair (1)
+03430 Mismatch repair (1)
+03440 Homologous recombination (2)
+03460 Fanconi anemia pathway (2)
+
+Environmental Information Processing
+
+Membrane transport
+02010 ABC transporters (1)
+Signal transduction
+02020 Two-component system (1)
+04016 MAPK signaling pathway - plant (1)
+04011 MAPK signaling pathway - yeast (1)
+04014 Ras signaling pathway (1)
+04310 Wnt signaling pathway (1)
+04064 NF-kappa B signaling pathway (1)
+04066 HIF-1 signaling pathway (5)
+04070 Phosphatidylinositol signaling system (1)
+04072 Phospholipase D signaling pathway (1)
+04151 PI3K-Akt signaling pathway (3)
+04152 AMPK signaling pathway (1)
+Signaling molecules and interaction
+04080 Neuroactive ligand-receptor interaction (1)
+04060 Cytokine-cytokine receptor interaction (1)
+04512 ECM-receptor interaction (3)
+
+Cellular Processes
+
+Transport and catabolism
+04144 Endocytosis (4)
+04145 Phagosome (2)
+04142 Lysosome (6)
+04146 Peroxisome (5)
+04140 Autophagy - animal (2)
+04138 Autophagy - yeast (4)
+04136 Autophagy - other (1)
+04137 Mitophagy - animal (1)
+04139 Mitophagy - yeast (1)
+
+Cell growth and death
+04110 Cell cycle (2)
+04210 Apoptosis (1)
+04214 Apoptosis - fly (3)
+04215 Apoptosis - multiple species (1)
+04216 Ferroptosis (1)
+04115 p53 signaling pathway (1)
+04218 Cellular senescence (2)
+
+Cellular community - eukaryotes
+04510 Focal adhesion (3)
+04520 Adherens junction (1)
+04530 Tight junction (1)Cellular community - prokaryotes
+02024 Quorum sensing (1)Cell motility
+04810 Regulation of actin cytoskeleton (1)
+
+Organismal Systems
+
+Immune system
+04613 Neutrophil extracellular trap formation (2)
+04623 Cytosolic DNA-sensing pathway (1)
+04612 Antigen processing and presentation (2)
+04666 Fc gamma R-mediated phagocytosis (1)
+
+Endocrine system
+04910 Insulin signaling pathway (1)
+04922 Glucagon signaling pathway (3)
+04920 Adipocytokine signaling pathway (1)
+03320 PPAR signaling pathway (1)
+04929 GnRH secretion (1)
+04913 Ovarian steroidogenesis (1)
+04926 Relaxin signaling pathway (1)
+04918 Thyroid hormone synthesis (1)
+04919 Thyroid hormone signaling pathway (2)
+04925 Aldosterone synthesis and secretion (1)
+04927 Cortisol synthesis and secretion (1)
+
+Circulatory system
+04260 Cardiac muscle contraction (1)
+04270 Vascular smooth muscle contraction (2)
+Digestive system
+04970 Salivary secretion (1)
+04972 Pancreatic secretion (1)
+04976 Bile secretion (2)
+04973 Carbohydrate digestion and absorption (1)
+04974 Protein digestion and absorption (2)
+04975 Fat digestion and absorption (3)
+04979 Cholesterol metabolism (3)
+04977 Vitamin digestion and absorption (1)
+04978 Mineral absorption (1)
+
+Excretory system
+04964 Proximal tubule bicarbonate reclamation (1)
+
+Nervous system
+04723 Retrograde endocannabinoid signaling (2)
+04721 Synaptic vesicle cycle (1)Sensory system
+04745 Phototransduction - fly (1)
+04750 Inflammatory mediator regulation of TRP channels (1)
+
+Development and regeneration
+04360 Axon guidance (2)Environmental adaptation
+04712 Circadian rhythm - plant (1)
+04714 Thermogenesis (9)
+	K01897	TRINITY_DN296_c0_g1_i13.p1
+	K02127	TRINITY_DN15095_c0_g1_i2.p1
+	K02128	TRINITY_DN85_c0_g3_i3.p1
+	K02130	TRINITY_DN3972_c0_g1_i1.p1
+	K02137	TRINITY_DN1818_c0_g2_i1.p1
+	K02266	TRINITY_DN6652_c0_g1_i2.p1
+	K03935	TRINITY_DN1753_c0_g1_i2.p1
+	K03941	TRINITY_DN8764_c0_g1_i1.p1
+	K11651	TRINITY_DN405_c0_g1_i2.p1
+04626 Plant-pathogen interaction (1)
 
 ############################################################################################### AD_module_10_S+
 

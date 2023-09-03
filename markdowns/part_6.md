@@ -1,4 +1,4 @@
-# comparative genomics
+# phylogenetic analyses
 
 
 *environiment:* yaml.WGCNA / yaml.rates
