@@ -99,19 +99,19 @@ Then the GO enrichment analysisis is performed using the following commands:
 
 ```
 Rscript scripts/GO_enrichment.Rscript enrichment/GO_vicia/GO_vicia_geneUniverse 
-abundances/vicia/vicia_deseq_gene/ BP 10 classic fisher 0.01 enrichment/GO_vicia/
+abundances/vicia/vicia_deseq_gene/ BP 5 classic fisher 0.01 enrichment/GO_vicia/
 ```
 
 
 ```
 Rscript scripts/GO_enrichment.Rscript enrichment/GO_crema/GO_crema_geneUniverse_CT 
-abundances/crema/crema_deseq2_gene/CT/ BP 10 weight01 fisher 0.05 enrichment/GO_crema/
+abundances/crema/crema_deseq2_gene/CT/ BP 5 classic fisher 0.01 enrichment/GO_crema/
 ```
 
 
 ```
 Rscript scripts/GO_enrichment.Rscript enrichment/GO_crema/GO_crema_geneUniverse_AD 
-abundances/crema/crema_deseq2_gene/AD/ BP 10 weight01 fisher 0.05 enrichment/GO_crema/
+abundances/crema/crema_deseq2_gene/AD/ BP 5 classic fisher 0.01 enrichment/GO_crema/
 ```
 
 
@@ -126,14 +126,7 @@ The Rscript has several positional arguments:
 6. the statistical test
 7. the p value cutoff
 
-
-For this project, a hierachy-aware algoryhm (weight01) was used to find enriched BP terms 
-and nodes are required to have at least 10 genes associated to be 
-included. Terms are considered to be enriched only if p < 0.05
-in Fisher's Exact Test.
-
-
-Raw GSEA output are available in:
+Raw outputs are available in:
 
 
 ```enrichment/GO_vicia/*tsv```
@@ -144,6 +137,16 @@ Raw GSEA output are available in:
 
 ---
 
+EggNOG annotations for DE genes were extracted using:
+
+```
+for i in $(ls abundances/crema/crema_deseq2_gene/crema_*.lst); do 
+basename=$(echo $i | awk -F "/" '{print $NF}' | awk -F "\." '{print $1}'); 
+sh scripts/extract_eggNOG_annotations.sh $i  enrichment/eggNOG_crema/crema_eggNOG-mapper_annotations.tsv 
+> enrichment/eggNOG_crema/"$basename"_eggNOG_annotations.tsv; done
+```
+
+---
 
 GO enrichment analyses were plotted using the Rscript ```plot_GO_enrichment.Rscript```.
 
@@ -161,12 +164,12 @@ For vicia:
 
 
 ```
-Rscript scripts/plot_GO_enrichment.R enrichment/GO_vicia/vicia_UP_BP_red_enrichment "orange" 0.05
+Rscript scripts/plot_GO_enrichment.Rscript enrichment/GO_vicia/vicia_UP_BP_enrichment.tsv "orange" 0.01
 ```
 
 
 ```
-Rscript scripts/plot_GO_enrichment.R enrichment/GO_vicia/vicia_DN_BP_red_enrichment "lightblue" 0.05
+Rscript scripts/plot_GO_enrichment.Rscript enrichment/GO_vicia/vicia_DN_BP_enrichment.tsv "lightblue" 0.01
 ```
 
 
@@ -187,24 +190,6 @@ for i in enrichment/GO_crema/*_DN_BP_enrichment.tsv;
 	done
 
 ```
-
-Here are the results for vicia (upreg in orange dnreg in lightblue):
-
-
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_UP.jpg)
-
-
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/vicia_DN.jpg)
-
-
-Here are the results for crema (just a couple of interesting comparisons):
-
-
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/CT_module_41.jpg)
-
-
-![Image description](https://github.com/for-giobbe/PAINT/blob/main/images/AD_module_14.jpg)
-
 
 The full list can be found [here]().
 
@@ -229,26 +214,11 @@ GO:0042136 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst
 [1] "TRINITY_DN36133_c0_g1" "TRINITY_DN833_c0_g1" 
 ```
 
-
-- crema genes in AD module 3 associated to GO:0042811 - pheromone biosynthetic process:
-
-
-```
-Rscript scripts/GO_extract.Rscript enrichment/GO_crema/enrichment.Rdata 
-GO:0042811 abundances/crema/crema_WGCNA_gene/AD_module_3_genes.lst
-```
-
-
-```
-[1] "TRINITY_DN255_c0_g1"   "TRINITY_DN52942_c0_g1"
-```
-
-
 Then we extracted the transcripts amminoacid sequences using:
 
 
 ```
-for i in $(cat abundances/crema/crema_WGCNA_gene/CT_module_13_genes.lst); do 
+for i in $(cat crema/abundances/crema/crema_deseq2_gene/crema_A_CT_vs_B_CT_UP_genes.lst); do 
 sed -n -e "/$i/,/TRINITY/ p" annotations/crema/crema.Trinity.fasta.transdecoder.pep | head -n -1 | awk '{print $1}';
 done
 ```
