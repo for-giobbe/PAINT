@@ -1,21 +1,137 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0006886	intracellular protein transport	244	48	29.31	0.00033
+GO:0000398	mRNA splicing, via spliceosome	162	36	19.46	0.00015
 GO:0009062	fatty acid catabolic process	25	10	3	0.00036
 GO:0006458	'de novo' protein folding	17	8	2.04	0.00038
 GO:0007030	Golgi organization	61	17	7.33	0.00061
-GO:0022616	DNA strand elongation	19	8	2.28	0.00094
-GO:0034470	ncRNA processing	192	41	23.07	0.00117
-GO:0072657	protein localization to membrane	83	20	9.97	0.00156
-GO:0016226	iron-sulfur cluster assembly	13	6	1.56	0.00240
+GO:0002183	cytoplasmic translational initiation	18	8	2.16	0.00061
+GO:0043412	macromolecule modification	1120	165	134.56	0.00166
+GO:0006364	rRNA processing	114	25	13.7	0.00184
 GO:0006281	DNA repair	181	35	21.75	0.00269
-GO:0045005	DNA-dependent DNA replication maintenanc...	10	5	1.2	0.00371
-GO:0006379	mRNA cleavage	14	6	1.68	0.00378
-GO:0051445	regulation of meiotic cell cycle	14	6	1.68	0.00378
-GO:0044743	protein transmembrane import into intrac...	14	6	1.68	0.00378
+GO:0006271	DNA strand elongation involved in DNA re...	18	7	2.16	0.00339
+GO:0034613	cellular protein localization	401	75	48.18	0.00397
+GO:0006413	translational initiation	90	25	10.81	0.00399
 GO:0032456	endocytic recycling	28	9	3.36	0.00413
 GO:0032008	positive regulation of TOR signaling	24	8	2.88	0.00528
 GO:0090068	positive regulation of cell cycle proces...	29	9	3.48	0.00537
-GO:0045292	mRNA cis splicing, via spliceosome	11	5	1.32	0.00613
+GO:0042273	ribosomal large subunit biogenesis	45	12	5.41	0.00554
+GO:0033365	protein localization to organelle	157	30	18.86	0.00624
+GO:0048584	positive regulation of response to stimu...	334	60	40.13	0.00632
+GO:0006612	protein targeting to membrane	20	7	2.4	0.00665
+GO:0065002	intracellular protein transmembrane tran...	20	7	2.4	0.00665
+GO:1903362	regulation of cellular protein catabolic...	52	13	6.25	0.00715
+GO:0034622	cellular protein-containing complex asse...	354	78	42.53	0.00784
+GO:0090066	regulation of anatomical structure size	214	38	25.71	0.00807
+GO:0051603	proteolysis involved in cellular protein...	242	42	29.07	0.00828
+GO:0042274	ribosomal small subunit biogenesis	53	13	6.37	0.00846
+GO:0009100	glycoprotein metabolic process	102	21	12.25	0.00880
 GO:0072593	reactive oxygen species metabolic proces...	26	8	3.12	0.00903
-GO:0009081	branched-chain amino acid metabolic proc...	12	5	1.44	0.00948
-GO:0032386	regulation of intracellular transport	50	12	6.01	0.00989
+GO:1903050	regulation of proteolysis involved in ce...	49	12	5.89	0.01134
+GO:0006626	protein targeting to mitochondrion	17	6	2.04	0.01134
+GO:0072655	establishment of protein localization to...	17	6	2.04	0.01134
+GO:0030258	lipid modification	55	13	6.61	0.01164
+GO:0019395	fatty acid oxidation	22	7	2.64	0.01181
+GO:0019941	modification-dependent protein catabolic...	227	39	27.27	0.01258
+GO:0032386	regulation of intracellular transport	50	12	6.01	0.01334
+GO:0043632	modification-dependent macromolecule cat...	235	40	28.23	0.01347
+GO:0007005	mitochondrion organization	119	23	14.3	0.01351
+GO:0044267	cellular protein metabolic process	1542	260	185.26	0.01416
+GO:0009451	RNA modification	81	17	9.73	0.01443
+GO:0042181	ketone biosynthetic process	28	8	3.36	0.01446
+GO:0061136	regulation of proteasomal protein catabo...	45	11	5.41	0.01524
+GO:0000302	response to reactive oxygen species	23	7	2.76	0.01526
+GO:0010647	positive regulation of cell communicatio...	298	53	35.8	0.01528
+GO:0023056	positive regulation of signaling	298	53	35.8	0.01528
+GO:0070585	protein localization to mitochondrion	18	6	2.16	0.01532
+GO:0006635	fatty acid beta-oxidation	18	6	2.16	0.01532
+GO:0009101	glycoprotein biosynthetic process	88	18	10.57	0.01560
+GO:0034728	nucleosome organization	57	13	6.85	0.01568
+GO:0006979	response to oxidative stress	95	19	11.41	0.01664
+GO:2000058	regulation of ubiquitin-dependent protei...	40	10	4.81	0.01734
+GO:0006511	ubiquitin-dependent protein catabolic pr...	218	37	26.19	0.01777
+GO:1901564	organonitrogen compound metabolic proces...	2349	363	282.21	0.01783
+GO:0030510	regulation of BMP signaling pathway	29	8	3.48	0.01792
+GO:0036211	protein modification process	1033	145	124.11	0.01866
+GO:0006464	cellular protein modification process	1033	145	124.11	0.01866
+GO:0034470	ncRNA processing	192	41	23.07	0.01893
+GO:0034440	lipid oxidation	24	7	2.88	0.01937
+GO:0051299	centrosome separation	19	6	2.28	0.02017
+GO:1901989	positive regulation of cell cycle phase ...	19	6	2.28	0.02017
+GO:0098728	germline stem cell asymmetric division	19	6	2.28	0.02017
+GO:0006352	DNA-templated transcription, initiation	59	13	7.09	0.02070
+GO:0060627	regulation of vesicle-mediated transport	117	22	14.06	0.02092
+GO:0045732	positive regulation of protein catabolic...	53	12	6.37	0.02096
+GO:0071840	cellular component organization or bioge...	2195	330	263.71	0.02192
+GO:0010770	positive regulation of cell morphogenesi...	30	8	3.6	0.02194
+GO:0006399	tRNA metabolic process	98	19	11.77	0.02268
+GO:0006886	intracellular protein transport	244	48	29.31	0.02310
+GO:1903364	positive regulation of cellular protein ...	42	10	5.05	0.02415
+GO:0006289	nucleotide-excision repair	25	7	3	0.02419
+GO:0008592	regulation of Toll signaling pathway	15	5	1.8	0.02648
+GO:0072599	establishment of protein localization to...	15	5	1.8	0.02648
+GO:0006486	protein glycosylation	80	16	9.61	0.02659
+GO:0032434	regulation of proteasomal ubiquitin-depe...	37	9	4.45	0.02778
+GO:0033206	meiotic cytokinesis	37	9	4.45	0.02778
+GO:0045184	establishment of protein localization	364	64	43.73	0.02783
+GO:0007517	muscle organ development	87	17	10.45	0.02803
+GO:0070646	protein modification by small protein re...	49	11	5.89	0.02808
+GO:0072594	establishment of protein localization to...	107	20	12.86	0.02842
+GO:0032535	regulation of cellular component size	148	26	17.78	0.02879
+GO:0015031	protein transport	350	62	42.05	0.02904
+GO:0051130	positive regulation of cellular componen...	233	38	27.99	0.02936
+GO:0009967	positive regulation of signal transducti...	273	48	32.8	0.02956
+GO:0043413	macromolecule glycosylation	81	16	9.73	0.02959
+GO:0006996	organelle organization	1334	196	160.27	0.02997
+GO:0198738	cell-cell signaling by wnt	101	19	12.13	0.03026
+GO:0008088	axo-dendritic transport	32	8	3.84	0.03181
+GO:0032436	positive regulation of proteasomal ubiqu...	32	8	3.84	0.03181
+GO:0051272	positive regulation of cellular componen...	38	9	4.57	0.03265
+GO:0010976	positive regulation of neuron projection...	38	9	4.57	0.03265
+GO:0016579	protein deubiquitination	38	9	4.57	0.03265
+GO:1901800	positive regulation of proteasomal prote...	38	9	4.57	0.03265
+GO:0045746	negative regulation of Notch signaling p...	38	9	4.57	0.03265
+GO:0043486	histone exchange	21	6	2.52	0.03277
+GO:1902099	regulation of metaphase/anaphase transit...	21	6	2.52	0.03277
+GO:0072657	protein localization to membrane	83	20	9.97	0.03292
+GO:0022613	ribonucleoprotein complex biogenesis	244	68	29.31	0.03364
+GO:0009167	purine ribonucleoside monophosphate meta...	108	27	12.98	0.03364
+GO:0009126	purine nucleoside monophosphate metaboli...	108	27	12.98	0.03364
+GO:0042176	regulation of protein catabolic process	68	18	8.17	0.03375
+GO:0000027	ribosomal large subunit assembly	16	5	1.92	0.03480
+GO:0043410	positive regulation of MAPK cascade	51	11	6.13	0.03681
+GO:0046907	intracellular transport	504	94	60.55	0.03767
+GO:0009063	cellular amino acid catabolic process	45	10	5.41	0.03770
+GO:0006367	transcription initiation from RNA polyme...	45	10	5.41	0.03770
+GO:0009620	response to fungus	33	8	3.96	0.03773
+GO:2000060	positive regulation of ubiquitin-depende...	33	8	3.96	0.03773
+GO:1903052	positive regulation of proteolysis invol...	39	9	4.69	0.03809
+GO:0009123	nucleoside monophosphate metabolic proce...	123	29	14.78	0.03908
+GO:0031346	positive regulation of cell projection o...	58	12	6.97	0.04019
+GO:0098930	axonal transport	22	6	2.64	0.04063
+GO:0009161	ribonucleoside monophosphate metabolic p...	117	28	14.06	0.04193
+GO:0060070	canonical Wnt signaling pathway	65	13	7.81	0.04295
+GO:0006333	chromatin assembly or disassembly	46	10	5.53	0.04319
+GO:1990542	mitochondrial transmembrane transport	28	7	3.36	0.04341
+GO:0006334	nucleosome assembly	28	7	3.36	0.04341
+GO:0070085	glycosylation	85	16	10.21	0.04408
+GO:0031497	chromatin assembly	40	9	4.81	0.04412
+GO:0044282	small molecule catabolic process	104	25	12.49	0.04415
+GO:0006400	tRNA modification	34	8	4.08	0.04434
+GO:0006891	intra-Golgi vesicle-mediated transport	17	5	2.04	0.04458
+GO:0043162	ubiquitin-dependent protein catabolic pr...	17	5	2.04	0.04458
+GO:1901992	positive regulation of mitotic cell cycl...	17	5	2.04	0.04458
+GO:0048132	female germ-line stem cell asymmetric di...	17	5	2.04	0.04458
+GO:0062013	positive regulation of small molecule me...	17	5	2.04	0.04458
+GO:0034314	Arp2/3 complex-mediated actin nucleation	17	5	2.04	0.04458
+GO:0050000	chromosome localization	17	5	2.04	0.04458
+GO:0015833	peptide transport	359	62	43.13	0.04496
+GO:0090174	organelle membrane fusion	59	12	7.09	0.04517
+GO:0051301	cell division	256	40	30.76	0.04709
+GO:0051604	protein maturation	66	13	7.93	0.04785
+GO:0006323	DNA packaging	86	16	10.33	0.04838
+GO:0000819	sister chromatid segregation	86	16	10.33	0.04838
+GO:0060538	skeletal muscle organ development	47	10	5.65	0.04921
+GO:0032886	regulation of microtubule-based process	47	10	5.65	0.04921
+GO:0007029	endoplasmic reticulum organization	23	6	2.76	0.04959
+GO:0030516	regulation of axon extension	23	6	2.76	0.04959
+GO:0061387	regulation of extent of cell growth	23	6	2.76	0.04959
+GO:0045010	actin nucleation	23	6	2.76	0.04959

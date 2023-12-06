@@ -1,6 +1,23 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0050965	detection of temperature stimulus involv...	12	2	0.06	0.0017
+GO:0034220	ion transmembrane transport	350	7	1.83	0.0019
 GO:0051924	regulation of calcium ion transport	16	2	0.08	0.0030
+GO:0071363	cellular response to growth factor stimu...	68	3	0.36	0.0052
 GO:1901264	carbohydrate derivative transport	26	2	0.14	0.0080
-GO:0070848	response to growth factor	69	3	0.36	0.0083
 GO:0032456	endocytic recycling	28	2	0.15	0.0092
+GO:0019233	sensory perception of pain	29	2	0.15	0.0099
+GO:0038202	TORC1 signaling	31	2	0.16	0.0112
+GO:0009266	response to temperature stimulus	90	3	0.47	0.0113
+GO:0001578	microtubule bundle formation	36	2	0.19	0.0150
+GO:0098656	anion transmembrane transport	114	3	0.6	0.0213
+GO:0140014	mitotic nuclear division	116	3	0.61	0.0223
+GO:0032196	transposition	122	3	0.64	0.0254
+GO:0031929	TOR signaling	49	2	0.26	0.0268
+GO:0098660	inorganic ion transmembrane transport	223	4	1.17	0.0281
+GO:0019730	antimicrobial humoral response	54	2	0.28	0.0321
+GO:0070588	calcium ion transmembrane transport	54	2	0.28	0.0321
+GO:0098655	cation transmembrane transport	233	4	1.22	0.0323
+GO:0019932	second-messenger-mediated signaling	56	2	0.29	0.0343
+GO:0007612	learning	58	2	0.3	0.0366
+GO:0006959	humoral immune response	59	2	0.31	0.0378
+GO:0070838	divalent metal ion transport	83	4	0.43	0.0432
+GO:0072511	divalent inorganic cation transport	83	4	0.43	0.0432

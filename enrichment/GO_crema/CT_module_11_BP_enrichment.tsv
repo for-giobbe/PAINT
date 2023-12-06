@@ -1,2 +1,40 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0007157	heterophilic cell-cell adhesion via plas...	26	2	0.07	0.0024
+GO:0090304	nucleic acid metabolic process	2126	11	6.01	0.0172
+GO:0034654	nucleobase-containing compound biosynthe...	1296	8	3.66	0.0194
+GO:0009987	cellular process	5871	20	16.6	0.0238
+GO:0071897	DNA biosynthetic process	225	3	0.64	0.0243
+GO:0018130	heterocycle biosynthetic process	1352	8	3.82	0.0248
+GO:0019438	aromatic compound biosynthetic process	1353	8	3.82	0.0249
+GO:1901362	organic cyclic compound biosynthetic pro...	1387	8	3.92	0.0286
+GO:0006313	transposition, DNA-mediated	112	2	0.32	0.0392
+GO:0006139	nucleobase-containing compound metabolic...	2389	11	6.75	0.0411
+GO:0048521	negative regulation of behavior	15	1	0.04	0.0416
+GO:0006140	regulation of nucleotide metabolic proce...	15	1	0.04	0.0416
+GO:0010002	cardioblast differentiation	15	1	0.04	0.0416
+GO:0016360	sensory organ precursor cell fate determ...	15	1	0.04	0.0416
+GO:0035168	larval lymph gland hemocyte differentiat...	15	1	0.04	0.0416
+GO:0016348	imaginal disc-derived leg joint morphoge...	15	1	0.04	0.0416
+GO:0048056	R3/R4 cell differentiation	15	1	0.04	0.0416
+GO:0060582	cell fate determination involved in patt...	15	1	0.04	0.0416
+GO:0007162	negative regulation of cell adhesion	15	1	0.04	0.0416
+GO:0007413	axonal fasciculation	16	1	0.05	0.0443
+GO:0007449	proximal/distal pattern formation, imagi...	16	1	0.05	0.0443
+GO:0050916	sensory perception of sweet taste	16	1	0.05	0.0443
+GO:0120031	plasma membrane bounded cell projection ...	121	2	0.34	0.0451
+GO:0009058	biosynthetic process	2105	10	5.95	0.0452
+GO:0032196	transposition	122	2	0.34	0.0458
+GO:1901992	positive regulation of mitotic cell cycl...	17	1	0.05	0.0470
+GO:0006109	regulation of carbohydrate metabolic pro...	17	1	0.05	0.0470
+GO:0043467	regulation of generation of precursor me...	17	1	0.05	0.0470
+GO:0106030	neuron projection fasciculation	17	1	0.05	0.0470
+GO:0035162	embryonic hemopoiesis	17	1	0.05	0.0470
+GO:0035153	epithelial cell type specification, open...	17	1	0.05	0.0470
+GO:0050912	detection of chemical stimulus involved ...	17	1	0.05	0.0470
+GO:0008052	sensory organ boundary specification	17	1	0.05	0.0470
+GO:0002164	larval development	125	2	0.35	0.0478
+GO:0046483	heterocycle metabolic process	2448	11	6.92	0.0488
+GO:0046331	lateral inhibition	18	1	0.05	0.0497
+GO:0007519	skeletal muscle tissue development	18	1	0.05	0.0497
+GO:0007400	neuroblast fate determination	18	1	0.05	0.0497
+GO:0042675	compound eye cone cell differentiation	18	1	0.05	0.0497

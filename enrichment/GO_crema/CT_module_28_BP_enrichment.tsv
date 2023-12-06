@@ -1,1 +1,20 @@
 GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007346	regulation of mitotic cell cycle	149	2	0.17	0.011
+GO:0045792	negative regulation of cell size	15	1	0.02	0.017
+GO:0071901	negative regulation of protein serine/th...	15	1	0.02	0.017
+GO:0052652	cyclic purine nucleotide metabolic proce...	16	1	0.02	0.018
+GO:0006182	cGMP biosynthetic process	16	1	0.02	0.018
+GO:0009190	cyclic nucleotide biosynthetic process	17	1	0.02	0.019
+GO:0051299	centrosome separation	19	1	0.02	0.021
+GO:0000079	regulation of cyclin-dependent protein s...	19	1	0.02	0.021
+GO:1904029	regulation of cyclin-dependent protein k...	19	1	0.02	0.021
+GO:0046068	cGMP metabolic process	21	1	0.02	0.024
+GO:0009187	cyclic nucleotide metabolic process	24	1	0.03	0.027
+GO:0006469	negative regulation of protein kinase ac...	25	1	0.03	0.028
+GO:0019935	cyclic-nucleotide-mediated signaling	26	1	0.03	0.029
+GO:0051726	regulation of cell cycle	249	2	0.28	0.030
+GO:0033673	negative regulation of kinase activity	27	1	0.03	0.030
+GO:0045931	positive regulation of mitotic cell cycl...	31	1	0.04	0.035
+GO:0051348	negative regulation of transferase activ...	32	1	0.04	0.036
+GO:0007093	mitotic cell cycle checkpoint	35	1	0.04	0.039
+GO:0018193	peptidyl-amino acid modification	296	2	0.33	0.041

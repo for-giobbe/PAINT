@@ -1,3 +1,50 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0000723	telomere maintenance	36	2	0.06	0.0016
+GO:1903827	regulation of cellular protein localizat...	50	2	0.08	0.0031
 GO:0043065	positive regulation of apoptotic process	57	2	0.1	0.0040
+GO:0071897	DNA biosynthetic process	225	3	0.38	0.0056
+GO:0070647	protein modification by small protein co...	240	3	0.41	0.0068
+GO:0006260	DNA replication	113	2	0.19	0.0150
+GO:1902533	positive regulation of intracellular sig...	133	2	0.23	0.0205
+GO:0007307	eggshell chorion gene amplification	16	1	0.03	0.0268
+GO:0048072	compound eye pigmentation	16	1	0.03	0.0268
+GO:1901992	positive regulation of mitotic cell cycl...	17	1	0.03	0.0285
+GO:1900180	regulation of protein localization to nu...	17	1	0.03	0.0285
+GO:0007400	neuroblast fate determination	18	1	0.03	0.0301
+GO:0006277	DNA amplification	18	1	0.03	0.0301
+GO:0044719	regulation of imaginal disc-derived wing...	18	1	0.03	0.0301
+GO:1901989	positive regulation of cell cycle phase ...	19	1	0.03	0.0318
+GO:0048665	neuron fate specification	20	1	0.03	0.0334
+GO:0006270	DNA replication initiation	20	1	0.03	0.0334
+GO:2000045	regulation of G1/S transition of mitotic...	20	1	0.03	0.0334
+GO:0016567	protein ubiquitination	175	2	0.3	0.0341
+GO:0006275	regulation of DNA replication	21	1	0.04	0.0351
+GO:1902806	regulation of cell cycle G1/S phase tran...	21	1	0.04	0.0351
+GO:0014017	neuroblast fate commitment	21	1	0.04	0.0351
+GO:0007277	pole cell development	23	1	0.04	0.0383
+GO:0001932	regulation of protein phosphorylation	189	2	0.32	0.0393
+GO:0046425	regulation of JAK-STAT cascade	24	1	0.04	0.0400
+GO:1904892	regulation of STAT cascade	24	1	0.04	0.0400
+GO:0006726	eye pigment biosynthetic process	24	1	0.04	0.0400
+GO:0048867	stem cell fate determination	24	1	0.04	0.0400
+GO:0032446	protein modification by small protein co...	192	2	0.33	0.0404
+GO:0010883	regulation of lipid storage	25	1	0.04	0.0416
+GO:0031396	regulation of protein ubiquitination	25	1	0.04	0.0416
+GO:0045879	negative regulation of smoothened signal...	26	1	0.04	0.0433
+GO:0046330	positive regulation of JNK cascade	26	1	0.04	0.0433
+GO:0046822	regulation of nucleocytoplasmic transpor...	26	1	0.04	0.0433
+GO:0007259	JAK-STAT cascade	26	1	0.04	0.0433
+GO:0097696	STAT cascade	26	1	0.04	0.0433
+GO:0044550	secondary metabolite biosynthetic proces...	26	1	0.04	0.0433
+GO:0033157	regulation of intracellular protein tran...	27	1	0.05	0.0449
+GO:1903320	regulation of protein modification by sm...	27	1	0.05	0.0449
+GO:0032874	positive regulation of stress-activated ...	28	1	0.05	0.0465
+GO:0070304	positive regulation of stress-activated ...	28	1	0.05	0.0465
+GO:0043474	pigment metabolic process involved in pi...	28	1	0.05	0.0465
+GO:0042441	eye pigment metabolic process	28	1	0.05	0.0465
+GO:0043324	pigment metabolic process involved in de...	28	1	0.05	0.0465
+GO:0042325	regulation of phosphorylation	208	2	0.35	0.0468
+GO:0035556	intracellular signal transduction	497	3	0.84	0.0471
+GO:0090068	positive regulation of cell cycle proces...	29	1	0.05	0.0481
+GO:0007367	segment polarity determination	29	1	0.05	0.0481
+GO:0048865	stem cell fate commitment	30	1	0.05	0.0498

@@ -1,4 +1,21 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0016321	female meiosis chromosome segregation	10	2	0.04	0.00053
+GO:0031497	chromatin assembly	40	6	0.14	0.00055
 GO:0034728	nucleosome organization	57	6	0.2	0.00327
+GO:0065004	protein-DNA complex assembly	60	6	0.21	0.00398
+GO:0051321	meiotic cell cycle	156	5	0.55	0.00415
 GO:0007526	larval somatic muscle development	28	2	0.1	0.00428
+GO:0007143	female meiotic nuclear division	31	2	0.11	0.00524
+GO:0045132	meiotic chromosome segregation	38	2	0.13	0.00780
+GO:0140013	meiotic nuclear division	111	4	0.39	0.01420
+GO:0007140	male meiotic nuclear division	55	2	0.19	0.01588
+GO:0006352	DNA-templated transcription, initiation	59	2	0.21	0.01814
+GO:1901575	organic substance catabolic process	638	6	2.25	0.02101
+GO:0048232	male gamete generation	196	3	0.69	0.03076
+GO:1903046	meiotic cell cycle process	142	4	0.5	0.03245
+GO:0044262	cellular carbohydrate metabolic process	88	2	0.31	0.03813
+GO:0006511	ubiquitin-dependent protein catabolic pr...	218	3	0.77	0.04029
+GO:1901565	organonitrogen compound catabolic proces...	386	4	1.36	0.04446
+GO:0019941	modification-dependent protein catabolic...	227	3	0.8	0.04458
+GO:0009056	catabolic process	763	6	2.7	0.04567
+GO:0043900	regulation of multi-organism process	99	2	0.35	0.04720
+GO:0043632	modification-dependent macromolecule cat...	235	3	0.83	0.04858

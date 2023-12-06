@@ -1,5 +1,31 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0009226	nucleotide-sugar biosynthetic process	10	1	0.01	0.0070
-GO:0006672	ceramide metabolic process	11	1	0.01	0.0078
-GO:0006744	ubiquinone biosynthetic process	12	1	0.01	0.0085
-GO:0008203	cholesterol metabolic process	14	1	0.01	0.0099
+GO:0044283	small molecule biosynthetic process	227	2	0.16	0.0096
+GO:0009225	nucleotide-sugar metabolic process	15	1	0.01	0.0106
+GO:0044281	small molecule metabolic process	704	4	0.5	0.0139
+GO:0044255	cellular lipid metabolic process	281	2	0.2	0.0145
+GO:1902652	secondary alcohol metabolic process	23	1	0.02	0.0162
+GO:0034620	cellular response to unfolded protein	24	1	0.02	0.0169
+GO:0070050	neuron cellular homeostasis	24	1	0.02	0.0169
+GO:1903509	liposaccharide metabolic process	27	1	0.02	0.0189
+GO:0006664	glycolipid metabolic process	27	1	0.02	0.0189
+GO:0035166	post-embryonic hemopoiesis	27	1	0.02	0.0189
+GO:0006986	response to unfolded protein	27	1	0.02	0.0189
+GO:0042181	ketone biosynthetic process	28	1	0.02	0.0196
+GO:0016125	sterol metabolic process	29	1	0.02	0.0203
+GO:0035967	cellular response to topologically incor...	32	1	0.02	0.0224
+GO:0048542	lymph gland development	35	1	0.02	0.0245
+GO:0035966	response to topologically incorrect prot...	35	1	0.02	0.0245
+GO:0006665	sphingolipid metabolic process	37	1	0.03	0.0259
+GO:1901565	organonitrogen compound catabolic proces...	386	2	0.27	0.0266
+GO:0006629	lipid metabolic process	389	2	0.27	0.0270
+GO:1901136	carbohydrate derivative catabolic proces...	41	1	0.03	0.0286
+GO:1901135	carbohydrate derivative metabolic proces...	413	2	0.29	0.0302
+GO:0044242	cellular lipid catabolic process	44	1	0.03	0.0307
+GO:0006633	fatty acid biosynthetic process	50	1	0.04	0.0348
+GO:0008202	steroid metabolic process	55	1	0.04	0.0383
+GO:0006733	oxidoreduction coenzyme metabolic proces...	55	1	0.04	0.0383
+GO:0042180	cellular ketone metabolic process	59	1	0.04	0.0410
+GO:0006643	membrane lipid metabolic process	60	1	0.04	0.0417
+GO:0030097	hemopoiesis	66	1	0.05	0.0458
+GO:0008344	adult locomotory behavior	71	1	0.05	0.0492
+GO:0006066	alcohol metabolic process	72	1	0.05	0.0499

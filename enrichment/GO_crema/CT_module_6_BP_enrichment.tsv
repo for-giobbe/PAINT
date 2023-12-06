@@ -1,5 +1,29 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0000469	cleavage involved in rRNA processing	18	2	0.04	0.00081
+GO:0016073	snRNA metabolic process	25	2	0.06	0.00158
+GO:0071826	ribonucleoprotein complex subunit organi...	117	3	0.28	0.00253
 GO:0090502	RNA phosphodiester bond hydrolysis, endo...	47	2	0.11	0.00551
 GO:0008306	associative learning	48	2	0.12	0.00574
 GO:0007616	long-term memory	59	2	0.14	0.00858
+GO:0006402	mRNA catabolic process	67	2	0.16	0.01096
+GO:0006401	RNA catabolic process	82	2	0.2	0.01612
+GO:0016071	mRNA metabolic process	290	3	0.7	0.03026
+GO:0000245	spliceosomal complex assembly	15	1	0.04	0.03548
+GO:0043009	chordate embryonic development	15	1	0.04	0.03548
+GO:0007279	pole cell formation	16	1	0.04	0.03780
+GO:0034655	nucleobase-containing compound catabolic...	130	2	0.31	0.03805
+GO:0034472	snRNA 3'-end processing	17	1	0.04	0.04012
+GO:0043524	negative regulation of neuron apoptotic ...	18	1	0.04	0.04243
+GO:0050806	positive regulation of synaptic transmis...	18	1	0.04	0.04243
+GO:0016180	snRNA processing	18	1	0.04	0.04243
+GO:0000466	maturation of 5.8S rRNA from tricistroni...	18	1	0.04	0.04243
+GO:0090503	RNA phosphodiester bond hydrolysis, exon...	19	1	0.05	0.04474
+GO:0061013	regulation of mRNA catabolic process	19	1	0.05	0.04474
+GO:0065002	intracellular protein transmembrane tran...	20	1	0.05	0.04704
+GO:0044106	cellular amine metabolic process	20	1	0.05	0.04704
+GO:0071806	protein transmembrane transport	20	1	0.05	0.04704
+GO:0009308	amine metabolic process	20	1	0.05	0.04704
+GO:0044270	cellular nitrogen compound catabolic pro...	149	2	0.36	0.04873
+GO:0046700	heterocycle catabolic process	150	2	0.36	0.04932
+GO:0007632	visual behavior	21	1	0.05	0.04933
+GO:0051656	establishment of organelle localization	151	2	0.36	0.04991

@@ -1,7 +1,37 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0036011	imaginal disc-derived leg segmentation	24	3	0.12	0.00021
-GO:0016574	histone ubiquitination	11	2	0.05	0.00127
+GO:0031396	regulation of protein ubiquitination	25	3	0.12	0.00024
+GO:0000122	negative regulation of transcription by ...	132	5	0.65	0.00043
+GO:0045892	negative regulation of transcription, DN...	261	9	1.29	0.00214
+GO:0016348	imaginal disc-derived leg joint morphoge...	15	2	0.07	0.00240
 GO:0031058	positive regulation of histone modificat...	16	2	0.08	0.00273
 GO:0014019	neuroblast development	19	2	0.09	0.00386
 GO:0007406	negative regulation of neuroblast prolif...	21	2	0.1	0.00471
 GO:0048867	stem cell fate determination	24	2	0.12	0.00613
+GO:0006325	chromatin organization	294	7	1.45	0.00877
+GO:2000113	negative regulation of cellular macromol...	301	11	1.49	0.00999
+GO:0090263	positive regulation of canonical Wnt sig...	32	2	0.16	0.01075
+GO:0017148	negative regulation of translation	34	2	0.17	0.01208
+GO:0030177	positive regulation of Wnt signaling pat...	35	2	0.17	0.01277
+GO:0007298	border follicle cell migration	102	3	0.5	0.01363
+GO:0034249	negative regulation of cellular amide me...	37	2	0.18	0.01421
+GO:0007297	ovarian follicle cell migration	112	3	0.55	0.01750
+GO:0010629	negative regulation of gene expression	412	12	2.04	0.01910
+GO:0016485	protein processing	45	2	0.22	0.02060
+GO:0010631	epithelial cell migration	137	3	0.68	0.02960
+GO:0090132	epithelium migration	138	3	0.68	0.03016
+GO:0051172	negative regulation of nitrogen compound...	441	12	2.18	0.03017
+GO:0060828	regulation of canonical Wnt signaling pa...	57	2	0.28	0.03202
+GO:0090130	tissue migration	142	3	0.7	0.03244
+GO:0001667	ameboidal-type cell migration	149	3	0.74	0.03665
+GO:0000209	protein polyubiquitination	63	2	0.31	0.03846
+GO:0040011	locomotion	520	6	2.57	0.04006
+GO:0060070	canonical Wnt signaling pathway	65	2	0.32	0.04072
+GO:0022416	chaeta development	65	2	0.32	0.04072
+GO:0032879	regulation of localization	390	5	1.93	0.04119
+GO:0036011	imaginal disc-derived leg segmentation	24	3	0.12	0.04131
+GO:0035285	appendage segmentation	24	3	0.12	0.04131
+GO:0051604	protein maturation	66	2	0.33	0.04186
+GO:0032269	negative regulation of cellular protein ...	160	3	0.79	0.04382
+GO:0051248	negative regulation of protein metabolic...	161	3	0.8	0.04450
+GO:0001558	regulation of cell growth	69	2	0.34	0.04536
+GO:0030111	regulation of Wnt signaling pathway	72	2	0.36	0.04897

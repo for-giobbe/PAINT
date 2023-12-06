@@ -146,6 +146,13 @@ sh scripts/extract_eggNOG_annotations.sh $i  enrichment/eggNOG_crema/crema_eggNO
 > enrichment/eggNOG_crema/"$basename"_eggNOG_annotations.tsv; done
 ```
 
+```
+for i in $(ls abundances/vicia/vicia_deseq2_gene/vicia_*.lst); do 
+basename=$(echo $i | awk -F "/" '{print $NF}' | awk -F "\." '{print $1}'); 
+sh scripts/extract_eggNOG_annotations.sh $i  enrichment/eggNOG_vicia/vicia_eggNOG-mapper_annotations.tsv 
+> enrichment/eggNOG_vicia/"$basename"_eggNOG_annotations.tsv; done
+```
+
 ---
 
 GO enrichment analyses were plotted using the Rscript ```plot_GO_enrichment.Rscript```.
@@ -214,7 +221,10 @@ GO:0042136 abundances/vicia/vicia_deseq_gene/vicia_DN_genes.lst
 [1] "TRINITY_DN36133_c0_g1" "TRINITY_DN833_c0_g1" 
 ```
 
-Then we extracted the transcripts amminoacid sequences using:
+---
+
+
+Transcripts sequences were extracted as amminoacids sequences using:
 
 
 ```
@@ -332,6 +342,18 @@ sh scripts/extract_exp_val_crema_tissue_contrast.sh  enrichment/crema_antimb/cre
 ```
 sh scripts/extract_exp_val_crema_treatm_contrast.sh  enrichment/crema_antimb/crema_antimb_blastp.out 
 > enrichment/crema_antimb/crema_antimb_expression_treatm_contrast.tsv
+```
+
+
+```
+sh scripts/extract_exp_val_crema_tissue_contrast.sh  enrichment/crema_venoms/crema_venoms_blastp.out > enrichment/crema_venoms/crema_venoms_expression_tissue_contrast.tsv
+sh scripts/extract_exp_val_crema_treatm_contrast.sh  enrichment/crema_venoms/crema_venoms_blastp.out > enrichment/crema_venoms/crema_venoms_expression_treatm_contrast.tsv
+sh scripts/extract_exp_val_crema_tissue_contrast.sh  enrichment/crema_antimb/crema_antimb_blastp.out > enrichment/crema_antimb/crema_antimb_expression_tissue_contrast.tsv
+sh scripts/extract_exp_val_crema_treatm_contrast.sh  enrichment/crema_antimb/crema_antimb_blastp.out > enrichment/crema_antimb/crema_antimb_expression_treatm_contrast.tsv
+sh scripts/extract_exp_val_crema_tissue_contrast.sh  enrichment/crema_aggression/crema_aggression_blastp.out > enrichment/crema_aggression/crema_aggression_expression_tissue_contrast.tsv
+sh scripts/extract_exp_val_crema_treatm_contrast.sh  enrichment/crema_aggression/crema_aggression_blastp.out > enrichment/crema_aggression/crema_aggression_expression_treatm_contrast.tsv
+sh scripts/extract_exp_val_crema_tissue_contrast.sh  enrichment/crema_dopa/crema_dopa_blastp.out > enrichment/crema_dopa/crema_dopa_expression_tissue_contrast.tsv
+sh scripts/extract_exp_val_crema_treatm_contrast.sh  enrichment/crema_dopa/crema_dopa_blastp.out > enrichment/crema_dopa/crema_dopa_expression_treatm_contrast.tsv
 ```
 
 

@@ -1,2 +1,35 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0046692	sperm competition	10	1	0.01	0.0085
+GO:0007618	mating	97	2	0.08	0.0027
+GO:0044706	multi-multicellular organism process	15	1	0.01	0.0127
+GO:1901992	positive regulation of mitotic cell cycl...	17	1	0.01	0.0143
+GO:0006271	DNA strand elongation involved in DNA re...	18	1	0.02	0.0152
+GO:1901989	positive regulation of cell cycle phase ...	19	1	0.02	0.0160
+GO:0035209	pupal development	19	1	0.02	0.0160
+GO:0032784	regulation of DNA-templated transcriptio...	19	1	0.02	0.0160
+GO:0042337	cuticle development involved in chitin-b...	19	1	0.02	0.0160
+GO:0022616	DNA strand elongation	19	1	0.02	0.0160
+GO:2000045	regulation of G1/S transition of mitotic...	20	1	0.02	0.0168
+GO:0006270	DNA replication initiation	20	1	0.02	0.0168
+GO:0006721	terpenoid metabolic process	20	1	0.02	0.0168
+GO:0007620	copulation	21	1	0.02	0.0177
+GO:1902806	regulation of cell cycle G1/S phase tran...	21	1	0.02	0.0177
+GO:0006006	glucose metabolic process	25	1	0.02	0.0210
+GO:0044786	cell cycle DNA replication	26	1	0.02	0.0219
+GO:0008299	isoprenoid biosynthetic process	27	1	0.02	0.0227
+GO:0042446	hormone biosynthetic process	29	1	0.02	0.0244
+GO:0090068	positive regulation of cell cycle proces...	29	1	0.02	0.0244
+GO:0006354	DNA-templated transcription, elongation	30	1	0.03	0.0252
+GO:0045931	positive regulation of mitotic cell cycl...	31	1	0.03	0.0260
+GO:0000082	G1/S transition of mitotic cell cycle	32	1	0.03	0.0268
+GO:0044843	cell cycle G1/S phase transition	33	1	0.03	0.0277
+GO:0006720	isoprenoid metabolic process	37	1	0.03	0.0310
+GO:0000724	double-strand break repair via homologou...	40	1	0.03	0.0335
+GO:0000725	recombinational repair	42	1	0.04	0.0351
+GO:0030261	chromosome condensation	43	1	0.04	0.0359
+GO:0019318	hexose metabolic process	46	1	0.04	0.0384
+GO:0034754	cellular hormone metabolic process	47	1	0.04	0.0392
+GO:0005996	monosaccharide metabolic process	51	1	0.04	0.0425
+GO:0045787	positive regulation of cell cycle	52	1	0.04	0.0433
+GO:0007224	smoothened signaling pathway	57	1	0.05	0.0474
+GO:0008049	male courtship behavior	59	1	0.05	0.0490
+GO:0042445	hormone metabolic process	60	1	0.05	0.0498

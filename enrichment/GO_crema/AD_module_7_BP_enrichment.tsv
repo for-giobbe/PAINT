@@ -1,17 +1,61 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0046916	cellular transition metal ion homeostasi...	25	6	0.79	0.00010
+GO:0008643	carbohydrate transport	38	7	1.2	0.00016
+GO:1902600	proton transmembrane transport	43	7	1.36	0.00035
 GO:0035148	tube formation	25	5	0.79	0.00096
 GO:0002791	regulation of peptide secretion	26	5	0.82	0.00116
 GO:0003014	renal system process	16	4	0.51	0.00132
+GO:0000041	transition metal ion transport	29	5	0.92	0.00194
 GO:0099131	ATP hydrolysis coupled ion transmembrane...	19	4	0.6	0.00261
 GO:0099132	ATP hydrolysis coupled cation transmembr...	19	4	0.6	0.00261
-GO:0051452	intracellular pH reduction	10	3	0.32	0.00319
-GO:0071577	zinc ion transmembrane transport	10	3	0.32	0.00319
-GO:0051048	negative regulation of secretion	10	3	0.32	0.00319
 GO:0009311	oligosaccharide metabolic process	21	4	0.66	0.00383
 GO:0055072	iron ion homeostasis	21	4	0.66	0.00383
-GO:0051646	mitochondrion localization	22	4	0.7	0.00424
-GO:0015672	monovalent inorganic cation transport	146	13	4.62	0.00448
+GO:0055085	transmembrane transport	518	38	16.4	0.00400
+GO:0070838	divalent metal ion transport	83	8	2.63	0.00456
+GO:0051646	mitochondrion localization	22	4	0.7	0.00457
 GO:0001666	response to hypoxia	50	6	1.58	0.00467
+GO:0051235	maintenance of location	84	8	2.66	0.00490
 GO:0019991	septate junction assembly	36	5	1.14	0.00515
+GO:0023061	signal release	103	9	3.26	0.00517
+GO:0051453	regulation of intracellular pH	23	4	0.73	0.00539
 GO:0006855	drug transmembrane transport	24	4	0.76	0.00631
+GO:0015711	organic anion transport	131	10	4.15	0.00844
+GO:0098656	anion transmembrane transport	114	9	3.61	0.00990
+GO:1905881	positive regulation of oogenesis	15	3	0.47	0.01075
+GO:0006643	membrane lipid metabolic process	60	6	1.9	0.01134
+GO:0006814	sodium ion transport	61	6	1.93	0.01225
+GO:0035151	regulation of tube size, open tracheal s...	46	5	1.46	0.01451
+GO:0009100	glycoprotein metabolic process	102	8	3.23	0.01523
+GO:0015698	inorganic anion transport	47	5	1.49	0.01583
+GO:0006836	neurotransmitter transport	104	8	3.29	0.01695
+GO:0051051	negative regulation of transport	32	4	1.01	0.01755
+GO:0046883	regulation of hormone secretion	18	3	0.57	0.01798
+GO:0046879	hormone secretion	18	3	0.57	0.01798
+GO:0009914	hormone transport	19	3	0.6	0.02086
+GO:0006835	dicarboxylic acid transport	19	3	0.6	0.02086
+GO:2000243	positive regulation of reproductive proc...	19	3	0.6	0.02086
+GO:1901137	carbohydrate derivative biosynthetic pro...	244	14	7.73	0.02252
+GO:0035152	regulation of tube architecture, open tr...	70	6	2.22	0.02291
+GO:0035150	regulation of tube size	52	5	1.65	0.02363
+GO:0035159	regulation of tube length, open tracheal...	35	4	1.11	0.02375
+GO:0010632	regulation of epithelial cell migration	20	3	0.63	0.02398
+GO:1905039	carboxylic acid transmembrane transport	53	5	1.68	0.02544
+GO:1903825	organic acid transmembrane transport	53	5	1.68	0.02544
+GO:0008037	cell recognition	92	7	2.91	0.02616
+GO:0006493	protein O-linked glycosylation	21	3	0.66	0.02734
+GO:0007269	neurotransmitter secretion	73	6	2.31	0.02753
+GO:1905879	regulation of oogenesis	37	4	1.17	0.02853
+GO:0009247	glycolipid biosynthetic process	22	3	0.7	0.03094
+GO:0042742	defense response to bacterium	76	6	2.41	0.03272
+GO:0099643	signal release from synapse	76	6	2.41	0.03272
+GO:0032879	regulation of localization	390	23	12.35	0.03370
+GO:2000647	negative regulation of stem cell prolife...	23	3	0.73	0.03477
+GO:0043902	positive regulation of multi-organism pr...	40	4	1.27	0.03670
+GO:1901135	carbohydrate derivative metabolic proces...	413	20	13.08	0.03737
+GO:0001505	regulation of neurotransmitter levels	121	8	3.83	0.03769
+GO:0006486	protein glycosylation	80	6	2.53	0.04059
+GO:0007424	open tracheal system development	169	10	5.35	0.04166
+GO:0043413	macromolecule glycosylation	81	6	2.56	0.04272
+GO:0030048	actin filament-based movement	25	3	0.79	0.04313
+GO:0010883	regulation of lipid storage	25	3	0.79	0.04313
+GO:0098662	inorganic cation transmembrane transport	196	16	6.21	0.04672

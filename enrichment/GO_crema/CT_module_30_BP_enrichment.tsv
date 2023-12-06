@@ -1,9 +1,63 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0018105	peptidyl-serine phosphorylation	37	3	0.21	0.0012
-GO:0008361	regulation of cell size	82	4	0.48	0.0012
 GO:0007266	Rho protein signal transduction	38	3	0.22	0.0013
-GO:0032483	regulation of Rab protein signal transdu...	11	2	0.06	0.0017
+GO:0030029	actin filament-based process	250	6	1.45	0.0029
+GO:0045792	negative regulation of cell size	15	2	0.09	0.0033
 GO:0035210	prepupal development	16	2	0.09	0.0037
+GO:0009987	cellular process	5871	41	34.02	0.0045
 GO:0045944	positive regulation of transcription by ...	199	5	1.15	0.0055
 GO:0045666	positive regulation of neuron differenti...	63	3	0.37	0.0056
+GO:0030335	positive regulation of cell migration	20	2	0.12	0.0058
+GO:0046578	regulation of Ras protein signal transdu...	64	3	0.37	0.0059
+GO:0032535	regulation of cellular component size	148	6	0.86	0.0059
+GO:0009887	animal organ morphogenesis	596	9	3.45	0.0061
 GO:0003382	epithelial cell morphogenesis	25	2	0.14	0.0090
+GO:0048545	response to steroid hormone	28	2	0.16	0.0113
+GO:0043401	steroid hormone mediated signaling pathw...	28	2	0.16	0.0113
+GO:0071383	cellular response to steroid hormone sti...	28	2	0.16	0.0113
+GO:0045793	positive regulation of cell size	29	2	0.17	0.0121
+GO:0030036	actin cytoskeleton organization	241	5	1.4	0.0121
+GO:0032482	Rab protein signal transduction	31	2	0.18	0.0137
+GO:0006470	protein dephosphorylation	90	3	0.52	0.0150
+GO:0030522	intracellular receptor signaling pathway	34	2	0.2	0.0164
+GO:0071495	cellular response to endogenous stimulus	173	4	1	0.0173
+GO:0035114	imaginal disc-derived appendage morphoge...	267	5	1.55	0.0182
+GO:0009755	hormone-mediated signaling pathway	36	2	0.21	0.0182
+GO:0035335	peptidyl-tyrosine dephosphorylation	36	2	0.21	0.0182
+GO:0035107	appendage morphogenesis	270	5	1.56	0.0190
+GO:0009612	response to mechanical stimulus	37	2	0.21	0.0192
+GO:0007552	metamorphosis	373	6	2.16	0.0194
+GO:0048737	imaginal disc-derived appendage developm...	272	5	1.58	0.0196
+GO:0071396	cellular response to lipid	38	2	0.22	0.0202
+GO:0048736	appendage development	280	5	1.62	0.0219
+GO:0032870	cellular response to hormone stimulus	104	3	0.6	0.0220
+GO:0022404	molting cycle process	43	2	0.25	0.0255
+GO:0030155	regulation of cell adhesion	44	2	0.25	0.0266
+GO:0042335	cuticle development	112	3	0.65	0.0266
+GO:0009719	response to endogenous stimulus	198	4	1.15	0.0269
+GO:0060322	head development	113	3	0.65	0.0272
+GO:0016485	protein processing	45	2	0.26	0.0277
+GO:0048878	chemical homeostasis	202	4	1.17	0.0287
+GO:1904397	negative regulation of neuromuscular jun...	46	2	0.27	0.0289
+GO:0045886	negative regulation of synaptic growth a...	46	2	0.27	0.0289
+GO:0065007	biological regulation	3302	31	19.14	0.0292
+GO:1905809	negative regulation of synapse organizat...	47	2	0.27	0.0301
+GO:0051964	negative regulation of synapse assembly	47	2	0.27	0.0301
+GO:0031344	regulation of cell projection organizati...	118	3	0.68	0.0304
+GO:0120035	regulation of plasma membrane bounded ce...	118	3	0.68	0.0304
+GO:0035295	tube development	537	7	3.11	0.0328
+GO:0071407	cellular response to organic cyclic comp...	51	2	0.3	0.0349
+GO:0016319	mushroom body development	52	2	0.3	0.0362
+GO:0008064	regulation of actin polymerization or de...	54	2	0.31	0.0388
+GO:0009725	response to hormone	130	3	0.75	0.0389
+GO:0030832	regulation of actin filament length	55	2	0.32	0.0401
+GO:0055088	lipid homeostasis	55	2	0.32	0.0401
+GO:0051225	spindle assembly	55	2	0.32	0.0401
+GO:0007369	gastrulation	56	2	0.32	0.0414
+GO:0016358	dendrite development	134	3	0.78	0.0420
+GO:0031346	positive regulation of cell projection o...	58	2	0.34	0.0442
+GO:0016482	cytosolic transport	58	2	0.34	0.0442
+GO:0051130	positive regulation of cellular componen...	233	4	1.35	0.0448
+GO:0048732	gland development	139	3	0.81	0.0460
+GO:0016311	dephosphorylation	140	3	0.81	0.0468
+GO:0090130	tissue migration	142	3	0.82	0.0485

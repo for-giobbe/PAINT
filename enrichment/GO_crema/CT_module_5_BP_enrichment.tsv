@@ -1,1 +1,28 @@
 GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007088	regulation of mitotic nuclear division	52	2	0.12	0.006
+GO:0006470	protein dephosphorylation	90	2	0.2	0.017
+GO:0006259	DNA metabolic process	778	5	1.76	0.025
+GO:0098813	nuclear chromosome segregation	111	2	0.25	0.025
+GO:0007059	chromosome segregation	128	2	0.29	0.033
+GO:0045456	ecdysteroid biosynthetic process	15	1	0.03	0.033
+GO:1902653	secondary alcohol biosynthetic process	16	1	0.04	0.036
+GO:0030011	maintenance of cell polarity	16	1	0.04	0.036
+GO:0003014	renal system process	16	1	0.04	0.036
+GO:0019933	cAMP-mediated signaling	17	1	0.04	0.038
+GO:0006891	intra-Golgi vesicle-mediated transport	17	1	0.04	0.038
+GO:0007099	centriole replication	17	1	0.04	0.038
+GO:0043666	regulation of phosphoprotein phosphatase...	17	1	0.04	0.038
+GO:0010256	endomembrane system organization	140	2	0.32	0.039
+GO:0016311	dephosphorylation	140	2	0.32	0.039
+GO:0001700	embryonic development via the syncytial ...	141	2	0.32	0.039
+GO:0016126	sterol biosynthetic process	19	1	0.04	0.042
+GO:0007110	meiosis I cytokinesis	19	1	0.04	0.042
+GO:0050821	protein stabilization	19	1	0.04	0.042
+GO:0098534	centriole assembly	20	1	0.05	0.044
+GO:0030071	regulation of mitotic metaphase/anaphase...	20	1	0.05	0.044
+GO:0007406	negative regulation of neuroblast prolif...	21	1	0.05	0.046
+GO:2000178	negative regulation of neural precursor ...	21	1	0.05	0.046
+GO:1902099	regulation of metaphase/anaphase transit...	21	1	0.05	0.046
+GO:0010921	regulation of phosphatase activity	22	1	0.05	0.049
+GO:0007338	single fertilization	22	1	0.05	0.049
+GO:0007188	adenylate cyclase-modulating G protein-c...	22	1	0.05	0.049

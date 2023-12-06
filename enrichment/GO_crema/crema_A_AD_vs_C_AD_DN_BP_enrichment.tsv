@@ -1,0 +1,9 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0042737	drug catabolic process	31	3	0.1	0.00011
+GO:1901606	alpha-amino acid catabolic process	34	3	0.11	0.00014
+GO:0009063	cellular amino acid catabolic process	39	3	0.12	0.00022
+GO:0006520	cellular amino acid metabolic process	130	4	0.4	0.00058
+GO:0003008	system process	404	6	1.26	0.00101
+GO:0016054	organic acid catabolic process	66	3	0.21	0.00102
+GO:0046395	carboxylic acid catabolic process	66	3	0.21	0.00102
+GO:0019752	carboxylic acid metabolic process	286	5	0.89	0.00143

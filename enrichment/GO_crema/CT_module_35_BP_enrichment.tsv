@@ -1,16 +1,110 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0003012	muscle system process	24	5	0.53	0.00015
-GO:0035296	regulation of tube diameter	14	4	0.31	0.00019
+GO:0005977	glycogen metabolic process	25	5	0.55	0.00018
 GO:0007390	germ-band shortening	16	4	0.35	0.00034
-GO:0010906	regulation of glucose metabolic process	10	3	0.22	0.00113
+GO:0016203	muscle attachment	30	5	0.66	0.00045
+GO:0007519	skeletal muscle tissue development	18	4	0.4	0.00055
+GO:0006936	muscle contraction	19	4	0.42	0.00068
 GO:0007525	somatic muscle development	74	7	1.63	0.00116
-GO:0002224	toll-like receptor signaling pathway	11	3	0.24	0.00152
+GO:0044275	cellular carbohydrate catabolic process	23	4	0.51	0.00145
+GO:0000272	polysaccharide catabolic process	23	4	0.51	0.00145
 GO:0035206	regulation of hemocyte proliferation	25	4	0.55	0.00200
-GO:0007155	cell adhesion	190	11	4.19	0.00277
-GO:0035149	lumen formation, open tracheal system	14	3	0.31	0.00320
-GO:0048139	female germ-line cyst encapsulation	14	3	0.31	0.00320
+GO:0030239	myofibril assembly	46	13	1.01	0.00214
+GO:0030855	epithelial cell differentiation	305	15	6.73	0.00287
+GO:0007155	cell adhesion	190	11	4.19	0.00308
 GO:0014902	myotube differentiation	46	5	1.01	0.00323
 GO:0051017	actin filament bundle assembly	29	4	0.64	0.00351
-GO:0007015	actin filament organization	127	10	2.8	0.00355
+GO:0002764	immune response-regulating signaling pat...	15	3	0.33	0.00394
+GO:0002253	activation of immune response	16	3	0.35	0.00477
+GO:0001736	establishment of planar polarity	95	7	2.09	0.00483
 GO:0007498	mesoderm development	51	5	1.12	0.00507
+GO:0035150	regulation of tube size	52	5	1.15	0.00551
+GO:0006109	regulation of carbohydrate metabolic pro...	17	3	0.37	0.00570
+GO:1903008	organelle disassembly	34	4	0.75	0.00630
+GO:0034613	cellular protein localization	401	17	8.84	0.00696
+GO:0062012	regulation of small molecule metabolic p...	35	4	0.77	0.00700
+GO:0055088	lipid homeostasis	55	5	1.21	0.00700
+GO:0045089	positive regulation of innate immune res...	19	3	0.42	0.00786
+GO:0046328	regulation of JNK cascade	57	5	1.26	0.00814
 GO:0042060	wound healing	58	5	1.28	0.00875
+GO:0006914	autophagy	133	8	2.93	0.00894
+GO:0048138	germ-line cyst encapsulation	20	3	0.44	0.00910
+GO:0030335	positive regulation of cell migration	20	3	0.44	0.00910
+GO:0043486	histone exchange	21	3	0.46	0.01045
+GO:0030707	ovarian follicle cell development	227	11	5.01	0.01143
+GO:0002064	epithelial cell development	259	12	5.71	0.01173
+GO:0007062	sister chromatid cohesion	22	3	0.49	0.01191
+GO:0008544	epidermis development	64	5	1.41	0.01311
+GO:0002066	columnar/cuboidal epithelial cell develo...	232	11	5.12	0.01329
+GO:0000422	autophagy of mitochondrion	23	3	0.51	0.01347
+GO:0010669	epithelial structure maintenance	24	3	0.53	0.01515
+GO:0030155	regulation of cell adhesion	44	4	0.97	0.01557
+GO:0031667	response to nutrient levels	120	7	2.65	0.01651
+GO:0002065	columnar/cuboidal epithelial cell differ...	240	11	5.29	0.01675
+GO:0035148	tube formation	25	3	0.55	0.01695
+GO:0061726	mitochondrion disassembly	25	3	0.55	0.01695
+GO:0006006	glucose metabolic process	25	3	0.55	0.01695
+GO:0042594	response to starvation	94	6	2.07	0.01729
+GO:0009991	response to extracellular stimulus	122	7	2.69	0.01793
+GO:0007431	salivary gland development	95	6	2.09	0.01813
+GO:0035272	exocrine system development	95	6	2.09	0.01813
+GO:0035152	regulation of tube architecture, open tr...	70	5	1.54	0.01874
+GO:0008258	head involution	26	3	0.57	0.01885
+GO:0007015	actin filament organization	127	10	2.8	0.01890
+GO:0035316	non-sensory hair organization	47	4	1.04	0.01945
+GO:0035317	imaginal disc-derived wing hair organiza...	47	4	1.04	0.01945
+GO:0072359	circulatory system development	98	6	2.16	0.02082
+GO:0035315	hair cell differentiation	48	4	1.06	0.02087
+GO:0007010	cytoskeleton organization	493	31	10.87	0.02129
+GO:0034330	cell junction organization	74	5	1.63	0.02326
+GO:0009913	epidermal cell differentiation	50	4	1.1	0.02388
+GO:0007298	border follicle cell migration	102	6	2.25	0.02481
+GO:0043410	positive regulation of MAPK cascade	51	4	1.12	0.02548
+GO:0016331	morphogenesis of embryonic epithelium	103	6	2.27	0.02588
+GO:0035295	tube development	537	19	11.84	0.02656
+GO:0007275	multicellular organism development	1724	55	38.01	0.02864
+GO:0035220	wing disc development	295	12	6.5	0.02937
+GO:0034332	adherens junction organization	31	3	0.68	0.03010
+GO:0060537	muscle tissue development	31	6	0.68	0.03077
+GO:0035239	tube morphogenesis	403	15	8.89	0.03184
+GO:0008202	steroid metabolic process	55	4	1.21	0.03252
+GO:0002165	instar larval or pupal development	440	16	9.7	0.03260
+GO:0007443	Malpighian tubule morphogenesis	32	3	0.71	0.03269
+GO:0045197	establishment or maintenance of epitheli...	32	3	0.71	0.03269
+GO:0043473	pigmentation	81	5	1.79	0.03277
+GO:0010927	cellular component assembly involved in ...	106	17	2.34	0.03329
+GO:0007306	eggshell chorion assembly	56	4	1.23	0.03444
+GO:0061333	renal tubule morphogenesis	33	3	0.73	0.03539
+GO:0006888	ER to Golgi vesicle-mediated transport	33	3	0.73	0.03539
+GO:0009179	purine ribonucleoside diphosphate metabo...	33	3	0.73	0.03539
+GO:0009135	purine nucleoside diphosphate metabolic ...	33	3	0.73	0.03539
+GO:0043044	ATP-dependent chromatin remodeling	33	3	0.73	0.03539
+GO:0016310	phosphorylation	626	24	13.8	0.03558
+GO:0010623	programmed cell death involved in cell d...	83	5	1.83	0.03588
+GO:0055002	striated muscle cell development	61	15	1.35	0.03629
+GO:0007297	ovarian follicle cell migration	112	6	2.47	0.03692
+GO:0030522	intracellular receptor signaling pathway	34	3	0.75	0.03821
+GO:0061024	membrane organization	176	8	3.88	0.04039
+GO:0000819	sister chromatid segregation	86	5	1.9	0.04086
+GO:0055001	muscle cell development	62	15	1.37	0.04093
+GO:1901991	negative regulation of mitotic cell cycl...	35	3	0.77	0.04114
+GO:0035159	regulation of tube length, open tracheal...	35	3	0.77	0.04114
+GO:0008039	synaptic target recognition	35	3	0.77	0.04114
+GO:0009185	ribonucleoside diphosphate metabolic pro...	35	3	0.77	0.04114
+GO:1905881	positive regulation of oogenesis	15	2	0.33	0.04203
+GO:0030856	regulation of epithelial cell differenti...	15	2	0.33	0.04203
+GO:1903036	positive regulation of response to wound...	15	2	0.33	0.04203
+GO:0048646	anatomical structure formation involved ...	384	25	8.47	0.04205
+GO:0042445	hormone metabolic process	60	4	1.32	0.04277
+GO:0060541	respiratory system development	179	8	3.95	0.04391
+GO:0048619	embryonic hindgut morphogenesis	36	3	0.79	0.04417
+GO:1901988	negative regulation of cell cycle phase ...	36	3	0.79	0.04417
+GO:0046843	dorsal appendage formation	36	3	0.79	0.04417
+GO:0007304	chorion-containing eggshell formation	61	4	1.35	0.04502
+GO:0001667	ameboidal-type cell migration	149	7	3.29	0.04618
+GO:0007507	heart development	89	5	1.96	0.04625
+GO:0035088	establishment or maintenance of apical/b...	37	3	0.82	0.04732
+GO:0061245	establishment or maintenance of bipolar ...	37	3	0.82	0.04732
+GO:0033301	cell cycle comprising mitosis without cy...	16	2	0.35	0.04736
+GO:0033692	cellular polysaccharide biosynthetic pro...	16	2	0.35	0.04736
+GO:0000271	polysaccharide biosynthetic process	16	2	0.35	0.04736
+GO:0030703	eggshell formation	63	4	1.39	0.04971

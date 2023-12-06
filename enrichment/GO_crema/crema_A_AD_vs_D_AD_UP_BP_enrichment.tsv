@@ -1,0 +1,7 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007620	copulation	19	3	0.1	0.00012
+GO:0051606	detection of stimulus	109	5	0.57	0.00021
+GO:0009581	detection of external stimulus	62	4	0.32	0.00027
+GO:0009582	detection of abiotic stimulus	62	4	0.32	0.00027
+GO:0019233	sensory perception of pain	29	3	0.15	0.00042
+GO:0050906	detection of stimulus involved in sensor...	71	4	0.37	0.00045

@@ -1,0 +1,9 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0044283	small molecule biosynthetic process	196	5	0.64	0.00034
+GO:0006633	fatty acid biosynthetic process	45	3	0.15	0.00039
+GO:0072330	monocarboxylic acid biosynthetic process	75	3	0.25	0.00176
+GO:0019752	carboxylic acid metabolic process	289	5	0.95	0.00200
+GO:0006631	fatty acid metabolic process	83	3	0.27	0.00235
+GO:0006082	organic acid metabolic process	300	5	0.99	0.00236
+GO:0043436	oxoacid metabolic process	300	5	0.99	0.00236
+GO:1901607	alpha-amino acid biosynthetic process	29	2	0.1	0.00394

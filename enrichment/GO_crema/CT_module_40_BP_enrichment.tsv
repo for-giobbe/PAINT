@@ -3,3 +3,11 @@ GO:0070588	calcium ion transmembrane transport	54	4	0.31	0.00023
 GO:0050982	detection of mechanical stimulus	15	2	0.08	0.00312
 GO:0001895	retina homeostasis	18	2	0.1	0.00450
 GO:0051480	regulation of cytosolic calcium ion conc...	24	2	0.14	0.00795
+GO:0000041	transition metal ion transport	29	2	0.16	0.01149
+GO:0007601	visual perception	29	2	0.16	0.01149
+GO:0050953	sensory perception of light stimulus	33	2	0.19	0.01473
+GO:0090502	RNA phosphodiester bond hydrolysis, endo...	47	2	0.27	0.02871
+GO:0008306	associative learning	48	2	0.27	0.02985
+GO:0008033	tRNA processing	51	2	0.29	0.03338
+GO:0007612	learning	58	2	0.33	0.04223
+GO:0007605	sensory perception of sound	63	2	0.36	0.04902

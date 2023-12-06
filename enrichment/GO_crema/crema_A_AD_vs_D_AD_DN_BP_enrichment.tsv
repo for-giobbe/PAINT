@@ -1,0 +1,5 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0055114	oxidation-reduction process	332	5	0.63	0.00021
+GO:0016054	organic acid catabolic process	66	3	0.13	0.00022
+GO:0046395	carboxylic acid catabolic process	66	3	0.13	0.00022
+GO:0044282	small molecule catabolic process	94	3	0.18	0.00062

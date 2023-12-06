@@ -1,9 +1,67 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0006399	tRNA metabolic process	98	11	2.41	0.00016
-GO:0006401	RNA catabolic process	82	9	2.02	0.00087
-GO:0030952	establishment or maintenance of cytoskel...	34	5	0.84	0.00133
-GO:0017148	negative regulation of translation	34	5	0.84	0.00133
-GO:0008582	regulation of synaptic growth at neuromu...	105	8	2.58	0.00418
-GO:0000132	establishment of mitotic spindle orienta...	16	3	0.39	0.00647
-GO:0000959	mitochondrial RNA metabolic process	16	3	0.39	0.00647
-GO:0045214	sarcomere organization	33	4	0.81	0.00829
+GO:0017148	negative regulation of translation	34	5	0.84	0.0013
+GO:0000956	nuclear-transcribed mRNA catabolic proce...	53	6	1.3	0.0018
+GO:0008582	regulation of synaptic growth at neuromu...	105	8	2.58	0.0042
+GO:0030951	establishment or maintenance of microtub...	29	4	0.71	0.0052
+GO:0016072	rRNA metabolic process	134	9	3.3	0.0056
+GO:0000132	establishment of mitotic spindle orienta...	16	3	0.39	0.0065
+GO:0000959	mitochondrial RNA metabolic process	16	3	0.39	0.0065
+GO:0008033	tRNA processing	51	7	1.25	0.0073
+GO:0045214	sarcomere organization	33	4	0.81	0.0083
+GO:0031503	protein-containing complex localization	72	6	1.77	0.0083
+GO:0006400	tRNA modification	34	4	0.84	0.0092
+GO:0007293	germarium-derived egg chamber formation	75	6	1.84	0.0101
+GO:0000184	nuclear-transcribed mRNA catabolic proce...	19	3	0.47	0.0106
+GO:0007076	mitotic chromosome condensation	20	3	0.49	0.0123
+GO:0033036	macromolecule localization	706	27	17.36	0.0131
+GO:0001510	RNA methylation	38	4	0.93	0.0136
+GO:0072384	organelle transport along microtubule	21	3	0.52	0.0140
+GO:0032508	DNA duplex unwinding	60	5	1.48	0.0156
+GO:0098930	axonal transport	22	3	0.54	0.0160
+GO:0051668	localization within membrane	22	3	0.54	0.0160
+GO:0000724	double-strand break repair via homologou...	40	4	0.98	0.0162
+GO:0032392	DNA geometric change	61	5	1.5	0.0167
+GO:0034470	ncRNA processing	192	15	4.72	0.0189
+GO:0000725	recombinational repair	42	4	1.03	0.0191
+GO:0007297	ovarian follicle cell migration	112	7	2.75	0.0201
+GO:0006302	double-strand break repair	64	5	1.57	0.0201
+GO:0030261	chromosome condensation	43	4	1.06	0.0207
+GO:0006399	tRNA metabolic process	98	11	2.41	0.0249
+GO:0007614	short-term memory	26	3	0.64	0.0251
+GO:0071103	DNA conformation change	144	8	3.54	0.0253
+GO:0008104	protein localization	544	21	13.38	0.0254
+GO:0034622	cellular protein-containing complex asse...	354	15	8.71	0.0274
+GO:1900076	regulation of cellular response to insul...	27	3	0.66	0.0277
+GO:0046626	regulation of insulin receptor signaling...	27	3	0.66	0.0277
+GO:0007613	memory	95	6	2.34	0.0292
+GO:0016070	RNA metabolic process	1439	55	35.39	0.0300
+GO:0055059	asymmetric neuroblast division	28	3	0.69	0.0305
+GO:0019219	regulation of nucleobase-containing comp...	970	33	23.86	0.0307
+GO:0006401	RNA catabolic process	82	9	2.02	0.0312
+GO:0070925	organelle assembly	275	15	6.76	0.0320
+GO:0071427	mRNA-containing ribonucleoprotein comple...	29	3	0.71	0.0334
+GO:0045595	regulation of cell differentiation	301	13	7.4	0.0340
+GO:0006281	DNA repair	181	9	4.45	0.0341
+GO:0060284	regulation of cell development	242	11	5.95	0.0359
+GO:0007051	spindle organization	100	6	2.46	0.0362
+GO:0055057	neuroblast division	30	3	0.74	0.0365
+GO:0036445	neuronal stem cell division	30	3	0.74	0.0365
+GO:0009994	oocyte differentiation	127	7	3.12	0.0367
+GO:0006520	cellular amino acid metabolic process	155	8	3.81	0.0369
+GO:0016319	mushroom body development	52	4	1.28	0.0383
+GO:0043414	macromolecule methylation	102	6	2.51	0.0393
+GO:0045887	positive regulation of synaptic growth a...	31	3	0.76	0.0397
+GO:0140053	mitochondrial gene expression	53	4	1.3	0.0407
+GO:0006402	mRNA catabolic process	67	8	1.65	0.0429
+GO:0008088	axo-dendritic transport	32	3	0.79	0.0430
+GO:0046128	purine ribonucleoside metabolic process	32	3	0.79	0.0430
+GO:1904398	positive regulation of neuromuscular jun...	32	3	0.79	0.0430
+GO:0006405	RNA export from nucleus	54	4	1.33	0.0431
+GO:0006974	cellular response to DNA damage stimulus	220	10	5.41	0.0444
+GO:0010970	transport along microtubule	55	4	1.35	0.0457
+GO:0051225	spindle assembly	55	4	1.35	0.0457
+GO:0010467	gene expression	1696	61	41.71	0.0468
+GO:0099111	microtubule-based transport	56	4	1.38	0.0483
+GO:0007611	learning or memory	135	7	3.32	0.0484
+GO:0060255	regulation of macromolecule metabolic pr...	1436	50	35.32	0.0487
+GO:0022603	regulation of anatomical structure morph...	224	10	5.51	0.0491

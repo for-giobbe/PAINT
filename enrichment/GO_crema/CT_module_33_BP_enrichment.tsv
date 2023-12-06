@@ -1,1 +1,5 @@
 GO.ID	Term	Annotated	Significant	Expected	test
+GO:0007186	G protein-coupled receptor signaling pat...	160	2	0.23	0.020
+GO:0007229	integrin-mediated signaling pathway	23	1	0.03	0.032
+GO:0000288	nuclear-transcribed mRNA catabolic proce...	27	1	0.04	0.038
+GO:0007218	neuropeptide signaling pathway	35	1	0.05	0.048

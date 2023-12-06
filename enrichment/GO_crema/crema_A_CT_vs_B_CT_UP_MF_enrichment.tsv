@@ -1,0 +1,7 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0102337	3-oxo-cerotoyl-CoA synthase activity	10	2	0.05	0.00094
+GO:0102338	3-oxo-lignoceronyl-CoA synthase activity	10	2	0.05	0.00094
+GO:0009922	fatty acid elongase activity	11	2	0.05	0.00115
+GO:0016790	thiolester hydrolase activity	11	2	0.05	0.00115
+GO:0102336	3-oxo-arachidoyl-CoA synthase activity	11	2	0.05	0.00115
+GO:0102756	very-long-chain 3-ketoacyl-CoA synthase ...	11	2	0.05	0.00115

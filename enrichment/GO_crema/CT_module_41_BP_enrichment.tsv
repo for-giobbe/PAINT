@@ -1,44 +1,220 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0042273	ribosomal large subunit biogenesis	45	15	5.25	0.00010
-GO:0098534	centriole assembly	20	9	2.33	0.00019
-GO:0034968	histone lysine methylation	38	13	4.43	0.00022
-GO:0006342	chromatin silencing	80	21	9.33	0.00024
-GO:0016071	mRNA metabolic process	290	58	33.82	0.00027
+GO:0006397	mRNA processing	222	44	25.89	0.00024
+GO:0050808	synapse organization	240	51	27.99	0.00026
+GO:0070868	heterochromatin organization involved in...	21	9	2.45	0.00030
 GO:0046627	negative regulation of insulin receptor ...	17	8	1.98	0.00031
-GO:0007615	anesthesia-resistant memory	10	6	1.17	0.00034
 GO:1900073	regulation of neuromuscular synaptic tra...	26	10	3.03	0.00040
-GO:0007416	synapse assembly	152	32	17.72	0.00042
-GO:0031047	gene silencing by RNA	56	16	6.53	0.00046
+GO:0007613	memory	95	23	11.08	0.00044
 GO:0016322	neuron remodeling	46	14	5.36	0.00051
-GO:0000460	maturation of 5.8S rRNA	23	9	2.68	0.00068
-GO:0018210	peptidyl-threonine modification	19	8	2.22	0.00077
-GO:0060811	intracellular mRNA localization involved...	53	15	6.18	0.00077
+GO:0035556	intracellular signal transduction	497	91	57.95	0.00054
+GO:0010468	regulation of gene expression	1101	187	128.39	0.00056
+GO:0051298	centrosome duplication	28	13	3.27	0.00066
+GO:0031056	regulation of histone modification	37	12	4.31	0.00067
 GO:0045448	mitotic cell cycle, embryonic	28	10	3.27	0.00080
-GO:0044087	regulation of cellular component biogene...	250	49	29.15	0.00124
-GO:0010468	regulation of gene expression	1101	187	128.39	0.00124
-GO:0099518	vesicle cytoskeletal trafficking	16	7	1.87	0.00126
+GO:0048675	axon extension	49	14	5.71	0.00103
+GO:0007269	neurotransmitter secretion	73	22	8.51	0.00110
+GO:0006281	DNA repair	181	43	21.11	0.00125
 GO:0033301	cell cycle comprising mitosis without cy...	16	7	1.87	0.00126
-GO:0035825	homologous recombination	25	9	2.92	0.00138
-GO:0034332	adherens junction organization	31	10	3.61	0.00196
-GO:0042461	photoreceptor cell development	93	21	10.84	0.00198
-GO:0006281	DNA repair	181	43	21.11	0.00205
-GO:0071359	cellular response to dsRNA	13	6	1.52	0.00205
-GO:0048512	circadian behavior	88	19	10.26	0.00268
-GO:1903530	regulation of secretion by cell	66	19	7.7	0.00273
+GO:0099518	vesicle cytoskeletal trafficking	16	7	1.87	0.00126
+GO:0048489	synaptic vesicle transport	67	17	7.81	0.00136
+GO:0051276	chromosome organization	469	102	54.69	0.00183
+GO:0035194	posttranscriptional gene silencing by RN...	41	12	4.78	0.00185
+GO:0019935	cyclic-nucleotide-mediated signaling	26	9	3.03	0.00189
+GO:0007099	centriole replication	17	7	1.98	0.00193
+GO:0048488	synaptic vesicle endocytosis	37	11	4.31	0.00247
+GO:1903429	regulation of cell maturation	32	10	3.73	0.00256
+GO:0046928	regulation of neurotransmitter secretion	18	7	2.1	0.00285
+GO:0000466	maturation of 5.8S rRNA from tricistroni...	18	7	2.1	0.00285
+GO:0019094	pole plasm mRNA localization	43	12	5.01	0.00288
 GO:0032508	DNA duplex unwinding	60	15	7	0.00300
 GO:0045132	meiotic chromosome segregation	38	11	4.43	0.00312
+GO:0099504	synaptic vesicle cycle	92	25	10.73	0.00317
 GO:0017156	calcium ion regulated exocytosis	49	13	5.71	0.00320
-GO:0009187	cyclic nucleotide metabolic process	24	7	2.8	0.00324
+GO:0008283	cell proliferation	273	47	31.83	0.00357
 GO:0006338	chromatin remodeling	73	17	8.51	0.00366
+GO:0051568	histone H3-K4 methylation	19	7	2.22	0.00406
+GO:0045475	locomotor rhythm	56	14	6.53	0.00408
+GO:0007131	reciprocal meiotic recombination	24	8	2.8	0.00439
+GO:0051640	organelle localization	187	43	21.81	0.00470
+GO:0050794	regulation of cellular process	2774	427	323.47	0.00482
+GO:0018107	peptidyl-threonine phosphorylation	15	6	1.75	0.00487
 GO:0030178	negative regulation of Wnt signaling pat...	35	10	4.08	0.00528
-GO:0050808	synapse organization	240	51	27.99	0.00537
-GO:0060402	calcium ion transport into cytosol	11	5	1.28	0.00538
-GO:0061564	axon development	301	53	35.1	0.00544
+GO:0007281	germ cell development	522	91	60.87	0.00538
+GO:0042273	ribosomal large subunit biogenesis	45	15	5.25	0.00561
+GO:0000470	maturation of LSU-rRNA	20	7	2.33	0.00563
 GO:0045433	male courtship behavior, veined wing gen...	20	7	2.33	0.00563
+GO:0006354	DNA-templated transcription, elongation	30	9	3.5	0.00564
+GO:0016070	RNA metabolic process	1439	242	167.8	0.00602
+GO:0008380	RNA splicing	189	34	22.04	0.00621
 GO:0007298	border follicle cell migration	102	21	11.89	0.00629
+GO:0032196	transposition	122	24	14.23	0.00662
+GO:2000026	regulation of multicellular organismal d...	442	75	51.54	0.00692
+GO:0051924	regulation of calcium ion transport	16	6	1.87	0.00704
 GO:0007143	female meiotic nuclear division	31	9	3.61	0.00714
-GO:0006959	humoral immune response	59	11	6.88	0.00760
+GO:0031935	regulation of chromatin silencing	26	8	3.03	0.00755
+GO:0030010	establishment of cell polarity	48	12	5.6	0.00759
+GO:1902115	regulation of organelle assembly	21	7	2.45	0.00762
 GO:0072384	organelle transport along microtubule	21	7	2.45	0.00762
-GO:0048609	multicellular organismal reproductive pr...	737	131	85.94	0.00779
-GO:0007611	learning or memory	135	30	15.74	0.00837
+GO:0031503	protein-containing complex localization	72	16	8.4	0.00764
+GO:0051252	regulation of RNA metabolic process	923	152	107.63	0.00790
+GO:0045892	negative regulation of transcription, DN...	261	54	30.43	0.00848
+GO:0008582	regulation of synaptic growth at neuromu...	105	21	12.24	0.00883
+GO:0043269	regulation of ion transport	59	20	6.88	0.00931
+GO:0051129	negative regulation of cellular componen...	139	26	16.21	0.00947
+GO:0017157	regulation of exocytosis	27	8	3.15	0.00966
+GO:0019722	calcium-mediated signaling	27	8	3.15	0.00966
+GO:0018205	peptidyl-lysine modification	119	27	13.88	0.00982
+GO:0034333	adherens junction assembly	17	6	1.98	0.00983
+GO:0045467	R7 cell development	17	6	1.98	0.00983
+GO:0007204	positive regulation of cytosolic calcium...	17	6	1.98	0.00983
 GO:0051091	positive regulation of DNA-binding trans...	17	6	1.98	0.00983
+GO:0016246	RNA interference	22	7	2.57	0.01007
+GO:0048232	male gamete generation	196	34	22.86	0.01084
+GO:0043044	ATP-dependent chromatin remodeling	33	9	3.85	0.01104
+GO:0007617	mating behavior	89	22	10.38	0.01123
+GO:0031023	microtubule organizing center organizati...	56	21	6.53	0.01136
+GO:0000070	mitotic sister chromatid segregation	75	16	8.75	0.01138
+GO:0019098	reproductive behavior	102	24	11.89	0.01166
+GO:0000398	mRNA splicing, via spliceosome	162	29	18.89	0.01172
+GO:0051304	chromosome separation	39	10	4.55	0.01189
+GO:0007098	centrosome cycle	51	20	5.95	0.01225
+GO:1903311	regulation of mRNA metabolic process	76	16	8.86	0.01290
+GO:0007294	germarium-derived oocyte fate determinat...	23	7	2.68	0.01305
+GO:0010501	RNA secondary structure unwinding	23	7	2.68	0.01305
+GO:0051726	regulation of cell cycle	249	41	29.04	0.01328
+GO:2000756	regulation of peptidyl-lysine acetylatio...	18	6	2.1	0.01332
+GO:0040013	negative regulation of locomotion	18	6	2.1	0.01332
+GO:0035065	regulation of histone acetylation	18	6	2.1	0.01332
+GO:1901983	regulation of protein acetylation	18	6	2.1	0.01332
+GO:0031060	regulation of histone methylation	18	6	2.1	0.01332
+GO:0007315	pole plasm assembly	52	16	6.06	0.01386
+GO:0051656	establishment of organelle localization	151	36	17.61	0.01411
+GO:0045451	pole plasm oskar mRNA localization	40	10	4.66	0.01424
+GO:0050684	regulation of mRNA processing	58	13	6.76	0.01432
+GO:0016079	synaptic vesicle exocytosis	46	11	5.36	0.01455
+GO:0030716	oocyte fate determination	29	8	3.38	0.01514
+GO:0007416	synapse assembly	152	32	17.72	0.01582
+GO:0040012	regulation of locomotion	78	16	9.1	0.01643
+GO:0007187	G protein-coupled receptor signaling pat...	24	7	2.8	0.01662
+GO:0009187	cyclic nucleotide metabolic process	24	7	2.8	0.01662
+GO:0007028	cytoplasm organization	57	17	6.65	0.01672
+GO:0000956	nuclear-transcribed mRNA catabolic proce...	53	12	6.18	0.01688
+GO:0032886	regulation of microtubule-based process	47	11	5.48	0.01706
+GO:0034968	histone lysine methylation	38	13	4.43	0.01712
+GO:0010608	posttranscriptional regulation of gene e...	140	31	16.33	0.01731
+GO:0000375	RNA splicing, via transesterification re...	167	29	19.47	0.01747
+GO:0000377	RNA splicing, via transesterification re...	167	29	19.47	0.01747
+GO:0051960	regulation of nervous system development	281	51	32.77	0.01756
+GO:1904580	regulation of intracellular mRNA localiz...	19	6	2.22	0.01759
+GO:0007317	regulation of pole plasm oskar mRNA loca...	19	6	2.22	0.01759
+GO:0060281	regulation of oocyte development	19	6	2.22	0.01759
+GO:0032784	regulation of DNA-templated transcriptio...	19	6	2.22	0.01759
+GO:0000184	nuclear-transcribed mRNA catabolic proce...	19	6	2.22	0.01759
+GO:0016071	mRNA metabolic process	290	58	33.82	0.01934
+GO:0000819	sister chromatid segregation	86	17	10.03	0.01941
+GO:0070588	calcium ion transmembrane transport	54	12	6.3	0.01947
+GO:0035335	peptidyl-tyrosine dephosphorylation	36	9	4.2	0.01961
+GO:0001745	compound eye morphogenesis	237	42	27.64	0.01988
+GO:0070507	regulation of microtubule cytoskeleton o...	42	10	4.9	0.01997
+GO:0006368	transcription elongation from RNA polyme...	25	7	2.92	0.02082
+GO:0006814	sodium ion transport	61	13	7.11	0.02150
+GO:0043933	protein-containing complex subunit organ...	492	72	57.37	0.02214
+GO:0060179	male mating behavior	69	18	8.05	0.02216
+GO:0045664	regulation of neuron differentiation	149	26	17.37	0.02226
+GO:0042493	response to drug	142	25	16.56	0.02229
+GO:0048749	compound eye development	298	50	34.75	0.02235
+GO:0050767	regulation of neurogenesis	192	32	22.39	0.02269
+GO:0040001	establishment of mitotic spindle localiz...	20	6	2.33	0.02271
+GO:0048134	germ-line cyst formation	20	6	2.33	0.02271
+GO:0009451	RNA modification	81	16	9.45	0.02306
+GO:0070988	demethylation	15	5	1.75	0.02353
+GO:0010977	negative regulation of neuron projection...	15	5	1.75	0.02353
+GO:0098693	regulation of synaptic vesicle cycle	15	5	1.75	0.02353
+GO:0070897	transcription preinitiation complex asse...	15	5	1.75	0.02353
+GO:0034243	regulation of transcription elongation f...	15	5	1.75	0.02353
+GO:1903305	regulation of regulated secretory pathwa...	15	5	1.75	0.02353
+GO:0051246	regulation of protein metabolic process	497	79	57.95	0.02439
+GO:0048592	eye morphogenesis	255	44	29.73	0.02445
+GO:0006417	regulation of translation	95	18	11.08	0.02470
+GO:0045595	regulation of cell differentiation	301	52	35.1	0.02526
+GO:0006935	chemotaxis	245	39	28.57	0.02562
+GO:0007614	short-term memory	26	7	3.03	0.02571
+GO:0030706	germarium-derived oocyte differentiation	26	7	3.03	0.02571
+GO:0090090	negative regulation of canonical Wnt sig...	26	7	3.03	0.02571
+GO:0090596	sensory organ morphogenesis	256	44	29.85	0.02596
+GO:0097485	neuron projection guidance	238	38	27.75	0.02619
+GO:0042461	photoreceptor cell development	93	21	10.84	0.02637
+GO:0018209	peptidyl-serine modification	44	10	5.13	0.02723
+GO:0007059	chromosome segregation	128	28	14.93	0.02735
+GO:0060341	regulation of cellular localization	115	25	13.41	0.02838
+GO:0048609	multicellular organismal reproductive pr...	737	131	85.94	0.02838
+GO:0007411	axon guidance	232	37	27.05	0.02842
+GO:0007618	mating	97	22	11.31	0.02919
+GO:0042462	eye photoreceptor cell development	81	19	9.45	0.03000
+GO:0007314	oocyte anterior/posterior axis specifica...	70	19	8.16	0.03005
+GO:0031326	regulation of cellular biosynthetic proc...	991	156	115.56	0.03009
+GO:0010959	regulation of metal ion transport	32	11	3.73	0.03042
+GO:0000132	establishment of mitotic spindle orienta...	16	5	1.87	0.03102
+GO:0000288	nuclear-transcribed mRNA catabolic proce...	27	7	3.15	0.03133
+GO:0048167	regulation of synaptic plasticity	27	7	3.15	0.03133
+GO:0045786	negative regulation of cell cycle	84	16	9.8	0.03153
+GO:0048880	sensory system development	335	54	39.06	0.03202
+GO:0070192	chromosome organization involved in meio...	33	8	3.85	0.03227
+GO:0032879	regulation of localization	390	76	45.48	0.03298
+GO:0061564	axon development	301	53	35.1	0.03310
+GO:0006313	transposition, DNA-mediated	112	20	13.06	0.03336
+GO:0048518	positive regulation of biological proces...	1132	154	132	0.03391
+GO:0001754	eye photoreceptor cell differentiation	144	28	16.79	0.03444
+GO:0016319	mushroom body development	52	11	6.06	0.03463
+GO:0007351	tripartite regional subdivision	102	24	11.89	0.03501
+GO:0035195	gene silencing by miRNA	22	6	2.57	0.03575
+GO:1902875	regulation of embryonic pattern specific...	22	6	2.57	0.03575
+GO:0007188	adenylate cyclase-modulating G protein-c...	22	6	2.57	0.03575
+GO:0099174	regulation of presynapse organization	22	6	2.57	0.03575
+GO:1903047	mitotic cell cycle process	251	39	29.27	0.03599
+GO:0008285	negative regulation of cell proliferatio...	72	14	8.4	0.03638
+GO:0001654	eye development	330	53	38.48	0.03639
+GO:0099643	signal release from synapse	76	24	8.86	0.03641
+GO:0016571	histone methylation	47	14	5.48	0.03668
+GO:0009948	anterior/posterior axis specification	109	25	12.71	0.03670
+GO:0097479	synaptic vesicle localization	70	19	8.16	0.03678
+GO:0007616	long-term memory	59	12	6.88	0.03709
+GO:0098534	centriole assembly	20	9	2.33	0.03715
+GO:0098916	anterograde trans-synaptic signaling	243	53	28.34	0.03733
+GO:0097190	apoptotic signaling pathway	40	9	4.66	0.03741
+GO:0030490	maturation of SSU-rRNA	40	9	4.66	0.03741
+GO:0048522	positive regulation of cellular process	1024	137	119.41	0.03755
+GO:0150063	visual system development	331	53	38.6	0.03819
+GO:0006323	DNA packaging	86	16	10.03	0.03833
+GO:0010556	regulation of macromolecule biosynthetic...	966	152	112.64	0.03891
+GO:0009889	regulation of biosynthetic process	999	156	116.49	0.03893
+GO:2000112	regulation of cellular macromolecule bio...	958	151	111.71	0.03920
+GO:0031345	negative regulation of cell projection o...	17	5	1.98	0.03985
+GO:0019933	cAMP-mediated signaling	17	5	1.98	0.03985
+GO:0099537	trans-synaptic signaling	244	53	28.45	0.04000
+GO:0007528	neuromuscular junction development	159	32	18.54	0.04145
+GO:0006396	RNA processing	432	82	50.37	0.04157
+GO:0032268	regulation of cellular protein metabolic...	463	73	53.99	0.04160
+GO:0018022	peptidyl-lysine methylation	42	13	4.9	0.04269
+GO:0099536	synaptic signaling	245	53	28.57	0.04280
+GO:0033044	regulation of chromosome organization	110	30	12.83	0.04289
+GO:0006403	RNA localization	152	31	17.72	0.04312
+GO:0008358	maternal determination of anterior/poste...	72	19	8.4	0.04314
+GO:0006402	mRNA catabolic process	67	13	7.81	0.04341
+GO:0099172	presynapse organization	35	8	4.08	0.04447
+GO:0072089	stem cell proliferation	74	14	8.63	0.04469
+GO:1905269	positive regulation of chromatin organiz...	29	7	3.38	0.04490
+GO:0007619	courtship behavior	68	17	7.93	0.04548
+GO:0044087	regulation of cellular component biogene...	250	49	29.15	0.04568
+GO:0140014	mitotic nuclear division	116	20	13.53	0.04616
+GO:0014070	response to organic cyclic compound	95	17	11.08	0.04643
+GO:0043085	positive regulation of catalytic activit...	226	35	26.35	0.04705
+GO:0016569	covalent chromatin modification	159	35	18.54	0.04876
+GO:0007186	G protein-coupled receptor signaling pat...	160	26	18.66	0.04879
+GO:0044093	positive regulation of molecular functio...	260	43	30.32	0.04911
+GO:0007293	germarium-derived egg chamber formation	75	14	8.75	0.04930
+GO:0051028	mRNA transport	42	9	4.9	0.04949
+GO:0071426	ribonucleoprotein complex export from nu...	42	9	4.9	0.04949
+GO:0071166	ribonucleoprotein complex localization	42	9	4.9	0.04949
+GO:1901699	cellular response to nitrogen compound	79	20	9.21	0.04951
+GO:0007140	male meiotic nuclear division	55	11	6.41	0.04984

@@ -1,18 +1,82 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0045727	positive regulation of translation	34	6	0.81	0.00013
-GO:0034249	negative regulation of cellular amide me...	37	6	0.88	0.00021
-GO:0044057	regulation of system process	50	6	1.19	0.00086
 GO:0008306	associative learning	48	6	1.15	0.00091
+GO:0008298	intracellular mRNA localization	67	7	1.6	0.00102
+GO:0044057	regulation of system process	50	6	1.19	0.00113
+GO:0017148	negative regulation of translation	34	5	0.81	0.00116
 GO:0006378	mRNA polyadenylation	21	4	0.5	0.00137
-GO:0008298	intracellular mRNA localization	67	7	1.6	0.00187
-GO:0046011	regulation of oskar mRNA translation	11	3	0.26	0.00192
-GO:0042133	neurotransmitter metabolic process	38	5	0.91	0.00194
-GO:0001775	cell activation	12	3	0.29	0.00251
+GO:0042136	neurotransmitter biosynthetic process	23	4	0.55	0.00195
 GO:0005977	glycogen metabolic process	25	4	0.6	0.00268
 GO:0009566	fertilization	26	4	0.62	0.00311
 GO:0045886	negative regulation of synaptic growth a...	46	5	1.1	0.00455
 GO:0007283	spermatogenesis	159	10	3.8	0.00463
 GO:0007143	female meiotic nuclear division	31	4	0.74	0.00598
 GO:0048678	response to axon injury	17	3	0.41	0.00712
+GO:0051301	cell division	256	13	6.12	0.00810
+GO:0007049	cell cycle	580	26	13.85	0.00879
 GO:0006936	muscle contraction	19	3	0.45	0.00979
 GO:0061013	regulation of mRNA catabolic process	19	3	0.45	0.00979
+GO:0009994	oocyte differentiation	127	8	3.03	0.01084
+GO:0034728	nucleosome organization	57	5	1.36	0.01127
+GO:0048134	germ-line cyst formation	20	3	0.48	0.01132
+GO:0007632	visual behavior	21	3	0.5	0.01298
+GO:0055072	iron ion homeostasis	21	3	0.5	0.01298
+GO:0065004	protein-DNA complex assembly	60	5	1.43	0.01389
+GO:0007354	zygotic determination of anterior/poster...	22	3	0.53	0.01477
+GO:0035601	protein deacylation	22	3	0.53	0.01477
+GO:0007338	single fertilization	22	3	0.53	0.01477
+GO:0002777	antimicrobial peptide biosynthetic proce...	22	3	0.53	0.01477
+GO:0002805	regulation of antimicrobial peptide bios...	22	3	0.53	0.01477
+GO:0009948	anterior/posterior axis specification	109	7	2.6	0.01520
+GO:0051707	response to other organism	162	9	3.87	0.01529
+GO:0043207	response to external biotic stimulus	162	9	3.87	0.01529
+GO:0006323	DNA packaging	86	6	2.05	0.01657
+GO:0098732	macromolecule deacylation	23	3	0.55	0.01669
+GO:0048599	oocyte development	112	7	2.68	0.01742
+GO:0008652	cellular amino acid biosynthetic process	43	4	1.03	0.01880
+GO:0009798	axis specification	141	8	3.37	0.01936
+GO:0002697	regulation of immune effector process	44	4	1.05	0.02030
+GO:0071824	protein-DNA complex subunit organization	90	6	2.15	0.02030
+GO:0009607	response to biotic stimulus	170	9	4.06	0.02031
+GO:0046916	cellular transition metal ion homeostasi...	25	3	0.6	0.02094
+GO:0050776	regulation of immune response	68	5	1.62	0.02279
+GO:0003002	regionalization	357	15	8.53	0.02326
+GO:0006333	chromatin assembly or disassembly	46	4	1.1	0.02353
+GO:0022402	cell cycle process	399	19	9.53	0.02527
+GO:0032502	developmental process	1986	62	47.44	0.02535
+GO:0009410	response to xenobiotic stimulus	27	3	0.64	0.02572
+GO:0000288	nuclear-transcribed mRNA catabolic proce...	27	3	0.64	0.02572
+GO:0019222	regulation of metabolic process	1531	53	36.57	0.02596
+GO:0016573	histone acetylation	71	5	1.7	0.02690
+GO:0048469	cell maturation	151	8	3.61	0.02784
+GO:0009605	response to external stimulus	637	23	15.22	0.02886
+GO:0002831	regulation of response to biotic stimulu...	49	4	1.17	0.02892
+GO:0010564	regulation of cell cycle process	125	7	2.99	0.02972
+GO:0006475	internal protein amino acid acetylation	73	5	1.74	0.02989
+GO:0018393	internal peptidyl-lysine acetylation	73	5	1.74	0.02989
+GO:0018394	peptidyl-lysine acetylation	73	5	1.74	0.02989
+GO:0009112	nucleobase metabolic process	29	3	0.69	0.03104
+GO:0050805	negative regulation of synaptic transmis...	29	3	0.69	0.03104
+GO:0006997	nucleus organization	51	4	1.22	0.03290
+GO:0007059	chromosome segregation	128	7	3.06	0.03322
+GO:0008595	anterior/posterior axis specification, e...	101	6	2.41	0.03344
+GO:0006473	protein acetylation	76	5	1.82	0.03475
+GO:0007351	tripartite regional subdivision	102	6	2.44	0.03485
+GO:0045787	positive regulation of cell cycle	52	4	1.24	0.03500
+GO:1903047	mitotic cell cycle process	251	11	6	0.03759
+GO:0006793	phosphorus metabolic process	980	32	23.41	0.03813
+GO:0007389	pattern specification process	383	15	9.15	0.03989
+GO:0000578	embryonic axis specification	106	6	2.53	0.04089
+GO:0048856	anatomical structure development	1918	59	45.82	0.04167
+GO:0030154	cell differentiation	1287	40	30.74	0.04180
+GO:0002252	immune effector process	80	5	1.91	0.04195
+GO:0007281	germ cell development	522	19	12.47	0.04228
+GO:0035282	segmentation	195	9	4.66	0.04356
+GO:0002784	regulation of antimicrobial peptide prod...	34	3	0.81	0.04665
+GO:0002700	regulation of production of molecular me...	34	3	0.81	0.04665
+GO:0009952	anterior/posterior pattern specification	138	7	3.3	0.04686
+GO:0007549	dosage compensation	15	2	0.36	0.04858
+GO:0048135	female germ-line cyst formation	15	2	0.36	0.04858
+GO:1903036	positive regulation of response to wound...	15	2	0.36	0.04858
+GO:0043094	cellular metabolic compound salvage	15	2	0.36	0.04858
+GO:0098542	defense response to other organism	111	6	2.65	0.04932

@@ -1,1 +1,43 @@
 GO.ID	Term	Annotated	Significant	Expected	test
+GO:0042752	regulation of circadian rhythm	67	2	0.09	0.0038
+GO:0030431	sleep	70	2	0.1	0.0041
+GO:0048512	circadian behavior	88	2	0.12	0.0065
+GO:0006508	proteolysis	679	4	0.96	0.0110
+GO:0048521	negative regulation of behavior	15	1	0.02	0.0210
+GO:1901616	organic hydroxy compound catabolic proce...	16	1	0.02	0.0224
+GO:0019933	cAMP-mediated signaling	17	1	0.02	0.0238
+GO:0034314	Arp2/3 complex-mediated actin nucleation	17	1	0.02	0.0238
+GO:0051241	negative regulation of multicellular org...	179	2	0.25	0.0251
+GO:0040018	positive regulation of multicellular org...	19	1	0.03	0.0265
+GO:0046580	negative regulation of Ras protein signa...	21	1	0.03	0.0293
+GO:0051058	negative regulation of small GTPase medi...	22	1	0.03	0.0307
+GO:0006641	triglyceride metabolic process	22	1	0.03	0.0307
+GO:0044275	cellular carbohydrate catabolic process	23	1	0.03	0.0321
+GO:0016059	deactivation of rhodopsin mediated signa...	23	1	0.03	0.0321
+GO:0045010	actin nucleation	23	1	0.03	0.0321
+GO:0022400	regulation of rhodopsin mediated signali...	24	1	0.03	0.0334
+GO:0006511	ubiquitin-dependent protein catabolic pr...	218	2	0.31	0.0361
+GO:0007614	short-term memory	26	1	0.04	0.0362
+GO:0019935	cyclic-nucleotide-mediated signaling	26	1	0.04	0.0362
+GO:0006638	neutral lipid metabolic process	28	1	0.04	0.0389
+GO:0006639	acylglycerol metabolic process	28	1	0.04	0.0389
+GO:0016056	rhodopsin mediated signaling pathway	28	1	0.04	0.0389
+GO:0019941	modification-dependent protein catabolic...	227	2	0.32	0.0389
+GO:0045187	regulation of circadian sleep/wake cycle...	29	1	0.04	0.0403
+GO:0008277	regulation of G protein-coupled receptor...	29	1	0.04	0.0403
+GO:0050805	negative regulation of synaptic transmis...	29	1	0.04	0.0403
+GO:0032259	methylation	232	2	0.33	0.0405
+GO:0043632	modification-dependent macromolecule cat...	235	2	0.33	0.0415
+GO:0007603	phototransduction, visible light	31	1	0.04	0.0430
+GO:0051603	proteolysis involved in cellular protein...	242	2	0.34	0.0437
+GO:0042749	regulation of circadian sleep/wake cycle	32	1	0.05	0.0443
+GO:0050802	circadian sleep/wake cycle, sleep	32	1	0.05	0.0443
+GO:0044257	cellular protein catabolic process	246	2	0.35	0.0451
+GO:0040014	regulation of multicellular organism gro...	33	1	0.05	0.0457
+GO:0044087	regulation of cellular component biogene...	250	2	0.35	0.0464
+GO:0022410	circadian sleep/wake cycle process	34	1	0.05	0.0471
+GO:0031146	SCF-dependent proteasomal ubiquitin-depe...	34	1	0.05	0.0471
+GO:0030838	positive regulation of actin filament po...	35	1	0.05	0.0484
+GO:0035264	multicellular organism growth	36	1	0.05	0.0498
+GO:0008355	olfactory learning	36	1	0.05	0.0498
+GO:0019751	polyol metabolic process	36	1	0.05	0.0498

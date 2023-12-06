@@ -2,3 +2,23 @@ GO.ID	Term	Annotated	Significant	Expected	test
 GO:0018991	oviposition	16	2	0.09	0.0039
 GO:0046785	microtubule polymerization	18	2	0.11	0.0050
 GO:0007188	adenylate cyclase-modulating G protein-c...	22	2	0.13	0.0074
+GO:0008356	asymmetric cell division	80	3	0.47	0.0116
+GO:1901564	organonitrogen compound metabolic proces...	2349	21	13.94	0.0175
+GO:0120192	tight junction assembly	39	2	0.23	0.0222
+GO:0120193	tight junction organization	39	2	0.23	0.0222
+GO:0071482	cellular response to light stimulus	41	2	0.24	0.0244
+GO:0036465	synaptic vesicle recycling	42	2	0.25	0.0255
+GO:0032446	protein modification by small protein co...	192	4	1.14	0.0263
+GO:0043297	apical junction assembly	46	2	0.27	0.0302
+GO:0046620	regulation of organ growth	48	2	0.28	0.0327
+GO:0009913	epidermal cell differentiation	50	2	0.3	0.0352
+GO:0071478	cellular response to radiation	51	2	0.3	0.0365
+GO:0030534	adult behavior	124	3	0.74	0.0367
+GO:0007043	cell-cell junction assembly	52	2	0.31	0.0378
+GO:0051345	positive regulation of hydrolase activit...	130	3	0.77	0.0414
+GO:0032271	regulation of protein polymerization	55	2	0.33	0.0419
+GO:0006508	proteolysis	679	8	4.03	0.0435
+GO:0034329	cell junction assembly	58	2	0.34	0.0461
+GO:0051052	regulation of DNA metabolic process	59	2	0.35	0.0476
+GO:0035265	organ growth	60	2	0.36	0.0490
+GO:0050795	regulation of behavior	60	2	0.36	0.0490

@@ -1,0 +1,5 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0006520	cellular amino acid metabolic process	133	4	0.31	0.00018
+GO:0019752	carboxylic acid metabolic process	289	5	0.66	0.00033
+GO:0006082	organic acid metabolic process	300	5	0.69	0.00039
+GO:0043436	oxoacid metabolic process	300	5	0.69	0.00039

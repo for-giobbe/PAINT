@@ -1,0 +1,10 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:1901607	alpha-amino acid biosynthetic process	29	2	0.02	0.00022
+GO:0008652	cellular amino acid biosynthetic process	33	2	0.03	0.00028
+GO:0019752	carboxylic acid metabolic process	289	3	0.24	0.00098
+GO:0006082	organic acid metabolic process	300	3	0.25	0.00110
+GO:0043436	oxoacid metabolic process	300	3	0.25	0.00110
+GO:1901605	alpha-amino acid metabolic process	76	2	0.06	0.00150
+GO:0055114	oxidation-reduction process	342	3	0.28	0.00161
+GO:0016053	organic acid biosynthetic process	111	2	0.09	0.00318
+GO:0046394	carboxylic acid biosynthetic process	111	2	0.09	0.00318

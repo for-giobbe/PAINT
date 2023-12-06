@@ -1,10 +1,37 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0046165	alcohol biosynthetic process	35	3	0.26	0.0021
-GO:0051181	cofactor transport	10	2	0.07	0.0023
-GO:0051123	RNA polymerase II preinitiation complex ...	10	2	0.07	0.0023
-GO:0001522	pseudouridine synthesis	11	2	0.08	0.0028
-GO:0006984	ER-nucleus signaling pathway	12	2	0.09	0.0033
+GO:1901566	organonitrogen compound biosynthetic pro...	766	13	5.63	0.0029
 GO:0045456	ecdysteroid biosynthetic process	15	2	0.11	0.0052
+GO:0070897	transcription preinitiation complex asse...	15	2	0.11	0.0052
+GO:1902653	secondary alcohol biosynthetic process	16	2	0.12	0.0060
 GO:0043967	histone H4 acetylation	16	2	0.12	0.0060
 GO:0000469	cleavage involved in rRNA processing	18	2	0.13	0.0075
 GO:0016126	sterol biosynthetic process	19	2	0.14	0.0084
+GO:0016246	RNA interference	22	2	0.16	0.0111
+GO:0000154	rRNA modification	23	2	0.17	0.0121
+GO:0051604	protein maturation	66	3	0.49	0.0124
+GO:0034976	response to endoplasmic reticulum stress	69	3	0.51	0.0140
+GO:0016073	snRNA metabolic process	25	2	0.18	0.0143
+GO:0008344	adult locomotory behavior	71	3	0.52	0.0151
+GO:0008299	isoprenoid biosynthetic process	27	2	0.2	0.0165
+GO:0044249	cellular biosynthetic process	2050	25	15.07	0.0180
+GO:0043043	peptide biosynthetic process	389	7	2.86	0.0227
+GO:0006508	proteolysis	679	10	4.99	0.0241
+GO:0019538	protein metabolic process	1900	22	13.96	0.0274
+GO:0043603	cellular amide metabolic process	499	8	3.67	0.0279
+GO:0006413	translational initiation	90	3	0.66	0.0281
+GO:0006720	isoprenoid metabolic process	37	2	0.27	0.0300
+GO:0043604	amide biosynthetic process	416	7	3.06	0.0313
+GO:0032543	mitochondrial translation	38	2	0.28	0.0315
+GO:0006955	immune response	167	4	1.23	0.0337
+GO:0006518	peptide metabolic process	428	7	3.15	0.0357
+GO:0007291	sperm individualization	41	2	0.3	0.0362
+GO:0035194	posttranscriptional gene silencing by RN...	41	2	0.3	0.0362
+GO:0045087	innate immune response	101	3	0.74	0.0377
+GO:0016441	posttranscriptional gene silencing	44	2	0.32	0.0412
+GO:0061136	regulation of proteasomal protein catabo...	45	2	0.33	0.0429
+GO:0060968	regulation of gene silencing	45	2	0.33	0.0429
+GO:0006367	transcription initiation from RNA polyme...	45	2	0.33	0.0429
+GO:0042273	ribosomal large subunit biogenesis	45	2	0.33	0.0429
+GO:0016485	protein processing	45	2	0.33	0.0429
+GO:0006644	phospholipid metabolic process	108	3	0.79	0.0446
+GO:0006412	translation	361	6	2.65	0.0477

@@ -1,6 +1,77 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0042220	response to cocaine	12	2	0.02	0.00024
-GO:0071479	cellular response to ionizing radiation	13	2	0.03	0.00028
 GO:0007562	eclosion	16	2	0.03	0.00043
+GO:0060359	response to ammonium ion	18	2	0.04	0.00055
+GO:0043279	response to alkaloid	19	2	0.04	0.00061
+GO:0072347	response to anesthetic	22	2	0.04	0.00082
+GO:1901700	response to oxygen-containing compound	243	4	0.48	0.00104
+GO:0009410	response to xenobiotic stimulus	27	2	0.05	0.00124
+GO:0010212	response to ionizing radiation	29	2	0.06	0.00143
+GO:0000077	DNA damage checkpoint	32	2	0.06	0.00174
 GO:0031349	positive regulation of defense response	34	2	0.07	0.00197
-GO:0048512	circadian behavior	88	3	0.17	0.00427
+GO:0032103	positive regulation of response to exter...	44	2	0.09	0.00328
+GO:0071478	cellular response to radiation	51	2	0.1	0.00439
+GO:1901617	organic hydroxy compound biosynthetic pr...	53	2	0.1	0.00473
+GO:0045475	locomotor rhythm	56	2	0.11	0.00527
+GO:0042303	molting cycle	69	2	0.14	0.00791
+GO:0031570	DNA integrity checkpoint	37	3	0.07	0.00849
+GO:0002066	columnar/cuboidal epithelial cell develo...	232	3	0.46	0.00969
+GO:0050954	sensory perception of mechanical stimulu...	78	2	0.15	0.01002
+GO:0048609	multicellular organismal reproductive pr...	737	5	1.46	0.01087
+GO:0032504	multicellular organism reproduction	758	5	1.5	0.01222
+GO:0009266	response to temperature stimulus	90	2	0.18	0.01319
+GO:0014070	response to organic cyclic compound	95	2	0.19	0.01462
+GO:0019098	reproductive behavior	102	2	0.2	0.01673
+GO:0022414	reproductive process	829	5	1.64	0.01765
+GO:0000003	reproduction	847	5	1.68	0.01926
+GO:0030534	adult behavior	124	2	0.25	0.02416
+GO:0000122	negative regulation of transcription by ...	132	2	0.26	0.02715
+GO:0048513	animal organ development	936	5	1.85	0.02869
+GO:0046173	polyol biosynthetic process	15	1	0.03	0.02930
+GO:0030856	regulation of epithelial cell differenti...	15	1	0.03	0.02930
+GO:1901616	organic hydroxy compound catabolic proce...	16	1	0.03	0.03123
+GO:0006576	cellular biogenic amine metabolic proces...	16	1	0.03	0.03123
+GO:0018991	oviposition	16	1	0.03	0.03123
+GO:0030518	intracellular steroid hormone receptor s...	16	1	0.03	0.03123
+GO:0003008	system process	642	4	1.27	0.03218
+GO:0051491	positive regulation of filopodium assemb...	17	1	0.03	0.03315
+GO:0046879	hormone secretion	18	1	0.04	0.03507
+GO:0009072	aromatic amino acid family metabolic pro...	18	1	0.04	0.03507
+GO:0046883	regulation of hormone secretion	18	1	0.04	0.03507
+GO:0006520	cellular amino acid metabolic process	155	2	0.31	0.03652
+GO:1902749	regulation of cell cycle G2/M phase tran...	19	1	0.04	0.03698
+GO:0010389	regulation of G2/M transition of mitotic...	19	1	0.04	0.03698
+GO:0050708	regulation of protein secretion	19	1	0.04	0.03698
+GO:0009914	hormone transport	19	1	0.04	0.03698
+GO:0120034	positive regulation of plasma membrane b...	20	1	0.04	0.03889
+GO:0002225	positive regulation of antimicrobial pep...	20	1	0.04	0.03889
+GO:0048070	regulation of developmental pigmentation	20	1	0.04	0.03889
+GO:0002760	positive regulation of antimicrobial hum...	20	1	0.04	0.03889
+GO:0044106	cellular amine metabolic process	20	1	0.04	0.03889
+GO:0002922	positive regulation of humoral immune re...	20	1	0.04	0.03889
+GO:0002702	positive regulation of production of mol...	20	1	0.04	0.03889
+GO:0009308	amine metabolic process	20	1	0.04	0.03889
+GO:0034637	cellular carbohydrate biosynthetic proce...	20	1	0.04	0.03889
+GO:0002833	positive regulation of response to bioti...	21	1	0.04	0.04080
+GO:0044774	mitotic DNA integrity checkpoint	21	1	0.04	0.04080
+GO:0016334	establishment or maintenance of polarity...	21	1	0.04	0.04080
+GO:0002699	positive regulation of immune effector p...	21	1	0.04	0.04080
+GO:0002805	regulation of antimicrobial peptide bios...	22	1	0.04	0.04270
+GO:0002777	antimicrobial peptide biosynthetic proce...	22	1	0.04	0.04270
+GO:0016059	deactivation of rhodopsin mediated signa...	23	1	0.05	0.04460
+GO:0050832	defense response to fungus	23	1	0.05	0.04460
+GO:0000302	response to reactive oxygen species	23	1	0.05	0.04460
+GO:0042136	neurotransmitter biosynthetic process	23	1	0.05	0.04460
+GO:0000086	G2/M transition of mitotic cell cycle	23	1	0.05	0.04460
+GO:0070328	triglyceride homeostasis	23	1	0.05	0.04460
+GO:0032940	secretion by cell	177	2	0.35	0.04650
+GO:0022400	regulation of rhodopsin mediated signali...	24	1	0.05	0.04650
+GO:0055090	acylglycerol homeostasis	24	1	0.05	0.04650
+GO:1903522	regulation of blood circulation	24	1	0.05	0.04650
+GO:0008016	regulation of heart contraction	24	1	0.05	0.04650
+GO:0048085	adult chitin-containing cuticle pigmenta...	24	1	0.05	0.04650
+GO:0044331	cell-cell adhesion mediated by cadherin	24	1	0.05	0.04650
+GO:0034285	response to disaccharide	24	1	0.05	0.04650
+GO:0044839	cell cycle G2/M phase transition	25	1	0.05	0.04839
+GO:0051489	regulation of filopodium assembly	25	1	0.05	0.04839
+GO:0019953	sexual reproduction	735	4	1.45	0.04958
+GO:0044703	multi-organism reproductive process	735	4	1.45	0.04958

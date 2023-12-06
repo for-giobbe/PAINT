@@ -1,5 +1,22 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0006030	chitin metabolic process	32	3	0.14	0.00038
-GO:0031057	negative regulation of histone modificat...	12	2	0.05	0.00127
-GO:0006023	aminoglycan biosynthetic process	14	2	0.06	0.00174
 GO:0042073	intraciliary transport	15	2	0.07	0.00201
+GO:1905268	negative regulation of chromatin organiz...	22	2	0.1	0.00433
+GO:0003333	amino acid transmembrane transport	35	2	0.16	0.01075
+GO:0031056	regulation of histone modification	37	2	0.17	0.01196
+GO:0071396	cellular response to lipid	38	2	0.17	0.01259
+GO:0006418	tRNA aminoacylation for protein translat...	40	2	0.18	0.01389
+GO:0043039	tRNA aminoacylation	42	2	0.19	0.01525
+GO:0043038	amino acid activation	43	2	0.19	0.01595
+GO:0045017	glycerolipid biosynthetic process	43	2	0.19	0.01595
+GO:0006865	amino acid transport	45	2	0.2	0.01738
+GO:0006414	translational elongation	46	2	0.21	0.01812
+GO:0071407	cellular response to organic cyclic comp...	51	2	0.23	0.02202
+GO:1905039	carboxylic acid transmembrane transport	53	2	0.24	0.02366
+GO:1903825	organic acid transmembrane transport	53	2	0.24	0.02366
+GO:0009314	response to radiation	144	3	0.65	0.02662
+GO:0008283	cell proliferation	273	4	1.23	0.03335
+GO:0033993	response to lipid	64	2	0.29	0.03357
+GO:0034645	cellular macromolecule biosynthetic proc...	1615	12	7.3	0.04354
+GO:0008610	lipid biosynthetic process	179	3	0.81	0.04618
+GO:0009059	macromolecule biosynthetic process	1641	12	7.42	0.04862

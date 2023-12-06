@@ -1,0 +1,7 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0072330	monocarboxylic acid biosynthetic process	74	7	1.32	0.00031
+GO:0006629	lipid metabolic process	351	16	6.25	0.00042
+GO:0008610	lipid biosynthetic process	164	10	2.92	0.00062
+GO:0006631	fatty acid metabolic process	84	7	1.5	0.00068
+GO:0044281	small molecule metabolic process	608	22	10.83	0.00084
+GO:0042133	neurotransmitter metabolic process	30	4	0.53	0.00182

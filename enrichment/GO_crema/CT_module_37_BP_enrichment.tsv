@@ -1,1 +1,14 @@
 GO.ID	Term	Annotated	Significant	Expected	test
+GO:0044089	positive regulation of cellular componen...	111	2	0.19	0.015
+GO:0006313	transposition, DNA-mediated	112	2	0.19	0.015
+GO:0032196	transposition	122	2	0.21	0.017
+GO:0070897	transcription preinitiation complex asse...	15	1	0.03	0.025
+GO:0000271	polysaccharide biosynthetic process	16	1	0.03	0.027
+GO:0033692	cellular polysaccharide biosynthetic pro...	16	1	0.03	0.027
+GO:0060966	regulation of gene silencing by RNA	16	1	0.03	0.027
+GO:0071554	cell wall organization or biogenesis	20	1	0.03	0.033
+GO:0034637	cellular carbohydrate biosynthetic proce...	20	1	0.03	0.033
+GO:0006259	DNA metabolic process	778	4	1.32	0.035
+GO:0006493	protein O-linked glycosylation	21	1	0.04	0.035
+GO:0016246	RNA interference	22	1	0.04	0.037
+GO:0072593	reactive oxygen species metabolic proces...	26	1	0.04	0.043

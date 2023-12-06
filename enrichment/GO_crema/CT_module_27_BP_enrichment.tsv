@@ -1,9 +1,66 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0060260	regulation of transcription initiation f...	10	1	0.01	0.0070
-GO:0016973	poly(A)+ mRNA export from nucleus	10	1	0.01	0.0070
-GO:0036098	male germ-line stem cell population main...	11	1	0.01	0.0078
-GO:0009303	rRNA transcription	11	1	0.01	0.0078
-GO:0043903	regulation of symbiosis, encompassing mu...	12	1	0.01	0.0085
-GO:0050688	regulation of defense response to virus	13	1	0.01	0.0092
-GO:0034605	cellular response to heat	14	1	0.01	0.0099
-GO:0035821	modification of morphology or physiology...	14	1	0.01	0.0099
+GO:0006352	DNA-templated transcription, initiation	59	2	0.04	0.00067
+GO:0036315	cellular response to sterol	16	1	0.01	0.01126
+GO:0071390	cellular response to ecdysone	16	1	0.01	0.01126
+GO:1901655	cellular response to ketone	17	1	0.01	0.01196
+GO:0006383	transcription by RNA polymerase III	17	1	0.01	0.01196
+GO:0050000	chromosome localization	17	1	0.01	0.01196
+GO:0016032	viral process	21	1	0.01	0.01476
+GO:0042147	retrograde transport, endosome to Golgi	22	1	0.02	0.01546
+GO:0051607	defense response to virus	22	1	0.02	0.01546
+GO:1901568	fatty acid derivative metabolic process	23	1	0.02	0.01615
+GO:0097306	cellular response to alcohol	24	1	0.02	0.01685
+GO:0043901	negative regulation of multi-organism pr...	24	1	0.02	0.01685
+GO:0048814	regulation of dendrite morphogenesis	24	1	0.02	0.01685
+GO:0009615	response to virus	25	1	0.02	0.01755
+GO:0035167	larval lymph gland hemopoiesis	26	1	0.02	0.01825
+GO:0006406	mRNA export from nucleus	27	1	0.02	0.01894
+GO:0035166	post-embryonic hemopoiesis	27	1	0.02	0.01894
+GO:0044403	symbiont process	28	1	0.02	0.01964
+GO:0071427	mRNA-containing ribonucleoprotein comple...	29	1	0.02	0.02033
+GO:0030838	positive regulation of actin filament po...	35	1	0.02	0.02450
+GO:0048542	lymph gland development	35	1	0.02	0.02450
+GO:0050773	regulation of dendrite development	37	1	0.03	0.02588
+GO:0071396	cellular response to lipid	38	1	0.03	0.02658
+GO:0035075	response to ecdysone	39	1	0.03	0.02727
+GO:0036314	response to sterol	39	1	0.03	0.02727
+GO:1901654	response to ketone	41	1	0.03	0.02865
+GO:0032273	positive regulation of protein polymeriz...	41	1	0.03	0.02865
+GO:0044419	interspecies interaction between organis...	41	1	0.03	0.02865
+GO:0071426	ribonucleoprotein complex export from nu...	42	1	0.03	0.02934
+GO:0051028	mRNA transport	42	1	0.03	0.02934
+GO:0071166	ribonucleoprotein complex localization	42	1	0.03	0.02934
+GO:0002697	regulation of immune effector process	44	1	0.03	0.03072
+GO:0006367	transcription initiation from RNA polyme...	45	1	0.03	0.03141
+GO:0030833	regulation of actin filament polymerizat...	49	1	0.03	0.03416
+GO:0002831	regulation of response to biotic stimulu...	49	1	0.03	0.03416
+GO:1902905	positive regulation of supramolecular fi...	49	1	0.03	0.03416
+GO:0006606	protein import into nucleus	50	1	0.04	0.03485
+GO:0009408	response to heat	50	1	0.04	0.03485
+GO:0031334	positive regulation of protein complex a...	51	1	0.04	0.03554
+GO:0071407	cellular response to organic cyclic comp...	51	1	0.04	0.03554
+GO:0006611	protein export from nucleus	52	1	0.04	0.03622
+GO:0051170	import into nucleus	53	1	0.04	0.03691
+GO:0008064	regulation of actin polymerization or de...	54	1	0.04	0.03759
+GO:0006405	RNA export from nucleus	54	1	0.04	0.03759
+GO:0030041	actin filament polymerization	54	1	0.04	0.03759
+GO:0051495	positive regulation of cytoskeleton orga...	54	1	0.04	0.03759
+GO:0030832	regulation of actin filament length	55	1	0.04	0.03828
+GO:0032271	regulation of protein polymerization	55	1	0.04	0.03828
+GO:0000281	mitotic cytokinesis	57	1	0.04	0.03965
+GO:0016482	cytosolic transport	58	1	0.04	0.04033
+GO:0030718	germ-line stem cell population maintenan...	59	1	0.04	0.04102
+GO:0007052	mitotic spindle organization	60	1	0.04	0.04170
+GO:0007010	cytoskeleton organization	493	2	0.35	0.04208
+GO:0034504	protein localization to nucleus	61	1	0.04	0.04238
+GO:0051168	nuclear export	61	1	0.04	0.04238
+GO:0046907	intracellular transport	504	2	0.36	0.04384
+GO:0033993	response to lipid	64	1	0.05	0.04443
+GO:0031347	regulation of defense response	64	1	0.05	0.04443
+GO:0008154	actin polymerization or depolymerization	65	1	0.05	0.04511
+GO:0030097	hemopoiesis	66	1	0.05	0.04579
+GO:0110053	regulation of actin filament organizatio...	66	1	0.05	0.04579
+GO:0017038	protein import	67	1	0.05	0.04647
+GO:0019827	stem cell population maintenance	72	1	0.05	0.04987
+GO:0031503	protein-containing complex localization	72	1	0.05	0.04987
+GO:0098727	maintenance of cell number	72	1	0.05	0.04987

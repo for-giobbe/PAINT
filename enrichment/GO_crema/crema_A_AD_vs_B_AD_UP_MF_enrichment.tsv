@@ -1,0 +1,4 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0048037	cofactor binding	325	17	6.11	0.00010
+GO:0046914	transition metal ion binding	534	23	10.05	0.00012
+GO:0008238	exopeptidase activity	82	8	1.54	0.00014

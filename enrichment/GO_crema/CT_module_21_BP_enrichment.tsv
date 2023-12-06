@@ -1,5 +1,50 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0002164	larval development	125	2	0.09	0.0030
-GO:0071025	RNA surveillance	10	1	0.01	0.0070
-GO:0034661	ncRNA catabolic process	11	1	0.01	0.0078
-GO:0006284	base-excision repair	11	1	0.01	0.0078
+GO:0002164	larval development	125	2	0.09	0.003
+GO:0007307	eggshell chorion gene amplification	16	1	0.01	0.011
+GO:0034472	snRNA 3'-end processing	17	1	0.01	0.012
+GO:1901992	positive regulation of mitotic cell cycl...	17	1	0.01	0.012
+GO:0016180	snRNA processing	18	1	0.01	0.013
+GO:0006277	DNA amplification	18	1	0.01	0.013
+GO:0000466	maturation of 5.8S rRNA from tricistroni...	18	1	0.01	0.013
+GO:0000469	cleavage involved in rRNA processing	18	1	0.01	0.013
+GO:1901989	positive regulation of cell cycle phase ...	19	1	0.01	0.013
+GO:0090503	RNA phosphodiester bond hydrolysis, exon...	19	1	0.01	0.013
+GO:0010389	regulation of G2/M transition of mitotic...	19	1	0.01	0.013
+GO:1902749	regulation of cell cycle G2/M phase tran...	19	1	0.01	0.013
+GO:0006275	regulation of DNA replication	21	1	0.01	0.015
+GO:0000460	maturation of 5.8S rRNA	23	1	0.02	0.016
+GO:0000086	G2/M transition of mitotic cell cycle	23	1	0.02	0.016
+GO:0051054	positive regulation of DNA metabolic pro...	23	1	0.02	0.016
+GO:0043628	ncRNA 3'-end processing	24	1	0.02	0.017
+GO:0016073	snRNA metabolic process	25	1	0.02	0.018
+GO:0044839	cell cycle G2/M phase transition	25	1	0.02	0.018
+GO:0035167	larval lymph gland hemopoiesis	26	1	0.02	0.018
+GO:0035166	post-embryonic hemopoiesis	27	1	0.02	0.019
+GO:0000288	nuclear-transcribed mRNA catabolic proce...	27	1	0.02	0.019
+GO:0090068	positive regulation of cell cycle proces...	29	1	0.02	0.020
+GO:0045931	positive regulation of mitotic cell cycl...	31	1	0.02	0.022
+GO:0048542	lymph gland development	35	1	0.02	0.024
+GO:0000724	double-strand break repair via homologou...	40	1	0.03	0.028
+GO:0000725	recombinational repair	42	1	0.03	0.029
+GO:0090304	nucleic acid metabolic process	2126	4	1.5	0.031
+GO:0045787	positive regulation of cell cycle	52	1	0.04	0.036
+GO:0000956	nuclear-transcribed mRNA catabolic proce...	53	1	0.04	0.037
+GO:0006906	vesicle fusion	54	1	0.04	0.038
+GO:0031123	RNA 3'-end processing	54	1	0.04	0.038
+GO:0007306	eggshell chorion assembly	56	1	0.04	0.039
+GO:0008284	positive regulation of cell proliferatio...	57	1	0.04	0.040
+GO:0090174	organelle membrane fusion	59	1	0.04	0.041
+GO:0051052	regulation of DNA metabolic process	59	1	0.04	0.041
+GO:0032508	DNA duplex unwinding	60	1	0.04	0.042
+GO:0007304	chorion-containing eggshell formation	61	1	0.04	0.042
+GO:0032392	DNA geometric change	61	1	0.04	0.042
+GO:0030703	eggshell formation	63	1	0.04	0.044
+GO:0006302	double-strand break repair	64	1	0.05	0.044
+GO:1901990	regulation of mitotic cell cycle phase t...	65	1	0.05	0.045
+GO:0030097	hemopoiesis	66	1	0.05	0.046
+GO:0008298	intracellular mRNA localization	67	1	0.05	0.046
+GO:1901987	regulation of cell cycle phase transitio...	67	1	0.05	0.046
+GO:0006402	mRNA catabolic process	67	1	0.05	0.046
+GO:0061025	membrane fusion	67	1	0.05	0.046
+GO:0006139	nucleobase-containing compound metabolic...	2389	4	1.69	0.047
+GO:0048284	organelle fusion	71	1	0.05	0.049

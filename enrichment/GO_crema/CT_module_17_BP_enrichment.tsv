@@ -1,6 +1,81 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0044773	mitotic DNA damage checkpoint	16	2	0.02	0.00010
+GO:0000082	G1/S transition of mitotic cell cycle	32	2	0.03	0.00041
 GO:1901991	negative regulation of mitotic cell cycl...	35	2	0.03	0.00049
-GO:0072331	signal transduction by p53 class mediato...	10	1	0.01	0.00986
-GO:0010332	response to gamma radiation	10	1	0.01	0.00986
-GO:1900182	positive regulation of protein localizat...	10	1	0.01	0.00986
+GO:0051052	regulation of DNA metabolic process	59	2	0.06	0.00140
+GO:0007405	neuroblast proliferation	64	2	0.06	0.00164
+GO:0140013	meiotic nuclear division	111	2	0.11	0.00487
+GO:0045664	regulation of neuron differentiation	149	2	0.15	0.00863
+GO:0006281	DNA repair	181	2	0.18	0.01256
+GO:0051094	positive regulation of developmental pro...	183	2	0.18	0.01283
+GO:0051240	positive regulation of multicellular org...	189	2	0.19	0.01365
+GO:0048135	female germ-line cyst formation	15	1	0.01	0.01475
+GO:0006919	activation of cysteine-type endopeptidas...	15	1	0.01	0.01475
+GO:0106030	neuron projection fasciculation	17	1	0.02	0.01671
+GO:1900180	regulation of protein localization to nu...	17	1	0.02	0.01671
+GO:0040018	positive regulation of multicellular org...	19	1	0.02	0.01866
+GO:0010389	regulation of G2/M transition of mitotic...	19	1	0.02	0.01866
+GO:0016241	regulation of macroautophagy	19	1	0.02	0.01866
+GO:1902749	regulation of cell cycle G2/M phase tran...	19	1	0.02	0.01866
+GO:0043280	positive regulation of cysteine-type end...	19	1	0.02	0.01866
+GO:0006270	DNA replication initiation	20	1	0.02	0.01963
+GO:0048134	germ-line cyst formation	20	1	0.02	0.01963
+GO:2001056	positive regulation of cysteine-type end...	20	1	0.02	0.01963
+GO:2000045	regulation of G1/S transition of mitotic...	20	1	0.02	0.01963
+GO:0006310	DNA recombination	232	2	0.23	0.02016
+GO:0006275	regulation of DNA replication	21	1	0.02	0.02060
+GO:1902806	regulation of cell cycle G1/S phase tran...	21	1	0.02	0.02060
+GO:0032388	positive regulation of intracellular tra...	21	1	0.02	0.02060
+GO:0009411	response to UV	22	1	0.02	0.02157
+GO:2001020	regulation of response to DNA damage sti...	22	1	0.02	0.02157
+GO:0000086	G2/M transition of mitotic cell cycle	23	1	0.02	0.02254
+GO:0051222	positive regulation of protein transport	23	1	0.02	0.02254
+GO:1904951	positive regulation of establishment of ...	23	1	0.02	0.02254
+GO:1903829	positive regulation of cellular protein ...	23	1	0.02	0.02254
+GO:0006508	proteolysis	679	3	0.67	0.02294
+GO:0010950	positive regulation of endopeptidase act...	24	1	0.02	0.02352
+GO:0043523	regulation of neuron apoptotic process	24	1	0.02	0.02352
+GO:0007131	reciprocal meiotic recombination	24	1	0.02	0.02352
+GO:0044839	cell cycle G2/M phase transition	25	1	0.02	0.02448
+GO:0035825	homologous recombination	25	1	0.02	0.02448
+GO:0031099	regeneration	25	1	0.02	0.02448
+GO:0046822	regulation of nucleocytoplasmic transpor...	26	1	0.03	0.02545
+GO:0051402	neuron apoptotic process	26	1	0.03	0.02545
+GO:0033157	regulation of intracellular protein tran...	27	1	0.03	0.02642
+GO:0033673	negative regulation of kinase activity	27	1	0.03	0.02642
+GO:0043281	regulation of cysteine-type endopeptidas...	27	1	0.03	0.02642
+GO:0097193	intrinsic apoptotic signaling pathway	28	1	0.03	0.02739
+GO:0010508	positive regulation of autophagy	28	1	0.03	0.02739
+GO:0055059	asymmetric neuroblast division	28	1	0.03	0.02739
+GO:0045665	negative regulation of neuron differenti...	29	1	0.03	0.02835
+GO:0010212	response to ionizing radiation	29	1	0.03	0.02835
+GO:0010952	positive regulation of peptidase activit...	29	1	0.03	0.02835
+GO:2000116	regulation of cysteine-type endopeptidas...	29	1	0.03	0.02835
+GO:0016203	muscle attachment	30	1	0.03	0.02932
+GO:0055057	neuroblast division	30	1	0.03	0.02932
+GO:0036445	neuronal stem cell division	30	1	0.03	0.02932
+GO:0012501	programmed cell death	289	2	0.29	0.03048
+GO:0051348	negative regulation of transferase activ...	32	1	0.03	0.03125
+GO:0048872	homeostasis of number of cells	33	1	0.03	0.03221
+GO:0040014	regulation of multicellular organism gro...	33	1	0.03	0.03221
+GO:0014016	neuroblast differentiation	34	1	0.03	0.03317
+GO:0035264	multicellular organism growth	36	1	0.04	0.03509
+GO:0048103	somatic stem cell division	37	1	0.04	0.03605
+GO:0010976	positive regulation of neuron projection...	38	1	0.04	0.03701
+GO:0007127	meiosis I	38	1	0.04	0.03701
+GO:0008219	cell death	322	2	0.32	0.03726
+GO:0019216	regulation of lipid metabolic process	39	1	0.04	0.03797
+GO:1901214	regulation of neuron death	39	1	0.04	0.03797
+GO:0097190	apoptotic signaling pathway	40	1	0.04	0.03893
+GO:0046532	regulation of photoreceptor cell differe...	40	1	0.04	0.03893
+GO:0071482	cellular response to light stimulus	41	1	0.04	0.03988
+GO:0070997	neuron death	42	1	0.04	0.04084
+GO:0060538	skeletal muscle organ development	47	1	0.05	0.04560
+GO:0046620	regulation of organ growth	48	1	0.05	0.04655
+GO:0098722	asymmetric stem cell division	48	1	0.05	0.04655
+GO:0051223	regulation of protein transport	49	1	0.05	0.04750
+GO:0070201	regulation of establishment of protein l...	50	1	0.05	0.04845
+GO:0006606	protein import into nucleus	50	1	0.05	0.04845
+GO:1903827	regulation of cellular protein localizat...	50	1	0.05	0.04845
+GO:0032386	regulation of intracellular transport	50	1	0.05	0.04845
+GO:0071478	cellular response to radiation	51	1	0.05	0.04940

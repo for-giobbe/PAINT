@@ -1,0 +1,7 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0016831	carboxy-lyase activity	18	2	0.04	0.00067
+GO:0016830	carbon-carbon lyase activity	29	2	0.06	0.00176
+GO:0016491	oxidoreductase activity	484	5	1.07	0.00280
+GO:0050662	coenzyme binding	148	3	0.33	0.00372
+GO:0048037	cofactor binding	338	4	0.74	0.00512
+GO:0003824	catalytic activity	3132	12	6.89	0.00547

@@ -1,3 +1,19 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0009101	glycoprotein biosynthetic process	88	4	0.5	0.0015
 GO:0110111	negative regulation of animal organ morp...	20	2	0.11	0.0056
+GO:0006486	protein glycosylation	80	3	0.45	0.0102
+GO:0043413	macromolecule glycosylation	81	3	0.46	0.0105
+GO:0070085	glycosylation	85	3	0.48	0.0120
+GO:0032482	Rab protein signal transduction	31	2	0.18	0.0131
+GO:0007389	pattern specification process	383	6	2.17	0.0195
+GO:0060446	branching involved in open tracheal syst...	43	2	0.24	0.0243
+GO:0061138	morphogenesis of a branching epithelium	45	2	0.25	0.0265
+GO:0048754	branching morphogenesis of an epithelial...	45	2	0.25	0.0265
+GO:0043297	apical junction assembly	46	2	0.26	0.0276
+GO:0001763	morphogenesis of a branching structure	46	2	0.26	0.0276
+GO:0007043	cell-cell junction assembly	52	2	0.29	0.0346
+GO:0008202	steroid metabolic process	55	2	0.31	0.0383
+GO:0007178	transmembrane receptor protein serine/th...	58	2	0.33	0.0422
+GO:0034329	cell junction assembly	58	2	0.33	0.0422
+GO:0001745	compound eye morphogenesis	237	4	1.34	0.0437
+GO:0003002	regionalization	357	5	2.02	0.0491

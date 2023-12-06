@@ -1,9 +1,59 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0071456	cellular response to hypoxia	28	3	0.19	0.00080
-GO:0050804	modulation of chemical synaptic transmis...	114	5	0.76	0.00089
-GO:0030178	negative regulation of Wnt signaling pat...	35	3	0.23	0.00155
-GO:0051124	synaptic growth at neuromuscular junctio...	130	5	0.86	0.00160
-GO:0007613	memory	95	4	0.63	0.00350
-GO:0071805	potassium ion transmembrane transport	56	3	0.37	0.00595
-GO:0060828	regulation of canonical Wnt signaling pa...	57	3	0.38	0.00626
-GO:0007274	neuromuscular synaptic transmission	59	3	0.39	0.00689
+GO:0071456	cellular response to hypoxia	28	3	0.19	0.0008
+GO:0030178	negative regulation of Wnt signaling pat...	35	3	0.23	0.0015
+GO:0007613	memory	95	4	0.63	0.0035
+GO:0008582	regulation of synaptic growth at neuromu...	105	4	0.7	0.0050
+GO:0010629	negative regulation of gene expression	412	8	2.74	0.0052
+GO:0051254	positive regulation of RNA metabolic pro...	332	7	2.21	0.0059
+GO:0071805	potassium ion transmembrane transport	56	3	0.37	0.0060
+GO:0046928	regulation of neurotransmitter secretion	18	2	0.12	0.0062
+GO:0060828	regulation of canonical Wnt signaling pa...	57	3	0.38	0.0063
+GO:0090304	nucleic acid metabolic process	2126	26	14.12	0.0065
+GO:0006355	regulation of transcription, DNA-templat...	833	12	5.53	0.0069
+GO:0007274	neuromuscular synaptic transmission	59	3	0.39	0.0069
+GO:0010557	positive regulation of macromolecule bio...	366	7	2.43	0.0098
+GO:0010628	positive regulation of gene expression	372	7	2.47	0.0107
+GO:0051253	negative regulation of RNA metabolic pro...	286	6	1.9	0.0110
+GO:1900073	regulation of neuromuscular synaptic tra...	26	2	0.17	0.0127
+GO:0090090	negative regulation of canonical Wnt sig...	26	2	0.17	0.0127
+GO:0008258	head involution	26	2	0.17	0.0127
+GO:0045893	positive regulation of transcription, DN...	296	6	1.97	0.0129
+GO:0031328	positive regulation of cellular biosynth...	387	7	2.57	0.0131
+GO:0045934	negative regulation of nucleobase-contai...	303	6	2.01	0.0144
+GO:0016070	RNA metabolic process	1439	20	9.56	0.0147
+GO:0050805	negative regulation of synaptic transmis...	29	2	0.19	0.0156
+GO:1903508	positive regulation of nucleic acid-temp...	312	6	2.07	0.0164
+GO:1902680	positive regulation of RNA biosynthetic ...	312	6	2.07	0.0164
+GO:0006401	RNA catabolic process	82	3	0.54	0.0169
+GO:0051051	negative regulation of transport	32	2	0.21	0.0189
+GO:0048523	negative regulation of cellular process	930	14	6.18	0.0191
+GO:0048512	circadian behavior	88	3	0.58	0.0203
+GO:0007622	rhythmic behavior	89	3	0.59	0.0210
+GO:0008039	synaptic target recognition	35	2	0.23	0.0224
+GO:0099177	regulation of trans-synaptic signaling	114	5	0.76	0.0229
+GO:0050804	modulation of chemical synaptic transmis...	114	5	0.76	0.0229
+GO:0046777	protein autophosphorylation	37	2	0.25	0.0248
+GO:0016477	cell migration	258	5	1.71	0.0273
+GO:0045892	negative regulation of transcription, DN...	261	5	1.73	0.0285
+GO:0003002	regionalization	357	6	2.37	0.0296
+GO:0051704	multi-organism process	898	11	5.97	0.0302
+GO:0010468	regulation of gene expression	1101	18	7.31	0.0316
+GO:1903507	negative regulation of nucleic acid-temp...	269	5	1.79	0.0319
+GO:1902679	negative regulation of RNA biosynthetic ...	269	5	1.79	0.0319
+GO:0009953	dorsal/ventral pattern formation	105	3	0.7	0.0321
+GO:0016441	posttranscriptional gene silencing	44	2	0.29	0.0342
+GO:0048645	animal organ formation	44	2	0.29	0.0342
+GO:0016079	synaptic vesicle exocytosis	46	2	0.31	0.0371
+GO:0006313	transposition, DNA-mediated	112	3	0.74	0.0378
+GO:0009950	dorsal/ventral axis specification	47	2	0.31	0.0386
+GO:0090502	RNA phosphodiester bond hydrolysis, endo...	47	2	0.31	0.0386
+GO:0007389	pattern specification process	383	6	2.54	0.0398
+GO:0048870	cell motility	286	5	1.9	0.0400
+GO:0007292	female gamete generation	489	7	3.25	0.0409
+GO:0051674	localization of cell	289	5	1.92	0.0416
+GO:0017156	calcium ion regulated exocytosis	49	2	0.33	0.0417
+GO:0045055	regulated exocytosis	51	2	0.34	0.0448
+GO:0032196	transposition	122	3	0.81	0.0468
+GO:0000956	nuclear-transcribed mRNA catabolic proce...	53	2	0.35	0.0480
+GO:2000113	negative regulation of cellular macromol...	301	5	2	0.0481
+GO:0007623	circadian rhythm	124	3	0.82	0.0488

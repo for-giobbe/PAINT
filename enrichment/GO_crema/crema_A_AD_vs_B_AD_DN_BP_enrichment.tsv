@@ -1,0 +1,10 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0009072	aromatic amino acid family metabolic pro...	14	2	0.04	0.00056
+GO:0042441	eye pigment metabolic process	26	2	0.07	0.00197
+GO:0043324	pigment metabolic process involved in de...	26	2	0.07	0.00197
+GO:0043474	pigment metabolic process involved in pi...	26	2	0.07	0.00197
+GO:0042737	drug catabolic process	31	2	0.08	0.00279
+GO:1901606	alpha-amino acid catabolic process	34	2	0.09	0.00336
+GO:0048069	eye pigmentation	35	2	0.09	0.00355
+GO:0009063	cellular amino acid catabolic process	39	2	0.1	0.00440
+GO:0050877	nervous system process	342	4	0.89	0.00973

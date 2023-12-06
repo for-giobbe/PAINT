@@ -1,3 +1,14 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0032446	protein modification by small protein co...	192	4	0.76	0.0065
 GO:0031146	SCF-dependent proteasomal ubiquitin-depe...	34	2	0.13	0.0078
+GO:0098771	inorganic ion homeostasis	112	3	0.44	0.0095
+GO:0055080	cation homeostasis	114	3	0.45	0.0100
+GO:0060968	regulation of gene silencing	45	2	0.18	0.0135
+GO:0045732	positive regulation of protein catabolic...	53	2	0.21	0.0184
+GO:0065004	protein-DNA complex assembly	60	2	0.24	0.0232
+GO:0042176	regulation of protein catabolic process	68	2	0.27	0.0293
+GO:0016567	protein ubiquitination	175	3	0.69	0.0310
+GO:0045814	negative regulation of gene expression, ...	80	2	0.32	0.0395
+GO:0006342	chromatin silencing	80	2	0.32	0.0395
+GO:0055065	metal ion homeostasis	89	2	0.35	0.0479
+GO:0071824	protein-DNA complex subunit organization	90	2	0.36	0.0488

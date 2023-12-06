@@ -1,20 +1,142 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0000422	autophagy of mitochondrion	23	3	0.24	0.0017
-GO:0010623	programmed cell death involved in cell d...	83	5	0.87	0.0017
-GO:0009267	cellular response to starvation	64	4	0.67	0.0044
-GO:0071577	zinc ion transmembrane transport	10	2	0.1	0.0046
-GO:0003407	neural retina development	10	2	0.1	0.0046
-GO:0055069	zinc ion homeostasis	10	2	0.1	0.0046
-GO:0006637	acyl-CoA metabolic process	33	3	0.35	0.0048
-GO:0002224	toll-like receptor signaling pathway	11	2	0.12	0.0056
-GO:0051865	protein autoubiquitination	11	2	0.12	0.0056
-GO:0072659	protein localization to plasma membrane	35	3	0.37	0.0057
-GO:0007586	digestion	12	2	0.13	0.0067
-GO:0046132	pyrimidine ribonucleoside biosynthetic p...	12	2	0.13	0.0067
-GO:0016239	positive regulation of macroautophagy	12	2	0.13	0.0067
-GO:0006206	pyrimidine nucleobase metabolic process	13	2	0.14	0.0078
-GO:0009220	pyrimidine ribonucleotide biosynthetic p...	13	2	0.14	0.0078
-GO:0048190	wing disc dorsal/ventral pattern formati...	41	3	0.43	0.0088
-GO:0035149	lumen formation, open tracheal system	14	2	0.15	0.0091
-GO:0061912	selective autophagy	14	2	0.15	0.0091
-GO:0032007	negative regulation of TOR signaling	14	2	0.15	0.0091
+GO:0002764	immune response-regulating signaling pat...	15	3	0.16	0.00046
+GO:0016236	macroautophagy	66	5	0.69	0.00059
+GO:0045089	positive regulation of innate immune res...	19	3	0.2	0.00094
+GO:0000422	autophagy of mitochondrion	23	3	0.24	0.00167
+GO:0010623	programmed cell death involved in cell d...	83	5	0.87	0.00168
+GO:0007033	vacuole organization	56	4	0.59	0.00269
+GO:0032872	regulation of stress-activated MAPK casc...	59	4	0.62	0.00325
+GO:0006886	intracellular protein transport	244	8	2.55	0.00377
+GO:1902532	negative regulation of intracellular sig...	101	5	1.06	0.00397
+GO:0009267	cellular response to starvation	64	4	0.67	0.00436
+GO:0006637	acyl-CoA metabolic process	33	3	0.35	0.00478
+GO:0006913	nucleocytoplasmic transport	106	5	1.11	0.00488
+GO:0072659	protein localization to plasma membrane	35	3	0.37	0.00565
+GO:0009260	ribonucleotide biosynthetic process	111	5	1.16	0.00592
+GO:0007276	gamete generation	644	14	6.74	0.00619
+GO:0048284	organelle fusion	71	4	0.74	0.00632
+GO:0032879	regulation of localization	390	10	4.08	0.00701
+GO:0070925	organelle assembly	275	8	2.88	0.00767
+GO:0048066	developmental pigmentation	76	4	0.79	0.00802
+GO:0048190	wing disc dorsal/ventral pattern formati...	41	3	0.43	0.00881
+GO:0022412	cellular process involved in reproductio...	607	13	6.35	0.00948
+GO:0071702	organic substance transport	622	17	6.51	0.00994
+GO:0009218	pyrimidine ribonucleotide metabolic proc...	15	2	0.16	0.01038
+GO:1901570	fatty acid derivative biosynthetic proce...	15	2	0.16	0.01038
+GO:0060041	retina development in camera-type eye	15	2	0.16	0.01038
+GO:0035337	fatty-acyl-CoA metabolic process	15	2	0.16	0.01038
+GO:0009725	response to hormone	130	5	1.36	0.01136
+GO:0002253	activation of immune response	16	2	0.17	0.01178
+GO:0016197	endosomal transport	85	4	0.89	0.01180
+GO:0051094	positive regulation of developmental pro...	183	6	1.91	0.01193
+GO:0051049	regulation of transport	246	7	2.57	0.01400
+GO:0051236	establishment of RNA localization	90	4	0.94	0.01432
+GO:0050657	nucleic acid transport	90	4	0.94	0.01432
+GO:0050658	RNA transport	90	4	0.94	0.01432
+GO:0045454	cell redox homeostasis	18	2	0.19	0.01482
+GO:0043010	camera-type eye development	18	2	0.19	0.01482
+GO:0042592	homeostatic process	373	9	3.9	0.01518
+GO:0032869	cellular response to insulin stimulus	51	3	0.53	0.01598
+GO:0016241	regulation of macroautophagy	19	2	0.2	0.01645
+GO:0040018	positive regulation of multicellular org...	19	2	0.2	0.01645
+GO:0032868	response to insulin	53	3	0.55	0.01771
+GO:0034030	ribonucleoside bisphosphate biosynthetic...	20	2	0.21	0.01816
+GO:0034033	purine nucleoside bisphosphate biosynthe...	20	2	0.21	0.01816
+GO:0006904	vesicle docking involved in exocytosis	20	2	0.21	0.01816
+GO:0048070	regulation of developmental pigmentation	20	2	0.21	0.01816
+GO:0033866	nucleoside bisphosphate biosynthetic pro...	20	2	0.21	0.01816
+GO:0071375	cellular response to peptide hormone sti...	54	3	0.56	0.01861
+GO:1901653	cellular response to peptide	54	3	0.56	0.01861
+GO:0006906	vesicle fusion	54	3	0.56	0.01861
+GO:0003006	developmental process involved in reprod...	591	12	6.18	0.01873
+GO:0043900	regulation of multi-organism process	99	4	1.04	0.01968
+GO:0007584	response to nutrient	21	2	0.22	0.01993
+GO:0006221	pyrimidine nucleotide biosynthetic proce...	21	2	0.22	0.01993
+GO:0048278	vesicle docking	21	2	0.22	0.01993
+GO:0033227	dsRNA transport	21	2	0.22	0.01993
+GO:0016192	vesicle-mediated transport	458	10	4.79	0.02012
+GO:0001894	tissue homeostasis	56	3	0.59	0.02049
+GO:0016050	vesicle organization	101	4	1.06	0.02101
+GO:0006403	RNA localization	152	5	1.59	0.02106
+GO:0007028	cytoplasm organization	57	3	0.6	0.02147
+GO:0046328	regulation of JNK cascade	57	3	0.6	0.02147
+GO:0043434	response to peptide hormone	57	3	0.6	0.02147
+GO:0048285	organelle fission	209	6	2.19	0.02165
+GO:0006220	pyrimidine nucleotide metabolic process	22	2	0.23	0.02178
+GO:0000045	autophagosome assembly	22	2	0.23	0.02178
+GO:0009411	response to UV	22	2	0.23	0.02178
+GO:0031325	positive regulation of cellular metaboli...	604	12	6.32	0.02186
+GO:1901652	response to peptide	58	3	0.61	0.02248
+GO:0090174	organelle membrane fusion	59	3	0.62	0.02351
+GO:0009163	nucleoside biosynthetic process	23	2	0.24	0.02369
+GO:1901568	fatty acid derivative metabolic process	23	2	0.24	0.02369
+GO:0042455	ribonucleoside biosynthetic process	23	2	0.24	0.02369
+GO:0032873	negative regulation of stress-activated ...	23	2	0.24	0.02369
+GO:1901659	glycosyl compound biosynthetic process	23	2	0.24	0.02369
+GO:0046329	negative regulation of JNK cascade	23	2	0.24	0.02369
+GO:0070303	negative regulation of stress-activated ...	23	2	0.24	0.02369
+GO:1903829	positive regulation of cellular protein ...	23	2	0.24	0.02369
+GO:0042326	negative regulation of phosphorylation	60	3	0.63	0.02456
+GO:0034404	nucleobase-containing small molecule bio...	60	3	0.63	0.02456
+GO:0051168	nuclear export	61	3	0.64	0.02564
+GO:0071417	cellular response to organonitrogen comp...	61	3	0.64	0.02564
+GO:0007040	lysosome organization	24	2	0.25	0.02568
+GO:0010669	epithelial structure maintenance	24	2	0.25	0.02568
+GO:0043901	negative regulation of multi-organism pr...	24	2	0.25	0.02568
+GO:0043523	regulation of neuron apoptotic process	24	2	0.25	0.02568
+GO:0080171	lytic vacuole organization	24	2	0.25	0.02568
+GO:0071705	nitrogen compound transport	481	14	5.03	0.02626
+GO:0022406	membrane docking	25	2	0.26	0.02772
+GO:0035148	tube formation	25	2	0.26	0.02772
+GO:0007041	lysosomal transport	25	2	0.26	0.02772
+GO:0140056	organelle localization by membrane tethe...	25	2	0.26	0.02772
+GO:0046916	cellular transition metal ion homeostasi...	25	2	0.26	0.02772
+GO:0000209	protein polyubiquitination	63	3	0.66	0.02788
+GO:0007254	JNK cascade	64	3	0.67	0.02904
+GO:1905037	autophagosome organization	26	2	0.27	0.02983
+GO:0051402	neuron apoptotic process	26	2	0.27	0.02983
+GO:0072528	pyrimidine-containing compound biosynthe...	26	2	0.27	0.02983
+GO:0048102	autophagic cell death	26	2	0.27	0.02983
+GO:0019725	cellular homeostasis	167	5	1.75	0.03009
+GO:0044283	small molecule biosynthetic process	227	6	2.37	0.03089
+GO:0048871	multicellular organismal homeostasis	66	3	0.69	0.03142
+GO:0043409	negative regulation of MAPK cascade	27	2	0.28	0.03200
+GO:0061025	membrane fusion	67	3	0.7	0.03266
+GO:0060627	regulation of vesicle-mediated transport	117	4	1.22	0.03371
+GO:0007526	larval somatic muscle development	28	2	0.29	0.03424
+GO:0032874	positive regulation of stress-activated ...	28	2	0.29	0.03424
+GO:0010508	positive regulation of autophagy	28	2	0.29	0.03424
+GO:0070304	positive regulation of stress-activated ...	28	2	0.29	0.03424
+GO:0055114	oxidation-reduction process	363	8	3.8	0.03493
+GO:0015931	nucleobase-containing compound transport	119	4	1.24	0.03556
+GO:0016567	protein ubiquitination	175	5	1.83	0.03578
+GO:0009893	positive regulation of metabolic process	650	12	6.8	0.03610
+GO:0045862	positive regulation of proteolysis	70	3	0.73	0.03650
+GO:0009112	nucleobase metabolic process	29	2	0.3	0.03653
+GO:0010952	positive regulation of peptidase activit...	29	2	0.3	0.03653
+GO:0000041	transition metal ion transport	29	2	0.3	0.03653
+GO:0061024	membrane organization	176	5	1.84	0.03654
+GO:0008610	lipid biosynthetic process	179	5	1.87	0.03886
+GO:0010563	negative regulation of phosphorus metabo...	72	3	0.75	0.03919
+GO:0045936	negative regulation of phosphate metabol...	72	3	0.75	0.03919
+GO:0051603	proteolysis involved in cellular protein...	242	6	2.53	0.04032
+GO:0032482	Rab protein signal transduction	31	2	0.32	0.04128
+GO:0007525	somatic muscle development	74	3	0.77	0.04198
+GO:0010506	regulation of autophagy	74	3	0.77	0.04198
+GO:0044257	cellular protein catabolic process	246	6	2.57	0.04312
+GO:0000082	G1/S transition of mitotic cell cycle	32	2	0.33	0.04374
+GO:0072527	pyrimidine-containing compound metabolic...	32	2	0.33	0.04374
+GO:0009064	glutamine family amino acid metabolic pr...	32	2	0.33	0.04374
+GO:0007281	germ cell development	522	10	5.46	0.04409
+GO:0032270	positive regulation of cellular protein ...	248	6	2.59	0.04456
+GO:0048646	anatomical structure formation involved ...	384	8	4.02	0.04624
+GO:0006888	ER to Golgi vesicle-mediated transport	33	2	0.35	0.04626
+GO:0040014	regulation of multicellular organism gro...	33	2	0.35	0.04626
+GO:0044843	cell cycle G1/S phase transition	33	2	0.35	0.04626
+GO:0051240	positive regulation of multicellular org...	189	5	1.98	0.04725
+GO:0033036	macromolecule localization	706	18	7.38	0.04833
+GO:0030162	regulation of proteolysis	132	4	1.38	0.04895
+GO:0006629	lipid metabolic process	389	8	4.07	0.04925
+GO:0006869	lipid transport	79	3	0.83	0.04937
+GO:1901699	cellular response to nitrogen compound	79	3	0.83	0.04937
+GO:0032446	protein modification by small protein co...	192	5	2.01	0.04997

@@ -1,0 +1,9 @@
+GO.ID	Term	Annotated	Significant	Expected	test
+GO:0004180	carboxypeptidase activity	27	3	0.1	0.00013
+GO:0008238	exopeptidase activity	78	4	0.29	0.00018
+GO:0008235	metalloexopeptidase activity	41	3	0.15	0.00046
+GO:0003824	catalytic activity	3132	20	11.82	0.00059
+GO:0102337	3-oxo-cerotoyl-CoA synthase activity	10	2	0.04	0.00060
+GO:0102338	3-oxo-lignoceronyl-CoA synthase activity	10	2	0.04	0.00060
+GO:0008237	metallopeptidase activity	111	4	0.42	0.00071
+GO:0009922	fatty acid elongase activity	11	2	0.04	0.00073

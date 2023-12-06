@@ -1,7 +1,54 @@
 GO.ID	Term	Annotated	Significant	Expected	test
+GO:0002790	peptide secretion	57	4	0.5	0.0015
+GO:0012501	programmed cell death	289	8	2.53	0.0035
+GO:0010506	regulation of autophagy	74	4	0.65	0.0039
 GO:0051259	protein complex oligomerization	41	3	0.36	0.0054
 GO:0000381	regulation of alternative mRNA splicing,...	41	3	0.36	0.0054
-GO:0002790	peptide secretion	57	4	0.5	0.0063
+GO:0006259	DNA metabolic process	778	14	6.82	0.0064
 GO:0016322	neuron remodeling	46	3	0.4	0.0074
 GO:1904263	positive regulation of TORC1 signaling	16	2	0.14	0.0084
 GO:0042594	response to starvation	94	4	0.82	0.0091
+GO:0032869	cellular response to insulin stimulus	51	3	0.45	0.0099
+GO:0060033	anatomical structure regression	51	3	0.45	0.0099
+GO:0036293	response to decreased oxygen levels	52	3	0.46	0.0104
+GO:0035096	larval midgut cell programmed cell death	19	2	0.17	0.0117
+GO:0070482	response to oxygen levels	57	3	0.5	0.0134
+GO:0018193	peptidyl-amino acid modification	296	7	2.59	0.0143
+GO:0060180	female mating behavior	22	2	0.19	0.0156
+GO:0035069	larval midgut histolysis	22	2	0.19	0.0156
+GO:0006915	apoptotic process	233	6	2.04	0.0158
+GO:0009987	cellular process	5871	60	51.45	0.0159
+GO:0006313	transposition, DNA-mediated	112	4	0.98	0.0164
+GO:0008340	determination of adult lifespan	112	4	0.98	0.0164
+GO:0019748	secondary metabolic process	62	3	0.54	0.0168
+GO:0000154	rRNA modification	23	2	0.2	0.0170
+GO:0009267	cellular response to starvation	64	3	0.56	0.0183
+GO:0051093	negative regulation of developmental pro...	178	5	1.56	0.0194
+GO:0010259	multicellular organism aging	118	4	1.03	0.0195
+GO:0051241	negative regulation of multicellular org...	179	5	1.57	0.0198
+GO:0044550	secondary metabolite biosynthetic proces...	26	2	0.23	0.0215
+GO:0072593	reactive oxygen species metabolic proces...	26	2	0.23	0.0215
+GO:0032196	transposition	122	4	1.07	0.0218
+GO:0031669	cellular response to nutrient levels	69	3	0.6	0.0223
+GO:0043281	regulation of cysteine-type endopeptidas...	27	2	0.24	0.0230
+GO:0007568	aging	125	4	1.1	0.0236
+GO:0031668	cellular response to extracellular stimu...	71	3	0.62	0.0240
+GO:0045793	positive regulation of cell size	29	2	0.25	0.0264
+GO:2000116	regulation of cysteine-type endopeptidas...	29	2	0.25	0.0264
+GO:0007525	somatic muscle development	74	3	0.65	0.0267
+GO:0071496	cellular response to external stimulus	78	3	0.68	0.0306
+GO:0010623	programmed cell death involved in cell d...	83	3	0.73	0.0359
+GO:0072659	protein localization to plasma membrane	35	2	0.31	0.0374
+GO:0006582	melanin metabolic process	35	2	0.31	0.0374
+GO:0060249	anatomical structure homeostasis	145	4	1.27	0.0378
+GO:0007517	muscle organ development	87	3	0.76	0.0404
+GO:0042440	pigment metabolic process	87	3	0.76	0.0404
+GO:0046777	protein autophosphorylation	37	2	0.32	0.0414
+GO:0018105	peptidyl-serine phosphorylation	37	2	0.32	0.0414
+GO:0045746	negative regulation of Notch signaling p...	38	2	0.33	0.0434
+GO:0007552	metamorphosis	373	7	3.27	0.0435
+GO:0045595	regulation of cell differentiation	301	6	2.64	0.0472
+GO:0007365	periodic partitioning	40	2	0.35	0.0476
+GO:0008406	gonad development	41	2	0.36	0.0498
+GO:0030307	positive regulation of cell growth	41	2	0.36	0.0498
+GO:0045137	development of primary sexual characteri...	41	2	0.36	0.0498

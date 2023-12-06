@@ -1,11 +1,67 @@
 GO.ID	Term	Annotated	Significant	Expected	test
 GO:0008543	fibroblast growth factor receptor signal...	17	3	0.11	0.00014
-GO:0055002	striated muscle cell development	61	4	0.38	0.00052
+GO:2000045	regulation of G1/S transition of mitotic...	20	3	0.12	0.00024
 GO:0007525	somatic muscle development	74	4	0.46	0.00109
-GO:0007522	visceral muscle development	10	2	0.06	0.00165
-GO:0006672	ceramide metabolic process	11	2	0.07	0.00201
-GO:0007272	ensheathment of neurons	14	2	0.09	0.00328
+GO:1901991	negative regulation of mitotic cell cycl...	35	3	0.22	0.00128
+GO:0007517	muscle organ development	87	4	0.54	0.00199
+GO:0030239	myofibril assembly	46	3	0.29	0.00283
 GO:0044773	mitotic DNA damage checkpoint	16	2	0.1	0.00429
 GO:0006644	phospholipid metabolic process	108	4	0.67	0.00436
+GO:0016477	cell migration	258	6	1.6	0.00489
+GO:0042326	negative regulation of phosphorylation	60	3	0.37	0.00600
+GO:0006643	membrane lipid metabolic process	60	3	0.37	0.00600
 GO:0007338	single fertilization	22	2	0.14	0.00807
+GO:0045862	positive regulation of proteolysis	70	3	0.44	0.00919
 GO:0034285	response to disaccharide	24	2	0.15	0.00957
+GO:0051402	neuron apoptotic process	26	2	0.16	0.01118
+GO:0016042	lipid catabolic process	76	3	0.47	0.01151
+GO:1903509	liposaccharide metabolic process	27	2	0.17	0.01202
+GO:0006664	glycolipid metabolic process	27	2	0.17	0.01202
+GO:0033673	negative regulation of kinase activity	27	2	0.17	0.01202
+GO:0032787	monocarboxylic acid metabolic process	150	4	0.93	0.01365
+GO:0010212	response to ionizing radiation	29	2	0.18	0.01380
+GO:0010952	positive regulation of peptidase activit...	29	2	0.18	0.01380
+GO:0042063	gliogenesis	84	3	0.52	0.01507
+GO:0072330	monocarboxylic acid biosynthetic process	85	3	0.53	0.01555
+GO:0060537	muscle tissue development	31	2	0.19	0.01568
+GO:0008347	glial cell migration	32	2	0.2	0.01666
+GO:0051348	negative regulation of transferase activ...	32	2	0.2	0.01666
+GO:0021782	glial cell development	32	2	0.2	0.01666
+GO:0008354	germ cell migration	33	2	0.21	0.01766
+GO:0045214	sarcomere organization	33	2	0.21	0.01766
+GO:0008037	cell recognition	92	3	0.57	0.01919
+GO:0006631	fatty acid metabolic process	92	3	0.57	0.01919
+GO:0019915	lipid storage	37	2	0.23	0.02193
+GO:0006665	sphingolipid metabolic process	37	2	0.23	0.02193
+GO:0008610	lipid biosynthetic process	179	4	1.11	0.02448
+GO:0010001	glial cell differentiation	40	2	0.25	0.02539
+GO:0006874	cellular calcium ion homeostasis	40	2	0.25	0.02539
+GO:1901136	carbohydrate derivative catabolic proces...	41	2	0.25	0.02659
+GO:0070997	neuron death	42	2	0.26	0.02781
+GO:0055074	calcium ion homeostasis	43	2	0.27	0.02905
+GO:0044242	cellular lipid catabolic process	44	2	0.27	0.03032
+GO:0008340	determination of adult lifespan	112	3	0.7	0.03198
+GO:0051146	striated muscle cell differentiation	97	5	0.6	0.03535
+GO:0072503	cellular divalent inorganic cation homeo...	48	2	0.3	0.03559
+GO:0010876	lipid localization	117	3	0.73	0.03573
+GO:0010259	multicellular organism aging	118	3	0.73	0.03650
+GO:0031667	response to nutrient levels	120	3	0.75	0.03808
+GO:0006633	fatty acid biosynthetic process	50	2	0.31	0.03835
+GO:0055085	transmembrane transport	518	7	3.22	0.03899
+GO:0009991	response to extracellular stimulus	122	3	0.76	0.03970
+GO:0007498	mesoderm development	51	2	0.32	0.03976
+GO:0007568	aging	125	3	0.78	0.04218
+GO:0007276	gamete generation	644	8	4.01	0.04252
+GO:0072507	divalent inorganic cation homeostasis	53	2	0.33	0.04264
+GO:1905039	carboxylic acid transmembrane transport	53	2	0.33	0.04264
+GO:1903825	organic acid transmembrane transport	53	2	0.33	0.04264
+GO:0044255	cellular lipid metabolic process	281	8	1.75	0.04340
+GO:0008360	regulation of cell shape	55	2	0.34	0.04559
+GO:0001933	negative regulation of protein phosphory...	56	2	0.35	0.04710
+GO:0007369	gastrulation	56	2	0.35	0.04710
+GO:0001894	tissue homeostasis	56	2	0.35	0.04710
+GO:0071805	potassium ion transmembrane transport	56	2	0.35	0.04710
+GO:0016053	organic acid biosynthetic process	131	3	0.81	0.04738
+GO:0015711	organic anion transport	131	3	0.81	0.04738
+GO:0046394	carboxylic acid biosynthetic process	131	3	0.81	0.04738
+GO:0071804	cellular potassium ion transport	57	2	0.35	0.04862

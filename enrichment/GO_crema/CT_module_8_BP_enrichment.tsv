@@ -1,4 +1,67 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0010256	endomembrane system organization	140	3	0.34	0.0042
-GO:0030866	cortical actin cytoskeleton organization	44	2	0.11	0.0048
-GO:0031032	actomyosin structure organization	84	3	0.2	0.0074
+GO:0031032	actomyosin structure organization	84	3	0.2	0.00097
+GO:0051304	chromosome separation	39	2	0.09	0.00382
+GO:0030866	cortical actin cytoskeleton organization	44	2	0.11	0.00485
+GO:0043065	positive regulation of apoptotic process	57	2	0.14	0.00803
+GO:0007030	Golgi organization	61	2	0.15	0.00915
+GO:0061061	muscle structure development	195	3	0.47	0.01054
+GO:0000280	nuclear division	200	3	0.48	0.01129
+GO:0048646	anatomical structure formation involved ...	384	4	0.92	0.01157
+GO:0007286	spermatid development	70	2	0.17	0.01192
+GO:0048285	organelle fission	209	3	0.5	0.01272
+GO:0007525	somatic muscle development	74	2	0.18	0.01326
+GO:0048515	spermatid differentiation	76	2	0.18	0.01395
+GO:0061982	meiosis I cell cycle process	76	2	0.18	0.01395
+GO:0043085	positive regulation of catalytic activit...	226	3	0.54	0.01570
+GO:0008361	regulation of cell size	82	2	0.2	0.01612
+GO:0007610	behavior	435	4	1.05	0.01768
+GO:0051146	striated muscle cell differentiation	97	2	0.23	0.02213
+GO:0044093	positive regulation of molecular functio...	260	3	0.62	0.02277
+GO:0007051	spindle organization	100	2	0.24	0.02343
+GO:0010927	cellular component assembly involved in ...	106	2	0.25	0.02612
+GO:0032502	developmental process	1986	9	4.77	0.02638
+GO:0042692	muscle cell differentiation	108	2	0.26	0.02704
+GO:0050896	response to stimulus	2364	10	5.68	0.02760
+GO:0140013	meiotic nuclear division	111	2	0.27	0.02846
+GO:0098813	nuclear chromosome segregation	111	2	0.27	0.02846
+GO:0001709	cell fate determination	115	2	0.28	0.03038
+GO:0007281	germ cell development	522	4	1.25	0.03223
+GO:0030534	adult behavior	124	2	0.3	0.03490
+GO:0006919	activation of cysteine-type endopeptidas...	15	1	0.04	0.03548
+GO:0051985	negative regulation of chromosome segreg...	15	1	0.04	0.03548
+GO:0050982	detection of mechanical stimulus	15	1	0.04	0.03548
+GO:0007413	axonal fasciculation	16	1	0.04	0.03780
+GO:1904263	positive regulation of TORC1 signaling	16	1	0.04	0.03780
+GO:0051345	positive regulation of hydrolase activit...	130	2	0.31	0.03805
+GO:0010591	regulation of lamellipodium assembly	17	1	0.04	0.04012
+GO:0034314	Arp2/3 complex-mediated actin nucleation	17	1	0.04	0.04012
+GO:0051491	positive regulation of filopodium assemb...	17	1	0.04	0.04012
+GO:0050000	chromosome localization	17	1	0.04	0.04012
+GO:0051784	negative regulation of nuclear division	17	1	0.04	0.04012
+GO:0006891	intra-Golgi vesicle-mediated transport	17	1	0.04	0.04012
+GO:0106030	neuron projection fasciculation	17	1	0.04	0.04012
+GO:0022414	reproductive process	829	5	1.99	0.04059
+GO:1902743	regulation of lamellipodium organization	18	1	0.04	0.04243
+GO:0000003	reproduction	847	5	2.04	0.04399
+GO:0032989	cellular component morphogenesis	576	4	1.38	0.04409
+GO:0051716	cellular response to stimulus	1803	8	4.33	0.04452
+GO:1903046	meiotic cell cycle process	142	2	0.34	0.04468
+GO:0043280	positive regulation of cysteine-type end...	19	1	0.05	0.04474
+GO:0046621	negative regulation of organ growth	19	1	0.05	0.04474
+GO:0030032	lamellipodium assembly	19	1	0.05	0.04474
+GO:0007110	meiosis I cytokinesis	19	1	0.05	0.04474
+GO:0042558	pteridine-containing compound metabolic ...	19	1	0.05	0.04474
+GO:0051173	positive regulation of nitrogen compound...	580	4	1.39	0.04506
+GO:2001056	positive regulation of cysteine-type end...	20	1	0.05	0.04704
+GO:0097581	lamellipodium organization	20	1	0.05	0.04704
+GO:0030071	regulation of mitotic metaphase/anaphase...	20	1	0.05	0.04704
+GO:0120034	positive regulation of plasma membrane b...	20	1	0.05	0.04704
+GO:0003006	developmental process involved in reprod...	591	4	1.42	0.04778
+GO:0032535	regulation of cellular component size	148	2	0.36	0.04814
+GO:0007346	regulation of mitotic cell cycle	149	2	0.36	0.04873
+GO:1902099	regulation of metaphase/anaphase transit...	21	1	0.05	0.04933
+GO:0016334	establishment or maintenance of polarity...	21	1	0.05	0.04933
+GO:0061983	meiosis II cell cycle process	21	1	0.05	0.04933
+GO:0006730	one-carbon metabolic process	21	1	0.05	0.04933
+GO:0007620	copulation	21	1	0.05	0.04933
+GO:0031532	actin cytoskeleton reorganization	21	1	0.05	0.04933

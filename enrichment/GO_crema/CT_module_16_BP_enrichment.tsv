@@ -1,4 +1,21 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0043112	receptor metabolic process	15	3	0.25	0.0018
-GO:0055085	transmembrane transport	518	19	8.71	0.0042
-GO:0006633	fatty acid biosynthetic process	50	4	0.84	0.0097
+GO:0006820	anion transport	175	10	2.94	0.00069
+GO:0055085	transmembrane transport	518	19	8.71	0.00095
+GO:0043112	receptor metabolic process	15	3	0.25	0.00182
+GO:0006633	fatty acid biosynthetic process	50	4	0.84	0.00966
+GO:0006869	lipid transport	79	5	1.33	0.01037
+GO:0010876	lipid localization	117	6	1.97	0.01373
+GO:0048878	chemical homeostasis	202	8	3.4	0.02021
+GO:0051336	regulation of hydrolase activity	204	8	3.43	0.02130
+GO:0015711	organic anion transport	131	6	2.2	0.02274
+GO:0043087	regulation of GTPase activity	97	5	1.63	0.02339
+GO:0018107	peptidyl-threonine phosphorylation	15	2	0.25	0.02553
+GO:0035637	multicellular organismal signaling	16	2	0.27	0.02886
+GO:0042044	fluid transport	16	2	0.27	0.02886
+GO:0071702	organic substance transport	622	17	10.46	0.03044
+GO:0070972	protein localization to endoplasmic reti...	18	2	0.3	0.03601
+GO:0018210	peptidyl-threonine modification	19	2	0.32	0.03981
+GO:0015698	inorganic anion transport	47	3	0.79	0.04404
+GO:0055072	iron ion homeostasis	21	2	0.35	0.04785
+GO:0042592	homeostatic process	373	11	6.27	0.04860
+GO:0006839	mitochondrial transport	49	3	0.82	0.04886

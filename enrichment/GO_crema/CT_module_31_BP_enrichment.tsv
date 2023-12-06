@@ -1,21 +1,124 @@
 GO.ID	Term	Annotated	Significant	Expected	test
-GO:0140014	mitotic nuclear division	116	12	3.49	0.00025
-GO:0033554	cellular response to stress	507	34	15.26	0.00058
+GO:0000398	mRNA splicing, via spliceosome	162	14	4.88	0.00035
+GO:0000070	mitotic sister chromatid segregation	75	9	2.26	0.00038
+GO:0006260	DNA replication	113	11	3.4	0.00056
 GO:0032543	mitochondrial translation	38	6	1.14	0.00086
-GO:0034622	cellular protein-containing complex asse...	354	22	10.66	0.00086
-GO:0034660	ncRNA metabolic process	258	26	7.77	0.00091
-GO:0035194	posttranscriptional gene silencing by RN...	41	6	1.23	0.00129
+GO:0022618	ribonucleoprotein complex assembly	106	10	3.19	0.00127
 GO:0072666	establishment of protein localization to...	18	4	0.54	0.00175
-GO:0006396	RNA processing	432	40	13.01	0.00185
 GO:0007034	vacuolar transport	45	6	1.35	0.00212
-GO:0006302	double-strand break repair	64	7	1.93	0.00294
-GO:0006260	DNA replication	113	11	3.4	0.00309
+GO:0033554	cellular response to stress	507	34	15.26	0.00249
+GO:0042254	ribosome biogenesis	169	18	5.09	0.00270
+GO:0006886	intracellular protein transport	244	16	7.35	0.00272
+GO:0034470	ncRNA processing	192	19	5.78	0.00300
+GO:0035195	gene silencing by miRNA	22	4	0.66	0.00381
 GO:0009411	response to UV	22	4	0.66	0.00381
 GO:0000956	nuclear-transcribed mRNA catabolic proce...	53	6	1.6	0.00489
+GO:1903047	mitotic cell cycle process	251	21	7.56	0.00518
 GO:0010669	epithelial structure maintenance	24	4	0.72	0.00529
+GO:0050658	RNA transport	90	8	2.71	0.00552
+GO:0031099	regeneration	25	4	0.75	0.00615
 GO:0097352	autophagosome maturation	25	4	0.75	0.00615
-GO:0006360	transcription by RNA polymerase I	13	3	0.39	0.00615
 GO:0045451	pole plasm oskar mRNA localization	40	5	1.2	0.00658
+GO:0000724	double-strand break repair via homologou...	40	5	1.2	0.00658
 GO:0032509	endosome transport via multivesicular bo...	26	4	0.78	0.00709
+GO:0006397	mRNA processing	222	20	6.68	0.00725
+GO:0051321	meiotic cell cycle	156	11	4.7	0.00726
+GO:0051052	regulation of DNA metabolic process	59	6	1.78	0.00828
+GO:0006281	DNA repair	181	15	5.45	0.00876
 GO:0032508	DNA duplex unwinding	60	6	1.81	0.00897
-GO:0031099	regeneration	25	4	0.75	0.00928
+GO:0006399	tRNA metabolic process	98	8	2.95	0.00914
+GO:1903046	meiotic cell cycle process	142	10	4.28	0.01036
+GO:0009451	RNA modification	81	7	2.44	0.01072
+GO:0006367	transcription initiation from RNA polyme...	45	5	1.35	0.01083
+GO:0006354	DNA-templated transcription, elongation	30	4	0.9	0.01184
+GO:0007219	Notch signaling pathway	124	9	3.73	0.01223
+GO:0090502	RNA phosphodiester bond hydrolysis, endo...	47	5	1.41	0.01296
+GO:0044267	cellular protein metabolic process	1542	64	46.42	0.01302
+GO:0044260	cellular macromolecule metabolic process	2970	118	89.41	0.01338
+GO:0006383	transcription by RNA polymerase III	17	3	0.51	0.01339
+GO:0043162	ubiquitin-dependent protein catabolic pr...	17	3	0.51	0.01339
+GO:0090501	RNA phosphodiester bond hydrolysis	85	7	2.56	0.01377
+GO:0043543	protein acylation	86	7	2.59	0.01461
+GO:0010467	gene expression	1696	90	51.06	0.01470
+GO:0006261	DNA-dependent DNA replication	67	6	2.02	0.01504
+GO:0043010	camera-type eye development	18	3	0.54	0.01572
+GO:0007049	cell cycle	580	40	17.46	0.01615
+GO:0070192	chromosome organization involved in meio...	33	4	0.99	0.01649
+GO:0051726	regulation of cell cycle	249	14	7.5	0.01784
+GO:0010389	regulation of G2/M transition of mitotic...	19	3	0.57	0.01826
+GO:1902749	regulation of cell cycle G2/M phase tran...	19	3	0.57	0.01826
+GO:0043966	histone H3 acetylation	19	3	0.57	0.01826
+GO:0006413	translational initiation	90	7	2.71	0.01839
+GO:0071824	protein-DNA complex subunit organization	90	7	2.71	0.01839
+GO:0000075	cell cycle checkpoint	52	5	1.57	0.01947
+GO:0016573	histone acetylation	71	6	2.14	0.01957
+GO:0045930	negative regulation of mitotic cell cycl...	53	5	1.6	0.02098
+GO:0007076	mitotic chromosome condensation	20	3	0.6	0.02102
+GO:0006270	DNA replication initiation	20	3	0.6	0.02102
+GO:0016569	covalent chromatin modification	159	10	4.79	0.02146
+GO:1901185	negative regulation of ERBB signaling pa...	36	4	1.08	0.02214
+GO:0000723	telomere maintenance	36	4	1.08	0.02214
+GO:0042059	negative regulation of epidermal growth ...	36	4	1.08	0.02214
+GO:0006475	internal protein amino acid acetylation	73	6	2.2	0.02214
+GO:0018393	internal peptidyl-lysine acetylation	73	6	2.2	0.02214
+GO:0018394	peptidyl-lysine acetylation	73	6	2.2	0.02214
+GO:0006405	RNA export from nucleus	54	5	1.63	0.02258
+GO:0033227	dsRNA transport	21	3	0.63	0.02399
+GO:0050673	epithelial cell proliferation	21	3	0.63	0.02399
+GO:0006378	mRNA polyadenylation	21	3	0.63	0.02399
+GO:0051053	negative regulation of DNA metabolic pro...	21	3	0.63	0.02399
+GO:1905879	regulation of oogenesis	37	4	1.11	0.02426
+GO:0035088	establishment or maintenance of apical/b...	37	4	1.11	0.02426
+GO:0032200	telomere organization	37	4	1.11	0.02426
+GO:0061245	establishment or maintenance of bipolar ...	37	4	1.11	0.02426
+GO:0006366	transcription by RNA polymerase II	551	25	16.59	0.02474
+GO:0006457	protein folding	75	6	2.26	0.02494
+GO:0009059	macromolecule biosynthetic process	1641	71	49.4	0.02527
+GO:0043170	macromolecule metabolic process	3635	147	109.44	0.02641
+GO:0006473	protein acetylation	76	6	2.29	0.02642
+GO:0061982	meiosis I cell cycle process	76	6	2.29	0.02642
+GO:0051272	positive regulation of cellular componen...	38	4	1.14	0.02649
+GO:0071840	cellular component organization or bioge...	2195	102	66.08	0.02676
+GO:0090305	nucleic acid phosphodiester bond hydroly...	238	13	7.17	0.02715
+GO:0007062	sister chromatid cohesion	22	3	0.66	0.02717
+GO:0034645	cellular macromolecule biosynthetic proc...	1615	70	48.62	0.02728
+GO:0034660	ncRNA metabolic process	258	26	7.77	0.02779
+GO:0006996	organelle organization	1334	60	40.16	0.02806
+GO:0006412	translation	361	22	10.87	0.02813
+GO:0006351	transcription, DNA-templated	902	37	27.16	0.02929
+GO:0043933	protein-containing complex subunit organ...	492	31	14.81	0.02944
+GO:0000086	G2/M transition of mitotic cell cycle	23	3	0.69	0.03057
+GO:0008593	regulation of Notch signaling pathway	100	7	3.01	0.03070
+GO:0006418	tRNA aminoacylation for protein translat...	40	4	1.2	0.03132
+GO:0006352	DNA-templated transcription, initiation	59	5	1.78	0.03171
+GO:0016072	rRNA metabolic process	134	14	4.03	0.03518
+GO:0042274	ribosomal small subunit biogenesis	53	10	1.6	0.03528
+GO:0007346	regulation of mitotic cell cycle	149	9	4.49	0.03552
+GO:0051168	nuclear export	61	5	1.84	0.03593
+GO:0097659	nucleic acid-templated transcription	917	37	27.61	0.03649
+GO:0044772	mitotic cell cycle phase transition	82	6	2.47	0.03655
+GO:0008361	regulation of cell size	82	6	2.47	0.03655
+GO:0071166	ribonucleoprotein complex localization	42	4	1.26	0.03663
+GO:0043039	tRNA aminoacylation	42	4	1.26	0.03663
+GO:0071426	ribonucleoprotein complex export from nu...	42	4	1.26	0.03663
+GO:1902667	regulation of axon guidance	25	3	0.75	0.03801
+GO:0006289	nucleotide-excision repair	25	3	0.75	0.03801
+GO:0044839	cell cycle G2/M phase transition	25	3	0.75	0.03801
+GO:0030261	chromosome condensation	43	4	1.29	0.03947
+GO:0043038	amino acid activation	43	4	1.29	0.03947
+GO:0006364	rRNA processing	114	13	3.43	0.03947
+GO:0051169	nuclear transport	106	7	3.19	0.04027
+GO:0006913	nucleocytoplasmic transport	106	7	3.19	0.04027
+GO:0045786	negative regulation of cell cycle	84	6	2.53	0.04041
+GO:0043631	RNA polyadenylation	26	3	0.78	0.04204
+GO:0016070	RNA metabolic process	1439	78	43.32	0.04247
+GO:0032774	RNA biosynthetic process	928	37	27.94	0.04259
+GO:0016570	histone modification	155	9	4.67	0.04394
+GO:0008298	intracellular mRNA localization	67	8	2.02	0.04424
+GO:1901990	regulation of mitotic cell cycle phase t...	65	5	1.96	0.04536
+GO:0006406	mRNA export from nucleus	27	3	0.81	0.04628
+GO:0050920	regulation of chemotaxis	27	3	0.81	0.04628
+GO:0000288	nuclear-transcribed mRNA catabolic proce...	27	3	0.81	0.04628
+GO:0030490	maturation of SSU-rRNA	40	9	1.2	0.04629
+GO:0044770	cell cycle phase transition	87	6	2.62	0.04667
+GO:0006414	translational elongation	46	4	1.38	0.04872
