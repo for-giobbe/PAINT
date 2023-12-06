@@ -180,6 +180,12 @@ And here are the number of DE genes:
 ---
 
 
+Also a WGCNA analysisi was performed on crema, which can be found [here](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_4b.md)
+
+
+---
+
+
 [main](https://github.com/for-giobbe/PAINT) / 
 [0](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_0.md) / 
 [1](https://github.com/for-giobbe/PAINT/blob/main/markdowns/part_1.md) / 

@@ -27,6 +27,5 @@ do
         if [[ -z $mod_CT ]]; then mod_CT="NA";fi
 	
 	echo -e "$hit\t$evl\t$qcv\t$i\t$expAB_AD\t$expAC_AD\t$expAD_AD\t$expAB_CT\t$expAC_CT\t$expAD_CT\t$mod_AD\t$mod_CT";
-
 	
 done
