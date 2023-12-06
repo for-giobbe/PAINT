@@ -91,9 +91,6 @@ cp crema_A_AD_vs* AD/
 cp crema_A_CT_vs* CT/
 ```
 
----
-
-
 Then the GO enrichment analysisis is performed using the following commands:
 
 
@@ -128,11 +125,9 @@ The Rscript has several positional arguments:
 
 Raw outputs are available in:
 
+```enrichment/GO_vicia/*tsv``` [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/GO_vicia)
 
-```enrichment/GO_vicia/*tsv```
-
-
-```enrichment/GO_crema/*tsv```
+```enrichment/GO_crema/*tsv``` [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/GO_crema)
 
 
 ---
@@ -152,6 +147,12 @@ basename=$(echo $i | awk -F "/" '{print $NF}' | awk -F "\." '{print $1}');
 sh scripts/extract_eggNOG_annotations.sh $i  enrichment/eggNOG_vicia/vicia_eggNOG-mapper_annotations.tsv 
 > enrichment/eggNOG_vicia/"$basename"_eggNOG_annotations.tsv; done
 ```
+
+Raw outputs are available in:
+
+```enrichment/eggNOG_vicia/*tsv``` [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/eggNOG_vicia)
+
+```enrichment/eggNOG_crema/*tsv``` [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/eggNOG_crema)
 
 ---
 
@@ -198,7 +199,8 @@ for i in enrichment/GO_crema/*_DN_BP_enrichment.tsv;
 
 ```
 
-The full list can be found [here]().
+
+The full list can be found [here - WIP]().
 
 
 ---
@@ -263,6 +265,12 @@ for i in abundances/crema/crema_deseq2_gene/*A_*_vs_*lst;
 	done
 ```
 
+Raw outputs are available in:
+
+```enrichment/KO_vicia/*tsv``` [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/KO_vicia)
+
+```enrichment/KO_crema/*tsv``` [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/KO_crema)
+
 
 ---
 
@@ -281,7 +289,7 @@ for i in abundances/crema/crema_deseq2_gene/*A_*_vs_*lst;
 	done > single_genes_fun/crema_signalp.lst
 ```
 
-The associated otput can be found in the folder ```single_genes_fun```.
+The associated otput can be found in the folder ```single_genes_fun``` [here](https://github.com/for-giobbe/PAINT/tree/main/single_genes_fun).
 
 
 ---
@@ -345,18 +353,6 @@ sh scripts/extract_exp_val_crema_treatm_contrast.sh  enrichment/crema_antimb/cre
 ```
 
 
-```
-sh scripts/extract_exp_val_crema_tissue_contrast.sh  enrichment/crema_venoms/crema_venoms_blastp.out > enrichment/crema_venoms/crema_venoms_expression_tissue_contrast.tsv
-sh scripts/extract_exp_val_crema_treatm_contrast.sh  enrichment/crema_venoms/crema_venoms_blastp.out > enrichment/crema_venoms/crema_venoms_expression_treatm_contrast.tsv
-sh scripts/extract_exp_val_crema_tissue_contrast.sh  enrichment/crema_antimb/crema_antimb_blastp.out > enrichment/crema_antimb/crema_antimb_expression_tissue_contrast.tsv
-sh scripts/extract_exp_val_crema_treatm_contrast.sh  enrichment/crema_antimb/crema_antimb_blastp.out > enrichment/crema_antimb/crema_antimb_expression_treatm_contrast.tsv
-sh scripts/extract_exp_val_crema_tissue_contrast.sh  enrichment/crema_aggression/crema_aggression_blastp.out > enrichment/crema_aggression/crema_aggression_expression_tissue_contrast.tsv
-sh scripts/extract_exp_val_crema_treatm_contrast.sh  enrichment/crema_aggression/crema_aggression_blastp.out > enrichment/crema_aggression/crema_aggression_expression_treatm_contrast.tsv
-sh scripts/extract_exp_val_crema_tissue_contrast.sh  enrichment/crema_dopa/crema_dopa_blastp.out > enrichment/crema_dopa/crema_dopa_expression_tissue_contrast.tsv
-sh scripts/extract_exp_val_crema_treatm_contrast.sh  enrichment/crema_dopa/crema_dopa_blastp.out > enrichment/crema_dopa/crema_dopa_expression_treatm_contrast.tsv
-```
-
-
 The associated otputs can be found:
 
 
@@ -364,6 +360,14 @@ The associated otputs can be found:
 - [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/crema_antimb) for antimicrobial peptides
 - [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/crema_aggression) for aggression-related genes
 - [here](https://github.com/for-giobbe/PAINT/tree/main/enrichment/crema_dopamine) for genes involved in dopamine methabolism
+
+
+---
+
+
+Last, but not least, manually curated description of genes can be found 
+[here](https://github.com/for-giobbe/PAINT/blob/main/single_genes_fun/crema_single_genes.txt) for crema and
+[here](https://github.com/for-giobbe/PAINT/blob/main/single_genes_fun/vicia_single_genes.txt) for vicia.
 
 
 ---
